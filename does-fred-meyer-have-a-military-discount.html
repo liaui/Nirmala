@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Does Fred Meyer Have A Military Discount - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Does Fred Meyer Have A Military Discount",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/74/c5/8d/74c58d82ebdb2b2917ee3d78d92d7ddb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=does+fred+meyer+have+a+military+discount",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Does Fred Meyer Have A Military Discount</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Theres a growing popularity of senior discounts especially as life expectancy continues to increase. Private Brand Groceries and Nutrition including Fred Meyer Kroger Simple Truth more brands. Fred Meyer - Military Discount. <br>				
+			</p>
+										<a class="badge badge-dark" href="/imf-jobs-africa.html">imf jobs africa</a>
+											<a class="badge badge-secondary" href="/imf-japan-gdp-growth-rate.html">imf japan gdp growth rate</a>
+											<a class="badge badge-info" href="/imf-japan-growth.html">imf japan growth</a>
+											<a class="badge badge-danger" href="/imf-japan-financial-system-stability-assessment.html">imf japan financial system stability assessment</a>
+											<a class="badge badge-secondary" href="/imf-jobs-in-uganda-today.html">imf jobs in uganda today</a>
+											<a class="badge badge-dark" href="/imf-japan-gdp-per-capita.html">imf japan gdp per capita</a>
+											<a class="badge badge-info" href="/imf-ka-ceo.html">imf ka ceo</a>
+											<a class="badge badge-warning" href="/imf-japan-report-2019.html">imf japan report 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this site by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/a7/ae/f8a7aeebef33bd874d734ef0b1082f36.jpg" data-lightbox="roadtrip" data-title="Fred Meyer Weekly Ad Flyer Feb 3 Feb 9 2021 Weeklyad123 Com Weekly Ad Circular Grocery Stores Fred Meyer Weekly Ads Grocery Savings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/a7/ae/f8a7aeebef33bd874d734ef0b1082f36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDdxnbOmFcWn0D9hA0N8cRMfLKfLKGbJrXQ';" alt="Fred Meyer Weekly Ad Flyer Feb 3 Feb 9 2021 Weeklyad123 Com Weekly Ad Circular Grocery Stores Fred Meyer Weekly Ads Grocery Savings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Weekly Ad Flyer Feb 3 Feb 9 2021 Weeklyad123 Com Weekly Ad Circular Grocery Stores Fred Meyer Weekly Ads Grocery Savings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/07/7a/96077adeafe651d4e618c407991417a9.jpg" data-lightbox="roadtrip" data-title="Fred Meyer Weekly Ad Flyer Feb 3 Feb 9 2021 Weeklyad123 Com Weekly Ad Circular Grocery Stores Grocery Savings Food Easy Dinner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/07/7a/96077adeafe651d4e618c407991417a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxy8dLck2FxnE4hQbrBpAvvYyslmw1uZa9kg';" alt="Fred Meyer Weekly Ad Flyer Feb 3 Feb 9 2021 Weeklyad123 Com Weekly Ad Circular Grocery Stores Grocery Savings Food Easy Dinner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Weekly Ad Flyer Feb 3 Feb 9 2021 Weeklyad123 Com Weekly Ad Circular Grocery Stores Grocery Savings Food Easy Dinner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/42/1f/42/421f42bdddf20e5b148e07dcfe47e63e.jpg" data-lightbox="roadtrip" data-title="64 Companies Who Offer Military Discounts Military Discounts Military Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/42/1f/42/421f42bdddf20e5b148e07dcfe47e63e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZLv7a0W7i47LqEhBbZAKrvMsF4QE47xsMQ';" alt="64 Companies Who Offer Military Discounts Military Discounts Military Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">64 Companies Who Offer Military Discounts Military Discounts Military Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/da/79/b6da79b7c97a6e297964caacf889598c.jpg" data-lightbox="roadtrip" data-title="Military Discount Gamestop In 2020 Military Discounts Lower Case Letters Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/da/79/b6da79b7c97a6e297964caacf889598c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoUFwonP6Kuandax2VoH42amDMHa4UhHlzBw';" alt="Military Discount Gamestop In 2020 Military Discounts Lower Case Letters Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Discount Gamestop In 2020 Military Discounts Lower Case Letters Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/1d/a7/2a1da74e747245b6e13dc5d9ae8527f5.jpg" data-lightbox="roadtrip" data-title="Fred Meyer Weekly Ad Grocery Deals Grocery Ads Fred Meyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/1d/a7/2a1da74e747245b6e13dc5d9ae8527f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzKLvpO8QozkdLFHnLsdguLcSZtuF8gWDMyQ';" alt="Fred Meyer Weekly Ad Grocery Deals Grocery Ads Fred Meyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Weekly Ad Grocery Deals Grocery Ads Fred Meyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/7d/71/0b7d716019109add8b817181c0ad3398.jpg" data-lightbox="roadtrip" data-title="Fred Meyer Weekly Ad Circular Valid 05 31 06 02 2020 In 2020 Weekly Ads Fred Meyer Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/7d/71/0b7d716019109add8b817181c0ad3398.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIPTRwNA-AzKbJb45i_bYkR7dKhIsKJql_TQ';" alt="Fred Meyer Weekly Ad Circular Valid 05 31 06 02 2020 In 2020 Weekly Ads Fred Meyer Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Weekly Ad Circular Valid 05 31 06 02 2020 In 2020 Weekly Ads Fred Meyer Week</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/03/77/fc/0377fc9887c0d81c759cd1ecc056f54f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIPTRwNA-AzKbJb45i_bYkR7dKhIsKJql_TQ';" alt="Fred Meyer Weekly Ad Circular Valid 05 31 06 02 2020 In 2020 Weekly Ads Fred Meyer Week">
+										<div class="card-body">
+						<h3 class="h5"><b>Private Brand Groceries and Nutrition Fred Meyer Kroger Simple Truth Private Selection and more brands.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Does fred meyer have a military discount</strong>. 
+								
+																	So I marked my calendar and went in to shop. 
+																	Has Fred Meyer gotten behind the trend. 
+																	Management requires you to tell clerks that you are a senior even if you know the friendly clerk and the clerk knows you are a senior and you are in line with five other seniors. 
+																	Enlisted men ex-soldiers military families et al are able to have military discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fred Meyer offers a 10 military discount. 
+																	Fred Meyer offers a 10 military discount. 
+																	Your Military Discount includes. 
+																	Private Brand Groceries including Fred Meyer Kroger Simple Truth more brands. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Private Brand Groceries including Fred Meyer Kroger Simple Truth more brands. 
+																	8 comments Ive been receiving a lot of emails and paper flyers in the mail saying that now Fred Meyer has a Military Discount on the 3rd Thursday of each month in addition to their Senior Discount on the 1st Tuesday. 
+																	Private Brand Groceries and Nutrition including Fred Meyer Kroger Simple Truth more brands. 
+																	10 off 2 days ago Enjoy an additional 10 off your purchase on advertised days for current military members their families and veterans with ID. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fred Meyer Stores Offer 10 Military Discount. 
+																	CODES 2 years ago Fred Meyer offers a 10 military discount. 
+																	Get the Deals Discounts Newsletter Get weekly military discounts on food travel lodging moving entertainment and more. 
+																	Related Article Costco Military Discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Will require registration the first time the discount is used. 
+																	Coupon codes Show All Coupons. 
+																	Frys Food Arizona Discount. 
+																	Fred Meyer Military Discount Day - Free Coupon Codes 5 days ago Fred Meyer House Brands for Senior and Military Discount Days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The deal is also available to veterans and military family members. 
+																	Fred Meyer Jewelers only offers benefits to military customers. 
+																	Fred Meyers Senior Discount Policy. 
+																	Enjoy an additional 10 off your purchase on advertised days for current military members their families and veterans with ID. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 off your entire purchase. 
+																	The use of Fred Meyer Jewelers military discounts is limited to yourself. 
+																	If you are 55 or older you can take advantage of Fred Meyer Senior Discount Days to save even more money on your groceries and household goods. 
+																	All coupons are hand-ver. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fred Meyer Military Discount. 
+																	The first month all was fine. 
+																	Apparel Shoes Accessories. 
+																	In general Fred Meyer Jewelers military discounts are not allowed be in combination with other discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fred Meyer has a senior discount day on the first Tuesday of each month. 
+																	If youre over 55 you can use its 10 off coupon on certain items. 
+																	Private Brand Groceries including Fred Meyer Kroger Simple Truth more brands. 
+																	So seniors like me make a big shopping trip and save 10 to 30 on FMs already good prices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those who serve in Active Duty National Guard or Reserve roles can take advantage of this deal. 
+																	The first Tuesday of every month seniors age 55 can take an additional 10 off select items. 
+																	Your Military Discount includes. 
+																	Grab up to 70 OFF with Fred Meyer Jewelers Military Discount Are you interested in getting extra savings when you puchase the products at Fred Meyer Jewelers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On the first Tuesday of every month youll save on extra 10 on the following items. 
+																	Fred Meyer Senior Discount Days. 
+																	They offer a military discount to give back to those who serve. 
+																	This includes members of the Air Force Army Navy Marines and Coast Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fred Meyer does have a senior discount policy and its really flexible. 
+																	Apparel Shoes Accessories. 
+																	Your military discount includes. 
+																	Grab up to 70 OFF OFF with Fred Meyer Jewelers Military Discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 Off Various Items 4 days ago Fred Meyer is a hypermarket store chain that is owned by Kroger. 
+																	The Fred Meyer military discount can be used by all current military members. 
+																	However the discount does not apply to all items in the store. 
+																	Its no longer a difficult thing to fullfill this desire by applying this offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Private Brand Groceries and Nutrition including Fred Meyer Kroger Simple Truth more brands. 
+																	Your extra 10 off Military Discount includes. 
+																	Your military discount includes. 
+																	Some of our posts contain affiliate links and we may earn a commission through them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	91 People Used This Posted by Shelly Ismail. 
+																	A few of the exclusions listed on their site are cosmetics electronics and candy. 
+																	Your senior discount includes. 
+																	CODES 7 days ago In addition to Senior Discount day Fred Meyer also extends the same 10 discount one day per month different from Senior Day to members of the military their families and veterans with id. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Will require registration the first time the discount is used. 
+																	Fred Meyer offers a 10 discount to seniors on any day of the week. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f6/8d/f8/f68df873a1656ffb91d77977f0cac0cd.jpg" data-lightbox="roadtrip" data-title="Grocery Shop From Home With Fred Meyer Clicklist Fred Meyer Grocery Grocery Shop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f6/8d/f8/f68df873a1656ffb91d77977f0cac0cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKbJfgoNU29dOtHqB7_lUmmM9EJkiOyTRYnQ';" alt="Grocery Shop From Home With Fred Meyer Clicklist Fred Meyer Grocery Grocery Shop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grocery Shop From Home With Fred Meyer Clicklist Fred Meyer Grocery Grocery Shop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/25/a9/2425a9c3e4615ed9d4034f4fdc32d7cc.jpg" data-lightbox="roadtrip" data-title="Fred Meyer Special Ad 4 Day Sale In 2020 Fred Meyer Grocery Ads Sales Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/25/a9/2425a9c3e4615ed9d4034f4fdc32d7cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4kpVzOv4CKvGZBRmoiQTfSTxNd1jHikQ70g';" alt="Fred Meyer Special Ad 4 Day Sale In 2020 Fred Meyer Grocery Ads Sales Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Special Ad 4 Day Sale In 2020 Fred Meyer Grocery Ads Sales Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/da/69/97da69602784f76431f58a5e0476ed74.png" data-lightbox="roadtrip" data-title="Best Deals And Coupons For Fred Meyer Jewelers Fred Meyer Jewelers Fred Meyer Jewels">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/da/69/97da69602784f76431f58a5e0476ed74.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZwb4RI5vDOuSYLn8DBatZm2vJRdC4jd3OUg';" alt="Best Deals And Coupons For Fred Meyer Jewelers Fred Meyer Jewelers Fred Meyer Jewels">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Deals And Coupons For Fred Meyer Jewelers Fred Meyer Jewelers Fred Meyer Jewels</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/64/75/3e6475cb561dec2bab343dfd96bc04bc.jpg" data-lightbox="roadtrip" data-title="Jfm Sleepy S Military Discounts Veterans Discounts Active Duty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/64/75/3e6475cb561dec2bab343dfd96bc04bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7TZIS2k86whMp17OH4FdEqCWE_SKF65NLIA';" alt="Jfm Sleepy S Military Discounts Veterans Discounts Active Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jfm Sleepy S Military Discounts Veterans Discounts Active Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/f0/e6/9f/f0e69fd91e8f7effa7e71b1ddc31964d.jpg" data-lightbox="roadtrip" data-title="Pin Na Nastence Department Grocery Weekly Ads Hot Deals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/f0/e6/9f/f0e69fd91e8f7effa7e71b1ddc31964d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVv9mepH2RUbLMt94TS888H-vHzjWNbinp1g';" alt="Pin Na Nastence Department Grocery Weekly Ads Hot Deals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Na Nastence Department Grocery Weekly Ads Hot Deals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/ec/fd/41ecfdb1e9879a03b2e0bb4957297662.jpg" data-lightbox="roadtrip" data-title="Texas Roadhouse Menu For Veterans Day Country Fried Chicken Country Fried Veterans Day Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/ec/fd/41ecfdb1e9879a03b2e0bb4957297662.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQim5BUlFauhmxBpi3thyzX8_nVNoXPDvMv1A';" alt="Texas Roadhouse Menu For Veterans Day Country Fried Chicken Country Fried Veterans Day Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Roadhouse Menu For Veterans Day Country Fried Chicken Country Fried Veterans Day Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/61/f0/1461f01e4b79c068f4b332f08249934b.jpg" data-lightbox="roadtrip" data-title="At T Career Fairs For Pacific Northwest Military Career Information Hiring Veterans Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/61/f0/1461f01e4b79c068f4b332f08249934b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_XoT6YoWnOLMbWaw8rSm8-FCr9cyWApARkA';" alt="At T Career Fairs For Pacific Northwest Military Career Information Hiring Veterans Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">At T Career Fairs For Pacific Northwest Military Career Information Hiring Veterans Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/47/ce/4b/47ce4bda10413b607ad0217ac4c36bda.jpg" data-lightbox="roadtrip" data-title="Fred Meyer Coupon Matchups 8 7 8 13 Grapes 0 99 Lb Buy 5 Save 5 Event More Lean Cuisine Coupon Matchups Grapes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/47/ce/4b/47ce4bda10413b607ad0217ac4c36bda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6mjQnLspY2sSIgC-Y5Z7GJhnS7ygvb-Mmw';" alt="Fred Meyer Coupon Matchups 8 7 8 13 Grapes 0 99 Lb Buy 5 Save 5 Event More Lean Cuisine Coupon Matchups Grapes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Coupon Matchups 8 7 8 13 Grapes 0 99 Lb Buy 5 Save 5 Event More Lean Cuisine Coupon Matchups Grapes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/18/fb/7f18fb0d4989448b5984c7f5c3828597.jpg" data-lightbox="roadtrip" data-title="Pin On Top 20 Weekly Deals From Your Favorite Stores">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/18/fb/7f18fb0d4989448b5984c7f5c3828597.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbNDF1M2dF8u4J7gbwRd7L3IgWjiBNdnvMyA';" alt="Pin On Top 20 Weekly Deals From Your Favorite Stores">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Top 20 Weekly Deals From Your Favorite Stores</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/19/a6/4319a6bc108b378afa7dfa394ef237d9.jpg" data-lightbox="roadtrip" data-title="Free Lunch For Veterans And Military At Texas Roadhouse On 11 11 Texasroadhouse Com Country Fried Chicken Country Fried Veterans Day Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/19/a6/4319a6bc108b378afa7dfa394ef237d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhdO16AMFUBh0daR4PZgs86hQh4ltO4HfdA';" alt="Free Lunch For Veterans And Military At Texas Roadhouse On 11 11 Texasroadhouse Com Country Fried Chicken Country Fried Veterans Day Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Lunch For Veterans And Military At Texas Roadhouse On 11 11 Texasroadhouse Com Country Fried Chicken Country Fried Veterans Day Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/77/fc/0377fc9887c0d81c759cd1ecc056f54f.jpg" data-lightbox="roadtrip" data-title="Chili S Veterans And Active Duty Military Receive A Free Entree From A Select Menu On Veterans Day Novemb Soup And Salad Combo Turkey Sandwich Lunch Entrees">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/77/fc/0377fc9887c0d81c759cd1ecc056f54f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ZQ6TI9HihfT9ugMrKc71x7YPkrB8bPYbPw';" alt="Chili S Veterans And Active Duty Military Receive A Free Entree From A Select Menu On Veterans Day Novemb Soup And Salad Combo Turkey Sandwich Lunch Entrees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chili S Veterans And Active Duty Military Receive A Free Entree From A Select Menu On Veterans Day Novemb Soup And Salad Combo Turkey Sandwich Lunch Entrees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/85/b2/e485b2ea6758b39c6695e65d2dca43cf.png" data-lightbox="roadtrip" data-title="Fred Meyer Weekly Ad Jan 14 20 2018 Http Www Weeklyadspecials Com Fred Meyer Weekly Ad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/85/b2/e485b2ea6758b39c6695e65d2dca43cf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qMsV2rVvr81yeXt2QaCoDuqfrNUqoKVmyQ';" alt="Fred Meyer Weekly Ad Jan 14 20 2018 Http Www Weeklyadspecials Com Fred Meyer Weekly Ad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fred Meyer Weekly Ad Jan 14 20 2018 Http Www Weeklyadspecials Com Fred Meyer Weekly Ad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/c5/8d/74c58d82ebdb2b2917ee3d78d92d7ddb.jpg" data-lightbox="roadtrip" data-title="Albertsons Weekly Ad October 31 November 6 2018 View The Latest Albertsons Weekly Ad Flyer And Weekly Circu Albertsons Weekly Ad Weekly Ads Digital Coupons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/c5/8d/74c58d82ebdb2b2917ee3d78d92d7ddb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRorzgpuk49ti6qqovti6fYniIbcrG-Lqqlg';" alt="Albertsons Weekly Ad October 31 November 6 2018 View The Latest Albertsons Weekly Ad Flyer And Weekly Circu Albertsons Weekly Ad Weekly Ads Digital Coupons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Albertsons Weekly Ad October 31 November 6 2018 View The Latest Albertsons Weekly Ad Flyer And Weekly Circu Albertsons Weekly Ad Weekly Ads Digital Coupons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/c5/55/e0c555de98a43a1fca375838fd1f09fe.jpg" data-lightbox="roadtrip" data-title="19 Maps That Prove South Florida Is Not Really The South Veterans Advantage Military Discounts Cvs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/c5/55/e0c555de98a43a1fca375838fd1f09fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNpLnL0_ETt2r4EsmztvEAtk_i_FHAV7x7A';" alt="19 Maps That Prove South Florida Is Not Really The South Veterans Advantage Military Discounts Cvs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">19 Maps That Prove South Florida Is Not Really The South Veterans Advantage Military Discounts Cvs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/44/58/ea445840083209187047f90cc1abac66.jpg" data-lightbox="roadtrip" data-title="Militarybridge Posted To Instagram Did You Catch The News Kohls Launched A New Military Monday Discount Details Kohls Coupons Senior Discounts Kohls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/44/58/ea445840083209187047f90cc1abac66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINWRMNl7d9AhRmlxrDQ7GCDnSkjXXHlGiNg';" alt="Militarybridge Posted To Instagram Did You Catch The News Kohls Launched A New Military Monday Discount Details Kohls Coupons Senior Discounts Kohls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Militarybridge Posted To Instagram Did You Catch The News Kohls Launched A New Military Monday Discount Details Kohls Coupons Senior Discounts Kohls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-discount-for-iphone.html">Military Discount For Iphone</a></li>
+													<li class="list-group-item"><a href="/microsoft-word-veterans-discount.html">Microsoft Word Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/mba-scholarships-veterans.html">Mba Scholarships Veterans</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-adidas-website.html">Military Discount On Adidas Website</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-pizza-express.html">Military Discount At Pizza Express</a></li>
+													<li class="list-group-item"><a href="/mba-programs-with-most-veterans.html">Mba Programs With Most Veterans</a></li>
+													<li class="list-group-item"><a href="/meaning-of-imfao-in-chat.html">Meaning Of Imfao In Chat</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-petsmart.html">Military Discount At Petsmart</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-apple-macbook-air.html">Military Discount On Apple Macbook Air</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-kohls.html">Military Discount For Kohls</a></li>
+													<li class="list-group-item"><a href="/microsoft-office-va-employee-discount.html">Microsoft Office Va Employee Discount</a></li>
+													<li class="list-group-item"><a href="/meaning-of-lmao-in-hindi.html">Meaning Of Lmao In Hindi</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-orvis.html">Military Discount At Orvis</a></li>
+													<li class="list-group-item"><a href="/lowes-pro-military-discount.html">Lowes Pro Military Discount</a></li>
+													<li class="list-group-item"><a href="/lululemon-military-discount-uk.html">Lululemon Military Discount Uk</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-petsmart-grooming.html">Military Discount At Petsmart Grooming</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-busch-gardens-tickets.html">Military Discount On Busch Gardens Tickets</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-disneyland.html">Military Discount For Disneyland</a></li>
+													<li class="list-group-item"><a href="/military-cemetery-london.html">Military Cemetery London</a></li>
+													<li class="list-group-item"><a href="/military-discount-oakley-canada.html">Military Discount Oakley Canada</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

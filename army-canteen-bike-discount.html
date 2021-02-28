@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Canteen Bike Discount - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Canteen Bike Discount",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/19/de/39/19de39d8d6dc73fa9d0924754b1472de.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+canteen+bike+discount",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Canteen Bike Discount</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As an Army brat I think I am eligible to answer this question. CSD Military Canteen Price List of All Products Car Bike Scooter available in Maruti Honda Hyundai Bajaj TVS Yamaha and Royal Enfield. The bike is available in CSD canteen but If you are in any of the Defence field in India than only you should ask this question. <br>				
+			</p>
+										<a class="badge badge-warning" href="/imf-economic-outlook-by-country.html">imf economic outlook by country</a>
+											<a class="badge badge-danger" href="/imf-economic-outlook-cambodia.html">imf economic outlook cambodia</a>
+											<a class="badge badge-secondary" href="/imf-economic-forecast-data.html">imf economic forecast data</a>
+											<a class="badge badge-danger" href="/imf-director-general-2020.html">imf director general 2020</a>
+											<a class="badge badge-primary" href="/imf-deputy-director-resigns.html">imf deputy director resigns</a>
+											<a class="badge badge-dark" href="/imf-economic-outlook-2020-australia.html">imf economic outlook 2020 australia</a>
+											<a class="badge badge-secondary" href="/imf-director-speech.html">imf director speech</a>
+											<a class="badge badge-success" href="/imf-definition-of-corruption.html">imf definition of corruption</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shopify.com/s/files/1/0082/5828/9715/products/blackcanteen.jpg?v=1594246086" data-lightbox="roadtrip" data-title="Military Canteen Jeep La">
+											<img class="card-img v-image ads-img " src="https://cdn.shopify.com/s/files/1/0082/5828/9715/products/blackcanteen.jpg?v=1594246086" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtxcvanaM08B3ktKftHyrgK9VyP-bOV5OicA';" alt="Military Canteen Jeep La">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Canteen Jeep La</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6f/51/bc/6f51bc2cb4b8775f8418bf267534202e.jpg" data-lightbox="roadtrip" data-title="1 5l Military Canteen Aluminum Bicycle Cycling Military Water Cup Bottle Bike Bicycle From Sports Outdoor On Banggood Com Canteen Molle Bag Cycling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6f/51/bc/6f51bc2cb4b8775f8418bf267534202e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1k0g-rzZBm_A2fI5aRvqs_J_hZvRNmTf5PA';" alt="1 5l Military Canteen Aluminum Bicycle Cycling Military Water Cup Bottle Bike Bicycle From Sports Outdoor On Banggood Com Canteen Molle Bag Cycling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 5l Military Canteen Aluminum Bicycle Cycling Military Water Cup Bottle Bike Bicycle From Sports Outdoor On Banggood Com Canteen Molle Bag Cycling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/57/b8/e257b86771f4b47568579d3911cc37e6.png" data-lightbox="roadtrip" data-title="Plain Color Plastic Military Drinking Us Army Canteen Water Bottle Find Complete Details About Plain Colo Hdpe Bottles Army Water Bottle Canteen Water Bottle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/57/b8/e257b86771f4b47568579d3911cc37e6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShKVX8SMcsB5HstxdtL9Rs-yxgPbUwFRCTNw';" alt="Plain Color Plastic Military Drinking Us Army Canteen Water Bottle Find Complete Details About Plain Colo Hdpe Bottles Army Water Bottle Canteen Water Bottle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plain Color Plastic Military Drinking Us Army Canteen Water Bottle Find Complete Details About Plain Colo Hdpe Bottles Army Water Bottle Canteen Water Bottle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/ca/63/aeca63e04c7684b557d9241281e1ae82.jpg" data-lightbox="roadtrip" data-title="Army Canteen Military Water Bottle With Cover Hiking Gifts Army Water Canteen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/ca/63/aeca63e04c7684b557d9241281e1ae82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTkU6QkUDA3uB-YVfGchO1XyBjrpa9eHMmQ';" alt="Army Canteen Military Water Bottle With Cover Hiking Gifts Army Water Canteen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Canteen Military Water Bottle With Cover Hiking Gifts Army Water Canteen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/de/39/19de39d8d6dc73fa9d0924754b1472de.jpg" data-lightbox="roadtrip" data-title="Collectibles Militaria Surplus Personal Field Gear Canteens Canteens Canteen Bottle Old Bottles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/de/39/19de39d8d6dc73fa9d0924754b1472de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJ2bUHqW7DvlgUpAqlopNfXiISCwD1DmiSQ';" alt="Collectibles Militaria Surplus Personal Field Gear Canteens Canteens Canteen Bottle Old Bottles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collectibles Militaria Surplus Personal Field Gear Canteens Canteens Canteen Bottle Old Bottles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/2f/6d/572f6df7755536f3096e117d0cbc96dd.jpg" data-lightbox="roadtrip" data-title="Rothco Canteen With Cover Olive Drab Check Out This Great Product By Click Affiliate Link Amazon Com Kids Army Military Gear Army Gears">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/2f/6d/572f6df7755536f3096e117d0cbc96dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdsPAfL3GIksRQ8HbmfIOtUTqOFhwHt-fgA';" alt="Rothco Canteen With Cover Olive Drab Check Out This Great Product By Click Affiliate Link Amazon Com Kids Army Military Gear Army Gears">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rothco Canteen With Cover Olive Drab Check Out This Great Product By Click Affiliate Link Amazon Com Kids Army Military Gear Army Gears</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images-na.ssl-images-amazon.com/images/I/41FABHZ4GcL._AC_SY355_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdsPAfL3GIksRQ8HbmfIOtUTqOFhwHt-fgA';" alt="Rothco Canteen With Cover Olive Drab Check Out This Great Product By Click Affiliate Link Amazon Com Kids Army Military Gear Army Gears">
+										<div class="card-body">
+						<h3 class="h5"><b>Canteen Stores Department CSD selling a lot of products at subsidy rates exemption from taxes to Army Personnel Ex-Servicemen and their family members.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army canteen bike discount</strong>. 
+								
+																	Royal Enfield 500 CSD Price List 2020. 
+																	Four Wheelers Listed With CSD As On 10 Aug 2020. 
+																	Check out the list of available CSD military canteen cars subsidized rates. 
+																	Canteen Stores Department Mobile Application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fabric hobby items scrapbooking knitting and jewelry are some of our products. 
+																	ABU M16 M4 Carbine Buttstock Pouch Blue Force Gear for sling storage USAF Tiger 9. 
+																	Check the price model and colors available for CSD. 
+																	USGI military issue canteens and covers are one of the most basic essentials used by our soldiers in the field. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CSD URC and Depot. 
+																	From plastic one-quart GI canteens to stainless steel canteen cups Army Surplus World has the genuine gear perfect for long trips. 
+																	Old Vtg Military Metal Canteen With Canvas Sleeve Cover. 
+																	Lot of 2 US Military Army USMC OD 1 QUART PLASTIC CANTEEN 1QT CAMPING USGI NBC 9. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Car Purchase Process through CSD Canteen with Eligibility Documents for Commissioned Officers JCO PBOR Exservicemen in Indian Army Navy IAF Force. 
+																	The Frame Up Art and Craft Supply - St Croix is in St Croix USVI. 
+																	It features large-diameter wheels and is perfect for double duty on the street or on the trail. 
+																	Two Wheelers Listed With CSD As On 17 Aug 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	RadRover 1299 with discount This is Rad Power Bikes main fat tire e-bike. 
+																	How much discount you will get depends upon the cost of the bike. 
+																	STRAP NYLON 2 X 60 OD GREEN LOOPED EXTRACTION HARNESS RAPPELLING CARGO LOT of 2. 
+																	Vintage Original WW2 Swedish Military Canteen With Cover. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CSD Car Price List 2021. 
+																	Check out the list of available CSD military canteen bikes subsidized. 
+																	Canteen Stores Department CSD selling thousands of products in subsidy rate to Army Personnel through Unit Run Canteen URC Canteen. 
+																	97 of the CSD products are sold to Junior Commissioned Officer JCO and Other Ranks ORs through Unit Run Canteen URC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go to nearest CSD depot Step 2 CSD Manager will provide you the list of authorized showroom which deals with CSD. 
+																	Currently there are 34 CSDs present in the country. 
+																	Free shipping on many items. 
+																	CSD canteen is not for Civilians this is for Defence people and forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The largest Military Government exclusive ecommerce site offering discounts up to 50 off current season goods from 700 top lifestyle and tactical brands. 
+																	The latest price list published by the Canteen Stores Department remains in effect from December 2015. 
+																	CSD Canteen Car Buying Process - 2021. 
+																	Its estimated that there are close to 5000 CSD Canteen Stores in India with estimated annual turnover sales in excess of 12000 crore. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get complete details on Canteen Stores Department CSD price list of cars in India. 
+																	The Canteen Stores Department CSD price list for two wheelers and four wheelers contains the complete details about the vehicles available in the Indian market and their subsidised rates. 
+																	The price list of Royal Enfield Bikes based on the Chennai CSD Depot Canteen. 
+																	For Hobby shop call 340 778-3995. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Price List of Royal Enfield Bikes in CSD Army Canteen 2020. 
+																	The Department of Veterans Affairs hospital gift shops known as the VA canteen service have added online shopping for the first time -- and the prices could be worth checking out. 
+																	Roles Of Various Appointments- Important Message. 
+																	CSD Bike Scooter Price List 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All CSD customers are advised to check once again the price and availability before indent application to the nearest CSD dealer. 
+																	Total of 34 CSD Depot located in various. 
+																	For items like Two Wheelers and Four wheelers the departmental charges are only 1pc. 
+																	You can only buy a bike from CSD if youvare a serving or retired person from any one of the defence service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visit our site and look over us. 
+																	Established in 1946 Veterans Canteen Service VCS was created to provide articles of merchandise and services at reasonable prices to Veterans enrolled in the VA healthcare system caregivers and visitors. 
+																	Get complete details on Canteen Stores Department CSD price list of bikes in India. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i5.walmartimages.com/asr/036f0549-a7bc-483a-b311-d2211dea915a_1.96148aeb379818056ccf5ec93e939b4e.jpeg?odnWidth=612&amp;odnHeight=612&amp;odnBg=ffffff" data-lightbox="roadtrip" data-title="Olive Drab Military Gi Style 1 Quart Plastic Canteen With Pistol Belt Kit Walmart Com Walmart Com">
+											<img class="card-img v-image ads-img " src="https://i5.walmartimages.com/asr/036f0549-a7bc-483a-b311-d2211dea915a_1.96148aeb379818056ccf5ec93e939b4e.jpeg?odnWidth=612&amp;odnHeight=612&amp;odnBg=ffffff" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_hX9ictTOSQSbfLoIvOJBB31Iisg0eZpt0w';" alt="Olive Drab Military Gi Style 1 Quart Plastic Canteen With Pistol Belt Kit Walmart Com Walmart Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Olive Drab Military Gi Style 1 Quart Plastic Canteen With Pistol Belt Kit Walmart Com Walmart Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/da/17/6ada175ccaedde21d14d461ea93fe194.jpg" data-lightbox="roadtrip" data-title="Weekly Deal 1l Military Canteen Bicycle Camping Tactical Backpack Camping Kettle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/da/17/6ada175ccaedde21d14d461ea93fe194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVKIZa073_TpuoX34AwPpFybaLn7dhzxX1OA';" alt="Weekly Deal 1l Military Canteen Bicycle Camping Tactical Backpack Camping Kettle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Weekly Deal 1l Military Canteen Bicycle Camping Tactical Backpack Camping Kettle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/64/3b/8c643b8b564961da1090b6ee41bc3441.jpg" data-lightbox="roadtrip" data-title="Swedish Army Issue Aluminum Canteen Wool Cover Swedish Army Canteen Army Navy Surplus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/64/3b/8c643b8b564961da1090b6ee41bc3441.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZH84ba5EnEkTMZqiI3FlJYToChbLWVYMz0Q';" alt="Swedish Army Issue Aluminum Canteen Wool Cover Swedish Army Canteen Army Navy Surplus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swedish Army Issue Aluminum Canteen Wool Cover Swedish Army Canteen Army Navy Surplus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/34/8b/db348be7604ef53e5357520a7dba1e88.jpg" data-lightbox="roadtrip" data-title="Swiss Military Bicycle Pannier Bicycle Panniers Bicycle Pannier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/34/8b/db348be7604ef53e5357520a7dba1e88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6tFoIphwVlsxQuBYsmYq4YJTszKzgWG7IQ';" alt="Swiss Military Bicycle Pannier Bicycle Panniers Bicycle Pannier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swiss Military Bicycle Pannier Bicycle Panniers Bicycle Pannier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.sportsmansguide.com/adimgs/l/1/136512m2_ts.jpg" data-lightbox="roadtrip" data-title="10 Used French Military Canteen Sets 136512 Mess Kits Cooking At Sportsman S Guide">
+											<img class="card-img v-image ads-img " src="https://image.sportsmansguide.com/adimgs/l/1/136512m2_ts.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdY6kcw9AxAfGjLdBfL-imowk3VqtM1ykLg';" alt="10 Used French Military Canteen Sets 136512 Mess Kits Cooking At Sportsman S Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Used French Military Canteen Sets 136512 Mess Kits Cooking At Sportsman S Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.axisdraco.com/images/k/army%20canteen-414fmf.jpg" data-lightbox="roadtrip" data-title="Army Canteen Camping Hiking Gear For Sale Order Online Axisdraco Com">
+											<img class="card-img v-image ads-img " src="https://www.axisdraco.com/images/k/army%20canteen-414fmf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd2yLzJ6pZjEXueiT9dX0egZPqAv5GQ0sJYw';" alt="Army Canteen Camping Hiking Gear For Sale Order Online Axisdraco Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Canteen Camping Hiking Gear For Sale Order Online Axisdraco Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/ad/37/92ad37c9e8e67f73fbd8f1218ea76769.png" data-lightbox="roadtrip" data-title="Austrian Army 1985 Ktm 250 Krad Ktm 250 Ktm Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/ad/37/92ad37c9e8e67f73fbd8f1218ea76769.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4SOIgOVIRF0jUyLrREmc_PhxKI6WNKOE-YQ';" alt="Austrian Army 1985 Ktm 250 Krad Ktm 250 Ktm Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Austrian Army 1985 Ktm 250 Krad Ktm 250 Ktm Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/a2/76/89a276ed11cb9874177ba8dafcb3c40a.jpg" data-lightbox="roadtrip" data-title="Every Royal Enfield Military Needs A Canteen Royal Enfield Custom Cycles Enfield">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/a2/76/89a276ed11cb9874177ba8dafcb3c40a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjjSAMAWUM7B8CsWjNQCJUnmDStpJSD58tQ';" alt="Every Royal Enfield Military Needs A Canteen Royal Enfield Custom Cycles Enfield">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Every Royal Enfield Military Needs A Canteen Royal Enfield Custom Cycles Enfield</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/18/0e/19180e75f8fab3955cda2b46ad886fbe.jpg" data-lightbox="roadtrip" data-title="Lot Of 2 Military Style Water Canteen W Web Belt Sleeve Holds 1 Quart Army Green Canteens Ebay Camping Campingg Water Canteen Army Green Reusable Tote Bags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/18/0e/19180e75f8fab3955cda2b46ad886fbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaV6tk6tdzr4T36sdF26ScZNmbePQL6KaRpg';" alt="Lot Of 2 Military Style Water Canteen W Web Belt Sleeve Holds 1 Quart Army Green Canteens Ebay Camping Campingg Water Canteen Army Green Reusable Tote Bags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lot Of 2 Military Style Water Canteen W Web Belt Sleeve Holds 1 Quart Army Green Canteens Ebay Camping Campingg Water Canteen Army Green Reusable Tote Bags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/af/5c/ecaf5c7096000cfbaa7e13ea2fcc7340.png" data-lightbox="roadtrip" data-title="Lc Pistol Belt 2qt Collapsible Desert Canteen Cover Pouch Water Canteen Pouch Backpack Cover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/af/5c/ecaf5c7096000cfbaa7e13ea2fcc7340.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTao5g4G3lVo8BeAPl79FHn0AG0mRX2emDe0g';" alt="Lc Pistol Belt 2qt Collapsible Desert Canteen Cover Pouch Water Canteen Pouch Backpack Cover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lc Pistol Belt 2qt Collapsible Desert Canteen Cover Pouch Water Canteen Pouch Backpack Cover</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images-na.ssl-images-amazon.com/images/I/41FABHZ4GcL._AC_SY355_.jpg" data-lightbox="roadtrip" data-title="Amazon Com 1 5l Aluminum Military Water Bottle With Shoulder Strap Military Water Bottles Military Army Canteen Home Improvement">
+											<img class="card-img v-image ads-img " src="https://images-na.ssl-images-amazon.com/images/I/41FABHZ4GcL._AC_SY355_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOD6SOdi4bMR4okA0lrWZT3HbohVCza24Rsw';" alt="Amazon Com 1 5l Aluminum Military Water Bottle With Shoulder Strap Military Water Bottles Military Army Canteen Home Improvement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazon Com 1 5l Aluminum Military Water Bottle With Shoulder Strap Military Water Bottles Military Army Canteen Home Improvement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/6f/cb/746fcb367b4fc2b65154a7397856b1d2.jpg" data-lightbox="roadtrip" data-title="850ml Army Style Patrol Plastic Water Bottle Military Canteen Outdoor Sport Camping Hiking Travel Camo Bag Learn Hiking Supplies Hiking Equipment Camo Bag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/6f/cb/746fcb367b4fc2b65154a7397856b1d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa48C1H5WhuUm_SPjJb8i5Y2HswAvRiAsR7Q';" alt="850ml Army Style Patrol Plastic Water Bottle Military Canteen Outdoor Sport Camping Hiking Travel Camo Bag Learn Hiking Supplies Hiking Equipment Camo Bag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">850ml Army Style Patrol Plastic Water Bottle Military Canteen Outdoor Sport Camping Hiking Travel Camo Bag Learn Hiking Supplies Hiking Equipment Camo Bag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/2c/5a/e22c5a621c3790d88ede8a577db49de3.jpg" data-lightbox="roadtrip" data-title="Usgi Stainless Steel Canteen Cup Genuine Military Issue You Can Find Out More Details At The Affiliate Outdoor Camping Kitchen Stainless Steel Cups Stainless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/2c/5a/e22c5a621c3790d88ede8a577db49de3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS71hfOnh61hAPzELtqWgRX5ZsrA9M2EzvMHw';" alt="Usgi Stainless Steel Canteen Cup Genuine Military Issue You Can Find Out More Details At The Affiliate Outdoor Camping Kitchen Stainless Steel Cups Stainless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usgi Stainless Steel Canteen Cup Genuine Military Issue You Can Find Out More Details At The Affiliate Outdoor Camping Kitchen Stainless Steel Cups Stainless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/22/e4/a022e4f4356fac11d2ac89c88757d933.jpg" data-lightbox="roadtrip" data-title="Harley Davidson Street Series Now On Sale Via Army Canteen In 2020 Harley Davidson Street Harley Davidson Pictures Harley Davidson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/22/e4/a022e4f4356fac11d2ac89c88757d933.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQJYHfEF_YTONx5vrKlCSB3Um0OTkbDidsw';" alt="Harley Davidson Street Series Now On Sale Via Army Canteen In 2020 Harley Davidson Street Harley Davidson Pictures Harley Davidson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Harley Davidson Street Series Now On Sale Via Army Canteen In 2020 Harley Davidson Street Harley Davidson Pictures Harley Davidson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/19/ec/1a19ecf26f884e8407a114601de4bb62.jpg" data-lightbox="roadtrip" data-title="Pin On Military Canteen Hydration System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/19/ec/1a19ecf26f884e8407a114601de4bb62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-3jGulOszB_lki8sU6YJhcumUEG8p-ar9cw';" alt="Pin On Military Canteen Hydration System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Canteen Hydration System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/tf-lmao-meaning.html">Tf Lmao Meaning</a></li>
+													<li class="list-group-item"><a href="/theragun-elite-military-discount.html">Theragun Elite Military Discount</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-military-discount-policy.html">Tractor Supply Military Discount Policy</a></li>
+													<li class="list-group-item"><a href="/top-100-companies-that-hire-veterans.html">Top 100 Companies That Hire Veterans</a></li>
+													<li class="list-group-item"><a href="/sprint-military-phone-deals.html">Sprint Military Phone Deals</a></li>
+													<li class="list-group-item"><a href="/us-military-vets-crossword.html">Us Military Vets Crossword</a></li>
+													<li class="list-group-item"><a href="/uber-ride-military-discount.html">Uber Ride Military Discount</a></li>
+													<li class="list-group-item"><a href="/t-mobile-magenta-military-plus.html">T Mobile Magenta Military Plus</a></li>
+													<li class="list-group-item"><a href="/the-imf-careers.html">The Imf Careers</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-military-discount-memorial-day-2020.html">Tractor Supply Military Discount Memorial Day 2020</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-and-military-discount.html">Tractor Supply And Military Discount</a></li>
+													<li class="list-group-item"><a href="/top-companies-to-hire-veterans.html">Top Companies To Hire Veterans</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-veterans-day-sale-2020.html">Tractor Supply Veterans Day Sale 2020</a></li>
+													<li class="list-group-item"><a href="/starbucks-hiring-veterans-and-refugees.html">Starbucks Hiring Veterans And Refugees</a></li>
+													<li class="list-group-item"><a href="/uber-eats-military-discount.html">Uber Eats Military Discount</a></li>
+													<li class="list-group-item"><a href="/ttu-military-veterans-programs.html">Ttu Military Veterans Programs</a></li>
+													<li class="list-group-item"><a href="/tdrl-military-disability-retirement.html">Tdrl Military Disability Retirement</a></li>
+													<li class="list-group-item"><a href="/us-army-vets-crossword.html">Us Army Vets Crossword</a></li>
+													<li class="list-group-item"><a href="/top-20-country-gdp-ppp-ranking.html">Top 20 Country Gdp Ppp Ranking</a></li>
+													<li class="list-group-item"><a href="/united-airlines-veterans-advantage-cost.html">United Airlines Veterans Advantage Cost</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

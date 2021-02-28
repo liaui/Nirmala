@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Home Buying For Active Duty Military - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Home Buying For Active Duty Military",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/fd/cd/cd/fdcdcdb95d94ada0efba336c06d0f4cc.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=home+buying+for+active+duty+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Home Buying For Active Duty Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For civilians the decision to buy a home is already wrought with tough decisions and brings with it a huge financial commitment doubly so for military families when you factor in variables like PCS schedule and endless unknowns. In some situations you may be protected from foreclosure if you cant maintain your mortgage because of your military service. And navigatig the path to that feeling on creating a safe place for your family has more tha a few curves. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/imf-india-growth.html">imf india growth</a>
+											<a class="badge badge-primary" href="/imf-inflation-forecast-norway.html">imf inflation forecast norway</a>
+											<a class="badge badge-info" href="/imf-india-gdp-forecast.html">imf india gdp forecast</a>
+											<a class="badge badge-secondary" href="/imf-inflation-spain.html">imf inflation spain</a>
+											<a class="badge badge-info" href="/imf-inflation-targeting-countries.html">imf inflation targeting countries</a>
+											<a class="badge badge-light" href="/imf-inflation-covid.html">imf inflation covid</a>
+											<a class="badge badge-dark" href="/imf-international-reserves-definition.html">imf international reserves definition</a>
+											<a class="badge badge-dark" href="/imf-internship-cover-letter.html">imf internship cover letter</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the right site.  Our website gives you hints for seeing the highest quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/4b/05/2d4b05e7016e9e9cc075de7f7bc3dbf3.jpg" data-lightbox="roadtrip" data-title="Buying A House After Leaving The Military Military Wife Life Military Love Military Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/4b/05/2d4b05e7016e9e9cc075de7f7bc3dbf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXWE1trWJ_-pSff5igCKXkPCA1cmFXkT3HnA';" alt="Buying A House After Leaving The Military Military Wife Life Military Love Military Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House After Leaving The Military Military Wife Life Military Love Military Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/99/59/929959902da97542a9eead51ede9f85c.jpg" data-lightbox="roadtrip" data-title="Military And Civilian Home Buyers Are Different Home Buying Mortgage Advice Real Estate News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/99/59/929959902da97542a9eead51ede9f85c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs_ssbpy9T8i5OmotZT8wcjUZyfae_2nkIvQ';" alt="Military And Civilian Home Buyers Are Different Home Buying Mortgage Advice Real Estate News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Civilian Home Buyers Are Different Home Buying Mortgage Advice Real Estate News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/7b/32/d07b32e00b68605feef3e11a22c3fb9b.png" data-lightbox="roadtrip" data-title="Selling Your Home To A Va Home Loan Buyer In 2021 Home Loans Loan Home Buying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/7b/32/d07b32e00b68605feef3e11a22c3fb9b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsK4pM4VwT30gGqfBQJr5da4bqE6f69Vxp_g';" alt="Selling Your Home To A Va Home Loan Buyer In 2021 Home Loans Loan Home Buying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Selling Your Home To A Va Home Loan Buyer In 2021 Home Loans Loan Home Buying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/30/ff/6e30ff93d892b62eaa86045e4dfd7465.png" data-lightbox="roadtrip" data-title="Military Can Save An Average Of 1 500 Saving Money Teacher Help Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/30/ff/6e30ff93d892b62eaa86045e4dfd7465.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixnSwy1J3poTi9AI2lNH9LHhyaaW-3v_s9w';" alt="Military Can Save An Average Of 1 500 Saving Money Teacher Help Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Can Save An Average Of 1 500 Saving Money Teacher Help Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/e6/cc/4be6ccea27a39a0cf9ce0bd9f454c72f.png" data-lightbox="roadtrip" data-title="Pin By Veterans United Home Loans On All About Va Loans Home Buying Process Home Buying Tips Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/e6/cc/4be6ccea27a39a0cf9ce0bd9f454c72f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPPWZsBGbWcJNS5kBAECD7I6k2gKyOmziW1w';" alt="Pin By Veterans United Home Loans On All About Va Loans Home Buying Process Home Buying Tips Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Veterans United Home Loans On All About Va Loans Home Buying Process Home Buying Tips Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/53/6c/47536c5924d578de54d10bb6d541cd6b.png" data-lightbox="roadtrip" data-title="Qualifying For A Va Home Loan Ga Real Estate News Home Loans Refinance Mortgage Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/53/6c/47536c5924d578de54d10bb6d541cd6b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjdWfHPAp7Qk7Kb17Fx0Nje_psMsub6cPQA';" alt="Qualifying For A Va Home Loan Ga Real Estate News Home Loans Refinance Mortgage Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qualifying For A Va Home Loan Ga Real Estate News Home Loans Refinance Mortgage Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/e8/48/e7/e848e705fa85194382f2ebdb09942865.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjdWfHPAp7Qk7Kb17Fx0Nje_psMsub6cPQA';" alt="Qualifying For A Va Home Loan Ga Real Estate News Home Loans Refinance Mortgage Mortgage Loans">
+										<div class="card-body">
+						<h3 class="h5"><b>As you near the end of your active-duty time then you can save up cash for a down payment spend months on market research in your chosen area with no time pressure and buy a cheaper fixer-upper in your favorite neighborhood.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Home buying for active duty military</strong>. 
+								
+																	Military Housing Assistance Fund MHAF is a fund of Virtual Sports Academy and operates a home buying assistance program dedicated to active duty and veteran service members and their families. 
+																	Military personnel and Veterans. 
+																	Active military servicemembers can get the entire Microsoft 365 package for just 69year a 30 discount. 
+																	Renting out your home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even after active duty you still have the average Americans risk of moving to a new home every seven years. 
+																	And you should honor it. 
+																	When you go to qualify on the mortgage qualify on the lowest income even if both of you are working. 
+																	Instead wait a year or two until youve successfully completed your transition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However you will be expected to provide a firm occupancy date before you close. 
+																	In those cases lenders would likely take the service members own living and travel expenses into account when evaluating what they can afford. 
+																	Since the VA loan programs inception in 1944 the Department of Veterans Affairs has backed more than. 
+																	Its rough for a member of the military to buy a home and sell it during a duty assignment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the Servicemembers Civil Relief Act SCRA If you purchased a home prior to beginning active duty you can have your mortgage interest rate lowered to 6. 
+																	Weve owned Money Pit since 1989. 
+																	Activate your military discount on Microsoft Office through this link or the button above. 
+																	The 365 Home suite comes with the entire Office collection not just the basics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Take your time. 
+																	Youre setting yourself up for more financial failure and a heartache with mortgage underwriting. 
+																	Buying a home can be stressful but not if youre well-informed. 
+																	The MHAF negotiates directly with sellers to help with closing costs which can add up to 2 to 5 percent of a homes value. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military home loans are also known as VA home loans VA mortgages or military mortgages. 
+																	Tips for buying a house while on active duty Always think about your end goal. 
+																	Ask yourself when will you be moving and if you can you sell it or rent it so you. 
+																	So if youre buying a home that youll live in once youve left the military you can purchase it up to a year before the date on which you take up residence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The service is free and veterans and military members do not have to pay back any of the costs. 
+																	For military personnel with three- or four-year assignments buying a home rarely makes sense. 
+																	All excess interest payments under a higher interest rate will be forgiven. 
+																	Other programs are available for non-military families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For active duty military families home ownership can sometimes feel unthinkable unless retirement is on the horizon and youre able to finally set down roots. 
+																	This program aids in helping veterans and active-military members pay the closing costs on a new home. 
+																	All former and active duty military families may purchase ANY home on the market through the Soldier Next Door Program. 
+																	Based on the research HSH conducted earlier this year covering first-time homebuyer and homebuyer assistance programs in all 50 states and Washington DC here are selected states and their home buying programs specifically for veterans andor active military personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a general example an active duty borrower stationed in California could seek a VA loan to purchase a home in Florida provided in part that his or her spouse can fulfill the occupancy requirement. 
+																	And even then it might be wise to continue to rent. 
+																	Youd be smarter to live below basic allowance for housing and save the difference to build a chunky. 
+																	In many cases staying in one place for an average of three years isnt very conducive to owning a home especially if you have to sell the home when its time to PCS instead of renting it to a tenant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rules are also laxer for those approaching retirement. 
+																	Plus you may be eligible for the Soldier Next Door Grant and additional down payment assistance for for military families. 
+																	Home-Buying Benefits for Veterans Military Buyers VA loan program. 
+																	Our unique approach to the home buying process allows you to receive gift funds to help cover part of the closing costs on your home purchase. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are not former or active duty military CLICK HERE. 
+																	Dont buy a home when you leave active duty either. 
+																	VA loans are focused on getting buyers into homes theyll live in full time. 
+																	When buying a home this act allows active-duty service members to limit the interest rate for their mortgages to six percent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youve served your country and as a token of appreciation there is a home loan program exclusively for active US. 
+																	Occupancy power of attorney. 
+																	If one of you. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/24/f7/5e24f718daab42c623b3d420f59739eb.jpg" data-lightbox="roadtrip" data-title="Veterans Day 1115 Real Estate Infographic Real Estate Buying Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/24/f7/5e24f718daab42c623b3d420f59739eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBk83I0IcM0J-7qEq39yt-bI5fLPHc03FAmg';" alt="Veterans Day 1115 Real Estate Infographic Real Estate Buying Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day 1115 Real Estate Infographic Real Estate Buying Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/ba/56/19ba56aea616e2b06ca4b54ce5955068.png" data-lightbox="roadtrip" data-title="Pin By Veterans United Home Loans On Military Financial Fitness Veterans United Military Family Home Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/ba/56/19ba56aea616e2b06ca4b54ce5955068.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ540RVwPSXHpzu12ad9EVCXvxoMYYhDz5EbQ';" alt="Pin By Veterans United Home Loans On Military Financial Fitness Veterans United Military Family Home Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Veterans United Home Loans On Military Financial Fitness Veterans United Military Family Home Ownership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/f9/4a/92f94a6f28b50f064414316d1adc3401.png" data-lightbox="roadtrip" data-title="Rebates And Incentives For Military Home Buyers Home Buying Incentive Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/f9/4a/92f94a6f28b50f064414316d1adc3401.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4OODfYNYQbwEMC6Gvhwnb2kwYrqvJCrxoQ';" alt="Rebates And Incentives For Military Home Buyers Home Buying Incentive Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rebates And Incentives For Military Home Buyers Home Buying Incentive Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/c7/ad/3ec7ad9384d2de43089096cdda26b003.png" data-lightbox="roadtrip" data-title="Louisville Kentucky Va Home Loan Mortgage Lender Louisville Kentucky Mortgage Lender For Fha Va Va Mortgage Loans Refinance Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/c7/ad/3ec7ad9384d2de43089096cdda26b003.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5hWcFFOeskvF_imQq0nV88rx3DirA0nsXw';" alt="Louisville Kentucky Va Home Loan Mortgage Lender Louisville Kentucky Mortgage Lender For Fha Va Va Mortgage Loans Refinance Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Kentucky Va Home Loan Mortgage Lender Louisville Kentucky Mortgage Lender For Fha Va Va Mortgage Loans Refinance Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/c9/cc/f2c9ccaf356c25284d0255efce08b73b.jpg" data-lightbox="roadtrip" data-title="Did You Know That I Offer Active Duty Retired Military Wounded Warriors Cash Back At Closing Please Mes Home Buying Tips Retired Military Wounded Warrior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/c9/cc/f2c9ccaf356c25284d0255efce08b73b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJ8Wp7-1pB8OS72FzUeX-EQc-nPWgof7-fA';" alt="Did You Know That I Offer Active Duty Retired Military Wounded Warriors Cash Back At Closing Please Mes Home Buying Tips Retired Military Wounded Warrior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Know That I Offer Active Duty Retired Military Wounded Warriors Cash Back At Closing Please Mes Home Buying Tips Retired Military Wounded Warrior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/8c/a3/e68ca3b42e37730850e3975d1d1a14ad.jpg" data-lightbox="roadtrip" data-title="Military On The Move Is A Real Estate Incentive Program Developed For Active Duty Retired Military And Wo Dfw Real Estate Selling House Real Estate Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/8c/a3/e68ca3b42e37730850e3975d1d1a14ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIVPGqfDN0871eb75EGoj1Tpi05lqDY3rrKg';" alt="Military On The Move Is A Real Estate Incentive Program Developed For Active Duty Retired Military And Wo Dfw Real Estate Selling House Real Estate Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military On The Move Is A Real Estate Incentive Program Developed For Active Duty Retired Military And Wo Dfw Real Estate Selling House Real Estate Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/1c/ed/351ced47f2cf0c7d3552705d9308e530.jpg" data-lightbox="roadtrip" data-title="Here Are The Details Of How We Proudly Serves Our Nation S Veterans And Active Duty Military Person Mortgage Loan Officer Small Business Loans Mortgage Lenders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/1c/ed/351ced47f2cf0c7d3552705d9308e530.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7JXWfRP25Fe0EJ2Vtj5IfTrlrGKgIznQ5g';" alt="Here Are The Details Of How We Proudly Serves Our Nation S Veterans And Active Duty Military Person Mortgage Loan Officer Small Business Loans Mortgage Lenders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are The Details Of How We Proudly Serves Our Nation S Veterans And Active Duty Military Person Mortgage Loan Officer Small Business Loans Mortgage Lenders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/82/df/cb/82dfcb915c2af783e829d337cfc00e01.jpg" data-lightbox="roadtrip" data-title="How To Declutter Before Moving Have You Tossed Out The Right Stuff Home Buying Military Move Home Buying Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/82/df/cb/82dfcb915c2af783e829d337cfc00e01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbJwHfcySFunY_Ad-GLDvlDuy_2m96JmxgTg';" alt="How To Declutter Before Moving Have You Tossed Out The Right Stuff Home Buying Military Move Home Buying Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Declutter Before Moving Have You Tossed Out The Right Stuff Home Buying Military Move Home Buying Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/e7/fe/b9e7feccefa3d6773621c53b8514dc89.jpg" data-lightbox="roadtrip" data-title="Should Military Members Buy Or Rent A Home What To Know Before Deciding Real Estate Advice Military Housing Decorating Rent">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/e7/fe/b9e7feccefa3d6773621c53b8514dc89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnUGktzxOJL26ev7GyXsjkw10zXAO_PoUctA';" alt="Should Military Members Buy Or Rent A Home What To Know Before Deciding Real Estate Advice Military Housing Decorating Rent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should Military Members Buy Or Rent A Home What To Know Before Deciding Real Estate Advice Military Housing Decorating Rent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/27/f3/52/27f352993339eb14ea1254c3ebbd4fe0.jpg" data-lightbox="roadtrip" data-title="Should Military Members Buy Or Rent A Home Use The 1 Rule To Decide Renting A House Rent Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/27/f3/52/27f352993339eb14ea1254c3ebbd4fe0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr2pC61l973sKgfjNpEggk3CG3KDVJxjPYoA';" alt="Should Military Members Buy Or Rent A Home Use The 1 Rule To Decide Renting A House Rent Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should Military Members Buy Or Rent A Home Use The 1 Rule To Decide Renting A House Rent Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e8/48/e7/e848e705fa85194382f2ebdb09942865.jpg" data-lightbox="roadtrip" data-title="Attn Active Duty Military Members Families Buying Or Selling A Home Due To Your Upcoming Pcs Contact Me Today To S Selling House Active Duty How To Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e8/48/e7/e848e705fa85194382f2ebdb09942865.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJH0vry_hA-NChKX3QaHGEhkZ6ApzH2idiDw';" alt="Attn Active Duty Military Members Families Buying Or Selling A Home Due To Your Upcoming Pcs Contact Me Today To S Selling House Active Duty How To Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attn Active Duty Military Members Families Buying Or Selling A Home Due To Your Upcoming Pcs Contact Me Today To S Selling House Active Duty How To Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/cd/cd/fdcdcdb95d94ada0efba336c06d0f4cc.png" data-lightbox="roadtrip" data-title="Increased Buying Power For Veterans In 2020 Best Loans Real Estate News Chicagoland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/cd/cd/fdcdcdb95d94ada0efba336c06d0f4cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfyeZupA3WLe8g6eUlQwxanoulgA-mlIC-uQ';" alt="Increased Buying Power For Veterans In 2020 Best Loans Real Estate News Chicagoland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Increased Buying Power For Veterans In 2020 Best Loans Real Estate News Chicagoland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/7b/de/3e7bded6e93ed6ce77a936bfb65a5c91.jpg" data-lightbox="roadtrip" data-title="Benefits For Nations Heroes Real Estate Forms Software Zipform By Ziplogix Real Estate Forms Real Estate Infographic Real Estate One">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/7b/de/3e7bded6e93ed6ce77a936bfb65a5c91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSq0qpYgBwz9QVU9YyKVQyMHjy6VAghPReg';" alt="Benefits For Nations Heroes Real Estate Forms Software Zipform By Ziplogix Real Estate Forms Real Estate Infographic Real Estate One">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits For Nations Heroes Real Estate Forms Software Zipform By Ziplogix Real Estate Forms Real Estate Infographic Real Estate One</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/ce/8b/7fce8b4829d2d9d778f750ce67d52a1c.jpg" data-lightbox="roadtrip" data-title="Should Military Members Own Or Rent A Home What To Know Before You Decide Military Relocation Military Housing Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/ce/8b/7fce8b4829d2d9d778f750ce67d52a1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSniEIXmRce5j2ajvrBwY_k0gk9lvvQbHygag';" alt="Should Military Members Own Or Rent A Home What To Know Before You Decide Military Relocation Military Housing Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should Military Members Own Or Rent A Home What To Know Before You Decide Military Relocation Military Housing Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/05/49/99054998cadd28af4672658a2256b622.jpg" data-lightbox="roadtrip" data-title="Check 42 000 Va Housing Benefit Eligibility Housing Benefit Mortgage Tips Ways To Save Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/05/49/99054998cadd28af4672658a2256b622.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjtF_Rt6rQT5Py6nVJ8qPKxD7jeG1S8RC6w';" alt="Check 42 000 Va Housing Benefit Eligibility Housing Benefit Mortgage Tips Ways To Save Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check 42 000 Va Housing Benefit Eligibility Housing Benefit Mortgage Tips Ways To Save Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-apple-hire-veterans.html">Does Apple Hire Veterans</a></li>
+													<li class="list-group-item"><a href="/do-reservist-get-bah-when-deployed.html">Do Reservist Get Bah When Deployed</a></li>
+													<li class="list-group-item"><a href="/does-davids-bridal-give-military-discount.html">Does Davids Bridal Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-belle-tire-offer-veterans-discount.html">Does Belle Tire Offer Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-bjs-give-military-discount.html">Does Bjs Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/do-veterans-get-a-verizon-discount.html">Do Veterans Get A Verizon Discount</a></li>
+													<li class="list-group-item"><a href="/does-discount-tire-give-veteran-discounts.html">Does Discount Tire Give Veteran Discounts</a></li>
+													<li class="list-group-item"><a href="/does-directv-offer-a-veterans-discount.html">Does Directv Offer A Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-famous-daves-give-military-discounts.html">Does Famous Daves Give Military Discounts</a></li>
+													<li class="list-group-item"><a href="/does-famous-daves-do-military-discount.html">Does Famous Daves Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-apple-honor-military-discount.html">Does Apple Honor Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-academy-offer-military-discount.html">Does Academy Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-buy-buy-baby-have-a-military-discount.html">Does Buy Buy Baby Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-american-airlines-give-veterans-discount.html">Does American Airlines Give Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/do-vets-hire-nurses.html">Do Vets Hire Nurses</a></li>
+													<li class="list-group-item"><a href="/do-military-get-discounts-at-disney-world.html">Do Military Get Discounts At Disney World</a></li>
+													<li class="list-group-item"><a href="/does-bjs-give-a-military-discount.html">Does Bjs Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-bed-bath-and-beyond-take-military-discount.html">Does Bed Bath And Beyond Take Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-dell-offer-veteran-discounts.html">Does Dell Offer Veteran Discounts</a></li>
+													<li class="list-group-item"><a href="/do-army-vets-get-paid.html">Do Army Vets Get Paid</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

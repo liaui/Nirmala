@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Get A Dd214 After Discharge - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Get A Dd214 After Discharge",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/db/3f/50/db3f50ff2cb3f3b0021022ec87fccd49.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+get+a+dd214+after+discharge",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Get A Dd214 After Discharge</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The problem with this type of discharge is several-fold first the narrative reason for separation is explained. The request needs to include the deceased veterans full name Social Security number dates of service branch of service place of discharge and your reason for making the request. Go to wwwebenefitsvagov and register. <br>				
+			</p>
+										<a class="badge badge-warning" href="/jobs-hiring-veterans-in-georgia.html">jobs hiring veterans in georgia</a>
+											<a class="badge badge-success" href="/irobot-military-discount-code.html">irobot military discount code</a>
+											<a class="badge badge-warning" href="/japan-imf-intervention.html">japan imf intervention</a>
+											<a class="badge badge-light" href="/japan-imf-scholarship-program-for-asia.html">japan imf scholarship program for asia</a>
+											<a class="badge badge-info" href="/ivf-treatment-under-cghs.html">ivf treatment under cghs</a>
+											<a class="badge badge-secondary" href="/is-there-a-military-discount-for-ticketmaster.html">is there a military discount for ticketmaster</a>
+											<a class="badge badge-primary" href="/international-monetary-fund-imf-jobs.html">international monetary fund imf jobs</a>
+											<a class="badge badge-dark" href="/jobs-hiring-veterans-in-florida.html">jobs hiring veterans in florida</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/ac/f3/f7acf3f5ee3e26bbbdb15dbe8f427fb8.png" data-lightbox="roadtrip" data-title="How To Obtain Your Dd214 Discharge Papers And Military Records Military Records Military Service Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/ac/f3/f7acf3f5ee3e26bbbdb15dbe8f427fb8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSZjkKUlEXku_pJUr2a_rSh1GoxJV-i5fYpA';" alt="How To Obtain Your Dd214 Discharge Papers And Military Records Military Records Military Service Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Obtain Your Dd214 Discharge Papers And Military Records Military Records Military Service Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/ff/4f/13ff4f369302df6611eff04c522ad652.jpg" data-lightbox="roadtrip" data-title="Preserving Memories Saving Water Damaged Photos Genealogy Websites Family History Book Genealogy Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/ff/4f/13ff4f369302df6611eff04c522ad652.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0YrnlaAHDTTed9KzPAcUabyr5RjkPakBVw';" alt="Preserving Memories Saving Water Damaged Photos Genealogy Websites Family History Book Genealogy Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Preserving Memories Saving Water Damaged Photos Genealogy Websites Family History Book Genealogy Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/a2/a7/0ca2a782e5fa300fcf3cd193c9fb884c.jpg" data-lightbox="roadtrip" data-title="Dd214 Is The Discharge Papers Or Separation Documents To Include Military Service Records Or Proof Of Milit Military Records Genealogy History Genealogy Forms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/a2/a7/0ca2a782e5fa300fcf3cd193c9fb884c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9foWpgF6k84zsF_OkmtRy671q3xmIdFBeA';" alt="Dd214 Is The Discharge Papers Or Separation Documents To Include Military Service Records Or Proof Of Milit Military Records Genealogy History Genealogy Forms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dd214 Is The Discharge Papers Or Separation Documents To Include Military Service Records Or Proof Of Milit Military Records Genealogy History Genealogy Forms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/8b/a2/2d8ba24087085691426cdd8d6fc56311.jpg" data-lightbox="roadtrip" data-title="Honorable Discharge Certificate Template Unique Marine Corps Dd214 Form Dd214 Fillable Form Seterms Certificate Templates Free Certificate Templates Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/8b/a2/2d8ba24087085691426cdd8d6fc56311.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF0ccMma3Gy-JiFwGNlb1AHwDebTfG06Z_8A';" alt="Honorable Discharge Certificate Template Unique Marine Corps Dd214 Form Dd214 Fillable Form Seterms Certificate Templates Free Certificate Templates Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honorable Discharge Certificate Template Unique Marine Corps Dd214 Form Dd214 Fillable Form Seterms Certificate Templates Free Certificate Templates Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/fd/f0/3ffdf00263b6257e1ce6cac1056ce649.jpg" data-lightbox="roadtrip" data-title="Honorable Discharge Certificate Template Awesome Proof Of Military Service Dd 214 Certificate Templates Free Certificate Templates Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/fd/f0/3ffdf00263b6257e1ce6cac1056ce649.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCZTRapw8M8N5xSAms6aDqAss2DY6td9VgQ';" alt="Honorable Discharge Certificate Template Awesome Proof Of Military Service Dd 214 Certificate Templates Free Certificate Templates Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honorable Discharge Certificate Template Awesome Proof Of Military Service Dd 214 Certificate Templates Free Certificate Templates Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/ef/9b/7aef9b40d5166aa36f1b154e588cd1a2.png" data-lightbox="roadtrip" data-title="Dd214 Express Service Military Records Questionnaire Template Job Application Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/ef/9b/7aef9b40d5166aa36f1b154e588cd1a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCYXM7QJh8dVvPHtx0gkP8boPfSHS-pWwcQw';" alt="Dd214 Express Service Military Records Questionnaire Template Job Application Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dd214 Express Service Military Records Questionnaire Template Job Application Form</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/00/b7/b3/00b7b3a0fdc52b1c81ff514fb4cdca29.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCYXM7QJh8dVvPHtx0gkP8boPfSHS-pWwcQw';" alt="Dd214 Express Service Military Records Questionnaire Template Job Application Form">
+										<div class="card-body">
+						<h3 class="h5"><b>If lost or not requested service members can order a Service 2 Copy which is the same as the Member 4 Copy.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to get a dd214 after discharge</strong>. 
+								
+																	Please be aware that the DD-214 is a certificate of release or discharge from active duty. 
+																	When an individual is separated from military service hisher Field Personnel File which contains all military and health records is forwarded for storage to the National Personnel Records Center. 
+																	Discharge Status Submit DD Form 293 Application for the Review of Discharge or Dismissal from the Armed Forces of the United Statesto the relevant service branch. 
+																	Youll need to sign in to milConnect to get your military service records To use this feature youll need a Premium DS Logon account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Defense Department issues to each veteran a DD-214 identifying the veterans condition of discharge - honorable general other than honorable dishonorable or bad conduct. 
+																	If you are a current active duty or reserve member contact your Servicing Personnel Office for assistance. 
+																	How do I obtain a copy of my DD-214. 
+																	It is important for service members to request this copy and retain in a secure place. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to get a copy of the DD-214. 
+																	Your My HealtheVet or IDme credentials wont work on the milConnect website. 
+																	Generally there is no charge for basic military personnel and medical record information provided to veterans next of kin and authorized representatives from Federal non-archival records. 
+																	How to Get Your DD214 via Email or Online When we receive official copies of your DD214 through the NPRC Research Room we bring them back to our office scan them in encrypt them with a password and email them to you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mail the DD Form 214 request with Standard Form 180 SF-180 to National Personnel Records Center 1 Archives Drive St. 
+																	The secretary of a military department acting through a board for correction of military records has authority to change any military record when. 
+																	If you have a DD215 and want an updated DD214 click the Get Started button above. 
+																	Before January 1 1950 several similar forms were used by the military services including the WD AGO 53 WD AGO 55 WD AGO 53-55 NAVPERS 553 NAVMC 78PD and the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I received a discharge upgrade or correction but my upgrade came in the form of a DD215 and I want an updated DD214 After youve answered all the questions youll see instructions for how to request a new DD214. 
+																	If you are the next of kin of a deceased veteran you must provide proof of death of the veteran such as a copy of death certificate letter from funeral home or published obituary. 
+																	Any errors on the replacement DD form 214 were on the original DD214 and should be corrected as soon as possible. 
+																	If a veteran is deceased it is possible for the veterans relatives to receive a copy of the DD214 but only the veterans next of kin can make this request. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Submit a military records request to get your DD214 or other military service records through the milConnect website. 
+																	Free if Discharge Date is LESS than 62 years ago. 
+																	The best way to receive a copy of your DD 214 is get an eBenefits account. 
+																	Such requests for change must be processed through the Department of Defense Army Review Boards Agency ARBA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once you have a premium account click on the Manage Benefits tab and go to the Military Personnel File DPRIS link to request a copy of the DD 214. 
+																	It is possible that a general discharge can be upgraded provided that it goes through a formal appeal process and is approved for the upgrade. 
+																	How do I get my DD214 after being discharged. 
+																	Correction of Military Records. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The conditions under which the discharge was given is included on the service members DD-214 the document which outlines the specifics of their separation from military service. 
+																	You can then access them on your phone or other device pull them up and print them out whenever you need them. 
+																	Request a copy from your losing units orderly room or command support staff. 
+																	Often this can be stated as simply as misconduct drug abuse in line 28 of the DD 214. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you are discharged officially the office from which you are discharged will either provide your form to you personally or arrange to have it mailed to you. 
+																	On the next page select. 
+																	To obtain this form you will need to leave the VA Website and go tohttpwwwesdwhsmilPortals54DocumentsDDformsdddd0293pdf. 
+																	A DD214 is a veterans military discharge or separation papers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is not issued upon completion of a members contractual reserve obligation. 
+																	Contact your nearest VA branch office to learn where to get the form and how to fill it out properly and get the process started. 
+																	Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies. 
+																	Louis MO processes most DD Form 214 requests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Changes to DD 214 or other military records cannot be done through the VA. 
+																	At the time of separation a service member can request Member 4 version of DD Form 214 which will include blocks 23-30. 
+																	How To Get a Copy of Your DD Form 214 from the National Archives If you have been out of the military more than a few years you will need to contact the National Personnel Records Center to get a new copy of your DD Form 214. 
+																	A replacement DD214 is NOT a new documentit is simply a copy of the original document. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All requests to get a copy of DD214 from discharges less than 62 years ago must be signed and dated by the veteran or next-of-kin. 
+																	The National Archives in St. 
+																	Request your copy online by visiting the National Archives Website. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/b7/b3/00b7b3a0fdc52b1c81ff514fb4cdca29.png" data-lightbox="roadtrip" data-title="How To Read Your Veteran Relative S Dd 214 Form Dna Genealogy Ancestry Records Family Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/b7/b3/00b7b3a0fdc52b1c81ff514fb4cdca29.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLyFu4wup_WvXdYll4o2OrC_r1BVN0dI3YVw';" alt="How To Read Your Veteran Relative S Dd 214 Form Dna Genealogy Ancestry Records Family Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Read Your Veteran Relative S Dd 214 Form Dna Genealogy Ancestry Records Family Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/5d/78/e05d78480e9a15aa12821a3352404cd1.jpg" data-lightbox="roadtrip" data-title="Pin On Native American Pics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/5d/78/e05d78480e9a15aa12821a3352404cd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8a0VKhjfS7CZlHG2RAKQS4p-XR6viJdQ7Hw';" alt="Pin On Native American Pics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Native American Pics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/8c/0a/be8c0add3db1bfc1ef02417196545191.png" data-lightbox="roadtrip" data-title="Those Who Have Served In The Military Are No Stranger To Paperwork From Recruitment To Discharge T Military Education Military Records Education And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/8c/0a/be8c0add3db1bfc1ef02417196545191.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aGoNdOTHWfQYZ21f-d8aEyRlrgwp_hy-iw';" alt="Those Who Have Served In The Military Are No Stranger To Paperwork From Recruitment To Discharge T Military Education Military Records Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Those Who Have Served In The Military Are No Stranger To Paperwork From Recruitment To Discharge T Military Education Military Records Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/ae/9c/6dae9c369362a2d79e1c9ffb47d9973b.png" data-lightbox="roadtrip" data-title="Welcome Veterans To The Dd214 Website Military Jobs Military Education Army Regulations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/ae/9c/6dae9c369362a2d79e1c9ffb47d9973b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTsAgjL0ZEbfm5ywyFOye6ieOzVXRlhJAkQ';" alt="Welcome Veterans To The Dd214 Website Military Jobs Military Education Army Regulations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome Veterans To The Dd214 Website Military Jobs Military Education Army Regulations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/6d/c6/5f6dc62c80a893f3f37c72bf30128c68.jpg" data-lightbox="roadtrip" data-title="How To Get A Copy Of Dd214 Instructions To Receive How To Get Design Quotes Outdoors Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/6d/c6/5f6dc62c80a893f3f37c72bf30128c68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzR3vXRGUoeYkRFSwkOIzjDFZO-DmarGDd0A';" alt="How To Get A Copy Of Dd214 Instructions To Receive How To Get Design Quotes Outdoors Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get A Copy Of Dd214 Instructions To Receive How To Get Design Quotes Outdoors Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/65/3e/63653edb78a810e272b6cdadffa015ca.jpg" data-lightbox="roadtrip" data-title="Pop Pops Discharge Papers Back Certificate Templates Paper Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/65/3e/63653edb78a810e272b6cdadffa015ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoW5bRZ6Q77yc_-1o3L1FFO4OZ35A4jmdGEQ';" alt="Pop Pops Discharge Papers Back Certificate Templates Paper Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pop Pops Discharge Papers Back Certificate Templates Paper Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/66/b1/ea/66b1eadbfc25590cca068d0927298fd9.jpg" data-lightbox="roadtrip" data-title="A3genealogy Military Discharge Records Dd214 Records Military Geneaology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/66/b1/ea/66b1eadbfc25590cca068d0927298fd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyUXlXIFas3Fz0oz0ONGIrZW2KQqWIGWeM4g';" alt="A3genealogy Military Discharge Records Dd214 Records Military Geneaology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A3genealogy Military Discharge Records Dd214 Records Military Geneaology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/ed/09/67ed098292816a836912f79d06155028.jpg" data-lightbox="roadtrip" data-title="Pin On Examples Editable Online Form Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/ed/09/67ed098292816a836912f79d06155028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLQ-gGelrke33Oe0Jd22Rtyhafg-noWDaMQ';" alt="Pin On Examples Editable Online Form Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Examples Editable Online Form Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/50/a7/7950a76c7b3cf84bdc2f9db243b853c3.jpg" data-lightbox="roadtrip" data-title="Free Patient Discharge Form Template Templates Excel Budget Template Statement Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/50/a7/7950a76c7b3cf84bdc2f9db243b853c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxdZx606gst3ax2veYuVPMWYJtIH7fLZDXw';" alt="Free Patient Discharge Form Template Templates Excel Budget Template Statement Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Patient Discharge Form Template Templates Excel Budget Template Statement Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/54/74/3c/54743c126da9b1182bf536d8c2dbc6d8.jpg" data-lightbox="roadtrip" data-title="Air Force Position Paper Template Best Of Enlisted Service Dd 214 1985 Paper Template Positivity Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/54/74/3c/54743c126da9b1182bf536d8c2dbc6d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNGEKQnXgCX6hvgWhdktt525OKCRsJx9lIw';" alt="Air Force Position Paper Template Best Of Enlisted Service Dd 214 1985 Paper Template Positivity Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Position Paper Template Best Of Enlisted Service Dd 214 1985 Paper Template Positivity Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/3f/fd/f0/3ffdf00263b6257e1ce6cac1056ce649.jpg" data-lightbox="roadtrip" data-title="Honorable Discharge Certificate Template Awesome Proof Of Military Service Dd 214 Certificate Templates Free Certificate Templates Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/3f/fd/f0/3ffdf00263b6257e1ce6cac1056ce649.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2Q0XM_htXIbUm56Qqlr6YgOi4iwLX-gZWQ';" alt="Honorable Discharge Certificate Template Awesome Proof Of Military Service Dd 214 Certificate Templates Free Certificate Templates Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honorable Discharge Certificate Template Awesome Proof Of Military Service Dd 214 Certificate Templates Free Certificate Templates Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/dd/11/40/dd1140f9d0eb92ad554ec6afd309fb72.jpg" data-lightbox="roadtrip" data-title="Pin On Tracing My Roots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/dd/11/40/dd1140f9d0eb92ad554ec6afd309fb72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rgjUAanlGDGbWNmmmY-MQY88b-nSupm3aQ';" alt="Pin On Tracing My Roots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tracing My Roots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/3f/50/db3f50ff2cb3f3b0021022ec87fccd49.png" data-lightbox="roadtrip" data-title="U S Veteran Compensation Programs Veterans Services Veterans Service Officer Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/3f/50/db3f50ff2cb3f3b0021022ec87fccd49.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmPbyvqjYsAQcknzKLsq6jQ_OV96TlyyqGw';" alt="U S Veteran Compensation Programs Veterans Services Veterans Service Officer Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Veteran Compensation Programs Veterans Services Veterans Service Officer Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/3b/7a/7d3b7a75f4645dd0021874d377b8d397.jpg" data-lightbox="roadtrip" data-title="Pin By J Everett Prewitt Award Win On My Life In The Sunshine Fort Lewis Washington Business Administration Fort Lewis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/3b/7a/7d3b7a75f4645dd0021874d377b8d397.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEzdFz-TEhZ9S3IRDpXwOpBaUX1pgM4uc-wg';" alt="Pin By J Everett Prewitt Award Win On My Life In The Sunshine Fort Lewis Washington Business Administration Fort Lewis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By J Everett Prewitt Award Win On My Life In The Sunshine Fort Lewis Washington Business Administration Fort Lewis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/7c/64/ff7c64cbb79a9220b44811781869b2be.jpg" data-lightbox="roadtrip" data-title="Hidden Spn Code On Dd 214 Coding Id Card Template Questionnaire Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/7c/64/ff7c64cbb79a9220b44811781869b2be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLF7XCLsOREPM24KggWhsTQXF6U_7Cn5bqfg';" alt="Hidden Spn Code On Dd 214 Coding Id Card Template Questionnaire Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hidden Spn Code On Dd 214 Coding Id Card Template Questionnaire Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-sports-clips-have-a-military-discount.html">Does Sports Clips Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-harry-and-david-offer-military-discount.html">Does Harry And David Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-offer-military-discount.html">Does Sports Clips Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sprint-offer-veteran-discounts.html">Does Sprint Offer Veteran Discounts</a></li>
+													<li class="list-group-item"><a href="/does-target-offer-military-discount-year-round.html">Does Target Offer Military Discount Year Round</a></li>
+													<li class="list-group-item"><a href="/does-old-navy-do-military-discount.html">Does Old Navy Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-starbucks-have-a-military-discount.html">Does Starbucks Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-the-bretton-woods-system-still-exist.html">Does The Bretton Woods System Still Exist</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-give-military-discount-online.html">Does Home Depot Give Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-ford-give-veterans-discount.html">Does Ford Give Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-samsung-offer-veterans-discount.html">Does Samsung Offer Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-imf-and-world-bank-help-poor-countries.html">Does Imf And World Bank Help Poor Countries</a></li>
+													<li class="list-group-item"><a href="/does-harley-davidson-offer-military-discounts.html">Does Harley Davidson Offer Military Discounts</a></li>
+													<li class="list-group-item"><a href="/does-imf-help-poor-countries.html">Does Imf Help Poor Countries</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-have-military-discount-online.html">Does Home Depot Have Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-have-military-discount.html">Does Gamestop Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-lifelock-offer-a-military-discount.html">Does Lifelock Offer A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-jetblue-offer-military-discount.html">Does Jetblue Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-foot-locker-offer-military-discount-online.html">Does Foot Locker Offer Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-hr-block-charge-military.html">Does Hr Block Charge Military</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Active Reserve Usmc - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Active Reserve Usmc",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+active+reserve+usmc",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Active Reserve Usmc</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Official Unofficial USMC forum for anything Marine Corps related. They must also meet the requirements for height and weight established by Marine Corp regulations. Marines must have less than a three year break in service from the Active Component AC AR or Selected Reserve SelRes. <br>				
+			</p>
+										<a class="badge badge-dark" href="/apple-valley-military-surplus.html">apple valley military surplus</a>
+											<a class="badge badge-warning" href="/army-discount-code-bts.html">army discount code bts</a>
+											<a class="badge badge-light" href="/armed-forces-veterans-day-images.html">armed forces veterans day images</a>
+											<a class="badge badge-secondary" href="/army-discount-nandos.html">army discount nandos</a>
+											<a class="badge badge-secondary" href="/army-discount-card.html">army discount card</a>
+											<a class="badge badge-dark" href="/army-discount-hotels.html">army discount hotels</a>
+											<a class="badge badge-danger" href="/army-discount-microsoft-office.html">army discount microsoft office</a>
+											<a class="badge badge-info" href="/apple-support-for-veterans.html">apple support for veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and image content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" data-lightbox="roadtrip" data-title="Us Army Reserves Military Humor Army Humor Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YS_gYkfVB450R-VVS477R_edmLX3duuBCg';" alt="Us Army Reserves Military Humor Army Humor Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Reserves Military Humor Army Humor Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/2f/26/a72f26d58c1c024322972ad6c4e877e7.jpg" data-lightbox="roadtrip" data-title="Military Active Reserve Vets Can Save On A Home Buy Sell In 2020 Marine Remember The Fallen Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/2f/26/a72f26d58c1c024322972ad6c4e877e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGDipIKrsMuR1EdAQywcESrjDfTELyg4eCQ';" alt="Military Active Reserve Vets Can Save On A Home Buy Sell In 2020 Marine Remember The Fallen Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Active Reserve Vets Can Save On A Home Buy Sell In 2020 Marine Remember The Fallen Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c0/00/8b/c0008b30d18b73fb539fa018a6b36476--marines.jpg" data-lightbox="roadtrip" data-title="Pin By Leslie Aviles On Marines Marine Corps Reserve Marines Marine Reserves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c0/00/8b/c0008b30d18b73fb539fa018a6b36476--marines.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8ROhFwCpV11Oy0x9UpID0rV2-jQeo_nbKA';" alt="Pin By Leslie Aviles On Marines Marine Corps Reserve Marines Marine Reserves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Leslie Aviles On Marines Marine Corps Reserve Marines Marine Reserves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/56/fc/7f56fc2a971864efd34d0db9b819c469.jpg" data-lightbox="roadtrip" data-title="Marine Corps 243rd Birthday Marine Corps Marine My Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/56/fc/7f56fc2a971864efd34d0db9b819c469.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1FRMehOcz8QM2m8GjIr0BSm460nY1y4uQZw';" alt="Marine Corps 243rd Birthday Marine Corps Marine My Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps 243rd Birthday Marine Corps Marine My Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/c4/df/32c4df9ed9e38d1d59f271a42536452a.jpg" data-lightbox="roadtrip" data-title="Happy 96th Birthday U S Marine Corps Reserve Usmcr Veteran Owned Businesses News Vobeacon Marine Corps Reserve United States Marine Corps Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/c4/df/32c4df9ed9e38d1d59f271a42536452a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiQkzRsjnho0Ao9ihcuytxwye16FOsPlPzg';" alt="Happy 96th Birthday U S Marine Corps Reserve Usmcr Veteran Owned Businesses News Vobeacon Marine Corps Reserve United States Marine Corps Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy 96th Birthday U S Marine Corps Reserve Usmcr Veteran Owned Businesses News Vobeacon Marine Corps Reserve United States Marine Corps Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/8f/a7/b68fa7c9997c985a0c29b18cf1577b0f.jpg" data-lightbox="roadtrip" data-title="Obama Orders Effeminate Unisex Uniform Hats For All Us Marine Corps Soldiers Now The End Begins Marine Corps Unisex Hat Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/8f/a7/b68fa7c9997c985a0c29b18cf1577b0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsg3xmQ-aIfi4f1GT8gcVLeK870bbxhNxAw';" alt="Obama Orders Effeminate Unisex Uniform Hats For All Us Marine Corps Soldiers Now The End Begins Marine Corps Unisex Hat Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obama Orders Effeminate Unisex Uniform Hats For All Us Marine Corps Soldiers Now The End Begins Marine Corps Unisex Hat Marines</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsg3xmQ-aIfi4f1GT8gcVLeK870bbxhNxAw';" alt="Obama Orders Effeminate Unisex Uniform Hats For All Us Marine Corps Soldiers Now The End Begins Marine Corps Unisex Hat Marines">
+										<div class="card-body">
+						<h3 class="h5"><b>The DAP provides active component officers and Marines with seamless transition into the SMCR or IMA.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the active reserve usmc</strong>. 
+								
+																	Continue browsing in rUSMC. 
+																	But there is also another category known as the Individual Ready Reserve IRR sometimes referred to as the Inactive Ready Reserve. 
+																	Meritorious Commissioning Program is open to those in the Corps and in the Marine Corps Active Reserve AR Program. 
+																	Answered January 7 2018 - Infantryman Former Employee - Hawaii. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reference b is mco 1040r35 marine corps reserve career retention and development manual. 
+																	Requirements for this program include having at least 75 college credits or an associates degree. 
+																	Recruits that enlisted as reservists as opposed to active duty are considered active duty until they complete all of their training schools. 
+																	The United States Military has several categories of military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reference c is maradmin. 
+																	To pass the test aspiring Marines must achieve a score of 31 or higher and those with nontraditional degrees or a GED must score at least a 50. 
+																	Active Duty members will be stationed away from home at an Army installation located around the world. 
+																	There are active duty troops members of the Air National Guard and Army Guard and members of the Reserve for each respective branch of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To enter into this program reservist must be nominated by a commanding officer. 
+																	Marines must have been released from their prior component under. 
+																	I want to make you aware of some of the negatives about being in the AR program and then some of the advantages. 
+																	It is the largest command by assigned personnel in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The reserve years are only in case of emergency war. 
+																	You have four active years of service and then four years of reserve. 
+																	Narrreference a is mco 100152j marine corps active reserve program order. 
+																	Marine Corps Forces Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You should read that sentence again. 
+																	Can you give me and in-site on what to expect till be doing and what billets I might have. 
+																	SMCR IMA AND ACTIVE DUTY BILLET LISTINGS. 
+																	More than likely you will never hear from the military again. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marines in the Reserve go through the same training and work in the same Military Occupational Specialties as their active-duty counterparts. 
+																	View Entire Discussion 0 Comments More posts from the USMC community. 
+																	The designation as reserve Marine has a lot of meaning in our world. 
+																	Marine Reserves commit 4 years of inactive service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anyone that signs up for the Marines and chooses to serve on active duty must serve 4 years of active service. 
+																	The Armed Service Vocational Aptitude Battery ASVAB test is a multiple-choice test taken by all who aspire to become Marines. 
+																	The Reserve of the United States Marine Corps consist of highly trained individuals that can be mobilized for active duty in time of war national emergency or contingency operationsOver the past. 
+																	Those who choose to go into the Marines reserves will commit to serving one weekend a month and two weeks of active service generally in the summertime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members of the Marine Corps Reserve must maintain the same levels of physical fitness as that of active-duty Marines. 
+																	Marine administrative message 51216 pertains to enlisted Marines who are interested in joining the Active Reserve program and outlines the submission process and administrative requirements for prior service recruiters career planners and the individual News and Articles For Marine Corps Forces Reserves. 
+																	They will work full-time for the Army. 
+																	The United States Marine Corps Reserve was established when Congress passed the Naval Appropriations Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Active Reserve Marines are by contract and component designation reserve Marines. 
+																	With a guaranteed reserve billet prior to reaching the end of active duty. 
+																	Hows the transition from AD to AR. 
+																	Marine Corps Forces Reserve is the reserve force of the United States Marine Corps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warrant Officer Reserve Program. 
+																	This includes boot camp Marine Combat Training MCT or Infantry Training Battalion ITB and Marine Occupancy Specialty MOS Schools. 
+																	The Marine Corps Reserve is critical to the Marine Corps ability to provide a balanced ready force. 
+																	Many Marines come to the Reserve after serving on Active Duty as the Reserve gives them an outlet to continue serving while pursuing a civilian career or furthering their education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Switching from the Army Reserve to Active Duty is possible but it is not an immediate process and can take several months and is not always approved. 
+																	The Marine Forces Reserve also known as the United States Marine Corps Reserve and the US. 
+																	The Marine Corps Reserves is composed primarily of prior active-duty Marines who have time remaining on their enlistment contracts yet have served their required active-duty time. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/5c/5b/305c5b7783d2c50b10dc88e7b642ffa7.jpg" data-lightbox="roadtrip" data-title="U S Marine Corps 245th Birthday Happy Birthday Marines Marine Corps Birthday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/5c/5b/305c5b7783d2c50b10dc88e7b642ffa7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvrb5k_A1Xg7zv6ohUz6F7E7ESLatcQSyI_A';" alt="U S Marine Corps 245th Birthday Happy Birthday Marines Marine Corps Birthday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Marine Corps 245th Birthday Happy Birthday Marines Marine Corps Birthday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/14/73/32/14733224d76a473f13a93bdb77bd0f57--army-wife-army-mom.jpg" data-lightbox="roadtrip" data-title="As An Active Duty Af Member I Like To Joke With My Older And Younger Brothers Who Joined The Army Reserve We Come Military Love Military Life Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/14/73/32/14733224d76a473f13a93bdb77bd0f57--army-wife-army-mom.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCBxw7lYypdNVWU6fFSgsM5vs2Ep2mSIUo6w';" alt="As An Active Duty Af Member I Like To Joke With My Older And Younger Brothers Who Joined The Army Reserve We Come Military Love Military Life Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As An Active Duty Af Member I Like To Joke With My Older And Younger Brothers Who Joined The Army Reserve We Come Military Love Military Life Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/42/73/e64273f5f8c89e45c52cd7aae500363e.jpg" data-lightbox="roadtrip" data-title="August 29th Marks The 97th Birthday Of The U S Marine Corps Reserve Usmcr Veteran Owned Businesses News Vobeacon Marine Corps Reserve Marine Corps Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/42/73/e64273f5f8c89e45c52cd7aae500363e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QpwVMegEnSArtVOQOyVL0v6vG-P5Z97S_A';" alt="August 29th Marks The 97th Birthday Of The U S Marine Corps Reserve Usmcr Veteran Owned Businesses News Vobeacon Marine Corps Reserve Marine Corps Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">August 29th Marks The 97th Birthday Of The U S Marine Corps Reserve Usmcr Veteran Owned Businesses News Vobeacon Marine Corps Reserve Marine Corps Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/b3/ba/cab3bac3cb59c15dba3243dd2048a4fe.jpg" data-lightbox="roadtrip" data-title="Happy Birthday To The Marine Corps Reserve Established August 29 1916 The Marine Corps Reserve Provides Instagram Photo Military Motivation Photo And Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/b3/ba/cab3bac3cb59c15dba3243dd2048a4fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-slzoKiuvvEjC0qZff9gZXtZAonJA84vIQg';" alt="Happy Birthday To The Marine Corps Reserve Established August 29 1916 The Marine Corps Reserve Provides Instagram Photo Military Motivation Photo And Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Birthday To The Marine Corps Reserve Established August 29 1916 The Marine Corps Reserve Provides Instagram Photo Military Motivation Photo And Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/e5/4a/3ce54afaf6e7255fe820d4737b9d6c01.jpg" data-lightbox="roadtrip" data-title="Ron Riggle Actor Branch United States Marine Corps Reserve Job I Rank Captain Unit United States Marine Corps Famous Veterans Marine Corps Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/e5/4a/3ce54afaf6e7255fe820d4737b9d6c01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhH8uwP4uXJhnyMMi-5INSuSG4FejY6T3yHw';" alt="Ron Riggle Actor Branch United States Marine Corps Reserve Job I Rank Captain Unit United States Marine Corps Famous Veterans Marine Corps Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ron Riggle Actor Branch United States Marine Corps Reserve Job I Rank Captain Unit United States Marine Corps Famous Veterans Marine Corps Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/b2/d9/d5b2d9b2510b6e2c18489ccb0d7b8fdd.jpg" data-lightbox="roadtrip" data-title="Marine Corps Us Marine Corps United States Marine Corps Army Wives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/b2/d9/d5b2d9b2510b6e2c18489ccb0d7b8fdd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4Wvji2z08sBXdtSsfH_kS35FeqJauIMJ1Q';" alt="Marine Corps Us Marine Corps United States Marine Corps Army Wives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Us Marine Corps United States Marine Corps Army Wives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/74/cf/a574cf8f77870cf79da372a9eb0c3da5.jpg" data-lightbox="roadtrip" data-title="Marines Thanksgiving Field Meet Marines My Marine Martial Arts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/74/cf/a574cf8f77870cf79da372a9eb0c3da5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tliKRCpSva7dj3QioABSPZxWqpNQmNZ8GQ';" alt="Marines Thanksgiving Field Meet Marines My Marine Martial Arts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marines Thanksgiving Field Meet Marines My Marine Martial Arts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/8c/f5/048cf50321808c8c7316033047a7ceab.png" data-lightbox="roadtrip" data-title="Pin On Guam 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/8c/f5/048cf50321808c8c7316033047a7ceab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2UaLgdtK8_1wvLUk3kcJtfyfU6GLwxx4Ikw';" alt="Pin On Guam 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guam 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/19/91/64/199164b3f33c07f59f461e2f950c10e5.jpg" data-lightbox="roadtrip" data-title="Pin On U S Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/19/91/64/199164b3f33c07f59f461e2f950c10e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpcN3fQpvmDnv2sZBOIqQFdxiq5AU_rEnF_g';" alt="Pin On U S Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/22/c1/2b22c19b0d93783e1266e9a772e7bf43.jpg" data-lightbox="roadtrip" data-title="Keeping 31st Meu Crisis Response Force Connected United States Military Marine My Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/22/c1/2b22c19b0d93783e1266e9a772e7bf43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwGRVHBnuiULsHrZJsy7IjXz6OEkWvJWzQcw';" alt="Keeping 31st Meu Crisis Response Force Connected United States Military Marine My Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Keeping 31st Meu Crisis Response Force Connected United States Military Marine My Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/47/00/5747003dd6f865ad16fd09a6ade98f17.jpg" data-lightbox="roadtrip" data-title="Observing New Trainees Army Reserve Military Homecoming Signs American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/47/00/5747003dd6f865ad16fd09a6ade98f17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmctG5b8T9j0oVWXLzn7tZbdv7TWbIA4DGAg';" alt="Observing New Trainees Army Reserve Military Homecoming Signs American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Observing New Trainees Army Reserve Military Homecoming Signs American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/1f/af/a41faf92aa34a89f52033ce0705403ea.jpg" data-lightbox="roadtrip" data-title="Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/1f/af/a41faf92aa34a89f52033ce0705403ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlHvWwq0EoE6sn6HVVJJHrtNqvp9BrY4Q0g';" alt="Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/2d/5b/412d5b1b127e388a206522d2923abb51.jpg" data-lightbox="roadtrip" data-title="U S Marine Corps 244th Birthday Marine Corps My Marine United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/2d/5b/412d5b1b127e388a206522d2923abb51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDTUo6UbIORcOkzhMb-MG9zswCI22NxT1dA';" alt="U S Marine Corps 244th Birthday Marine Corps My Marine United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Marine Corps 244th Birthday Marine Corps My Marine United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/42/1f/42/421f42bdddf20e5b148e07dcfe47e63e.jpg" data-lightbox="roadtrip" data-title="64 Companies Who Offer Military Discounts Military Discounts Military Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/42/1f/42/421f42bdddf20e5b148e07dcfe47e63e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZLv7a0W7i47LqEhBbZAKrvMsF4QE47xsMQ';" alt="64 Companies Who Offer Military Discounts Military Discounts Military Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">64 Companies Who Offer Military Discounts Military Discounts Military Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/27/33/652733bd78a2f6487318fc6ef35acc49.jpg" data-lightbox="roadtrip" data-title="Cdc S Camp Lejeune Study Links Birth Defects To Marine Base S Drinking Water Marines In Combat Us Marine Corps Marine Bases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/27/33/652733bd78a2f6487318fc6ef35acc49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCymxWp70s69tO_SS3vkX5-vPeBYo9sl2Atw';" alt="Cdc S Camp Lejeune Study Links Birth Defects To Marine Base S Drinking Water Marines In Combat Us Marine Corps Marine Bases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cdc S Camp Lejeune Study Links Birth Defects To Marine Base S Drinking Water Marines In Combat Us Marine Corps Marine Bases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/request-dd214-paperwork.html">Request Dd214 Paperwork</a></li>
+													<li class="list-group-item"><a href="/salary-of-chief-economist-at-imf.html">Salary Of Chief Economist At Imf</a></li>
+													<li class="list-group-item"><a href="/roger-dunn-military-discount.html">Roger Dunn Military Discount</a></li>
+													<li class="list-group-item"><a href="/rotf-lmao-meaning.html">Rotf Lmao Meaning</a></li>
+													<li class="list-group-item"><a href="/reservist-to-active-duty-usmc.html">Reservist To Active Duty Usmc</a></li>
+													<li class="list-group-item"><a href="/sports-clips-military-scholarship.html">Sports Clips Military Scholarship</a></li>
+													<li class="list-group-item"><a href="/rogers-military-discount-2018.html">Rogers Military Discount 2018</a></li>
+													<li class="list-group-item"><a href="/retired-military-new-spouse-benefits.html">Retired Military New Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/salvation-army-employee-discount.html">Salvation Army Employee Discount</a></li>
+													<li class="list-group-item"><a href="/royal-caribbean-cruise-veteran-discount.html">Royal Caribbean Cruise Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/reservist-on-active-duty-orders-bah.html">Reservist On Active Duty Orders Bah</a></li>
+													<li class="list-group-item"><a href="/sprint-military-discount-for-existing-customers.html">Sprint Military Discount For Existing Customers</a></li>
+													<li class="list-group-item"><a href="/retired-military-volunteer-opportunities.html">Retired Military Volunteer Opportunities</a></li>
+													<li class="list-group-item"><a href="/san-joaquin-national-cemetery-veterans-day.html">San Joaquin National Cemetery Veterans Day</a></li>
+													<li class="list-group-item"><a href="/retired-military-insurance.html">Retired Military Insurance</a></li>
+													<li class="list-group-item"><a href="/reservist-to-active-duty-air-force.html">Reservist To Active Duty Air Force</a></li>
+													<li class="list-group-item"><a href="/retired-military-news.html">Retired Military News</a></li>
+													<li class="list-group-item"><a href="/retired-military-unemployment-california.html">Retired Military Unemployment California</a></li>
+													<li class="list-group-item"><a href="/request-lost-dd214.html">Request Lost Dd214</a></li>
+													<li class="list-group-item"><a href="/retired-va-employees.html">Retired Va Employees</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

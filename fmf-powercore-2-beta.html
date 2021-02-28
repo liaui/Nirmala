@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Fmf Powercore 2 Beta - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Fmf Powercore 2 Beta",
+  "datePublished": "2021-02-28",
+  "image": "https://mxtotal-15057.kxcdn.com/1999-large_default/fmf-powercore-2-silencer-ktm-exc-250-300-2011-15.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=fmf+powercore+2+beta",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Fmf Powercore 2 Beta</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">-Engineered to assault todays tracks and trails. For what its worth Im running the Powercore slip-on on my 18 350 RR-S. Powercore 21 From 19999 Mini Moto Applications. <br>				
+			</p>
+										<a class="badge badge-primary" href="/imf-economic-review-acceptance-rate.html">imf economic review acceptance rate</a>
+											<a class="badge badge-primary" href="/imf-economic-outlook-for-trinidad-and-tobago.html">imf economic outlook for trinidad and tobago</a>
+											<a class="badge badge-success" href="/imf-economic-outlook-july-2020.html">imf economic outlook july 2020</a>
+											<a class="badge badge-primary" href="/imf-egypt-quota.html">imf egypt quota</a>
+											<a class="badge badge-info" href="/imf-economic-outlook-for-india.html">imf economic outlook for india</a>
+											<a class="badge badge-secondary" href="/imf-economic-outlook-pdf.html">imf economic outlook pdf</a>
+											<a class="badge badge-info" href="/imf-egypt-subsidies.html">imf egypt subsidies</a>
+											<a class="badge badge-danger" href="/imf-effective-exchange-rate-data.html">imf effective exchange rate data</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site gives you hints for seeing the maximum quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://1d9wic1xtzvs27liaa2o9xbb-wpengine.netdna-ssl.com/wp-content/uploads/Powercore-2.1-Silencer-KTM-Husqvarna-Husaberg-by-FMF-1-800x624.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 1 Aluminum Silencers For Beta Slavens Racing">
+											<img class="card-img v-image ads-img " src="https://1d9wic1xtzvs27liaa2o9xbb-wpengine.netdna-ssl.com/wp-content/uploads/Powercore-2.1-Silencer-KTM-Husqvarna-Husaberg-by-FMF-1-800x624.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYwzI5gn_J_UbrkASODhHT7j_YcQRKuqCvQ';" alt="Fmf Powercore 2 1 Aluminum Silencers For Beta Slavens Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 1 Aluminum Silencers For Beta Slavens Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.motosport.com/images/items/large/FMF/FMF0009/X001-Y077.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 Silencer 2 Stroke Motosport">
+											<img class="card-img v-image ads-img " src="https://content.motosport.com/images/items/large/FMF/FMF0009/X001-Y077.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK3miXm7kpInFSW8hF2nQLJ3h5DMsyb1YigA';" alt="Fmf Powercore 2 Silencer 2 Stroke Motosport">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 Silencer 2 Stroke Motosport</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slavensracing.com/wp-content/uploads/2014/02/FMF-Powercore-2-Silencer.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore Ii Silencers Ktm">
+											<img class="card-img v-image ads-img " src="https://slavensracing.com/wp-content/uploads/2014/02/FMF-Powercore-2-Silencer.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHaMJ68KRrNY8tvBRcb6jETbxoit88Vt5llA';" alt="Fmf Powercore Ii Silencers Ktm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore Ii Silencers Ktm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.motosport.com/images/items/large/FMF/FMF00DS/X001-Y038.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 Shorty Silencer 2 Stroke Motosport">
+											<img class="card-img v-image ads-img " src="https://content.motosport.com/images/items/large/FMF/FMF00DS/X001-Y038.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiy9wlA-WdyztjLflw9ldWZT9yBKtOcAwgw';" alt="Fmf Powercore 2 Shorty Silencer 2 Stroke Motosport">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 Shorty Silencer 2 Stroke Motosport</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://fmfracing.com/ImageHandler.ashx?catid=635&amp;itemid=" data-lightbox="roadtrip" data-title="Product Details Fmf Racing">
+											<img class="card-img v-image ads-img " src="http://fmfracing.com/ImageHandler.ashx?catid=635&amp;itemid=" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHllhaG_mI1U9b87OEvmb2ENEVfYGvzRN9Jg';" alt="Product Details Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product Details Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/d3/18/41d318ae054408f52f2bb2daed722560.png" data-lightbox="roadtrip" data-title="Advertisement Ebay Fmf Power Core Ii Shorty Silencer 020404 Suzuki Rm250 2001 2002 Ebay Silencers Motorcycle Parts And Accessories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/d3/18/41d318ae054408f52f2bb2daed722560.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOS0zqINFFN6dm4cbghS4axbM5kmh0gATpSA';" alt="Advertisement Ebay Fmf Power Core Ii Shorty Silencer 020404 Suzuki Rm250 2001 2002 Ebay Silencers Motorcycle Parts And Accessories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advertisement Ebay Fmf Power Core Ii Shorty Silencer 020404 Suzuki Rm250 2001 2002 Ebay Silencers Motorcycle Parts And Accessories</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/41/d3/18/41d318ae054408f52f2bb2daed722560.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOS0zqINFFN6dm4cbghS4axbM5kmh0gATpSA';" alt="Advertisement Ebay Fmf Power Core Ii Shorty Silencer 020404 Suzuki Rm250 2001 2002 Ebay Silencers Motorcycle Parts And Accessories">
+										<div class="card-body">
+						<h3 class="h5"><b>Only 20 left in stock - order soon.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Fmf powercore 2 beta</strong>. 
+								
+																	5 out of 5 stars 1 1 product ratings - FMF Racing THE Q SILENCER fits 15-16 Beta XTrainer 25173. 
+																	FMF Regular price 19990 FMF Beta 125RR 18-19 Powercore 2 Silencer. 
+																	The all new PowerCore 21 silencer is proof FMF is totally committed to 2-stroke progression. 
+																	The all new PowerCore 21 silencer is proof FMF is totally committed to 2-stroke progression. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Only 5 left in stock - order soon. 
+																	This is proof FMF is totally committed to 2-stroke progression in weight performance and looks. 
+																	BETA 5 out of 5 stars 1 1 product ratings - FMF Powercore 21 Aluminium Silencer for BETA 2020 200250300 RR 2T 025272. 
+																	Description FMF Powercore 21 Aluminum Silencers for Beta 250300 RR The aluminum Powercore 21 silencer is proof FMF is totally committed to 2-stroke progression. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Only 1 left in stock - order soon. 
+																	50 out of 5 stars 3. 
+																	FMF Racing THE Q SILENCER fits 15-16 Beta XTrainer 25173. 
+																	4 new refurbished from 12779. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FMF Turbinecore 2 Q Silencer for 15-20 BETA XTRAINER. 
+																	Be the first to write a review. 
+																	FMF POWERCORE 21 MYLAR DECAL REPLACEMENT 014826 1099 View More FMF TITANIUM POWERCORE 21 MYLAR DECAL REPLACEMENT 014827 1099 Stickers - 2 Stroke Decals - TurbineCore 21 View More FMF TURBINECORE 21 WRAP MYLAR DECAL REPLACEMENT 014828. 
+																	FMF Racing Powercore 21 Aluminium Silencer BETA 250RR 2013 - 2019 Built to provide excellent power for tracks geared toward 4-Stroke machines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The butt dyno says its better everywhere but low-midthrottle response is the most improved. 
+																	Item 7 FMF PowerCore 21 Silencer Beta 250 RR 2T 2013-2018 - FMF PowerCore 21 Silencer Beta 250 RR 2T 2013-2018. 
+																	FMF loves 2-strokes they ride 2-strokes and they are devoted to delivering superior power to the 2-stroke faithful. 
+																	FMF PowerCore 2 Silencer 025234 Beta 125 RR 2T 2018 Fits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FMF Beta 250RR200RR 20- Powercore 21 Silencer. 
+																	The all new PowerCore 21 silencer is proof FMF is totally committed to 2-stroke progression. 
+																	Best Selling in Silencers Mufflers Baffles. 
+																	FMF Turbinecore 2 Spark Arrestor Silencer - 2-Stroke Compatible with 96-99 Yamaha YZ125. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Powercore 21 From 19999 View More. 
+																	Large diameter canister for more deep exhaust note lower noise and longer lasting packing life. 
+																	Smooth power curve throughout the RPM range. 
+																	-Engineered to assault todays tracks and trails. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	-Race-tested smooth power curve throughout the RPM range. 
+																	We love 2-strokes we ride 2-strokes and FMF is devoted to delivering superior power to the 2-stroke faithful. 
+																	FMF Powercore 21 Silencer Beta 250RR The FMF Powercore 21 was designed to improve throttle response throughout the entire RPM range on any 2-stroke machine and features a unique shape inspired from the 41 system. 
+																	FMF Regular price 14499. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Built to create a smooth tractable power to help in the toughest conditions. 
+																	FMF loves 2-strokes they ride 2-strokes and they are devoted to delivering superior power to the 2-stroke faithful. 
+																	-Race-tested smooth power curve throughout the RPM range. 
+																	-Race-tested smooth power curve throughout the RPM range. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FMF Powercore 21 Aluminium Silencer for BETA 2020 200250300 RR 2T 025272 Fits. 
+																	FMF Powercore 21 Silencer Beta RR 300 2020 Delivers more power across the entire rpm range with a deeper exhaust note Designed for off-road riding racing where a spark arrestor isnt required Removable stainless fasteners make servicing repacking easier Increased canister volume more packing material for better flow Designed made in the USA. 
+																	No ratings or reviews yet. 
+																	FMF loves 2-strokes they ride 2-strokes and they are devoted to delivering superior power to the 2-stroke faithful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	-Engineered to assault todays tracks and trails. 
+																	The all new Titanium Powercore 21 silencer is proof FMF is totally committed to 2-stroke progression in weight performance and looks. 
+																	BETA 200RR 20-21 BETA 250RR. 
+																	Sign up to receive the latest news and deals from FMF Racing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The all new Titanium PowerCore 21 EXTREME was developed around Extreme riders such as Cody Webb Graham Jarvis and Colton Haaker to name a few. 
+																	FMF loves 2-strokes they ride 2-strokes and they are devoted to delivering superior power to the 2-stroke faithful. 
+																	I cant speak for the comparison with the standard race ed mapping but the mufflerFMF map was an improvement over stock. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyclegear.com/_a/product_images/1474/8241/fmf_powercore2_shorty_silencer_yamaha_yz25020022021_750x750.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 Shorty Silencer Yamaha Yz250 2002 2021 Cycle Gear">
+											<img class="card-img v-image ads-img " src="https://www.cyclegear.com/_a/product_images/1474/8241/fmf_powercore2_shorty_silencer_yamaha_yz25020022021_750x750.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-h3zt5VfD8QUUfvO_9ESgHmhVBLJMqFF8Q';" alt="Fmf Powercore 2 Shorty Silencer Yamaha Yz250 2002 2021 Cycle Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 Shorty Silencer Yamaha Yz250 2002 2021 Cycle Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://1d9wic1xtzvs27liaa2o9xbb-wpengine.netdna-ssl.com/wp-content/uploads/Powercore-2.1-Silencer-19-800x800.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 1 Aluminum Silencers For Ktm Husaberg Husqvarna">
+											<img class="card-img v-image ads-img " src="https://1d9wic1xtzvs27liaa2o9xbb-wpengine.netdna-ssl.com/wp-content/uploads/Powercore-2.1-Silencer-19-800x800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmutvLsjoR8rNNr62BhwIHVqGqPGYTyBsTw';" alt="Fmf Powercore 2 1 Aluminum Silencers For Ktm Husaberg Husqvarna">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 1 Aluminum Silencers For Ktm Husaberg Husqvarna</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.fmfracing.com/ImageHandler.ashx?catid=723&amp;itemid=" data-lightbox="roadtrip" data-title="Product Details Fmf Racing">
+											<img class="card-img v-image ads-img " src="http://www.fmfracing.com/ImageHandler.ashx?catid=723&amp;itemid=" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJSzUQqBswDSS5KMkEavHYxDCay88AU7zfg';" alt="Product Details Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product Details Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn11.bigcommerce.com/s-peenhlhyij/images/stencil/800x800/products/1561/1886/Studio__42577.1580922032.jpg?c=2" data-lightbox="roadtrip" data-title="Off Road 2020 300 Rr Drive 2020 300 Rr Engine Page 1 Beta Usa">
+											<img class="card-img v-image ads-img " src="https://cdn11.bigcommerce.com/s-peenhlhyij/images/stencil/800x800/products/1561/1886/Studio__42577.1580922032.jpg?c=2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsAXz-S98mwqKQdrFebqy5MWHebrFWX5MfQ';" alt="Off Road 2020 300 Rr Drive 2020 300 Rr Engine Page 1 Beta Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Off Road 2020 300 Rr Drive 2020 300 Rr Engine Page 1 Beta Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fmfracing.com/ImageHandler.ashx?catid=723&amp;itemid=025264" data-lightbox="roadtrip" data-title="Product Details Fmf Racing">
+											<img class="card-img v-image ads-img " src="https://www.fmfracing.com/ImageHandler.ashx?catid=723&amp;itemid=025264" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUwDoXvy4IPmieTBlcLLyvRMq_fKvvWsxgxA';" alt="Product Details Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product Details Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ride365.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/d/d/dd8e-5c745add617f8.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore Ii Silencer Ktm Husqvarna Ride365">
+											<img class="card-img v-image ads-img " src="https://ride365.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/d/d/dd8e-5c745add617f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuj_smHuUk8tXVHgb5n7kU9-qARMGwTURCrw';" alt="Fmf Powercore Ii Silencer Ktm Husqvarna Ride365">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore Ii Silencer Ktm Husqvarna Ride365</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fmfracing.com/ImageHandler.ashx?catid=63&amp;itemid=" data-lightbox="roadtrip" data-title="Product List Fmf Racing">
+											<img class="card-img v-image ads-img " src="https://www.fmfracing.com/ImageHandler.ashx?catid=63&amp;itemid=" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmwiK-SdtibIvPHOWWBPUAdPn8SVvZkkGHQ';" alt="Product List Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product List Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyclegear.com/_a/product_images/1474/8071/fmf_powercore2_shorty_silencer_kawasaki_suzuki80cc100cc19982020_750x750.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 Shorty Silencer Kawasaki Suzuki 80cc 100cc 1998 2021 Cycle Gear">
+											<img class="card-img v-image ads-img " src="https://www.cyclegear.com/_a/product_images/1474/8071/fmf_powercore2_shorty_silencer_kawasaki_suzuki80cc100cc19982020_750x750.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHXfQer6p2BGXSXXUfdHsARwIZLe1qW2Qyog';" alt="Fmf Powercore 2 Shorty Silencer Kawasaki Suzuki 80cc 100cc 1998 2021 Cycle Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 Shorty Silencer Kawasaki Suzuki 80cc 100cc 1998 2021 Cycle Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fmfracing.com/ImageHandler.ashx?itemid=041567&amp;catid=635&amp;page=Detail" data-lightbox="roadtrip" data-title="Product Details Fmf Racing">
+											<img class="card-img v-image ads-img " src="https://www.fmfracing.com/ImageHandler.ashx?itemid=041567&amp;catid=635&amp;page=Detail" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7HqChCzse1DKECjmiwTVItqjiDd__Ydzj2w';" alt="Product Details Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product Details Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fmfracing.com/ImageHandler.ashx?catid=111&amp;itemid=" data-lightbox="roadtrip" data-title="Product List Fmf Racing">
+											<img class="card-img v-image ads-img " src="https://www.fmfracing.com/ImageHandler.ashx?catid=111&amp;itemid=" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnescQM27K8ewzcdtSyqaZPJ9XMPHjq8dHKQ';" alt="Product List Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product List Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.revzilla.com/product_images/0374/5370/fmf_power_core4_hex_slip_on_exhaust_yamaha_yz450_f2018_750x750.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 4 Hex Slip On Exhaust Yamaha Yz450f Fx Wr450f 2018 2021 10 38 00 Off Revzilla">
+											<img class="card-img v-image ads-img " src="https://www.revzilla.com/product_images/0374/5370/fmf_power_core4_hex_slip_on_exhaust_yamaha_yz450_f2018_750x750.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vis1zvMIjxyeW_SiBG_6UOJPc5sYVwlQ6A';" alt="Fmf Powercore 4 Hex Slip On Exhaust Yamaha Yz450f Fx Wr450f 2018 2021 10 38 00 Off Revzilla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 4 Hex Slip On Exhaust Yamaha Yz450f Fx Wr450f 2018 2021 10 38 00 Off Revzilla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3d/ad/78/3dad78d6fb78592000b4781841fc4004.jpg" data-lightbox="roadtrip" data-title="Fmf Racing Fmf Powerbomb Stainless Steel Header 040050 In 2020 Steel Stainless Steel Stainless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3d/ad/78/3dad78d6fb78592000b4781841fc4004.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuUH-oYa0upuI9lZt1ngaFWNlos8wW4vrUzg';" alt="Fmf Racing Fmf Powerbomb Stainless Steel Header 040050 In 2020 Steel Stainless Steel Stainless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Racing Fmf Powerbomb Stainless Steel Header 040050 In 2020 Steel Stainless Steel Stainless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mxtotal2-15057.kxcdn.com/1990-large_default/fmf-powercore-2-silencer-kawasaki-kx-80-85-100.jpg" data-lightbox="roadtrip" data-title="Fmf Powercore 2 Silencer Kawasaki Kx 80 85 100">
+											<img class="card-img v-image ads-img " src="https://mxtotal2-15057.kxcdn.com/1990-large_default/fmf-powercore-2-silencer-kawasaki-kx-80-85-100.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhIatMUn193Jnum2AX2Ky_TXnkiMwDD2hQA';" alt="Fmf Powercore 2 Silencer Kawasaki Kx 80 85 100">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Powercore 2 Silencer Kawasaki Kx 80 85 100</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets.suredone.com/684447/media-pics/wps-79-2511-fmf-025234-p-core-2-silver-beta.jpg" data-lightbox="roadtrip" data-title="Fmf Racing 025234 Powercore 2 Silencer Ebay">
+											<img class="card-img v-image ads-img " src="https://assets.suredone.com/684447/media-pics/wps-79-2511-fmf-025234-p-core-2-silver-beta.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1FE48bvMrzVAx-tg1nd7488srOZe_bzRjEA';" alt="Fmf Racing 025234 Powercore 2 Silencer Ebay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fmf Racing 025234 Powercore 2 Silencer Ebay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.fmfracing.com/ImageHandler.ashx?catid=384&amp;itemid=" data-lightbox="roadtrip" data-title="Product List Fmf Racing">
+											<img class="card-img v-image ads-img " src="http://www.fmfracing.com/ImageHandler.ashx?catid=384&amp;itemid=" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbySg54pDrQcR8FlyfCsVGWQbsy7pu7wh6dw';" alt="Product List Fmf Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Product List Fmf Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-discounts-legoland.html">Veteran Discounts Legoland</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-memorial-day.html">Veteran Discounts Memorial Day</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-definition.html">Veteran Owned Business Definition</a></li>
+													<li class="list-group-item"><a href="/veteran-day-deals-houston.html">Veteran Day Deals Houston</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-new-york-city.html">Veteran Discounts New York City</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-at-lowes-and-home-depot.html">Veteran Discounts At Lowes And Home Depot</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-certification.html">Veteran Owned Business Certification</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-costco.html">Veteran Discounts Costco</a></li>
+													<li class="list-group-item"><a href="/veteran-day-deals-michigan.html">Veteran Day Deals Michigan</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-cruises.html">Veteran Discounts Cruises</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-for-sale.html">Veteran Owned Business For Sale</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-in-oklahoma.html">Veteran Discounts In Oklahoma</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-at-retail-stores.html">Veteran Discounts At Retail Stores</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-help.html">Veteran Owned Business Help</a></li>
+													<li class="list-group-item"><a href="/veteran-career-transition.html">Veteran Career Transition</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-on-laptops.html">Veteran Discounts On Laptops</a></li>
+													<li class="list-group-item"><a href="/veteran-discount-for-directv.html">Veteran Discount For Directv</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-today.html">Veteran Discounts Today</a></li>
+													<li class="list-group-item"><a href="/veteran-day-meal-deals-near-me.html">Veteran Day Meal Deals Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-day-deals-2019-las-vegas.html">Veteran Day Deals 2019 Las Vegas</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

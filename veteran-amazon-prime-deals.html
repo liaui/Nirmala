@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Amazon Prime Deals - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Amazon Prime Deals",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/54/48/8b/54488b1a521c2e98123d6caabeb8eb33.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+amazon+prime+deals",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Amazon Prime Deals</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Be on the lookout for more from Amazon next Veterans Day. Save 40 on your Amazon Prime membership. This is another way that having an Amazon Prime membership is great for both veterans and active duty personnel as with a Prime membership you can purchase your favorite music television show or even favorite type of candyeven if you are thousands of miles from home. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/orvis-veterans-discount.html">orvis veterans discount</a>
+											<a class="badge badge-info" href="/onward-to-opportunity-military-spouse.html">onward to opportunity military spouse</a>
+											<a class="badge badge-danger" href="/old-navy-military-coats.html">old navy military coats</a>
+											<a class="badge badge-success" href="/oman-gdp-2020-imf.html">oman gdp 2020 imf</a>
+											<a class="badge badge-warning" href="/onward-to-opportunity-norfolk.html">onward to opportunity norfolk</a>
+											<a class="badge badge-danger" href="/onward-to-opportunity-spouse.html">onward to opportunity spouse</a>
+											<a class="badge badge-success" href="/onward-to-opportunity-colorado-springs.html">onward to opportunity colorado springs</a>
+											<a class="badge badge-info" href="/old-navy-military-promo-code.html">old navy military promo code</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/48/8b/54488b1a521c2e98123d6caabeb8eb33.png" data-lightbox="roadtrip" data-title="In Honor Of Veterans Day Amazon Announces Special Savings On Amazon Prime For Active Duty Military Veterans For New Military Veterans Veterans Day Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/48/8b/54488b1a521c2e98123d6caabeb8eb33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq48m5xtXyU4SfH00RGr3vbjAJGcoDwrCaYQ';" alt="In Honor Of Veterans Day Amazon Announces Special Savings On Amazon Prime For Active Duty Military Veterans For New Military Veterans Veterans Day Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Honor Of Veterans Day Amazon Announces Special Savings On Amazon Prime For Active Duty Military Veterans For New Military Veterans Veterans Day Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ba/5e/1b/ba5e1b49f31b2eeecbe0a6f35c7cdb34.jpg" data-lightbox="roadtrip" data-title="Deal Alert Only 79 For A Full Year Of Amazon Prime For Veterans Active Military Yo Free Samples Https Yofreesamples Com A Veteran Amazon Prime Amazon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ba/5e/1b/ba5e1b49f31b2eeecbe0a6f35c7cdb34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKQv3H_ElA9j_bZNetWN7yPRmutR9HOsaurw';" alt="Deal Alert Only 79 For A Full Year Of Amazon Prime For Veterans Active Military Yo Free Samples Https Yofreesamples Com A Veteran Amazon Prime Amazon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deal Alert Only 79 For A Full Year Of Amazon Prime For Veterans Active Military Yo Free Samples Https Yofreesamples Com A Veteran Amazon Prime Amazon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/94/1d/71941d44e11f374f78322921477cb639.jpg" data-lightbox="roadtrip" data-title="21 Amazon Prime Shopping Perks You Probably Didn T Know About Amazon Hacks Shopping Hacks Life Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/94/1d/71941d44e11f374f78322921477cb639.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcx1mf6lfH40nplZM0xt1BwBOs-unozCnkRQ';" alt="21 Amazon Prime Shopping Perks You Probably Didn T Know About Amazon Hacks Shopping Hacks Life Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Amazon Prime Shopping Perks You Probably Didn T Know About Amazon Hacks Shopping Hacks Life Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/e4/25/33e42510d59ab811792963e57194431d.png" data-lightbox="roadtrip" data-title="Today S Tech News Briefs Downloads Deals Etc Tech News Quick Reads Brief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/e4/25/33e42510d59ab811792963e57194431d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEoNDohpCIEVPl29d3ELUZnMeeOFuRloK0w';" alt="Today S Tech News Briefs Downloads Deals Etc Tech News Quick Reads Brief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today S Tech News Briefs Downloads Deals Etc Tech News Quick Reads Brief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/ab/31/53ab31f4078e56e482f31cf132dbd141.jpg" data-lightbox="roadtrip" data-title="8 Amazon Prime Day Deals Perfect For Military Families Amazon Prime Day Deals Amazon Prime Day Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/ab/31/53ab31f4078e56e482f31cf132dbd141.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VnXSykSGAn9Hz2q_5dFN6xyF4egGDwiJyA';" alt="8 Amazon Prime Day Deals Perfect For Military Families Amazon Prime Day Deals Amazon Prime Day Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Amazon Prime Day Deals Perfect For Military Families Amazon Prime Day Deals Amazon Prime Day Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f8/7a/c4/f87ac40e274471bb332dbcd93b7887c6.jpg" data-lightbox="roadtrip" data-title="31 Awesome Amazon Prime Perks You Probably Didn T Know About The Krazy Coupon Lady Amazon Prime Prime Amazon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f8/7a/c4/f87ac40e274471bb332dbcd93b7887c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzNV_jArbxSdpXYD0SWK4xYyqOv3JZt6NLw';" alt="31 Awesome Amazon Prime Perks You Probably Didn T Know About The Krazy Coupon Lady Amazon Prime Prime Amazon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">31 Awesome Amazon Prime Perks You Probably Didn T Know About The Krazy Coupon Lady Amazon Prime Prime Amazon</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0d/c6/84/0dc6848646e11e1d2df8b4d24dfdb455.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzNV_jArbxSdpXYD0SWK4xYyqOv3JZt6NLw';" alt="31 Awesome Amazon Prime Perks You Probably Didn T Know About The Krazy Coupon Lady Amazon Prime Prime Amazon">
+										<div class="card-body">
+						<h3 class="h5"><b>This is a one-time discount and the membership fee will return to standard pricing upon next annual renewal.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran amazon prime deals</strong>. 
+								
+																	If you are a Prime member this purchase will extend your membership by one year. 
+																	This is a one-time discount and the membership fee will return to standard pricing upon next annual renewal. 
+																	Usually a Prime membership comes to 119 a year but Amazon is giving US. 
+																	40 off 2 days ago The Veterans Day promotion discounts the Amazon Prime membership fee from 119year to 79 for one year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shop military family small businesses on Amazon Storefronts. 
+																	Regular price is 119 so this is a savings of 40 more than 33 off. 
+																	Veteran or active military. 
+																	Amazon Prime Rewards Visa Signature Card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Current military and veterans are eligible and can apply here. 
+																	11 veterans active-duty troops and Guard and Reserve members can get a one-year Amazon Prime membership for 79 -- thats 40 off the regular price. 
+																	Thanks to the veterans and those currently working in the army. 
+																	The Veterans Day promotion discounts the Amazon Prime membership fee from 119year to 79 for one year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The offer cuts the cost of Amazons yearlong. 
+																	This Veterans Day Amazon Prime promotion running from Nov. 
+																	A newer feature of Amazon Prime the Prime Now feature allows customers to shop from. 
+																	Get 40 off the regular price through Nov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you purchase something through a post on our site Task Purpose may get a small share of the. 
+																	By Bruce Brown November 11 2019 In honor of Veterans Day Amazon discounted a one-year Amazon Prime membership for US. 
+																	40 off one year of Amazon Prime through Veterans Day. 
+																	All you have to do is sign up and verify your status which you can do here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members qualify for free same-day delivery on more than a million different items located on the. 
+																	6 11 2020 as per prediction. 
+																	This year Amazon is offering an amazing deal on Amazon Prime to veterans and active duty military. 
+																	Amazons New Discount 3 days ago You can save up to 40 on Amazon Prime military Discount Nov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But no military discount for temporarily current and previous militaryVeteran staff members can enjoy a discount of 40 on a yearly veterans day Amazon Prime. 
+																	For all you sacrificed for the country for the hard work and dedication you gave Amazon Military Discount wants to provide a small thank-you mark to you and your immediate family who back for you. 
+																	Starting today and until November 11th if youve served in the military or are a current active. 
+																	COUPON 5 days ago Amazon Prime Veteran Discount 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats 79 compared with the regular price of 119. 
+																	Learn more here from Amazon Prime Insider. 
+																	The deal which ends today November 11 offers a. 
+																	12 Military And Veteran Deal Recommendations For Amazon Prime Day 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prime Now exclusive deliveries. 
+																	With Veterans Day coming up Amazon has launched a new promotion aimed at armed forces members. 
+																	Free same day delivery. 
+																	Last Veterans Day Amazon recognized veterans with a Amazon Prime discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New and existing Amazon Prime members are eligible. 
+																	E ven if youre not a part of the military community you can feel good about supporting independent entrepreneurs and get free Prime delivery when you shop military family small businesses on Amazon Storefronts such as these. 
+																	Yeapv Nylon Tactical Web Belt W15-2 Military Army Style Combat Riggers Webbing Belt Adjustable Heavy Duty with Quick-Release Metal Buckle for Men Women 43 out of 5 stars 148 1359 13. 
+																	This hefty military discount gives you access to a year of more than 20 Amazon Prime perks for 79. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 days ago Amazon Prime Military Discount For Veterans Day. 
+																	Amazon is giving massive discounts on Prime memberships to current and former military members in recognition of Veterans Day the company said Tuesday. 
+																	Veterans Active Duty Reserve and National Guard members a discount on Amazon Prime membership for to just 79 a year. 
+																	Yes Amazon Military Discount does give discounts to veterans or military personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Starting today and running through Nov. 
+																	You can receive a year of Amazon Prime for 79 between November 6th through November 11th 2019. 
+																	In addition each year Amazon traditionally has Amazon Veterans Day Sale where great deals are available plus 20 or more off select items. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/e3/c8/06e3c8510876a741c6e6bd2bdd0712b6.jpg" data-lightbox="roadtrip" data-title="Check Out These Veterans Day Deals On Amazon Prime Battlefield Tours Plus Free Food And More Veterans Day Discounts Veterans Day Military Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/e3/c8/06e3c8510876a741c6e6bd2bdd0712b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBJgP0aBkrc-ImD6o07-BnVTXlDtZMfljSA';" alt="Check Out These Veterans Day Deals On Amazon Prime Battlefield Tours Plus Free Food And More Veterans Day Discounts Veterans Day Military Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out These Veterans Day Deals On Amazon Prime Battlefield Tours Plus Free Food And More Veterans Day Discounts Veterans Day Military Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/23/83/d623837b37125a71f72995398aaf823f.png" data-lightbox="roadtrip" data-title="How To Save Big On Amazon Prime Day Fashionavemom Amazon Prime Day Prime Day Save Money On Groceries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/23/83/d623837b37125a71f72995398aaf823f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sGCrP5m_d4boT66-q7H2A_DrPZ0wm46a3A';" alt="How To Save Big On Amazon Prime Day Fashionavemom Amazon Prime Day Prime Day Save Money On Groceries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Save Big On Amazon Prime Day Fashionavemom Amazon Prime Day Prime Day Save Money On Groceries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/8c/57/bc8c57ae4c3480f958f2b75159f3c12a.png" data-lightbox="roadtrip" data-title="21 Amazon Prime Shopping Perks You Probably Didn T Know About Amazon Prime Perks Prime">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/8c/57/bc8c57ae4c3480f958f2b75159f3c12a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDzig32nj4KYONJ7moOW4wbX0a_kYYgzBhw';" alt="21 Amazon Prime Shopping Perks You Probably Didn T Know About Amazon Prime Perks Prime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Amazon Prime Shopping Perks You Probably Didn T Know About Amazon Prime Perks Prime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/e9/b6/58e9b630d2084491bcdbda65c213859d.jpg" data-lightbox="roadtrip" data-title="Footlocker All Active Duty Military Military Veterans And Their Families Who Are Veterans Advantage C Marine Wife Life Veterans Advantage Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/e9/b6/58e9b630d2084491bcdbda65c213859d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKM4ugrhy_v20fRGomD95-iK8P_N2hkU9gkQ';" alt="Footlocker All Active Duty Military Military Veterans And Their Families Who Are Veterans Advantage C Marine Wife Life Veterans Advantage Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Footlocker All Active Duty Military Military Veterans And Their Families Who Are Veterans Advantage C Marine Wife Life Veterans Advantage Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/c6/84/0dc6848646e11e1d2df8b4d24dfdb455.png" data-lightbox="roadtrip" data-title="2018 Veterans Day Military Discounts And Freebies Retail Salute Military Discounts Veterans Day Discounts Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/c6/84/0dc6848646e11e1d2df8b4d24dfdb455.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvD2gKD9HBdeREJuYZVkN8qX6Zg97-kqgxHQ';" alt="2018 Veterans Day Military Discounts And Freebies Retail Salute Military Discounts Veterans Day Discounts Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 Veterans Day Military Discounts And Freebies Retail Salute Military Discounts Veterans Day Discounts Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/ab/e7/a7abe7c0afca497d0cff52e9123d3806.png" data-lightbox="roadtrip" data-title="Teachers Grab The Best Deals On Amazon Prime Day October 13th Classroom Tools Resource Classroom Teacher">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/ab/e7/a7abe7c0afca497d0cff52e9123d3806.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIkDP5xYxHASkBekgDfMoXSqfDZ28UQ1-Gqw';" alt="Teachers Grab The Best Deals On Amazon Prime Day October 13th Classroom Tools Resource Classroom Teacher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teachers Grab The Best Deals On Amazon Prime Day October 13th Classroom Tools Resource Classroom Teacher</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/3e/8e/303e8e9bdd5eb6a1965b18b0e2dea688.png" data-lightbox="roadtrip" data-title="Veteran S Day Military Discounts On Phones And Unlimited Data Plans Data Plan How To Plan Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/3e/8e/303e8e9bdd5eb6a1965b18b0e2dea688.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK9VqPD1E9h5d3aSnmc0iOc3CBSIxZ-Zcw_Q';" alt="Veteran S Day Military Discounts On Phones And Unlimited Data Plans Data Plan How To Plan Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran S Day Military Discounts On Phones And Unlimited Data Plans Data Plan How To Plan Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/06/db/5706dbc89931cc029ad30cddf3237a58.png" data-lightbox="roadtrip" data-title="Is There An Amazon Prime Discount For Military Female Soldier Veterans Discounts Army Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/06/db/5706dbc89931cc029ad30cddf3237a58.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF-e2P2Gh-uUBY698biQJqhdHtzqKLNT26_A';" alt="Is There An Amazon Prime Discount For Military Female Soldier Veterans Discounts Army Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is There An Amazon Prime Discount For Military Female Soldier Veterans Discounts Army Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/d3/96/65d3962ad43e977306e7423de02ba446.gif" data-lightbox="roadtrip" data-title="Pin On Amazon Prime Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/d3/96/65d3962ad43e977306e7423de02ba446.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZT2awOA7XqaohKU-atlHwXTombzXdNYQag';" alt="Pin On Amazon Prime Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amazon Prime Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2f/6d/8b/2f6d8bdae0e0855c9495af8cff4662dc.jpg" data-lightbox="roadtrip" data-title="Awesome I Love Prime Day And Seeing Prime Day Deals For Police Wives Score Prime Day Deals Police Wife Amazon Prime Day Deals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2f/6d/8b/2f6d8bdae0e0855c9495af8cff4662dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzckbEGe0IYRP0s-OaoR_dZWvR2OVAT_SBQ';" alt="Awesome I Love Prime Day And Seeing Prime Day Deals For Police Wives Score Prime Day Deals Police Wife Amazon Prime Day Deals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Awesome I Love Prime Day And Seeing Prime Day Deals For Police Wives Score Prime Day Deals Police Wife Amazon Prime Day Deals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/20/79/1a/20791a754e2bcd49eb4584901f1fbbf2.jpg" data-lightbox="roadtrip" data-title="Amazon Prime Day Starts July 16th Get Your Free Trials Now Amazon Prime Day Prime Day Phone Deals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/20/79/1a/20791a754e2bcd49eb4584901f1fbbf2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS42ZNQsmzkO-E5ZdF0_wahGTmUOj8D617j-Q';" alt="Amazon Prime Day Starts July 16th Get Your Free Trials Now Amazon Prime Day Prime Day Phone Deals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazon Prime Day Starts July 16th Get Your Free Trials Now Amazon Prime Day Prime Day Phone Deals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1b/e5/37/1be5378cfd30cc82a579bfb290c0e72f.jpg" data-lightbox="roadtrip" data-title="Hey Veterans Amazon Is Giving You 40 Off An Amazon Prime Membership Until 11 11 Even If You Alrea In 2020 Amazon Prime Membership Money Saving Tips Veteran S Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1b/e5/37/1be5378cfd30cc82a579bfb290c0e72f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjleA2SBud0bvNFHjd6Uqxx4Ur1A_qbFMZIA';" alt="Hey Veterans Amazon Is Giving You 40 Off An Amazon Prime Membership Until 11 11 Even If You Alrea In 2020 Amazon Prime Membership Money Saving Tips Veteran S Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hey Veterans Amazon Is Giving You 40 Off An Amazon Prime Membership Until 11 11 Even If You Alrea In 2020 Amazon Prime Membership Money Saving Tips Veteran S Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/e1/02/fee10227af345f28413159be90782ca0.png" data-lightbox="roadtrip" data-title="Announcement Free Veterans Day Bbq In Celebration Of Those Serving Those Who Have Served Please Enjoy Bbq Camaraderi Veterans Day Announcement Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/e1/02/fee10227af345f28413159be90782ca0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Yzv1MbwP_fTJv0MLvrVzFy8ce68Wpj_4vQ';" alt="Announcement Free Veterans Day Bbq In Celebration Of Those Serving Those Who Have Served Please Enjoy Bbq Camaraderi Veterans Day Announcement Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Announcement Free Veterans Day Bbq In Celebration Of Those Serving Those Who Have Served Please Enjoy Bbq Camaraderi Veterans Day Announcement Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/6e/44/b16e44833f0d174d7edb101f55ed92df.png" data-lightbox="roadtrip" data-title="How To Prepare For Prime Day 2020 Like A Boss Peek At This Blog Amazon Prime Day Prime Day Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/6e/44/b16e44833f0d174d7edb101f55ed92df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mjSXc41AqVwfjDwjkYhzjLLGx8zbef5bgw';" alt="How To Prepare For Prime Day 2020 Like A Boss Peek At This Blog Amazon Prime Day Prime Day Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Prepare For Prime Day 2020 Like A Boss Peek At This Blog Amazon Prime Day Prime Day Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/fa/b7/97fab7d3e82c18e327a84c1e77e50849.png" data-lightbox="roadtrip" data-title="If You Want To Reap The Benefits Of Amazon Rewards Without Committing To A Credit Card Try This Hack Get 2 Amazon Hacks Make Money On Amazon Amazon Rewards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/fa/b7/97fab7d3e82c18e327a84c1e77e50849.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKmFa3yn7U-k5PeEH2m_iJ9SOTlhA4AVKbfg';" alt="If You Want To Reap The Benefits Of Amazon Rewards Without Committing To A Credit Card Try This Hack Get 2 Amazon Hacks Make Money On Amazon Amazon Rewards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Want To Reap The Benefits Of Amazon Rewards Without Committing To A Credit Card Try This Hack Get 2 Amazon Hacks Make Money On Amazon Amazon Rewards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/lmao-urdu-meaning.html">Lmao Urdu Meaning</a></li>
+													<li class="list-group-item"><a href="/lmao-xd-meaning-in-hindi.html">Lmao Xd Meaning In Hindi</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-in-polish.html">Lmao Meaning In Polish</a></li>
+													<li class="list-group-item"><a href="/lmao-tiktok.html">Lmao Tiktok</a></li>
+													<li class="list-group-item"><a href="/lmao-lyrics.html">Lmao Lyrics</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-in-hindi.html">Lmao Meaning In Hindi</a></li>
+													<li class="list-group-item"><a href="/lmao-vs-imao.html">Lmao Vs Imao</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-urdu.html">Lmao Meaning Urdu</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-how-to-say.html">Lmao Meaning How To Say</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-in-chat.html">Lmao Meaning In Chat</a></li>
+													<li class="list-group-item"><a href="/lmao-xd-images.html">Lmao Xd Images</a></li>
+													<li class="list-group-item"><a href="/lmao-wrong-meaning.html">Lmao Wrong Meaning</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-hindi.html">Lmao Meaning Hindi</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-pronounce.html">Lmao Meaning Pronounce</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-tagalog.html">Lmao Meaning Tagalog</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-in-persian.html">Lmao Meaning In Persian</a></li>
+													<li class="list-group-item"><a href="/lmao-u-good-meme.html">Lmao U Good Meme</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-in-chat-in-hindi.html">Lmao Meaning In Chat In Hindi</a></li>
+													<li class="list-group-item"><a href="/lmao-meaning-quora.html">Lmao Meaning Quora</a></li>
+													<li class="list-group-item"><a href="/lmao-o-que-significa.html">Lmao O Que Significa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

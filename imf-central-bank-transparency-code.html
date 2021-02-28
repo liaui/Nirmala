@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Central Bank Transparency Code - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Central Bank Transparency Code",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/05/da/72/05da7233443aa7fb7268a62049738508.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+central+bank+transparency+code",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Central Bank Transparency Code</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It said in a statement on Thursday July 30 2020 that the development of the CBT followed on the boards direction in April 2019 to update the 1999 Monetary and Financial Policies Transparency code and bring it in line with the recommendations of the 2017 Joint Review of the Standards and codes Initiative. The proposal makes clear that modern central banks are expected to explain and justify their actions and give account of the decisions made in the execution of their. 20151030 20151030161448 ACCESSION NUMBER. <br>				
+			</p>
+										<a class="badge badge-primary" href="/academy-sports-military-discount-2019.html">academy sports military discount 2019</a>
+											<a class="badge badge-warning" href="/apple-military-login.html">apple military login</a>
+											<a class="badge badge-info" href="/ancestry-dna-test-military-discount.html">ancestry dna test military discount</a>
+											<a class="badge badge-warning" href="/aafes-veterans-day-flyer.html">aafes veterans day flyer</a>
+											<a class="badge badge-secondary" href="/apple-abandoned-military-base.html">apple abandoned military base</a>
+											<a class="badge badge-success" href="/apple-bank-open-on-veterans-day.html">apple bank open on veterans day</a>
+											<a class="badge badge-warning" href="/american-airlines-veteran-jobs.html">american airlines veteran jobs</a>
+											<a class="badge badge-success" href="/american-airlines-military-admirals-club.html">american airlines military admirals club</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the ideal site.  Our website provides you with hints for seeing the maximum quality video and image content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cf/b2/56/cfb256dc20c1a51c4b82020c3d7d9657.jpg" data-lightbox="roadtrip" data-title="Discover The World Imf Introduces New Transparency Code For Nigeria In 2020 Debt Developed Economy Senior Resident">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cf/b2/56/cfb256dc20c1a51c4b82020c3d7d9657.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy9Bp7Wk96ln8wiiWoLVeq1H6jMDIE97L3gg';" alt="Discover The World Imf Introduces New Transparency Code For Nigeria In 2020 Debt Developed Economy Senior Resident">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover The World Imf Introduces New Transparency Code For Nigeria In 2020 Debt Developed Economy Senior Resident</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/5f/ba/d55fba89296e6ef02016258f1fd35691.png" data-lightbox="roadtrip" data-title="Imf Job Polarization And The Declining Fortunes Of The Young Evidence From The United Kingdom Pdf Financial Stability Financial Global Economy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/5f/ba/d55fba89296e6ef02016258f1fd35691.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZXvo6VO_DrnOVIQX46EeLzxFAOid2J7vL0g';" alt="Imf Job Polarization And The Declining Fortunes Of The Young Evidence From The United Kingdom Pdf Financial Stability Financial Global Economy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Job Polarization And The Declining Fortunes Of The Young Evidence From The United Kingdom Pdf Financial Stability Financial Global Economy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/8e/1b/368e1bc16a320095e7c758a19a25a42f.jpg" data-lightbox="roadtrip" data-title="Xrp Price Analysis For April 21th In 2020 Ripple Cryptocurrency Retirement Accounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/8e/1b/368e1bc16a320095e7c758a19a25a42f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vMMGdjL60_6lY0H1HdIBVYRv4o4H0KmCZQ';" alt="Xrp Price Analysis For April 21th In 2020 Ripple Cryptocurrency Retirement Accounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xrp Price Analysis For April 21th In 2020 Ripple Cryptocurrency Retirement Accounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/da/72/05da7233443aa7fb7268a62049738508.png" data-lightbox="roadtrip" data-title="Lo Plus Guldkort Micro Computer Finance Board Of Directors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/da/72/05da7233443aa7fb7268a62049738508.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArkQN5kjiu0gVuEPNy0e0IYoQBXb0G0JhAA';" alt="Lo Plus Guldkort Micro Computer Finance Board Of Directors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lo Plus Guldkort Micro Computer Finance Board Of Directors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/41/42/0041420def68c8fc2d0dc44b57a45276.jpg" data-lightbox="roadtrip" data-title="Banks Are Awaiting The List Of Accounts For Bankruptcy Proceedings From Reserve Bank Of India Rbi Despite Having Ac Debt Resolution Financial News Dividend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/41/42/0041420def68c8fc2d0dc44b57a45276.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52zP3kLyf8QYh0Sc1QXcLMl6Gf5px6mFmXA';" alt="Banks Are Awaiting The List Of Accounts For Bankruptcy Proceedings From Reserve Bank Of India Rbi Despite Having Ac Debt Resolution Financial News Dividend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Banks Are Awaiting The List Of Accounts For Bankruptcy Proceedings From Reserve Bank Of India Rbi Despite Having Ac Debt Resolution Financial News Dividend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/90/20/e4902027ed5978bc85f357b7a3cade62.jpg" data-lightbox="roadtrip" data-title="Defusing The Internet Of Things Time Bomb Techcrunch Cloud Computing Internet Iot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/90/20/e4902027ed5978bc85f357b7a3cade62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStbf6mk2ilWfhAlYtO-TfGOsv1XQatT3zIwA';" alt="Defusing The Internet Of Things Time Bomb Techcrunch Cloud Computing Internet Iot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defusing The Internet Of Things Time Bomb Techcrunch Cloud Computing Internet Iot</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/170x/71/7d/52/717d524a095ea5dc8675dcd9e0ff9e4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStbf6mk2ilWfhAlYtO-TfGOsv1XQatT3zIwA';" alt="Defusing The Internet Of Things Time Bomb Techcrunch Cloud Computing Internet Iot">
+										<div class="card-body">
+						<h3 class="h5"><b>This should help central banks adapt to their changed environment as well as provide a continued raison-dêtre for their independence.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf central bank transparency code</strong>. 
+								
+																	The paper reports to the Executive Board on its decision of April 29 2019 to prepare an IMF Central Bank Transparency Code CBT which is linked to the 2017 Review of the Standards and Codes Initiative RSCI for a revision and update of the 1999 Monetary and Financial Policies Transparency Code MFPT. 
+																	More transparency and accountability are required to maintain public support safeguard independence and enhance policy effectiveness. 
+																	The executive board of the International Monetary Fund has approved the new IMF Central Bank Transparency code. 
+																	The new code is part of the IMFs broader focus on issues of accountability and governance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The update is in line with the recommendations of the 2017 Joint Review of the Standards and Codes Initiative indicating the need for risk-based assessments to support policy effectiveness and address macroeconomic risks. 
+																	IMF Executive Board Approves New Central Bank Transparency Code FOR IMMEDIATE RELEASE Washington DC July nd30 2020. 
+																	1 Top originators servicers based on Q2 2017 IMF ranking. 
+																	IMFs new central bank transparency code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On April 29 2019 the Executive Board of the International Monetary Fund IMF discussed a paper proposing an update of the Monetary and Financial Policies Transparency Code MFPT by means of replacing it by a new Central Bank Transparency Code CBT. 
+																	On July 2 nd the Executive Board of the International Monetary Fund IMF approved the new IMF Central Bank Transparency Code CBT. 
+																	Adjusted Revenues for the Software Solutions segment is presented in conformity with Accounting Standards Codification 280 Segment Reporting. 
+																	Directors asked staff that the new code remove the overlap on financial policies covered by other standards expand the transparency standards to broader set of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A reflection on PIC efforts On 2 July 2020 the Executive Board of the International Monetary Fund IMF approved the new IMF Central Bank Transparency Code CBTthe Code itself was released on 30 July. 
+																	IMF Executive Board Approves New Central Bank Transparency Code July 30 2020 On July 2 nd the Executive Board of the International Monetary Fund IMF approved the new IMF Central Bank Transparency Code CBT. 
+																	The development of the CBT follows on the Boards direction in April 2019 to update the 1999. 
+																	It aims to facilitate more effective communication between central banks and their various stakeholders reducing uncertainty and contributing to better policy choices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GCFR NG The Executive Board of the International Monetary Fund IMF has approved the new IMF Central Bank Transparency Code CBT. 
+																	On July 2 the Executive Board of the International Monetary Fund IMF approved the new IMF Central Bank Transparency Code CBT. 
+																	The Code is expected to facilitate greater transparency of central banks on their governance arrangements policies operations outcomes of operations and interaction with key stakeholders. 
+																	The development of the CBT follows on the Boards direction in April 2019 to update the 1999 Monetary and Financial Policies Transparency Code and bring it in line with the recommendations of the 2017 Joint Review of the Standards and Codes Initiative indicating the need for risk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It said in a statement on Thursday that the development of the CBT fol. 
+																	Central Bank of Nigeria. 
+																	The paper responds to a request made by the Executive Board at the time of the 2017 Review of the Standards and Codes Initiative RSCI for a revision and update of the 1999 Monetary and Financial Policies Transparency Code MFPT. 
+																	Eastern Caribbean Central Bank. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The International Monetary Funds executive board has adopted a voluntary code that helps central banks assess their transparency against best practices. 
+																	Directors asked that the CBT should remove the overlap on financial policies covered by other international standards expand the transparency standards to broader set of activities. 
+																	The IMF describes the code as a comprehensive set of principles and practices that apply to all central banks regardless of their mandates governance frameworks and. 
+																	IMF Introduces Central Bank Transparency Code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 Represents LTM Jun 2015 LTM Jun 2017 Adjusted Revenues CAGR. 
+																	0001627014-15-000024 CONFORMED SUBMISSION TYPE. 
+																	Nike Popoola The executive board of the International Monetary Fund has approved the new IMF Central Bank Transparency code. 
+																	REpORTS ON THE OBSERVANCE OF STANDARDS AND CODES ROSCs Update by World Bank Staff on ROSe Modules September 2009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The IMF has developed a Central Bank Transparency Code to help member countries answer these demands and increase trust and support. 
+																	It is with regard to transparency that the International Monetary Fund IMF has already made an important contribution to defining central bank governance. 
+																	The central bank transparency code sets out five key pillars of operations building on the IMFs 1999 monetary and financial policies transparency code. 
+																	The development of the CBT follows on the Boards direction in April 2019 to update the 1999 Monetary and Financial Policies Transparency Code and bring it in line with the recommendations of the 2017 Joint Review of the Standards and Codes Initiative indicating the need for risk-based assessments to support policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Code ofGood Practices on Fiscal Transparency IMF. 
+																	The Central Bank Transparency Code The paper reports to the Executive Board on its decision of April 29 2019 to prepare an IMF Central Bank Transparency Code CBT which is linked to the 2017 Review of the Standards and Codes Initiative RSCI for a revision and update of the 1999 Monetary and Financial Policies Transparency Code MFPT. 
+																	In the IMFs Code of Good Practices on Transparency in Monetary and Financial Policies 25 a broad approach is taken to the notion of central bank transparency referring to it as. 
+																	IMF Fiscal Transparency. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/64/28/756428137939b3c5fbeae71df1206b7c.png" data-lightbox="roadtrip" data-title="October Is National Cyber Security Awareness Month 2014 Learn More About What You Can Do And Share Cybersecurity Homeland Security Security Logo Homeland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/64/28/756428137939b3c5fbeae71df1206b7c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiseW1YwrDHE2wN2BWPK4EuL3HT-Gmd3LbIw';" alt="October Is National Cyber Security Awareness Month 2014 Learn More About What You Can Do And Share Cybersecurity Homeland Security Security Logo Homeland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">October Is National Cyber Security Awareness Month 2014 Learn More About What You Can Do And Share Cybersecurity Homeland Security Security Logo Homeland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/a3/d8/0ea3d8cf92d1f2c16310738a42dd9140.gif" data-lightbox="roadtrip" data-title="Fannie Mae Mortgage Backed Securities Mortgage Mortgage Lenders Fannie Mae">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/a3/d8/0ea3d8cf92d1f2c16310738a42dd9140.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd3_xiVgoo63XVKIS9sLC1wssqHDTubvg3VQ';" alt="Fannie Mae Mortgage Backed Securities Mortgage Mortgage Lenders Fannie Mae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fannie Mae Mortgage Backed Securities Mortgage Mortgage Lenders Fannie Mae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/02/a2/4902a2f59a97622e5b96fe3d7f0bf9c1.png" data-lightbox="roadtrip" data-title="Free Litecoin Faucet Faucet Company Logo Tech Company Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/02/a2/4902a2f59a97622e5b96fe3d7f0bf9c1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnqZ0Ke2wIGSB2bzgsymEmeiXEUD-Hw1l35g';" alt="Free Litecoin Faucet Faucet Company Logo Tech Company Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Litecoin Faucet Faucet Company Logo Tech Company Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/c6/1b/41c61b2781df63d55b70c09a6a6e05dd.jpg" data-lightbox="roadtrip" data-title="Pr Serenity Financial Forex Problems Solved By Blockchain This Is A Paid Press Release Which Contains Forward Looking S Financial Problem Solving Blockchain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/c6/1b/41c61b2781df63d55b70c09a6a6e05dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5P5Y9lTbY6Z22nmu7M50QZKaiuj_VuxcZ4Q';" alt="Pr Serenity Financial Forex Problems Solved By Blockchain This Is A Paid Press Release Which Contains Forward Looking S Financial Problem Solving Blockchain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pr Serenity Financial Forex Problems Solved By Blockchain This Is A Paid Press Release Which Contains Forward Looking S Financial Problem Solving Blockchain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/7d/52/717d524a095ea5dc8675dcd9e0ff9e4d.jpg" data-lightbox="roadtrip" data-title="A Theology Guide For Guilt Shame And Fear Cultures Guilt Shame Theology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/7d/52/717d524a095ea5dc8675dcd9e0ff9e4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmM1eZHMPgOhEirPkSd5oes9g6EAAScuD1kw';" alt="A Theology Guide For Guilt Shame And Fear Cultures Guilt Shame Theology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Theology Guide For Guilt Shame And Fear Cultures Guilt Shame Theology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/27/d8/de27d802756fa6b2a543afe0c8753462.png" data-lightbox="roadtrip" data-title="Japan Security Token Offering Association The Way Of Self Regulation Security Token Self Regulation Financial Instrument">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/27/d8/de27d802756fa6b2a543afe0c8753462.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRsKte0hW5ktz7B_rfTH1P8u1PIdE42eEBvg';" alt="Japan Security Token Offering Association The Way Of Self Regulation Security Token Self Regulation Financial Instrument">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Japan Security Token Offering Association The Way Of Self Regulation Security Token Self Regulation Financial Instrument</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c3/d7/24/c3d724c4fde332a9b25be74b4341a626.jpg" data-lightbox="roadtrip" data-title="Stage Three Begins With Public Node In 2020 Public Safety Audit Mnemonics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c3/d7/24/c3d724c4fde332a9b25be74b4341a626.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3cEbHxOoHviGw1E0nZEE8qLe-4uhCHL0sCw';" alt="Stage Three Begins With Public Node In 2020 Public Safety Audit Mnemonics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stage Three Begins With Public Node In 2020 Public Safety Audit Mnemonics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/35/1c/29351ccd681ddea79035c81dfd5033ed.jpg" data-lightbox="roadtrip" data-title="100 Foreign Country Notes Collection Small And Big Size 30 Different Country 100 Notes Coinbazzar Com Foreign Countries Different Countries Fancy Numbers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/35/1c/29351ccd681ddea79035c81dfd5033ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBcleM33fNuz3sJXwJ29cAru4zfuWgBxLZw';" alt="100 Foreign Country Notes Collection Small And Big Size 30 Different Country 100 Notes Coinbazzar Com Foreign Countries Different Countries Fancy Numbers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Foreign Country Notes Collection Small And Big Size 30 Different Country 100 Notes Coinbazzar Com Foreign Countries Different Countries Fancy Numbers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/favicons/56320de27ebcbc3fa1a305784d93cd2d2aa3c2f13c32da0a5ef1dfa2.png?60e8e8322b3fc0207fa9aa24b3f89c68" data-lightbox="roadtrip" data-title="Stage Three Begins With Public Node In 2020 Public Safety Audit Mnemonics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/favicons/56320de27ebcbc3fa1a305784d93cd2d2aa3c2f13c32da0a5ef1dfa2.png?60e8e8322b3fc0207fa9aa24b3f89c68" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArH6w1UAd2xoxVZ5ciHwZ0FkAQTjK9mionQ';" alt="Stage Three Begins With Public Node In 2020 Public Safety Audit Mnemonics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stage Three Begins With Public Node In 2020 Public Safety Audit Mnemonics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/71/7d/52/717d524a095ea5dc8675dcd9e0ff9e4d.jpg" data-lightbox="roadtrip" data-title="A Theology Guide For Guilt Shame And Fear Cultures Guilt Shame Theology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/71/7d/52/717d524a095ea5dc8675dcd9e0ff9e4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iBXK3G4-SsHHm2ps2zIpIzw-Qkpdx8a0Aw';" alt="A Theology Guide For Guilt Shame And Fear Cultures Guilt Shame Theology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Theology Guide For Guilt Shame And Fear Cultures Guilt Shame Theology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d9/c4/cd/d9c4cdd48713377708c40d018f97b95b.jpg" data-lightbox="roadtrip" data-title="The Chainlink Winners From The 2020 Hackmoney Digital Hackathon In 2020 Hackathon Digital Line Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d9/c4/cd/d9c4cdd48713377708c40d018f97b95b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ZveiEXZ62N2YjViYGAX8TpdthgqDmwN5qw';" alt="The Chainlink Winners From The 2020 Hackmoney Digital Hackathon In 2020 Hackathon Digital Line Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Chainlink Winners From The 2020 Hackmoney Digital Hackathon In 2020 Hackathon Digital Line Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/b3/b1/1fb3b1a57f7ba9f42743f9435c8067a0.jpg" data-lightbox="roadtrip" data-title="Coinbase And Ripple Execs Unveil Master Plan To Drive Us Crypto Adoption Https Cointelegraph Com News Coinbase And Ripp Blockchain Cryptocurrency Capital One">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/b3/b1/1fb3b1a57f7ba9f42743f9435c8067a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7e_cmHVi4Kn0N_0lN1kFmVwpGw3hSCFaTA';" alt="Coinbase And Ripple Execs Unveil Master Plan To Drive Us Crypto Adoption Https Cointelegraph Com News Coinbase And Ripp Blockchain Cryptocurrency Capital One">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coinbase And Ripple Execs Unveil Master Plan To Drive Us Crypto Adoption Https Cointelegraph Com News Coinbase And Ripp Blockchain Cryptocurrency Capital One</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/96/5b/90965b95bc2995f88fe8acc595d47b8f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/96/5b/90965b95bc2995f88fe8acc595d47b8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaYrGehd-FVAPBUvwInDqNV_tQsKjERI7iYw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-ptsd-exam-questions.html">Va Ptsd Exam Questions</a></li>
+													<li class="list-group-item"><a href="/vet-box-discount-code.html">Vet Box Discount Code</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-family-support.html">Va Ptsd Family Support</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-form-21-0781a.html">Va Ptsd Form 21 0781a</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-mst-rating.html">Va Ptsd Mst Rating</a></li>
+													<li class="list-group-item"><a href="/vanscom-military-discount.html">Vanscom Military Discount</a></li>
+													<li class="list-group-item"><a href="/va-piv-card-discounts.html">Va Piv Card Discounts</a></li>
+													<li class="list-group-item"><a href="/va-state-employee-hotel-discounts.html">Va State Employee Hotel Discounts</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-mst.html">Va Rating For Mst</a></li>
+													<li class="list-group-item"><a href="/vagov-military-id-card.html">Vagov Military Id Card</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-treatment-decision-aid.html">Va Ptsd Treatment Decision Aid</a></li>
+													<li class="list-group-item"><a href="/vet-direct-discount-code.html">Vet Direct Discount Code</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-and-hypertension.html">Va Ptsd And Hypertension</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-worksheet.html">Va Ptsd Worksheet</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-nexus-letter.html">Va Ptsd Nexus Letter</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-checklist.html">Va Ptsd Checklist</a></li>
+													<li class="list-group-item"><a href="/vet-discount-apple.html">Vet Discount Apple</a></li>
+													<li class="list-group-item"><a href="/verizon-bristol-va-exit-7.html">Verizon Bristol Va Exit 7</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-qualifications.html">Va Ptsd Qualifications</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-and-sleep-apnea.html">Va Ptsd And Sleep Apnea</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

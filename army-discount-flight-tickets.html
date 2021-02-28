@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Discount Flight Tickets - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Discount Flight Tickets",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/ea/0a/02/ea0a02062155e497910e7ced21382b8c.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+discount+flight+tickets",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Discount Flight Tickets</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Service members and their families can book their leisure travel and vacations completely online and at a discount through the service provider Priceline Group Inc. Booking Military Fares with CheapOair For military travelers you can call us at 1-212-763-0477 and our agents can assist you in booking military fares if the same is provided by the airlines. DateFlight change Cancellation Refund. <br>				
+			</p>
+										<a class="badge badge-light" href="/imf-greece-selected-issues.html">imf greece selected issues</a>
+											<a class="badge badge-dark" href="/imf-greece-bailout.html">imf greece bailout</a>
+											<a class="badge badge-light" href="/imf-india-bangladesh.html">imf india bangladesh</a>
+											<a class="badge badge-dark" href="/imf-greece-bailout-2010.html">imf greece bailout 2010</a>
+											<a class="badge badge-warning" href="/imf-historical-inflation-data.html">imf historical inflation data</a>
+											<a class="badge badge-info" href="/imf-headquarters-usa.html">imf headquarters usa</a>
+											<a class="badge badge-primary" href="/imf-greece-economic-outlook.html">imf greece economic outlook</a>
+											<a class="badge badge-light" href="/imf-india-bangladesh-gdp.html">imf india bangladesh gdp</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the ideal blog.  Our site provides you with hints for viewing the highest quality video and picture content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/8e/29/878e291a525c2ab8ca9ab1d59a79d7b5.jpg" data-lightbox="roadtrip" data-title="Flight Fare Deals Flight Fare Flight Reservation Airline Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/8e/29/878e291a525c2ab8ca9ab1d59a79d7b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2_P40PQzmqQefJVnfaiNWd7NDtKIqh04e7w';" alt="Flight Fare Deals Flight Fare Flight Reservation Airline Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flight Fare Deals Flight Fare Flight Reservation Airline Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6f/bc/fe/6fbcfeb6451fb60dd4f4dacf78e792ab.jpg" data-lightbox="roadtrip" data-title="Pin On Cheap Airfare Ticket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6f/bc/fe/6fbcfeb6451fb60dd4f4dacf78e792ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6AVkpC89lxsChbBuZS5T8UJfXK_wZAfeuWQ';" alt="Pin On Cheap Airfare Ticket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cheap Airfare Ticket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/28/e6/db28e62c36c5d6e83469f6532955e09e.jpg" data-lightbox="roadtrip" data-title="Planning To Explore The World Stop Searching Here And There For Booking Cheap Military Flight Tickets Browse Lux Airfare Deals Flight Discounts Flight Ticket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/28/e6/db28e62c36c5d6e83469f6532955e09e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSnV2-Tf8Lj8hXDDqyf_5f957_0UPch3CIQ';" alt="Planning To Explore The World Stop Searching Here And There For Booking Cheap Military Flight Tickets Browse Lux Airfare Deals Flight Discounts Flight Ticket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Planning To Explore The World Stop Searching Here And There For Booking Cheap Military Flight Tickets Browse Lux Airfare Deals Flight Discounts Flight Ticket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/8d/a4/7e8da41018439d5c09f164c72407a313.jpg" data-lightbox="roadtrip" data-title="Pin On Travel Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/8d/a4/7e8da41018439d5c09f164c72407a313.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBn1SoOitLFamIl7Q1lUG-idfF5_Px8YJUOQ';" alt="Pin On Travel Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Travel Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/0a/02/ea0a02062155e497910e7ced21382b8c.png" data-lightbox="roadtrip" data-title="Southwest Airlines Offers Military Discount Military Discounts Southwest Airlines Airline Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/0a/02/ea0a02062155e497910e7ced21382b8c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcvbBSecTqE8PJ-KakWPYZf3uGPrnnj1CRPQ';" alt="Southwest Airlines Offers Military Discount Military Discounts Southwest Airlines Airline Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southwest Airlines Offers Military Discount Military Discounts Southwest Airlines Airline Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/71/82/1b7182852c686601ea94d20e80c3aa84.png" data-lightbox="roadtrip" data-title="Lessons Learned From Flying Space A Across The World Poppin Smoke Military Flights Family Adventure Travel Disney World Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/71/82/1b7182852c686601ea94d20e80c3aa84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztDKwU9J86fjETtPglZANSAc4Vh1FRWJ0Ig';" alt="Lessons Learned From Flying Space A Across The World Poppin Smoke Military Flights Family Adventure Travel Disney World Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lessons Learned From Flying Space A Across The World Poppin Smoke Military Flights Family Adventure Travel Disney World Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/97/a7/43/97a743ca2d189069b6629d82dbabf6af--military-flights-military-families.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztDKwU9J86fjETtPglZANSAc4Vh1FRWJ0Ig';" alt="Lessons Learned From Flying Space A Across The World Poppin Smoke Military Flights Family Adventure Travel Disney World Military">
+										<div class="card-body">
+						<h3 class="h5"><b>Many airlines also waive the checked bag fees for military members especially when they are traveling on orders.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army discount flight tickets</strong>. 
+								
+																	The advertised Promo Code provides discounts against our service fees on stated routes. 
+																	Do you need a flight home for leave or need an emergency plane ticket somewhere. 
+																	Applies to online airline ticket bookings from one 1 traveler up to five 5 travelers. 
+																	No additional discount applies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ticket to be purchased 3 days before departure. 
+																	To book a discounted military medical emergency flight you will need to provide your name and relationship to your injured family member or domestic partner. 
+																	Under 2 years 1st accompanying Infant - INR 1250 per coupon Plus applicable taxes. 
+																	Searching by fare class may not be combinable with other search preferences eg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Booking Military Fares with OneTravel For military travelers you can call us at 1-212-763-0518 and our agents will assist you in booking military fares if the same is provided by the airlines. 
+																	Fares are based on airline availability and prices may not be guaranteed until booked. 
+																	Delta Air Lines has a long history of offering special rates for military personnel. 
+																	They also offer special fares to family members traveling to meet an active-duty service member. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First of all if you are looking for a military discount on any the average airline then go to the airlines website and then search for the military discount coupons. 
+																	United Military Travel offers the best rates on airfare loans for active duty and retired military as well as government personnel. 
+																	A total of up to five 5. 
+																	Veterans those on reserve and national guard members youre covered too. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Discount Center has many military discounts deals and freebies for active duty service members veterans and their families. 
+																	A maximum of 10 per person can be saved by using this promo code. 
+																	Offer expires February 28 2021. 
+																	Only here youll get the cheapest airline ticket deals available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enter Promo Code at time of check out. 
+																	Discount Airline Tickets Most airlines offer a military discount but you wont find these offers listed on travel websites. 
+																	Thats why we recommend doing a search on Skyscanner first so you can compare your military discount with all the other deals out there. 
+																	The discount is for routes that depart from the United States and Canada. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military discounts on concerts theater sporting events and more are also. 
+																	A division of the Morale Recreation and Welfare Program ITT offices are located on many installations and provide one-stop shopping for savings on. 
+																	You will need to visit the airline website or call their customer service department to get the discounts. 
+																	Active duty military not traveling on orders and their dependents can use a special military class fare MIL which removes advance-purchase requirements and provides a 5 percent discount on the base fare Up to five free bags per person for active duty military traveling on orders and their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 Year from date of issue. 
+																	2nd and more Infants no discount permissible. 
+																	For eligible military members the Information Tickets and Travel office offers discount ticket sales for everything from rock concerts to sporting events. 
+																	Active duty service members arent the only ones eligible for military discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to the name and phone number of the military hospital providing their care. 
+																	We are able to offer you exclusive airfare financing with no down payment required. 
+																	We search all airlines for cheap flights and show you the most discounted airfares. 
+																	So go on take that trip youve been thinking about and thank you for your service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	American Forces Travel expands ITT services through an ecommerce website making them available 247. 
+																	Fares are based on airline availability and prices may not be guaranteed until booked. 
+																	The discount is provided for active duty and their dependents as well as veterans National Guard and Reserve members. 
+																	Get your cheapest ticket here - with price guarantee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Alaska Airlines provides a 5 percent discount on flights for military personnel that are members of Veterans Advantage. 
+																	Follow a few quick and easy steps to get travel discounts for your next trip. 
+																	In addition to the Information Tickets and Travel office on your installation there is a virtual offering for military members to access discounts. 
+																	You can also specify the privileged services of the military background while booking tickets online in the booking window. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just enter your military or veterans ID to get an exclusive military travel discount of 18 off. 
+																	If the military discount is only say 5 but the airline has a seat sale or a promotion on youll probably get a better price through the seat sale or promotion. 
+																	Expedia is proud to offer special Military travel deals for service members only. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/e4/d7/a2e4d7661a6aab58bab93a9d38e61901.png" data-lightbox="roadtrip" data-title="Find The Best Flights Airline Deals Flight Deals American Airlines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/e4/d7/a2e4d7661a6aab58bab93a9d38e61901.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBIN35Sy3w9Zhbk5l057q4hZ46n65vD9lWQ';" alt="Find The Best Flights Airline Deals Flight Deals American Airlines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find The Best Flights Airline Deals Flight Deals American Airlines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b7/2d/f9/b72df99f7e37fae41127592fd31b584b.jpg" data-lightbox="roadtrip" data-title="No One Is Really A Fan Of Flying What Doesn T Help Is Expensive Airfare Service Members Of The U S Military Re Military Discounts Airfare Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b7/2d/f9/b72df99f7e37fae41127592fd31b584b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXAkPly-cSYzaLk0F4iS9mjce8HD6hQ-fPQ';" alt="No One Is Really A Fan Of Flying What Doesn T Help Is Expensive Airfare Service Members Of The U S Military Re Military Discounts Airfare Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No One Is Really A Fan Of Flying What Doesn T Help Is Expensive Airfare Service Members Of The U S Military Re Military Discounts Airfare Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/81/0e/66810e50ebc5783c6dd772251a1a189f.jpg" data-lightbox="roadtrip" data-title="Find Exclusive Offers On Cheap International Flight Ticket Deals International Flight Tickets International Flights Cheap International Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/81/0e/66810e50ebc5783c6dd772251a1a189f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX65Un7aJgScAdf1nWYX4NYSejxCnk2Gma-g';" alt="Find Exclusive Offers On Cheap International Flight Ticket Deals International Flight Tickets International Flights Cheap International Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Exclusive Offers On Cheap International Flight Ticket Deals International Flight Tickets International Flights Cheap International Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/eb/ed/be/ebedbe09994079004861f231ef440799.jpg" data-lightbox="roadtrip" data-title="Flying Space A On The Patriot Express 11 Things To Know Poppin Smoke Family Adventure Travel Military Spouse Military Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/eb/ed/be/ebedbe09994079004861f231ef440799.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AnS_py9z8kKzKhFJE1c7-2gCsmox7CLXGg';" alt="Flying Space A On The Patriot Express 11 Things To Know Poppin Smoke Family Adventure Travel Military Spouse Military Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flying Space A On The Patriot Express 11 Things To Know Poppin Smoke Family Adventure Travel Military Spouse Military Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/fd/35/f4fd35a96bcababe82872462205b0b3f.jpg" data-lightbox="roadtrip" data-title="What Are The Benefits Of Military Fares Military Flights Military Discounts United Airlines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/fd/35/f4fd35a96bcababe82872462205b0b3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_D0Oo_PBGIdo-EcWcKNa8oNx3nrtetjA6w';" alt="What Are The Benefits Of Military Fares Military Flights Military Discounts United Airlines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are The Benefits Of Military Fares Military Flights Military Discounts United Airlines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/cc/2a/dfcc2a10760acdb839ce424c29e29c85.jpg" data-lightbox="roadtrip" data-title="Militarytravel Com Book A Military Discount Flight Best Cruise Lines Best Cruise Deals Royal Caribbean International">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/cc/2a/dfcc2a10760acdb839ce424c29e29c85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmnuKq6Ct3TrG3bGMxYfHx-LqE3U7vz9mMUQ';" alt="Militarytravel Com Book A Military Discount Flight Best Cruise Lines Best Cruise Deals Royal Caribbean International">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Militarytravel Com Book A Military Discount Flight Best Cruise Lines Best Cruise Deals Royal Caribbean International</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/52/c6/6752c6ad45fbb615f48bc60b14aa51a5.jpg" data-lightbox="roadtrip" data-title="Sign In Fort Hood Military Flights Fort">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/52/c6/6752c6ad45fbb615f48bc60b14aa51a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOp3sxKxYUb5slsXecVkaS8HOkx1uuWO60-Q';" alt="Sign In Fort Hood Military Flights Fort">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign In Fort Hood Military Flights Fort</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/44/37/9d443766b7fa21abdf3621b29f9ac110.jpg" data-lightbox="roadtrip" data-title="Get Defence Fares On Air Tickets For Indian Armed Forces Discount Up To 25 On Domestic Flights In 2020 Air Tickets Best Airfare Domestic Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/44/37/9d443766b7fa21abdf3621b29f9ac110.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT00d_Ds-sk2u69xU5RxSGdmW9jQa4WwOOUWQ';" alt="Get Defence Fares On Air Tickets For Indian Armed Forces Discount Up To 25 On Domestic Flights In 2020 Air Tickets Best Airfare Domestic Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Defence Fares On Air Tickets For Indian Armed Forces Discount Up To 25 On Domestic Flights In 2020 Air Tickets Best Airfare Domestic Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/3e/2b/783e2b3a83aba8f96a9b663ec107b178.jpg" data-lightbox="roadtrip" data-title="Book Cheap Flights From San Diego San To Austin Aus With Luxfares And Fly High Choose From An Extensive Range Of Discounted Airfares To Austin From San Di">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/3e/2b/783e2b3a83aba8f96a9b663ec107b178.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNpmYwF3IzzCcDR4EqkxW6m9PA3dhFINrsA';" alt="Book Cheap Flights From San Diego San To Austin Aus With Luxfares And Fly High Choose From An Extensive Range Of Discounted Airfares To Austin From San Di">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Book Cheap Flights From San Diego San To Austin Aus With Luxfares And Fly High Choose From An Extensive Range Of Discounted Airfares To Austin From San Di</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/5c/de/585cdeefc7823a0ef7a673a1df092f3c.jpg" data-lightbox="roadtrip" data-title="Find Cheap Flights Cheap Airlines Tickets Cheapest Flights Cheap Flights Airline Tickets Flights Cheap Airline Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/5c/de/585cdeefc7823a0ef7a673a1df092f3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXTuub3J7CTUGbaJxqkyNdD8dvovCtBS9OA';" alt="Find Cheap Flights Cheap Airlines Tickets Cheapest Flights Cheap Flights Airline Tickets Flights Cheap Airline Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Cheap Flights Cheap Airlines Tickets Cheapest Flights Cheap Flights Airline Tickets Flights Cheap Airline Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/be/b6/12beb6f617eb948fa7b9c4483ee9b924.jpg" data-lightbox="roadtrip" data-title="Do S And Don Ts For Taking A Military Space A Flight Poppin Smoke Military Travel Fun Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/be/b6/12beb6f617eb948fa7b9c4483ee9b924.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9XLh0m5RPsz8Fuc9Yzboj7BaIgSLBhic4g';" alt="Do S And Don Ts For Taking A Military Space A Flight Poppin Smoke Military Travel Fun Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do S And Don Ts For Taking A Military Space A Flight Poppin Smoke Military Travel Fun Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/52/6c/15526c9ad43bb6f612a35838a331ad18.jpg" data-lightbox="roadtrip" data-title="Pin On Best Allegiant Airlines Ticket Deals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/52/6c/15526c9ad43bb6f612a35838a331ad18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLhQKMAHZjcY_xKhqguQaUUYPZyrTt4mXcg';" alt="Pin On Best Allegiant Airlines Ticket Deals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Allegiant Airlines Ticket Deals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/1a/f4/cf1af408dbd530b46415242bf404b3a8.jpg" data-lightbox="roadtrip" data-title="Military Discount Flights Military Flight Discounts Discount Travel Military Flights Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/1a/f4/cf1af408dbd530b46415242bf404b3a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDE-L6iTGmabYfGpitVSrxa31Oxfrfa1ulA';" alt="Military Discount Flights Military Flight Discounts Discount Travel Military Flights Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Discount Flights Military Flight Discounts Discount Travel Military Flights Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/97/a7/43/97a743ca2d189069b6629d82dbabf6af--military-flights-military-families.jpg" data-lightbox="roadtrip" data-title="Http Militarytravelexchange Com Exclusive Military Flights Fares And Travel Financing For Milit Military Family Military Flights Military Discount Flights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/97/a7/43/97a743ca2d189069b6629d82dbabf6af--military-flights-military-families.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQevDox2dtxngKS1uzgpy4MtsJIOK1FAu7kQ';" alt="Http Militarytravelexchange Com Exclusive Military Flights Fares And Travel Financing For Milit Military Family Military Flights Military Discount Flights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Militarytravelexchange Com Exclusive Military Flights Fares And Travel Financing For Milit Military Family Military Flights Military Discount Flights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/9c/29/729c29c5fb4a7899d469fadbcdb6818b.jpg" data-lightbox="roadtrip" data-title="Cheapest Flight Sale Airfare Deals Flight Sale Cheapest Airline Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/9c/29/729c29c5fb4a7899d469fadbcdb6818b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Zz8wOZ4HTuYhDFcquFu0EOCOF2m3TS1Teg';" alt="Cheapest Flight Sale Airfare Deals Flight Sale Cheapest Airline Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cheapest Flight Sale Airfare Deals Flight Sale Cheapest Airline Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/lmao-google.html">Lmao Google</a></li>
+													<li class="list-group-item"><a href="/lmao-co-to.html">Lmao Co To</a></li>
+													<li class="list-group-item"><a href="/lmao-ka-matlab.html">Lmao Ka Matlab</a></li>
+													<li class="list-group-item"><a href="/kohls-veterans-day-sale-2019.html">Kohls Veterans Day Sale 2019</a></li>
+													<li class="list-group-item"><a href="/jordan-imf-program-2020.html">Jordan Imf Program 2020</a></li>
+													<li class="list-group-item"><a href="/lmao-emoji-gif.html">Lmao Emoji Gif</a></li>
+													<li class="list-group-item"><a href="/lmao-gottem.html">Lmao Gottem</a></li>
+													<li class="list-group-item"><a href="/kohls-military-discount-veterans-day-2019.html">Kohls Military Discount Veterans Day 2019</a></li>
+													<li class="list-group-item"><a href="/lmao-full-form-in-hindi.html">Lmao Full Form In Hindi</a></li>
+													<li class="list-group-item"><a href="/lipton-imf-argentina.html">Lipton Imf Argentina</a></li>
+													<li class="list-group-item"><a href="/key-differences-between-imf-and-world-bank.html">Key Differences Between Imf And World Bank</a></li>
+													<li class="list-group-item"><a href="/link-military-discount-to-mylowes.html">Link Military Discount To Mylowes</a></li>
+													<li class="list-group-item"><a href="/lmao-full-form-meaning-in-hindi.html">Lmao Full Form Meaning In Hindi</a></li>
+													<li class="list-group-item"><a href="/kohls-veterans-coupon-code.html">Kohls Veterans Coupon Code</a></li>
+													<li class="list-group-item"><a href="/kohls-30-off-for-military.html">Kohls 30 Off For Military</a></li>
+													<li class="list-group-item"><a href="/lmao-bruh-meaning.html">Lmao Bruh Meaning</a></li>
+													<li class="list-group-item"><a href="/koreanpop-army-discount-code.html">Koreanpop Army Discount Code</a></li>
+													<li class="list-group-item"><a href="/kenya-gdp-2020-imf.html">Kenya Gdp 2020 Imf</a></li>
+													<li class="list-group-item"><a href="/lmao-k.html">Lmao K</a></li>
+													<li class="list-group-item"><a href="/lmao-christian-meaning.html">Lmao Christian Meaning</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

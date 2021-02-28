@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf And World Bank Difference Ppt - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf And World Bank Difference Ppt",
+  "datePublished": "2021-02-28",
+  "image": "https://static.theprint.in/wp-content/uploads/2019/02/World-Bank-borrower.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+and+world+bank+difference+ppt",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf And World Bank Difference Ppt</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The IMF oversees the stability of the worlds monetary system. IMF oversees the international monetary system whereas seeks to promote the economic development of developing nations. The IMF and World Bank hold their Annual Meetings together each fall in Washington. <br>				
+			</p>
+										<a class="badge badge-danger" href="/veteran-discounts-six-flags-san-antonio.html">veteran discounts six flags san antonio</a>
+											<a class="badge badge-warning" href="/veteran-discounts-new-york-city.html">veteran discounts new york city</a>
+											<a class="badge badge-danger" href="/veteran-discounts-miami.html">veteran discounts miami</a>
+											<a class="badge badge-secondary" href="/veteran-owned-business-for-sale.html">veteran owned business for sale</a>
+											<a class="badge badge-light" href="/veteran-discounts-at-lowes-and-home-depot.html">veteran discounts at lowes and home depot</a>
+											<a class="badge badge-dark" href="/veteran-advantage-discount-greyhound.html">veteran advantage discount greyhound</a>
+											<a class="badge badge-danger" href="/veteran-owned-business-arizona.html">veteran owned business arizona</a>
+											<a class="badge badge-warning" href="/veteran-discounts-idme.html">veteran discounts idme</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/deep-160130092324/95/difference-between-world-bank-and-imf-1-638.jpg?cb=1454146418" data-lightbox="roadtrip" data-title="Difference Between World Bank And Imf">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/deep-160130092324/95/difference-between-world-bank-and-imf-1-638.jpg?cb=1454146418" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhOXXh7cLoLl-OA-pbqxiUBFEmC_y5RgAiA';" alt="Difference Between World Bank And Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between World Bank And Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/worldbankandinternationalmonetaryfundimf-160104012312/95/world-bank-and-international-monetary-fund-imf-1-638.jpg?cb=1451871333" data-lightbox="roadtrip" data-title="World Bank And International Monetary Fund Imf">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/worldbankandinternationalmonetaryfundimf-160104012312/95/world-bank-and-international-monetary-fund-imf-1-638.jpg?cb=1451871333" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQge7jC5NPjcVOBlPLnBApYvQJ11uQ-e3NviA';" alt="World Bank And International Monetary Fund Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Bank And International Monetary Fund Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/imfandworldbank-150312081842-conversion-gate01/95/imf-and-world-bank-12-638.jpg?cb=1426148354" data-lightbox="roadtrip" data-title="Imf And World Bank">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/imfandworldbank-150312081842-conversion-gate01/95/imf-and-world-bank-12-638.jpg?cb=1426148354" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUncXXoTbthJbg8-Hp5aSxtlb9tGKOqSHPQ';" alt="Imf And World Bank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf And World Bank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/5862068/19/images/slide_1.jpg" data-lightbox="roadtrip" data-title="International Monetary Fund Vs The World Bank Ppt Video Online Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/5862068/19/images/slide_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPDQqGSYmDxcMWHUepjQXARlM1rAj5K0wuyA';" alt="International Monetary Fund Vs The World Bank Ppt Video Online Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">International Monetary Fund Vs The World Bank Ppt Video Online Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/worldbankimf-140921085131-phpapp01/95/world-bank-imf-2-638.jpg?cb=1411290237" data-lightbox="roadtrip" data-title="World Bank Imf">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/worldbankimf-140921085131-phpapp01/95/world-bank-imf-2-638.jpg?cb=1411290237" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOirLWLJmlDNW61CA0I1txhRszz7rzFfbRnA';" alt="World Bank Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Bank Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/c5/a2/43c5a26a577dd73056943eeee90b6e36.jpg" data-lightbox="roadtrip" data-title="World S 60 Most Innovative Economies Education In Germany Fourth Industrial Revolution Digital Transformation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/c5/a2/43c5a26a577dd73056943eeee90b6e36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaplgztHWz-o84iInpQ9vAvBF7LHvCT9pP3g';" alt="World S 60 Most Innovative Economies Education In Germany Fourth Industrial Revolution Digital Transformation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World S 60 Most Innovative Economies Education In Germany Fourth Industrial Revolution Digital Transformation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.investopedia.com/thmb/LOiPgqzgqh9Hp1fuvUW-nFfXAYI=/2124x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-887333954-38e864b25fc54149873aab27f226d327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaplgztHWz-o84iInpQ9vAvBF7LHvCT9pP3g';" alt="World S 60 Most Innovative Economies Education In Germany Fourth Industrial Revolution Digital Transformation">
+										<div class="card-body">
+						<h3 class="h5"><b>The purpose of this meeting was to reconstruct stable world economies to promote peace.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf and world bank difference ppt</strong>. 
+								
+																	Each has a different purpose a distinct structure receives its funding from different sources. 
+																	Outstanding loans of 71 billion to 82 countries According to the report of August 31 2005. 
+																	The fundamental difference between IMF and World Bank is that the bank is established as a development organization whereas the fund is founded as a cooperative organization. 
+																	The institutions have their share of critics in part because of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The main difference between the International Monetary Fund IMF and the World Bank lies in their respective purposes and functions. 
+																	Their approaches to this goal are complementary with the IMF focusing on macroeconomic and financial stability issues and the World Bank concentrating on long-term economic development and poverty reduction. 
+																	IMF focus on economic stability whereas World Bank focus on economic growth. 
+																	The IMF would be aimed at stabilizing global financial markets and national currencies by providing the resources to establish secure monetary policy and exchange rate regimes while the World Bank would rebuild Europe by facilitating investment in reconstruction and development. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The IMF is a cooperative institution that seeks to maintain an orderly system of payments and receipts between nations. 
+																	The IMF is small about 2300 staff members and unlike the World Bank has no affiliates or subsidiaries. 
+																	History behind the IMF and World Bank. 
+																	World Bank VS International Monetary Fund Difference between functions of World Bank and IMF - Deep Khandelwal 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The fundamental difference is this. 
+																	The Bank is primarily a development institution. 
+																	What is the difference between the World Bank Group and the IMF. 
+																	They were created to support the world economy although they each perform different roles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Founded at the Bretton Woods conference in 1944 the two institutions have complementary missions. 
+																	The IMF the World Bank WB. 
+																	The World Bank Group works with developing countries to reduce poverty and increase shared prosperity while the International Monetary Fund serves to stabilize the international monetary system and acts as a monitor of the worlds currencies. 
+																	The IMF exists to preserve an orderly monetary system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Difference Between World Bank and IMF 1. 
+																	They share the same goal of raising living standards in their member countries. 
+																	Meaning and concept of International Monetary Fund IMF IN. 
+																	O The IMF was created to support-orderly international currency e xchanges and to help nations having balance of payment proble ms through short term loans of cash. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	World Bank provides financial and technical aid to the developing nations of the world. 
+																	YouTubeTaughtMe INTERNATIONAL BUSINESS MANAGEMENT IBM This video consists of the following. 
+																	3 A Gold Standard Sort Of. 
+																	Functions Of World Bank - To provide long-run capital to member countries for economic reconstruction and development. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Institutions the World Bank and the International Monetary Fund whose activities we will critically analyze in this project. 
+																	The IMF and the World Bank 1 The IMF and the World Bank 2 Origins. 
+																	The World Bank receives funding by issuing bonds to global investors while the IMF is financed by quotas from member countries. 
+																	But do you know the difference between the institutions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The most obvious distinction is that World Bank is a development institution while IMF is a cooperative institution Driscoll DD nd. 
+																	At this conference world currencies. 
+																	Key Differences Between IMF World Bank IMF is a cooperative institution whereas the World Bank is primarily a development institution. 
+																	The World Bank aids in the development and reconstruction of it members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Despite these and other similarities however the Bank and the IMF remain distinct. 
+																	The task that IMF needs to do is to monitor the process of payments and receipts among its members nations. 
+																	O Five largest shareholdersUnited States Japan Germany Franc e United Kingdom. 
+																	The World Bank performs an economic development role. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Global Institutions such as the IMF and World Bank and Multinational Enterprises MNEs are main actors in International Political Economy7. 
+																	Cont o Total quotas of 312 billion. 
+																	The International Monetary Fund IMF and the World Bank are institutions in the United Nations system. 
+																	Difference Between IMF World Bank The International Monetary Fund World BankOversees the international monetary system Seeks to promote the economic development of the worlds poorer countriesPromotes exchange stability and orderly exchange Assists developing countries through long-termrelations among its member countries financing of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both the International Monetary Fund or IMF and the World Bank were formed together at Bretton Woods New Hampshire in July 1944. 
+																	Most of its staff members work at headquarters in Washington DC although three small offices are maintained in Paris Geneva and at the United Nations in New York. 
+																	Both institutions were created in the Bretton Woods conferences in New Hampshire at the closing of WWII in 1944-1945. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://keydifferences.com/wp-content/uploads/2015/07/worldbank-vs-imf1.jpg" data-lightbox="roadtrip" data-title="Difference Between Imf And World Bank With Comparison Chart Key Differences">
+											<img class="card-img v-image ads-img " src="https://keydifferences.com/wp-content/uploads/2015/07/worldbank-vs-imf1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_pptadFLv3luxcsFa3H2QbclAvK5DHCswg';" alt="Difference Between Imf And World Bank With Comparison Chart Key Differences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between Imf And World Bank With Comparison Chart Key Differences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/ea/5f/bdea5f5ea5a8816a4f378b6a405f7795.png" data-lightbox="roadtrip" data-title="Is Types Of Economic Activities Geography The Most Trending Thing Now Types Of Economic Activities Ge Economic Activity Economic Geography Types Of Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/ea/5f/bdea5f5ea5a8816a4f378b6a405f7795.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9mCdybGM54XhMRYtO6e4buYOZ4pGr8ca3yg';" alt="Is Types Of Economic Activities Geography The Most Trending Thing Now Types Of Economic Activities Ge Economic Activity Economic Geography Types Of Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Types Of Economic Activities Geography The Most Trending Thing Now Types Of Economic Activities Ge Economic Activity Economic Geography Types Of Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/0c/94/540c94e3965a25451e7d99a3a2ec85a8.jpg" data-lightbox="roadtrip" data-title="Types Of Economy Mini Unit 7th Grade Social Studies Formative Assessment Mini Units">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/0c/94/540c94e3965a25451e7d99a3a2ec85a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLKrjZnvrD_tsVw3oRy5wXmiN9WqKCfl-AQ';" alt="Types Of Economy Mini Unit 7th Grade Social Studies Formative Assessment Mini Units">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Types Of Economy Mini Unit 7th Grade Social Studies Formative Assessment Mini Units</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a6/ae/ba/a6aeba8f5e89c1022c3d23c00a7e4ab6.jpg" data-lightbox="roadtrip" data-title="Pin On Penasaran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a6/ae/ba/a6aeba8f5e89c1022c3d23c00a7e4ab6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Gk7pSRjc0CUib3Zv3RX1rLC-YCjD7pFnug';" alt="Pin On Penasaran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Penasaran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/17/28/dc172828519e9898d7fd083c878b953e.jpg" data-lightbox="roadtrip" data-title="Pin On Us Economic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/17/28/dc172828519e9898d7fd083c878b953e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA3pQjIHCJlvSashoMx8WaoDE4cT3TYtqctA';" alt="Pin On Us Economic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Economic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/b4/66/2db46661571efd66cf0010965b569e76.jpg" data-lightbox="roadtrip" data-title="Img507a23806c398 Jpg 600 450 Budaya">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/b4/66/2db46661571efd66cf0010965b569e76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uByadfFNEDePolHngXaKRjzm6xeRNd4P8w';" alt="Img507a23806c398 Jpg 600 450 Budaya">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Img507a23806c398 Jpg 600 450 Budaya</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/7f/43/267f43978ce3a507e6a60a774fdd71df.jpg" data-lightbox="roadtrip" data-title="Stock Basics Investment Advisor Basic Financial News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/7f/43/267f43978ce3a507e6a60a774fdd71df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKz_6Ui-0yjypoJx5U4nvLWTmzVjgx-6O4rQ';" alt="Stock Basics Investment Advisor Basic Financial News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stock Basics Investment Advisor Basic Financial News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/3f/f9/693ff9956b60406f4dd7fb6e27257fc7.jpg" data-lightbox="roadtrip" data-title="Infographic The Top U S Companies By Import And Export Volume Changing Jobs American Jobs Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/3f/f9/693ff9956b60406f4dd7fb6e27257fc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAI40zm6LR9svtN2gzljOF6ioeZnkHgHpeEw';" alt="Infographic The Top U S Companies By Import And Export Volume Changing Jobs American Jobs Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic The Top U S Companies By Import And Export Volume Changing Jobs American Jobs Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.jagranjosh.com/imported/images/E/Articles/world-bank-group.jpg" data-lightbox="roadtrip" data-title="What Are The Objectives And Functions Of World Bank">
+											<img class="card-img v-image ads-img " src="https://img.jagranjosh.com/imported/images/E/Articles/world-bank-group.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGIMt-REvRk8BNWavQGNEJx4kgjmmM0s-nQ';" alt="What Are The Objectives And Functions Of World Bank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are The Objectives And Functions Of World Bank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/73/8e/fa738e372c48f849aed3c7a97629956d.png" data-lightbox="roadtrip" data-title="Pin On Hotel Destinasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/73/8e/fa738e372c48f849aed3c7a97629956d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Bp4-_30NrfOnRW53NWDBrGrXjrYDR5n3bg';" alt="Pin On Hotel Destinasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hotel Destinasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/24/3c/a8243cc9a14217880485d59b74d7fd03.jpg" data-lightbox="roadtrip" data-title="Pin On Hotel Destinasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/24/3c/a8243cc9a14217880485d59b74d7fd03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOkysD9-YvedYCZ-wJjC6JZC-alHKhijZfg';" alt="Pin On Hotel Destinasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hotel Destinasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/Slide7.ashx?h=281&amp;w=500" data-lightbox="roadtrip" data-title="The Imf And The Greek Crisis Myths And Realities">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/Slide7.ashx?h=281&amp;w=500" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjzwzT2KJbj_uHqHZGsY-6uHQnPBQNBnA8Q';" alt="The Imf And The Greek Crisis Myths And Realities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Imf And The Greek Crisis Myths And Realities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.investopedia.com/thmb/LOiPgqzgqh9Hp1fuvUW-nFfXAYI=/2124x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-887333954-38e864b25fc54149873aab27f226d327.jpg" data-lightbox="roadtrip" data-title="Understanding The International Monetary Fund Imf Vs The World Bank">
+											<img class="card-img v-image ads-img " src="https://www.investopedia.com/thmb/LOiPgqzgqh9Hp1fuvUW-nFfXAYI=/2124x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-887333954-38e864b25fc54149873aab27f226d327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuUY6B8EQZAZwR_ZtdsdW5LcdQi5HVrblIJA';" alt="Understanding The International Monetary Fund Imf Vs The World Bank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding The International Monetary Fund Imf Vs The World Bank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="RpuiLEabV-D0zM" data-lightbox="roadtrip" data-title="Http Www Imf Org Media Files Publications Weo 2019 October English Text Ashx La En">
+											<img class="card-img v-image ads-img " src="RpuiLEabV-D0zM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuVmgBxIonf4KSlpvjm_R-3nWyXPwzzMI2A';" alt="Http Www Imf Org Media Files Publications Weo 2019 October English Text Ashx La En">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Imf Org Media Files Publications Weo 2019 October English Text Ashx La En</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="iTtR2CU5pBxYxM" data-lightbox="roadtrip" data-title="Http Pubdocs Worldbank Org En 394231501877501769 The Sustainable Development Goals And Private Sector Opportunities Pdf">
+											<img class="card-img v-image ads-img " src="iTtR2CU5pBxYxM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6VOJXjwG4M3YVun4J7J8buVNfj17qk07G1g';" alt="Http Pubdocs Worldbank Org En 394231501877501769 The Sustainable Development Goals And Private Sector Opportunities Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Pubdocs Worldbank Org En 394231501877501769 The Sustainable Development Goals And Private Sector Opportunities Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-veterans-discount.html">Army Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/banana-republic-veterans-day-sale.html">Banana Republic Veterans Day Sale</a></li>
+													<li class="list-group-item"><a href="/army-navy-discount.html">Army Navy Discount</a></li>
+													<li class="list-group-item"><a href="/bangladesh-imf-loan-history.html">Bangladesh Imf Loan History</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-address-vienna-va-22182.html">Bank Of America Address Vienna Va 22182</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-richmond-va-zip-code.html">Bank Of America Richmond Va Zip Code</a></li>
+													<li class="list-group-item"><a href="/army-vaccines-covid.html">Army Vaccines Covid</a></li>
+													<li class="list-group-item"><a href="/army-discount-river-island.html">Army Discount River Island</a></li>
+													<li class="list-group-item"><a href="/banana-republic-military-term.html">Banana Republic Military Term</a></li>
+													<li class="list-group-item"><a href="/autozone-veteran-discount-code.html">Autozone Veteran Discount Code</a></li>
+													<li class="list-group-item"><a href="/att-military-discount-for-spouses.html">Att Military Discount For Spouses</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-forest-va.html">Bank Of America Forest Va</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-stafford-va.html">Bank Of America Stafford Va</a></li>
+													<li class="list-group-item"><a href="/army-discount-verizon-wireless.html">Army Discount Verizon Wireless</a></li>
+													<li class="list-group-item"><a href="/army-discount-store.html">Army Discount Store</a></li>
+													<li class="list-group-item"><a href="/army-vs-navy-rugby-2021.html">Army Vs Navy Rugby 2021</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-harrisonburg-va.html">Bank Of America Harrisonburg Va</a></li>
+													<li class="list-group-item"><a href="/att-military-discount-requirements.html">Att Military Discount Requirements</a></li>
+													<li class="list-group-item"><a href="/army-gear-discount-code.html">Army Gear Discount Code</a></li>
+													<li class="list-group-item"><a href="/att-military-discount-2020.html">Att Military Discount 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

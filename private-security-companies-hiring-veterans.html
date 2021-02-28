@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Private Security Companies Hiring Veterans - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Private Security Companies Hiring Veterans",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/86/b8/d6/86b8d6d39b85a98359da00d80146bd17.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=private+security+companies+hiring+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Private Security Companies Hiring Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Aegis is a founding signatory of the International Code of Conduct for Private Security Providers. How to Get a Private Security Job Hiring Veterans Transitioning from the Military The Rise of Private Security Contractors Hiring Private Security Consultant Firms. Keep in mind this is an entry-level job in Europe which means two things. <br>				
+			</p>
+										<a class="badge badge-warning" href="/national-military-cemetery-ottawa.html">national military cemetery ottawa</a>
+											<a class="badge badge-secondary" href="/oakley-military-discount-canada.html">oakley military discount canada</a>
+											<a class="badge badge-info" href="/national-cemetery-san-diego.html">national cemetery san diego</a>
+											<a class="badge badge-success" href="/navy-vets-junior-c.html">navy vets junior c</a>
+											<a class="badge badge-info" href="/minnesota-military-grants.html">minnesota military grants</a>
+											<a class="badge badge-secondary" href="/national-cemetery-montevallo.html">national cemetery montevallo</a>
+											<a class="badge badge-primary" href="/navy-veteran-found-dead-after-3-years.html">navy veteran found dead after 3 years</a>
+											<a class="badge badge-success" href="/oakley-military-discount-program.html">oakley military discount program</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to view.  You can also bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/61/f1/b861f10b5b8e24c1b637530e650854d9.jpg" data-lightbox="roadtrip" data-title="Pinterest Luke Smith Armed Security Guard Security Guard Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/61/f1/b861f10b5b8e24c1b637530e650854d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqukK9Pm3lYQUs-QCpYxTDcSaMPZt7DnrGQ';" alt="Pinterest Luke Smith Armed Security Guard Security Guard Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest Luke Smith Armed Security Guard Security Guard Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/00/56/2a00567ca1e58cbd490178426d90a175.jpg" data-lightbox="roadtrip" data-title="Covered 6 Flyer Veteran Jobs Security Training Corporate Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/00/56/2a00567ca1e58cbd490178426d90a175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCLvDyUxRYpr83Vxk6K3wfscY6DC1k4jAwg';" alt="Covered 6 Flyer Veteran Jobs Security Training Corporate Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covered 6 Flyer Veteran Jobs Security Training Corporate Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/49/77/694977d5f65ed2457903aadc22cc5222.png" data-lightbox="roadtrip" data-title="Wanna Earn 6 Figured Income Know How Income Overseasjob Contractor Academy Success Contractorkev L Military Gear Special Forces Military Contractors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/49/77/694977d5f65ed2457903aadc22cc5222.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6hVtSOw4W9Mb4mdVq85EufhFh_B3XZKKM0Q';" alt="Wanna Earn 6 Figured Income Know How Income Overseasjob Contractor Academy Success Contractorkev L Military Gear Special Forces Military Contractors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wanna Earn 6 Figured Income Know How Income Overseasjob Contractor Academy Success Contractorkev L Military Gear Special Forces Military Contractors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/b5/c4/66b5c42a7cff5a94cde2298bf0caa9f2.jpg" data-lightbox="roadtrip" data-title="30 Most Powerful Private Security Companies In The World Private Military Company Private Security Contractor Private Security Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/b5/c4/66b5c42a7cff5a94cde2298bf0caa9f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-4J1aMkHlrD_S2KntzTGTGbOR7EtFzPPYgg';" alt="30 Most Powerful Private Security Companies In The World Private Military Company Private Security Contractor Private Security Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Most Powerful Private Security Companies In The World Private Military Company Private Security Contractor Private Security Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" data-lightbox="roadtrip" data-title="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPy3Pye4XsnK-P4nE8aMp8DQLKfA9eQ84Tiw';" alt="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/84/57/ea8457725903f167f4cc069e46683674.jpg" data-lightbox="roadtrip" data-title="Pin On Impeach Obama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/84/57/ea8457725903f167f4cc069e46683674.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLDKsYrt80jUkrzMxOCjvVoh-iW4jzzdI4Q';" alt="Pin On Impeach Obama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Impeach Obama</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ed/a3/7f/eda37f22327a9c0f94f07578c516fa9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLDKsYrt80jUkrzMxOCjvVoh-iW4jzzdI4Q';" alt="Pin On Impeach Obama">
+										<div class="card-body">
+						<h3 class="h5"><b>Private security contractors dont just work with military and government organizations.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Private security companies hiring veterans</strong>. 
+								
+																	- South Holland IL. 
+																	With operation in over 150 countries around the world Control Risks provides security services to governments fortune 500 companies and private citizens. 
+																	Learn more about the process to register and. 
+																	Search for security clearance jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Aegis Defence Services is a British private security and private military company founded in 2002 with offices worldwide including Saudi Arabia Somalia Mozambique United Arab Emirates Libya and Iraq. 
+																	The Veterans Employment and Training Service VETS is committed to helping Americas veterans and separating service members by preparing them for meaningful careers providing employment resources and expertise and protecting their employment rights. 
+																	Private military contractors play the supplement role for the military. 
+																	The Limitless Creative Applications for Security In this episode Billy Langenstein Director of Security Services and Investigations for the National Football League joins the team to talk about how the security team can generate data valuable to other departments and help support the goals of an organization breaking the stereotype that a security department is a cost-center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The qualifications and experience needed to fulfill the duties of these positions arent easy to acquire. 
+																	Private security firms are a booming business providing much-needed professional services to executives government officials and organizations around the world. 
+																	The Department of Public Safety DPS regulates the private security profession in Texas. 
+																	Here youll find 18 employers who are committed to hiring and training former service members from companies founded by veterans such as Enterprise Holdings to corporations in military-adjacent industries like BAE Systems and Northrop Grumman to the Wounded Warrior Project a nonprofit that helps other veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Private military companies PMCs are also known as private security companies PSCs and specialize in providing armed security andor military related services across the globe. 
+																	Occasionally clients become concerned with private security guards who carry a firearm being on their property. 
+																	Apply to Security Screener Security Officer Armed Security Officer and more. 
+																	Security Dynamics Corp Chicagolands premier private security and private detective agency is accepting applications for the position of Unarmed Security. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is one career path where you wont need to tame down that military lingo or avoid talking about your hard-core combat experience. 
+																	Scope of military contractor job. 
+																	When a private security company chooses to hire veterans it helps to maintain stability within the company. 
+																	Some private corporate companies also hire them as the bodyguard for key staffs or protection of company premises in the volatile area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DPS protects the public by conducting fingerprint-based background checks on applicants investigating and resolving complaints read more. 
+																	Will work a flexible rotating schedule with. 
+																	Armed Private Security Services. 
+																	10000 - 12500 per month1 Lodging Per Diem2 Employment Type. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldier turned contractor talks Blackwater training Iraq mission. 
+																	We dialed-in to find veteran-hiring companies that provide all aspects of security to private organizations and government operations. 
+																	Soldier turned contractor talks Blackwater training Iraq mission. 
+																	FEATURED JOBS Registration is easy and always free for military and law enforcement veterans Job ID. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The job requires two years of general security experience which means that if youve previously served in the military and got out honorably you can almost certainly get this job. 
+																	Northern Idaho in the vicinity of Coeur dAlene START DATE. 
+																	How to Get a Private Security Job Hiring Veterans Transitioning from the Military The Rise of Private Security Contractors Hiring Private Security Consultant Firms. 
+																	Thats why Veterans are in such high-demand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If there is the war Private military contractors get a lot of chance of operating and earning. 
+																	The employees of PMCs are commonly referred to as mercenaries although PMCs take great pains to point out the fact their employees are not hired to be front-line troops and should not be considered mercs. 
+																	Stars Stripes Force for Hire Podcast Episode 2. 
+																	Number one you wont be making huge money. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additionally veterans offer many different abilities and skills which make them ideal candidates for a position within a private security company. 
+																	Veterans in Security Contracting. 
+																	It specializes in cyber operational maritime and travel security in hostile areas and actively hires people with experience in military law enforcement business consultancy security services and intelligence. 
+																	Security Detail for UHNWI - Northern Idaho JOB LOCATION. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	20 Best private military company jobs Hiring Now SimplyHired. 
+																	16 an hour Quick Apply. 
+																	Many for-profit companies and non-government organizations operate in war zones piracy hot spots and destabilized areas. 
+																	The private military company offers service and expertise typically similar to government security military and law enforcement agency. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Private security is a vital component of their daily operations. 
+																	Stars Stripes Force for Hire Podcast Episode 2. 
+																	Companies like Blackwater USA now Xe Sandline Military Professional Resources and numerous others have six-figure jobs for highly-skilled combat professionals with a marked preference for former special ops personnel although so-called Tier 2 jobs are also available for former commissioned and non-commissioned officers with traditional military infantry or combat experience. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/7b/f4/847bf4db4af1cb131ba1fe1a1d64b28c.jpg" data-lightbox="roadtrip" data-title="Private Military Contractors Pmc Boys With Their Toys Private Military Company Private Security Contractor Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/7b/f4/847bf4db4af1cb131ba1fe1a1d64b28c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fYkww1PxH3mCUm1Pjp7_Znw-Td5c0-8inw';" alt="Private Military Contractors Pmc Boys With Their Toys Private Military Company Private Security Contractor Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Private Military Contractors Pmc Boys With Their Toys Private Military Company Private Security Contractor Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/3d/cb/1c3dcbfcb1e1119fea7217a6fc5929db.jpg" data-lightbox="roadtrip" data-title="What To Expect In A Private Security Career As A Veteran Private Security Veteran Jobs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/3d/cb/1c3dcbfcb1e1119fea7217a6fc5929db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_46UPUQdl41lLhn6XVohOowhWuBHJLedsXw';" alt="What To Expect In A Private Security Career As A Veteran Private Security Veteran Jobs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Expect In A Private Security Career As A Veteran Private Security Veteran Jobs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/05/0f/b6050f0d163e5f231d3bca212384fd02.jpg" data-lightbox="roadtrip" data-title="Security Guards In Los Angeles Security Guard Orange County Special Forces Military Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/05/0f/b6050f0d163e5f231d3bca212384fd02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6MJWCrT0oLYdt__H8fLSy8KIaTfVcqAj7Hg';" alt="Security Guards In Los Angeles Security Guard Orange County Special Forces Military Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Security Guards In Los Angeles Security Guard Orange County Special Forces Military Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c1/e0/83/c1e08352918904e9dce7b5643595ddb5.jpg" data-lightbox="roadtrip" data-title="Physical Security Sector S Mission To Hire Veterans Military Jobs Veteran Security Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c1/e0/83/c1e08352918904e9dce7b5643595ddb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDp8kkXxylq2jSG4hs4HMWl8iKjYFxflthw';" alt="Physical Security Sector S Mission To Hire Veterans Military Jobs Veteran Security Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Physical Security Sector S Mission To Hire Veterans Military Jobs Veteran Security Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/69/e8/6169e87a2877a202e012ff81c4d7d9a7.jpg" data-lightbox="roadtrip" data-title="Are You Searching For The Best And Top Private Security Companies In Sydney For Hiring Security Services For Your Event">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/69/e8/6169e87a2877a202e012ff81c4d7d9a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0FvYkNZ22KLYYo3ZUHvUZY3JPe3H-Mx_EQ';" alt="Are You Searching For The Best And Top Private Security Companies In Sydney For Hiring Security Services For Your Event">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Searching For The Best And Top Private Security Companies In Sydney For Hiring Security Services For Your Event</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/19/7e/9f197e90aef1a9d6562c591d4f2bd7e5.jpg" data-lightbox="roadtrip" data-title="Pin On Fast Guard Service Llc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/19/7e/9f197e90aef1a9d6562c591d4f2bd7e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKJMmj8Lx4XgsGEstCqjzdzbH4tnAheMwsA';" alt="Pin On Fast Guard Service Llc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fast Guard Service Llc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/33/af/4433af38a4dbf3ada032c4a514938c80.jpg" data-lightbox="roadtrip" data-title="Http Theifj Com Wp Content Uploads 2014 11 Moyer Afghan 16162 Jpg Private Military Company Private Security Contractor Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/33/af/4433af38a4dbf3ada032c4a514938c80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iatS4FFa5EFI0jsqMUvIvb9dFM1qasiakg';" alt="Http Theifj Com Wp Content Uploads 2014 11 Moyer Afghan 16162 Jpg Private Military Company Private Security Contractor Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Theifj Com Wp Content Uploads 2014 11 Moyer Afghan 16162 Jpg Private Military Company Private Security Contractor Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/b8/d6/86b8d6d39b85a98359da00d80146bd17.jpg" data-lightbox="roadtrip" data-title="The Rise Of Private Military Security Companies Pt 3 Sofrep Private Security Contractor Military Security Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/b8/d6/86b8d6d39b85a98359da00d80146bd17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9GwdEcBE4KEcFu_0KdA-1wEyAWKxHJfhQSQ';" alt="The Rise Of Private Military Security Companies Pt 3 Sofrep Private Security Contractor Military Security Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Rise Of Private Military Security Companies Pt 3 Sofrep Private Security Contractor Military Security Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/df/b3/45dfb3c779770f0077498b60bea3a363.jpg" data-lightbox="roadtrip" data-title="Ryan Micheletti Is A Former Member Of The California State Guard Who Now Helps Veterans Start World Class Veteran Jobs Tech Startups Private Security Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/df/b3/45dfb3c779770f0077498b60bea3a363.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWLuY22yFpkjr5_mPCZkgAfnRQQM0n2EnNzg';" alt="Ryan Micheletti Is A Former Member Of The California State Guard Who Now Helps Veterans Start World Class Veteran Jobs Tech Startups Private Security Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ryan Micheletti Is A Former Member Of The California State Guard Who Now Helps Veterans Start World Class Veteran Jobs Tech Startups Private Security Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/02/ad/3302ad3fceacfbc744ed46cb2c004d4e.jpg" data-lightbox="roadtrip" data-title="Blackwater Private Military Contractor Employees Private Military Company Military Private Security Contractor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/02/ad/3302ad3fceacfbc744ed46cb2c004d4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb874kxDA-LGe8yZ7_JdIhZV_SbY0mldp_-w';" alt="Blackwater Private Military Contractor Employees Private Military Company Military Private Security Contractor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blackwater Private Military Contractor Employees Private Military Company Military Private Security Contractor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/1f/f5/341ff562ba4b31ba3cf4b9305290a594.jpg" data-lightbox="roadtrip" data-title="77 Military Friendly Employers With Flexible Jobs Hiring Veterans Veteran Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/1f/f5/341ff562ba4b31ba3cf4b9305290a594.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRev60Bv5Fc9rLnuOCFj-1_qst5pPB6HdC-8Q';" alt="77 Military Friendly Employers With Flexible Jobs Hiring Veterans Veteran Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">77 Military Friendly Employers With Flexible Jobs Hiring Veterans Veteran Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/a2/db/5ea2db0749d929b99a5348e175fc2e67.jpg" data-lightbox="roadtrip" data-title="Private Military Companies Blackwater Private Military Company Private Security Contractor Iraqi Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/a2/db/5ea2db0749d929b99a5348e175fc2e67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VgMYBpaoTo7gWkBXbIRF1cuyHUoXVNV69A';" alt="Private Military Companies Blackwater Private Military Company Private Security Contractor Iraqi Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Private Military Companies Blackwater Private Military Company Private Security Contractor Iraqi Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/40/19/2b4019bccbb1db2cc84a8f290c3403bc.jpg" data-lightbox="roadtrip" data-title="Why Veterans Are A Good Fit For Tech Jobs Infographic Technology Job Veteran Jobs Tech Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/40/19/2b4019bccbb1db2cc84a8f290c3403bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgMavGTWNZQEpz6lGBgsPXnk6GEpms4rsh1Q';" alt="Why Veterans Are A Good Fit For Tech Jobs Infographic Technology Job Veteran Jobs Tech Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Veterans Are A Good Fit For Tech Jobs Infographic Technology Job Veteran Jobs Tech Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/99/0c/ad990cbd13a85308e2dc8b8ccd165161.jpg" data-lightbox="roadtrip" data-title="Pin By Deimos On Camouflage Season Private Military Company Military Soldiers Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/99/0c/ad990cbd13a85308e2dc8b8ccd165161.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSLLfXBP7NZut972Nhxa6HauKrw-RS-BOtA';" alt="Pin By Deimos On Camouflage Season Private Military Company Military Soldiers Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Deimos On Camouflage Season Private Military Company Military Soldiers Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/08/68/2408685ffbc76550b1dd31c0d5ef35dd.jpg" data-lightbox="roadtrip" data-title="Fws Topics Mercenaries Security Contractors And The Private Military Company Private Military Company Private Security Contractor Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/08/68/2408685ffbc76550b1dd31c0d5ef35dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-sJOtZl4kjuFknKKlNxF_uJaWiW4uPdSmQ';" alt="Fws Topics Mercenaries Security Contractors And The Private Military Company Private Military Company Private Security Contractor Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fws Topics Mercenaries Security Contractors And The Private Military Company Private Military Company Private Security Contractor Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/marriott-military-discount-code.html">Marriott Military Discount Code</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-seaworld-san-diego.html">Military Discount At Seaworld San Diego</a></li>
+													<li class="list-group-item"><a href="/lowes-on-military-highway.html">Lowes On Military Highway</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-topgolf.html">Military Discount At Topgolf</a></li>
+													<li class="list-group-item"><a href="/military-discount-code-for-oakley.html">Military Discount Code For Oakley</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-eastbay.html">Military Discount For Eastbay</a></li>
+													<li class="list-group-item"><a href="/military-cemetery-birmingham.html">Military Cemetery Birmingham</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-disneyland.html">Military Discount For Disneyland</a></li>
+													<li class="list-group-item"><a href="/military-charities-report-card.html">Military Charities Report Card</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-home-depot-website.html">Military Discount On Home Depot Website</a></li>
+													<li class="list-group-item"><a href="/military-degree-programs-online.html">Military Degree Programs Online</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-anytime-fitness.html">Military Discount At Anytime Fitness</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-overstock.html">Military Discount At Overstock</a></li>
+													<li class="list-group-item"><a href="/lululemon-military-discount-for-veterans.html">Lululemon Military Discount For Veterans</a></li>
+													<li class="list-group-item"><a href="/microsoft-office-2019-military-discount-home-use-program-hup.html">Microsoft Office 2019 Military Discount Home Use Program Hup</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-kohls.html">Military Discount At Kohls</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-gamestop.html">Military Discount At Gamestop</a></li>
+													<li class="list-group-item"><a href="/military-apple-offer.html">Military Apple Offer</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-iphone.html">Military Discount For Iphone</a></li>
+													<li class="list-group-item"><a href="/marriott-bonvoy-veteran-discount.html">Marriott Bonvoy Veteran Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

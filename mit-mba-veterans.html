@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mit Mba Veterans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mit Mba Veterans",
+  "datePublished": "2021-02-28",
+  "image": "https://theveteranpro.com/wp-content/uploads/2020/04/IMG_CF5E74FC1410-1.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mit+mba+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mit Mba Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Thanks to the generous gift from alumnus Lorenzo MBA 93 and brother Frank Fertitta the Fertitta Veterans Program participants will receive a partial scholarship. The charts below are based off of self-reported data taken from our 2015-2016 exit surveys n50 that represent a very broad cross-section of military applicants. Candidates will be selected based on performance but more importantly their desire to give back and create opportunities for others. <br>				
+			</p>
+										<a class="badge badge-danger" href="/lmao-meaning-video.html">lmao meaning video</a>
+											<a class="badge badge-info" href="/lmao-u-good-meme.html">lmao u good meme</a>
+											<a class="badge badge-dark" href="/lmao-meaning-in-hindi.html">lmao meaning in hindi</a>
+											<a class="badge badge-success" href="/lmao-meaning-in-tagalog.html">lmao meaning in tagalog</a>
+											<a class="badge badge-info" href="/lmao-reddit.html">lmao reddit</a>
+											<a class="badge badge-light" href="/lmao-video.html">lmao video</a>
+											<a class="badge badge-info" href="/lmao-meaning-explanation.html">lmao meaning explanation</a>
+											<a class="badge badge-light" href="/lmao-reaction-meme.html">lmao reaction meme</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://sloanvets.mit.edu/sites/default/files/Updated%20MITSVA%20Logo%20-%20Small.png" data-lightbox="roadtrip" data-title="Financing Your Mba Mit Sloan Veterans Association">
+											<img class="card-img v-image ads-img " src="http://sloanvets.mit.edu/sites/default/files/Updated%20MITSVA%20Logo%20-%20Small.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWZjEqhlBxQhv2JKWanMjSacoE-C8KLMLdw';" alt="Financing Your Mba Mit Sloan Veterans Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financing Your Mba Mit Sloan Veterans Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/lESdtotwH3A/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Mit Sloan Veterans Panel 2019 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/lESdtotwH3A/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3fagBZyTXJyBJIsx4-QyhCBg7kl8egyeX-w';" alt="Mit Sloan Veterans Panel 2019 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mit Sloan Veterans Panel 2019 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201708/MIT-Warrior-Project_0.jpg?itok=WF7p4QsQ" data-lightbox="roadtrip" data-title="Mit Hosts Stem Boot Camp For Veteran Students Mit News Massachusetts Institute Of Technology">
+											<img class="card-img v-image ads-img " src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201708/MIT-Warrior-Project_0.jpg?itok=WF7p4QsQ" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBiUXl0kSBnQKLa6hSQRhEuqVJXELLOjPMw';" alt="Mit Hosts Stem Boot Camp For Veteran Students Mit News Massachusetts Institute Of Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mit Hosts Stem Boot Camp For Veteran Students Mit News Massachusetts Institute Of Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lgo.mit.edu/wp-content/uploads/2020/11/Veterans-Blog-Andrew-Tresansky-Graphics-2020.png" data-lightbox="roadtrip" data-title="Veterans Spotlight Andrew Tresansky Lgo 22 Mit Lgo Leaders For Global Operations">
+											<img class="card-img v-image ads-img " src="https://lgo.mit.edu/wp-content/uploads/2020/11/Veterans-Blog-Andrew-Tresansky-Graphics-2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTedLkqHDst2lxH0MvyM7mAiRd1RjPgHNew0g';" alt="Veterans Spotlight Andrew Tresansky Lgo 22 Mit Lgo Leaders For Global Operations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Spotlight Andrew Tresansky Lgo 22 Mit Lgo Leaders For Global Operations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://theveteranpro.com/wp-content/uploads/2020/04/IMG_CF5E74FC1410-1.jpeg" data-lightbox="roadtrip" data-title="Mit Sloan For Veterans">
+											<img class="card-img v-image ads-img " src="https://theveteranpro.com/wp-content/uploads/2020/04/IMG_CF5E74FC1410-1.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMQU-LksCnb5DqHDsQtvBW0_WJAh6nJjSKsA';" alt="Mit Sloan For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mit Sloan For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://poetsandquants.com/wp-content/uploads/sites/5/2018/02/vets1.jpg" data-lightbox="roadtrip" data-title="Poets Quants 10 Military Veterans To Watch From The Class Of 2019">
+											<img class="card-img v-image ads-img " src="https://poetsandquants.com/wp-content/uploads/sites/5/2018/02/vets1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oajF9iM5YBXQlodhbBPDZLStnAnSzdxyNw';" alt="Poets Quants 10 Military Veterans To Watch From The Class Of 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poets Quants 10 Military Veterans To Watch From The Class Of 2019</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://mlhxjisu2gky.i.optimole.com/hv2pyxI-jSt7VXrt/w:1200/h:392/q:82/https://www.clearadmit.com/wp-content/uploads/2020/06/sloan-deadlines.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oajF9iM5YBXQlodhbBPDZLStnAnSzdxyNw';" alt="Poets Quants 10 Military Veterans To Watch From The Class Of 2019">
+										<div class="card-body">
+						<h3 class="h5"><b>Funding received from these benefits may affect your financial aid by first reducing the amount of your student contribution if applicable.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mit mba veterans</strong>. 
+								
+																	Please feel free to reach out to the club officers at vetsofficerssloangroupsmitedu. 
+																	A guide for veterans applying to mba programs mission - help every military veteran transitioning to school win admission to the very best graduate or undergraduate institution possible. 
+																	The LunaCap Foundation assists Mexicans born anywhere in the world or current active military or US. 
+																	Transitioning from the military to MBA is a fairly popular path to follow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For information about veteran benefits please visit this page. 
+																	MIT administers veterans benefits including Chapter 33 or Post 911 VA benefits much like other external funding sources such as fellowships or scholarships and thus the same policies apply. 
+																	MBA The MIT Sloan Veterans Association We welcome veterans of all branches of the US. 
+																	Armed Forces veterans with the cost of an MBA education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coming to Tuck with a partner andor family. 
+																	A little over 4 of MBA applications come from military veterans. 
+																	-Apply for Certificate of Eligibility COE after you have been discharged go to the VA website and apply using VA Form 22-1990 VA Form 22-1990E or VA Form 22-5490. 
+																	Veterans are highly valued for operational functions and this can make a veteran candidate a total rock-star. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information visit the LunaCap Foundation. 
+																	For enrollment certification purposes three MIT units equal one VA credit ie. 
+																	The Fertitta Veterans Program is an innovative program specifically designed for US. 
+																	Armed Forces as well as veterans of foreign militaries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans are a vibrant and vital part of what makes the Tuck community distinctive among the worlds top MBA programs. 
+																	Military veterans and active duty students to support their transition to business school. 
+																	The MIT Sloan Veterans Association encompasses and welcomes military veterans of all services from all countries. 
+																	The VA pays tuition benefits directly to MIT one to three months after the term certification has been submitted to the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When looking at the data comparing military applicants to traditional MBA applicants a few trends become clear. 
+																	Military Veteran applicants tend to be a year or two older. 
+																	Veterans can get advice from current students the Sloan Student Funding office and the MIT Student Financial Services office. 
+																	Building on the strong foundation of leadership veterans develop in the military we hope to work together as a team to propel veterans to new heights in their business careers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	48 MIT units 16 VA credits. 
+																	Cornell Trustee Emeritus Peter Nolan 80 MBA 82 and his wife Stephanie Nolan 84 have given nearly 2 million to help the Samuel Curtis Johnson Graduate School of Management support US. 
+																	Lots of vets at Sloan go for the MIT Leaders for Global Operations dual degree option. 
+																	This two-year program offers an MBA from MIT Sloan and a masters of science from the MIT School of Engineering. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Building on the strong foundation of leadership that veterans develop in the military the MIT Sloan VA helps veterans reach new heights in their careers. 
+																	Military veterans may be eligible for an application fee waiver. 
+																	-Once you have received your Certificate of Eligibility COE you will need to submit it by mail or fax as soon as soon as it becomes available. 
+																	Whether they are sharing their unique leadership skills or demonstrating what it means to be a part of a team veteran students contribute greatly to the Tuck community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military veterans seeking an MBA. 
+																	The MIT Sloan Veterans Association welcomes veterans of all branches of the US. 
+																	Military service members and US. 
+																	The MBA VETERANS CAREER CONFERENCE is the nations leading military and MBA diversity conference. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military as well as veterans of foreign militaries. 
+																	MBA Veterans Connect is the Premier Business Networking Platform for Military Veteran Students and Alumni of the Worlds Top-Ranked MBA Programs. 
+																	To apply for benefits follow the steps below httpssfsmitedugraduate-studentsguideveterans-benefits. 
+																	Stanford GSB also participates in the Yellow Ribbon Program and will match up to full tuition and mandatory fees for MBA students who are Yellow Ribbon eligible and opt to receive these benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The MIT LGO program accepts a number of US veterans every year averaging about 15 of the LGO class. 
+																	Founded by a group of former US Army officers and MBA students in response to a declining job market during the Great Recession in 2009 the MBA Veterans Network is a professional networking and advocacy organization for military veteran students and alumni of the top-ranked MBA programs in the world. 
+																	This opens in a new window. 
+																	The information below is not a complete picture of veteran applicants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In fact it isnt even a complete picture of the S2S veteran applicant pool. 
+																	Units are not rounded up so if you are registered for 50 MIT units your VA credit hours will be 166 VA credits. 
+																	Every Fall it connects 500 1st and 2nd year MBA students all of whom are military veterans enrolled at top ranked programs with more than 60 of Americas leading MBA employers. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://emba.mit.edu/wp-content/uploads/2019/11/20190110_Day_In_The_Life_Stephanie_Tang_EMBA_Jan_2018_DAVIDSON_67-1-300x200.jpg" data-lightbox="roadtrip" data-title="The Emba Program Experience Mit Executive Mba">
+											<img class="card-img v-image ads-img " src="https://emba.mit.edu/wp-content/uploads/2019/11/20190110_Day_In_The_Life_Stephanie_Tang_EMBA_Jan_2018_DAVIDSON_67-1-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45aaruvBMDQ90_Kkb_xp37F2pCsLXIwraDg';" alt="The Emba Program Experience Mit Executive Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Emba Program Experience Mit Executive Mba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Thi2_qn4sqk/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Mit Sloan School Of Management Veterans Association Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Thi2_qn4sqk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReN3y-3HDW38QYf-UyNXd2RHjAOyESOb_qsQ';" alt="Mit Sloan School Of Management Veterans Association Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mit Sloan School Of Management Veterans Association Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mitsloan.mit.edu/sites/default/files/styles/one_up/public/2019-09/April%2002%2C%202019120532_0.jpg?h=d3b8ca40&amp;itok=KML_J7hG" data-lightbox="roadtrip" data-title="Community Mit Sloan">
+											<img class="card-img v-image ads-img " src="https://mitsloan.mit.edu/sites/default/files/styles/one_up/public/2019-09/April%2002%2C%202019120532_0.jpg?h=d3b8ca40&amp;itok=KML_J7hG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ETPch2V1UG7Lyt9x2eGZl2xF_EBJt0_Ktg';" alt="Community Mit Sloan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Community Mit Sloan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mitsloan.mit.edu/sites/default/files/styles/og_image/public/2018-04/mba_admissions_highlights_grid_fellowship.png?h=b8aae163&amp;itok=QVOP1lFG" data-lightbox="roadtrip" data-title="Fellowships Mit Sloan">
+											<img class="card-img v-image ads-img " src="https://mitsloan.mit.edu/sites/default/files/styles/og_image/public/2018-04/mba_admissions_highlights_grid_fellowship.png?h=b8aae163&amp;itok=QVOP1lFG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtJxcX4DxyxOezhi1Ujw93dZsUd3arWaIuA';" alt="Fellowships Mit Sloan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fellowships Mit Sloan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4.bp.blogspot.com/-M5FnxMNry_w/XAw3odYe2XI/AAAAAAAAK0A/yhGpGERd5sEOlUFuVf38w0eHE6g8fY4kQCLcBGAs/w1200-h630-p-k-no-nu/Average%2BGPA%2Bof%2BAccepted%2BMilitary%2BMBA%2BApplicants.png" data-lightbox="roadtrip" data-title="Militarytobusiness Average Gpa Of Military Applicants At Top Business School Mba Programs">
+											<img class="card-img v-image ads-img " src="https://4.bp.blogspot.com/-M5FnxMNry_w/XAw3odYe2XI/AAAAAAAAK0A/yhGpGERd5sEOlUFuVf38w0eHE6g8fY4kQCLcBGAs/w1200-h630-p-k-no-nu/Average%2BGPA%2Bof%2BAccepted%2BMilitary%2BMBA%2BApplicants.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3wmyRdlDNxe8pC5KUOyEGeSQLqgbzCfschw';" alt="Militarytobusiness Average Gpa Of Military Applicants At Top Business School Mba Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Militarytobusiness Average Gpa Of Military Applicants At Top Business School Mba Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://catalyst.mit.edu/wp-content/uploads/2020/07/VA.png" data-lightbox="roadtrip" data-title="2021 Spring Mit Linq Catalyst">
+											<img class="card-img v-image ads-img " src="https://catalyst.mit.edu/wp-content/uploads/2020/07/VA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueapl0zoC-C4Sm-_5zb6KQGKdro3XT3bRUg';" alt="2021 Spring Mit Linq Catalyst">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Spring Mit Linq Catalyst</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarymba.net/schools-and-programs/images/MBA-chart_000.png" data-lightbox="roadtrip" data-title="Best Value Mba Schools Military Mba">
+											<img class="card-img v-image ads-img " src="https://militarymba.net/schools-and-programs/images/MBA-chart_000.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQork4r7rdmsovbAae0G_Woggo4xnve8Bvjhg';" alt="Best Value Mba Schools Military Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Value Mba Schools Military Mba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://wordpressdevelopment.com/service/wp-content/uploads/2016/08/mba2_big.png" data-lightbox="roadtrip" data-title="What Are My Odds Applying To The Top Mba Programs Media Service To School">
+											<img class="card-img v-image ads-img " src="http://wordpressdevelopment.com/service/wp-content/uploads/2016/08/mba2_big.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-enZ45aucSLtgnRC0vcsC68CgpGxt0TtAbg';" alt="What Are My Odds Applying To The Top Mba Programs Media Service To School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are My Odds Applying To The Top Mba Programs Media Service To School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://poetsandquants.com/wp-content/uploads/sites/5/2016/08/MBA_MilitaryVeterans.jpg" data-lightbox="roadtrip" data-title="Poets Quants A Veteran S Odds Of Getting Into A Top School">
+											<img class="card-img v-image ads-img " src="https://poetsandquants.com/wp-content/uploads/sites/5/2016/08/MBA_MilitaryVeterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZrIEgJU-iJeB1TO2nl-SeyJKoGjSaFY0og';" alt="Poets Quants A Veteran S Odds Of Getting Into A Top School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poets Quants A Veteran S Odds Of Getting Into A Top School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://emba.mit.edu/wp-content/uploads/2020/11/Screen-Shot-2020-11-13-at-12.06.21-PM-1.png" data-lightbox="roadtrip" data-title="Executive Mba Program Mit Executive Mba">
+											<img class="card-img v-image ads-img " src="https://emba.mit.edu/wp-content/uploads/2020/11/Screen-Shot-2020-11-13-at-12.06.21-PM-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_x7sBNo_c-8tz3DO7mENPYIrD14_T9Ljvg';" alt="Executive Mba Program Mit Executive Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Executive Mba Program Mit Executive Mba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mlhxjisu2gky.i.optimole.com/hv2pyxI-jSt7VXrt/w:1200/h:392/q:82/https://www.clearadmit.com/wp-content/uploads/2020/06/sloan-deadlines.png" data-lightbox="roadtrip" data-title="Mit Sloan Mba Application Deadlines 2020 2021 Clear Admit">
+											<img class="card-img v-image ads-img " src="https://mlhxjisu2gky.i.optimole.com/hv2pyxI-jSt7VXrt/w:1200/h:392/q:82/https://www.clearadmit.com/wp-content/uploads/2020/06/sloan-deadlines.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJljdYehiZThPqtFq3XOzF7DBwPAvc69R_g';" alt="Mit Sloan Mba Application Deadlines 2020 2021 Clear Admit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mit Sloan Mba Application Deadlines 2020 2021 Clear Admit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.usd.edu/-/media/images/veterans/militaryfriendly.ashx" data-lightbox="roadtrip" data-title="Military Friendly Programs Usd">
+											<img class="card-img v-image ads-img " src="https://www.usd.edu/-/media/images/veterans/militaryfriendly.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKt0s2KsAZ5ogP7k4kYwZSvRTvBOGdNWaa0A';" alt="Military Friendly Programs Usd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Friendly Programs Usd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mitsloan.mit.edu/sites/default/files/styles/og_image/public/2020-10/BannerImage_COVIDFutureofWork.jpg?h=ffad0ca3&amp;itok=y272P1bW" data-lightbox="roadtrip" data-title="Mit Sloan Hack4thefuture Aims To Innovate For The Acceleration Of The Future Of Work In The Age Of Covid 19 Mit Sloan">
+											<img class="card-img v-image ads-img " src="https://mitsloan.mit.edu/sites/default/files/styles/og_image/public/2020-10/BannerImage_COVIDFutureofWork.jpg?h=ffad0ca3&amp;itok=y272P1bW" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscxO4i-xkY-n3joQY40YKQyAXCRjJ5jK4aA';" alt="Mit Sloan Hack4thefuture Aims To Innovate For The Acceleration Of The Future Of Work In The Age Of Covid 19 Mit Sloan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mit Sloan Hack4thefuture Aims To Innovate For The Acceleration Of The Future Of Work In The Age Of Covid 19 Mit Sloan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mlhxjisu2gky.i.optimole.com/hv2pyxI-3tlC4E66/w:1200/h:392/q:82/https://www.clearadmit.com/wp-content/uploads/2020/06/sloan-essay-topic-analysis.png" data-lightbox="roadtrip" data-title="Sloan Mba Essays Expert Tips Analysis Clear Admit">
+											<img class="card-img v-image ads-img " src="https://mlhxjisu2gky.i.optimole.com/hv2pyxI-3tlC4E66/w:1200/h:392/q:82/https://www.clearadmit.com/wp-content/uploads/2020/06/sloan-essay-topic-analysis.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaX26zTEouUQGWKX3XbUSETkYogcnrK56z6w';" alt="Sloan Mba Essays Expert Tips Analysis Clear Admit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sloan Mba Essays Expert Tips Analysis Clear Admit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3tsb3m56iwvoq.cloudfront.net/thumbnails/techtv/dd982b649d5f42339f4659cc5121b699/0.jpg" data-lightbox="roadtrip" data-title="Ovs Mit Sloan">
+											<img class="card-img v-image ads-img " src="https://d3tsb3m56iwvoq.cloudfront.net/thumbnails/techtv/dd982b649d5f42339f4659cc5121b699/0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXgiYHzCsXNQiAVi7eX5vR9iOeYVgOwNVpeQ';" alt="Ovs Mit Sloan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ovs Mit Sloan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ivms-for-mac.html">Ivms For Mac</a></li>
+													<li class="list-group-item"><a href="/iphone-military-discount-uk.html">Iphone Military Discount Uk</a></li>
+													<li class="list-group-item"><a href="/is-veterans-advantage-free.html">Is Veterans Advantage Free</a></li>
+													<li class="list-group-item"><a href="/ivf-treatment-under-cghs.html">Ivf Treatment Under Cghs</a></li>
+													<li class="list-group-item"><a href="/jobs-that-hire-former-military.html">Jobs That Hire Former Military</a></li>
+													<li class="list-group-item"><a href="/iran-gdp-2020-imf.html">Iran Gdp 2020 Imf</a></li>
+													<li class="list-group-item"><a href="/jiffy-lube-discount-va.html">Jiffy Lube Discount Va</a></li>
+													<li class="list-group-item"><a href="/international-monetary-fund-imf-india.html">International Monetary Fund Imf India</a></li>
+													<li class="list-group-item"><a href="/jobs-for-young-veterans.html">Jobs For Young Veterans</a></li>
+													<li class="list-group-item"><a href="/ivms-4200-default-ip.html">Ivms 4200 Default Ip</a></li>
+													<li class="list-group-item"><a href="/jamaica-economy-imf.html">Jamaica Economy Imf</a></li>
+													<li class="list-group-item"><a href="/is-onward-worth-it.html">Is Onward Worth It</a></li>
+													<li class="list-group-item"><a href="/is-theragun-worth-the-price.html">Is Theragun Worth The Price</a></li>
+													<li class="list-group-item"><a href="/ivms-stream-key.html">Ivms Stream Key</a></li>
+													<li class="list-group-item"><a href="/is-veterans-advantage-worth-it.html">Is Veterans Advantage Worth It</a></li>
+													<li class="list-group-item"><a href="/ivfd-d5.html">Ivfd D5</a></li>
+													<li class="list-group-item"><a href="/jiffy-lube-veterans-blvd.html">Jiffy Lube Veterans Blvd</a></li>
+													<li class="list-group-item"><a href="/irobot-discount-for-military.html">Irobot Discount For Military</a></li>
+													<li class="list-group-item"><a href="/is-veteran-transition-mission-legit.html">Is Veteran Transition Mission Legit</a></li>
+													<li class="list-group-item"><a href="/ivmp-use.html">Ivmp Use</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

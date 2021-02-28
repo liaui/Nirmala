@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Apple Military Us - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Apple Military Us",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/32/dd/4b/32dd4bb8a81b27f1e4f40e6e87361e93.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=apple+military+us",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Apple Military Us</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Veterans and Military personnel receive a 10 discount on Apple products. Find top songs and albums by United States Military including God Bless the USA America the Beautiful and more. Military National Guard and Reserve. <br>				
+			</p>
+										<a class="badge badge-primary" href="/imf-world-economic-outlook-gdp.html">imf world economic outlook gdp</a>
+											<a class="badge badge-info" href="/imf-world-economic-outlook-jordan.html">imf world economic outlook jordan</a>
+											<a class="badge badge-light" href="/imf-world-economic-outlook-historical-database.html">imf world economic outlook historical database</a>
+											<a class="badge badge-dark" href="/imf-world-economic-outlook-march-2020.html">imf world economic outlook march 2020</a>
+											<a class="badge badge-secondary" href="/imf-world-economic-outlook-australia.html">imf world economic outlook australia</a>
+											<a class="badge badge-warning" href="/imf-world-economic-outlook-inflation-forecast.html">imf world economic outlook inflation forecast</a>
+											<a class="badge badge-secondary" href="/imf-world-economic-outlook-january-2019.html">imf world economic outlook january 2019</a>
+											<a class="badge badge-primary" href="/imf-world-economic-outlook-egypt.html">imf world economic outlook egypt</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the highest quality video and image content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/dc/cf/8fdccfce1b5297106208a747cb800ba4.jpg" data-lightbox="roadtrip" data-title="An Apple A Day U S Marine Lance Cpl Tom Morton A 23 Year Old Team Leader With 3rd Plato Military Heroes Military United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/dc/cf/8fdccfce1b5297106208a747cb800ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwir1580vVHH4b4tlUi7LHcxHdFCpFZOs5-w';" alt="An Apple A Day U S Marine Lance Cpl Tom Morton A 23 Year Old Team Leader With 3rd Plato Military Heroes Military United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Apple A Day U S Marine Lance Cpl Tom Morton A 23 Year Old Team Leader With 3rd Plato Military Heroes Military United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/2e/5a/a12e5ae9f38bbe81d5c661b3c81e11a2.jpg" data-lightbox="roadtrip" data-title="Military Army Wallpapers For More Check Out Https Itunes Apple Com Us App Customizable Military Wallpapers Id860585445 L Ru Ls 1 Mt 8 Military Wallpaper Army Wallpaper Military Drawings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/2e/5a/a12e5ae9f38bbe81d5c661b3c81e11a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJmaEv0AWPXYzcDAVSyLt4HInXJhns5kQTw';" alt="Military Army Wallpapers For More Check Out Https Itunes Apple Com Us App Customizable Military Wallpapers Id860585445 L Ru Ls 1 Mt 8 Military Wallpaper Army Wallpaper Military Drawings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Army Wallpapers For More Check Out Https Itunes Apple Com Us App Customizable Military Wallpapers Id860585445 L Ru Ls 1 Mt 8 Military Wallpaper Army Wallpaper Military Drawings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/c7/d1/64c7d1a8f18364b1ad83690356cb4cf6.jpg" data-lightbox="roadtrip" data-title="Apple Ipad 3 Skin Usmc Camo By Us Marine Corps Apple Ipad Usmc Ipad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/c7/d1/64c7d1a8f18364b1ad83690356cb4cf6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8EM6l6MLRt83MJRfRsj_qjN5Z3bYB2W2Hw';" alt="Apple Ipad 3 Skin Usmc Camo By Us Marine Corps Apple Ipad Usmc Ipad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Ipad 3 Skin Usmc Camo By Us Marine Corps Apple Ipad Usmc Ipad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/56/c2/8556c28ae2648ce97ffe70e75247ed78.png" data-lightbox="roadtrip" data-title="U S Military Families Free Year Of Access To Red Apple Reading For Kiddos Ages 4 8 1 Account Per Family Servic Military Military Family Military Branches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/56/c2/8556c28ae2648ce97ffe70e75247ed78.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdm81Xt6DB9wYsGZcFtFC21lfZ0lOjQKaATA';" alt="U S Military Families Free Year Of Access To Red Apple Reading For Kiddos Ages 4 8 1 Account Per Family Servic Military Military Family Military Branches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Military Families Free Year Of Access To Red Apple Reading For Kiddos Ages 4 8 1 Account Per Family Servic Military Military Family Military Branches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/96/eb/5296ebfe5a74337a19f6873fe8f51b96.jpg" data-lightbox="roadtrip" data-title="Pin On Apple Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/96/eb/5296ebfe5a74337a19f6873fe8f51b96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpiSkeO5JWRzq1gt0PJZF0fCALeFMhHQPVw';" alt="Pin On Apple Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apple Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/71/63/8a716317fd2a6e4a5a1f0f68899ee1ad.jpg" data-lightbox="roadtrip" data-title="Iuniform Asu Builds Your Army Service Uniform On The App Store Army Service Uniform Us Army Rangers Army Ranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/71/63/8a716317fd2a6e4a5a1f0f68899ee1ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThei2pv983zXpbtbs4w0CkPHLZY83MuodU-g';" alt="Iuniform Asu Builds Your Army Service Uniform On The App Store Army Service Uniform Us Army Rangers Army Ranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iuniform Asu Builds Your Army Service Uniform On The App Store Army Service Uniform Us Army Rangers Army Ranks</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/8a/71/63/8a716317fd2a6e4a5a1f0f68899ee1ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThei2pv983zXpbtbs4w0CkPHLZY83MuodU-g';" alt="Iuniform Asu Builds Your Army Service Uniform On The App Store Army Service Uniform Us Army Rangers Army Ranks">
+										<div class="card-body">
+						<h3 class="h5"><b>To access and use all the features of Apple Card you must add Apple Card to Wallet on an iPhone or iPad with iOS 124 or later or iPadOS.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Apple military us</strong>. 
+								
+																	Additional terms from Apple or Apples trade-in partners may apply. 
+																	We need to drive veteran suicide down to zero. 
+																	Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. 
+																	Theyre also calling for t. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tens of thousands protested on Saturday demanding a return to civilian rule. 
+																	We are providing this free app as our way of saying THANK-YOU to all current and retired military personnel. 
+																	Attention is given to scriptural and military mandates for chaplains to provide spiritual warrior care spiritual leadership and spiritual counsel to military leaders. 
+																	Extra trade-in values require purchase of a new Apple Watch subject to availability and limits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find top songs and albums by US Military Bands including In The Mood Black Horse Troop and more. 
+																	Apple Store for State and Local Government. 
+																	Some restrictions may apply. 
+																	Apple to current and Veteran members of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Extremely popular our mobile app is your mobile home to the most timely breaking stories about our military national defense homeland security cyber security veterans affairs and much more. 
+																	At Apple we are deeply grateful to the men and women of our armed forces. 
+																	Further the skills strategies and character traits necessary for effective chaplain ministry within military pluralistic culture will be explored. 
+																	Faced with their loved ones absences they come together to form the very first military wives choir helping each other through some of lifes most difficult moments and quickly find themselves on an international stage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military lives Tactical NAV was the first MGRS-focused tactical app on the App Store and has proven to be effective in combat and training environments. 
+																	Listen to music by US Military Bands on Apple Music. 
+																	American Military News is one of the most widely read military news agencies in the world. 
+																	Must be at least 18 years old. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Ultimate US Military Campground Project app is dedicated to presenting information about military campgrounds across the United States. 
+																	Purpose-built by warfighters and created to save US. 
+																	Apple Watch SE promotional pricing is after trade-in of Apple Watch Series 2 in good condition. 
+																	Apple Store for Federal SmartPay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By examining controversies from racial integration to the dismantling of Dont Ask Dont Tell to the recent repeal of the ban on women in combat these essays show that the. 
+																	The Program is also offered to their immediate family members who also reside in their same household. 
+																	The Veterans and Military Purchase Program Program is a benefit provided by Apple Inc. 
+																	But despite those challenges theyve been going out in huge numbers to make their voices heard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may also purchase for immediate family who live in the same household. 
+																	In this app you will find over 270 military facilities with full descriptions of amenities at each. 
+																	In this military podcast hear my thoughts on the fact that we are a nation of 330 million people in less than 1 of us serve. 
+																	To manage Apple Card Monthly Installments you need an iPhone with iOS 132 or later or an iPad with iPadOS 132 or later. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MILITARY WIVES centers on a group of women from different backgrounds whose partners are away serving in combat. 
+																	Integrating the US Military traces the experiences of African Americans Japanese Americans women and gay men and lesbians in the armed forces since World War II. 
+																	Must be at least 18 years old. 
+																	We have freedoms we take for granted such as protest and freedom of speech thanks in large part to our military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This store is designed exclusively for Federal customers to purchase Apple and third-party products using a federally issued SmartPay credit card. 
+																	This Program is intended for personal use only. 
+																	Extra tradein values require purchase of a new Apple Watch subject to availability and limits. 
+																	Apple Watch SE promotional pricing is after tradein of Apple Watch Series 2 in good condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. 
+																	We are proud to offer active military and veteran personnel a dedicated online store where they can save 10 on Apple products and most accessories. 
+																	Download American Military News and enjoy it on your iPhone iPad and iPod touch. 
+																	Listen to music by United States Military on Apple Music. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Protesters in Myanmar have faced arrests curfews and some internet blackouts for several days now. 
+																	The sanctions will prevent the generals from accessing more than 1 billion in Myanmar government funds held in the U. 
+																	As protests over a military takeover continue in Myanmar on Thursday the Biden administration announced new sanctions against the countrys top military officials who led the coup. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/a7/15/23a715d7b90d6540bf23b1a8a96b5ea3.png" data-lightbox="roadtrip" data-title="Pin By Laura Sansone On Johnny Marsh This Face Scammed Me Military Romance Scammer Pictures Internet Scams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/a7/15/23a715d7b90d6540bf23b1a8a96b5ea3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLv07SNxAYGhL_8I4hr2ytzq4M5zkmzPsJw';" alt="Pin By Laura Sansone On Johnny Marsh This Face Scammed Me Military Romance Scammer Pictures Internet Scams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Laura Sansone On Johnny Marsh This Face Scammed Me Military Romance Scammer Pictures Internet Scams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/01/c0/7b/01c07b1b7c40529df96766a550c10b0e.jpg" data-lightbox="roadtrip" data-title="Pin On Apple Watch Bands Leather">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/01/c0/7b/01c07b1b7c40529df96766a550c10b0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmaWzTDo_eIzbv_x8wdhcJO_FhQkOh1rLeA';" alt="Pin On Apple Watch Bands Leather">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apple Watch Bands Leather</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/f2/43/82f243c82364be0fb7246a2a56936139.jpg" data-lightbox="roadtrip" data-title="Awesome Military Grade Paracord Band For The Apple Watch Get It At Apple Watch Accessories Apple Watch Stand Apple Watch Bands Mens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/f2/43/82f243c82364be0fb7246a2a56936139.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuLeNTSGV-6am1JjB9VSqGb-vjb-6U3yMcqw';" alt="Awesome Military Grade Paracord Band For The Apple Watch Get It At Apple Watch Accessories Apple Watch Stand Apple Watch Bands Mens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Awesome Military Grade Paracord Band For The Apple Watch Get It At Apple Watch Accessories Apple Watch Stand Apple Watch Bands Mens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/76/53/377653406175a701861d77d2498d8c46.jpg" data-lightbox="roadtrip" data-title="These Fragments I Have Shored Against My Ruins Us Army Uniforms American Soldiers Combat Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/76/53/377653406175a701861d77d2498d8c46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJqxJd1IGFHl6UV5C-HRyv2QwRcJYlGIbwQ';" alt="These Fragments I Have Shored Against My Ruins Us Army Uniforms American Soldiers Combat Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Fragments I Have Shored Against My Ruins Us Army Uniforms American Soldiers Combat Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/f7/0f/1bf70f314070b32f128517df355e4eef.jpg" data-lightbox="roadtrip" data-title="Pin On Military Dispatch Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/f7/0f/1bf70f314070b32f128517df355e4eef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-x4FshqsBDB6Aex9wzpce8rZx3iGXSCdfA';" alt="Pin On Military Dispatch Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Dispatch Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/3a/8c/003a8cd836168406cad29fb1b65e1edd.jpg" data-lightbox="roadtrip" data-title="Pin On Military Dispatch Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/3a/8c/003a8cd836168406cad29fb1b65e1edd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqDNfDGp2rCbnP5RUEf5jNkrXVbfdNHmwUJQ';" alt="Pin On Military Dispatch Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Dispatch Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/67/79/ea677927f2392e43b982a39ce6a7fbf5.png" data-lightbox="roadtrip" data-title="Happy Armed Forces Day Honoring U S Military Families With A Free Year Of Access To The Complete Red Apple Reading Program Military Family Red Apple Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/67/79/ea677927f2392e43b982a39ce6a7fbf5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlcxG9ioSCPtlhkR0OJICZXJXQxKuumYL5w';" alt="Happy Armed Forces Day Honoring U S Military Families With A Free Year Of Access To The Complete Red Apple Reading Program Military Family Red Apple Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Armed Forces Day Honoring U S Military Families With A Free Year Of Access To The Complete Red Apple Reading Program Military Family Red Apple Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/4c/a5/754ca5aba89e5ede61e6a0b4c0d0368f.png" data-lightbox="roadtrip" data-title="U S Spec Ops Command Carbon Watchmaker Watch Faces Apple Watch Design Watch Faces Watch Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/4c/a5/754ca5aba89e5ede61e6a0b4c0d0368f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStkz7fLeB2sNGOuT2DFMwfC0v1D1iYK2FQfw';" alt="U S Spec Ops Command Carbon Watchmaker Watch Faces Apple Watch Design Watch Faces Watch Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Spec Ops Command Carbon Watchmaker Watch Faces Apple Watch Design Watch Faces Watch Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/3a/c9/583ac9b5f15f8092073d21950b0c928d.jpg" data-lightbox="roadtrip" data-title="Us Army National For Iphone Case Apple Phone Iphone 4 4s Case Cover Ar 628 Apple Iphone Accessories Apple Iphone Case Iphone 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/3a/c9/583ac9b5f15f8092073d21950b0c928d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKCJfB9GJMKHaIugql5-KNvWT5hnvQwy15A';" alt="Us Army National For Iphone Case Apple Phone Iphone 4 4s Case Cover Ar 628 Apple Iphone Accessories Apple Iphone Case Iphone 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army National For Iphone Case Apple Phone Iphone 4 4s Case Cover Ar 628 Apple Iphone Accessories Apple Iphone Case Iphone 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/ef/50/abef5085e451e61ff9f4cca4312980e9.jpg" data-lightbox="roadtrip" data-title="Pin On Military Dispatch Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/ef/50/abef5085e451e61ff9f4cca4312980e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhVM6RysWJqDzlERYC5P97zlZcjxQNVxQ3Pg';" alt="Pin On Military Dispatch Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Dispatch Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/7e/1c/387e1c1c648d05b0c81fcf821bfa83f2.jpg" data-lightbox="roadtrip" data-title="Pin On Military Dispatch Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/7e/1c/387e1c1c648d05b0c81fcf821bfa83f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyj33e15FfuGiWclfgV9yQIRRT6cjE6WJWQ';" alt="Pin On Military Dispatch Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Dispatch Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/0a/6b/1d0a6b6bdbac20832dee8f9df31d501c.jpg" data-lightbox="roadtrip" data-title="Leadership Is Action Not Position Military America If You Re A User Experience Professional Listen Leadership Quotes Military Life Quotes Warrior Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/0a/6b/1d0a6b6bdbac20832dee8f9df31d501c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjEhRWAjDH5ulH3Tqt1tAryD-ppFIPdaMCrQ';" alt="Leadership Is Action Not Position Military America If You Re A User Experience Professional Listen Leadership Quotes Military Life Quotes Warrior Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leadership Is Action Not Position Military America If You Re A User Experience Professional Listen Leadership Quotes Military Life Quotes Warrior Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/f4/f4/46f4f4b14a29bb7e8935e89b49b6c785.jpg" data-lightbox="roadtrip" data-title="Click To Buy On Itunes Http Itunes Apple Com Us Album I Should Have Told You Yesterday Id437929135 I 437929137 Uo 3 Memorial Service American Heroes Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/f4/f4/46f4f4b14a29bb7e8935e89b49b6c785.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRytZz3HYck0Tbx5R2WM3AElO5GA1U5w9EHA';" alt="Click To Buy On Itunes Http Itunes Apple Com Us Album I Should Have Told You Yesterday Id437929135 I 437929137 Uo 3 Memorial Service American Heroes Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Click To Buy On Itunes Http Itunes Apple Com Us Album I Should Have Told You Yesterday Id437929135 I 437929137 Uo 3 Memorial Service American Heroes Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/28/8f/d3288fc6dc92d40d4179ae15f4e9e031.jpg" data-lightbox="roadtrip" data-title="Apple Iwork Pages Funeral Programs Funeral Programs Funeral Program Template Free Funeral Program Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/28/8f/d3288fc6dc92d40d4179ae15f4e9e031.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ZMhCbR7HtSynM7gxNTges3SF_efDW4-mWw';" alt="Apple Iwork Pages Funeral Programs Funeral Programs Funeral Program Template Free Funeral Program Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Iwork Pages Funeral Programs Funeral Programs Funeral Program Template Free Funeral Program Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/8b/c2/0e8bc2328c1d1a912c4505b096bab319.jpg" data-lightbox="roadtrip" data-title="Naval Camo Apple Watch Band Zazzle Com White Apple Watch Band Apple Watch Bands Apple Watch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/8b/c2/0e8bc2328c1d1a912c4505b096bab319.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOCb0-UqAfOclE9LOUnGdI4ZtMi16O_u8Hlg';" alt="Naval Camo Apple Watch Band Zazzle Com White Apple Watch Band Apple Watch Bands Apple Watch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naval Camo Apple Watch Band Zazzle Com White Apple Watch Band Apple Watch Bands Apple Watch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-gdp-estimates-2020.html">Imf Gdp Estimates 2020</a></li>
+													<li class="list-group-item"><a href="/imf-gcc-economic-outlook-2020.html">Imf Gcc Economic Outlook 2020</a></li>
+													<li class="list-group-item"><a href="/imf-fiscal-multiplier-greece.html">Imf Fiscal Multiplier Greece</a></li>
+													<li class="list-group-item"><a href="/imf-financial-stability-report-2020.html">Imf Financial Stability Report 2020</a></li>
+													<li class="list-group-item"><a href="/imf-executive-director-india-2018.html">Imf Executive Director India 2018</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-estimates-2019.html">Imf Gdp Estimates 2019</a></li>
+													<li class="list-group-item"><a href="/imf-former-chief.html">Imf Former Chief</a></li>
+													<li class="list-group-item"><a href="/imf-full-form-and-headquarters.html">Imf Full Form And Headquarters</a></li>
+													<li class="list-group-item"><a href="/imf-full-form-in-telugu.html">Imf Full Form In Telugu</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-data-by-country.html">Imf Gdp Data By Country</a></li>
+													<li class="list-group-item"><a href="/imf-forecast-of-gdp.html">Imf Forecast Of Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-first-woman-chief.html">Imf First Woman Chief</a></li>
+													<li class="list-group-item"><a href="/imf-film-meaning.html">Imf Film Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-executive-director-for-india.html">Imf Executive Director For India</a></li>
+													<li class="list-group-item"><a href="/imf-full-form-in-marathi.html">Imf Full Form In Marathi</a></li>
+													<li class="list-group-item"><a href="/imf-fiscal-breakeven-oil-prices.html">Imf Fiscal Breakeven Oil Prices</a></li>
+													<li class="list-group-item"><a href="/imf-fixed-exchange-rate-system.html">Imf Fixed Exchange Rate System</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-data-excel.html">Imf Gdp Data Excel</a></li>
+													<li class="list-group-item"><a href="/imf-fiscal-affairs-department-jobs.html">Imf Fiscal Affairs Department Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-financial-stability-blog.html">Imf Financial Stability Blog</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

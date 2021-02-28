@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Best Jobs For Female Veterans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Best Jobs For Female Veterans",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/a1/93/b3/a193b333de20ee5c83eb4bcadbd5270e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=best+jobs+for+female+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Best Jobs For Female Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">National Veterans Foundation Job Board A listing of jobs across the country at companies interested in hiring Veterans. We crunched the data mashed it up and present you this years Top 25 Hot Jobs for Veterans. The 2018 class has spoken. <br>				
+			</p>
+										<a class="badge badge-light" href="/does-petsmart-take-military-discount.html">does petsmart take military discount</a>
+											<a class="badge badge-info" href="/does-imf-help-poor-countries.html">does imf help poor countries</a>
+											<a class="badge badge-primary" href="/does-sprint-have-a-veterans-discount.html">does sprint have a veterans discount</a>
+											<a class="badge badge-primary" href="/does-old-navy-do-military-discount.html">does old navy do military discount</a>
+											<a class="badge badge-info" href="/does-mcdonalds-do-anything-for-veterans-day.html">does mcdonalds do anything for veterans day</a>
+											<a class="badge badge-danger" href="/does-kfc-do-military-discount.html">does kfc do military discount</a>
+											<a class="badge badge-danger" href="/does-the-va-offer-gym-memberships.html">does the va offer gym memberships</a>
+											<a class="badge badge-light" href="/does-theragun-go-on-sale.html">does theragun go on sale</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/b0/21/5cb0219b46271c001587e96f3d12d9fd.jpg" data-lightbox="roadtrip" data-title="7 High Demand Careers That Value Military Skills Female Soldier Military Photos Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/b0/21/5cb0219b46271c001587e96f3d12d9fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFLqYaCy6AW_YbQHNcj6W9leKppJIw9RJ5g';" alt="7 High Demand Careers That Value Military Skills Female Soldier Military Photos Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 High Demand Careers That Value Military Skills Female Soldier Military Photos Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" data-lightbox="roadtrip" data-title="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwP9mlF2vKjSf_Q1d7lj499WG1YwMB6ndEQ';" alt="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/db/90/8adb90adb5aa6c8f142e8bb76b06fbfe.jpg" data-lightbox="roadtrip" data-title="Work From Home Companies That Hire Military Spouses Veterans Military Wife Jobs Military Spouse Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/db/90/8adb90adb5aa6c8f142e8bb76b06fbfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjFxUQOT3okpOg6ZUTD48lCiXeFsdL8NPjQ';" alt="Work From Home Companies That Hire Military Spouses Veterans Military Wife Jobs Military Spouse Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work From Home Companies That Hire Military Spouses Veterans Military Wife Jobs Military Spouse Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/88/bd/1888bd534ce370c8888fb55bf50a62ee.jpg" data-lightbox="roadtrip" data-title="5 Job Options For Military Veterans Careerealism Military Jobs Military Veterans Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/88/bd/1888bd534ce370c8888fb55bf50a62ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbgbGdYwPoW5K_Jpo925wzgiFTXoTUAgeNA';" alt="5 Job Options For Military Veterans Careerealism Military Jobs Military Veterans Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Job Options For Military Veterans Careerealism Military Jobs Military Veterans Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/d7/d4/83d7d478eda57a0a275d05ce53b337cf.png" data-lightbox="roadtrip" data-title="The Monster And Military Com 2019 Best Companies For Veterans Veteran Good Company Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/d7/d4/83d7d478eda57a0a275d05ce53b337cf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaWujDzH84s15Rk14hXu9pdiwlskNgrLhrg';" alt="The Monster And Military Com 2019 Best Companies For Veterans Veteran Good Company Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Monster And Military Com 2019 Best Companies For Veterans Veteran Good Company Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/b8/7f/a6b87f11fd57af98a7140b30f2085eb6.jpg" data-lightbox="roadtrip" data-title="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Vocational Assistance Servi Veteran Jobs Interview Skills Veterans Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/b8/7f/a6b87f11fd57af98a7140b30f2085eb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cYIY8mPk_bxV0OFTMmzaed7oPWN0RBJTiw';" alt="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Vocational Assistance Servi Veteran Jobs Interview Skills Veterans Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Vocational Assistance Servi Veteran Jobs Interview Skills Veterans Health Care</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a6/b8/7f/a6b87f11fd57af98a7140b30f2085eb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cYIY8mPk_bxV0OFTMmzaed7oPWN0RBJTiw';" alt="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Vocational Assistance Servi Veteran Jobs Interview Skills Veterans Health Care">
+										<div class="card-body">
+						<h3 class="h5"><b>The Army was the largest hirer with 8622.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Best jobs for female veterans</strong>. 
+								
+																	Indeed ranks Job Ads based on a combination of employer bids and relevance such as your search terms and other activity on. 
+																	Work for Warriors Guard and Reserve - Job Postings Unit Vacancies. 
+																	Virtual Center Call Agent. 
+																	As a result of the coronavirus pandemic retail. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While duties and responsibilities vary depending on the. 
+																	These are the 25 jobs that are most in. 
+																	The Top 25 Hot Jobs for Veterans is an excellent starting point. 
+																	Veterans can find work at engineering firms government agencies or public utilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The California Military Department is a diverse community-based organization comprised of four pillars. 
+																	Can type at least 50 wpm. 
+																	25 Best Jobs For Military Veterans in 2020. 
+																	Indeed may be compensated by these employers helping keep Indeed free for jobseekers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For our recommendation of the best jobs if you are above 60 we have consulted several sources similar to what we did for our list of the Best Jobs if You Are Above 50. 
+																	You can also explore the best paying jobs and other more specific career rankings. 
+																	The Navy hired 6563 and the. 
+																	Care for Women Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Operations managers continue to be in big demand. 
+																	CWV is accepting nominations of women Veterans to highlight as Trailblazers. 
+																	The chain also offers military leave and military bridge pay to eligible team members as well as multiple resource groups for. 
+																	WVR resources can include employment housing health wellness education financial stability and peer support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The first one is U. 
+																	Considering this position has captured the top spot for three consecutive years its safe to say this job is smokin hot. 
+																	This is not your traditional job but it is perfect for those of you who arent really interested in working with or around. 
+																	For this initiative CWV has defined a women Veteran Trailblazer as a woman who has served and separated from the service and makes an impact by enhancing the lives of other Veterans Veteran families or Veteran caregivers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The annual survey identifies the best companies for veterans looking to transition into the civilian job market and also offers a window into how the private sector has improved its efforts to. 
+																	20 Best women veterans jobs Hiring Now SimplyHired. 
+																	VA provides primary and specialty health care including reproductive health care and 7 days of newborn care to women Veterans. 
+																	Walgreens offers a number of specialized programs for veterans including their HERO Program which includes retail management training on-the-job mentorship and program support for veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News uses these qualities to rank the 100 Best Jobs of 2021. 
+																	The California Army National Guard the. 
+																	Women Veteran Program Managers are available at each VA medical center nationwide to advise advocate and coordinate care for women Veterans. 
+																	The top departments tend to hire the most veterans due to their size and because they are concerned with military affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	70800 Strong problem solvers are one of the militarys greatest assets. 
+																	Disabled American Veterans jobs. 
+																	Find electrical engineer jobs. 
+																	UMZU is committed to supporting men and women who want to make accurate health decisions in order to live happier healthier lives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Page 1 of 11795 jobs. 
+																	Women Veterans Rock With a focus on women veterans and military families Women Veterans Rock is a coalition of organizations which offer support and advocate for women veterans and families with a member in the military. 
+																	Financial Advisor Financial advisors help people plan for their short and long-term financial goals. 
+																	As a result mental health services just for women are offered in many VAs across the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information on how we rank read the. 
+																	Employment in retail is most popular among veterans aged 45 and older and popular career paths include sales marketing and warehouse logistics. 
+																	Jobs in health care topped the list of the 10 best career employment opportunities for the estimated 250000 service members who transition out of the military each year according to a survey. 
+																	Each year we ask the Military Friendly Employers to list the top 10 jobs they are recruiting veterans for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Software Developer Median Annual Salary. 
+																	Research shows that people often do better in treatment with others that are more like them. 
+																	Displayed here are Job Ads that match your query. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/b3/68/a5b3685436a1d44da7eb76807cc4fecc.jpg" data-lightbox="roadtrip" data-title="Pin On Military Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/b3/68/a5b3685436a1d44da7eb76807cc4fecc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPK7hc01P28KAOPcfQ5vhn2K_1AJJGMkB9Q';" alt="Pin On Military Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/20/45/832045b96a32d87ea8edf5e8b21365b0.jpg" data-lightbox="roadtrip" data-title="You Go Where You Are Sent And Do The Best Job You Can End Of Story Veteran Jobs Veterans Benefits Running">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/20/45/832045b96a32d87ea8edf5e8b21365b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3I-UJpTorrcZgzn6qd62JQ_KCYL6LBE9yA';" alt="You Go Where You Are Sent And Do The Best Job You Can End Of Story Veteran Jobs Veterans Benefits Running">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Go Where You Are Sent And Do The Best Job You Can End Of Story Veteran Jobs Veterans Benefits Running</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/20/f4/a420f41d5706c9dad15b4503ff10a816.jpg" data-lightbox="roadtrip" data-title="Women Veterans Military Women Military Love Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/20/f4/a420f41d5706c9dad15b4503ff10a816.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZ3BOEGDIIvwbyow88jd-8m4l9vJf2imz0Q';" alt="Women Veterans Military Women Military Love Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Veterans Military Women Military Love Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/e2/1f/16e21f28302037949fbeef192de079f2.jpg" data-lightbox="roadtrip" data-title="A Strong Woman Stands Up For Herself A Female Veteran Stands Up For Her Country Ao T Shirt Front Custom Clothes T Shirt Strong Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/e2/1f/16e21f28302037949fbeef192de079f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlln2Yz51TAlUQKObzTtZdBnQxCXoWqv4CnA';" alt="A Strong Woman Stands Up For Herself A Female Veteran Stands Up For Her Country Ao T Shirt Front Custom Clothes T Shirt Strong Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Strong Woman Stands Up For Herself A Female Veteran Stands Up For Her Country Ao T Shirt Front Custom Clothes T Shirt Strong Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/4f/83/044f83be3638ad9b5c202a24e6f92aed.jpg" data-lightbox="roadtrip" data-title="Soldier Girls The Battle Of Three Women At Home And At War Best Books Of 2014 Books Nonfiction Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/4f/83/044f83be3638ad9b5c202a24e6f92aed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7Qc4ex0-hj8iRFr3JA6Cm7DL_BhI6bTTJw';" alt="Soldier Girls The Battle Of Three Women At Home And At War Best Books Of 2014 Books Nonfiction Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Girls The Battle Of Three Women At Home And At War Best Books Of 2014 Books Nonfiction Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/52/be/0652be94659f3c25476c92c67d70c5fc.jpg" data-lightbox="roadtrip" data-title="Proud Veteran If You Dont Like It Please Search Other Products We Have A Lot Of Products Here I Sure You Like Veteran T Shirts Military Shirts State Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/52/be/0652be94659f3c25476c92c67d70c5fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk7577W2cjw7w6rw3pULu7f0c7tabi5FTAJQ';" alt="Proud Veteran If You Dont Like It Please Search Other Products We Have A Lot Of Products Here I Sure You Like Veteran T Shirts Military Shirts State Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proud Veteran If You Dont Like It Please Search Other Products We Have A Lot Of Products Here I Sure You Like Veteran T Shirts Military Shirts State Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/e4/2e/c6e42eb16e404b73224744983d579d4b.jpg" data-lightbox="roadtrip" data-title="Walmart Has Committed 20 Million To Support Job Placement And Training For Veterans Walmart Veterans Veteran Jobs Support Veterans Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/e4/2e/c6e42eb16e404b73224744983d579d4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTJ7jRvvU3cI61UTsTbx8LOmfwhsd8ui3RA';" alt="Walmart Has Committed 20 Million To Support Job Placement And Training For Veterans Walmart Veterans Veteran Jobs Support Veterans Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Walmart Has Committed 20 Million To Support Job Placement And Training For Veterans Walmart Veterans Veteran Jobs Support Veterans Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c0/55/2e/c0552e30af0610a1af38c8fab20873d4.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Free Equine The Medical Jobs Healthcare Jobs Equine Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c0/55/2e/c0552e30af0610a1af38c8fab20873d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHXrJ_6gVs8wSIIdIrxcQHTCf3VRKzBO0Rhg';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Free Equine The Medical Jobs Healthcare Jobs Equine Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Free Equine The Medical Jobs Healthcare Jobs Equine Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/0a/32/a40a328cbfcefcbf2d8b6e4438d4dc84.png" data-lightbox="roadtrip" data-title="Hard Parts Of Saying Goodbye To Military Life Airman To Mom Military Life Military Spouse Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/0a/32/a40a328cbfcefcbf2d8b6e4438d4dc84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoSTU03axi0ncjKrmhKKwa6Qa72GVhWJq0Cg';" alt="Hard Parts Of Saying Goodbye To Military Life Airman To Mom Military Life Military Spouse Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hard Parts Of Saying Goodbye To Military Life Airman To Mom Military Life Military Spouse Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/93/b3/a193b333de20ee5c83eb4bcadbd5270e.jpg" data-lightbox="roadtrip" data-title="5 Organizations Helping Veterans Go From Service To Civilian Veterans Organizations Veteran Jobs Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/93/b3/a193b333de20ee5c83eb4bcadbd5270e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwIn1v7giI-8mrvYezeV4sOb9mLBILP1MqjA';" alt="5 Organizations Helping Veterans Go From Service To Civilian Veterans Organizations Veteran Jobs Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Organizations Helping Veterans Go From Service To Civilian Veterans Organizations Veteran Jobs Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/df/75/84df75c300a94ee400522189f887d04c.jpg" data-lightbox="roadtrip" data-title="Pin On Inspiring Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/df/75/84df75c300a94ee400522189f887d04c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WHLwu82LTZx5xif8QRWIimmoPOL8hcjkZw';" alt="Pin On Inspiring Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspiring Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/08/82/c50882ab5fb4662bd677cba3615b4c2b.png" data-lightbox="roadtrip" data-title="Hiring Heroes Veteran Jobs Employment Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/08/82/c50882ab5fb4662bd677cba3615b4c2b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBDtKrFZGP8gQ50UHAyvOVRLXMJGpR0Oj8A';" alt="Hiring Heroes Veteran Jobs Employment Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Heroes Veteran Jobs Employment Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/0d/65/800d65b85b36d7486a607b33fd41ff52.jpg" data-lightbox="roadtrip" data-title="A Female Veteran The Struggles Don T End When You Leave Military Veterans Military Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/0d/65/800d65b85b36d7486a607b33fd41ff52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK0mRMZ-ouvp4McByumJAplMAlOUhTHumfHQ';" alt="A Female Veteran The Struggles Don T End When You Leave Military Veterans Military Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Female Veteran The Struggles Don T End When You Leave Military Veterans Military Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/79/77/3779773cacc22e80643037d38be5cb98.jpg" data-lightbox="roadtrip" data-title="Veterans Move Into Technology Jobs Visual Ly Technology Job Veteran Jobs Tech Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/79/77/3779773cacc22e80643037d38be5cb98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBD7VC7-pqmL1S3e0tAd6ghav3p60ejzVnQ';" alt="Veterans Move Into Technology Jobs Visual Ly Technology Job Veteran Jobs Tech Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Move Into Technology Jobs Visual Ly Technology Job Veteran Jobs Tech Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/a4/d7/68a4d7e3e5f65da1a490aeeae72c4a66.png" data-lightbox="roadtrip" data-title="Moaa The Va Is Now Offering Transition Services Specially Tailored For Women Veterans Veterans Health Care Veteran Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/a4/d7/68a4d7e3e5f65da1a490aeeae72c4a66.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAHU-eawl4r9F7wRW2SMlTDBRwXrq4yAHlQ';" alt="Moaa The Va Is Now Offering Transition Services Specially Tailored For Women Veterans Veterans Health Care Veteran Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa The Va Is Now Offering Transition Services Specially Tailored For Women Veterans Veterans Health Care Veteran Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/academy-sports-military-first-responder-discount.html">Academy Sports Military First Responder Discount</a></li>
+													<li class="list-group-item"><a href="/24-hour-fitness-disabled-veteran-discount.html">24 Hour Fitness Disabled Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/apple-military-careers.html">Apple Military Careers</a></li>
+													<li class="list-group-item"><a href="/apple-movies-military-wives.html">Apple Movies Military Wives</a></li>
+													<li class="list-group-item"><a href="/apple-military-online-store.html">Apple Military Online Store</a></li>
+													<li class="list-group-item"><a href="/apple-have-military-discount.html">Apple Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/active-duty-married-to-reservist.html">Active Duty Married To Reservist</a></li>
+													<li class="list-group-item"><a href="/ace-comic-con-military-discount.html">Ace Comic Con Military Discount</a></li>
+													<li class="list-group-item"><a href="/aafes-privileges-for-veterans.html">Aafes Privileges For Veterans</a></li>
+													<li class="list-group-item"><a href="/adt-offer-military-discount.html">Adt Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/academy-sports-military-discount-2019.html">Academy Sports Military Discount 2019</a></li>
+													<li class="list-group-item"><a href="/apple-military-discount-after-purchase.html">Apple Military Discount After Purchase</a></li>
+													<li class="list-group-item"><a href="/active-status-reservist.html">Active Status Reservist</a></li>
+													<li class="list-group-item"><a href="/academy-sports-military-discount-on-guns.html">Academy Sports Military Discount On Guns</a></li>
+													<li class="list-group-item"><a href="/academy-military-discount-promo-code.html">Academy Military Discount Promo Code</a></li>
+													<li class="list-group-item"><a href="/apple-military-discount-uk-2020.html">Apple Military Discount Uk 2020</a></li>
+													<li class="list-group-item"><a href="/allegiant-military-honors-program.html">Allegiant Military Honors Program</a></li>
+													<li class="list-group-item"><a href="/ap-chemistry-imf-practice-test.html">Ap Chemistry Imf Practice Test</a></li>
+													<li class="list-group-item"><a href="/americas-tire-veterans-discount.html">Americas Tire Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/ace-rental-car-military-discount.html">Ace Rental Car Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

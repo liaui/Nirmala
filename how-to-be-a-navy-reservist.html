@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Be A Navy Reservist - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Be A Navy Reservist",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/a1/f3/86/a1f38616dfdb28c44c62291973a248e3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+be+a+navy+reservist",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Be A Navy Reservist</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Navy Reserve Sailors are trained professionals capable and willing to contribute to ongoing Navy training planning and operations. Members of the Navy Reserve are enrolled in different divisions including Full-Time Support FTS and Selected Reserve SELRES. And within the structure of the Navy Reserve there are organizational categories that further define your service responsibilities and commitment status. <br>				
+			</p>
+										<a class="badge badge-danger" href="/request-dd214-paperwork.html">request dd214 paperwork</a>
+											<a class="badge badge-secondary" href="/request-dd214-va.html">request dd214 va</a>
+											<a class="badge badge-info" href="/sports-clips-military-drive.html">sports clips military drive</a>
+											<a class="badge badge-secondary" href="/roanoke-va-discounts.html">roanoke va discounts</a>
+											<a class="badge badge-danger" href="/royal-caribbean-cruise-veteran-discount.html">royal caribbean cruise veteran discount</a>
+											<a class="badge badge-primary" href="/rob-lowe-military-movie.html">rob lowe military movie</a>
+											<a class="badge badge-secondary" href="/rofl-lmao-meaning-in-hindi.html">rofl lmao meaning in hindi</a>
+											<a class="badge badge-warning" href="/retired-military-officer-pay.html">retired military officer pay</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our site gives you hints for viewing the highest quality video and picture content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/3c/19/b13c1966ba8bb667affd950721e0fe46.jpg" data-lightbox="roadtrip" data-title="Finding Balance How A Navy Reservist Serves His Country While Succeeding At Discover Financial Services Financial Services Finding Balance Military Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/3c/19/b13c1966ba8bb667affd950721e0fe46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OUSkBsXkG4XOy7CoQh-GCoXJpasbP-dyYA';" alt="Finding Balance How A Navy Reservist Serves His Country While Succeeding At Discover Financial Services Financial Services Finding Balance Military Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finding Balance How A Navy Reservist Serves His Country While Succeeding At Discover Financial Services Financial Services Finding Balance Military Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4d/ea/11/4dea11c2b1cbc9da74bab11be54490a6.jpg" data-lightbox="roadtrip" data-title="Before People Make The Choice To Join The Military As A Reservist They Naturally Want To Know What Military Benefits Marine Corps Reserve Joining The Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4d/ea/11/4dea11c2b1cbc9da74bab11be54490a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1x1oarQDtG3dqTFHgvR8bOJ3KPslMn-6oA';" alt="Before People Make The Choice To Join The Military As A Reservist They Naturally Want To Know What Military Benefits Marine Corps Reserve Joining The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Before People Make The Choice To Join The Military As A Reservist They Naturally Want To Know What Military Benefits Marine Corps Reserve Joining The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/f8/5b/62f85b36c25194ce6fd637a0806382ca.jpg" data-lightbox="roadtrip" data-title="Pin On National Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/f8/5b/62f85b36c25194ce6fd637a0806382ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3SdHqxvH9oKEOiqgO1DYXqXszSPEIA3RVGg';" alt="Pin On National Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/f3/86/a1f38616dfdb28c44c62291973a248e3.jpg" data-lightbox="roadtrip" data-title="Discover An Exciting Naval Career In Biochemistry Navy Com Biochemistry Resume Skills Resume Skills Section">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/f3/86/a1f38616dfdb28c44c62291973a248e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTaIUyocxNm6HerUVutxL0MgSgcmr127Ecg';" alt="Discover An Exciting Naval Career In Biochemistry Navy Com Biochemistry Resume Skills Resume Skills Section">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover An Exciting Naval Career In Biochemistry Navy Com Biochemistry Resume Skills Resume Skills Section</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/69/05/f3690537c483828292f31f9846f7531b.jpg" data-lightbox="roadtrip" data-title="Contact 6 Prince Of Wales Navy Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/69/05/f3690537c483828292f31f9846f7531b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fjbxrLORCTdvLcvYgJOwKM__rP1QkB3K_A';" alt="Contact 6 Prince Of Wales Navy Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact 6 Prince Of Wales Navy Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/f6/b6/30f6b6e500a92aef6b3b88933db2ad2d.jpg" data-lightbox="roadtrip" data-title="The Reservist Was A Member Of The Famed Seal Team 6 And Had Recently Worked As A Soldier For Hire In Yemen Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/f6/b6/30f6b6e500a92aef6b3b88933db2ad2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvH-ws2cPfm8lCp0rHIforkh2Qacx5Krh4A';" alt="The Reservist Was A Member Of The Famed Seal Team 6 And Had Recently Worked As A Soldier For Hire In Yemen Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Reservist Was A Member Of The Famed Seal Team 6 And Had Recently Worked As A Soldier For Hire In Yemen Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/55/08/54/550854009ac9009b721b729f6e37dd39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvH-ws2cPfm8lCp0rHIforkh2Qacx5Krh4A';" alt="The Reservist Was A Member Of The Famed Seal Team 6 And Had Recently Worked As A Soldier For Hire In Yemen Navy Seals">
+										<div class="card-body">
+						<h3 class="h5"><b>Navy Reservists qualify for the Montgomery GI.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to be a navy reservist</strong>. 
+								
+																	Prior to reaching the age of 62 chaplains must submit age waiver requests to remain on Active or Reserve duty. 
+																	Bill benefits tuition assistance and licensing and certification testing reimbursement. 
+																	Reservists are required to perform drills a minimum of one weekend per month and two weeks per year of active duty training. 
+																	Navy Reserve Guidelines If you are interested in joining the Navy Reserve you must be between the ages of 18 and 39 without prior service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You must also pass a physical exam and have a high school diploma although in rare instances GED certificates can be accepted. 
+																	To join as an officer you. 
+																	1 point for drill period attendance. 
+																	Applicable Navy Reserve activity NRA commanding officer verifying that the course met at least one of the following requirements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyNRH Navy Reserve Homeport. 
+																	Reserve Officer Training Corps ROTC Going to college under a Navy ROTC program is another route to get to BUDs. 
+																	The United States Navy Reserve is an important reserve component RC of the military. 
+																	This length of time is determined when a sailor initially enlists or becomes an officer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15 points for completing each reserve component membership year. 
+																	Broadened the members qualifications for duties to which the reservist may be expected to be assigned upon mobilization. 
+																	Commissioned Officers are members of the Navy or Navy Reserve who have a degree from a four-year college or university as a minimum educational requirement and have gone through Officer Training. 
+																	If you plan to join the reserve as an enlisted member you need a high school diploma. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The sailor will fulfill the commitment until heshe decides to separate from active duty service. 
+																	You must have a High. 
+																	Navy ROTC graduates have the opportunity. 
+																	Whereas the Reserves Component. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out what it means to be part of the Royal Navys total strength and start your adventure. 
+																	However there are exceptions to the degree requirement based on extensive service experience. 
+																	An active duty service member is obligated to fulfill a commitment to the Navy to its full extent. 
+																	On-the-job training apprenticeship correspondence flight and preparatory courses might also be covered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Broadened the members knowledge of the. 
+																	An interested applicant an undergraduate or an out of school youth must undergo a Special Basic Citizen Military Training SBCMT course at any community defense center CDC for 15 consecutive Sundays to become a reservist. 
+																	The Navy Reserve is the Reserve Component RC of Americas Navy. 
+																	What is the process to be enlisted as a reservist. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To join the Navy Reserve you must be between 18 and 35 years old exceptions can be made for those with prior service. 
+																	Navy SEAL Officer Programs. 
+																	Also known as a Good Year a member accrues a Qualifying Year after they have earned a. 
+																	Generally a Reservist is eligible for Non-Regular Retirement once they have 20 Qualifying Years of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Citizen between the ages of 18 and 39. 
+																	The Royal Naval Reserve is made up of around 2000 men and women from all backgrounds and walks of life. 
+																	Active and Reserve Chaplain Corps applicants must be commissioned before age 58. 
+																	BECOME A COMMISSIONED NAVAL OFFICER. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether its piloting an FA-18 for the weekend caring for the medical needs of a deployed Sailors children or renovating a Navy base Navy Reserve Sailors lives are full of exciting challenges and. 
+																	Once 50 retirement points have been accumulated reservists can apply for a Commissary Privilege Card that is valid for 24 shopping days in a calendar year. 
+																	To join the Navy Reserve you must be a US. 
+																	Prior service age limits differ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Waivers will not be granted. 
+																	Selected Reserve SELRES This group the largest and most relied upon of the Ready Reserve consists of. 
+																	General Qualifications for Commission in the PN Reserve Force Reservist Officer Age must not be less than twenty-one 21 years nor more than sixty-four 64 years of age at the time of appointment as reserve officer. 
+																	1 point for each day of performing funeral honors duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill which covers graduate and undergraduate degrees vocational and technical school training offered by an institute for higher learning that has been approved for GI. 
+																	Applicants must be a citizen of the United States. 
+																	Applicants cannot maintain dual citizenship. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/6e/49/db6e496e4e35e4ddba779df1237049f4.jpg" data-lightbox="roadtrip" data-title="A Us Navy Reservist Saluting Medical Insurance Us History Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/6e/49/db6e496e4e35e4ddba779df1237049f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWsU75-AntwOUjgYTAx07s1dypnFMva0T7Ng';" alt="A Us Navy Reservist Saluting Medical Insurance Us History Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Us Navy Reservist Saluting Medical Insurance Us History Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/0a/6f/cb0a6feef1eaa7d7315293997556f5b3.jpg" data-lightbox="roadtrip" data-title="Royal Naval Reservist Diver In A Transfer Under Pressure Module Royal Navy Reserve Royal Navy Types Of Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/0a/6f/cb0a6feef1eaa7d7315293997556f5b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJ57OXdXRucvllY5SkCiAjeo0-5oZam7x8g';" alt="Royal Naval Reservist Diver In A Transfer Under Pressure Module Royal Navy Reserve Royal Navy Types Of Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Naval Reservist Diver In A Transfer Under Pressure Module Royal Navy Reserve Royal Navy Types Of Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/40/43/664043c8a3ca09840b33e3cab548a190.jpg" data-lightbox="roadtrip" data-title="The 2019 Standards For The Navy Prt In 2020 Navy Boot Camp Graduation Boot Camp Graduation Basic Training Graduation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/40/43/664043c8a3ca09840b33e3cab548a190.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzeLXt6Z0R8lJgnJChGnMwnqR9v5cXtstVQ';" alt="The 2019 Standards For The Navy Prt In 2020 Navy Boot Camp Graduation Boot Camp Graduation Basic Training Graduation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2019 Standards For The Navy Prt In 2020 Navy Boot Camp Graduation Boot Camp Graduation Basic Training Graduation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/a4/3b/fca43bb3609871c055aaafe58b93337e.jpg" data-lightbox="roadtrip" data-title="Army Reservist Tom Deierlein Was 38 When He Was Called Up For Active Duty And Sent To Iraq 12 Years After Grad Military Heroes Men In Uniform Afghanistan War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/a4/3b/fca43bb3609871c055aaafe58b93337e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQtZGXAC3PrKF-O5ty8Ksc0Rs0_se5T_4Gw';" alt="Army Reservist Tom Deierlein Was 38 When He Was Called Up For Active Duty And Sent To Iraq 12 Years After Grad Military Heroes Men In Uniform Afghanistan War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Reservist Tom Deierlein Was 38 When He Was Called Up For Active Duty And Sent To Iraq 12 Years After Grad Military Heroes Men In Uniform Afghanistan War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f3/23/f5/f323f5030a948feacdbfbf052dbc1a2f.jpg" data-lightbox="roadtrip" data-title="Nascar Race Mom African American Sailor First To Race With Nascar African American Racing Nascar Racing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f3/23/f5/f323f5030a948feacdbfbf052dbc1a2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv51pd7xESKtyGGaEcO_uaIxv4tyc0WRPKMg';" alt="Nascar Race Mom African American Sailor First To Race With Nascar African American Racing Nascar Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nascar Race Mom African American Sailor First To Race With Nascar African American Racing Nascar Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/ca/c6/f2/cac6f20bb5bd9467f7ebf8369887a28a--navy-gear-in-the-navy.jpg" data-lightbox="roadtrip" data-title="1939 53 Year Old British Naval Reservist Who Served In The Navy For 26 Years Pictured At The Royal Naval Barracks In Portsmouth With Images Wwii History Wwii Portsmouth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/ca/c6/f2/cac6f20bb5bd9467f7ebf8369887a28a--navy-gear-in-the-navy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvh_LGiow5HZANYTujaBKKHx5s9gKLOxk6bg';" alt="1939 53 Year Old British Naval Reservist Who Served In The Navy For 26 Years Pictured At The Royal Naval Barracks In Portsmouth With Images Wwii History Wwii Portsmouth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1939 53 Year Old British Naval Reservist Who Served In The Navy For 26 Years Pictured At The Royal Naval Barracks In Portsmouth With Images Wwii History Wwii Portsmouth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/ec/68/14ec6845530bb3eb46e5e7f41e404779.jpg" data-lightbox="roadtrip" data-title="Donald Rumsfeld Navy Naval Aviator 1954 57 Went To Reserves And Served Flying Administrative Assignments As Dril Famous Veterans Military Heroes Naval Aviator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/ec/68/14ec6845530bb3eb46e5e7f41e404779.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7rRznPdHG-ReTKrsXvBXrtz0KZlJK_-sJlQ';" alt="Donald Rumsfeld Navy Naval Aviator 1954 57 Went To Reserves And Served Flying Administrative Assignments As Dril Famous Veterans Military Heroes Naval Aviator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donald Rumsfeld Navy Naval Aviator 1954 57 Went To Reserves And Served Flying Administrative Assignments As Dril Famous Veterans Military Heroes Naval Aviator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/cd/1a/7acd1a2508aafeafacd414982d46c092.jpg" data-lightbox="roadtrip" data-title="Usa Patriotism Article A Student S Pride In Receiving Nrotc Scholarship By U S Marine Corps Staff Sg Reserve Officer Training Corps Marine Corps Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/cd/1a/7acd1a2508aafeafacd414982d46c092.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGH0nGa3Ueo8bKorQFm3xMXubAFmEG6uI-Bg';" alt="Usa Patriotism Article A Student S Pride In Receiving Nrotc Scholarship By U S Marine Corps Staff Sg Reserve Officer Training Corps Marine Corps Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Patriotism Article A Student S Pride In Receiving Nrotc Scholarship By U S Marine Corps Staff Sg Reserve Officer Training Corps Marine Corps Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/08/54/550854009ac9009b721b729f6e37dd39.jpg" data-lightbox="roadtrip" data-title="Old And New Royal Navy Uniforms Royal Navy Uniform Royal Navy Navy Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/08/54/550854009ac9009b721b729f6e37dd39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3zSZtcRNXzNXc0V70dY0dTEZG5eVaQQ3pw';" alt="Old And New Royal Navy Uniforms Royal Navy Uniform Royal Navy Navy Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Old And New Royal Navy Uniforms Royal Navy Uniform Royal Navy Navy Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/0a/f4/ff0af4ec978a59e02e78a82b87728856.jpg" data-lightbox="roadtrip" data-title="Grasshopper Now Has A Home Thanks To Michael Navy Reservist And Our Partnership With Virginia Beach Spca Animal Companions Pets Special Friend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/0a/f4/ff0af4ec978a59e02e78a82b87728856.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_oRBMWms8_j2Gt2h4Qra36sSZGpMZjObWA';" alt="Grasshopper Now Has A Home Thanks To Michael Navy Reservist And Our Partnership With Virginia Beach Spca Animal Companions Pets Special Friend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grasshopper Now Has A Home Thanks To Michael Navy Reservist And Our Partnership With Virginia Beach Spca Animal Companions Pets Special Friend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/b4/61/7db4615fcb1167f442d69292006d5817.jpg" data-lightbox="roadtrip" data-title="Army Reservist And Teacher During Uniform To Work Day Army Reserve Army Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/b4/61/7db4615fcb1167f442d69292006d5817.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHEYlIB03ex28myQK7Y1UaDdWqaTcsZwkzsg';" alt="Army Reservist And Teacher During Uniform To Work Day Army Reserve Army Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Reservist And Teacher During Uniform To Work Day Army Reserve Army Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" data-lightbox="roadtrip" data-title="Us Army Reserves Military Humor Army Humor Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YS_gYkfVB450R-VVS477R_edmLX3duuBCg';" alt="Us Army Reserves Military Humor Army Humor Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Reserves Military Humor Army Humor Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/8c/cc/bb8cccc644e7ee5277332257ab1dcf61.jpg" data-lightbox="roadtrip" data-title="Navy Reservists Military Police The Unit Naval">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/8c/cc/bb8cccc644e7ee5277332257ab1dcf61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5RJbWnIOOmBpfvEnR5uotYhKQujNCHlYqA';" alt="Navy Reservists Military Police The Unit Naval">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Reservists Military Police The Unit Naval</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/0a/3c/390a3cfa5821a6c7e7af143803089e71.jpg" data-lightbox="roadtrip" data-title="View Image Warrior Woman Women Leaders Naval">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/0a/3c/390a3cfa5821a6c7e7af143803089e71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVahmrTYs4S6Zkuiff2YZdIGIPlX5xaeNow';" alt="View Image Warrior Woman Women Leaders Naval">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">View Image Warrior Woman Women Leaders Naval</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/59/b3/0859b3be32710d83b081f13baa662efb.jpg" data-lightbox="roadtrip" data-title="Ta Reservist Soldier In Afghanistan Military Police Territorial Army British Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/59/b3/0859b3be32710d83b081f13baa662efb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd48AtXyVnffL5apbW58q0oyrz_wWlNICVZA';" alt="Ta Reservist Soldier In Afghanistan Military Police Territorial Army British Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ta Reservist Soldier In Afghanistan Military Police Territorial Army British Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-frontier-offer-veteran-discounts.html">Does Frontier Offer Veteran Discounts</a></li>
+													<li class="list-group-item"><a href="/does-sprint-have-military-discount.html">Does Sprint Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kfc-do-military-discount.html">Does Kfc Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-omaha-steaks-ever-have-free-shipping.html">Does Omaha Steaks Ever Have Free Shipping</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-give-a-military-discount.html">Does Sports Clips Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kohls-accept-military-discount.html">Does Kohls Accept Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-mcdonalds-have-a-veterans-discount.html">Does Mcdonalds Have A Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-lenovo-offer-military-discount.html">Does Lenovo Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-have-a-military-discount.html">Does Gamestop Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-harley-davidson-give-military-discount.html">Does Harley Davidson Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sprint-do-military-discount.html">Does Sprint Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-old-navy-take-military-discount.html">Does Old Navy Take Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-military-discount-apply-to-appliances.html">Does Home Depot Military Discount Apply To Appliances</a></li>
+													<li class="list-group-item"><a href="/does-harry-and-david-offer-military-discount.html">Does Harry And David Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kohls-give-a-military-discount.html">Does Kohls Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-have-military-discount-online.html">Does Home Depot Have Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-imf-help-poor-countries.html">Does Imf Help Poor Countries</a></li>
+													<li class="list-group-item"><a href="/does-skyzone-offer-military-discount.html">Does Skyzone Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-offer-military-discount.html">Does Gamestop Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-old-navy-do-military-discount.html">Does Old Navy Do Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

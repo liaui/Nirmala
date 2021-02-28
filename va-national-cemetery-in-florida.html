@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va National Cemetery In Florida - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va National Cemetery In Florida",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/9f/3a/b2/9f3ab2f218fb16f50307e77998fbb61b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+national+cemetery+in+florida",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va National Cemetery In Florida</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The cemetery is located in Palm Beach County in Lake Worth on State Road 7US. The VA National Cemetery Administration honors the military service of our Nations veterans. Construction of Phase IB is complete and provides for nearly 18200 full casket gravesites including 15200 pre-placed crypts 9000 in-ground cremains and approximately 7200 columbarium niches. <br>				
+			</p>
+										<a class="badge badge-primary" href="/imf-data-home-page.html">imf data home page</a>
+											<a class="badge badge-info" href="/imf-data-bop.html">imf data bop</a>
+											<a class="badge badge-secondary" href="/imf-conditions-for-egypt-loan.html">imf conditions for egypt loan</a>
+											<a class="badge badge-info" href="/imf-data-excel.html">imf data excel</a>
+											<a class="badge badge-primary" href="/imf-crisis-in-korea-1997.html">imf crisis in korea 1997</a>
+											<a class="badge badge-primary" href="/imf-data-definitions.html">imf data definitions</a>
+											<a class="badge badge-success" href="/imf-data-government-debt.html">imf data government debt</a>
+											<a class="badge badge-warning" href="/imf-data-current-account-balance.html">imf data current account balance</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the ideal blog.  Our website provides you with hints for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/02/fa/0c02fa64c8e281eb0abdc864db1af699.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl Memorial Day Photos Memorial Day I Love America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/02/fa/0c02fa64c8e281eb0abdc864db1af699.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcIw5n0qZoDqk2h__SJJxrYngN_29K4jA5w';" alt="Florida National Cemetery Bushnell Fl Memorial Day Photos Memorial Day I Love America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl Memorial Day Photos Memorial Day I Love America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/c3/4b/30c34bc4ede976dc6d6eacb1a130c798.jpg" data-lightbox="roadtrip" data-title="Map Of Florida National Cemetery National Cemetery Map Of Florida Bushnell Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/c3/4b/30c34bc4ede976dc6d6eacb1a130c798.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcW1DExmhwZNr8P5qcnujwnLQAIfsxG1u7jg';" alt="Map Of Florida National Cemetery National Cemetery Map Of Florida Bushnell Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Florida National Cemetery National Cemetery Map Of Florida Bushnell Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/e1/c2/94e1c286ce126503b04972ed83a47b5e.jpg" data-lightbox="roadtrip" data-title="Florida National Veteran S Cemetery In Bushnell Florida On Memorial Day 2014 Veterans Cemetery Long Road Trip Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/e1/c2/94e1c286ce126503b04972ed83a47b5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStq3xW9tiK-y71cMybk3lFEPGqhtwxr4mIgg';" alt="Florida National Veteran S Cemetery In Bushnell Florida On Memorial Day 2014 Veterans Cemetery Long Road Trip Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Veteran S Cemetery In Bushnell Florida On Memorial Day 2014 Veterans Cemetery Long Road Trip Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/d8/55/4fd85512b47b54b0d7a51f9321e4100d.jpg" data-lightbox="roadtrip" data-title="Pin By The Southern Genealogists On Florida Cemeteries National Cemetery Cemetery Veterans Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/d8/55/4fd85512b47b54b0d7a51f9321e4100d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3pAOn2fn3j5PPpOLzb1Y7ZEKIfjOgx42QSA';" alt="Pin By The Southern Genealogists On Florida Cemeteries National Cemetery Cemetery Veterans Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By The Southern Genealogists On Florida Cemeteries National Cemetery Cemetery Veterans Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/be/9a/acbe9a16edc3b2a8d6a229c34d24af38.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell National Cemetery Florida Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/be/9a/acbe9a16edc3b2a8d6a229c34d24af38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVziXK2dezAvb9dAoFLz_VEomxc3C3WkXgw';" alt="Florida National Cemetery Bushnell National Cemetery Florida Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell National Cemetery Florida Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/e9/b1/06e9b13532bb96d79f2fe6edbc541a1e.jpg" data-lightbox="roadtrip" data-title="Barrancas National Cemetery 2 Pensacola Florida Pensacola Beach Pensacola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/e9/b1/06e9b13532bb96d79f2fe6edbc541a1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDsA3etWqeEUn7c-ZQ6xSYd6Gh4d7hso16FA';" alt="Barrancas National Cemetery 2 Pensacola Florida Pensacola Beach Pensacola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barrancas National Cemetery 2 Pensacola Florida Pensacola Beach Pensacola</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e5/44/e8/e544e8902b80d4dd5c9c1d576fa8d8aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDsA3etWqeEUn7c-ZQ6xSYd6Gh4d7hso16FA';" alt="Barrancas National Cemetery 2 Pensacola Florida Pensacola Beach Pensacola">
+										<div class="card-body">
+						<h3 class="h5"><b>Cross Florida Barge Canal and Withlacoochee State Forest.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va national cemetery in florida</strong>. 
+								
+																	The 318-acre cemetery in Mims Fla will serve the burial needs of more than 163000 Veterans in the cemeterys service area for the next 100 years. 
+																	This cemetery has space available to accommodate casketed and cremated remains. 
+																	Petersburg Cape Canaveral National Cemetery in Mims Florida National Cemetery in Bushnell Jacksonville Sarasota South Florida National Cemetery in Lake Worth St. 
+																	Withlacoochee State Forest was acquired by the federal government from private landowners between 1936 and 1939 under the provisions of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 1980 the Department of Veterans Affairs VA announced that it would establish a new national cemetery in Florida its fourth. 
+																	VA National Cemetery Administration Nationwide Gravesite Locator National Cemetery Administration. 
+																	Cape Canaveral National Cemetery. 
+																	The new 318-acre cemetery in Mims Fla will serve the burial needs of more than 163000 Veterans in the cemeterys service area for the next 100 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GENERAL INFORMATION The 338-acre South Florida National Cemetery will serve veterans needs for the next 50 years. 
+																	The new 526-acre national cemetery in Jacksonville Florida will serve veterans needs for more than 100 years. 
+																	441 just south of Lantana Road and north of Boynton Beach Boulevard. 
+																	Choose the VA national cemetery where youd prefer to be buried. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Highway 1 Mims FL 32754 Phone. 
+																	The cemetery is located north of the Jacksonville International Airport and approximately five miles from Interstate 295. 
+																	PFC US ARMY. 
+																	The database of burial information is updated each day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grave Locator - National Cemetery Administration skip to page content. 
+																	Search for burial locations of veterans and their family members in VA National Cemeteries state veterans cemeteries various other military and Department of Interior cemeteries and for veterans buried in private cemeteries when the grave is marked with a government grave marker. 
+																	Florida has nine National Cemeteries Barrancas National Cemetery in Pensacola Bay Pines National Cemetery in St. 
+																	BUSHNELL FL 33513 352 793-7740. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In August 2007 VA awarded a design contract to England Thims Miller of Jacksonville. 
+																	Department of Veterans Affairs Florida National Cemetery is located in the Withlacoochee State Forest approximately 50 miles north of Tampa in Sumter County Fla. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	VA national cemeteries have been contacting families who were unable to hold a committal service due to the COVID-19 pandemic to arrange memorial services for their loved ones. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	South Florida National Cemetery. 
+																	Situated on 250 generous acres dotted with trees Tallahassee National Cemetery began burials in 2015 and will serve over 83000 area Veterans in years to come. 
+																	Cape Canaveral National Cemetery. 
+																	It is now one of the busiest cemeteries in the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For educational materials and additional information on this cemetery please visit the Education section located below. 
+																	Two major locations for the cemetery were studied. 
+																	This application is only for VA national cemeteries. 
+																	WORLD WAR II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	102nd Avenue Bushnell FL 33513 Phone. 
+																	The National Cemetery Administration has implemented a robust set of measures that allows us to conduct committal and memorial services while protecting the health and safety of Veterans their families and our team members who serve them. 
+																	In April 2007 the Department of Veterans Affairs purchased the site from private citizens and has awarded a contract to Miller Legg Associates of Winter Park Fla to design the new cemetery. 
+																	Burial arrangements will be made after death as with all national cemeteries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	102nd Avenue Bushnell FL 33513 Phone. 
+																	Florida National Cemetery is a United States National Cemetery located near the city of Bushnell in Sumter County Florida. 
+																	If youd like to be buried in a state or tribal Veterans cemetery contact that specific cemetery ahead of time to find out about their pre-need program. 
+																	352-793-9560 Map Driving Directions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5015 Apalachee Parkway Tallahassee FL 32311. 
+																	Find a VA national cemetery. 
+																	Administered by the United States Department of Veterans Affairs it encompasses 5129 acres 2076 ha and began interments in 1988. 
+																	We provide a dignified burial and lasting memorial for veterans and their eligible family members and we maintain our veterans cemeteries as national shrines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CONNER FRED LEE. 
+																	The Withlacoochee site though more environmentally sensitive was supported by government officials. 
+																	VA Cemeteries in Florida. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/86/42/4886422407c60b632f2cee3b871eaf20.jpg" data-lightbox="roadtrip" data-title="National Cemetery U S Veterans Administration Home Mountain Home Tennessee Vintage Postcard The Cemetery Has Aroun In 2020 National Cemetery Cemetery Vintage Postcard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/86/42/4886422407c60b632f2cee3b871eaf20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzOq50Ew6TizIDuWSlRkr16HqLs-czAcjFQ';" alt="National Cemetery U S Veterans Administration Home Mountain Home Tennessee Vintage Postcard The Cemetery Has Aroun In 2020 National Cemetery Cemetery Vintage Postcard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Cemetery U S Veterans Administration Home Mountain Home Tennessee Vintage Postcard The Cemetery Has Aroun In 2020 National Cemetery Cemetery Vintage Postcard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/44/e8/e544e8902b80d4dd5c9c1d576fa8d8aa.jpg" data-lightbox="roadtrip" data-title="Map Of South Florida National Cemetery National Cemetery South Florida Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/44/e8/e544e8902b80d4dd5c9c1d576fa8d8aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBApcmDtDRod2qt41WZwE16QgSBnakzA6tA';" alt="Map Of South Florida National Cemetery National Cemetery South Florida Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of South Florida National Cemetery National Cemetery South Florida Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/1c/59/251c59b572591fb0a785e44df528f5bf.jpg" data-lightbox="roadtrip" data-title="Barrancas National Cemetery Nas Pensacola Florida Veteran Cemeteries On Waymarking Com National Cemetery Pensacola Veterans Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/1c/59/251c59b572591fb0a785e44df528f5bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0FBVuDoPx6RkNoxJnzbrLr3-elD4LAC-V3A';" alt="Barrancas National Cemetery Nas Pensacola Florida Veteran Cemeteries On Waymarking Com National Cemetery Pensacola Veterans Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barrancas National Cemetery Nas Pensacola Florida Veteran Cemeteries On Waymarking Com National Cemetery Pensacola Veterans Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/39/4c/2d394c6ae95c2766e6989b2562d6b0cb.jpg" data-lightbox="roadtrip" data-title="Barrancas National Cemetery National Cemetery Administration South Florida Fun Pensacola Florida Pensacola Beach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/39/4c/2d394c6ae95c2766e6989b2562d6b0cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatxielcynCx3wYCHXfKP6eFqcedqf4naskA';" alt="Barrancas National Cemetery National Cemetery Administration South Florida Fun Pensacola Florida Pensacola Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barrancas National Cemetery National Cemetery Administration South Florida Fun Pensacola Florida Pensacola Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/84/18/70841856d547caf18c345f972c913acc.jpg" data-lightbox="roadtrip" data-title="Florida 2 Bay Pines National Cemetery Bay Pines Fl Veterans Cemetery Cemeteries National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/84/18/70841856d547caf18c345f972c913acc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ry4rjTWCfh6Ml9K_sesy-yel1xnUD5ewOg';" alt="Florida 2 Bay Pines National Cemetery Bay Pines Fl Veterans Cemetery Cemeteries National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida 2 Bay Pines National Cemetery Bay Pines Fl Veterans Cemetery Cemeteries National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/d1/a2/49d1a215116502a273a2de88a5269512.png" data-lightbox="roadtrip" data-title="Photo Wreaths Laid At Arlington National Cemetery Credit U S Army Photo By Spc James K Mc Arlington National Cemetery National Cemetery Veterans Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/d1/a2/49d1a215116502a273a2de88a5269512.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX14NSTzp4wNS8QKbmrWA76edpYQsFqLGJ-g';" alt="Photo Wreaths Laid At Arlington National Cemetery Credit U S Army Photo By Spc James K Mc Arlington National Cemetery National Cemetery Veterans Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Wreaths Laid At Arlington National Cemetery Credit U S Army Photo By Spc James K Mc Arlington National Cemetery National Cemetery Veterans Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/6f/e6/0c6fe69f2bdac24916448a04a83c7362.jpg" data-lightbox="roadtrip" data-title="5 Ways To Explore Arlington National Cemetery Near Washington Dc Washington Dc Travel Arlington National Cemetery Dc Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/6f/e6/0c6fe69f2bdac24916448a04a83c7362.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX_0h4eL6F5fNrK7mpVl3DPp5E7zGjUgYSuQ';" alt="5 Ways To Explore Arlington National Cemetery Near Washington Dc Washington Dc Travel Arlington National Cemetery Dc Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Ways To Explore Arlington National Cemetery Near Washington Dc Washington Dc Travel Arlington National Cemetery Dc Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/3a/b2/9f3ab2f218fb16f50307e77998fbb61b.jpg" data-lightbox="roadtrip" data-title="San Francisco National Cemetery Just Steps Away From Futures Headquarters At 100 Montgomery Street Memorial Day Redwood City California National Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/3a/b2/9f3ab2f218fb16f50307e77998fbb61b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd2vzpgPbtNXXI1aGnOF2080KHrQ_3_HNd8w';" alt="San Francisco National Cemetery Just Steps Away From Futures Headquarters At 100 Montgomery Street Memorial Day Redwood City California National Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Francisco National Cemetery Just Steps Away From Futures Headquarters At 100 Montgomery Street Memorial Day Redwood City California National Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/51/c0/1551c087650f29a8e243159f7594245d.jpg" data-lightbox="roadtrip" data-title="How To Get To Arlington National Cemetery National Cemetery Arlington National Cemetery Virginia Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/51/c0/1551c087650f29a8e243159f7594245d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_D82-qm83YhGdH5zhP8UanRc6oEDxr0dHA';" alt="How To Get To Arlington National Cemetery National Cemetery Arlington National Cemetery Virginia Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get To Arlington National Cemetery National Cemetery Arlington National Cemetery Virginia Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/67/91/f667919810e6699d7fca727bebce5e37.jpg" data-lightbox="roadtrip" data-title="Arlington Arlington National Cemetery Places To Go Wonders Of The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/67/91/f667919810e6699d7fca727bebce5e37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa6EGUxZ6W7M3pkMdyG-sD8om7bQTqh92u3g';" alt="Arlington Arlington National Cemetery Places To Go Wonders Of The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arlington Arlington National Cemetery Places To Go Wonders Of The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/99/a4/f499a415abfeef9d1ced42b7b6d9f728.jpg" data-lightbox="roadtrip" data-title="Richmond National Cemetery National Cemetery Administration National Cemetery Richmond American Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/99/a4/f499a415abfeef9d1ced42b7b6d9f728.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFVGmFiRXtiFiWZyH4t_PEmzNUfa_ks1c6kA';" alt="Richmond National Cemetery National Cemetery Administration National Cemetery Richmond American Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Richmond National Cemetery National Cemetery Administration National Cemetery Richmond American Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/7d/1d/167d1d03e3f3888c0bb1109cfc0739ca.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl This Is Where My Pop Lives Now So Proud Of My Dad Great Man Great Father And Hu National Cemetery Florida Cemetary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/7d/1d/167d1d03e3f3888c0bb1109cfc0739ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hhqyFB838gGFBFAoeV3jY_TiP0sq7mYbBg';" alt="Florida National Cemetery Bushnell Fl This Is Where My Pop Lives Now So Proud Of My Dad Great Man Great Father And Hu National Cemetery Florida Cemetary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl This Is Where My Pop Lives Now So Proud Of My Dad Great Man Great Father And Hu National Cemetery Florida Cemetary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/9e/1b/079e1b44a154b9807ab1a66c31e7acf5.jpg" data-lightbox="roadtrip" data-title="Black Hills National Cemetery South Dakota Where My Grandpa Is Buried Veterans Cemetery Cemetery Headstones Black Hills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/9e/1b/079e1b44a154b9807ab1a66c31e7acf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjq5utDc3h7eG-fpwehAkAJdjDu3tZsFD7A';" alt="Black Hills National Cemetery South Dakota Where My Grandpa Is Buried Veterans Cemetery Cemetery Headstones Black Hills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Hills National Cemetery South Dakota Where My Grandpa Is Buried Veterans Cemetery Cemetery Headstones Black Hills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/52/f5/0c52f52963c71069e7e6f2bd639f6cfe.jpg" data-lightbox="roadtrip" data-title="2 489 335 U S Soldiers Have Sacrificed Themselves During The Life Of The United States National Cemetery Arlington National Cemetery Beautiful Places To Visit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/52/f5/0c52f52963c71069e7e6f2bd639f6cfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWBQhBHOylxE_qBtu3bdlMTfQFLb_J3_BEQ';" alt="2 489 335 U S Soldiers Have Sacrificed Themselves During The Life Of The United States National Cemetery Arlington National Cemetery Beautiful Places To Visit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 489 335 U S Soldiers Have Sacrificed Themselves During The Life Of The United States National Cemetery Arlington National Cemetery Beautiful Places To Visit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e7/18/e3/e718e3bf67e681c4e715b2c3becf07ad.jpg" data-lightbox="roadtrip" data-title="Synopsis Shrine Memorial Day Pictures Military Cemetery Best Beach In Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e7/18/e3/e718e3bf67e681c4e715b2c3becf07ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwcL8pQvBNIj8D64BYF9-9rww8A04tJuGXFQ';" alt="Synopsis Shrine Memorial Day Pictures Military Cemetery Best Beach In Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Synopsis Shrine Memorial Day Pictures Military Cemetery Best Beach In Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/construction-companies-hiring-veterans.html">Construction Companies Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/disabled-veteran-discount-airline-tickets.html">Disabled Veteran Discount Airline Tickets</a></li>
+													<li class="list-group-item"><a href="/debt-the-imf-and-the-world-bank-sixty-questions-sixty-answers.html">Debt The Imf And The World Bank Sixty Questions Sixty Answers</a></li>
+													<li class="list-group-item"><a href="/companies-that-hire-former-military.html">Companies That Hire Former Military</a></li>
+													<li class="list-group-item"><a href="/dd214-search-online.html">Dd214 Search Online</a></li>
+													<li class="list-group-item"><a href="/discount-vet-atlanta.html">Discount Vet Atlanta</a></li>
+													<li class="list-group-item"><a href="/dell-computer-veterans-discount.html">Dell Computer Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/discount-vet-tulsa.html">Discount Vet Tulsa</a></li>
+													<li class="list-group-item"><a href="/discount-vet-tacoma.html">Discount Vet Tacoma</a></li>
+													<li class="list-group-item"><a href="/discount-vet-newark-ohio.html">Discount Vet Newark Ohio</a></li>
+													<li class="list-group-item"><a href="/discount-vet-wellness-reviews.html">Discount Vet Wellness Reviews</a></li>
+													<li class="list-group-item"><a href="/dell-do-military-discount.html">Dell Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/companies-that-hire-military-spouses-to-work-from-home.html">Companies That Hire Military Spouses To Work From Home</a></li>
+													<li class="list-group-item"><a href="/discount-tire-veterans-discount-texas.html">Discount Tire Veterans Discount Texas</a></li>
+													<li class="list-group-item"><a href="/dd214-request-st-louis.html">Dd214 Request St Louis</a></li>
+													<li class="list-group-item"><a href="/dartmouth-veteran-transition.html">Dartmouth Veteran Transition</a></li>
+													<li class="list-group-item"><a href="/countries-by-gdp-per-capita-ppp-imf.html">Countries By Gdp Per Capita Ppp Imf</a></li>
+													<li class="list-group-item"><a href="/dellcom-veteran-discount.html">Dellcom Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/disabled-veteran-vehicle-discounts.html">Disabled Veteran Vehicle Discounts</a></li>
+													<li class="list-group-item"><a href="/dell-veteran-coupon-code.html">Dell Veteran Coupon Code</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

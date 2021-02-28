@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Charities For Military Dogs - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Charities For Military Dogs",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/22/af/0e/22af0eafa03d55c68e265e876e627fbc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=charities+for+military+dogs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Charities For Military Dogs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We are the nations largest provider of Service Dogs for disabled American veterans. 7535 likes 111 talking about this 52 were here. Dogs and companion dogs for people living with significant challenges including those with visual impairments and veterans with disabilities. <br>				
+			</p>
+										<a class="badge badge-danger" href="/lmao-zedong.html">lmao zedong</a>
+											<a class="badge badge-warning" href="/lmao-yeet-meaning.html">lmao yeet meaning</a>
+											<a class="badge badge-secondary" href="/lowes-employee-military-discount.html">lowes employee military discount</a>
+											<a class="badge badge-success" href="/lowes-get-military-discount-online.html">lowes get military discount online</a>
+											<a class="badge badge-info" href="/lowes-military-discount-trex.html">lowes military discount trex</a>
+											<a class="badge badge-info" href="/lowes-military-highway.html">lowes military highway</a>
+											<a class="badge badge-dark" href="/lowe-alpine-military.html">lowe alpine military</a>
+											<a class="badge badge-success" href="/lmao-zach.html">lmao zach</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for seeing the highest quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/71/42/697142c25778e7ed2bb624c4db8a7b21.jpg" data-lightbox="roadtrip" data-title="11 Dog Charities And Nonprofits That Help K9s And Veterans Dog Charities Veteran Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/71/42/697142c25778e7ed2bb624c4db8a7b21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARersHLaRtkbIGho3yXefV20HeWQjr0femw';" alt="11 Dog Charities And Nonprofits That Help K9s And Veterans Dog Charities Veteran Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Dog Charities And Nonprofits That Help K9s And Veterans Dog Charities Veteran Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/50/6e/01506eb5d1ff36cd793a591b5b91b9d0.jpg" data-lightbox="roadtrip" data-title="6 Things You Should Know About K9s For Warriors Portable Dog Kennels Military Dogs Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/50/6e/01506eb5d1ff36cd793a591b5b91b9d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8tN8vUC6JaWlLPFaU1EMaMD5c0m4bI_uzg';" alt="6 Things You Should Know About K9s For Warriors Portable Dog Kennels Military Dogs Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Things You Should Know About K9s For Warriors Portable Dog Kennels Military Dogs Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/60/c8/1360c8ee2f6eb408058d703d1b35438a.gif" data-lightbox="roadtrip" data-title="Favorite Us On Ebay War Dogs Military Working Dogs Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/60/c8/1360c8ee2f6eb408058d703d1b35438a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRv-MliDeUvPN4eSlmHl9-PVtXnozTceOqg';" alt="Favorite Us On Ebay War Dogs Military Working Dogs Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Favorite Us On Ebay War Dogs Military Working Dogs Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/92/1b/c6921ba773f95c9ba5bf0de10ce98859.jpg" data-lightbox="roadtrip" data-title="Feed The Dog Feedthedog Service Dogs Veterans Services Dog Charities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/92/1b/c6921ba773f95c9ba5bf0de10ce98859.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCbCjUVYuE0cd-pNW3CIQGR4K1urWB87dzWg';" alt="Feed The Dog Feedthedog Service Dogs Veterans Services Dog Charities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feed The Dog Feedthedog Service Dogs Veterans Services Dog Charities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/84/96/8d84964ce7277c4027fbb65da44c0b51.jpg" data-lightbox="roadtrip" data-title="Unique Ways To Give Back To The Military Community Military Service Dogs Service Dog Training Psychiatric Service Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/84/96/8d84964ce7277c4027fbb65da44c0b51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVqRVNMjpn-GevE7ECuElhluvRTDKQyyrmgQ';" alt="Unique Ways To Give Back To The Military Community Military Service Dogs Service Dog Training Psychiatric Service Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unique Ways To Give Back To The Military Community Military Service Dogs Service Dog Training Psychiatric Service Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/0a/5d/7d0a5db144e63cdf4605b7d48f70dd0d.jpg" data-lightbox="roadtrip" data-title="Onetigris Tactical Molle K9 Patrol Dog Vests Harnesses Onetigris Dogharness Harness Vest Dog Military Dogs Military Working Dogs Dog Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/0a/5d/7d0a5db144e63cdf4605b7d48f70dd0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjIMuHG7BV_EBv-aGsgHrfqtybpUmhNyaaw';" alt="Onetigris Tactical Molle K9 Patrol Dog Vests Harnesses Onetigris Dogharness Harness Vest Dog Military Dogs Military Working Dogs Dog Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onetigris Tactical Molle K9 Patrol Dog Vests Harnesses Onetigris Dogharness Harness Vest Dog Military Dogs Military Working Dogs Dog Training</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/90/17/c3/9017c336ed8d8c1c01b46689bc0d5429.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjIMuHG7BV_EBv-aGsgHrfqtybpUmhNyaaw';" alt="Onetigris Tactical Molle K9 Patrol Dog Vests Harnesses Onetigris Dogharness Harness Vest Dog Military Dogs Military Working Dogs Dog Training">
+										<div class="card-body">
+						<h3 class="h5"><b>Comprehensive on-campus student instruction.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Charities for military dogs</strong>. 
+								
+																	Each November we set aside a special time to honor the sacrifices our brave military veterans have made. 
+																	How to Honor the Military Dogs Who Serve Our Nation petMD Military dogs are elite K-9 dogs currently there are about 2700 who serve Mission K9 Rescue is Finding Homes for Heroic Dogs. 
+																	Military Working Dog Team Support Association is an all-volunteer 501c3 dedicated to supporting US. 
+																	Several former canine handlers started this association to raise public awareness about. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The LCC K-9 Comfort Dogs are a bridge for compassionate ministry opening doors for conversation about faith and creating opportunities to share the. 
+																	Providing mental and physical rehabilitation and rehoming options to Military Working Dogs MWD Contract Working Dogs CWD and Law Enforcement K9s that otherwise would be euthanized. 
+																	Blue Star Families 26. 
+																	Top Choices Among Veterans Charities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force Aid Society 22. 
+																	With the motto Veterans Helping Veterans this program not only provide service dogs to veterans living with combat injuries but utilized other veterans to help train the dogs specifically those suffering from PTSD that has not been successfully treated in other clinical settings. 
+																	Make a donation Petco Foundation. 
+																	The service dog programs of Americas VetDogs were created to provide enhanced mobility and renewed independence to veterans active-duty service members and first responders with disabilities allowing them to once again live with pride and self-reliance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Americas VetDogs specializes placing highly-skilled service and guide dogs to individuals with physical injuries PTSD hearing and vision loss and seizures. 
+																	A former Navy SEAL began this foundation to help transition Special Operation Forces. 
+																	Program trains inmates raise puppies to become either service dogs for veterans who are impaired from the war in Iraq and Afghanistan or to become working dogs to detect explosives. 
+																	Adopting a military dog requires some awareness of the animals training socialization and ability to interact with people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paws for Purple Hearts. 
+																	Operation Second Chance tie 28. 
+																	All of Southeastern Guide Dogs services - which include selective breeding and expert dog training. 
+																	Charities that Support the Military Community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Warrior Dog Foundation transitions our countrys working K9s from an operational environment into retirement. 
+																	11 Dog Charities And Nonprofits That Help K9s And Veterans 1 US. 
+																	MissionK9Rescue operates under the laws of the State of Texas. 
+																	2017 Helping Heroes Award Winner - Mission K 9. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top 10 Best Dog Charities. 
+																	Military Family Association 18. 
+																	A charity organisation training Assistance Dogs to enhance quality of life for British Veterans with invisible. 
+																	Military K9s and their handlers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Launched in August 2008 the Lutheran Church Charities K-9 Comfort Dog Ministry is a national human-care ministry embracing the unique calming nature and skills of purebred Golden Retrievers. 
+																	Our organizations purpose for existence is to serve retiring and retired Military Working Dogs Contract Working Dogs and other Dogs who Serve as they may fit into our mission and scope. 
+																	We rescue and train shelter dogs to be paired as Service Dogs for Warriors with service-connected Post-Traumatic Stress Traumatic Brain Injury andor Military Sexual Trauma. 
+																	How To Adopt A Military Working Dog. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Donate to the program or sponsor a puppy. 
+																	Operation Support Our Troops 25. 
+																	VETERANS WITH DOGS Exeter Devon. 
+																	Americans love respect and honor our troops all year round -- in fact people donate more than 25 billion annually to the over 40000 American charities with military-related missions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed Services YMCA of the USA A Bob Woodruff Family Foundation A Fisher House Foundation A Gary Sinise Foundation A Homes for Our Troops A Hope For The Warriors A Intrepid Fallen Heroes Fund A- K9s For Warriors A- Mission Continues A National Military Family Association A Navy-Marine Corps Relief Society A. 
+																	Admiral Nimitz Foundation 19. 
+																	And lifetime graduate follow. 
+																	The first thing to do is to narrow down whether or not you specifically want a military dog or a working dog from any other walk of life including law enforcement private security work with the disabled etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Southeastern Guide Dogs 23. 
+																	K9s For Warriors is ending veteran suicide and returning our Warriors to a life of dignity and independence. 
+																	Mercy Medical Angels 20. 
+																	Under the guidance of instructors these veterans undergo an intensive 18-to-24-month service dog training regimen with specially bred Golden and Labrador Retriever puppies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Freedom Service Dogs of America FSD unleashes the potential of shelter dogs by transforming them into custom-trained life-changing assistance dogs for people in need including injured. 
+																	2 Warrior Dog Foundation. 
+																	Air warrior Courage Foundation tie 26. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/ec/39/c9ec39b4daf083d848321443f5c2f67b.jpg" data-lightbox="roadtrip" data-title="Dogs For People With The Disabilities Assistance Dog Dog Charities Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/ec/39/c9ec39b4daf083d848321443f5c2f67b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ZkNMGUTJF4WJa9xP2qHpWtrnNeHraJA1bQ';" alt="Dogs For People With The Disabilities Assistance Dog Dog Charities Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs For People With The Disabilities Assistance Dog Dog Charities Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/ce/81/b8ce81fdc16df4ebacd53dd1460cd1a5.jpg" data-lightbox="roadtrip" data-title="K9 Care War Dogs Military Working Dogs Dog Charities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/ce/81/b8ce81fdc16df4ebacd53dd1460cd1a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEp91GNxpQsVBobsNibNdKbYd2EjNKpSdNYQ';" alt="K9 Care War Dogs Military Working Dogs Dog Charities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">K9 Care War Dogs Military Working Dogs Dog Charities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/85/09/7b85094d068e2bc5e2c3a557d1779f8a.jpg" data-lightbox="roadtrip" data-title="Lcc K 9 Comfort Dogs Zina Comfort Dog Our Lutheran Church Charities Staff Lcc K 9 Comfort Dogs And Lcc Kare 9 Military Mini Therapy Dogs Dogs Romans 12 15">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/85/09/7b85094d068e2bc5e2c3a557d1779f8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2UiGLRKGPiO09GAxaek54XSJzmP-jYKNYBQ';" alt="Lcc K 9 Comfort Dogs Zina Comfort Dog Our Lutheran Church Charities Staff Lcc K 9 Comfort Dogs And Lcc Kare 9 Military Mini Therapy Dogs Dogs Romans 12 15">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lcc K 9 Comfort Dogs Zina Comfort Dog Our Lutheran Church Charities Staff Lcc K 9 Comfort Dogs And Lcc Kare 9 Military Mini Therapy Dogs Dogs Romans 12 15</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/17/c3/9017c336ed8d8c1c01b46689bc0d5429.jpg" data-lightbox="roadtrip" data-title="Happy Veterans Day Thank You To All Of The Humans And Animals Who Have Served Or Are Serving Our Country Military Dogs Animal Charities Baby Puppies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/17/c3/9017c336ed8d8c1c01b46689bc0d5429.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJaSjAhj8Fx2mjr7xYVd9kKYKS3oUDsGMfHA';" alt="Happy Veterans Day Thank You To All Of The Humans And Animals Who Have Served Or Are Serving Our Country Military Dogs Animal Charities Baby Puppies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Veterans Day Thank You To All Of The Humans And Animals Who Have Served Or Are Serving Our Country Military Dogs Animal Charities Baby Puppies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e2/fa/81/e2fa818403c18ee6712e04c5b70a3243.jpg" data-lightbox="roadtrip" data-title="Often Times In Rescue We Hear That When Someone Rescues A Pet The Pet Ends Up Rescuing Them Our Story Is No Differe Animal Charities Poison Dogs Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e2/fa/81/e2fa818403c18ee6712e04c5b70a3243.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IIYmHdv3MR1J0D39sQ_5eY4t8CX0CUZVIQ';" alt="Often Times In Rescue We Hear That When Someone Rescues A Pet The Pet Ends Up Rescuing Them Our Story Is No Differe Animal Charities Poison Dogs Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Often Times In Rescue We Hear That When Someone Rescues A Pet The Pet Ends Up Rescuing Them Our Story Is No Differe Animal Charities Poison Dogs Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/85/12/8885121ba9b7b1bf230caa08a967a259.png" data-lightbox="roadtrip" data-title="Pin On Animals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/85/12/8885121ba9b7b1bf230caa08a967a259.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTklxVLbpB_yH5slO1YBs7qgqqmzJO4GSqKHg';" alt="Pin On Animals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Animals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/d2/af/e0d2af6d1209a91c7694802ea1863ff0.jpg" data-lightbox="roadtrip" data-title="Pin By Lion Mouse On Support Our Military Dog Charities Dog Veteran Military Working Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/d2/af/e0d2af6d1209a91c7694802ea1863ff0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0l3O2dFUAd5W7lxJTi6p_O88Ixdnk7pnH1Q';" alt="Pin By Lion Mouse On Support Our Military Dog Charities Dog Veteran Military Working Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lion Mouse On Support Our Military Dog Charities Dog Veteran Military Working Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/d1/60/7dd1601d07166de4891164e0ccf89abb.jpg" data-lightbox="roadtrip" data-title="One Of My Favorite Charities Is Www Petsofthehomeless Org They Help Feed And Give Medical Aid To Pets Of The Homeless Animals Cute Animals Pets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/d1/60/7dd1601d07166de4891164e0ccf89abb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgusRF-4mdbiofwPNLmNBmWnwzLylJch8HQ';" alt="One Of My Favorite Charities Is Www Petsofthehomeless Org They Help Feed And Give Medical Aid To Pets Of The Homeless Animals Cute Animals Pets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Of My Favorite Charities Is Www Petsofthehomeless Org They Help Feed And Give Medical Aid To Pets Of The Homeless Animals Cute Animals Pets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/af/0e/22af0eafa03d55c68e265e876e627fbc.jpg" data-lightbox="roadtrip" data-title="5 Of The Best Animal Charities In The Usa To Support Animal Charities Dog Charities Dog Adoption Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/af/0e/22af0eafa03d55c68e265e876e627fbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA0-ns-zuRZMPgI8CH1FDeQ2R9kE8kNucKBQ';" alt="5 Of The Best Animal Charities In The Usa To Support Animal Charities Dog Charities Dog Adoption Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Of The Best Animal Charities In The Usa To Support Animal Charities Dog Charities Dog Adoption Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/23/33/96/2333962853081b0890828f9351c8cd4e.jpg" data-lightbox="roadtrip" data-title="Supporting Our Veterans A Privilege To Pay It Forward Assistance Dog Military Community Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/23/33/96/2333962853081b0890828f9351c8cd4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXeESXCLQSJjNZ8oJzda-tYSZYME8DwR3IiQ';" alt="Supporting Our Veterans A Privilege To Pay It Forward Assistance Dog Military Community Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Veterans A Privilege To Pay It Forward Assistance Dog Military Community Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/58/48/6258482783404d8cd8005cf96366e4de.jpg" data-lightbox="roadtrip" data-title="Remember Them All Military Working Dogs Working Dogs Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/58/48/6258482783404d8cd8005cf96366e4de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkeV9NCqEK1XsZL82B5Skuh8p8GW7TwgAgg';" alt="Remember Them All Military Working Dogs Working Dogs Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remember Them All Military Working Dogs Working Dogs Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/1a/1e/c21a1e01fb43f385aa8ce6b552e75c4a.jpg" data-lightbox="roadtrip" data-title="Apply For A Service Dog From Little Angels Service Dogs San Diego Ca Service Dogs Service Dog Training Dog Charities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/1a/1e/c21a1e01fb43f385aa8ce6b552e75c4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-_R4TfkC7Y7nWaQLuaSqdQtacJ4ossuJ-pg';" alt="Apply For A Service Dog From Little Angels Service Dogs San Diego Ca Service Dogs Service Dog Training Dog Charities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apply For A Service Dog From Little Angels Service Dogs San Diego Ca Service Dogs Service Dog Training Dog Charities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/4c/97/3c4c970013e01648317043ad7ebd6624.png" data-lightbox="roadtrip" data-title="Guide Dogs Of America Guide Dog Dog Charities Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/4c/97/3c4c970013e01648317043ad7ebd6624.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_W8Y4bIKadF3Wv2HSQ2l2GdwqNtnNtCdew';" alt="Guide Dogs Of America Guide Dog Dog Charities Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guide Dogs Of America Guide Dog Dog Charities Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/63/a0/0563a07c728dbf6a0ae5765b5ec10bd7.jpg" data-lightbox="roadtrip" data-title="Pin On Lcc Comfort Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/63/a0/0563a07c728dbf6a0ae5765b5ec10bd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE86nfjU_3FMPvdNLq2oYkIaLwYHdxEYgOgQ';" alt="Pin On Lcc Comfort Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lcc Comfort Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/62/da/8d62da5a9320fe5a2851a36e78a84de4.jpg" data-lightbox="roadtrip" data-title="The Lutheran Church Charities K 9 Comfort Dogs Headed To The Parkridge Church In Coral Springs O Florida High School Stoneman Douglas High School High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/62/da/8d62da5a9320fe5a2851a36e78a84de4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqmFKENZo9IDOD5BruTJZc8IRuQlrDWANjA';" alt="The Lutheran Church Charities K 9 Comfort Dogs Headed To The Parkridge Church In Coral Springs O Florida High School Stoneman Douglas High School High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Lutheran Church Charities K 9 Comfort Dogs Headed To The Parkridge Church In Coral Springs O Florida High School Stoneman Douglas High School High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-chief-netflix.html">Imf Chief Netflix</a></li>
+													<li class="list-group-item"><a href="/imf-comment-on-indian-economy.html">Imf Comment On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-chief-wiki.html">Imf Chief Wiki</a></li>
+													<li class="list-group-item"><a href="/imf-chief-recovery.html">Imf Chief Recovery</a></li>
+													<li class="list-group-item"><a href="/imf-chief-french.html">Imf Chief French</a></li>
+													<li class="list-group-item"><a href="/imf-chief-modi.html">Imf Chief Modi</a></li>
+													<li class="list-group-item"><a href="/imf-chief-on-demonetisation.html">Imf Chief On Demonetisation</a></li>
+													<li class="list-group-item"><a href="/imf-consultation-article-iv-japan.html">Imf Consultation Article Iv Japan</a></li>
+													<li class="list-group-item"><a href="/imf-chief-on-farm-bills.html">Imf Chief On Farm Bills</a></li>
+													<li class="list-group-item"><a href="/imf-course-full-form.html">Imf Course Full Form</a></li>
+													<li class="list-group-item"><a href="/imf-chief-says-pandemic.html">Imf Chief Says Pandemic</a></li>
+													<li class="list-group-item"><a href="/imf-data-commodity-prices.html">Imf Data Commodity Prices</a></li>
+													<li class="list-group-item"><a href="/imf-data-excel.html">Imf Data Excel</a></li>
+													<li class="list-group-item"><a href="/imf-chief-statement-on-india.html">Imf Chief Statement On India</a></li>
+													<li class="list-group-item"><a href="/imf-country-report-greece-2019.html">Imf Country Report Greece 2019</a></li>
+													<li class="list-group-item"><a href="/imf-currency-definition.html">Imf Currency Definition</a></li>
+													<li class="list-group-item"><a href="/imf-data-home-page.html">Imf Data Home Page</a></li>
+													<li class="list-group-item"><a href="/imf-crisis-of-2008.html">Imf Crisis Of 2008</a></li>
+													<li class="list-group-item"><a href="/imf-data-definitions.html">Imf Data Definitions</a></li>
+													<li class="list-group-item"><a href="/imf-data-csv.html">Imf Data Csv</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

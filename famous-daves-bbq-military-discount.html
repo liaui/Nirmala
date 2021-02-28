@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Famous Daves Bbq Military Discount - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Famous Daves Bbq Military Discount",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/7b/5a/f2/7b5af2d21a354e431af9d526a1cb2182.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=famous+daves+bbq+military+discount",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Famous Daves Bbq Military Discount</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">2018 FREE and Discounted Meals and Drinks For Veterans Day Weekend Visit Your Military Veterans Discounts for a full list Food and Drink Please be sure to double check all offers call them if need be Proof of military service is required at most places View our 2018 FREE Admission and. Famous Daves provides the discount on the condition that you are soldiers ex-soldiers or soldiers relatives. Usually the Famous Daves military discount cannot be used in combination with other discounts. <br>				
+			</p>
+										<a class="badge badge-warning" href="/van-hire-military-discount-uk.html">van hire military discount uk</a>
+											<a class="badge badge-danger" href="/va-ptsd-rating-70.html">va ptsd rating 70</a>
+											<a class="badge badge-danger" href="/va-ptsd-website.html">va ptsd website</a>
+											<a class="badge badge-success" href="/va-ptsd-online-training.html">va ptsd online training</a>
+											<a class="badge badge-dark" href="/verizon-emporia-va.html">verizon emporia va</a>
+											<a class="badge badge-info" href="/vet-bedding-man-discount-code.html">vet bedding man discount code</a>
+											<a class="badge badge-primary" href="/va-ptsd-webinars.html">va ptsd webinars</a>
+											<a class="badge badge-secondary" href="/va-ptsd-evidence.html">va ptsd evidence</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right site.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/b3/0d/f7b30d3ccc2b084faa67c56c24ac4dc8.jpg" data-lightbox="roadtrip" data-title="Famous Dave S On November 11 In Honor Of Veterans Day Famous Dave S Would Like To Thank All Former And Current Mili Famous Daves Restaurant Deals Bbq House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/b3/0d/f7b30d3ccc2b084faa67c56c24ac4dc8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGpKLf6-fxNBLs3hQ19V4Zwj256WbGKv5YA';" alt="Famous Dave S On November 11 In Honor Of Veterans Day Famous Dave S Would Like To Thank All Former And Current Mili Famous Daves Restaurant Deals Bbq House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Famous Dave S On November 11 In Honor Of Veterans Day Famous Dave S Would Like To Thank All Former And Current Mili Famous Daves Restaurant Deals Bbq House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/91/10/cc91103a7a020e549d19bfcfb659682b.png" data-lightbox="roadtrip" data-title="Pinned October 27th Free Meal For Veterans The 11th At Famous Daves Restaurants Coupon Via The Coupons App Eat Free Eat Free Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/91/10/cc91103a7a020e549d19bfcfb659682b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf8IwkKpxqRgNRN95nkSQfjsRph-eSOny1Rg';" alt="Pinned October 27th Free Meal For Veterans The 11th At Famous Daves Restaurants Coupon Via The Coupons App Eat Free Eat Free Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinned October 27th Free Meal For Veterans The 11th At Famous Daves Restaurants Coupon Via The Coupons App Eat Free Eat Free Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/8d/63/458d636d29959c43dd4f5e5bf8cf8d4e.jpg" data-lightbox="roadtrip" data-title="Famous Dave S Overland Park Now Open Famous Daves Restaurant Deals Bbq House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/8d/63/458d636d29959c43dd4f5e5bf8cf8d4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DN9gEv5Zx2hoY9g8IajJiR-cJnziVYs7dw';" alt="Famous Dave S Overland Park Now Open Famous Daves Restaurant Deals Bbq House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Famous Dave S Overland Park Now Open Famous Daves Restaurant Deals Bbq House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/c1/2f/94c12ff19af495823146d208a0b20439.jpg" data-lightbox="roadtrip" data-title="Jfm Famous Dave S Famous Daves Food Famous">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/c1/2f/94c12ff19af495823146d208a0b20439.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiQOM7ymaSGaeB0DEi1_8U9llhJRednVng5Q';" alt="Jfm Famous Dave S Famous Daves Food Famous">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jfm Famous Dave S Famous Daves Food Famous</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/36/68/59366828397c3c9178b5a2b92030ed8a.png" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/36/68/59366828397c3c9178b5a2b92030ed8a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0X4dMTf9PZE_8GGF0lwd-ONsRwM1DMgRCGg';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/c5/70/0cc57083c9a8130467a43f625198f878.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran S Day Discounts And Freebies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/c5/70/0cc57083c9a8130467a43f625198f878.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS7Bnmnd3BtK7QVVsa14_vyAsaegogEv2sFA';" alt="Pin On Veteran S Day Discounts And Freebies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran S Day Discounts And Freebies</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e6/fa/13/e6fa1383d523dce352bc0128b4929852.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS7Bnmnd3BtK7QVVsa14_vyAsaegogEv2sFA';" alt="Pin On Veteran S Day Discounts And Freebies">
+										<div class="card-body">
+						<h3 class="h5"><b>Famous Daves BBQ 20 Off.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Famous daves bbq military discount</strong>. 
+								
+																	Valid only at Famous Daves in Virginia- Alexandria Oakton Chantilly Woodbridge and Maryland- Waldorf Laurel Columbia Frederick. 
+																	Iris Comeback Chicken Sandwich - Famous Daves mothers tried-and-true recipe. 
+																	Famous Daves BBQ Features. 
+																	Active Duty and Veteran members once you have created an account and have been verified at Famous Daves Military Discount then simply sign in to your account when placing your order and your discount will be applied quickly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 Off The All-American BBQ Feast. 
+																	Order Ahead and Skip the Line at Famous Daves. 
+																	Delivery Pickup Options - 675 reviews of Famous Daves Bar-B-Que Famous Daves Barbeque is set to open July 22. 
+																	At Famous Daves to show gratitude and appreciation to all those who lift people up and help people keep rising if youre a service member or veteran member you may be eligible for a military discount on your visits at Famous Daves at any time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can visit Famous Daves military discount page. 
+																	Looking forward to some ribs and burnt ends. 
+																	Famous Daves offers a policy to give military a special benefit. 
+																	Find a Famous Daves BBQ restaurant near you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Famous Daves BBQ 10 Off. 
+																	Discounts average 12 off with a Famous Daves BBQ promo code or coupon. 
+																	Place Orders Online or on your Mobile Phone. 
+																	On November 11 in honor of Veterans Day Famous Daves is offering veterans and active-duty military personnel a free Free Georgia Chopped Pork Sandwich Side at participating locations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	652 reviews BBQ American. 
+																	Famous Daves BBQ 16 Off. 
+																	View store hours directions phone number menu and more. 
+																	651 Mall Ring Circle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15 Famous Daves BBQ coupons now on RetailMeNot. 
+																	Famous Daves is a barbecue restaurant that is proud to call itself the longest-running barbecue party in history. 
+																	Famous Daves BBQ 15 Off. 
+																	Get the Deals Discounts Newsletter Get weekly military discounts on food travel lodging moving entertainment and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On November 11 Famous Daves offers military personnel a free meal. 
+																	View the online menu of Famous Daves BBQ restaurant in USA. 
+																	Famous Daves Military Discount salute military and to show great appreciation for their service in this way Famous Daves Military Discount offers a special military discount. 
+																	Famous Daves BBQ 7 Off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Famous Daves barbecue lovers can purchase authentic barbecued meats and more including prime steaks and chops all served with a sticky and sweet sauce. 
+																	Does Famous Daves have military discount. 
+																	Take 10 off the All-American BBQ Feast TOGO only. 
+																	35 reviews BBQ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Famous Daves BBQ 20 Off. 
+																	Treat your guests to authentic pit-smoked BBQ made-from-scratch sides and handcrafted dessert. 
+																	Famous Daves BBQ 50 Off. 
+																	Famous Daves BBQ 10 Off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See all R R World Famous BBQ reviews GW Sharkeys Raw Bar Grill. 
+																	Famous Daves Military discount transfer is forbidden. 
+																	The Famous Daves app lets you bring the Q with you wherever you go. 
+																	Famous Daves Military Discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discount for happy hourthanks for Andres nice and sweet service and absolutely enjoyed dinning here. 
+																	And See all Gyu-Kaku Japanese BBQ reviews. 
+																	You can also share this news with any military member. 
+																	They are located in the old Marie Callenders restaurant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Famous Daves BBQ 23 Off. 
+																	A hand-breaded crispy chicken breast on a buttery toasted bun with pickles and drizzled with our secret Comeback Sauce. 
+																	Famous Daves - Doral. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/2a/03/282a03331391269973ff65f41668370b.jpg" data-lightbox="roadtrip" data-title="Applebee S See You Tomorrow Eat Free Eat Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/2a/03/282a03331391269973ff65f41668370b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo92IJEHhFASMPrw81FUpsiu-MOrciJJer_A';" alt="Applebee S See You Tomorrow Eat Free Eat Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Applebee S See You Tomorrow Eat Free Eat Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/34/37/a934371ea9adc75d2a5fca074810ea7c.jpg" data-lightbox="roadtrip" data-title="Applebee S See You Tomorrow Menu Design Restaurant Menu Design Menu Restaurant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/34/37/a934371ea9adc75d2a5fca074810ea7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToGfrsx3TlTuuIAXz3wEoR2l8D9vJSTfgWww';" alt="Applebee S See You Tomorrow Menu Design Restaurant Menu Design Menu Restaurant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Applebee S See You Tomorrow Menu Design Restaurant Menu Design Menu Restaurant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/fd/8d/9efd8d7a2e5812952b77eb06237604fa.jpg" data-lightbox="roadtrip" data-title="Famous Dave S Barbeque Dining Nightlife Seattle Southside Famous Daves Food Foodie Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/fd/8d/9efd8d7a2e5812952b77eb06237604fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGpV5IllsvD2xodyFy72Bh5AIe2orYoUZ7Q';" alt="Famous Dave S Barbeque Dining Nightlife Seattle Southside Famous Daves Food Foodie Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Famous Dave S Barbeque Dining Nightlife Seattle Southside Famous Daves Food Foodie Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/b5/ee/e2b5ee8949f062948430d03f194cb128.jpg" data-lightbox="roadtrip" data-title="Bighearted Sundays Dave S Unlimited Wings For Aed45 T C Apply Dubaifestivalcity Alwahdamall Abhudhabimall Dubaiparksandresorts Al Eat Food Famous Daves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/b5/ee/e2b5ee8949f062948430d03f194cb128.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5TdfRnwZo8cP2ZeVYKQM_0BOHi6gO1A6Pg';" alt="Bighearted Sundays Dave S Unlimited Wings For Aed45 T C Apply Dubaifestivalcity Alwahdamall Abhudhabimall Dubaiparksandresorts Al Eat Food Famous Daves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bighearted Sundays Dave S Unlimited Wings For Aed45 T C Apply Dubaifestivalcity Alwahdamall Abhudhabimall Dubaiparksandresorts Al Eat Food Famous Daves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/9b/7d/949b7de0191a206237b244df77bfb83d.jpg" data-lightbox="roadtrip" data-title="Famous Dave S Barbecue Party Cookbook Is The Ultimate Barbecue Party Cookbook They Say The Average Person Has 10 000 Famous Daves Barbeque Party Party Entrees">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/9b/7d/949b7de0191a206237b244df77bfb83d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CwGBKfxTAsG3DtViwEluF0OB8l_Uz3tu8w';" alt="Famous Dave S Barbecue Party Cookbook Is The Ultimate Barbecue Party Cookbook They Say The Average Person Has 10 000 Famous Daves Barbeque Party Party Entrees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Famous Dave S Barbecue Party Cookbook Is The Ultimate Barbecue Party Cookbook They Say The Average Person Has 10 000 Famous Daves Barbeque Party Party Entrees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/08/12/9f08128930927d08b3241c80bd9d5aa4.jpg" data-lightbox="roadtrip" data-title="Jfm T G I Fridays Veterans Day Discounts Tgi Fridays Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/08/12/9f08128930927d08b3241c80bd9d5aa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRCdgbj30vQEwocJ4cqiBI3D7BFURZ9mLLsg';" alt="Jfm T G I Fridays Veterans Day Discounts Tgi Fridays Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jfm T G I Fridays Veterans Day Discounts Tgi Fridays Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/de/cf/02/decf022b6ad7251722c52e3c945d4ce7.jpg" data-lightbox="roadtrip" data-title="Fresh New But Still Our Famous Q Check Out The New Menu Created By Famous Dave Himself Famousdavesuae Bbq Famousdavesdfc Fam New Menu Foodie Bbq">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/de/cf/02/decf022b6ad7251722c52e3c945d4ce7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo14IfWqUtXMQIJa-_lBN4p--eLsYR4ym79A';" alt="Fresh New But Still Our Famous Q Check Out The New Menu Created By Famous Dave Himself Famousdavesuae Bbq Famousdavesdfc Fam New Menu Foodie Bbq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fresh New But Still Our Famous Q Check Out The New Menu Created By Famous Dave Himself Famousdavesuae Bbq Famousdavesdfc Fam New Menu Foodie Bbq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/66/6a/a8/666aa8b8dfe2b4819b4d4df37988908b--famous-daves-barbecue-restaurant.jpg" data-lightbox="roadtrip" data-title="30 Gift Card To Famous Dave S Bbq Restaurant Biddingforgood Fundraising Auction Famous Daves Daves Bbq Cheesy Mac And Cheese">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/66/6a/a8/666aa8b8dfe2b4819b4d4df37988908b--famous-daves-barbecue-restaurant.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xotOsyip9budyMEEMXrnGeQTaAIBb8kbnA';" alt="30 Gift Card To Famous Dave S Bbq Restaurant Biddingforgood Fundraising Auction Famous Daves Daves Bbq Cheesy Mac And Cheese">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Gift Card To Famous Dave S Bbq Restaurant Biddingforgood Fundraising Auction Famous Daves Daves Bbq Cheesy Mac And Cheese</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/01/ea/87/01ea87dc62dcb87fce83c0801ce0af36.jpg" data-lightbox="roadtrip" data-title="Military Golden Corral Military Appreciation Golden Corral Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/01/ea/87/01ea87dc62dcb87fce83c0801ce0af36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut1SRIQX11KZ_a3m3jQPUXwhtdAdj5qO0CQ';" alt="Military Golden Corral Military Appreciation Golden Corral Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Golden Corral Military Appreciation Golden Corral Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/a0/3f/f3a03fa4eb9c278b645bdcc013c247ae.jpg" data-lightbox="roadtrip" data-title="Zip It To Dave S On Mondays Unlimited Fried Chicken Aed55 To Feast With Groupies T C Apply Dubaifestivalcity Alwahdamall Abudha Fried Chicken Eat Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/a0/3f/f3a03fa4eb9c278b645bdcc013c247ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa0cAxMRbjqveafkAPU0V_d7_MozNKxWjC6Q';" alt="Zip It To Dave S On Mondays Unlimited Fried Chicken Aed55 To Feast With Groupies T C Apply Dubaifestivalcity Alwahdamall Abudha Fried Chicken Eat Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zip It To Dave S On Mondays Unlimited Fried Chicken Aed55 To Feast With Groupies T C Apply Dubaifestivalcity Alwahdamall Abudha Fried Chicken Eat Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/fa/13/e6fa1383d523dce352bc0128b4929852.jpg" data-lightbox="roadtrip" data-title="Pin On Myrtle Beach Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/fa/13/e6fa1383d523dce352bc0128b4929852.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8UpyKGqvBTO3ulB2sLDesiwVpTX02vRQOg';" alt="Pin On Myrtle Beach Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Myrtle Beach Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d6/c5/72/d6c5720a6171b796c19ed1ef777f67f1.jpg" data-lightbox="roadtrip" data-title="Jfm Dairy Queen Firehouse Subs Dairy Queen Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d6/c5/72/d6c5720a6171b796c19ed1ef777f67f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk9iPxX6XyOOxTs6NQYFuZaDRRfBpNoA8Kzw';" alt="Jfm Dairy Queen Firehouse Subs Dairy Queen Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jfm Dairy Queen Firehouse Subs Dairy Queen Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/2f/0a/502f0ab852b9436b3e4a81aeb2247832.jpg" data-lightbox="roadtrip" data-title="Pin On Famous Dishes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/2f/0a/502f0ab852b9436b3e4a81aeb2247832.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPfP8B9BUoWGupO_hOoymMJFgcqnKeYdUVog';" alt="Pin On Famous Dishes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Famous Dishes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/6a/76/566a7688e16f404bfaeeacbfcb25672c.jpg" data-lightbox="roadtrip" data-title="Jfm Rodizio Grill Brazilian Steakhouse Grilling Veterans Day Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/6a/76/566a7688e16f404bfaeeacbfcb25672c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSSGpSPNp8vtsC9-ngAlkn-80tkOty8R3kw';" alt="Jfm Rodizio Grill Brazilian Steakhouse Grilling Veterans Day Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jfm Rodizio Grill Brazilian Steakhouse Grilling Veterans Day Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/38/43/1838438bec2d2e3342cd53ed7b0502eb.jpg" data-lightbox="roadtrip" data-title="Catering 4383 Chakula Food Comida Tanzania Food Acceda A Nuestro Sitio Mucho Mas Informacion Tanzanial Famous Daves Barbecue Restaurant Beef Brisket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/38/43/1838438bec2d2e3342cd53ed7b0502eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBowYk0XPGSiiHyNZKlha5rCepzm3xGY8Jg';" alt="Catering 4383 Chakula Food Comida Tanzania Food Acceda A Nuestro Sitio Mucho Mas Informacion Tanzanial Famous Daves Barbecue Restaurant Beef Brisket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Catering 4383 Chakula Food Comida Tanzania Food Acceda A Nuestro Sitio Mucho Mas Informacion Tanzanial Famous Daves Barbecue Restaurant Beef Brisket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-academy-accept-military-discount.html">Does Academy Accept Military Discount</a></li>
+													<li class="list-group-item"><a href="/do-veterans-get-in-free-at-san-diego-zoo.html">Do Veterans Get In Free At San Diego Zoo</a></li>
+													<li class="list-group-item"><a href="/does-american-airlines-accept-military-discount.html">Does American Airlines Accept Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-apple-have-veterans-discount.html">Does Apple Have Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-americas-tire-have-military-discount.html">Does Americas Tire Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-buy-buy-baby-give-military-discount.html">Does Buy Buy Baby Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/do-veterans-get-a-disney-discount.html">Do Veterans Get A Disney Discount</a></li>
+													<li class="list-group-item"><a href="/does-costco-give-free-membership-to-military.html">Does Costco Give Free Membership To Military</a></li>
+													<li class="list-group-item"><a href="/do-military-dependents-get-free-checked-bags-on-frontier.html">Do Military Dependents Get Free Checked Bags On Frontier</a></li>
+													<li class="list-group-item"><a href="/do-you-get-free-vet-care-on-benefits.html">Do You Get Free Vet Care On Benefits</a></li>
+													<li class="list-group-item"><a href="/does-enterprise-have-a-veterans-discount.html">Does Enterprise Have A Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/do-married-reservists-get-bah.html">Do Married Reservists Get Bah</a></li>
+													<li class="list-group-item"><a href="/does-academy-sports-military-discount.html">Does Academy Sports Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-ancestrycom-have-military-discount.html">Does Ancestrycom Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-delta-hire-military-pilots.html">Does Delta Hire Military Pilots</a></li>
+													<li class="list-group-item"><a href="/does-comcast-give-a-military-discount.html">Does Comcast Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-eastbay-do-military-discount.html">Does Eastbay Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/do-military-get-discounts-on-hotels.html">Do Military Get Discounts On Hotels</a></li>
+													<li class="list-group-item"><a href="/does-discount-tire-give-veteran-discounts.html">Does Discount Tire Give Veteran Discounts</a></li>
+													<li class="list-group-item"><a href="/does-bjs-restaurant-give-military-discount.html">Does Bjs Restaurant Give Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

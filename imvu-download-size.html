@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imvu Download Size - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imvu Download Size",
+  "datePublished": "2021-02-28",
+  "image": "https://www.seekpng.com/png/full/767-7670433_imvu-sticker-girl.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imvu+download+size",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imvu Download Size</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is because it typically has the most complex geometry as well as morph targets. We at IMVU inc. Learn to make IMVU content. <br>				
+			</p>
+										<a class="badge badge-info" href="/imf-chief-trial.html">imf chief trial</a>
+											<a class="badge badge-primary" href="/imf-data-dots.html">imf data dots</a>
+											<a class="badge badge-secondary" href="/imf-crisis-like-no-other.html">imf crisis like no other</a>
+											<a class="badge badge-danger" href="/imf-chief-under-investigation.html">imf chief under investigation</a>
+											<a class="badge badge-dark" href="/imf-conditions-for-egypt-loan.html">imf conditions for egypt loan</a>
+											<a class="badge badge-info" href="/imf-data-dissemination-standard.html">imf data dissemination standard</a>
+											<a class="badge badge-warning" href="/imf-crisis-2008.html">imf crisis 2008</a>
+											<a class="badge badge-light" href="/imf-comment-on-indian-economy.html">imf comment on indian economy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://venturebeat.com/wp-content/uploads/2011/04/imvu-crewpon.jpg?fit=630%2C507&amp;strip=all" data-lightbox="roadtrip" data-title="Download Imvu Game For Windows Pc 7 8 10 Updated 2020">
+											<img class="card-img v-image ads-img " src="https://venturebeat.com/wp-content/uploads/2011/04/imvu-crewpon.jpg?fit=630%2C507&amp;strip=all" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReQLf_jPUojyU6f1hZFadC7YW4os0c0Bnamw';" alt="Download Imvu Game For Windows Pc 7 8 10 Updated 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Imvu Game For Windows Pc 7 8 10 Updated 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://help.imvu.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0681L000005Yt5Q&amp;operationContext=CHATTER&amp;contentId=05T1L00000GIx9w&amp;page=0" data-lightbox="roadtrip" data-title="How To Link Pictures From Your Imvu Albums To Your Product Pages">
+											<img class="card-img v-image ads-img " src="https://help.imvu.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0681L000005Yt5Q&amp;operationContext=CHATTER&amp;contentId=05T1L00000GIx9w&amp;page=0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BHCx4-3UoA495_hfGuKfaIU4s1z4zagRtA';" alt="How To Link Pictures From Your Imvu Albums To Your Product Pages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Link Pictures From Your Imvu Albums To Your Product Pages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://help.imvu.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0681L000004mlhg&amp;operationContext=CHATTER&amp;contentId=05T1L00000GF6nh&amp;page=0" data-lightbox="roadtrip" data-title="What Size Is A Chat Room Image Ment To Be">
+											<img class="card-img v-image ads-img " src="https://help.imvu.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0681L000004mlhg&amp;operationContext=CHATTER&amp;contentId=05T1L00000GF6nh&amp;page=0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDpre_FpJucWKitJWjg_XVayz_nlGsehg0g';" alt="What Size Is A Chat Room Image Ment To Be">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Size Is A Chat Room Image Ment To Be</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/767-7670618_my-imvu-homepage-home-page-imvu.png" data-lightbox="roadtrip" data-title="Download My Imvu Homepage Home Page Imvu Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/767-7670618_my-imvu-homepage-home-page-imvu.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfuoQYDO1GqW6FCB8rVTkqPS2rdP30p9WO8A';" alt="Download My Imvu Homepage Home Page Imvu Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download My Imvu Homepage Home Page Imvu Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/872-8720237_homepage-imvu-png-imvu-profile-png.png" data-lightbox="roadtrip" data-title="Download Homepage Imvu Png Imvu Profile Png Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/872-8720237_homepage-imvu-png-imvu-profile-png.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeN-GEQCg8GULyRXOKr4lkSDS0mwXLJk9Pg';" alt="Download Homepage Imvu Png Imvu Profile Png Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Homepage Imvu Png Imvu Profile Png Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://help.imvu.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0681L000007M0QM&amp;operationContext=CHATTER&amp;contentId=05T1L00000QBBOZ&amp;page=0" data-lightbox="roadtrip" data-title="Size Product File Not Found">
+											<img class="card-img v-image ads-img " src="https://help.imvu.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0681L000007M0QM&amp;operationContext=CHATTER&amp;contentId=05T1L00000QBBOZ&amp;page=0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRJj1u0i5KYMclga5sYSHTKi1QY8SAnjxRA';" alt="Size Product File Not Found">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Size Product File Not Found</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.seekpng.com/png/full/318-3188936_follow-my-blog-for-more-imvu-trash-.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRJj1u0i5KYMclga5sYSHTKi1QY8SAnjxRA';" alt="Size Product File Not Found">
+										<div class="card-body">
+						<h3 class="h5"><b>Download IMVU Mobile 59250902002 for Android for free without any viruses from Uptodown.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imvu download size</strong>. 
+								
+																	Each month 7 million people visit IMVU where they spend an average of 55 minutes per day chatting playing games. 
+																	IMVU Mod allows You to Create your. 
+																	Download and runtime size is an issue that should be kept in mind whenever designing for IMVU. 
+																	IMVU 5398 is available to all software users as a free download for Windows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IOS 12 and above. 
+																	Try the latest version of IMVU Mobile 2021 for Android. 
+																	Or watch some of our previous Creator streams. 
+																	IMVU is a 3D Avatar Social App that allows users to explore thousands of Virtual Worlds or Metaverse create 3D Avatars enjoy 3D Chats meet people from all over the world in virtual settings and spread the power of friendship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Constant Broadband Internet connection. 
+																	Check out the curated Creator Playlist on our Youtube channel. 
+																	IMVU Client Download History. 
+																	IMVU 5398 on 32-bit and 64-bit PCs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So I noticed something lately when I am submitting things to IMVU they are adding kbs for no reason and I just thought I would share this little tip on r. 
+																	Real Users in a Virtual World. 
+																	IMVU is a 3D Avatar Social App that allows users to explore thousands of Virtual Worlds or Metaverse create 3D Avatars enjoy 3D Chats meet people from all over the world in virtual settings and spread the power of friendship. 
+																	IMVU reaches a global audience of millions of people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The game was developed by IMVU Corporation. 
+																	Tested to work with A7 Processors and above. 
+																	Each morph target makes your final exported meshxmf file a little larger. 
+																	Learn how to make clothes poses rooms furniture and more for IMVU using Blender. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download and runtime file size is an issue that should be kept in mind whenever designing for IMVU. 
+																	IMVU for Windows 32-bit64-bit latest version 2021. 
+																	Discover dressing up chatting and having fun on IMVU. 
+																	Download IMVU for Windows to customize your own 3D avatar meet new people chat and create virtual goods. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download To Your Device. 
+																	In this IMVU- 3D Avatar Game you can customize yourself and chat with friends from all over the world. 
+																	It has more than 10000000 installs with an average rate of 4 stars on the play store. 
+																	The Great Collection of Imvu Backgrounds for Desktop Laptop and Mobiles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your Heads file size is too big it is unlikely that your potential customer will purchase and download it and if they do there is a very high chance that they will review your product poorly and your sales will go down. 
+																	Windows Installer 99559KB Mac DMG 98630KB IMVU Desktop. 
+																	Weve gathered more than 5 Million Images uploaded by our users and sorted them by the most popular ones. 
+																	Do not limit you in how large any individual piece of your Furniture asset can be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An avatar head is the most expensive part of the avatar from a file size download and rendering point of view. 
+																	For your iDevice download our IMVU Mobile app from iTunes. 
+																	Download the latest version of the IMVU Desktop app. 
+																	Want to learn more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMVUs bug patrol has been hard at work squashing bugs and making various fixes and improvements. 
+																	For example some IMVU heads have 72 morph targets while others have 30. 
+																	IMVU has had 1 update within the past 6 months. 
+																	We do however limit the overall size of your final CFL product file to 2mgs WHICH IS HUGE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	40 of our audience comes from the US with 60 arriving primarily from the UK France Canada and Brazil. 
+																	Sign up FREE to chat in 3D. 
+																	This download is licensed as freeware for the Windows 32-bit and 64-bit operating system on a laptop or desktop PC from instant messaging software without restrictions. 
+																	Android 5 and above. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Always start a project by opening the appropriate template for the product type being made to ensure everything is the correct size relative to IMVU. 
+																	IMVU 5398 free download safe secure and tested for viruses and malware by LO4D. 
+																	IMVUs default scale the size objects appear to be in the 3D View is approximately 100x LARGER than Blenders. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://25online.tv/wp-content/uploads/2020/01/imvu-mod-apk.png" data-lightbox="roadtrip" data-title="Imvu Mod Apk V5 8 1 Download Unlimited Credits Money">
+											<img class="card-img v-image ads-img " src="https://25online.tv/wp-content/uploads/2020/01/imvu-mod-apk.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7pond4UNJHpXSXdY5opnzb9FQJuFSFYrR7g';" alt="Imvu Mod Apk V5 8 1 Download Unlimited Credits Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imvu Mod Apk V5 8 1 Download Unlimited Credits Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/40-401528_tuviah-imvu-imvu.png" data-lightbox="roadtrip" data-title="Download Tuviah Imvu Imvu Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/40-401528_tuviah-imvu-imvu.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5UcSTC3q6_U6s7pvWEKQ-rFCzW6umrtJcA';" alt="Download Tuviah Imvu Imvu Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Tuviah Imvu Imvu Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/767-7670233_look-kawaii-imvu-imvu-japa.png" data-lightbox="roadtrip" data-title="Download Look Kawaii Imvu Imvu Japa Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/767-7670233_look-kawaii-imvu-imvu-japa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0BuFpySYTVftlEaNBJpRiy5_Aj_Z0U6M3OQ';" alt="Download Look Kawaii Imvu Imvu Japa Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Look Kawaii Imvu Imvu Japa Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/264-2643839_imvu-homepage-templates.png" data-lightbox="roadtrip" data-title="Download Imvu Homepage Templates Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/264-2643839_imvu-homepage-templates.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5BmDdoS6_W_e1AZZ0orP1XU7A4Md-tvOQw';" alt="Download Imvu Homepage Templates Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Imvu Homepage Templates Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/detail/872-8721146_imvu-profile-pictures-imvu-profile.png" data-lightbox="roadtrip" data-title="Imvu Profile Pictures Imvu Profile 800x869 Png Download Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/detail/872-8721146_imvu-profile-pictures-imvu-profile.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldHghcrEINI_28ZD4DOrJhEJ3OwpZ-pS4DA';" alt="Imvu Profile Pictures Imvu Profile 800x869 Png Download Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imvu Profile Pictures Imvu Profile 800x869 Png Download Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pikpng.com/pngl/b/212-2120268_this-resulted-in-higher-retention-rates-and-in.png" data-lightbox="roadtrip" data-title="This Resulted In Higher Retention Rates And In App Lot Of Imvu Credits Clipart Large Size Png Image Pikpng">
+											<img class="card-img v-image ads-img " src="https://www.pikpng.com/pngl/b/212-2120268_this-resulted-in-higher-retention-rates-and-in.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvczdniPU8oLbgBIJ7Nq27CemfRJ4Pdwvvw';" alt="This Resulted In Higher Retention Rates And In App Lot Of Imvu Credits Clipart Large Size Png Image Pikpng">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Resulted In Higher Retention Rates And In App Lot Of Imvu Credits Clipart Large Size Png Image Pikpng</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shortpixel.ai/spai/w_328+q_lossy+ret_img+to_webp/https://techbigs.com/wp-content/uploads/2020/04/imvu-mod-apk.png" data-lightbox="roadtrip" data-title="Imvu Apk 5 9 2 50902002 Download Latest Version For Android">
+											<img class="card-img v-image ads-img " src="https://cdn.shortpixel.ai/spai/w_328+q_lossy+ret_img+to_webp/https://techbigs.com/wp-content/uploads/2020/04/imvu-mod-apk.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD3qb2YJz3uY8t6dTRhmkMnc_wQG6Ofz_udQ';" alt="Imvu Apk 5 9 2 50902002 Download Latest Version For Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imvu Apk 5 9 2 50902002 Download Latest Version For Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/b1flwmwao1ex1tfqi7lz" data-lightbox="roadtrip" data-title="Imvu Crunchbase Company Profile Funding">
+											<img class="card-img v-image ads-img " src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/b1flwmwao1ex1tfqi7lz" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrOzo8iEm9h0gMOYNYAylTAA2IqHNMo5M8Q';" alt="Imvu Crunchbase Company Profile Funding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imvu Crunchbase Company Profile Funding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/978-9789259_http-userimages-akm-imvu-1877029388508b070914f93-imvu-little-girls.png" data-lightbox="roadtrip" data-title="Download Http Userimages Akm Imvu 1877029388508b070914f93 Imvu Little Girls Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/978-9789259_http-userimages-akm-imvu-1877029388508b070914f93-imvu-little-girls.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT23YjNIOWPF-iYHasbaeo5l9vjx00D3OABAA';" alt="Download Http Userimages Akm Imvu 1877029388508b070914f93 Imvu Little Girls Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Http Userimages Akm Imvu 1877029388508b070914f93 Imvu Little Girls Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.seekpng.com/png/full/264-2643713_this-is-sticky-o3o-imvu.png" data-lightbox="roadtrip" data-title="This Is Sticky O3o Imvu Full Size Png Download Seekpng">
+											<img class="card-img v-image ads-img " src="https://www.seekpng.com/png/full/264-2643713_this-is-sticky-o3o-imvu.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs6BUtp1ppb2pscnh8YHnpRnmQflot_P9RGg';" alt="This Is Sticky O3o Imvu Full Size Png Download Seekpng">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Sticky O3o Imvu Full Size Png Download Seekpng</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/767-7670783_djibouti-dating-site-imvu-avatar-imvu-avatar-girl.png" data-lightbox="roadtrip" data-title="Download Djibouti Dating Site Imvu Avatar Imvu Avatar Girl Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/767-7670783_djibouti-dating-site-imvu-avatar-imvu-avatar-girl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzfQ6wM46ItOu1bQS1yalG9iZw3jAC-aImBw';" alt="Download Djibouti Dating Site Imvu Avatar Imvu Avatar Girl Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Djibouti Dating Site Imvu Avatar Imvu Avatar Girl Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.seekpng.com/png/full/767-7670433_imvu-sticker-girl.png" data-lightbox="roadtrip" data-title="Imvu Sticker Girl Full Size Png Download Seekpng">
+											<img class="card-img v-image ads-img " src="https://www.seekpng.com/png/full/767-7670433_imvu-sticker-girl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPJjaxCXEao9gT_cNZuNkZmCogGFoCvRilw';" alt="Imvu Sticker Girl Full Size Png Download Seekpng">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imvu Sticker Girl Full Size Png Download Seekpng</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/533-5339895_forbidden-imvu-new-outfits-marvel-universe-avatar.png" data-lightbox="roadtrip" data-title="Download Forbidden Imvu New Outfits Marvel Universe Avatar Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/533-5339895_forbidden-imvu-new-outfits-marvel-universe-avatar.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfdpEI4E1RnYJOB_D_YZrYFaYN0VIdV-4iA';" alt="Download Forbidden Imvu New Outfits Marvel Universe Avatar Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Forbidden Imvu New Outfits Marvel Universe Avatar Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pngkit.com/png/full/264-2644269_emo-imvu-gorgeous-profile-anime-png-emo-imvu.png" data-lightbox="roadtrip" data-title="Download Emo Imvu Gorgeous Profile Anime Png Emo Imvu Gorgeous Imvu Full Size Png Image Pngkit">
+											<img class="card-img v-image ads-img " src="https://www.pngkit.com/png/full/264-2644269_emo-imvu-gorgeous-profile-anime-png-emo-imvu.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLXzRcHid40vEvjKuF_MVTTsor_5JWgqoCg';" alt="Download Emo Imvu Gorgeous Profile Anime Png Emo Imvu Gorgeous Imvu Full Size Png Image Pngkit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Emo Imvu Gorgeous Profile Anime Png Emo Imvu Gorgeous Imvu Full Size Png Image Pngkit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.seekpng.com/png/full/318-3188936_follow-my-blog-for-more-imvu-trash-.png" data-lightbox="roadtrip" data-title="Follow My Blog For More Imvu Trash Imvu Girl Full Size Png Download Seekpng">
+											<img class="card-img v-image ads-img " src="https://www.seekpng.com/png/full/318-3188936_follow-my-blog-for-more-imvu-trash-.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9iHl8VI9H61mhTq34Kne2OLXexBy9v4W_g';" alt="Follow My Blog For More Imvu Trash Imvu Girl Full Size Png Download Seekpng">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow My Blog For More Imvu Trash Imvu Girl Full Size Png Download Seekpng</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-turkey-history.html">Imf Turkey History</a></li>
+													<li class="list-group-item"><a href="/imf-unemployment-rate-iraq.html">Imf Unemployment Rate Iraq</a></li>
+													<li class="list-group-item"><a href="/imf-trends-chemistry.html">Imf Trends Chemistry</a></li>
+													<li class="list-group-item"><a href="/imf-symbol-meaning.html">Imf Symbol Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-stabilization-programs-definition.html">Imf Stabilization Programs Definition</a></li>
+													<li class="list-group-item"><a href="/imf-warns-of-unprecedented-crisis.html">Imf Warns Of Unprecedented Crisis</a></li>
+													<li class="list-group-item"><a href="/imf-structural-adjustment-program-jamaica.html">Imf Structural Adjustment Program Jamaica</a></li>
+													<li class="list-group-item"><a href="/imf-wage-inflation.html">Imf Wage Inflation</a></li>
+													<li class="list-group-item"><a href="/imf-statistics-jobs.html">Imf Statistics Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-unemployment-rate-greece.html">Imf Unemployment Rate Greece</a></li>
+													<li class="list-group-item"><a href="/imf-warns-india.html">Imf Warns India</a></li>
+													<li class="list-group-item"><a href="/imf-visit-to-jordan.html">Imf Visit To Jordan</a></li>
+													<li class="list-group-item"><a href="/imf-world-bank-and-wto.html">Imf World Bank And Wto</a></li>
+													<li class="list-group-item"><a href="/imf-world-bank-interest-rates.html">Imf World Bank Interest Rates</a></li>
+													<li class="list-group-item"><a href="/imf-tamil-meaning.html">Imf Tamil Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-weo-gdp-forecast.html">Imf Weo Gdp Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-washington-jobs.html">Imf Washington Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-stand-meaning.html">Imf Stand Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-world-bank-imperialism.html">Imf World Bank Imperialism</a></li>
+													<li class="list-group-item"><a href="/imf-vs-world-bank-vs-wto.html">Imf Vs World Bank Vs Wto</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

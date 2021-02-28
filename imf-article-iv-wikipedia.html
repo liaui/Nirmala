@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Article Iv Wikipedia - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Article Iv Wikipedia",
+  "datePublished": "2021-02-28",
+  "image": "/search?q=nightlife+lome+togo&amp;tbm=isch",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+article+iv+wikipedia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Article Iv Wikipedia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The IMF notes that the increase of GDP productivity through construction projects and tourism. From Simple English Wikipedia the free encyclopedia The IMF building in Washington The International Monetary Fund IMF is an international organization. The most recent publishing of the Article IV Consultation conducted by the IMF showed some favorable reviews towards Grenada. <br>				
+			</p>
+										<a class="badge badge-dark" href="/lowes-military-credentials.html">lowes military credentials</a>
+											<a class="badge badge-dark" href="/lowes-military-jobs.html">lowes military jobs</a>
+											<a class="badge badge-secondary" href="/lowes-military-leave-policy.html">lowes military leave policy</a>
+											<a class="badge badge-primary" href="/lowes-military-enrollment.html">lowes military enrollment</a>
+											<a class="badge badge-danger" href="/lmfao-que-es-en-espanol.html">lmfao que es en espanol</a>
+											<a class="badge badge-dark" href="/lowes-military-discount-exceptions.html">lowes military discount exceptions</a>
+											<a class="badge badge-info" href="/lowes-on-military-drive.html">lowes on military drive</a>
+											<a class="badge badge-light" href="/lowes-no-military-discount-on-sale-items.html">lowes no military discount on sale items</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for viewing the highest quality video and image content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/08/cf/6f08cf8161a603d215017b74be492d41.png" data-lightbox="roadtrip" data-title="Countries Which Have At Some Point Claimed To Be Rome S Successor Third Rome Roman Empire Holy Roman Empire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/08/cf/6f08cf8161a603d215017b74be492d41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdYksOPI4kv_ygDFInhBkQSHWr7WVNgV59A';" alt="Countries Which Have At Some Point Claimed To Be Rome S Successor Third Rome Roman Empire Holy Roman Empire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Countries Which Have At Some Point Claimed To Be Rome S Successor Third Rome Roman Empire Holy Roman Empire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/58/91/945891274e6c9e562cd168c2fe3a4935.png" data-lightbox="roadtrip" data-title="The Open Society And Its Enemies Human Development Index Society Open Data">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/58/91/945891274e6c9e562cd168c2fe3a4935.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarvIxQ1LXk2lAO5ScDuBFF92McWYhy4OyxQ';" alt="The Open Society And Its Enemies Human Development Index Society Open Data">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Open Society And Its Enemies Human Development Index Society Open Data</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/13/e4/ae13e48e0f681f53ff4cc87da4cdd67f.png" data-lightbox="roadtrip" data-title="Pin On Forecasts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/13/e4/ae13e48e0f681f53ff4cc87da4cdd67f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWvdrhBGTnhlwdcqnLoA6dG5uYoUinFfN5Q';" alt="Pin On Forecasts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Forecasts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/8c/3d/e38c3da9199d924d407d2f9b9288dd86.jpg" data-lightbox="roadtrip" data-title="Pin On Traveling Round The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/8c/3d/e38c3da9199d924d407d2f9b9288dd86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_B1oO3GAKfWJ7i2WNHJQE7Y-_fEvLv4RZw';" alt="Pin On Traveling Round The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Traveling Round The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/4b/56/734b566d0755574b31dab17c027466eb.jpg" data-lightbox="roadtrip" data-title="Pin On Places To Travel To Things To Do">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/4b/56/734b566d0755574b31dab17c027466eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7cb2tghKB_Y8KiBxHiSdX_QwyeRrAzyCxEg';" alt="Pin On Places To Travel To Things To Do">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Places To Travel To Things To Do</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/07/be/3007bef5ec80da84deb7e8101dd65c94.png" data-lightbox="roadtrip" data-title="Kurukshetra Is Located In Haryana Kurukshetra Nuclear Power Plant Haryana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/07/be/3007bef5ec80da84deb7e8101dd65c94.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxTrYQyxYkTAb18ZQHw0wleoZVEzTHioPuQ';" alt="Kurukshetra Is Located In Haryana Kurukshetra Nuclear Power Plant Haryana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kurukshetra Is Located In Haryana Kurukshetra Nuclear Power Plant Haryana</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/82/97/06/8297068d305a439f9a0fcf08370590f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxTrYQyxYkTAb18ZQHw0wleoZVEzTHioPuQ';" alt="Kurukshetra Is Located In Haryana Kurukshetra Nuclear Power Plant Haryana">
+										<div class="card-body">
+						<h3 class="h5"><b>IMF staff missions also often meet with parliamentarians and representatives of business labor unions and civil society.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf article iv wikipedia</strong>. 
+								
+																	January 8 2021. 
+																	Article IV talks would allow the IMF to inspect Argentinas accounts before a new agreement is signed. 
+																	Ireland has both contributed to and used IMF resources as well as participated in IMF decision-making with as of 2017 a 071 voting power. 
+																	2020 Article IV Consultation-Press Release. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The press release shows great progress for Grenada. 
+																	2020 Article IV Consultation-Press Release. 
+																	Today we shed some light on the recently published IMF Article IV on Nigeria. 
+																	Within the IMF Ireland has accepted the obligations of Article VIII Sections 2 3 and 4 of the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Asia and Pacific Dept. 
+																	The publication commends the authorities for the measures taken to address the health and economic impacts of the COVID-19 pandemic which have exacerbated pre-existing weaknesses. 
+																	This report details that although investments and exports have spurred growth and low inflation throughout 2017 there is persisting unemployment. 
+																	The views expressed in this statement are those of the IMF staff and do not necessarily represent the views of the IMFs Executive Board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The consultations with Nigerian officials on economic developments and policies for the 2020 Article IV ended in mid-November. 
+																	It focuses on Italys medium-term challenges and policy priorities and was prepared prior to the outbreak of COVID-19 in Italy. 
+																	189 countries are members of the International Monetary Fund. 
+																	Ireland has had a long-standing relationship with the International Monetary Fund IMF since its entry into Fund membership on August 8 1957. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It therefore does not cover the outbreak or the related policy response which has since become the overarching. 
+																	At the same time uncertainties including from slower global growth and potential suspension of preferential market access under the Everything but Arms EBA scheme highlight the importance of maintaining macroeconomic. 
+																	Peoples Republic of China. 
+																	IMF staff encourages the authorities to continue to strengthen social safety nets and enhance public investment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In its final 2020 Article IV report of the board released today the organization said there was need for a broad market and foreign exchange reforms in order to address the current Balance of. 
+																	1 Under Article IV of the IMFs Articles of Agreement the IMF holds bilateral discussions with members usually every year. 
+																	Advising borrowing governments these contacts known as Article IV Consultations the IMF attempts to assess each countrys economic health and to forestall future financial problems. 
+																	In the latest report that was published in September 2018 the IMF details a report on the current Portuguese economy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Staff Completes 2020 Article IV Mission to Indonesia End-of-Mission press releases include statements of IMF staff teams that convey preliminary findings after a visit to a country. 
+																	IMF Executive Board Concludes 2020 Article IV Consultation with the Russian Federation February 9 2021 Russian Federation. 
+																	Stable macroeconomic environment strong growth and ongoing structural reforms have contributed to significant progress towards Sustainable Development Goals SDGs. 
+																	This would give an assurance to bondholders as they head into restructuring talks that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a member of the IMF Portugal also receives Article IV reports from the IMF. 
+																	Including a GDP growth of 31 and Quota SDR of 164 million. 
+																	This means that they look after the economic financial and exchange rate policies of its members including Kazakhstan and meet approximately once a year with Kazakh government and national bank officials. 
+																	International Monetary Fund In International Monetary Fund. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The International Monetary Fund IMF is an international financial institution headquartered in Washington DC consisting of 190 countries working to foster global monetary cooperation secure financial stability facilitate international trade promote high employment and sustainable economic growth and reduce poverty around the world while periodically depending on the World Bank for. 
+																	Under Article IV of the IMFs Articles of Agreement the IMF has the obligation to exercise surveillance over its policy members. 
+																	It has its headquarters in Washington DC USA. 
+																	And Statement by the Executive Director for the Peoples Republic of China. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During an Article IV consultation an IMF team of economists visits a country to assess economic and financial developments and discuss the countrys economic and financial policies with government and central bank officials. 
+																	An International Monetary Fund IMF staff team led by Chris Geiregat conducted a remote mission from December 9 to 18 2020 and January 4 to 13 2021 in the context of the 2020 Article IV consultation with Tunisia. 
+																	A staff team visits the country collects economic and financial information and discusses with officials the countrys economic developments and policies. 
+																	2019 IMF Staff Article IV Mission to Cambodia One benefit of IMF membership is countries are entitled to technical assistance in banking fiscal affairs and exchange matters and one way they help is through country surveillance and Article IV consultations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The staff report reflects discussions with the Italian authorities in January 2020 and is based on the information available as of January 28 2020. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/f0/26/f5f026d3a2e185f8dfd02994a0e64c00.gif" data-lightbox="roadtrip" data-title="Sasanian Terracotta Forger Mold For A Gold Coin Ancient Iran Sasanian Dynasty 224 651 Ce Ancient Coins Ancient Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/f0/26/f5f026d3a2e185f8dfd02994a0e64c00.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2s26XvthsUhA1u6ODUO9a06GJ83YxUdZyYA';" alt="Sasanian Terracotta Forger Mold For A Gold Coin Ancient Iran Sasanian Dynasty 224 651 Ce Ancient Coins Ancient Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sasanian Terracotta Forger Mold For A Gold Coin Ancient Iran Sasanian Dynasty 224 651 Ce Ancient Coins Ancient Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ae/08/1a/ae081af19fc4411e011481b718019f1c.jpg" data-lightbox="roadtrip" data-title="Togo Textiles Jpg 500 334 West Africa Africa Togo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ae/08/1a/ae081af19fc4411e011481b718019f1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTydblz15jde2gHgAitYkxZ_axXviqdmcRVgA';" alt="Togo Textiles Jpg 500 334 West Africa Africa Togo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Togo Textiles Jpg 500 334 West Africa Africa Togo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/dd/1f/44/dd1f4446e4998625d4b10bdb14f29f7b.jpg" data-lightbox="roadtrip" data-title="The New Draft Access And Benefit Sharing Abs Guidelines Part I Convention On Biological Diversity Indigenous Peoples Lessons Starters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/dd/1f/44/dd1f4446e4998625d4b10bdb14f29f7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdb9lXfQWTCGiPaf3CCAYLHwaMRhyr9242w';" alt="The New Draft Access And Benefit Sharing Abs Guidelines Part I Convention On Biological Diversity Indigenous Peoples Lessons Starters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The New Draft Access And Benefit Sharing Abs Guidelines Part I Convention On Biological Diversity Indigenous Peoples Lessons Starters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/27/ee/8427eeaa71c47ceba51431f43bfddeae.jpg" data-lightbox="roadtrip" data-title="Catholic Cathedral Lome Togo Togo Lome Africa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/27/ee/8427eeaa71c47ceba51431f43bfddeae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIew7VwBrWGT5OCQ3NGgT2IL9SEDaqzniNtw';" alt="Catholic Cathedral Lome Togo Togo Lome Africa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Catholic Cathedral Lome Togo Togo Lome Africa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/37/25/f63725adac787c9b7b9f0c51c4fb895b.jpg" data-lightbox="roadtrip" data-title="Pin On Exotic Vacation Destinations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/37/25/f63725adac787c9b7b9f0c51c4fb895b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG0FEWlohDByTzxsLyvcVGCBu6XFza4o-Sug';" alt="Pin On Exotic Vacation Destinations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Exotic Vacation Destinations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/82/97/06/8297068d305a439f9a0fcf08370590f8.jpg" data-lightbox="roadtrip" data-title="E Way Bills A Paradigm Shift In Governance In 2020 Open Source Code Cyber Law Common Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/82/97/06/8297068d305a439f9a0fcf08370590f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSExntCf3oUtE-t8kH7B64YV47Xk-QTgqbeVw';" alt="E Way Bills A Paradigm Shift In Governance In 2020 Open Source Code Cyber Law Common Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">E Way Bills A Paradigm Shift In Governance In 2020 Open Source Code Cyber Law Common Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/f9/10/23f910e4a4f1e5c98af70bb8042d634a.jpg" data-lightbox="roadtrip" data-title="Tom Cruise In Giorgio Armani At The Mission Impossible Rogue Nation New York Premiere Tom Lorenzo F Tom Cruise New York Movie Mission Impossible Rogue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/f9/10/23f910e4a4f1e5c98af70bb8042d634a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToAVlCR3l3fDKlH69VuhbFk6_dV-AC-hWc_A';" alt="Tom Cruise In Giorgio Armani At The Mission Impossible Rogue Nation New York Premiere Tom Lorenzo F Tom Cruise New York Movie Mission Impossible Rogue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tom Cruise In Giorgio Armani At The Mission Impossible Rogue Nation New York Premiere Tom Lorenzo F Tom Cruise New York Movie Mission Impossible Rogue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/83/f4/d2/83f4d2131c740179ec4b923319c4ca57.jpg" data-lightbox="roadtrip" data-title="Difference Between A Share Purchase Agreement And A Shareholders Agreement In 2020 Contract Law Cyber Law Law Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/83/f4/d2/83f4d2131c740179ec4b923319c4ca57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_lI8YiYWzqt9-ukfrZfRNDOSgpxKAXxg_cQ';" alt="Difference Between A Share Purchase Agreement And A Shareholders Agreement In 2020 Contract Law Cyber Law Law Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between A Share Purchase Agreement And A Shareholders Agreement In 2020 Contract Law Cyber Law Law Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=togo+lome+hotels&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrcobfgrfrzvuxc9fpgnrtxk58hftufu2dbtr6rbcnahdohvuvw Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=togo+lome+hotels&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=togo+lome+hotels&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrcobfgrfrzvuxc9fpgnrtxk58hftufu2dbtr6rbcnahdohvuvw Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrcobfgrfrzvuxc9fpgnrtxk58hftufu2dbtr6rbcnahdohvuvw Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=woman+togo+beach&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsxnbr76kigqyjmfz9y39tlwi6trlspv0u7aqppjy7zubu9w7lc Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=woman+togo+beach&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=woman+togo+beach&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsxnbr76kigqyjmfz9y39tlwi6trlspv0u7aqppjy7zubu9w7lc Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsxnbr76kigqyjmfz9y39tlwi6trlspv0u7aqppjy7zubu9w7lc Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=nightlife+lome+togo&amp;tbm=isch" data-lightbox="roadtrip" data-title="1">
+											<img class="card-img v-image ads-img " src="/search?q=nightlife+lome+togo&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=nightlife+lome+togo&amp;tbm=isch';" alt="1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-india-debt.html">Imf India Debt</a></li>
+													<li class="list-group-item"><a href="/imf-greece-selected-issues.html">Imf Greece Selected Issues</a></li>
+													<li class="list-group-item"><a href="/imf-head-office-address.html">Imf Head Office Address</a></li>
+													<li class="list-group-item"><a href="/imf-headquarters-europe.html">Imf Headquarters Europe</a></li>
+													<li class="list-group-item"><a href="/imf-in-chemistry.html">Imf In Chemistry</a></li>
+													<li class="list-group-item"><a href="/imf-in-india.html">Imf In India</a></li>
+													<li class="list-group-item"><a href="/imf-india-address.html">Imf India Address</a></li>
+													<li class="list-group-item"><a href="/imf-headquarters-and-president.html">Imf Headquarters And President</a></li>
+													<li class="list-group-item"><a href="/imf-india-debt-to-gdp.html">Imf India Debt To Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-hong-kong-data.html">Imf Hong Kong Data</a></li>
+													<li class="list-group-item"><a href="/imf-headquarters-office-address.html">Imf Headquarters Office Address</a></li>
+													<li class="list-group-item"><a href="/imf-in-afghanistan.html">Imf In Afghanistan</a></li>
+													<li class="list-group-item"><a href="/imf-india-contribution.html">Imf India Contribution</a></li>
+													<li class="list-group-item"><a href="/imf-greece-debt-sustainability-analysis.html">Imf Greece Debt Sustainability Analysis</a></li>
+													<li class="list-group-item"><a href="/imf-india-coronavirus.html">Imf India Coronavirus</a></li>
+													<li class="list-group-item"><a href="/imf-greece-gdp.html">Imf Greece Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-headquarters-office.html">Imf Headquarters Office</a></li>
+													<li class="list-group-item"><a href="/imf-headquarters-building.html">Imf Headquarters Building</a></li>
+													<li class="list-group-item"><a href="/imf-in-greece-crisis.html">Imf In Greece Crisis</a></li>
+													<li class="list-group-item"><a href="/imf-headquarters-is-at.html">Imf Headquarters Is At</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

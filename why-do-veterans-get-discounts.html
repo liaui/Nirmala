@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Why Do Veterans Get Discounts - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Why Do Veterans Get Discounts",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/db/86/f6/db86f69230b473502ed3e7c53c380038.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=why+do+veterans+get+discounts",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Why Do Veterans Get Discounts</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These discounts may or may not be available to all military veterans on a daily basis. In order to obtain a new military ID you may request a form DD-1172 which is a letter signed by the Director of your nearest Veterans Affairs Regional Office that shows you are 100 total and permanently service connected disabled. Veterans below a certain income level andor disabled veterans are eligible for additional exemptions. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-hospital-ptsd-treatment.html">va hospital ptsd treatment</a>
+											<a class="badge badge-danger" href="/va-discounts-for-disneyland.html">va discounts for disneyland</a>
+											<a class="badge badge-primary" href="/va-employee-travel-discounts.html">va employee travel discounts</a>
+											<a class="badge badge-danger" href="/va-for-military.html">va for military</a>
+											<a class="badge badge-warning" href="/va-auto-discounts.html">va auto discounts</a>
+											<a class="badge badge-light" href="/va-national-cemetery-ohio.html">va national cemetery ohio</a>
+											<a class="badge badge-warning" href="/va-disability-and-mst.html">va disability and mst</a>
+											<a class="badge badge-info" href="/va-dept-of-military-affairs.html">va dept of military affairs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/76/01/da76017dcdd5234684fda03a07e21b11.jpg" data-lightbox="roadtrip" data-title="34 Veteran Discounts You Can Get Every Day Of The Year Veterans Discounts Military Discounts Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/76/01/da76017dcdd5234684fda03a07e21b11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuEP9vtoo3L141L31N_gLuV_pDDrcRpSYNiA';" alt="34 Veteran Discounts You Can Get Every Day Of The Year Veterans Discounts Military Discounts Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">34 Veteran Discounts You Can Get Every Day Of The Year Veterans Discounts Military Discounts Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c2/91/0c/c2910cdd62139e91ef9dbcab3a705b1b.jpg" data-lightbox="roadtrip" data-title="15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Veterans Discounts Veteran Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c2/91/0c/c2910cdd62139e91ef9dbcab3a705b1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdbfM3KAAY_QFEKp4mh-chGlD14RyyGlAvA';" alt="15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Veterans Discounts Veteran Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Veterans Discounts Veteran Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/e5/47/2ce5474aa37b6665b79c187f8829258c.png" data-lightbox="roadtrip" data-title="Veteran Military Discounts 90 Spots Where Heroes Get A Discount Military Discounts Military Benefits Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/e5/47/2ce5474aa37b6665b79c187f8829258c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJs18rlkOiwNNBn35X352FgBybP4lUWvlfw';" alt="Veteran Military Discounts 90 Spots Where Heroes Get A Discount Military Discounts Military Benefits Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Military Discounts 90 Spots Where Heroes Get A Discount Military Discounts Military Benefits Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/b8/75/90b8754c5ba4d46fec106f9c90d6173a.png" data-lightbox="roadtrip" data-title="65 Military Discounts You Can Get Throughout The Year Military Discounts The Krazy Coupon Lady Saving Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/b8/75/90b8754c5ba4d46fec106f9c90d6173a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHqSVjBdIAufT7zgEklPUqLrjhUcSoa-2yw';" alt="65 Military Discounts You Can Get Throughout The Year Military Discounts The Krazy Coupon Lady Saving Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">65 Military Discounts You Can Get Throughout The Year Military Discounts The Krazy Coupon Lady Saving Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/d7/a2/f0d7a22d034d8744cad80bf3ed626a72.png" data-lightbox="roadtrip" data-title="10 Veterans Advantage Military Discounts For Disabled Vets Military Discounts Veterans Discounts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/d7/a2/f0d7a22d034d8744cad80bf3ed626a72.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSyxz7nE0iwfmtQRoHkXgqrnNLjEjAuQJveA';" alt="10 Veterans Advantage Military Discounts For Disabled Vets Military Discounts Veterans Discounts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Veterans Advantage Military Discounts For Disabled Vets Military Discounts Veterans Discounts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/b4/4a/ecb44af3b6b470527b1a8f30ac23eb35.png" data-lightbox="roadtrip" data-title="100 Stores Restaurants That Offer Military Discounts Army Wife Life Military Discounts Military Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/b4/4a/ecb44af3b6b470527b1a8f30ac23eb35.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1yuTAWAxtwCQS-vQLqeTffofWLamcOsKbA';" alt="100 Stores Restaurants That Offer Military Discounts Army Wife Life Military Discounts Military Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Stores Restaurants That Offer Military Discounts Army Wife Life Military Discounts Military Mom</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e8/df/b9/e8dfb948e2681c639b6afb37adadfe5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1yuTAWAxtwCQS-vQLqeTffofWLamcOsKbA';" alt="100 Stores Restaurants That Offer Military Discounts Army Wife Life Military Discounts Military Mom">
+										<div class="card-body">
+						<h3 class="h5"><b>The discounts are 6 for all campgrounds with the exception of primitive sites.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Why do veterans get discounts</strong>. 
+								
+																	To use your military discount you need to keep certain things in mind like. 
+																	Start Unlimited Play More Unlimited Do More Unlimited Get More Unlimited Go Unlimited Beyond Unlimited Above Unlimited. 
+																	An ID showing military status will be required for veterans andor military seeking the discount. 
+																	Members of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I was there yesterday and unless you are disabled retied or active you no longer are. 
+																	But the identification those businesses require from. 
+																	In general its hard to pin down specific travel discounts for military members and their families since the travel industry is known for frequent changes but the discounts you find online today for military travel can add more to your vacation budget if you. 
+																	Many private organizations offers special discounts and services for military members and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lowes Military Discount 2021. 
+																	One longstanding tradition in the military is the benefits Congress has enacted on the behalf of military members and veterans. 
+																	People hear about it and think highly of the business without it actually having done anything or their even being veterans. 
+																	Contact your municipalitys Tax Assessor for specific details. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I get a military discount every time I go to Home Depot. 
+																	Military discount does not necessarily apply to every product available on Lowes. 
+																	Businesses are stratifying our society further than it already is with military discounts by putting the group of individuals who serve in the military at the cusp based on what I deem to be. 
+																	Menards Military Discount an exclusive offer for military members is always promoted by Menards The military offer only avaliable for military staff such as veterans active duty members and retirees even their familiesVerify your military ID and check out with the offers on Menards Military Discount February 2021 list. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The business advertises that it offers veterans discounts. 
+																	Veterans and active-duty members of the US Armed Forces and often their immediate family members too are eligible for both Memorial Day and year-round discounts from myriad retailers. 
+																	Was just there a few days ago and was given a discount. 
+																	Because its a sales tactic that attracts customers without costing the business too much money. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As any military member can attest military base pay is nothing to write home about check out the military pay chartsWithout the benefits included in the compensation package most military members would not be able to survive especially if they have a family. 
+																	Airline travel benefits for military families vary greatly depending on the time of year the airline and the benefits you need. 
+																	When eating out shopping or seeking professional services military families should inquire about military discounts. 
+																	For more seriously disabled veterans there may be an additional 10000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Badmonkey01 commented on 51819. 
+																	With what our military personnel go through that discount is well deserved. 
+																	Military make sacrifices everyday to ensure our nations security and guarantee the freedom that so many of us take for granted. 
+																	Discounts for Military Active Reserves Guard Members Retirees Veterans and Dependents Qualifying proof in most case will be one of the following documents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every year veterans and service members are able to take advantage of hundreds of discounts offered by companies because of their service to this country. 
+																	Account-level discount for unlimited data plans - The discount depends on how many unlimited plans you have and when you signed up for them. 
+																	It took a few tries to actually get veteran status attached to my Lowes account but even before that happened all I had to do was show my veteran designation on my license and the discount was given without question or having to listen to an overweight face-pierced teenager trying to come up with an excuse as to why I can not get the discount. 
+																	Veterans with ratings between 10 percent and 75 percent are eligible for a 1500 value deduction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some organizations limit the discounts to a special day or a single item while others offer a consistent. 
+																	Lowes offers a 10 military discount applicable in-store and online as well but there are some exclusions to this discount. 
+																	Active Duty ID card ReservesGuardsman ID card Military Retiree ID card Veterans Affairs ID card Veterans Affairs ID card stamped under picture service corrected and State Drivers License over stamped VETERAN. 
+																	Age verification will be required upon arrival. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Senior and Military discounts are available for visitors age 62 and older. 
+																	Discounts do not apply to primitive campsites. 
+																	Please read the discount information for each store closely. 
+																	They frequent the business as a result. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Depot will no longer give a discount to COMBAT vets one person says they still do well your WRONG. 
+																	Take this letter and your latest DD Form 214 to the ID Card Office at the nearest military base where you will be issued your military ID Card. 
+																	In general both Home Depot and Lowes offer a 10 discount to all currently serving military members with proper military ID retired military members with ID and veterans with a service-connected disability. 
+																	After registering with our discount program active military service personnel and veterans are eligible for the discounts below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While not promoted by the Department of Defense these programs can help cover college tuition and other education expenses for military families. 
+																	I have noticed that most military discounts are only given to the active duty member now and not the dependents which makes sense to me Angie 47 retired Army spouse. 
+																	Many private businesses offer veteran discounts on Veterans Day holidays such as Memorial Day and Independence Day or throughout the year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/10/11/ea1011d0e290a3b96166cbbf2d16461a.png" data-lightbox="roadtrip" data-title="How To Successfully Transition From Military Active Duty To Entrepreneurship Airman To Mom Veteran Owned Business Military Life Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/10/11/ea1011d0e290a3b96166cbbf2d16461a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBWgUpJKsoyKWTwyipVMY03xaAwgcUD7-R2w';" alt="How To Successfully Transition From Military Active Duty To Entrepreneurship Airman To Mom Veteran Owned Business Military Life Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Successfully Transition From Military Active Duty To Entrepreneurship Airman To Mom Veteran Owned Business Military Life Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/60/69/136069e87152aecf6740b1c70a8f25a5.png" data-lightbox="roadtrip" data-title="10 Best Veteran Benefits Military Discounts I Actually Use Veterans Benefits Military Discounts Military Spouse Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/60/69/136069e87152aecf6740b1c70a8f25a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY1X85htSmRhIxIPzgv795HI6Ezi2_Ka77tg';" alt="10 Best Veteran Benefits Military Discounts I Actually Use Veterans Benefits Military Discounts Military Spouse Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best Veteran Benefits Military Discounts I Actually Use Veterans Benefits Military Discounts Military Spouse Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/82/f2/5d82f224341d314113c744a0579324b8.png" data-lightbox="roadtrip" data-title="New Veteran Owned Business Directory Member Craftsman Unlimited Haircuts Is Offering Free Haircuts Free Haircut Veterans Day Discounts Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/82/f2/5d82f224341d314113c744a0579324b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mYNX-T6msj6TLBBBL6hJbC4f8u1Mmg5HWA';" alt="New Veteran Owned Business Directory Member Craftsman Unlimited Haircuts Is Offering Free Haircuts Free Haircut Veterans Day Discounts Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Veteran Owned Business Directory Member Craftsman Unlimited Haircuts Is Offering Free Haircuts Free Haircut Veterans Day Discounts Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/6d/38/fa6d38df332bca54f740eff7e487ccc4.png" data-lightbox="roadtrip" data-title="Best Military Discounts Military Discounts Veterans Discounts Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/6d/38/fa6d38df332bca54f740eff7e487ccc4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkZLVApWj-0k6s3zM1iLsKl7eDRLp-UZrNg';" alt="Best Military Discounts Military Discounts Veterans Discounts Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Military Discounts Military Discounts Veterans Discounts Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/d3/bf/4cd3bf75efb5516afc44403c355ed6f2.jpg" data-lightbox="roadtrip" data-title="From Honor To Owner Military Veteran S Discount Military Veterans Veterans Discounts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/d3/bf/4cd3bf75efb5516afc44403c355ed6f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp3QXJ1TWF3NgtDmFvANkptXQjvyvJdOawqg';" alt="From Honor To Owner Military Veteran S Discount Military Veterans Veterans Discounts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Honor To Owner Military Veteran S Discount Military Veterans Veterans Discounts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/b0/65/44b0654dff661b70a5e6c00c63a1aac1.jpg" data-lightbox="roadtrip" data-title="Top 25 Disabled Veteran Benefits You May Not Know About Va Claims Insider Veterans Benefits Disabled Veterans Benefits Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/b0/65/44b0654dff661b70a5e6c00c63a1aac1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1SnRrdfYeg5T2Rqv3k2GMClQ_2zspoMjHA';" alt="Top 25 Disabled Veteran Benefits You May Not Know About Va Claims Insider Veterans Benefits Disabled Veterans Benefits Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 25 Disabled Veteran Benefits You May Not Know About Va Claims Insider Veterans Benefits Disabled Veterans Benefits Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/c6/5f/8dc65fcd0ccf404bfd012487aea92b8f.png" data-lightbox="roadtrip" data-title="The Best Military Cell Phone Discounts You Should Know About Cell Phone Plans Military Discounts Cell Phone Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/c6/5f/8dc65fcd0ccf404bfd012487aea92b8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0YxlgULQnihqC7QpdPPVHfspUALo_XR__A';" alt="The Best Military Cell Phone Discounts You Should Know About Cell Phone Plans Military Discounts Cell Phone Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Military Cell Phone Discounts You Should Know About Cell Phone Plans Military Discounts Cell Phone Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/c2/64/12c264ef0cad3c4766aaf636e0c5eae1.png" data-lightbox="roadtrip" data-title="Just Announced Postal Service Offering Discounted Holiday Shipping For Military Families Plus Free Military Care Kit Military Family Postal Service Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/c2/64/12c264ef0cad3c4766aaf636e0c5eae1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLcxwYYegZmwywfeP0pEkk9b6MPjU9AsSCA';" alt="Just Announced Postal Service Offering Discounted Holiday Shipping For Military Families Plus Free Military Care Kit Military Family Postal Service Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Just Announced Postal Service Offering Discounted Holiday Shipping For Military Families Plus Free Military Care Kit Military Family Postal Service Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d1/20/f2/d120f25b37dc8b0d79e142dd529350c8.jpg" data-lightbox="roadtrip" data-title="37 Military Discounts You Can Get Today In 2020 Military Discounts Veterans Discounts Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d1/20/f2/d120f25b37dc8b0d79e142dd529350c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxIYkr_u0Terq4y11K1qwQmKfvHWxEnmqbQ';" alt="37 Military Discounts You Can Get Today In 2020 Military Discounts Veterans Discounts Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">37 Military Discounts You Can Get Today In 2020 Military Discounts Veterans Discounts Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/56/e8/32/56e8327fb009a4573e56a744ae1ea078.jpg" data-lightbox="roadtrip" data-title="All Things Veterans Day Plus Tons Of Freebies Fabulessly Frugal Veterans Day Discounts Veterans Discounts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/56/e8/32/56e8327fb009a4573e56a744ae1ea078.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvu2TG1Li6FiPTO7VlijKrdlkUIdLwjM4rfg';" alt="All Things Veterans Day Plus Tons Of Freebies Fabulessly Frugal Veterans Day Discounts Veterans Discounts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Things Veterans Day Plus Tons Of Freebies Fabulessly Frugal Veterans Day Discounts Veterans Discounts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d4/fb/44/d4fb443182bafbf26125a49780fd43d4.jpg" data-lightbox="roadtrip" data-title="35 Freebies For Military Members And Veterans Great Free Stuff Including Food Veteran Military Benefits Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d4/fb/44/d4fb443182bafbf26125a49780fd43d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoKMfoEx4J_-NbQEwlsT34wpeLxIxYojb3Q';" alt="35 Freebies For Military Members And Veterans Great Free Stuff Including Food Veteran Military Benefits Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 Freebies For Military Members And Veterans Great Free Stuff Including Food Veteran Military Benefits Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/5e/d5/505ed5298530a87635c4bf60540860f3.jpg" data-lightbox="roadtrip" data-title="15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Military Discounts Veterans Discounts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/5e/d5/505ed5298530a87635c4bf60540860f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQReR_ayUHNy2OYanrVh7FJVbifY_9rwMOGRA';" alt="15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Military Discounts Veterans Discounts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Military Discounts Veterans Discounts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/4a/f3/644af3adc1f2f7d981fbe5b25e1bb9be.jpg" data-lightbox="roadtrip" data-title="Printable Coupons Hot Online Deals Passion For Savings Veterans Day Military Discounts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/4a/f3/644af3adc1f2f7d981fbe5b25e1bb9be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vMhFLqVS4WJMGfEFDIkpWs7c_w4T8lmANw';" alt="Printable Coupons Hot Online Deals Passion For Savings Veterans Day Military Discounts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Printable Coupons Hot Online Deals Passion For Savings Veterans Day Military Discounts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/df/b9/e8dfb948e2681c639b6afb37adadfe5a.jpg" data-lightbox="roadtrip" data-title="Veterans Discounts You Did Not Know About Gi Discounts Veterans Discounts Soldier Care Packages Military Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/df/b9/e8dfb948e2681c639b6afb37adadfe5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcdsPtH8YVgP4tW94IhfADe-YW1cx6gKk3Q';" alt="Veterans Discounts You Did Not Know About Gi Discounts Veterans Discounts Soldier Care Packages Military Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Discounts You Did Not Know About Gi Discounts Veterans Discounts Soldier Care Packages Military Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/86/f6/db86f69230b473502ed3e7c53c380038.jpg" data-lightbox="roadtrip" data-title="Top Veteran Discounts In 2020 Veterans Discounts Veteran Senior Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/86/f6/db86f69230b473502ed3e7c53c380038.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQhhMvK7IxCw9_Mc4lmLIBe5lmW_u7GP0Xw';" alt="Top Veteran Discounts In 2020 Veterans Discounts Veteran Senior Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Veteran Discounts In 2020 Veterans Discounts Veteran Senior Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/san-joaquin-national-cemetery-veterans-day.html">San Joaquin National Cemetery Veterans Day</a></li>
+													<li class="list-group-item"><a href="/san-diego-companies-hiring-veterans.html">San Diego Companies Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/retired-military-wearing-uniform.html">Retired Military Wearing Uniform</a></li>
+													<li class="list-group-item"><a href="/sleep-number-veteran-discount.html">Sleep Number Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/rob-lowe-military-movie.html">Rob Lowe Military Movie</a></li>
+													<li class="list-group-item"><a href="/sprint-active-duty-military-discount.html">Sprint Active Duty Military Discount</a></li>
+													<li class="list-group-item"><a href="/retired-military-id-card-renewal.html">Retired Military Id Card Renewal</a></li>
+													<li class="list-group-item"><a href="/request-dd214-navy.html">Request Dd214 Navy</a></li>
+													<li class="list-group-item"><a href="/retired-military-id.html">Retired Military Id</a></li>
+													<li class="list-group-item"><a href="/role-of-imf-and-world-bank-in-zambia.html">Role Of Imf And World Bank In Zambia</a></li>
+													<li class="list-group-item"><a href="/salvation-army-wednesday-discount.html">Salvation Army Wednesday Discount</a></li>
+													<li class="list-group-item"><a href="/request-dd214-va.html">Request Dd214 Va</a></li>
+													<li class="list-group-item"><a href="/request-lost-dd214.html">Request Lost Dd214</a></li>
+													<li class="list-group-item"><a href="/request-dd214-long-form.html">Request Dd214 Long Form</a></li>
+													<li class="list-group-item"><a href="/retired-va-pay.html">Retired Va Pay</a></li>
+													<li class="list-group-item"><a href="/retired-military-gs-leave-accrual.html">Retired Military Gs Leave Accrual</a></li>
+													<li class="list-group-item"><a href="/singapore-2020-gdp-forecast.html">Singapore 2020 Gdp Forecast</a></li>
+													<li class="list-group-item"><a href="/sprint-military-discount-online.html">Sprint Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/reservist-to-active-duty-usmc.html">Reservist To Active Duty Usmc</a></li>
+													<li class="list-group-item"><a href="/retired-military-aircraft-for-sale.html">Retired Military Aircraft For Sale</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

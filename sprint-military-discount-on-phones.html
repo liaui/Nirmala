@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Sprint Military Discount On Phones - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Sprint Military Discount On Phones",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/da/5e/0b/da5e0b8e38b2e804d742c7cb81de2f39.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=sprint+military+discount+on+phones",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Sprint Military Discount On Phones</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sprint military phone plans The Sprint military discount consists of an unlimited family plan deal with 50 off lines 2-6. Many of our service plans are already discounted and may not qualify Verify your eligibility to continue receiving discounts. Sprint Essentials and Sprint Value Essentials. <br>				
+			</p>
+										<a class="badge badge-primary" href="/williamsburg-va-discounts.html">williamsburg va discounts</a>
+											<a class="badge badge-info" href="/which-is-the-most-debt-country.html">which is the most debt country</a>
+											<a class="badge badge-danger" href="/who-is-the-president-of-imf-2020.html">who is the president of imf 2020</a>
+											<a class="badge badge-warning" href="/where-is-the-head-office-of-imf.html">where is the head office of imf</a>
+											<a class="badge badge-danger" href="/why-hiring-veterans-is-good-for-business-and-for-america.html">why hiring veterans is good for business and for america</a>
+											<a class="badge badge-warning" href="/which-country-owns-imf.html">which country owns imf</a>
+											<a class="badge badge-secondary" href="/xfinity-tv-military-discount.html">xfinity tv military discount</a>
+											<a class="badge badge-info" href="/williamsburg-va-restaurant-discounts.html">williamsburg va restaurant discounts</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our website gives you hints for seeing the highest quality video and picture content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/c6/5f/8dc65fcd0ccf404bfd012487aea92b8f.png" data-lightbox="roadtrip" data-title="The Best Military Cell Phone Discounts You Should Know About Cell Phone Plans Phone Plans Best Cell Phone Coverage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/c6/5f/8dc65fcd0ccf404bfd012487aea92b8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0YxlgULQnihqC7QpdPPVHfspUALo_XR__A';" alt="The Best Military Cell Phone Discounts You Should Know About Cell Phone Plans Phone Plans Best Cell Phone Coverage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Military Cell Phone Discounts You Should Know About Cell Phone Plans Phone Plans Best Cell Phone Coverage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a5/4c/70/a54c70eb2c276d3fec9c072123c2b657.jpg" data-lightbox="roadtrip" data-title="Pin On Sprint Deals For Switching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a5/4c/70/a54c70eb2c276d3fec9c072123c2b657.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD6a-Ms8AwCecDpZJhv2A0J59efdhpjRajMQ';" alt="Pin On Sprint Deals For Switching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sprint Deals For Switching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/da/5e/0b/da5e0b8e38b2e804d742c7cb81de2f39.jpg" data-lightbox="roadtrip" data-title="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines In 2020 Employee Discount Education Drive App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/da/5e/0b/da5e0b8e38b2e804d742c7cb81de2f39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzCe1WlXGDoIPEdc5FKzwnAb5H20cR_rJSKw';" alt="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines In 2020 Employee Discount Education Drive App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Perks Discounts For Military And Veterans 50 Off Family Lines In 2020 Employee Discount Education Drive App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/7c/e3/6b7ce317f0691d7d7d002a62e672b408.png" data-lightbox="roadtrip" data-title="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines Make Easy Money Employee Discount Drive App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/7c/e3/6b7ce317f0691d7d7d002a62e672b408.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhoE7vIThqril97xbQWP4Xxl38cVjn7hX9A';" alt="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines Make Easy Money Employee Discount Drive App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Perks Discounts For Military And Veterans 50 Off Family Lines Make Easy Money Employee Discount Drive App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/a3/19/5ea31917292c64ed13a02e295d30c2ce.png" data-lightbox="roadtrip" data-title="Pin On Crafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/a3/19/5ea31917292c64ed13a02e295d30c2ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF75HpMLbKdiVsFpHVnh4hnmf3zPJu8FVJew';" alt="Pin On Crafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Crafts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/2f/55/db2f55f066c035ec47ef2966c567fc1c.jpg" data-lightbox="roadtrip" data-title="Sprint Phone Plans After You Switch Phone Plans Cell Phone Plans Switch Phone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/2f/55/db2f55f066c035ec47ef2966c567fc1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCAjfBjpKDYb6FGB8zjGLTHn_lm2Z1QFUfg';" alt="Sprint Phone Plans After You Switch Phone Plans Cell Phone Plans Switch Phone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Phone Plans After You Switch Phone Plans Cell Phone Plans Switch Phone</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bd/a0/c3/bda0c3942219d512e38e93281df7d01a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCAjfBjpKDYb6FGB8zjGLTHn_lm2Z1QFUfg';" alt="Sprint Phone Plans After You Switch Phone Plans Cell Phone Plans Switch Phone">
+										<div class="card-body">
+						<h3 class="h5"><b>No plan discounts apply.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Sprint military discount on phones</strong>. 
+								
+																	It is an impressive discount that could save you and your family hundreds of dollars each year on phone coverage. 
+																	Sprint currently provides the military discount for active duty retired veterans US. 
+																	No matter what veteran cell phone plan you opt for youre saving money but ATT takes it to another level. 
+																	Get grab the best discounts on Sprint to maximize your savings when you enter this coupon code at checkout. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are still offering the military discount for current customers who are grandfathered into the discount plan they received when they signed their contract. 
+																	Includes unlimited domestic calling texting and data 3G-speed MHS VPN P2P. 
+																	These are the best military cell phone plans. 
+																	The 15 discount is applied to calling plan charges on individual single line andor Family plans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Includes unlimited domestic calling texting and data 3G-speed MHS VPN P2P. 
+																	Verify account holder email address meta-verifyEmail. 
+																	Cheap Sprint military plans starting at 10mo. 
+																	You will need to pay the full price for the first line then the savings kick in at 50 off each additional line. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	May not be same as landline 911. 
+																	Even better most discounted military or veteran plans will allow you to add multiple lines which means your whole family can benefit from a cheaper phone bill. 
+																	Text data fax other landline svc. 
+																	Current military discounts are part of T-Mobiles Magenta Military Phone Plans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Re-enter your Sprint Phone number associated with your account Corporate ID meta-corporateId. 
+																	T-Mobile Military Phone Plan Active Duty Reserves Retired Military Veteran Discount Eligible. 
+																	Verizon offers monthly discounts for many government corporate and education employees as well as up to 40month off unlimited plans for active service military members and veterans. 
+																	The Sprint and T-Mobile merger is complete RIP Sprint. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sprint Essentials and Sprint Value Essentials. 
+																	They also have a special military plan with discounted additional lines. 
+																	Last 4 digits of Sprint Account Number meta-account. 
+																	Yes T-Mobile military discount is effective. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military members status Active Duty ReservistGuard VeteranRetiree. 
+																	By entering your Sprint phone number youll be able to. 
+																	Text data fax other landline svc. 
+																	May not be same as landline 911. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Third-party contentdownloads are addl. 
+																	Save big bucks w this offer. 
+																	Active duty veterans and reserves members are all eligible for this discount. 
+																	Customers who originally signed up under Sprint can still receive their discounts however all Sprint service promotions expired on August 1 2020 and are no longer valid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No plan discounts apply. 
+																	Sprint has transitioned to T-Mobile and all T-Mobile discounts apply to new wireless customers. 
+																	20 Free on your purchases. 
+																	Cellular offers a 15 military discount on cellphone plans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The previous Sprint Military Discount was 15 off so this offer can be better if you add more lines. 
+																	The Sprint military discount currently offers service members savings of up to 50 off select phone lines. 
+																	Check the status of a discount request. 
+																	Find out the box labeled Enter couponpromo code and paste the code to it and next you may find the price is lower. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Magenta Military Plans offer the same great features and benefits as the standard Magenta plans with a discount on up to four phone lines. 
+																	Enjoy An Additional 20 Discount On All New Android Phones. 
+																	Sprint has merged with T-Mobile. 
+																	Well reply to your email within 3 business days Thanks for being a Sprint customer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sprint offers discounts to military members veterans and employees of certain companies. 
+																	Sprint doesnt have a specific dollar amount discount for veterans and the military but they do have discounted plans that are for military and veterans only. 
+																	The Sprint Military Unlimited plan essentially gives you a discount on their unlimited basic data plan along with 50 off each additional line. 
+																	Check Sprint Military Discount list on the page and save one of the coupons on your clipboard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sprint Military and Veteran Discount Save 50 Off Family Lines. 
+																	Verify military status for account holder within 45 days and maintain valid military line on account. 
+																	National Guard and Reserves through the Sprint Works program. 
+																	Apply for new discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plus we offer 50 off family lineswith nationwide 5G access included at no extra cost. 
+																	Otherwise plan becomes Magenta additional cost up to 20line per month. 
+																	Out of all the military discount cell phone plans ATT will save you the most money month after month. 
+																	If your order meets the conditions of using this offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All new customers are being referred to T-Mobile. 
+																	Active Duty Reserves National Guard Retired Military Veterans Gold Star Families The T-Mobile Magenta and Magenta Plus Military plans provides 25 to 35 off each line on up to 4 phone lines. 
+																	Back to shopping cart page and insert your contact info. 
+																	All of the major carriers Verizon ATT T-Mobile and Sprint offer a military or veteran discount on at least one unlimited plan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Sprint Unlimited Military Plan offers a 50 discount on family lines. 
+																	Third-party contentdownloads are addl. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/a0/c3/bda0c3942219d512e38e93281df7d01a.jpg" data-lightbox="roadtrip" data-title="Pin On Sprint Deals For Switching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/a0/c3/bda0c3942219d512e38e93281df7d01a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLFIy8UfNaDOkhs71Hymt3dgdpwN1eM0ilOg';" alt="Pin On Sprint Deals For Switching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sprint Deals For Switching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/6b/e5/ef6be5a5f7ea6d35d9a335ce70ef0c41.png" data-lightbox="roadtrip" data-title="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines Make Easy Money Easy Money Prepaid Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/6b/e5/ef6be5a5f7ea6d35d9a335ce70ef0c41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtt6oqTVKGfl6cOWXPN197JQRWizOtLlK94A';" alt="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines Make Easy Money Easy Money Prepaid Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Perks Discounts For Military And Veterans 50 Off Family Lines Make Easy Money Easy Money Prepaid Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/43/f1/02/43f1027783fc1020d2f230c121c1d06e.jpg" data-lightbox="roadtrip" data-title="Pin On Crafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/43/f1/02/43f1027783fc1020d2f230c121c1d06e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rSBDpmYbZ2EmM5Na-oRkQoTiY9Q_oVp4Jw';" alt="Pin On Crafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Crafts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cc/47/0c/cc470cd9bbc816701f909639a05311aa.jpg" data-lightbox="roadtrip" data-title="Sprint Kyocera E4277 Duraxt Military Standard Flip Phone Manufacture Refurbished Walmart Com Boost Mobile Sony Mobile Phones Refurbished Phones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cc/47/0c/cc470cd9bbc816701f909639a05311aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAEjUD5PJL3tYwAKq96rtXzXvhEYmfMBrGTw';" alt="Sprint Kyocera E4277 Duraxt Military Standard Flip Phone Manufacture Refurbished Walmart Com Boost Mobile Sony Mobile Phones Refurbished Phones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Kyocera E4277 Duraxt Military Standard Flip Phone Manufacture Refurbished Walmart Com Boost Mobile Sony Mobile Phones Refurbished Phones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/68/a6/eb/68a6eb1a2990b5d19404479b4e5adcb4.jpg" data-lightbox="roadtrip" data-title="Why You Should Switch Your Cell Phone To Military Time Cellphoneservice Best Cell Phone Coverage Sprint Cell Phone Deals Phone Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/68/a6/eb/68a6eb1a2990b5d19404479b4e5adcb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIxUUdV5FhNjL1at-TaHpoJwi0BwJJDgMOWQ';" alt="Why You Should Switch Your Cell Phone To Military Time Cellphoneservice Best Cell Phone Coverage Sprint Cell Phone Deals Phone Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why You Should Switch Your Cell Phone To Military Time Cellphoneservice Best Cell Phone Coverage Sprint Cell Phone Deals Phone Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/90/ea/8390ea7ef635dc8e852038ac11652e51.jpg" data-lightbox="roadtrip" data-title="Kyocera E4233 Rugged Duraplus Sprint Like New Waterproof Cell Phone Waterproof Phone Cell Phone Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/90/ea/8390ea7ef635dc8e852038ac11652e51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjX0VGIHawHNqig0QAF24bC_j2otPZqramQ';" alt="Kyocera E4233 Rugged Duraplus Sprint Like New Waterproof Cell Phone Waterproof Phone Cell Phone Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyocera E4233 Rugged Duraplus Sprint Like New Waterproof Cell Phone Waterproof Phone Cell Phone Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/7f/25/b07f25fd72588b8f3113ba07edf85b0e.jpg" data-lightbox="roadtrip" data-title="Pin On Sprint Military Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/7f/25/b07f25fd72588b8f3113ba07edf85b0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPh0_6b5t0TTi8lT6CzNsFl0hxWO2AmoAFhA';" alt="Pin On Sprint Military Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sprint Military Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/42/ce/4e42ceb4a5e74ca0b157da7c48a2fe36.png" data-lightbox="roadtrip" data-title="Sprint Perks Discounts For Federal Government Employees Make Easy Money First Responder Discounts Prepaid Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/42/ce/4e42ceb4a5e74ca0b157da7c48a2fe36.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3mrKeHho8WAFMs29nYr1aItxDvGmp5EXnw';" alt="Sprint Perks Discounts For Federal Government Employees Make Easy Money First Responder Discounts Prepaid Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Perks Discounts For Federal Government Employees Make Easy Money First Responder Discounts Prepaid Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/0e/60/250e6040bc17c18aa3a0d3ac3667bd20.png" data-lightbox="roadtrip" data-title="Top 6 Sprint Deals For Switching In 2019 In 2020 Switch Phone Sprinting Phone Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/0e/60/250e6040bc17c18aa3a0d3ac3667bd20.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXaHAONUwiGDHlrZ59gasthbo4Q4WD1q0yA';" alt="Top 6 Sprint Deals For Switching In 2019 In 2020 Switch Phone Sprinting Phone Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 6 Sprint Deals For Switching In 2019 In 2020 Switch Phone Sprinting Phone Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/95/1c/b3951c2258162dea9abe0a86364dd62b.jpg" data-lightbox="roadtrip" data-title="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines In 2020 Military Sprinting Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/95/1c/b3951c2258162dea9abe0a86364dd62b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK7lnNl8nV5PAf7jo7V1en7Ka18PXQMb-gBA';" alt="Sprint Perks Discounts For Military And Veterans 50 Off Family Lines In 2020 Military Sprinting Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Perks Discounts For Military And Veterans 50 Off Family Lines In 2020 Military Sprinting Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/5b/de/695bde987e14874953d3d06bf1794c88.jpg" data-lightbox="roadtrip" data-title="Kyocera Duraxt E4277 Durable Flip Phone For Sprint Flip Cell Phones Kyocera Cell Phones For Sale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/5b/de/695bde987e14874953d3d06bf1794c88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLHHyK20a8R7D6rxEnvq3pDWmKiOnnr_LkA';" alt="Kyocera Duraxt E4277 Durable Flip Phone For Sprint Flip Cell Phones Kyocera Cell Phones For Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyocera Duraxt E4277 Durable Flip Phone For Sprint Flip Cell Phones Kyocera Cell Phones For Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/e3/49/cf/e349cf11a43e57d2189202e67493753f.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 Galaxy Note 9 Samsung Galaxy Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/e3/49/cf/e349cf11a43e57d2189202e67493753f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1N9QWNrdY1LPaxuvgBHwVgiRe2B4Tdr7AUg';" alt="Samsung Galaxy Note 9 Galaxy Note 9 Samsung Galaxy Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 Galaxy Note 9 Samsung Galaxy Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/2d/80/c22d80be072902e7c70d3bde615e6ed2.jpg" data-lightbox="roadtrip" data-title="Pin On Call Me Maybe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/2d/80/c22d80be072902e7c70d3bde615e6ed2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwzKxSaPd4v-dTrbxecbgzSyqEVYGqjY4hQ';" alt="Pin On Call Me Maybe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Call Me Maybe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/f4/1a/7af41a7945fef90f211fef19ecb9d419.jpg" data-lightbox="roadtrip" data-title="Sprint Direct Connect Military Standard 810g Cell Phone Duraxt Kyocera Kyocera Cell Phone Cell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/f4/1a/7af41a7945fef90f211fef19ecb9d419.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQPWRuPoNrXEryYuZ1jeABg70Ekbvy-tdMqQ';" alt="Sprint Direct Connect Military Standard 810g Cell Phone Duraxt Kyocera Kyocera Cell Phone Cell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sprint Direct Connect Military Standard 810g Cell Phone Duraxt Kyocera Kyocera Cell Phone Cell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/39/ad/9239ada94cd06ae8d69c426d033de2ed.png" data-lightbox="roadtrip" data-title="Pin On Imagenes Graciosas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/39/ad/9239ada94cd06ae8d69c426d033de2ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDHBTOlEcV-GQk_XxHr4gSMIT2LkUlslmSmg';" alt="Pin On Imagenes Graciosas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Imagenes Graciosas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hiring-our-heroes-military-spouse-fellowship.html">Hiring Our Heroes Military Spouse Fellowship</a></li>
+													<li class="list-group-item"><a href="/home-depot-military-leave-of-absence.html">Home Depot Military Leave Of Absence</a></li>
+													<li class="list-group-item"><a href="/how-many-chief-economist-in-imf.html">How Many Chief Economist In Imf</a></li>
+													<li class="list-group-item"><a href="/hotels-near-imf-headquarters-washington-dc.html">Hotels Near Imf Headquarters Washington Dc</a></li>
+													<li class="list-group-item"><a href="/hiring-veterans-in-jacksonville-fl.html">Hiring Veterans In Jacksonville Fl</a></li>
+													<li class="list-group-item"><a href="/hiring-veterans-in-chicago.html">Hiring Veterans In Chicago</a></li>
+													<li class="list-group-item"><a href="/hikvision-ivms-4200-ac.html">Hikvision Ivms 4200 Ac</a></li>
+													<li class="list-group-item"><a href="/how-much-are-airpods-with-military-discount.html">How Much Are Airpods With Military Discount</a></li>
+													<li class="list-group-item"><a href="/how-much-do-nsa-internships-pay.html">How Much Do Nsa Internships Pay</a></li>
+													<li class="list-group-item"><a href="/hire-of-military-costumes.html">Hire Of Military Costumes</a></li>
+													<li class="list-group-item"><a href="/hire-military-commander-memo.html">Hire Military Commander Memo</a></li>
+													<li class="list-group-item"><a href="/head-office-of-imf.html">Head Office Of Imf</a></li>
+													<li class="list-group-item"><a href="/how-much-did-the-imf-loan-greece.html">How Much Did The Imf Loan Greece</a></li>
+													<li class="list-group-item"><a href="/history-of-imf-and-world-bank.html">History Of Imf And World Bank</a></li>
+													<li class="list-group-item"><a href="/hiring-30-disabled-veterans.html">Hiring 30 Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/how-do-i-request-a-copy-of-my-dd-214.html">How Do I Request A Copy Of My Dd 214</a></li>
+													<li class="list-group-item"><a href="/how-many-points-does-a-reservist-need-for-an-active-duty-retirement.html">How Many Points Does A Reservist Need For An Active Duty Retirement</a></li>
+													<li class="list-group-item"><a href="/how-is-military-disability-retirement-pay-calculated.html">How Is Military Disability Retirement Pay Calculated</a></li>
+													<li class="list-group-item"><a href="/how-can-i-get-a-discount-on-greyhound.html">How Can I Get A Discount On Greyhound</a></li>
+													<li class="list-group-item"><a href="/history-about-imf.html">History About Imf</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Lmao Meaning Meanings - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Lmao Meaning Meanings",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/e9/ff/d7/e9ffd77199c07cc93a6290ef17ca99da.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lmao+meaning+meanings",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Lmao Meaning Meanings</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It is used in cases where the joke is more hilarious than would typically be the case and in situations where you would laugh so hard. LMAO that dumbass cant even ollie. Idk is part of the newly developed dialect called text speak or. <br>				
+			</p>
+										<a class="badge badge-dark" href="/imf-kuwait-gdp-forecast.html">imf kuwait gdp forecast</a>
+											<a class="badge badge-dark" href="/imf-loans-to-iraq.html">imf loans to iraq</a>
+											<a class="badge badge-dark" href="/imf-md-blog.html">imf md blog</a>
+											<a class="badge badge-success" href="/imf-net-debt-by-country.html">imf net debt by country</a>
+											<a class="badge badge-info" href="/imf-new-bretton-woods-system.html">imf new bretton woods system</a>
+											<a class="badge badge-secondary" href="/imf-labor-data.html">imf labor data</a>
+											<a class="badge badge-warning" href="/imf-myanmar-gdp-per-capita.html">imf myanmar gdp per capita</a>
+											<a class="badge badge-info" href="/imf-meaning-chemistry.html">imf meaning chemistry</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the ideal site.  Our site gives you hints for viewing the maximum quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/17/16/34171628b4d1e8e8a1daf1d59e1d56f6.png" data-lightbox="roadtrip" data-title="Lmao Meaning What Does Lmao Mean With Text Conversations 7esl Slang Words Text Abbreviations Sms Language">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/17/16/34171628b4d1e8e8a1daf1d59e1d56f6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_p1ZDnOXx_eth2PZ-vg15fkPIE-PJ5S1F4A';" alt="Lmao Meaning What Does Lmao Mean With Text Conversations 7esl Slang Words Text Abbreviations Sms Language">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Meaning What Does Lmao Mean With Text Conversations 7esl Slang Words Text Abbreviations Sms Language</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/e5/f9/79e5f9822e5b1996615f65b14703b40a.png" data-lightbox="roadtrip" data-title="Pin On Knowledge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/e5/f9/79e5f9822e5b1996615f65b14703b40a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqfU2Fgst-GkgJZA9IvKzdRJUzk7jrpI9bg';" alt="Pin On Knowledge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Knowledge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/6c/64/386c64aac07bf674b56f56f6c67553bf.jpg" data-lightbox="roadtrip" data-title="Lmao Meaning What Does Lmao Mean With Text Conversations 7esl Other Ways To Say Korean Words Learning Slang Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/6c/64/386c64aac07bf674b56f56f6c67553bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHD4mkQ_BaZDbTznkn5LyO2nBDWlFfPhbMbw';" alt="Lmao Meaning What Does Lmao Mean With Text Conversations 7esl Other Ways To Say Korean Words Learning Slang Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Meaning What Does Lmao Mean With Text Conversations 7esl Other Ways To Say Korean Words Learning Slang Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/52/d9/a652d9307c5e661a5c30e1c4f1e8876e.jpg" data-lightbox="roadtrip" data-title="Lmao Meaning What Does Lmao Meaning Sms Language Learn English Words English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/52/d9/a652d9307c5e661a5c30e1c4f1e8876e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPjW-KyC0jnB1FTB7H2UIwJEg4KuqwCJnUmQ';" alt="Lmao Meaning What Does Lmao Meaning Sms Language Learn English Words English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Meaning What Does Lmao Meaning Sms Language Learn English Words English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/96/a8/ea96a8af61ba13add4a3367acf1c6190.jpg" data-lightbox="roadtrip" data-title="Pin On Blogging N Shit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/96/a8/ea96a8af61ba13add4a3367acf1c6190.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWxGQvQW7-gpiPiNPWtAGhEeU8CaGsXBilg';" alt="Pin On Blogging N Shit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blogging N Shit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/8b/a7/e8/8ba7e8517ff31b777ce8e610c4700a2b.jpg" data-lightbox="roadtrip" data-title="Pin On Learn English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/8b/a7/e8/8ba7e8517ff31b777ce8e610c4700a2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7u2Bzq9JvGyEwHEaeUQQ-soCCoT6skGAJA';" alt="Pin On Learn English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Learn English Words</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/05/6b/6f/056b6fcb0a6b51afcbf7023a3c1b8943.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7u2Bzq9JvGyEwHEaeUQQ-soCCoT6skGAJA';" alt="Pin On Learn English Words">
+										<div class="card-body">
+						<h3 class="h5"><b>The word lmao means Laughing My Ass Off.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Lmao meaning meanings</strong>. 
+								
+																	If you find a rich content online you can express your liking by merely typing the word lmao. 
+																	Lick Me All Over. 
+																	Adding more os adds to how funny one finds the situation. 
+																	Laughed my fucking ass off a euphemistic initialism used to avoid explicit vulgarity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMFAO means the same as LMAO. 
+																	LMAO is used when you find someone unusually funny. 
+																	LMAO means Laughing My Ass Off. 
+																	Rolling on the floor laughing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Laughing my socks off. 
+																	Citation from Obamas Medicare Chief Has Accidental Encounter With Reality Learns Nothing Forbes Business in the Beltway blog Daniel J. 
+																	Laughing My Arms Off. 
+																	In fact this is the slang you use in places where a laughing emoji or the phrase haha would not be adequate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMAO means laughing my ass off LMAO is appropriate for informal conversations but is not appropriate for more formal situations You can use LMAO instead of LOL when you find something especially funny. 
+																	Rolling on the floor laughing my a off. 
+																	LMAO Meaning Something like crazy had you said. 
+																	LMAO Urdu Meaning - Find the correct meaning of LMAO in Urdu it is important to understand the word properly when we translate it from English to Urdu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lamo is an occasional spelling of the insult lame-o or pathetic person or thing It can also be used as an ironic take on the acronym LMAO laughing my ass off. 
+																	Rolling on the floor laughing out loud. 
+																	LMAO is a slang but it is also an acronym which means Laughing My Ass Off This is probably the most common meaning but in certain contexts it has been tweaked slightly based on the sentence. 
+																	Lmaoo is to be used when one is more entertained than a lmao situation but not as much as roflmao situation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are always several meanings of each word in Urdu the correct meaning of LMAO in Urdu is اونچا اونچا ہنسنا and in roman we write it Laughing My Ass Off. 
+																	Lmao is an abbreviation of the phrase laughing my ass off It is used to indicate that something is funny. 
+																	Interjection acronym for laughing my ass off Used frequently in text-based communication text messaging online chat etc lmao. 
+																	To this end some people use it as Laugh My Ass Off or Laughing My Ass Out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a lot of acronyms that use to explore the impression for funny. 
+																	Laughing My Arteries Out. 
+																	Leave Me Alone Ode. 
+																	Lmao definition laughing my fucking ass off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Where does lamo come from. 
+																	Let Me Ask Obama. 
+																	LOL earlier Joey fell off his skateboard in the middle of a kickflip and yet he claims he wouldve been able to do it. 
+																	Usually used when someone says something funny onlinein a text. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMAO rude slang An initialism of laughing my ass off used in text-based communication to indicate that one thinks that something is extremely funny or ridiculous. 
+																	Living My Adventism Out est. 
+																	Here is another example to explore what does lmao mean. 
+																	LMAO can be written in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lmao is the stronger version of LOL or Laughing Out Loud. 
+																	It is used to signify something hilarious. 
+																	Laughing My Ankles Off. 
+																	Lets Marvel At Owls comedian Bill Bailey LMAO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LOL-laugh audibly or be amused. 
+																	It is used to convey the fact that something is funny. 
+																	Laughing My Apples Off. 
+																	Land Mail Art Objects. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMAO is Laughing My Ass Off. 
+																	Full form of lmao is laughing my ass off ROFL means rolling on the floor laughing lol stands for laugh out loud and lolz means more than one laughs. 
+																	The word Lmao is a term that comes to mind when we laugh very hard although we never lose portions of our body to smile. 
+																	IMO-Abbreviation for In My Opinion Use if you want to weaken your argument significantly IDK-Idk is an abbreviation of the phrase I dont know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMAO-LMAO is one of many common words used in. 
+																	Leave Me Alone Okay. 
+																	Lmaoo is an extension of Lmao which means laughing my ass off. 
+																	Like LMAO ROFL LOL LOLZ and many others. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ROFL is another word that is used for LMAO. 
+																	Mitchell May 1 2011 blacked out to resolve Googles. 
+																	What Does Lmao Mean. 
+																	By wublovah3000 June 27 2015. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Z0mg i r batman. 
+																	It can be considered as a stronger version of LOL which stands for laugh out loud. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/0c/39/070c390452410899fda511d17c8c86ee.jpg" data-lightbox="roadtrip" data-title="Pin On Translation Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/0c/39/070c390452410899fda511d17c8c86ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjb_E-G2rPdjeKwQMIsHZrE5LiWjshgbQ64A';" alt="Pin On Translation Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Translation Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/06/43/7b06430e9319b3f9e8b036a4d4ca88f8.jpg" data-lightbox="roadtrip" data-title="Most Important Abbreviation List Lol Omg Ily Lmao Wtf Ppl Idk Tbh And Etc These Post Include Most Important Text Abbreviations Sms Language Slang Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/06/43/7b06430e9319b3f9e8b036a4d4ca88f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdA4O44ViNPRv8NzwticLJotlBQA94LocKjQ';" alt="Most Important Abbreviation List Lol Omg Ily Lmao Wtf Ppl Idk Tbh And Etc These Post Include Most Important Text Abbreviations Sms Language Slang Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Most Important Abbreviation List Lol Omg Ily Lmao Wtf Ppl Idk Tbh And Etc These Post Include Most Important Text Abbreviations Sms Language Slang Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/83/41/aa83418f4b49e7aaeacdf68c57ef60cf.jpg" data-lightbox="roadtrip" data-title="What Does Lmao Mean In Texting Rofl Bff Imo More Alternative Meaning Instant Messaging Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/83/41/aa83418f4b49e7aaeacdf68c57ef60cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5MDxpdRwT0rUGp73rfuLDlZdw6QCiz12rw';" alt="What Does Lmao Mean In Texting Rofl Bff Imo More Alternative Meaning Instant Messaging Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Does Lmao Mean In Texting Rofl Bff Imo More Alternative Meaning Instant Messaging Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/c4/98/00c498c4694b7fa64bb17dedab775878.jpg" data-lightbox="roadtrip" data-title="This Is What Lmao Means Omg Rofl Brb Afaik Bff Smh Np Imo More En 2020 Idiomas Ingles Cosas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/c4/98/00c498c4694b7fa64bb17dedab775878.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPkd6ZdT1k8ApUtIVqHpbP57IdFjEn-xUeQQ';" alt="This Is What Lmao Means Omg Rofl Brb Afaik Bff Smh Np Imo More En 2020 Idiomas Ingles Cosas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What Lmao Means Omg Rofl Brb Afaik Bff Smh Np Imo More En 2020 Idiomas Ingles Cosas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/4d/2b/c74d2b4584e62c1ce8754f1b725a6f98.jpg" data-lightbox="roadtrip" data-title="What Does Lmao Mean In Texting Words Instant Messaging Learn English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/4d/2b/c74d2b4584e62c1ce8754f1b725a6f98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8O4Ika9jS0rbufNNwYjYdVGKNfDDO76F2w';" alt="What Does Lmao Mean In Texting Words Instant Messaging Learn English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Does Lmao Mean In Texting Words Instant Messaging Learn English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/5c/9a/f05c9ac821a1c8fa95920ae02e2f2437.png" data-lightbox="roadtrip" data-title="Hmu Meaning What Does Hmu Mean Useful Text Conversations 7 E S L Other Ways To Say Slang Words Text Conversations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/5c/9a/f05c9ac821a1c8fa95920ae02e2f2437.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVUJtAzwwq-4GjF3q77jaqGykBxVznFuIhA';" alt="Hmu Meaning What Does Hmu Mean Useful Text Conversations 7 E S L Other Ways To Say Slang Words Text Conversations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hmu Meaning What Does Hmu Mean Useful Text Conversations 7 E S L Other Ways To Say Slang Words Text Conversations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/0a/60/210a60f1c6b5d159516ec5fbcddd25aa.jpg" data-lightbox="roadtrip" data-title="The Hidden Meanings In Popular Acronyms Yolo Youth Obeying Lucifer S Orders Swag Satan S Wishes Are Granted Rofl Rise Our Father Lucifer L Komik Metinler">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/0a/60/210a60f1c6b5d159516ec5fbcddd25aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOTStjHzmO8EJFdbodVwnXx94tX76LxeGK0Q';" alt="The Hidden Meanings In Popular Acronyms Yolo Youth Obeying Lucifer S Orders Swag Satan S Wishes Are Granted Rofl Rise Our Father Lucifer L Komik Metinler">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hidden Meanings In Popular Acronyms Yolo Youth Obeying Lucifer S Orders Swag Satan S Wishes Are Granted Rofl Rise Our Father Lucifer L Komik Metinler</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/05/6b/6f/056b6fcb0a6b51afcbf7023a3c1b8943.jpg" data-lightbox="roadtrip" data-title="Instagram Abbreviations List And Meanings English Grammar Here English Vocabulary Words Learn English Words English Writing Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/05/6b/6f/056b6fcb0a6b51afcbf7023a3c1b8943.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7E0BGsONT6M6oXasIOzEazf2-TpwcSwP_Q';" alt="Instagram Abbreviations List And Meanings English Grammar Here English Vocabulary Words Learn English Words English Writing Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Abbreviations List And Meanings English Grammar Here English Vocabulary Words Learn English Words English Writing Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/91/cf/2d91cf6f8cff4fce588a4995abde6121.jpg" data-lightbox="roadtrip" data-title="Thousands Of Trendy Internet Slang Terms You Should Know 7esl Slang Words Words Learn English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/91/cf/2d91cf6f8cff4fce588a4995abde6121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQleoA4AfauPDR8RVVHKBlfEYknLDurPKUOAQ';" alt="Thousands Of Trendy Internet Slang Terms You Should Know 7esl Slang Words Words Learn English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of Trendy Internet Slang Terms You Should Know 7esl Slang Words Words Learn English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/64/22/226422ba7a107cc53fe263b6155c8bd4.png" data-lightbox="roadtrip" data-title="Noob Meaning What Does Noob Mean Useful Text Conversations 7 E S L Noob Other Ways To Say English Phrases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/64/22/226422ba7a107cc53fe263b6155c8bd4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf4AWT67qzOKKLvaj9bPBHkml3x9ALKepPdA';" alt="Noob Meaning What Does Noob Mean Useful Text Conversations 7 E S L Noob Other Ways To Say English Phrases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Noob Meaning What Does Noob Mean Useful Text Conversations 7 E S L Noob Other Ways To Say English Phrases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/7d/97/677d97095560d2067945b0b0968c14d1.png" data-lightbox="roadtrip" data-title="Ymmv Meaning What Does Ymmv Mean Text Conversations 7 E S L Text Conversations English Vocab Learn English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/7d/97/677d97095560d2067945b0b0968c14d1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2nzDDW2NJZjuBgPGgHi8Uo-nHTuyhsJSOA';" alt="Ymmv Meaning What Does Ymmv Mean Text Conversations 7 E S L Text Conversations English Vocab Learn English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ymmv Meaning What Does Ymmv Mean Text Conversations 7 E S L Text Conversations English Vocab Learn English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/4b/11/604b119009a44febf68f4bb36af4a72e.png" data-lightbox="roadtrip" data-title="Idk Meaning What Does Idk Mean Useful Text Conversations 7 E S L Text Conversations Other Ways To Say Conversational English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/4b/11/604b119009a44febf68f4bb36af4a72e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVeqHzeRh6UHH04-_EjrBWh1YfCkJIl4g-w';" alt="Idk Meaning What Does Idk Mean Useful Text Conversations 7 E S L Text Conversations Other Ways To Say Conversational English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idk Meaning What Does Idk Mean Useful Text Conversations 7 E S L Text Conversations Other Ways To Say Conversational English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/3c/b9/d33cb97cc53ac7711b3f76de9e0c07f7.jpg" data-lightbox="roadtrip" data-title="Thousands Of Trendy Internet Slang Terms You Should Know 7esl Slang Words Mean Humor Other Ways To Say">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/3c/b9/d33cb97cc53ac7711b3f76de9e0c07f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv2Oc2Aw0-okuaYOuG9LLPKTkfMOvFv3W88g';" alt="Thousands Of Trendy Internet Slang Terms You Should Know 7esl Slang Words Mean Humor Other Ways To Say">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of Trendy Internet Slang Terms You Should Know 7esl Slang Words Mean Humor Other Ways To Say</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/ff/d7/e9ffd77199c07cc93a6290ef17ca99da.png" data-lightbox="roadtrip" data-title="Pin On English Vocabulary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/ff/d7/e9ffd77199c07cc93a6290ef17ca99da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0tHDtjk5ZM6_xdOoMCdFHkWxzBA1LyqVyw';" alt="Pin On English Vocabulary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On English Vocabulary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/90/a6/2b90a6a3657afc200077c79b9efcf44b.png" data-lightbox="roadtrip" data-title="Af Meaning What Does Af Mean Useful Text Conversations 7 E S L Good Teamwork Text Abbreviations Other Ways To Say">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/90/a6/2b90a6a3657afc200077c79b9efcf44b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtZMLqHUJfi-ftgFCQOAOMgtFkBxTbrApoA';" alt="Af Meaning What Does Af Mean Useful Text Conversations 7 E S L Good Teamwork Text Abbreviations Other Ways To Say">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Af Meaning What Does Af Mean Useful Text Conversations 7 E S L Good Teamwork Text Abbreviations Other Ways To Say</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-regional-economic-outlook-middle-east-2020.html">Imf Regional Economic Outlook Middle East 2020</a></li>
+													<li class="list-group-item"><a href="/imf-quotas-history.html">Imf Quotas History</a></li>
+													<li class="list-group-item"><a href="/imf-office-address-in-canada.html">Imf Office Address In Canada</a></li>
+													<li class="list-group-item"><a href="/imf-report-on-jamaica-2018.html">Imf Report On Jamaica 2018</a></li>
+													<li class="list-group-item"><a href="/imf-office-address-in-nigeria.html">Imf Office Address In Nigeria</a></li>
+													<li class="list-group-item"><a href="/imf-report-on-argentina.html">Imf Report On Argentina</a></li>
+													<li class="list-group-item"><a href="/imf-office-in-new-delhi-india.html">Imf Office In New Delhi India</a></li>
+													<li class="list-group-item"><a href="/imf-qatar-gdp-per-capita.html">Imf Qatar Gdp Per Capita</a></li>
+													<li class="list-group-item"><a href="/imf-reform-after-the-crisis.html">Imf Reform After The Crisis</a></li>
+													<li class="list-group-item"><a href="/imf-program-in-egypt.html">Imf Program In Egypt</a></li>
+													<li class="list-group-item"><a href="/imf-pakistan-inflation-forecast.html">Imf Pakistan Inflation Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-non-performing-loans-definition.html">Imf Non Performing Loans Definition</a></li>
+													<li class="list-group-item"><a href="/imf-office-address-in-uk.html">Imf Office Address In Uk</a></li>
+													<li class="list-group-item"><a href="/imf-office-address-in-malaysia.html">Imf Office Address In Malaysia</a></li>
+													<li class="list-group-item"><a href="/imf-oil-crisis.html">Imf Oil Crisis</a></li>
+													<li class="list-group-item"><a href="/imf-russia-gdp-per-capita.html">Imf Russia Gdp Per Capita</a></li>
+													<li class="list-group-item"><a href="/imf-per-capita-gdp-india-bangladesh.html">Imf Per Capita Gdp India Bangladesh</a></li>
+													<li class="list-group-item"><a href="/imf-on-india-and-bangladesh.html">Imf On India And Bangladesh</a></li>
+													<li class="list-group-item"><a href="/imf-qatar-inflation-forecast.html">Imf Qatar Inflation Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-regional-economic-outlook-europe.html">Imf Regional Economic Outlook Europe</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

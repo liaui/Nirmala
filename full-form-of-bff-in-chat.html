@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Full Form Of Bff In Chat - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Full Form Of Bff In Chat",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/98/2c/d2/982cd287705ffd6ad3fb00501fe53699.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=full+form+of+bff+in+chat",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Full Form Of Bff In Chat</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">What is the full form of BFF. Computing File Extensions. Full Form of BFF. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/imf-washington-jobs.html">imf washington jobs</a>
+											<a class="badge badge-secondary" href="/imf-taiwan-gdp-2020.html">imf taiwan gdp 2020</a>
+											<a class="badge badge-danger" href="/imf-world-bank-careers.html">imf world bank careers</a>
+											<a class="badge badge-light" href="/imf-support-to-egypt.html">imf support to egypt</a>
+											<a class="badge badge-dark" href="/imf-world-bank-and-wto.html">imf world bank and wto</a>
+											<a class="badge badge-warning" href="/imf-saudi-gdp.html">imf saudi gdp</a>
+											<a class="badge badge-dark" href="/imf-volatility-chemistry.html">imf volatility chemistry</a>
+											<a class="badge badge-dark" href="/imf-sme-definition.html">imf sme definition</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the right site.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/31/b8/7431b87d599a30a88f572718cba3413e.png" data-lightbox="roadtrip" data-title="60 Commonly Used English Abbreviations You Should Know Eslbuzz Learning English Sms Language English Words Learn English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/31/b8/7431b87d599a30a88f572718cba3413e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW7LDOoABIExIKBJq56JG-aKZD9FSJ_vt5Zw';" alt="60 Commonly Used English Abbreviations You Should Know Eslbuzz Learning English Sms Language English Words Learn English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">60 Commonly Used English Abbreviations You Should Know Eslbuzz Learning English Sms Language English Words Learn English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/f8/62/fdf8627ca04877d1ffa35b984dc9348c.png" data-lightbox="roadtrip" data-title="Internet Chat Slang And Abbreviation List English Study Page American Slang Words English Study Slang Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/f8/62/fdf8627ca04877d1ffa35b984dc9348c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3eg7BvLUsNlz4J9maaW2isLw31-7EFw-lKg';" alt="Internet Chat Slang And Abbreviation List English Study Page American Slang Words English Study Slang Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Internet Chat Slang And Abbreviation List English Study Page American Slang Words English Study Slang Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/33/3e/90333eb16cd25f606316c07ef6252ee2.jpg" data-lightbox="roadtrip" data-title="Below Is A List Of Popular Texting Abbreviations And Internet Acronyms In English Sms Language Slang Words English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/33/3e/90333eb16cd25f606316c07ef6252ee2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjsh_NGe77YrXxEkkc3QB98jPU7Q4z6BXGQ';" alt="Below Is A List Of Popular Texting Abbreviations And Internet Acronyms In English Sms Language Slang Words English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Below Is A List Of Popular Texting Abbreviations And Internet Acronyms In English Sms Language Slang Words English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/98/2c/d2/982cd287705ffd6ad3fb00501fe53699.jpg" data-lightbox="roadtrip" data-title="Male Best Bestie Friend Quotes Birthday Quotes For Best Friend Happy Birthday Best Friend Quotes Friend Birthday Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/98/2c/d2/982cd287705ffd6ad3fb00501fe53699.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2S2b8da7shEwfcdVWYcTUG8yn5GH9M0vCsQ';" alt="Male Best Bestie Friend Quotes Birthday Quotes For Best Friend Happy Birthday Best Friend Quotes Friend Birthday Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Male Best Bestie Friend Quotes Birthday Quotes For Best Friend Happy Birthday Best Friend Quotes Friend Birthday Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/80/f1/f480f10b193099ca45191d1bfda0f162.png" data-lightbox="roadtrip" data-title="Internet Slang And Abbreviations Google Haku Sms Language Text Abbreviations English Writing Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/80/f1/f480f10b193099ca45191d1bfda0f162.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIeXJ5zcZ-wQTyUManRGbZBuIOtV2X5w0kfQ';" alt="Internet Slang And Abbreviations Google Haku Sms Language Text Abbreviations English Writing Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Internet Slang And Abbreviations Google Haku Sms Language Text Abbreviations English Writing Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/95/46/c3954621ec6ed7349d59921c1ce8b8ea.png" data-lightbox="roadtrip" data-title="Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Words To Use Sms Text">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/95/46/c3954621ec6ed7349d59921c1ce8b8ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JIld0k8y6BxLkAjTuq1Vdm-R5RbpNpzYOA';" alt="Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Words To Use Sms Text">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Words To Use Sms Text</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fd/f8/62/fdf8627ca04877d1ffa35b984dc9348c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JIld0k8y6BxLkAjTuq1Vdm-R5RbpNpzYOA';" alt="Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Words To Use Sms Text">
+										<div class="card-body">
+						<h3 class="h5"><b>British Forces Foundation BFF is a British charitable foundation to support the well-being of the members of Britains armed forces though the provision of high quality entertainment.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Full form of bff in chat</strong>. 
+								
+																	Full form of most common slang words chat short words using in Facebook WhatsApp Twitter and Google. 
+																	Or it can be. 
+																	BFF stands for Best friends forever. 
+																	Fat boy food eg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Such friendships are defined by the trust as well as a sense of perpetuity. 
+																	BFF Full Form is Best Friends Forever. 
+																	For crying out loud. 
+																	Meaning Facebook friend FBF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Full Form Category Term. 
+																	Meaning its shows your close friends they can be male or female both. 
+																	Meaning its also shows your close friends. 
+																	BFF is listed in the Worlds largest and most authoritative dictionary database of abbreviations and acronyms BFF - What does BFF stand for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	- Best Friends Forever - Best Friends Forever BFF is a term used to described a very close friendship typical of teenagers. 
+																	Hmm person agrees with your message or person is thinking about something you said or asked. 
+																	Scottsbluff ne Airport Code. 
+																	We are sharing this list of full forms acronyms descriptions examples etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BFF is an airport in Scottsbluff United States. 
+																	Suggest new BFF Full Form. 
+																	It is a phrase or a word that show or describe a very close friendship. 
+																	Most Common Slang Words Full Form For Facebook StatusChatting Blogging Blockchain Tech. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Internet Chat-- and more. 
+																	Business Occupation Positions. 
+																	It is called सबस अचछ दसत हमश क लए in Hindi. 
+																	According to me there are two full forms of BBF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	 
+																	Associations Organizations Regional Organizations. 
+																	The term BFF is used for close friends or for Love. 
+																	Facebook official An official update from Facebook FBOW. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Repondez sil vous plait. 
+																	The full form of BFF is Best Friends Forever. 
+																	What does BFF mean. 
+																	What is the full form of BFF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Full card online gaming FCINGO. 
+																	BFF Full Form Meaning Hindi - अगर आप Social media और लडकय म सबस जयद popular word BFF क बर म जनकर चहत ह. 
+																	For crying out loud. 
+																	 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bff full form is a Best Friend Forever Bff full form in Hindi. 
+																	BF officially called as Republic of Burkina Faso is a country in Wes. 
+																	For better or worse. 
+																	Business Occupation Positions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Because most of us keep on searching for terms like what is the full form of stands for what is the meaning of acronym for abbreviation of definition of description of example of explanation ofetc. 
+																	Pizza burgers fries FBFR. 
+																	BFF is a phrase that is used as a description for close and intimate friendship. 
+																	- Best FriendBoyfriend - BF stands for Best Friend or Boyfriend in chat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BBF- BEST FEMALE FRIEND. 
+																	What is the full form of BF. 
+																	Sports Games Football. 
+																	- Burkina Faso - Burkina Faso ISO 3166 code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please Find Attachment Predictive Failure Analysis Protection From Abuse. 
+																	This Best friend forever is just not a word it works like a strong relation among people. 
+																	Below Given Is The Complete List Of Terms Used In ChattingTextingMessaging Full Forms. 
+																	But in this term they can be only females. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BBF- BEST FRIENDS FOREVER. 
+																	What is the full form of BF. 
+																	BFF describes your closest friend or love. 
+																	- Scottsbluff Airport - Scottsbluff Airport IATA code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Laughing My Ass Off. 
+																	Atrial Fibrillation As Fuck. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/e1/d9/07e1d9c1c2d78c0338bc0d179a52c780.jpg" data-lightbox="roadtrip" data-title="100 Popular Texting Abbreviations And Internet Acronyms In English Eslbuzz Learning English Sms Language English Words Slang Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/e1/d9/07e1d9c1c2d78c0338bc0d179a52c780.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLiWpDmkD9BDefPsPPXfMjgqg8XOED_w5hQ';" alt="100 Popular Texting Abbreviations And Internet Acronyms In English Eslbuzz Learning English Sms Language English Words Slang Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Popular Texting Abbreviations And Internet Acronyms In English Eslbuzz Learning English Sms Language English Words Slang Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/06/87/2306872593b44dcc007d687e784696cc.jpg" data-lightbox="roadtrip" data-title="Dear Best Friend Happy Birthday Quotes For Friends Happy Birthday Best Friend Quotes Friend Birthday Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/06/87/2306872593b44dcc007d687e784696cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRighZPmvvrw2Zn7rF08hFu7mrgtHnvJm_6WQ';" alt="Dear Best Friend Happy Birthday Quotes For Friends Happy Birthday Best Friend Quotes Friend Birthday Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dear Best Friend Happy Birthday Quotes For Friends Happy Birthday Best Friend Quotes Friend Birthday Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/49/15/a04915787e7adb14afa0b81f28bf6e56.jpg" data-lightbox="roadtrip" data-title="Friendship Quotes Beach Victory Friends Quotes Words Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/49/15/a04915787e7adb14afa0b81f28bf6e56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU611zVVURxQxXJL-g8z7CFvuv7Fbk3haghQ';" alt="Friendship Quotes Beach Victory Friends Quotes Words Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Friendship Quotes Beach Victory Friends Quotes Words Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/8c/51/dd8c5149b3278857130f326d29b088cf.jpg" data-lightbox="roadtrip" data-title="Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Learn English English Phrases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/8c/51/dd8c5149b3278857130f326d29b088cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7H2P1mSKjSMNiCdbI49BDT4mfU4A-iW9YRg';" alt="Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Learn English English Phrases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sms Language Texting Chat Abbreviations Eslbuzz Learning English Sms Language Learn English English Phrases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/25/2e/dc252eda5528e672b8ce3fdfb7ffff7a.jpg" data-lightbox="roadtrip" data-title="I Feel That Way About My Bff Friendship Quotes Friends In Love Friends Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/25/2e/dc252eda5528e672b8ce3fdfb7ffff7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMWhyMF1erPxfhNYucC75c8FqAp5912a0dOg';" alt="I Feel That Way About My Bff Friendship Quotes Friends In Love Friends Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Feel That Way About My Bff Friendship Quotes Friends In Love Friends Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/e5/f9/79e5f9822e5b1996615f65b14703b40a.png" data-lightbox="roadtrip" data-title="Pin On Knowledge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/e5/f9/79e5f9822e5b1996615f65b14703b40a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqfU2Fgst-GkgJZA9IvKzdRJUzk7jrpI9bg';" alt="Pin On Knowledge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Knowledge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/16/9b/59169bead4ee5549b14337c0e2241ee4.jpg" data-lightbox="roadtrip" data-title="Lyric Quote L Fun Quotes Funny Friends Quotes Funny Flirting Quotes For Her">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/16/9b/59169bead4ee5549b14337c0e2241ee4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMfUb6RvvLeYmxwGB5UWbkrmW99tI_pONmw';" alt="Lyric Quote L Fun Quotes Funny Friends Quotes Funny Flirting Quotes For Her">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lyric Quote L Fun Quotes Funny Friends Quotes Funny Flirting Quotes For Her</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ec/19/a8/ec19a8e5518ed5fe9b38c10f900ddaae.jpg" data-lightbox="roadtrip" data-title="Lol Full Form Lol Stands For Lol Meaning What Is The Full Form Of Lol Mean Humor Reality Quotes Lol">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ec/19/a8/ec19a8e5518ed5fe9b38c10f900ddaae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZzKjExwkn2lAgXnbApTbWcTPHG-Lxwz6IMQ';" alt="Lol Full Form Lol Stands For Lol Meaning What Is The Full Form Of Lol Mean Humor Reality Quotes Lol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lol Full Form Lol Stands For Lol Meaning What Is The Full Form Of Lol Mean Humor Reality Quotes Lol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/57/7c/c3577cad753755c6ef51b9a3c88a81f8.jpg" data-lightbox="roadtrip" data-title="Internet Slang 50 Popular Texting Abbreviations Acronyms Eslbuzz Learning English Learn English Learn English Words Sms Language">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/57/7c/c3577cad753755c6ef51b9a3c88a81f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYnH9tGMXZ_OkfnZPQw652YdXkZt2q2RS3Gg';" alt="Internet Slang 50 Popular Texting Abbreviations Acronyms Eslbuzz Learning English Learn English Learn English Words Sms Language">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Internet Slang 50 Popular Texting Abbreviations Acronyms Eslbuzz Learning English Learn English Learn English Words Sms Language</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/29/23/862923d35a2d3a5cdac021c7e06dbda8.jpg" data-lightbox="roadtrip" data-title="Dear Best Friend Letter Tumblr Google Search Dear Best Friend Letters Friend Birthday Quotes Happy Birthday Best Friend Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/29/23/862923d35a2d3a5cdac021c7e06dbda8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI3FWG1Gh_BnffdVk8dqMmj3TCH5ISvwxdeA';" alt="Dear Best Friend Letter Tumblr Google Search Dear Best Friend Letters Friend Birthday Quotes Happy Birthday Best Friend Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dear Best Friend Letter Tumblr Google Search Dear Best Friend Letters Friend Birthday Quotes Happy Birthday Best Friend Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/78/ae/6a78ae3c647b558c6c208005fad0b9ac.jpg" data-lightbox="roadtrip" data-title="Double Meaning Bf And Gf Chats Double Meaning Fun Quotes Funny Super Funny Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/78/ae/6a78ae3c647b558c6c208005fad0b9ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Tp0BfrmUVT_rrVwmcFlKsjW3DLzVuylALg';" alt="Double Meaning Bf And Gf Chats Double Meaning Fun Quotes Funny Super Funny Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Double Meaning Bf And Gf Chats Double Meaning Fun Quotes Funny Super Funny Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/de/8e/74de8ef99a7fca13506ed927367a6fcd.jpg" data-lightbox="roadtrip" data-title="English Whatsapp Abbreviations List Jk Just Kidding Kk Okay Cool Ku Kiss You L8 Late Lu English Vocabulary Words Learn English Words English Writing Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/de/8e/74de8ef99a7fca13506ed927367a6fcd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKbNux2MrNQDBDC_Nc_tQ8POw6MX4rZJmTg';" alt="English Whatsapp Abbreviations List Jk Just Kidding Kk Okay Cool Ku Kiss You L8 Late Lu English Vocabulary Words Learn English Words English Writing Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">English Whatsapp Abbreviations List Jk Just Kidding Kk Okay Cool Ku Kiss You L8 Late Lu English Vocabulary Words Learn English Words English Writing Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/73/55/2c/73552c84b0ceac35165e706c03967994.jpg" data-lightbox="roadtrip" data-title="Make Friends Being Happy God Bless Bella Xo Page 2 Christian Chat Rooms Fo Special Friend Quotes Birthday Quotes For Best Friend Friends Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/73/55/2c/73552c84b0ceac35165e706c03967994.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kRi5wI5cleUom5-q8f9F_jQfbzMXaNVYJg';" alt="Make Friends Being Happy God Bless Bella Xo Page 2 Christian Chat Rooms Fo Special Friend Quotes Birthday Quotes For Best Friend Friends Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Make Friends Being Happy God Bless Bella Xo Page 2 Christian Chat Rooms Fo Special Friend Quotes Birthday Quotes For Best Friend Friends Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/1f/5f/bc1f5f315ded41714b32327d055148fd.jpg" data-lightbox="roadtrip" data-title="The Midnight Writer On Instagram Dear Best Friend You Are Everything To Me Friend Birthday Quotes My Best Friend Quotes Happy Birthday Quotes For Friends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/1f/5f/bc1f5f315ded41714b32327d055148fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvHqGYAiIqHYK-m1O8ceB_q99Liy1-nBwT1Q';" alt="The Midnight Writer On Instagram Dear Best Friend You Are Everything To Me Friend Birthday Quotes My Best Friend Quotes Happy Birthday Quotes For Friends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Midnight Writer On Instagram Dear Best Friend You Are Everything To Me Friend Birthday Quotes My Best Friend Quotes Happy Birthday Quotes For Friends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/eb/f3/34ebf3d35b987d764f047fcd603a929a.jpg" data-lightbox="roadtrip" data-title="3000 Common Acronyms With Meanings What Is An Acronym 7esl Acronym Words Learn English Words To Use">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/eb/f3/34ebf3d35b987d764f047fcd603a929a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiezMiewG5q2oqisbqZVmvomMyibU9YOt2g';" alt="3000 Common Acronyms With Meanings What Is An Acronym 7esl Acronym Words Learn English Words To Use">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3000 Common Acronyms With Meanings What Is An Acronym 7esl Acronym Words Learn English Words To Use</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-data-foreign-direct-investment.html">Imf Data Foreign Direct Investment</a></li>
+													<li class="list-group-item"><a href="/imf-data-economic-outlook.html">Imf Data Economic Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-data-gaps-initiative.html">Imf Data Gaps Initiative</a></li>
+													<li class="list-group-item"><a href="/imf-chief-great-depression.html">Imf Chief Great Depression</a></li>
+													<li class="list-group-item"><a href="/imf-classification-of-exchange-rate-arrangements-and-monetary-policy-framework.html">Imf Classification Of Exchange Rate Arrangements And Monetary Policy Framework</a></li>
+													<li class="list-group-item"><a href="/imf-chief-photo.html">Imf Chief Photo</a></li>
+													<li class="list-group-item"><a href="/imf-data-for-india.html">Imf Data For India</a></li>
+													<li class="list-group-item"><a href="/imf-data-fiscal-monitor.html">Imf Data Fiscal Monitor</a></li>
+													<li class="list-group-item"><a href="/imf-chief-kahn.html">Imf Chief Kahn</a></li>
+													<li class="list-group-item"><a href="/imf-chief-twitter.html">Imf Chief Twitter</a></li>
+													<li class="list-group-item"><a href="/imf-country-director-in-ghana.html">Imf Country Director In Ghana</a></li>
+													<li class="list-group-item"><a href="/imf-data-api-python.html">Imf Data Api Python</a></li>
+													<li class="list-group-item"><a href="/imf-data-breakeven-oil-price.html">Imf Data Breakeven Oil Price</a></li>
+													<li class="list-group-item"><a href="/imf-chief-risk-officer.html">Imf Chief Risk Officer</a></li>
+													<li class="list-group-item"><a href="/imf-data-country.html">Imf Data Country</a></li>
+													<li class="list-group-item"><a href="/imf-chief-lagarde.html">Imf Chief Lagarde</a></li>
+													<li class="list-group-item"><a href="/imf-chief-list.html">Imf Chief List</a></li>
+													<li class="list-group-item"><a href="/imf-data-angola.html">Imf Data Angola</a></li>
+													<li class="list-group-item"><a href="/imf-crisis-philippines.html">Imf Crisis Philippines</a></li>
+													<li class="list-group-item"><a href="/imf-data-home-page.html">Imf Data Home Page</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

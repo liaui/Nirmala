@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Discount Car Rental - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Discount Car Rental",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/11/46/91/114691036785a51738af9c2e930ce82a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+discount+car+rental",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Discount Car Rental</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is a 5day per vehicle fee as required as per the terms of the US Government Car Rental Agreement. Enterprise is proud to support military government and veterans with special car rental rates for leisure travel and government travel purposes. Are you a US. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/imf-india-projected-growth.html">imf india projected growth</a>
+											<a class="badge badge-warning" href="/imf-inflation-low.html">imf inflation low</a>
+											<a class="badge badge-info" href="/imf-inflation-covid.html">imf inflation covid</a>
+											<a class="badge badge-warning" href="/imf-inflation-cpi.html">imf inflation cpi</a>
+											<a class="badge badge-dark" href="/imf-inflation-india.html">imf inflation india</a>
+											<a class="badge badge-dark" href="/imf-india-hindi.html">imf india hindi</a>
+											<a class="badge badge-danger" href="/imf-inflation-zimbabwe.html">imf inflation zimbabwe</a>
+											<a class="badge badge-danger" href="/imf-india-growth-target.html">imf india growth target</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/64/bf/c764bf0a5eb5fe66285e0b2a5657967b.png" data-lightbox="roadtrip" data-title="Car Rental Discounts Car Rental Military Discounts Save Money On Car Rentals Military Discounts Military Spouse Support Car Rental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/64/bf/c764bf0a5eb5fe66285e0b2a5657967b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr2WiF_MMKTshYOtpUNs7LXvA5tMlJeSf6Mg';" alt="Car Rental Discounts Car Rental Military Discounts Save Money On Car Rentals Military Discounts Military Spouse Support Car Rental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Rental Discounts Car Rental Military Discounts Save Money On Car Rentals Military Discounts Military Spouse Support Car Rental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/cf/2d/f1cf2d98da86d9bb2c09cbe6966c43d4.png" data-lightbox="roadtrip" data-title="The Best Military Discounts For Car Rentals You Should Know About Military Discounts Military Spouse Car Rental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/cf/2d/f1cf2d98da86d9bb2c09cbe6966c43d4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3vGkhoQGhAdgYIr2uWIMcpEKKgwvlxDSXg';" alt="The Best Military Discounts For Car Rentals You Should Know About Military Discounts Military Spouse Car Rental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Military Discounts For Car Rentals You Should Know About Military Discounts Military Spouse Car Rental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/aa/96/4f/aa964f84f716508f3fc3e0420739c345.jpg" data-lightbox="roadtrip" data-title="Here S Where To Find The Best Military Discounts For Car Rentals Cheap Car Rental Car Rental Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/aa/96/4f/aa964f84f716508f3fc3e0420739c345.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSELGtTNJvUB_hPBzm4hSecxJkap_OiT-CnhQ';" alt="Here S Where To Find The Best Military Discounts For Car Rentals Cheap Car Rental Car Rental Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S Where To Find The Best Military Discounts For Car Rentals Cheap Car Rental Car Rental Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/96/90/269690c8e41fdc707623c28d7252af51.jpg" data-lightbox="roadtrip" data-title="Military Discount On Car Rentals Veterans Day Discounts Military Discounts Europe Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/96/90/269690c8e41fdc707623c28d7252af51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyZwXntJgf2rRggHH2lL_DpA6AlPlZbyGvFQ';" alt="Military Discount On Car Rentals Veterans Day Discounts Military Discounts Europe Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Discount On Car Rentals Veterans Day Discounts Military Discounts Europe Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/6d/97/50/6d9750930a170af0ad8cd721b57efa53.jpg" data-lightbox="roadtrip" data-title="The Ultimate Website For Military Travel Military Only Travel Rental Car Discounts Best Car Rental Deals Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/6d/97/50/6d9750930a170af0ad8cd721b57efa53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa_e3f1fVcHM6fdhtZNvw_MzCZuZmSfY6EoQ';" alt="The Ultimate Website For Military Travel Military Only Travel Rental Car Discounts Best Car Rental Deals Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Website For Military Travel Military Only Travel Rental Car Discounts Best Car Rental Deals Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/87/80/6f8780b43c85ca561c81b8a5b836ef4b.jpg" data-lightbox="roadtrip" data-title="Military Discounts And Deals Insurance Quotes Car Insurance Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/87/80/6f8780b43c85ca561c81b8a5b836ef4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18KRolp3E6pkM2dgSZZWMq3gm_elfwu1z7Q';" alt="Military Discounts And Deals Insurance Quotes Car Insurance Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Discounts And Deals Insurance Quotes Car Insurance Insurance</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/6d/97/50/6d9750930a170af0ad8cd721b57efa53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18KRolp3E6pkM2dgSZZWMq3gm_elfwu1z7Q';" alt="Military Discounts And Deals Insurance Quotes Car Insurance Insurance">
+										<div class="card-body">
+						<h3 class="h5"><b>The Government Administrative Rate Supplement GARS is charged on all official travel.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army discount car rental</strong>. 
+								
+																	Military Government Car Rental Discounts Enterprise. 
+																	Save up to 25 off car rentals simply by being a member of Veterans Advantage. 
+																	Military veterans active-duty military National Guard Reservists and their families who have enrolled in Veterans Advantage. 
+																	Book an Offical Government Car Rental. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Around the world. 
+																	Dollar Car Rental Benefits for Military Members Once you sign up for VetRewards through Veterans Advantage you can start enjoying your 5 discount on all car rentals as well as these VetRewards membership benefits. 
+																	Check out all the military and government employee offers now. 
+																	Save Up To 60 on Hotels 35 on Rental Cars and More. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a USAA member renting with Enterprise you receive not only a member discount on everyday low rates but also other special benefits. 
+																	Book an Official Government Car Rental. 
+																	In our opinion Avis offers by FAR the best military discount out of any of the major US rental car companies. 
+																	Alamo Rent a Car offers multiple benefits including discounted rates to service members on and off active-duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get it on Google Play National Car Rental. 
+																	To show our gratitude Avis offers military rate car rentals of up to 25 off base rates. 
+																	Rent a car with Thrifty to enjoy extra discounts and savings. 
+																	Your Hertz Rental Car Discount Code CDP will be pre-populated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Jewelry Factory 10 discount Accommodations Car Rentals. 
+																	DOES ENTERPRISE OFFER A MILITARY DISCOUNT. 
+																	The Avis military discount can help members of the military save as much as 25 on their next car rental. 
+																	Where can I use the Enterprise military car rental discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more car rental deals and discounts join Alamo Insiders. 
+																	Not yet a Veterans Advantage member. 
+																	Apple Download on the app store National Car Rental. 
+																	Immediate online and phone access to Dollar car rental discounts and many others available 365 days a year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Government and military family members with dependent identification are also eligible for discounted car rental rates on leisure rates. 
+																	Military personnel travelling with orders save 20 of your rental from Budget. 
+																	Military veterans active-duty military National Guard and Reservists and their families Budget is honored to provide a military discount on car rental. 
+																	In addition we have a presence on military bases across the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use discount code below. 
+																	Pick-up service policies hours of availability allowable pick-up distance etc vary by location so its important that you call the location and make arrangements for pick-up at least 24 hours before your desired rental time. 
+																	To use our free pick-up service call your A rental location directly at the location phone number listed on your reservation confirmation. 
+																	Military or Federal Government employee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Budget Rent A Car 10 discount on your car rental. 
+																	If you are a military veteran who is currently a member of Veterans Advantage you qualify for special benefits such as a 5 military car rental discount. 
+																	To recognize the service of US. 
+																	Enterprise is proud to have a relationship with organizations that support the military community like USAA and the VFW. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A military or Government-issued ID may be required at time of pick up. 
+																	250 As part of Keys to Progress weve donated more than 250 vehicles with. 
+																	For Government Leisure Travel Enterprise offers a 5 discount off base rates. 
+																	Click Here to find out how to redeem the discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 Off Car Rentals for Active Military and Veterans. 
+																	Avis Benefits for Military Personnel. 
+																	Find cheap car rentals last minute specials military discounts in the US. 
+																	Car Rental FAQs Military Discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn more about the full benefits of renting with Thrifty as a Veterans Advantage member by visiting our Veterans Advantage page. 
+																	CODES 1 days ago You are not required to have a membership to any military-related association to take advantage of Enterprises military car rental discounts. 
+																	This veteran discount on car rental applies to US. 
+																	Military Discount on Car Rental Insurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military discount cannot be used with any other discounts promotional rates or promotional offers. 
+																	There are Enterprise rental facilities on more than 65 US military bases across the country. 
+																	The minimum age for off-duty military rental is 21 years old but rates may be higher for renters under age 25. 
+																	What are the military and government discount rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Judi of Croix 10 discount on your car rental. 
+																	Its free and easy to join. 
+																	Please request discount at time of inquiry or reservation. 
+																	Discount is off time and mileage of The Best Available Rate Visit the Budget website for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Avis Car Rental is headquartered in Parsippany New Jersey. 
+																	For Official Government Travel we offer specific contracted rates to make renting easier for active-duty military and government personnel. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/1c/09/c71c095caceaaec675c6f1bd87375280.jpg" data-lightbox="roadtrip" data-title="Pin By Forces Cars Direct On Forces Cars Direct Offers Military Discounts Saloon Audi A3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/1c/09/c71c095caceaaec675c6f1bd87375280.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU7vDxIJgQjQnygHKCgs4u8L1dq9thsVf2YA';" alt="Pin By Forces Cars Direct On Forces Cars Direct Offers Military Discounts Saloon Audi A3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Forces Cars Direct On Forces Cars Direct Offers Military Discounts Saloon Audi A3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/f1/f8/7af1f876ce64602ac17e5907cf201bce.jpg" data-lightbox="roadtrip" data-title="Usaa Exclusive Save Up To 1 400 Per Cabin On Select Europe River Cruises Usaashopping Usaatravel River Cruises In Europe Sailing Books River Cruises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/f1/f8/7af1f876ce64602ac17e5907cf201bce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4W75LZSBG5KBa4-YT0HYeZihpxph8vR-k0g';" alt="Usaa Exclusive Save Up To 1 400 Per Cabin On Select Europe River Cruises Usaashopping Usaatravel River Cruises In Europe Sailing Books River Cruises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaa Exclusive Save Up To 1 400 Per Cabin On Select Europe River Cruises Usaashopping Usaatravel River Cruises In Europe Sailing Books River Cruises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/b6/5c/5fb65c6723c086cceadfe7df5bae8573.png" data-lightbox="roadtrip" data-title="Uhaul Discount Code Military Discount Code Military Families Upto 90 Off Uhaulmilitarydiscountcode2019 Uhauldiscountc Uhaul Truck Uhaul Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/b6/5c/5fb65c6723c086cceadfe7df5bae8573.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32U8TawyQKeY-D4oTnSJSN_rO4givKRG2Cw';" alt="Uhaul Discount Code Military Discount Code Military Families Upto 90 Off Uhaulmilitarydiscountcode2019 Uhauldiscountc Uhaul Truck Uhaul Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uhaul Discount Code Military Discount Code Military Families Upto 90 Off Uhaulmilitarydiscountcode2019 Uhauldiscountc Uhaul Truck Uhaul Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/57/7b/ab577be7bd2a94d19fca8ae8f0ea1e7b.jpg" data-lightbox="roadtrip" data-title="Welcome To Usaa Enterprise Car Rental Car Rental Coupons Enterprise Car Rental Coupons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/57/7b/ab577be7bd2a94d19fca8ae8f0ea1e7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBtRsKfLqdoVFIZ65uAloRSXNzW3rQREflpg';" alt="Welcome To Usaa Enterprise Car Rental Car Rental Coupons Enterprise Car Rental Coupons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Usaa Enterprise Car Rental Car Rental Coupons Enterprise Car Rental Coupons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/85/6a/e0856ac480dbd1743fcba83f43187c6b.jpg" data-lightbox="roadtrip" data-title="For Everything You Give We Want To Give Something Back Click To Read More About Our Military Rebate Rebates Military Toyota Dealers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/85/6a/e0856ac480dbd1743fcba83f43187c6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXHlQG9R9qQmAdN0EfYb0lGaMsZPScPfVyUQ';" alt="For Everything You Give We Want To Give Something Back Click To Read More About Our Military Rebate Rebates Military Toyota Dealers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Everything You Give We Want To Give Something Back Click To Read More About Our Military Rebate Rebates Military Toyota Dealers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/e8/a0/86e8a0971af75d0e8ebf4dd7e7e77574.jpg" data-lightbox="roadtrip" data-title="Car Insurance Companies That Give Military Discount Car Insurance Military Discounts Best Car Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/e8/a0/86e8a0971af75d0e8ebf4dd7e7e77574.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEKqdMf9OZAi3lLY9tRQslTMMNAIkafD1OQ';" alt="Car Insurance Companies That Give Military Discount Car Insurance Military Discounts Best Car Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Insurance Companies That Give Military Discount Car Insurance Military Discounts Best Car Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/99/51/d999513474fef77f40f6f66ae7872b2d.png" data-lightbox="roadtrip" data-title="Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/99/51/d999513474fef77f40f6f66ae7872b2d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-nVTlibh7oxeN44SrH1jBQ91QzB1-x9A5A';" alt="Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/39/03/9c3903cc4b0492ff25bb56ecf067db27.jpg" data-lightbox="roadtrip" data-title="Sign Up For Military And Government Discounts On Travel Https Www Govvacationrewards Com Operation Travel Discount Travel Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/39/03/9c3903cc4b0492ff25bb56ecf067db27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewTdiVS56EWqIRx8QHAryDL5r7ewF_NpU8A';" alt="Sign Up For Military And Government Discounts On Travel Https Www Govvacationrewards Com Operation Travel Discount Travel Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign Up For Military And Government Discounts On Travel Https Www Govvacationrewards Com Operation Travel Discount Travel Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/93/90/1a9390f60ec882ce5d397e7aa0a5cf09.jpg" data-lightbox="roadtrip" data-title="Car Rentals تأجير سيارات سياحية بأسعار مناسبة Car Low Cost Cars Free Cars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/93/90/1a9390f60ec882ce5d397e7aa0a5cf09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9ODWc7_9gVxYMMVfg16DzZac1SzyAF6rjw';" alt="Car Rentals تأجير سيارات سياحية بأسعار مناسبة Car Low Cost Cars Free Cars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Rentals تأجير سيارات سياحية بأسعار مناسبة Car Low Cost Cars Free Cars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e7/10/37/e71037716af03eb007d947afd480a9c6.jpg" data-lightbox="roadtrip" data-title="Pin On The Travel Bug">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e7/10/37/e71037716af03eb007d947afd480a9c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAO9lVB6ipORidfzb0EixB8IpcgSvOeufGzQ';" alt="Pin On The Travel Bug">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Travel Bug</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/e4/f9/42e4f921e80074bfbfe04818d694a6c0.jpg" data-lightbox="roadtrip" data-title="Ul Listed Omnihil 10 Feet Long Ac Power Cord Compatible With Lumens Dc160 Military Wife Life Army Wife Life Navy Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/e4/f9/42e4f921e80074bfbfe04818d694a6c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbWkMqA2OfKqyap019KEq9t6IE0O89mDpSvg';" alt="Ul Listed Omnihil 10 Feet Long Ac Power Cord Compatible With Lumens Dc160 Military Wife Life Army Wife Life Navy Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ul Listed Omnihil 10 Feet Long Ac Power Cord Compatible With Lumens Dc160 Military Wife Life Army Wife Life Navy Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/27/82/952782890b4ef8d7d0d2c640a512ace9.png" data-lightbox="roadtrip" data-title="5 Tips To Get The Best Deal On Your Vacation Car Rental Home Life Abroad Car Rental Deals Best Car Rental Deals Car Rental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/27/82/952782890b4ef8d7d0d2c640a512ace9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt7e7phYPJhJ0PxR4_jOhYLB6fY1X4RFuVwA';" alt="5 Tips To Get The Best Deal On Your Vacation Car Rental Home Life Abroad Car Rental Deals Best Car Rental Deals Car Rental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Tips To Get The Best Deal On Your Vacation Car Rental Home Life Abroad Car Rental Deals Best Car Rental Deals Car Rental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/46/91/114691036785a51738af9c2e930ce82a.jpg" data-lightbox="roadtrip" data-title="Order Essays Online Uk Pharmacies Buy An Essay Online At Our Website We Are A Reliable Site Where You Can Bo Military Wife Life Military Deals Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/46/91/114691036785a51738af9c2e930ce82a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRURNo2DronIT6O-RO7kInLjHU7mWTtBOw3kA';" alt="Order Essays Online Uk Pharmacies Buy An Essay Online At Our Website We Are A Reliable Site Where You Can Bo Military Wife Life Military Deals Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Order Essays Online Uk Pharmacies Buy An Essay Online At Our Website We Are A Reliable Site Where You Can Bo Military Wife Life Military Deals Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/2b/18/5f/2b185f5a566a97877fd379ff845319c2.jpg" data-lightbox="roadtrip" data-title="Car Rental Discounts For Official Business And Leisure Rental Car Discounts Military Discounts Veterans Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/2b/18/5f/2b185f5a566a97877fd379ff845319c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUqDFmC_vvh8p8Rw1iEjagZ_gNeFGH0aBVKg';" alt="Car Rental Discounts For Official Business And Leisure Rental Car Discounts Military Discounts Veterans Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Rental Discounts For Official Business And Leisure Rental Car Discounts Military Discounts Veterans Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/81/d1/6b/81d16b74740f2fdf156285d970ee63e8.jpg" data-lightbox="roadtrip" data-title="7 Reasons To Love Being A Military Spouse Mrs Navy Mama Military Spouse Military Wife Life Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/81/d1/6b/81d16b74740f2fdf156285d970ee63e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXhyO5vdAIeojFKVYRGwXo1bg6_M1Zlb2PtQ';" alt="7 Reasons To Love Being A Military Spouse Mrs Navy Mama Military Spouse Military Wife Life Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Reasons To Love Being A Military Spouse Mrs Navy Mama Military Spouse Military Wife Life Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-fiscal-breakeven-oil-price-2020.html">Imf Fiscal Breakeven Oil Price 2020</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-deflator.html">Imf Gdp Deflator</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-report.html">Imf Exchange Rate Report</a></li>
+													<li class="list-group-item"><a href="/imf-full-meaning.html">Imf Full Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-fee-meaning.html">Imf Fee Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-egypt.html">Imf Gdp Egypt</a></li>
+													<li class="list-group-item"><a href="/imf-failures-argentina.html">Imf Failures Argentina</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-system.html">Imf Exchange Rate System</a></li>
+													<li class="list-group-item"><a href="/imf-financial-stability-report-april-2020.html">Imf Financial Stability Report April 2020</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-valuation.html">Imf Exchange Rate Valuation</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-estimates-2020.html">Imf Gdp Estimates 2020</a></li>
+													<li class="list-group-item"><a href="/imf-full-form-in-english.html">Imf Full Form In English</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-data-2019.html">Imf Gdp Data 2019</a></li>
+													<li class="list-group-item"><a href="/imf-executive-director-japan.html">Imf Executive Director Japan</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rates-for-iraq.html">Imf Exchange Rates For Iraq</a></li>
+													<li class="list-group-item"><a href="/imf-forecast-us-gdp-2020.html">Imf Forecast Us Gdp 2020</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-sdr.html">Imf Exchange Rate Sdr</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-outlook.html">Imf Exchange Rate Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-usd.html">Imf Exchange Rate Usd</a></li>
+													<li class="list-group-item"><a href="/imf-gdp-data-excel.html">Imf Gdp Data Excel</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

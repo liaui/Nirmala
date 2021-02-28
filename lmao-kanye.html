@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Lmao Kanye - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Lmao Kanye",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/4e/ed/ab/4eedabcb2b79ee0f417c8460ffed4861.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lmao+kanye",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Lmao Kanye</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Thread starter M U R K Y. Kayne West and Kim Kardashians divorce may be a bunch of celebrity bullshit but its also a great learning opportunity about love life and marriage. Dedicated to Kanye West. <br>				
+			</p>
+										<a class="badge badge-danger" href="/why-is-tuft-and-needle-so-cheap.html">why is tuft and needle so cheap</a>
+											<a class="badge badge-warning" href="/world-gdp-quarterly-data-imf.html">world gdp quarterly data imf</a>
+											<a class="badge badge-info" href="/why-do-veterans-get-discounts.html">why do veterans get discounts</a>
+											<a class="badge badge-dark" href="/who-is-chief-of-imf.html">who is chief of imf</a>
+											<a class="badge badge-primary" href="/xfinity-mobile-veteran-discount.html">xfinity mobile veteran discount</a>
+											<a class="badge badge-success" href="/why-does-the-imf-support-debt-relief-for-poor-countries.html">why does the imf support debt relief for poor countries</a>
+											<a class="badge badge-light" href="/who-accepts-military-discounts.html">who accepts military discounts</a>
+											<a class="badge badge-warning" href="/whats-imao.html">whats imao</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/7f/d1/cb7fd1aaf24a5fa06289691568dd0873.jpg" data-lightbox="roadtrip" data-title="Pin By Beatriz Valente On Ahah Kanye West Funny Kanye West Meme Reaction Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/7f/d1/cb7fd1aaf24a5fa06289691568dd0873.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmjU9N0pYPxHr_780SzDIvVwPHRhTxNr4NA';" alt="Pin By Beatriz Valente On Ahah Kanye West Funny Kanye West Meme Reaction Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Beatriz Valente On Ahah Kanye West Funny Kanye West Meme Reaction Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/63/27/98632763ce22d20e2e2c1741ed968e7e.png" data-lightbox="roadtrip" data-title="Pin On Ha">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/63/27/98632763ce22d20e2e2c1741ed968e7e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvwKy5La5TdcD_zDphlySeeI_x86kcMfGQjg';" alt="Pin On Ha">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ha</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/4b/89/134b8983bdcd65c9b870618701e66fb8.jpg" data-lightbox="roadtrip" data-title="Kanye West Memes Comedy Funnypictures Humor Lol Lmao Humor Funny Funny Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/4b/89/134b8983bdcd65c9b870618701e66fb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRCFLFKU9PrEcRdrXGXeSm6r6W9JlWnFBmA';" alt="Kanye West Memes Comedy Funnypictures Humor Lol Lmao Humor Funny Funny Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kanye West Memes Comedy Funnypictures Humor Lol Lmao Humor Funny Funny Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/b0/53/e7b05350576a56ed6e1bb031cba460e2.jpg" data-lightbox="roadtrip" data-title="Lmao Kanye Kanye West Funny Kanye Memes You Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/b0/53/e7b05350576a56ed6e1bb031cba460e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrq82YFJo05nH2meihMFAvLYEy5u3sGky10Q';" alt="Lmao Kanye Kanye West Funny Kanye Memes You Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Kanye Kanye West Funny Kanye Memes You Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/42/c8/c742c850164dc82de2e9451b13ca9e19.jpg" data-lightbox="roadtrip" data-title="Lmao Menso Kanye West Funny Laughter I Love To Laugh">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/42/c8/c742c850164dc82de2e9451b13ca9e19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREra2nhi79zqnaAyi3Pz-1-Hxd2TaxpuyX6A';" alt="Lmao Menso Kanye West Funny Laughter I Love To Laugh">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Menso Kanye West Funny Laughter I Love To Laugh</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/56/fd/5d56fda1dded06ab5749a28396b9d575.jpg" data-lightbox="roadtrip" data-title="Lmao Youaintgottheanswers Funny Memes Kanye West Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/56/fd/5d56fda1dded06ab5749a28396b9d575.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnadSuTyYgqX0H8RretksKk-qLyBlRBUrBA';" alt="Lmao Youaintgottheanswers Funny Memes Kanye West Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Youaintgottheanswers Funny Memes Kanye West Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/4e/ed/ab/4eedabcb2b79ee0f417c8460ffed4861.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnadSuTyYgqX0H8RretksKk-qLyBlRBUrBA';" alt="Lmao Youaintgottheanswers Funny Memes Kanye West Life">
+										<div class="card-body">
+						<h3 class="h5"><b>444k members in the Kanye community.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Lmao kanye</strong>. 
+								
+																	Kanyes going to continue to fall but I dont blame Kim for cutting out if its too much for her and the kids. 
+																	105 votes 22 comments. 
+																	Jan 6 2021 2. 
+																	Kanye Files Restraining Order Against Daz Dillinger Hollywood Street King LLC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On September 22nd Tumblr user haunted-sugoi posted the image with the caption this is all that matters Three days later the single topic blog Ayy Lmao Alien was created and began reblogging other photos of aliens with the caption from across Tumblr. 
+																	Jan 6 2021 1 Kanye cheated on Kim with a Tranny. 
+																	B R Y A N All-American. 
+																	Start date Jan 6 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Log In Sign Up. 
+																	By Jack Smith IV. 
+																	After days of exhausting his fans with tweets celebrating the president. 
+																	Oct 25 2017 1521. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kanye Left A Threatening Message For Michael Blackson. 
+																	Oct 27 2017 16270. 
+																	Press J to jump to the feed. 
+																	Previously Perezs tie-dye shirts for the Biden campaign showcased a cognitive dissonance with the tepid progressivism of his legislative history and proposed policies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	105k votes 145 comments. 
+																	Dedicated to Kanye West. 
+																	Posted by just now. 
+																	There was a moment during rapper Kanye Wests 10-minute Oval Office soliloquy on um hydrogen planes alternative universes and the 13th Amendment among LOTS of other things when the cameras. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dec 12 2020 1355 5450 113. 
+																	Said He Was Hanging With Trump When He Called. 
+																	LMAO kanye just freestyled at his concert and said I hope they build the wallI hope they get rid of them all. 
+																	Like qm now and laugh more daily. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	447k members in the Kanye community. 
+																	JonnGrey November 18 2016. 
+																	So we dug up the most genius creative. 
+																	Watch JLo Twerk to Rihannas Work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joe Perez the former Donda designer who helped create The Life of Pablo merch has teamed up again with the president-elect as one of five fashion designers trying to make inauguration apparel more stylish. 
+																	Kanye Reveals What Gets Him In Trouble With Kim During A Game With Ellen. 
+																	Dec 5 2020 490 689 93. 
+																	Kim Kanye Want Yall To Believe They Turned Down 5 Million for Wild Wests First Pictures Discussion in The Kardashians started by TWEET HUMMELS Jan 17 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMAO GG Kanye West. 
+																	CAD703X Toledo Fan Liberty Island Member since Jul 2008 67940 posts Liberty Island Member since Jul 2008 67940 posts. 
+																	Press question mark to learn the rest of the keyboard shortcuts. 
+																	Log in or sign up to leave a comment Log In Sign Up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMAO they truly deserved each other. 
+																	XDAdd me on Twitter. 
+																	Dedicated to Kanye West. 
+																	M U R K Y First Team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Over the years Kanye has had many profound thoughts on the nature of relationships as well as the importance of signing prenups and watching out for a spouse trying to take more than their fair share. 
+																	After being flanked by bodyguards following Daz Dillingers call to the Crips to fk Kanye up Yeezy has reportedly filed a restraining order. 
+																	On October 15th a second Facebook fan page titled Ayy Lmao was created this time using the familiar alien image as its cover photo. 
+																	Jan 5 2021 23. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kanye West just tweeted the work of Jordan Peterson another conservative thinker. 
+																	It hurts that their toxicity is no longer contained under one roof. 
+																	The Beyhive Sting Wrong Rachel In Beyonces Defense. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/ae/e7/4aaee7a629895efd0213b4b37527236a.jpg" data-lightbox="roadtrip" data-title="Follow Sendmeaestheticmemes Tag A Friend Memes Meme Funnymemes Fun Funny Goodmemes M Kanye Kanye West Kanye West Outfits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/ae/e7/4aaee7a629895efd0213b4b37527236a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiSyP9gRjvE7rJ1fLn3XTQt-IibR-28UOeew';" alt="Follow Sendmeaestheticmemes Tag A Friend Memes Meme Funnymemes Fun Funny Goodmemes M Kanye Kanye West Kanye West Outfits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow Sendmeaestheticmemes Tag A Friend Memes Meme Funnymemes Fun Funny Goodmemes M Kanye Kanye West Kanye West Outfits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/e9/a3/ebe9a36c3f0a15484b3bea3ba4f403f5.jpg" data-lightbox="roadtrip" data-title="Pin On Everything And Anything">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/e9/a3/ebe9a36c3f0a15484b3bea3ba4f403f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZTrAOEXzdVwxQnmDzL8kwHqdnC0Tvm9PIQ';" alt="Pin On Everything And Anything">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Everything And Anything</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3d/83/92/3d8392fb911c6006c04a6d510f7a93f3.jpg" data-lightbox="roadtrip" data-title="Ihatetheinternet Whodidthis Ptcares Vlogger Vlog Blogger Blog Humor Funny Lol Lol Lmao Lmao Lmbo Lmbo Curre Current Events Vlogging Kanye West">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3d/83/92/3d8392fb911c6006c04a6d510f7a93f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStNRtYiVHmqCrnuAdmg1wEw1U7RAW44ENsA';" alt="Ihatetheinternet Whodidthis Ptcares Vlogger Vlog Blogger Blog Humor Funny Lol Lol Lmao Lmao Lmbo Lmbo Curre Current Events Vlogging Kanye West">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ihatetheinternet Whodidthis Ptcares Vlogger Vlog Blogger Blog Humor Funny Lol Lol Lmao Lmao Lmbo Lmbo Curre Current Events Vlogging Kanye West</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/63/ca/c663ca9c7546d40d32b85549d213da0b.jpg" data-lightbox="roadtrip" data-title="Pin By Genevieve On Lmao Facts Kanye West Funny Kanye West Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/63/ca/c663ca9c7546d40d32b85549d213da0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQURT-1i5TNFe8-LTGXAU4UKJgTO3Wbr4UPWQ';" alt="Pin By Genevieve On Lmao Facts Kanye West Funny Kanye West Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Genevieve On Lmao Facts Kanye West Funny Kanye West Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/79/31/237931f768ef55b97eca17057f6b35ab.jpg" data-lightbox="roadtrip" data-title="Kanye Is Hated Mostly For His Huge Ego In Numerous Twitter Rants And Interviews Senior Quotes Funny Senior Quotes Yearbook Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/79/31/237931f768ef55b97eca17057f6b35ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDOawr-YkCkdaDmeKdvtF8J7mLyPzOArKEA';" alt="Kanye Is Hated Mostly For His Huge Ego In Numerous Twitter Rants And Interviews Senior Quotes Funny Senior Quotes Yearbook Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kanye Is Hated Mostly For His Huge Ego In Numerous Twitter Rants And Interviews Senior Quotes Funny Senior Quotes Yearbook Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/5b/67/005b67160da48ca772d7fc0f1ea3c40a.jpg" data-lightbox="roadtrip" data-title="Kanye West Jay Z Kim K Lmao Lol Hysterically Funny Funny Facts Husband Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/5b/67/005b67160da48ca772d7fc0f1ea3c40a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWDYslOpWdCWO2hEmfNXNcxkBQYP9vSbHnpA';" alt="Kanye West Jay Z Kim K Lmao Lol Hysterically Funny Funny Facts Husband Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kanye West Jay Z Kim K Lmao Lol Hysterically Funny Funny Facts Husband Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4e/ed/ab/4eedabcb2b79ee0f417c8460ffed4861.jpg" data-lightbox="roadtrip" data-title="Ihatetheinternet Who Is Doing This Ptcares Vlogger Vlog Blogger Blog Humor Funny Lol Lol Lmao Lmao Kanye West Photo Kanye West Kanye West Picture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4e/ed/ab/4eedabcb2b79ee0f417c8460ffed4861.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ9C6ELjfH9Y0Ds_4z7HNPSxaUtVGbL5NNkA';" alt="Ihatetheinternet Who Is Doing This Ptcares Vlogger Vlog Blogger Blog Humor Funny Lol Lol Lmao Lmao Kanye West Photo Kanye West Kanye West Picture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ihatetheinternet Who Is Doing This Ptcares Vlogger Vlog Blogger Blog Humor Funny Lol Lol Lmao Lmao Kanye West Photo Kanye West Kanye West Picture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/e2/8d/ade28d61ad12fe1f98878e2fc9cc5da7.jpg" data-lightbox="roadtrip" data-title="Lmao Lol Funny Humor Blackpeopletwitter Kanye West Style Kanye Fashion Kanye West">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/e2/8d/ade28d61ad12fe1f98878e2fc9cc5da7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnLu7yD16Rjtd8rKeU4JDgmglAov9XlmbDkQ';" alt="Lmao Lol Funny Humor Blackpeopletwitter Kanye West Style Kanye Fashion Kanye West">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Lol Funny Humor Blackpeopletwitter Kanye West Style Kanye Fashion Kanye West</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/32/4c/3a324c87e0264da8c5d77644eb3cde9c.jpg" data-lightbox="roadtrip" data-title="Lmao I Was Listening To Kanye West As I Saw This Post Funny Tumblr Stories Kanye West Funny Tumblr Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/32/4c/3a324c87e0264da8c5d77644eb3cde9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZfDv3DvdO3ybZAlEEvqYv5McuPJwNAA6nQ';" alt="Lmao I Was Listening To Kanye West As I Saw This Post Funny Tumblr Stories Kanye West Funny Tumblr Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao I Was Listening To Kanye West As I Saw This Post Funny Tumblr Stories Kanye West Funny Tumblr Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5c/57/00/5c5700879367e93447806403e78f115c.jpg" data-lightbox="roadtrip" data-title="Pin On Lmao">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5c/57/00/5c5700879367e93447806403e78f115c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQAKy7Tu-GGApX0VvSjLPXLP-SI1rJrNc9w';" alt="Pin On Lmao">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lmao</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b8/ae/9a/b8ae9af51bebdde75ea1976371f9b67f.jpg" data-lightbox="roadtrip" data-title="Pin By Babebia On T R U E L M A O Fact Quotes Tweet Quotes Kanye West Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b8/ae/9a/b8ae9af51bebdde75ea1976371f9b67f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQfT0z3JbBz1tw_LA90Vq9ShVKhJ_2d7MoA';" alt="Pin By Babebia On T R U E L M A O Fact Quotes Tweet Quotes Kanye West Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Babebia On T R U E L M A O Fact Quotes Tweet Quotes Kanye West Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/bc/cd/f2bccd2136ea0c9ece3c566d63c41eb9.jpg" data-lightbox="roadtrip" data-title="20 Years Celebrities Funny Funny Celebrity Pics Kanye West And Kim">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/bc/cd/f2bccd2136ea0c9ece3c566d63c41eb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB6mwIolefMDEt8VVtsykEvMnQ1Eo-ExyJYQ';" alt="20 Years Celebrities Funny Funny Celebrity Pics Kanye West And Kim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Years Celebrities Funny Funny Celebrity Pics Kanye West And Kim</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/39/66/7439661052f39f4d4941db6587743b22.jpg" data-lightbox="roadtrip" data-title="Lmao Oh Kanye Kanye West Kanye Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/39/66/7439661052f39f4d4941db6587743b22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfWGb6hplq5WKrMb7xLolwsA2gCR-DeJU6A';" alt="Lmao Oh Kanye Kanye West Kanye Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Oh Kanye Kanye West Kanye Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/fa/db/d1fadb67f27d899523b86674fdbf035a.jpg" data-lightbox="roadtrip" data-title="Kanye West And Kanye East Lmao Celebrity Name Puns Celebrity Puns Funny Celebrity Pics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/fa/db/d1fadb67f27d899523b86674fdbf035a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOTJXD0_rHHB7s9Pae0aWzgLPdkOwk0bGpg';" alt="Kanye West And Kanye East Lmao Celebrity Name Puns Celebrity Puns Funny Celebrity Pics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kanye West And Kanye East Lmao Celebrity Name Puns Celebrity Puns Funny Celebrity Pics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/87/25/3d8725ee2b9a0639cf9d6c8e8c96b75a.jpg" data-lightbox="roadtrip" data-title="Kanye West The New Workout Plan Long Version Lmao My Workout Song Funny Fun 3 Workout Plan Workout Warm Up Workout Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/87/25/3d8725ee2b9a0639cf9d6c8e8c96b75a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDZ75a2ySh5lVrRkNxoJDbB_MLTGFE8ndWQ';" alt="Kanye West The New Workout Plan Long Version Lmao My Workout Song Funny Fun 3 Workout Plan Workout Warm Up Workout Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kanye West The New Workout Plan Long Version Lmao My Workout Song Funny Fun 3 Workout Plan Workout Warm Up Workout Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-data-uae.html">Imf Data Uae</a></li>
+													<li class="list-group-item"><a href="/imf-debt-on-countries.html">Imf Debt On Countries</a></li>
+													<li class="list-group-item"><a href="/imf-debt-to-gdp-data.html">Imf Debt To Gdp Data</a></li>
+													<li class="list-group-item"><a href="/imf-data-non-performing-loans.html">Imf Data Non Performing Loans</a></li>
+													<li class="list-group-item"><a href="/imf-data-saudi-arabia.html">Imf Data Saudi Arabia</a></li>
+													<li class="list-group-item"><a href="/imf-debt-low-income-countries.html">Imf Debt Low Income Countries</a></li>
+													<li class="list-group-item"><a href="/imf-data-scientist.html">Imf Data Scientist</a></li>
+													<li class="list-group-item"><a href="/imf-data-vietnam.html">Imf Data Vietnam</a></li>
+													<li class="list-group-item"><a href="/imf-data-python.html">Imf Data Python</a></li>
+													<li class="list-group-item"><a href="/imf-data-sets.html">Imf Data Sets</a></li>
+													<li class="list-group-item"><a href="/imf-data-mapper-trade.html">Imf Data Mapper Trade</a></li>
+													<li class="list-group-item"><a href="/imf-data-mapper-october-2020.html">Imf Data Mapper October 2020</a></li>
+													<li class="list-group-item"><a href="/imf-data-public-debt.html">Imf Data Public Debt</a></li>
+													<li class="list-group-item"><a href="/imf-data-real-gdp-growth.html">Imf Data Real Gdp Growth</a></li>
+													<li class="list-group-item"><a href="/imf-data-net-international-investment-position.html">Imf Data Net International Investment Position</a></li>
+													<li class="list-group-item"><a href="/imf-data-on-indian-economy.html">Imf Data On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-data-russia.html">Imf Data Russia</a></li>
+													<li class="list-group-item"><a href="/imf-debt-sustainability-analysis-egypt.html">Imf Debt Sustainability Analysis Egypt</a></li>
+													<li class="list-group-item"><a href="/imf-data-python-api.html">Imf Data Python Api</a></li>
+													<li class="list-group-item"><a href="/imf-data-mapper-gdp-current.html">Imf Data Mapper Gdp Current</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

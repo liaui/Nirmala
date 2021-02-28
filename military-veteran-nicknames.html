@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Veteran Nicknames - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Veteran Nicknames",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/81/e9/e7/81e9e729d314891af77e56faa92758db.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+veteran+nicknames",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Veteran Nicknames</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Michael Wittman was an evil Nazi with an awesome nickname. What is different is the amount of information that must be transmitted in a short amount of time due to operational considerations. Some veterans service organizations such as the VFW and American Legion and other groups. <br>				
+			</p>
+										<a class="badge badge-primary" href="/lowes-military-id.html">lowes military id</a>
+											<a class="badge badge-info" href="/lmfao-box-head.html">lmfao box head</a>
+											<a class="badge badge-light" href="/lowes-on-military-and-zarzamora.html">lowes on military and zarzamora</a>
+											<a class="badge badge-success" href="/lowes-military-discount-no-longer-online.html">lowes military discount no longer online</a>
+											<a class="badge badge-primary" href="/lowes-military-and-zarzamora.html">lowes military and zarzamora</a>
+											<a class="badge badge-danger" href="/lowes-military-discount-memorial-day.html">lowes military discount memorial day</a>
+											<a class="badge badge-warning" href="/lowes-military-and-goliad.html">lowes military and goliad</a>
+											<a class="badge badge-dark" href="/lmfao-abbreviation.html">lmfao abbreviation</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/undertheradar-thumbnails/2015/07/2nd_US_Armored_Division_SSI.svg_.jpg?itok=LTwkPv0C" data-lightbox="roadtrip" data-title="The 15 Coolest Unit Nicknames In The Us Military Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/undertheradar-thumbnails/2015/07/2nd_US_Armored_Division_SSI.svg_.jpg?itok=LTwkPv0C" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ9EHhzvSU2JuVstliCoonUgL-WNPP8GJ-Cw';" alt="The 15 Coolest Unit Nicknames In The Us Military Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 15 Coolest Unit Nicknames In The Us Military Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.athlonoutdoors.com/wp-content/uploads/sites/8/2019/08/tlife-nickname-mac.jpg" data-lightbox="roadtrip" data-title="Chart Figure Out Your Official Tactical Nickname Tactical Life Gun Magazine Gun News And Gun Reviews">
+											<img class="card-img v-image ads-img " src="https://cdn.athlonoutdoors.com/wp-content/uploads/sites/8/2019/08/tlife-nickname-mac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc-zz-ZfDFhw0h9oTQ6SBZ-OZHISV0hFs9mQ';" alt="Chart Figure Out Your Official Tactical Nickname Tactical Life Gun Magazine Gun News And Gun Reviews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chart Figure Out Your Official Tactical Nickname Tactical Life Gun Magazine Gun News And Gun Reviews</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.legion.org/sites/legion.org/files/legion/magazine/nickname_mag_p1_0.jpg" data-lightbox="roadtrip" data-title="Military Monikers The American Legion">
+											<img class="card-img v-image ads-img " src="https://www.legion.org/sites/legion.org/files/legion/magazine/nickname_mag_p1_0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGqb1NeWz9rcIJDRfPGxX3BWk1cBhVdRZ6w';" alt="Military Monikers The American Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Monikers The American Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17289691/origin.jpg" data-lightbox="roadtrip" data-title="The 15 Coolest Unit Nicknames In The Us Military We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17289691/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnv_D5r3gq2rN8s3ipJU4Ly_XqDPOgRXdOQ';" alt="The 15 Coolest Unit Nicknames In The Us Military We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 15 Coolest Unit Nicknames In The Us Military We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/undertheradar-images/2015/05/STACY-L-PEARSALL-043-copy.jpg?itok=T9s8_Z0G" data-lightbox="roadtrip" data-title="37 Been There Done That Nicknames For Military Gear Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/undertheradar-images/2015/05/STACY-L-PEARSALL-043-copy.jpg?itok=T9s8_Z0G" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskoKbhBSj0QjER4CL0Tgu7QBG23LQrKDURg';" alt="37 Been There Done That Nicknames For Military Gear Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">37 Been There Done That Nicknames For Military Gear Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/lEea1MbhG3Zowj5oD4H6_nkzBs6v8JyDUG9xZwj8Yqw.jpg?auto=webp&amp;s=cf9896620dca545ed03d465e3bc2b3e6f39fa857" data-lightbox="roadtrip" data-title="Common Army Patches With Supporting Nicknames Army">
+											<img class="card-img v-image ads-img " src="https://external-preview.redd.it/lEea1MbhG3Zowj5oD4H6_nkzBs6v8JyDUG9xZwj8Yqw.jpg?auto=webp&amp;s=cf9896620dca545ed03d465e3bc2b3e6f39fa857" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlNx9UrzE0FUEWJbPFzeFp4HSpIocg9wjcdw';" alt="Common Army Patches With Supporting Nicknames Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Common Army Patches With Supporting Nicknames Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/0e/1b/14/0e1b142d0b5e6f89a552ed90e571ff28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlNx9UrzE0FUEWJbPFzeFp4HSpIocg9wjcdw';" alt="Common Army Patches With Supporting Nicknames Army">
+										<div class="card-body">
+						<h3 class="h5"><b>Sir Douglas Tin Legs Bader.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military veteran nicknames</strong>. 
+								
+																	75th anniversary of VE-day. 
+																	What is your military code name. 
+																	Feeling that his division should have an awesome nickname too Magruder announced a contest to find a suitable name before settling on Old Ironsides as an homage to the famous Navy warship. 
+																	But the nickname survives today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thing about nicknames they are given for reasons not always for the good. 
+																	Find out how to apply for Veterans grave markers headstones and medallions to honor the service of a Veteran or eligible family member. 
+																	Search over 2782810 registered Veterans. 
+																	List of Military Nicknames And so without further ado here are 100 military nicknames for you to consider. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can submit and share your own as well. 
+																	The Old Ironsides nickname was given by Maj. 
+																	Learn who is eligible for these honors who can apply for the items and what information youll need to put on a headstone or marker. 
+																	When an instructor breaks something down. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Which generation do you belong to. 
+																	We cannot release personal information about a veteran and we lack the resources and current information to forward letters or correspondence to veterans. 
+																	Irwin Leo Handman War. 
+																	Sir Douglas Bader was a Royal Air Force hero of the second. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I started running around and drinking beer and chasing women he quips. 
+																	World War 1939-1945 Branch. 
+																	World War 1939-1945 Branch. 
+																	1st Armored Division US Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard Service Location. 
+																	The Bonus Army was a group of 43000 demonstrators made up of 17000 US. 
+																	Chopped up chewed up Chewie and Chewbacca. 
+																	For a comprehensive overview see. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Given to the individual who may or may not be a sort of bad luck charm in a unit or squadron. 
+																	VA benefits include disability compensation pension education and training health care home loans insurance vocational rehabilitation and employment and burial. 
+																	23 Slang Terms Only Veterans Know 1As you were. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The demonstrators were. 
+																	Vietnam Veterans may be eligible for a wide-variety of benefits available to all US. 
+																	See our Veterans page for an overview of the benefits available to all. 
+																	Carl Bagger Nelson 91 received his military moniker in 1942. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This moniker usually follows the soldier sailor or marine. 
+																	An unanticipated problem was encountered check back soon and try again 1. 
+																	Fred Grant Hargesheimer War. 
+																	In mid-1932 to demand early cash redemption of their service certificates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Selected Finding Aids Related to NARAs World War II Holdings African Americans Records of Military Agencies Relating to African Americans from the Post-World War I Period to the Korean War Reference Information Paper Casualty Lists and Missing Missing Air Crew Reports MACRs World War II Honor List of Dead and Missing Army and Army Air. 
+																	Greatest Generation before 1946 Baby Boomer 1946-1964 Generation X 1965-1984 Millennial 1982-2004 Generation Alpha 2005 till now. 
+																	The military primarily structures their organization around teams of varying nature. 
+																	Her words The Marines I have seen around the world have the cleanest bodies the filthiest minds the highest morale and the lowest morals of any group of animals I have ever seen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans and the Arts Theme. 
+																	The following listing of military team names are from related groups that embody the concept of strength and teamwork. 
+																	Army soldiers stare at each others glasses during field training at Fort Jackson SC on June 15 2006. 
+																	From placing together similar knowledge skills and abilities teams can become greatly effective in an every changing environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During Vietnam the nicknames Puking Buzzards and One o Worst a comment on their mode of transportation and a play on the official divisional name were used. 
+																	Much like the British phrase carry on as you were is a command given by an officer after a room has. 
+																	However the Department of Veterans Affairs and certain military branches may be able forward some messages to veterans or active service personnel. 
+																	37 Been-There-Done-That Nicknames for Military Gear 11 May 2015 US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	World War I veterans together with their families and affiliated groups who gathered in Washington DC. 
+																	One of his World War II buddies still calls him by that nickname. 
+																	Veteran -- Find specific military branch Unit base year war photos more. 
+																	Both were used derogatorily by other soldiers and were not used by the division itself. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hundreds know him only as Tramp a nickname he grew into he says. 
+																	Patton named his division Hell on Wheels. 
+																	Michael Black Baron Wittmann. 
+																	Key West Florida Theme. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Organizers called the demonstrators the Bonus Expeditionary Force to echo the name of World War Is American Expeditionary Forces while the media referred to them as the Bonus Army or Bonus Marchers. 
+																	The military lexicon is no exception. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/24522577/origin.jpg?width=757" data-lightbox="roadtrip" data-title="7 Military Nicknames That Are Definitely Not Compliments We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/24522577/origin.jpg?width=757" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQqhFtmH_ViE-xqTOPcA29jlbxQYStvPJuQ';" alt="7 Military Nicknames That Are Definitely Not Compliments We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Military Nicknames That Are Definitely Not Compliments We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://qph.fs.quoracdn.net/main-qimg-354631311f5de5b185a2ee7d5f7fba21" data-lightbox="roadtrip" data-title="How Did You Earn Your Nickname During Your Service In The Military Quora">
+											<img class="card-img v-image ads-img " src="https://qph.fs.quoracdn.net/main-qimg-354631311f5de5b185a2ee7d5f7fba21" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQevvC0GXf2PhjH0M361d4RRIf3XfsrGKO66A';" alt="How Did You Earn Your Nickname During Your Service In The Military Quora">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Did You Earn Your Nickname During Your Service In The Military Quora</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/45/8b/7c458b0cb98609f90ec69702f6edf16c.jpg" data-lightbox="roadtrip" data-title="Top 100 Cool Military Squad Names Cute Nicknames Cute Nicknames Squad Shadow Ones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/45/8b/7c458b0cb98609f90ec69702f6edf16c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl-LAAGmJdyGunnk8a2q_vue1fu4gDR4Pkrw';" alt="Top 100 Cool Military Squad Names Cute Nicknames Cute Nicknames Squad Shadow Ones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 100 Cool Military Squad Names Cute Nicknames Cute Nicknames Squad Shadow Ones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/21094766/origin.png?width=757" data-lightbox="roadtrip" data-title="8 More Awesome Nicknames That Enemies Gave The U S Military We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/21094766/origin.png?width=757" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSyBV1usy6BwplXR49cmgsjEdOu-8kk0vXrg';" alt="8 More Awesome Nicknames That Enemies Gave The U S Military We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 More Awesome Nicknames That Enemies Gave The U S Military We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://rlv.zcache.com/cadet_bone_spurs_trump_caricature_banner-r63929391cedc4cb5957598930fad76d9_jj7hz_704.jpg?rlvnet=1" data-lightbox="roadtrip" data-title="Donald Trump Nicknames">
+											<img class="card-img v-image ads-img " src="https://rlv.zcache.com/cadet_bone_spurs_trump_caricature_banner-r63929391cedc4cb5957598930fad76d9_jj7hz_704.jpg?rlvnet=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZvC5v0xJV56xiuaYyZ03nb1Km4kgT_AUtPg';" alt="Donald Trump Nicknames">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donald Trump Nicknames</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/2b/8c/cd2b8cc7eb008691e99f69a261dafbff.png" data-lightbox="roadtrip" data-title="100 Best Military Nicknames With Meanings Find Nicknames Badass Nicknames Nicknames Meant To Be">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/2b/8c/cd2b8cc7eb008691e99f69a261dafbff.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFGVbmc7CYIEXQZbwqQFPDq3USozrHQLDMA';" alt="100 Best Military Nicknames With Meanings Find Nicknames Badass Nicknames Nicknames Meant To Be">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Best Military Nicknames With Meanings Find Nicknames Badass Nicknames Nicknames Meant To Be</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://ninelinenews.com/wp-content/uploads/2020/05/badass-750x400.jpg" data-lightbox="roadtrip" data-title="7 Totally Badass Nicknames For The U S Military Given By Our Enemies Nine Line News">
+											<img class="card-img v-image ads-img " src="http://ninelinenews.com/wp-content/uploads/2020/05/badass-750x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1hbsCCfCUi5zoNjIajOSfRgfbK4e2AAAYQ';" alt="7 Totally Badass Nicknames For The U S Military Given By Our Enemies Nine Line News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Totally Badass Nicknames For The U S Military Given By Our Enemies Nine Line News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/e7/b7/dde7b71eab4842c79a7474566fac01fb.gif" data-lightbox="roadtrip" data-title="Veterans Day Printable Games Patriotic Holidays Partyideapros Com Memorial Day Activities Veterans Day Activities Trivia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/e7/b7/dde7b71eab4842c79a7474566fac01fb.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZvFQ04gyf3Z4bXxlEY7bU35pLI0nuJIWGQ';" alt="Veterans Day Printable Games Patriotic Holidays Partyideapros Com Memorial Day Activities Veterans Day Activities Trivia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Printable Games Patriotic Holidays Partyideapros Com Memorial Day Activities Veterans Day Activities Trivia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.findnicknames.com/wp-content/uploads/2019/02/nicknames-for-military-men.jpeg?ezimgfmt=rs:352x235/rscb36/ng:webp/ngcb36" data-lightbox="roadtrip" data-title="100 Best Military Nicknames With Meanings Find Nicknames">
+											<img class="card-img v-image ads-img " src="https://www.findnicknames.com/wp-content/uploads/2019/02/nicknames-for-military-men.jpeg?ezimgfmt=rs:352x235/rscb36/ng:webp/ngcb36" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJbAh8kGuAu72sTaTr5BL771GsqGwGcycbg';" alt="100 Best Military Nicknames With Meanings Find Nicknames">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Best Military Nicknames With Meanings Find Nicknames</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/tqxv1c15itb11.jpg" data-lightbox="roadtrip" data-title="Nicknames Airforce">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/tqxv1c15itb11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDb1qiiMq8IsjIG4lkCnY3DW78XyFJtsQZ6w';" alt="Nicknames Airforce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nicknames Airforce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/23305623/origin.jpg?width=757" data-lightbox="roadtrip" data-title="4 Ways Nicknames In The Military Are Nothing Like In Pop Culture We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/23305623/origin.jpg?width=757" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5MgKrDUWuh0V4m9PnVtRN96Bc38Z-sFuog';" alt="4 Ways Nicknames In The Military Are Nothing Like In Pop Culture We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Ways Nicknames In The Military Are Nothing Like In Pop Culture We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17301345/origin.jpg" data-lightbox="roadtrip" data-title="Here S How Patton Earned The Nickname Old Blood And Guts We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17301345/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBJNWVVqf3kqQG-uAw23Xr4lpWeGPHL5C23w';" alt="Here S How Patton Earned The Nickname Old Blood And Guts We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How Patton Earned The Nickname Old Blood And Guts We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/0e/1b/14/0e1b142d0b5e6f89a552ed90e571ff28.jpg" data-lightbox="roadtrip" data-title="Photos Of The Vietnam War In Photos Of The War Forum Vietnam War Vietnam Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/0e/1b/14/0e1b142d0b5e6f89a552ed90e571ff28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOkKyngUsJFVJiCBT8EsuxM1Dxv9t6BtAkg';" alt="Photos Of The Vietnam War In Photos Of The War Forum Vietnam War Vietnam Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Of The Vietnam War In Photos Of The War Forum Vietnam War Vietnam Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2020/11/soldier-and-doctor.jpg?resize=1024%2C683&amp;ssl=1" data-lightbox="roadtrip" data-title="23 Veteran Slang Terms Only Former Military Members Know Best Life">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2020/11/soldier-and-doctor.jpg?resize=1024%2C683&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6iwMT-GT8zNG1gAiJq8uq-EaouRNp13XwEw';" alt="23 Veteran Slang Terms Only Former Military Members Know Best Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">23 Veteran Slang Terms Only Former Military Members Know Best Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17309733/origin.jpg" data-lightbox="roadtrip" data-title="29 Of The Best Politically Incorrect Vietnam War Slang Terms We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/17309733/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_uo5xzMM-0MfRonhvA2sH-sBLuPXRUPhkoA';" alt="29 Of The Best Politically Incorrect Vietnam War Slang Terms We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">29 Of The Best Politically Incorrect Vietnam War Slang Terms We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wells-fargo-military-highway.html">Wells Fargo Military Highway</a></li>
+													<li class="list-group-item"><a href="/walgreens-vet-discount.html">Walgreens Vet Discount</a></li>
+													<li class="list-group-item"><a href="/what-is-the-active-reserve-usmc.html">What Is The Active Reserve Usmc</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-vietnam-vets.html">What Benefits Are Available For Vietnam Vets</a></li>
+													<li class="list-group-item"><a href="/what-is-lmao-meaning.html">What Is Lmao Meaning</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-wikipedia.html">What Is Imf Wikipedia</a></li>
+													<li class="list-group-item"><a href="/wells-fargo-military-trail-and-forest-hill.html">Wells Fargo Military Trail And Forest Hill</a></li>
+													<li class="list-group-item"><a href="/what-benefits-does-a-100-disabled-veteran-get-in-california.html">What Benefits Does A 100 Disabled Veteran Get In California</a></li>
+													<li class="list-group-item"><a href="/what-are-imf-forces.html">What Are Imf Forces</a></li>
+													<li class="list-group-item"><a href="/what-does-a-navy-dd214-look-like.html">What Does A Navy Dd214 Look Like</a></li>
+													<li class="list-group-item"><a href="/what-does-imf-stand-for-in-chemistry.html">What Does Imf Stand For In Chemistry</a></li>
+													<li class="list-group-item"><a href="/what-is-the-best-veterinary-university-in-uk.html">What Is The Best Veterinary University In Uk</a></li>
+													<li class="list-group-item"><a href="/what-is-voc-rehab-for-veterans.html">What Is Voc Rehab For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-do-companies-get-for-hiring-veterans.html">What Do Companies Get For Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/websites-that-have-military-discount.html">Websites That Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-are-the-qualifications-to-be-buried-in-a-veterans-cemetery.html">What Are The Qualifications To Be Buried In A Veterans Cemetery</a></li>
+													<li class="list-group-item"><a href="/what-is-lmao.html">What Is Lmao</a></li>
+													<li class="list-group-item"><a href="/what-is-transition-issues.html">What Is Transition Issues</a></li>
+													<li class="list-group-item"><a href="/what-does-imf-mean-in-texting.html">What Does Imf Mean In Texting</a></li>
+													<li class="list-group-item"><a href="/what-is-the-global-gdp-2020.html">What Is The Global Gdp 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

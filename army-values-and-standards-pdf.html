@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Values And Standards Pdf - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Values And Standards Pdf",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/d5/a6/0e/d5a60ed483fb8f15995360a62e48ee42.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+values+and+standards+pdf",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Values And Standards Pdf</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Loyalty Bear true faith and allegiance to the US. This award goes to Soldiers who make honor a matter of daily living Soldiers who develop the habit of being honorable and solidify that habit with every value choice they make. A Brief History of the Army Values as of. <br>				
+			</p>
+										<a class="badge badge-info" href="/imf-chief-about-india.html">imf chief about india</a>
+											<a class="badge badge-secondary" href="/imf-chief-farm-laws.html">imf chief farm laws</a>
+											<a class="badge badge-primary" href="/imf-bretton-woods-news.html">imf bretton woods news</a>
+											<a class="badge badge-secondary" href="/imf-central-bank-independence.html">imf central bank independence</a>
+											<a class="badge badge-secondary" href="/imf-careers-canada.html">imf careers canada</a>
+											<a class="badge badge-dark" href="/imf-blog-kristalina-georgieva.html">imf blog kristalina georgieva</a>
+											<a class="badge badge-secondary" href="/imf-blog-europe.html">imf blog europe</a>
+											<a class="badge badge-light" href="/imf-board-directors.html">imf board directors</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thelightningpress.com/wp-content/uploads/2017/06/Army-Values-LDRSHIP.png" data-lightbox="roadtrip" data-title="Army Values The Lightning Press Smartbooks">
+											<img class="card-img v-image ads-img " src="https://www.thelightningpress.com/wp-content/uploads/2017/06/Army-Values-LDRSHIP.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdEUKvw9Ky0B9PLKOpJCsYjOGBP-ycOFDBA&amp;ec=45774421';" alt="Army Values The Lightning Press Smartbooks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Values The Lightning Press Smartbooks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="eG3uhclNBdlbfM" data-lightbox="roadtrip" data-title="Https Talent Army Mil Wp Content Uploads 2020 11 Arn20039 Adp 6 22 C1 Final Web Pdf">
+											<img class="card-img v-image ads-img " src="eG3uhclNBdlbfM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1vYK1LZUlttJxrdo9F0I9WCA1g4zjxibqw&amp;ec=45774421';" alt="Https Talent Army Mil Wp Content Uploads 2020 11 Arn20039 Adp 6 22 C1 Final Web Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Talent Army Mil Wp Content Uploads 2020 11 Arn20039 Adp 6 22 C1 Final Web Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://home.army.mil/wood/application/files/thumbnails/small/3215/4100/6568/bt.jpg" data-lightbox="roadtrip" data-title="Training Information Fort Leonard Wood">
+											<img class="card-img v-image ads-img " src="https://home.army.mil/wood/application/files/thumbnails/small/3215/4100/6568/bt.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI3dQ5ocsrpgREgenfXO8ZiCxYWYRGooQAQ&amp;ec=45774421';" alt="Training Information Fort Leonard Wood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Training Information Fort Leonard Wood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="-h7XrsLKNEDaOM" data-lightbox="roadtrip" data-title="Https Adminpubs Tradoc Army Mil Pamphlets Tp600 4 Pdf">
+											<img class="card-img v-image ads-img " src="-h7XrsLKNEDaOM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbISCcbbOf7sVn-V9OS7HgwuC6230Ep_OnBg&amp;ec=45774421';" alt="Https Adminpubs Tradoc Army Mil Pamphlets Tp600 4 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Adminpubs Tradoc Army Mil Pamphlets Tp600 4 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="0N2CgeOC-ipK9M" data-lightbox="roadtrip" data-title="Https Adminpubs Tradoc Army Mil Regulations Tr350 36 Pdf">
+											<img class="card-img v-image ads-img " src="0N2CgeOC-ipK9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kTLrqdyZJ-oCjEp72eEDngfNkngCGoR-dw&amp;ec=45774421';" alt="Https Adminpubs Tradoc Army Mil Regulations Tr350 36 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Adminpubs Tradoc Army Mil Regulations Tr350 36 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/USArmyValuesPoster.png/1200px-USArmyValuesPoster.png" data-lightbox="roadtrip" data-title="Ldrship Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/USArmyValuesPoster.png/1200px-USArmyValuesPoster.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMAIvXuzXIhVA8Anv6dIZUV7zfbINFUd_8nQ&amp;ec=45774421';" alt="Ldrship Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ldrship Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="IhkxzFS-2dCfuM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMAIvXuzXIhVA8Anv6dIZUV7zfbINFUd_8nQ&amp;ec=45774421';" alt="Ldrship Wikipedia">
+										<div class="card-body">
+						<h3 class="h5"><b>2 The Army Ethic White Paper In response ADP 1 The Army September 2012 included a new chapter entitled Our ProfessionIt identified Trust as the foundation for our relationship with the American people and for successful accomplishment of the mission4 Subsequently for the first time a supporting ADRP 1 The Army Profession was released on 14 June 2013.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army values and standards pdf</strong>. 
+								
+																	The application of Values and Standards is an unavoidable and enduring duty of leaders to preserve both our legitimacy and the moral component. 
+																	The Values and Standards of the British Army. 
+																	The Army Values of loyalty duty respect selfless service honor. 
+																	The Values outlined above underpin the ethos of the Army and contribute directly to achieving operational effectiveness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are fundamental to helping you make the right decision in any situation. 
+																	Its comprised of magnificent Soldiers and Civilians who are out there every day making a difference in a very complex world. 
+																	To hear about how the values and standards are central to everything the British Army does watch this speech from W01 Glen Haughton 10 minutes. 
+																	The American people expect Army professionals to provide exemplary leadership that reflects the Army Ethic and is consistent with our national values. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The fifth of the Army Values. 
+																	Being a soldier is not easy. 
+																	Live up to Army values. 
+																	The moral and ethical tenets of the Army Values characterize the Army culture and describe the ethical standards expected of all SoldiersWhat has the Army doneIn 2005 the Army launched the Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 Be technically and tactically proficient. 
+																	That is why we have made a concerted effort to specify and define the Army values. 
+																	THE OPERATIONAL IMPERATIVE The Armed Forces of the Philippines AFP exists to conduct operations in defense of the sovereignty and integrity of the Republic of the Philippines. 
+																	1 Live the Army Values. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army leadership is and must remain values based and the example set by all those in leadership positions defines the Armys Values and Standards every day. 
+																	You have to be aggressive and strong in battle yet behave properly and show self-control all the time. 
+																	We must never be complacent about the role of values in our Army. 
+																	This Blue Book will inform Soldiers Noncommissioned Officers and Officers of the Marne Division Fort Stewart Hunter Army Airfield and Wright Army Airfield about expectations for individual discipline appearance conduct and military courtesy as established by Army Regulations and policies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In short the Seven Core Army Values listed below are what being a Soldier is all about. 
+																	The Nations highest military award is The Medal of Honor. 
+																	Favorably on them their unit Fort Polk and the United States Army. 
+																	The Armys Values and Standards are designed to ensure that all behaviour is lawful appropriate and totally professional. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This paper will then conclude with a discussion of virtues that are notably absent a nd. 
+																	Leadership is a fundamental duty. 
+																	ARMY CORE PHILOSOPHY The Philippine Army Core Philosophy is a set of values and standards of conduct that guides an individual soldier live his life perform his duties and strengthen his commitment to the service. 
+																	You are asked to do things not asked of other people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	THE BLUE BOOK MARNE STANDARDS 6 2. 
+																	Many of our Army Family have made the ultimate sacrifice by giving their lives. 
+																	In sustaining these Values every soldier must strive to achieve a nd maintain the highest professional and personal standards. 
+																	1 Oct 18 The most important constant of all-Army values. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Armys Standards. 
+																	These honorable deeds epitomize the Army Values and earn the respect of. 
+																	The Army you are joining is a time honored Profession thats the best in the world at what it does. 
+																	Army Values and Ethics The seven Army values consist of the principles standards and qualities considered essential for successful Army leaders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Army Combined Arms Center is the proponent of ADP 6-22. 
+																	Low standards damage the team which could lead to failure on operations. 
+																	Armys Values and Standards will be used t o elucidate the essential virtues of British Army officers. 
+																	Treat others with dignity and respect and do not tolerate or engage in sexual racial or other types of discrimination or harassment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The type of person you are. 
+																	Constitution the Army your unit and other Soldiers. 
+																	ARMY INSPECTOR GENERAL SCHOOL DoD Directive 550007 DoD 550007-R Joint Ethics Regulation JER DEPARTMENT OF THE ARMY INSPECTOR GENERAL AGENCY TRAINING DIVISION 5500 21st STREET SUITE 2108 FORT BELVOIR VIRGINIA 22060-5935 August 2013. 
+																	Army values are thoroughly consistent with the values of American society. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ADP 6-22 applies to the Regular Army Army National GuardArmy National Guard of the United States United States Army Reserve and Department of the Army Civilians unless otherwise stated. 
+																	The Army Profession develops inspires and motivates Soldiers and Army Civilians to make right decisions and to take right action according to the moral principles of the Army Ethic. 
+																	As an Army leader it is important for you to promote a common understanding of the Army values and expected standards. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="RCRwX-Pwf2ip4M" data-lightbox="roadtrip" data-title="Https Www Uakron Edu Armyrotc Ms1 23 Pdf">
+											<img class="card-img v-image ads-img " src="RCRwX-Pwf2ip4M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMbbTwqq19X5pizN9A8eIRJCyvjHD8OFP8w&amp;ec=45774421';" alt="Https Www Uakron Edu Armyrotc Ms1 23 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Uakron Edu Armyrotc Ms1 23 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="AbHCdYC4i2zJEM" data-lightbox="roadtrip" data-title="Https Www Ncoworldwide Army Mil Portals 76 Catalogs 20oct2019volumeii Pdf">
+											<img class="card-img v-image ads-img " src="AbHCdYC4i2zJEM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlwRAs3T7n0p9coUocjiokjWc5HCrlRTJqPg&amp;ec=45774421';" alt="Https Www Ncoworldwide Army Mil Portals 76 Catalogs 20oct2019volumeii Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ncoworldwide Army Mil Portals 76 Catalogs 20oct2019volumeii Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="sNIfJ4l1hk-hzM" data-lightbox="roadtrip" data-title="Https Armypubs Army Mil Epubs Dr Pubs Dr A Pdf Web Arn13774 Dapam600 25 Final Pdf">
+											<img class="card-img v-image ads-img " src="sNIfJ4l1hk-hzM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsh6vdQoxiA2w6XeTava5lUNTAyLUng6-eCA&amp;ec=45774421';" alt="Https Armypubs Army Mil Epubs Dr Pubs Dr A Pdf Web Arn13774 Dapam600 25 Final Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Armypubs Army Mil Epubs Dr Pubs Dr A Pdf Web Arn13774 Dapam600 25 Final Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.coursehero.com/thumb/c4/8a/c48a7b801979a2f15228e3ec4404295e6f90c6d3_180.jpg" data-lightbox="roadtrip" data-title="Ms 1 4 1d Afp Core Values Ok Docx Afp Core Values Afp Core Values The Afp Core Philosophy Is A Set Of Values And Standards Of Conduct That Guides An Course Hero">
+											<img class="card-img v-image ads-img " src="https://www.coursehero.com/thumb/c4/8a/c48a7b801979a2f15228e3ec4404295e6f90c6d3_180.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6R9aia7yP0F37kVkIhRbcVXBf5TOGDUJlQ&amp;ec=45774421';" alt="Ms 1 4 1d Afp Core Values Ok Docx Afp Core Values Afp Core Values The Afp Core Philosophy Is A Set Of Values And Standards Of Conduct That Guides An Course Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ms 1 4 1d Afp Core Values Ok Docx Afp Core Values Afp Core Values The Afp Core Philosophy Is A Set Of Values And Standards Of Conduct That Guides An Course Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="kKiQG9NHWDyKyM" data-lightbox="roadtrip" data-title="Https Www Samhsa Gov Sites Default Files Military White Paper Final Pdf">
+											<img class="card-img v-image ads-img " src="kKiQG9NHWDyKyM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUnmaCqIolCfxOQ6oz06EGWxi0zIm3gbGYg&amp;ec=45774421';" alt="Https Www Samhsa Gov Sites Default Files Military White Paper Final Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Samhsa Gov Sites Default Files Military White Paper Final Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="4vMmc1kBOfWldM" data-lightbox="roadtrip" data-title="Https Www Armyheritage Org Wp Content Uploads 2020 08 Fm 22 100 Aug99 Pdf">
+											<img class="card-img v-image ads-img " src="4vMmc1kBOfWldM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXD7-SyMv0jWlpI-6EO3XwiaNyzzKdndVl-w&amp;ec=45774421';" alt="Https Www Armyheritage Org Wp Content Uploads 2020 08 Fm 22 100 Aug99 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Armyheritage Org Wp Content Uploads 2020 08 Fm 22 100 Aug99 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.asafm.army.mil/portals/72/Images/org/BU-org.jpg?ver=2019-09-23-161546-567" data-lightbox="roadtrip" data-title="Army Financial Management Comptroller Directorates Offices Army Budget">
+											<img class="card-img v-image ads-img " src="https://www.asafm.army.mil/portals/72/Images/org/BU-org.jpg?ver=2019-09-23-161546-567" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD79ddXFKmpf8CTzex-8P5jKy0t2QOuoMHUQ&amp;ec=45774421';" alt="Army Financial Management Comptroller Directorates Offices Army Budget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Financial Management Comptroller Directorates Offices Army Budget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/a6/0e/d5a60ed483fb8f15995360a62e48ee42.png" data-lightbox="roadtrip" data-title="Pin On Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/a6/0e/d5a60ed483fb8f15995360a62e48ee42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrVXJoweD1Qyduq_clvB9bLmxWtwN5VQ6Fg&amp;ec=45774421';" alt="Pin On Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.carson.army.mil/assets/img/dhr/army-transition-timeline.jpg" data-lightbox="roadtrip" data-title="Fort Carson">
+											<img class="card-img v-image ads-img " src="https://www.carson.army.mil/assets/img/dhr/army-transition-timeline.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtR5bxuDkUnTzL1VcXxl2EU-IXcaeqj5wE1Q&amp;ec=45774421';" alt="Fort Carson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Carson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/35/22/1d35225da87be3f0cd34e745bd2460d8.jpg" data-lightbox="roadtrip" data-title="Pin By Erin On Fitness Fitness Fitness Military Workout Military Workout Plan Army Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/35/22/1d35225da87be3f0cd34e745bd2460d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBQu7gSS3oco8BVBperG7BYUm6sFhRk9zDg&amp;ec=45774421';" alt="Pin By Erin On Fitness Fitness Fitness Military Workout Military Workout Plan Army Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Erin On Fitness Fitness Fitness Military Workout Military Workout Plan Army Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ca/0e/6e/ca0e6ea48e684e440c5764db7a9ae205.jpg" data-lightbox="roadtrip" data-title="Pin On That Bod">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ca/0e/6e/ca0e6ea48e684e440c5764db7a9ae205.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsAVhl3TAIAFvq9-R2bScL7er2XG9NbqZKcQ&amp;ec=45774421';" alt="Pin On That Bod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On That Bod</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/33/76/c333769ce9473ada0364e0027bf5c712.jpg" data-lightbox="roadtrip" data-title="Pin On Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/33/76/c333769ce9473ada0364e0027bf5c712.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemyeMc9srvro97N0gMfvHsooDpQNxR9lkRg&amp;ec=45774421';" alt="Pin On Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gssIud5skfjE5M" data-lightbox="roadtrip" data-title="Https Www Usace Army Mil Value Engineering">
+											<img class="card-img v-image ads-img " src="gssIud5skfjE5M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_uVKAyDR5A9qVY_0Nx-n6BabE3heBXvMqA&amp;ec=45774421';" alt="Https Www Usace Army Mil Value Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Usace Army Mil Value Engineering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="depgdIl0CU6UpM" data-lightbox="roadtrip" data-title="Https Www Cadetcommand Army Mil Res Files Forms Policies Handbooks Ac 20handbook Pdf">
+											<img class="card-img v-image ads-img " src="depgdIl0CU6UpM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32Y12IgO68kahV2BxDug8Fo39ASL3GraKcw&amp;ec=45774421';" alt="Https Www Cadetcommand Army Mil Res Files Forms Policies Handbooks Ac 20handbook Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Cadetcommand Army Mil Res Files Forms Policies Handbooks Ac 20handbook Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="I4YsCTM8MAkNuM" data-lightbox="roadtrip" data-title="Https Usacac Army Mil Sites Default Files Documents Cace Lrec Ar350 1 Web Final Pdf">
+											<img class="card-img v-image ads-img " src="I4YsCTM8MAkNuM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq5SHLUe4ApBLHfdhk1yvqamlS2J5son64pw';" alt="Https Usacac Army Mil Sites Default Files Documents Cace Lrec Ar350 1 Web Final Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Usacac Army Mil Sites Default Files Documents Cace Lrec Ar350 1 Web Final Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-discount-in-taj-hotels.html">Army Discount In Taj Hotels</a></li>
+													<li class="list-group-item"><a href="/apple-valley-waste-veterans-day.html">Apple Valley Waste Veterans Day</a></li>
+													<li class="list-group-item"><a href="/army-discount-cotswold.html">Army Discount Cotswold</a></li>
+													<li class="list-group-item"><a href="/armed-forces-veterans-day-images.html">Armed Forces Veterans Day Images</a></li>
+													<li class="list-group-item"><a href="/apple-uk-military-discount.html">Apple Uk Military Discount</a></li>
+													<li class="list-group-item"><a href="/army-discount-jd-sports.html">Army Discount Jd Sports</a></li>
+													<li class="list-group-item"><a href="/army-discount-chester-zoo.html">Army Discount Chester Zoo</a></li>
+													<li class="list-group-item"><a href="/army-discount-for-microsoft-office.html">Army Discount For Microsoft Office</a></li>
+													<li class="list-group-item"><a href="/arlington-national-cemetery-arlington-va-usa.html">Arlington National Cemetery Arlington Va Usa</a></li>
+													<li class="list-group-item"><a href="/apple-veterans-online-store.html">Apple Veterans Online Store</a></li>
+													<li class="list-group-item"><a href="/apple-watch-veterans-day-badge.html">Apple Watch Veterans Day Badge</a></li>
+													<li class="list-group-item"><a href="/apple-watch-military-time.html">Apple Watch Military Time</a></li>
+													<li class="list-group-item"><a href="/army-card-discount-india.html">Army Card Discount India</a></li>
+													<li class="list-group-item"><a href="/apple-veterans-day-challenge.html">Apple Veterans Day Challenge</a></li>
+													<li class="list-group-item"><a href="/argentina-imf-repayment-schedule.html">Argentina Imf Repayment Schedule</a></li>
+													<li class="list-group-item"><a href="/army-discount-ireland.html">Army Discount Ireland</a></li>
+													<li class="list-group-item"><a href="/army-discount-hotels.html">Army Discount Hotels</a></li>
+													<li class="list-group-item"><a href="/army-baby-discount.html">Army Baby Discount</a></li>
+													<li class="list-group-item"><a href="/applebees-veterans.html">Applebees Veterans</a></li>
+													<li class="list-group-item"><a href="/army-discount-airline-tickets.html">Army Discount Airline Tickets</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

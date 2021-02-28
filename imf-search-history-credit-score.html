@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Search History Credit Score - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Search History Credit Score",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/7a/6d/47/7a6d47edf7a456de337ed5d2f41d5458.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+search+history+credit+score",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Search History Credit Score</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As we were told by my high school civics teacher the Goddess of the Status Quo their function is. This will come in handy for the elitists and ruling class during the Great Reset. A new working paper from the International Monetary Fund proposes that banks start using nonfinancial data such as peoples history of online searches and purchases to influence credit scores. <br>				
+			</p>
+										<a class="badge badge-primary" href="/lmao-meaning-german.html">lmao meaning german</a>
+											<a class="badge badge-danger" href="/lmao-savage-meaning.html">lmao savage meaning</a>
+											<a class="badge badge-secondary" href="/lmao-vs-imao.html">lmao vs imao</a>
+											<a class="badge badge-success" href="/lmao-too-much-meme.html">lmao too much meme</a>
+											<a class="badge badge-primary" href="/lmao-meaning-in-english.html">lmao meaning in english</a>
+											<a class="badge badge-dark" href="/lmao-roblox.html">lmao roblox</a>
+											<a class="badge badge-dark" href="/lmao-ne-demek.html">lmao ne demek</a>
+											<a class="badge badge-warning" href="/lmao-meaning-funny.html">lmao meaning funny</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal site.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/17/d5/3f17d5c495305103f4b47d4e3517c575.jpg" data-lightbox="roadtrip" data-title="Imf Says Your Internet Search History To Be Used To Set Credit Scores In 2021 Internet Search History Credit Score Web History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/17/d5/3f17d5c495305103f4b47d4e3517c575.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GatAMp0qHg-JfuorH6qQ1gvcQqXAoyMcVg';" alt="Imf Says Your Internet Search History To Be Used To Set Credit Scores In 2021 Internet Search History Credit Score Web History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Says Your Internet Search History To Be Used To Set Credit Scores In 2021 Internet Search History Credit Score Web History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/86/32/34863276f32f34d1ec33a3ed68321f56.png" data-lightbox="roadtrip" data-title="Your Credit Score Should Be Based On Your Web History Imf Says In 2020 Web History Credit Score Financial Institutions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/86/32/34863276f32f34d1ec33a3ed68321f56.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf4gNVRDaZi-sM9DxBJwfo9kRzLbkCw3xWpg';" alt="Your Credit Score Should Be Based On Your Web History Imf Says In 2020 Web History Credit Score Financial Institutions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Credit Score Should Be Based On Your Web History Imf Says In 2020 Web History Credit Score Financial Institutions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/07/b1/2e07b194fbfaccc2142185c91f67b19a.png" data-lightbox="roadtrip" data-title="Your Credit Score Should Be Based On Your Web History Imf Says Web History Credit Score Technology News Today">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/07/b1/2e07b194fbfaccc2142185c91f67b19a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFmGLlY9tIfJblXthVocP5mPPG7RGePDBSg';" alt="Your Credit Score Should Be Based On Your Web History Imf Says Web History Credit Score Technology News Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Credit Score Should Be Based On Your Web History Imf Says Web History Credit Score Technology News Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/18/18/ba1818559e08a505ea419c89c82ccbc2.jpg" data-lightbox="roadtrip" data-title="860 Likes 59 Comments Hisnamewassethrich On Instagram In 2021 Credit Score Website Instagram">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/18/18/ba1818559e08a505ea419c89c82ccbc2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu970FO5im_DYg3Ld6bkMIXBe-LHLVdHyczA';" alt="860 Likes 59 Comments Hisnamewassethrich On Instagram In 2021 Credit Score Website Instagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">860 Likes 59 Comments Hisnamewassethrich On Instagram In 2021 Credit Score Website Instagram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/a1/2c/44a12cd4f47553056cd874a59d7bf4c3.jpg" data-lightbox="roadtrip" data-title="Pin On Statista Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/a1/2c/44a12cd4f47553056cd874a59d7bf4c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi67z3eRfUL5dPzO4L-G6D4HFh_Jm62jS1Yw';" alt="Pin On Statista Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Statista Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/62/ec/bb62ec14cdb84448bc2b45d13196657a.jpg" data-lightbox="roadtrip" data-title="Jane Quinn Doe S Freedom From Fiction Accepted For Value A4v To Discharge Debt How To Fix Credit Debt Birth Certificate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/62/ec/bb62ec14cdb84448bc2b45d13196657a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZBFC0nhKRXZACMV3vXZAOlhTTZSzLWI6ew';" alt="Jane Quinn Doe S Freedom From Fiction Accepted For Value A4v To Discharge Debt How To Fix Credit Debt Birth Certificate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jane Quinn Doe S Freedom From Fiction Accepted For Value A4v To Discharge Debt How To Fix Credit Debt Birth Certificate</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ba/18/18/ba1818559e08a505ea419c89c82ccbc2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZBFC0nhKRXZACMV3vXZAOlhTTZSzLWI6ew';" alt="Jane Quinn Doe S Freedom From Fiction Accepted For Value A4v To Discharge Debt How To Fix Credit Debt Birth Certificate">
+										<div class="card-body">
+						<h3 class="h5"><b>International Monetary Fund IMF researchers see the possibility of using the data from your browsing search and purchase history to create a more accurate mechanism for determining the credit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf search history credit score</strong>. 
+								
+																	In a new blog post for the International Monetary Fund four researchers presented their findings from a working paper that examines the current relationship between finance and tech as well as its. 
+																	Your Search History Will Determine Your Financial Credit Score In Future Says IMF A new white paper by the IMF calls for linking your search history to your financial credit score which would in effect lower your score if you visit websites marked harmful by their fact-checkers. 
+																	With more services than ever collecting your data its easy to start asking why anyone should care about most of it. 
+																	In a blog post courtesy of the International Monetary Fund IMF researchers Arnoud BootPeter Hoffmann Luc Laeven and Lev Ratnovski called for internet search history to be tied to credit score. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Says Your Search History Will Determine Your Financial Credit Score In Future 01022021 By Stillness in the Storm Leave a Comment Humans Are Free A new white paper by the IMF calls for linking your search history to your financial credit score which would in effect lower your score if you visit websites marked harmful by their fact-checkers. 
+																	IMF Says Your Search History Will Determine Your Financial Credit Score In Future from Humans Are Free A new white paper by the IMF calls for linking your search history to your financial credit score which would in effect lower your score if you visit websites marked harmful by their fact-checkers. 
+																	Traditional data used for credit scoring could be replaced by AI-powered processes based on online search and purchase histories to better reach a billion-plus unbanked people globally a group of IMF researchers has proposed. 
+																	Researchers at the IMF the worlds lender to nations in times of financial crisis have highlighted why fintech has emerged in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Says Your Credit Score Should Be Based On Your Internet Search History. 
+																	The International Monetary Funds new big idea about personal credit scores is no exception. 
+																	Theyll know exactly who to cut off. 
+																	In a blog post courtesy of the International Monetary Fund IMF researchers Arnoud Boot Peter Hoffmann Luc Laeven and Lev Ratnovski called for internet search history to be tied to credit score. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The International Monetary Fund wants to use your search history and purchases to set your credit score. 
+																	IMF Calls for Credit Score to be Tied to Internet Search History In a blog post courtesy of the International Monetary Fund IMF researchers Arnoud Boot Peter Hoffmann Luc Laeven and Lev Ratnovski called for internet search history to be tied to credit score. 
+																	If youre tired of the destruction of digital civil liberties subscribe to Reclaim The Net. 
+																	According to Gizmodo The researchers see the possibility of using the data from your browsing search and purchase history to create a more accurate mechanism for determining the credit rating of an individual or business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Malware infected browser extensions stealing Chrome Edge user data. 
+																	The International Monetary Fund released a post where IMF researchers Arnoud Boot Peter Hoffman Luc Laeven and Lev Ratnovski called for internet search history to be linked to an individuals credit score. 
+																	From Gizmodo Your Credit Score Should Be Based on Your Web History IMF Says. 
+																	In the working paper IMF researchers hinted at the possibility of using a users web history including search browsing and purchasing data for more accurately determining the person or business credit rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They believe that this approach could result in greater lending to borrowers who would potentially be denied by traditional financial institutions. 
+																	IMF proposes using peoples browsing history to determine credit score. 
+																	You must be logged in to post a comment. 
+																	Presenting their findings from a paper they wrote the researchers argue that by using non-financial data specifically the history of online searches and purchases we can solve the problem of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The researchers Arnoud Boof Peter Hoffmann Luc Laeven and Lev Ratnovski presented their findings in a statement. 
+																	A new white paper by the IMF calls for linking your search history to your financial credit score which would in effect lower your score if you visit websites marked harmful by their fact-checkersIn a new blog post for the International Monetary Fund four researchers presented their findings from a working paper read below that. 
+																	By Victor Omondi The International Monetary Fund researchers posted in the organizations blog that they want web users search history to determine their credit score. 
+																	Your online search history could make for a better credit score. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They suggest that using particularly the history of online searches and purchases can. 
+																	Because people start having ideas like this. 
+																	The IMF of course is one of those big international institutions that the public didnt elect yet wields tremendous influence in the world economy. 
+																	The International Monetary Fund or World Bank wants to track your web browsing history to determine your social credit score. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The International Monetary Fund IMF that staunchly supports and props up central banks and consequently physical banks operating with centralized currencies seem to be studying ways to make sure their financial services are solidified as they could be looking for inspiration in fintech and Big Tech behind it. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8e/97/a7/8e97a7d2e4553d036552eeb69553308d.jpg" data-lightbox="roadtrip" data-title="Pinterest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8e/97/a7/8e97a7d2e4553d036552eeb69553308d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-j60KzZBdJMxGjeo1XiV1CS6W7GnZ7tajg';" alt="Pinterest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f4/d3/74/f4d3747b1b60be0246b8760e0e5e15bd.jpg" data-lightbox="roadtrip" data-title="The Organized Barn And Trailer In 2020 American Express Logo Credit Card Companies American Express">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f4/d3/74/f4d3747b1b60be0246b8760e0e5e15bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6sk58z2KOQOwgpvJ3U9bRsuSBdmqXcuXgOA';" alt="The Organized Barn And Trailer In 2020 American Express Logo Credit Card Companies American Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Organized Barn And Trailer In 2020 American Express Logo Credit Card Companies American Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/1c/c1/0f1cc1b4719dad765e887de4b7b3383f.jpg" data-lightbox="roadtrip" data-title="Inspiration Creativity Wonder Amazing Maps Infographic Map World Geography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/1c/c1/0f1cc1b4719dad765e887de4b7b3383f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-Yrio_oGlvzAdq8dgRcB07a8qI3qdH089g';" alt="Inspiration Creativity Wonder Amazing Maps Infographic Map World Geography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inspiration Creativity Wonder Amazing Maps Infographic Map World Geography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/e5/dd/d8e5ddc6648f9048eb76302f5ef95a4b.jpg" data-lightbox="roadtrip" data-title="Cestui Que Vie Trust With Tami Pepperman The Matrix Unlocked Law School Life Spiritual Awakening Affirmations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/e5/dd/d8e5ddc6648f9048eb76302f5ef95a4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInudMyHh1kk0xiraEx3W5epnKXYytG9Ef7w';" alt="Cestui Que Vie Trust With Tami Pepperman The Matrix Unlocked Law School Life Spiritual Awakening Affirmations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cestui Que Vie Trust With Tami Pepperman The Matrix Unlocked Law School Life Spiritual Awakening Affirmations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/a6/9c/6da69cec9e32796bc0c54258bda05961.jpg" data-lightbox="roadtrip" data-title="Pin By Tradesparq On Data Visualisation Infographics Teaching Economics Economics Lessons Global Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/a6/9c/6da69cec9e32796bc0c54258bda05961.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1yraNq6ovh09NSBGCjidwfs_JfUb83gxZPQ';" alt="Pin By Tradesparq On Data Visualisation Infographics Teaching Economics Economics Lessons Global Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Tradesparq On Data Visualisation Infographics Teaching Economics Economics Lessons Global Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/6d/47/7a6d47edf7a456de337ed5d2f41d5458.jpg" data-lightbox="roadtrip" data-title="Pin On Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/6d/47/7a6d47edf7a456de337ed5d2f41d5458.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0sYbTVbriEH8iYWVv7Xn-u0eFlFPfOqTm1A';" alt="Pin On Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/9b/61/57/9b6157dca44391b0803d20224a104e5e.jpg" data-lightbox="roadtrip" data-title="Cestui Que Vie Trust With Tami Pepperman The Matrix Unlocked Law School Life Spiritual Awakening Affirmations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/9b/61/57/9b6157dca44391b0803d20224a104e5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRgl0ZzNIakHrAnESEqQSKV_usyYbA-eAKw';" alt="Cestui Que Vie Trust With Tami Pepperman The Matrix Unlocked Law School Life Spiritual Awakening Affirmations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cestui Que Vie Trust With Tami Pepperman The Matrix Unlocked Law School Life Spiritual Awakening Affirmations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/5a/fa/ba5afae6747026245806873a5cb2e1e8.jpg" data-lightbox="roadtrip" data-title="The Next Three Days 2010 Pg 13 122 Min Crime Drama Romance Storyline Lara Brennan Is Arrested For Mur Movies Action Shoot Em Ups The N">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/5a/fa/ba5afae6747026245806873a5cb2e1e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlea-QyVedDQEimJ3nycslH4JZ9G54K2jiKA';" alt="The Next Three Days 2010 Pg 13 122 Min Crime Drama Romance Storyline Lara Brennan Is Arrested For Mur Movies Action Shoot Em Ups The N">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Next Three Days 2010 Pg 13 122 Min Crime Drama Romance Storyline Lara Brennan Is Arrested For Mur Movies Action Shoot Em Ups The N</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/44/82/2d4482c54fe26cec0181988690ba16c7.png" data-lightbox="roadtrip" data-title="Tafelvlaggen Congo Kinshasa Congolese Tafel Vlaggetje 10x15cm Kopen Bij Vlaggenclub Ean 7430439287230 In 2020 Congo Vlaggen En Haiti">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/44/82/2d4482c54fe26cec0181988690ba16c7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHqoMIil0gvXUmUstuF6k47TtVZrXK-Z0Ong';" alt="Tafelvlaggen Congo Kinshasa Congolese Tafel Vlaggetje 10x15cm Kopen Bij Vlaggenclub Ean 7430439287230 In 2020 Congo Vlaggen En Haiti">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tafelvlaggen Congo Kinshasa Congolese Tafel Vlaggetje 10x15cm Kopen Bij Vlaggenclub Ean 7430439287230 In 2020 Congo Vlaggen En Haiti</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/d6/b1/82d6b146e9ea82878a038cbb2987a267.jpg" data-lightbox="roadtrip" data-title="Pin On Opinion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/d6/b1/82d6b146e9ea82878a038cbb2987a267.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRC5_PR7apA1b05hFBYHKwk-02QL4ToBKQnA';" alt="Pin On Opinion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Opinion</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imao-in-tagalog.html">Imao In Tagalog</a></li>
+													<li class="list-group-item"><a href="/how-much-is-veterans-advantage.html">How Much Is Veterans Advantage</a></li>
+													<li class="list-group-item"><a href="/ihop-vet-discount.html">Ihop Vet Discount</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-dd214-after-discharge.html">How To Get A Dd214 After Discharge</a></li>
+													<li class="list-group-item"><a href="/how-to-get-dd-214-navy.html">How To Get Dd 214 Navy</a></li>
+													<li class="list-group-item"><a href="/how-to-use-theragun-elite.html">How To Use Theragun Elite</a></li>
+													<li class="list-group-item"><a href="/how-to-use-military-discount-on-eastbay.html">How To Use Military Discount On Eastbay</a></li>
+													<li class="list-group-item"><a href="/how-much-is-internship-salary.html">How Much Is Internship Salary</a></li>
+													<li class="list-group-item"><a href="/how-much-is-kohls-military-discount.html">How Much Is Kohls Military Discount</a></li>
+													<li class="list-group-item"><a href="/how-to-get-military-discount-at-foot-locker.html">How To Get Military Discount At Foot Locker</a></li>
+													<li class="list-group-item"><a href="/how-much-is-academy-sports-military-discount.html">How Much Is Academy Sports Military Discount</a></li>
+													<li class="list-group-item"><a href="/how-much-money-does-jamaica-owe-the-imf.html">How Much Money Does Jamaica Owe The Imf</a></li>
+													<li class="list-group-item"><a href="/imao-in-text.html">Imao In Text</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-discount-on-ancestrycom.html">How To Get A Discount On Ancestrycom</a></li>
+													<li class="list-group-item"><a href="/how-to-get-grants-for-ivf.html">How To Get Grants For Ivf</a></li>
+													<li class="list-group-item"><a href="/imf-about-india-farm-laws.html">Imf About India Farm Laws</a></li>
+													<li class="list-group-item"><a href="/how-to-get-dd-214-discharge-papers.html">How To Get Dd 214 Discharge Papers</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-free-ancestry-dna-kit.html">How To Get A Free Ancestry Dna Kit</a></li>
+													<li class="list-group-item"><a href="/imao-in-english.html">Imao In English</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-navy-reservist.html">How To Be A Navy Reservist</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Deals In Portland Oregon - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Deals In Portland Oregon",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/cd/0a/db/cd0adb901e35b8c618447e7c6e314d44.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+deals+in+portland+oregon",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Deals In Portland Oregon</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Oregon Department of Veterans Affairs 700 Summer St. Separate from the VA Home Loan Oregon is one of many states that offers its own veteran home loan program. Care at an Oregon Veterans Home is available to honorably discharged veterans their spouses and parents of service members who had a child die while serving in the US. <br>				
+			</p>
+										<a class="badge badge-danger" href="/imf-symbol-meaning.html">imf symbol meaning</a>
+											<a class="badge badge-success" href="/imf-world-bank-debt-relief.html">imf world bank debt relief</a>
+											<a class="badge badge-danger" href="/imf-world-bank-bali.html">imf world bank bali</a>
+											<a class="badge badge-dark" href="/imf-wants-new-bretton-woods.html">imf wants new bretton woods</a>
+											<a class="badge badge-warning" href="/imf-structural-adjustment-program-jamaica.html">imf structural adjustment program jamaica</a>
+											<a class="badge badge-success" href="/imf-unemployment-rate-iraq.html">imf unemployment rate iraq</a>
+											<a class="badge badge-danger" href="/imf-taiwan-gdp-2020.html">imf taiwan gdp 2020</a>
+											<a class="badge badge-warning" href="/imf-summer-internship-2019.html">imf summer internship 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right site.  Our site provides you with hints for viewing the highest quality video and image content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to view.  You can also bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/f1/2c/4ff12ccb08b9f94157656ff14faef6ed.png" data-lightbox="roadtrip" data-title="Hampton Roads Military Pasha Mezze Is Honoring The Military Community With A Veterans Day Discount Veterans Day Discounts Military Community Hampton Roads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/f1/2c/4ff12ccb08b9f94157656ff14faef6ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-MJGLZHbf9UBQgkU72lKfbEEynPS0JEr_Q';" alt="Hampton Roads Military Pasha Mezze Is Honoring The Military Community With A Veterans Day Discount Veterans Day Discounts Military Community Hampton Roads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hampton Roads Military Pasha Mezze Is Honoring The Military Community With A Veterans Day Discount Veterans Day Discounts Military Community Hampton Roads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/d8/45/24d84506295ff97a09ba2895b50bc1ee.jpg" data-lightbox="roadtrip" data-title="Buying A House As A Veteran Living In Portland Oregon Portland Oregon Real Estate Living In Portland Oregon Portland Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/d8/45/24d84506295ff97a09ba2895b50bc1ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnALW5ZyDtKksEs1rtfV19CbBQQbW7wy5JDA';" alt="Buying A House As A Veteran Living In Portland Oregon Portland Oregon Real Estate Living In Portland Oregon Portland Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House As A Veteran Living In Portland Oregon Portland Oregon Real Estate Living In Portland Oregon Portland Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/f6/f4/d4f6f4c90a2563ffe5ce6fd059abdc81.jpg" data-lightbox="roadtrip" data-title="Buying A House As A Veteran Living In Portland Oregon In 2021 Moving To Portland Living In Portland Oregon Portland Oregon Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/f6/f4/d4f6f4c90a2563ffe5ce6fd059abdc81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlGooFUsYPgIaqqBjDv1f1klzd04vBwJqxQ';" alt="Buying A House As A Veteran Living In Portland Oregon In 2021 Moving To Portland Living In Portland Oregon Portland Oregon Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House As A Veteran Living In Portland Oregon In 2021 Moving To Portland Living In Portland Oregon Portland Oregon Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/cb/d8/d9cbd8334acb5549326bf5840adbc721.png" data-lightbox="roadtrip" data-title="G I Junk Removal Is On A Mission To Provide Exceptional Service While Employing Veterans And Supporting Local Support Veterans Veterans Services Junk Removal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/cb/d8/d9cbd8334acb5549326bf5840adbc721.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-BNYvVNR-Psa4ub_Sf_hIb8Ml3CieBAvOw';" alt="G I Junk Removal Is On A Mission To Provide Exceptional Service While Employing Veterans And Supporting Local Support Veterans Veterans Services Junk Removal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Junk Removal Is On A Mission To Provide Exceptional Service While Employing Veterans And Supporting Local Support Veterans Veterans Services Junk Removal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/f0/2a/a4f02a27c7913b141ceaba073ac683a4.jpg" data-lightbox="roadtrip" data-title="Som Portland Memorial Coliseum Veterans Memorial Modern Architecture Design Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/f0/2a/a4f02a27c7913b141ceaba073ac683a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ08HyfIWKLuQJUh1UvecxeqUB3dhDHCgZSw';" alt="Som Portland Memorial Coliseum Veterans Memorial Modern Architecture Design Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Som Portland Memorial Coliseum Veterans Memorial Modern Architecture Design Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/72/02/65/720265ed5e9b17da4de410e69c230abe.jpg" data-lightbox="roadtrip" data-title="Buying A House As A Veteran Living In Portland Oregon Moving To Portland Living In Portland Oregon Portland Oregon Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/72/02/65/720265ed5e9b17da4de410e69c230abe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfqt2lFlBytd-aZV6-izVNou8fd0XvObyVg';" alt="Buying A House As A Veteran Living In Portland Oregon Moving To Portland Living In Portland Oregon Portland Oregon Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House As A Veteran Living In Portland Oregon Moving To Portland Living In Portland Oregon Portland Oregon Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d9/cb/d8/d9cbd8334acb5549326bf5840adbc721.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfqt2lFlBytd-aZV6-izVNou8fd0XvObyVg';" alt="Buying A House As A Veteran Living In Portland Oregon Moving To Portland Living In Portland Oregon Portland Oregon Real Estate">
+										<div class="card-body">
+						<h3 class="h5"><b>Oregon Driver Motor Vehicle Services now offers a veteran designation that can be voluntarily placed on Oregon driver licenses andor identification cards allowing you to easily confirm your veteran status for non-official purposes such as receiving veteran discounts at retail stores.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran deals in portland oregon</strong>. 
+								
+																	United States Department of Veterans Affairs Regional Office Portland. 
+																	Wildhorse Resort Casino Pendleton Oregon. 
+																	The Benson a Coast Hotel - Traveler rating. 
+																	Oregon Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These hotels with military discounts in Portland have great views and are well-liked by travelers. 
+																	Eligible veterans can receive fixed-rate financing for an owner-occupied single-family residence up to the Fannie Mae limit purchase only no refinancing and up to four. 
+																	The following Veterans Service Organizations are located at the Portland Regional Office. 
+																	VA Portland Health Care System Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In appreciation for their service The North Face proudly offers a 10 discount to all active reservists veteran and retired US. 
+																	Veterans can enjoy deals from free car. 
+																	A look at the special deals available to veterans and their families on Veterans Day which is Friday. 
+																	Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The offer runs from May 26-27. 
+																	National Association for Black Veterans. 
+																	Women and men who have served in the military access essential supportive resources and services employment and connections to local state and federal support. 
+																	On November 11 Starbucks will offer a free tall 12-oz hot brewed coffee for veterans military service members and military spouses at participating US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The list was provided by The Oregon Paralyzed Veterans of America. 
+																	Dollar General -- Veterans active-duty military and their families get an 11. 
+																	Bed Bath Beyond -- Veterans active duty and spouses get 25 off their entire purchase November 11 through 14. 
+																	Military personnel and to spouses and dependents of active personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Portland Veterans Stand Down. 
+																	800 633-6826 or 503 373-2373. 
+																	See the latest prices. 
+																	800 692-9666 or 503 373-2085 ORVET Home Loan Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Price estimates were calculated on October 17 2020. 
+																	This community-led partnership combines. 
+																	Veterans Day is today and businesses are saluting former and active military personnel with deals and freebies to show their appreciation. 
+																	The coffee shop will also be donating 25 cents for every cup of hot brewed coffee sold nationwide on November 11 to military nonprofits Team Red White Blue and Headstrong to support the mental health and wellbeing of military communities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	455 The Bidwell Portland - Traveler rating. 
+																	NE Salem OR 97301 General Inquiries. 
+																	This Veterans Day discounts list will continue to be updated as we learn of more nationally available Veterans Day discounts meals or other ways businesses and organizations want to give back to Veterans. 
+																	11 at all three locations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Veterans Day and year-round Tecovas is proud to offer a 10 discount to active-duty military military retirees and veterans on its handcrafted western-style boots and leather goods. 
+																	Thirsty Lion Gastropub Grill Tigard Hillsboro Portland OR Veterans and active military can get one free entrée and one non-alcoholic beverage on Veterans Day Wednesday Nov. 
+																	Over the last 30 days hotels with military discounts in Oregon have been available starting from 61 though prices have typically been closer to 98. 
+																	Find great deals on marijuana and cannabis products at recreational cannabis stores and medical dispensaries near Portland OR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregons largest honors and supports Veterans who are often either experiencing or at-risk of homelessness. 
+																	ODVA Home Loan Program. 
+																	Veterans Day 2019 is on Monday Nov. 
+																	Veterans and military will need to show their ID when purchasing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paralyzed Veterans of America. 
+																	The VA Portland Health Care System VAPORHCS provides health care services to Veterans in Oregon and Southwest Washington for the US. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Simply show ID to redeem. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Oregon Coast Aquarium will offer veterans 20 off admission ticket price for tickets purchased at the door rather than online. 
+																	All veterans and active military members can grab a free sandwich salad or pick-your-pair as a BOGO deal for Memorial Day. 
+																	Offer valid dine-in only with valid military ID. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/64/27/dd6427f548d6b49706895f466fb29dac.jpg" data-lightbox="roadtrip" data-title="1972 Daughters Of Union Veterans Plaque At In The Morning Glory Room At Portland Memorial In Portland Oregon In 2020 Veteran Hospital Veteran Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/64/27/dd6427f548d6b49706895f466fb29dac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAkPjKQryibEX0HOTz0RYtw5MAh5aSHTgBAQ';" alt="1972 Daughters Of Union Veterans Plaque At In The Morning Glory Room At Portland Memorial In Portland Oregon In 2020 Veteran Hospital Veteran Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1972 Daughters Of Union Veterans Plaque At In The Morning Glory Room At Portland Memorial In Portland Oregon In 2020 Veteran Hospital Veteran Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/34/5d/f3/345df34ab2eb610a30e1023cc3817cc2.jpg" data-lightbox="roadtrip" data-title="Buying A House As A Veteran Living In Portland Oregon In 2021 Living In Portland Oregon Portland Oregon Real Estate Moving To Portland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/34/5d/f3/345df34ab2eb610a30e1023cc3817cc2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuSJpv5R664gzWaNwDkTaKdfS4jrdwhDRYwQ';" alt="Buying A House As A Veteran Living In Portland Oregon In 2021 Living In Portland Oregon Portland Oregon Real Estate Moving To Portland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House As A Veteran Living In Portland Oregon In 2021 Living In Portland Oregon Portland Oregon Real Estate Moving To Portland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/13/5e/85135e4bcac4da07b88f876da23ae0be.png" data-lightbox="roadtrip" data-title="Suits For Soldiers Support Veterans Soldier Troops Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/13/5e/85135e4bcac4da07b88f876da23ae0be.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMelwbSd-omvqE8Yv43jtRcz8upKmH8g2N_A';" alt="Suits For Soldiers Support Veterans Soldier Troops Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suits For Soldiers Support Veterans Soldier Troops Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/cd/8b/a8cd8b38a8bb1a1b1070e5e223767c27.jpg" data-lightbox="roadtrip" data-title="Veterans Memorial Coliseum Portland Travel Usa Facts Veterans Memorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/cd/8b/a8cd8b38a8bb1a1b1070e5e223767c27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRYa-DO89XA5yynhD-Sq1iB4eHQ77RBco_A';" alt="Veterans Memorial Coliseum Portland Travel Usa Facts Veterans Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Memorial Coliseum Portland Travel Usa Facts Veterans Memorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/23/91/232391549ddc1c6d433862e08626e873.jpg" data-lightbox="roadtrip" data-title="Veteran S Hospital Marquam Hill 1930 Finding Your Way Around Pill Hill And The Us Veteran S Hospital Grounds Was A Veteran Hospital Aerial View Oregon City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/23/91/232391549ddc1c6d433862e08626e873.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSYGdGAh-nRy-3r-FykdQGpyjyfuW4rdCxg';" alt="Veteran S Hospital Marquam Hill 1930 Finding Your Way Around Pill Hill And The Us Veteran S Hospital Grounds Was A Veteran Hospital Aerial View Oregon City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran S Hospital Marquam Hill 1930 Finding Your Way Around Pill Hill And The Us Veteran S Hospital Grounds Was A Veteran Hospital Aerial View Oregon City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/2c/d0/c72cd0d90e17c77611bf99cb09b9c5f7.jpg" data-lightbox="roadtrip" data-title="Us Veterans Hospital 1935 Oregon Travel Veteran Hospital Portland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/2c/d0/c72cd0d90e17c77611bf99cb09b9c5f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1SoP7lAitngPegG1zn0i73TiCDFn8fWRJw';" alt="Us Veterans Hospital 1935 Oregon Travel Veteran Hospital Portland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Veterans Hospital 1935 Oregon Travel Veteran Hospital Portland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/fd/33/18fd33ed974b9bd3b6f287e03485a7c3.jpg" data-lightbox="roadtrip" data-title="Traveling Veterans Roadside Memorial Sandy Oregon Portland Pdx Roadside Memorial Travel Memorial Flag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/fd/33/18fd33ed974b9bd3b6f287e03485a7c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZv0FVAhYCACupYPdjQ4zpTYUu3xpq6-hkkg';" alt="Traveling Veterans Roadside Memorial Sandy Oregon Portland Pdx Roadside Memorial Travel Memorial Flag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Traveling Veterans Roadside Memorial Sandy Oregon Portland Pdx Roadside Memorial Travel Memorial Flag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/f5/7e/63f57e20443d33509d3e06539ee661b3.jpg" data-lightbox="roadtrip" data-title="Willamette National Cemetery S 63rd Annual Memorial Day Portland Oregon Honoring American Veterans America National Cemetery American Veterans Memorial Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/f5/7e/63f57e20443d33509d3e06539ee661b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsN9u-xJMVnfIBFOt6FaQ1W2UCY0q8Gpzjtw';" alt="Willamette National Cemetery S 63rd Annual Memorial Day Portland Oregon Honoring American Veterans America National Cemetery American Veterans Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Willamette National Cemetery S 63rd Annual Memorial Day Portland Oregon Honoring American Veterans America National Cemetery American Veterans Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/42/6a/c6426ac1464d6774459772dc2792de5d.jpg" data-lightbox="roadtrip" data-title="Metzler Park Clackamas County Oregon State Parks County Park State Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/42/6a/c6426ac1464d6774459772dc2792de5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8bGK8E0QxblKASoxmI-Y_CKQrUVAy-nseA';" alt="Metzler Park Clackamas County Oregon State Parks County Park State Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Metzler Park Clackamas County Oregon State Parks County Park State Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/b5/3e/8bb53eb0fa347aac2f7f00629ca1b950.jpg" data-lightbox="roadtrip" data-title="Veterans Hospital Ohsu Portland Aerial Tram Fall Leaves Portland Aerial Tram Veteran Hospital Portland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/b5/3e/8bb53eb0fa347aac2f7f00629ca1b950.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3R9h06Te489h2KKVd_ktLnz4dmU-2uBW19w';" alt="Veterans Hospital Ohsu Portland Aerial Tram Fall Leaves Portland Aerial Tram Veteran Hospital Portland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Hospital Ohsu Portland Aerial Tram Fall Leaves Portland Aerial Tram Veteran Hospital Portland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/ca/2c/cfca2c94ef1abf58f09930afd7f54288.jpg" data-lightbox="roadtrip" data-title="Portland S 15 Best Parks Ranked Portland Parks Washington Travel Oregon Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/ca/2c/cfca2c94ef1abf58f09930afd7f54288.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYcaEJ5V3Gy0U73RAuwlBGIXmO_ckB0df0Q';" alt="Portland S 15 Best Parks Ranked Portland Parks Washington Travel Oregon Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Portland S 15 Best Parks Ranked Portland Parks Washington Travel Oregon Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/0a/db/cd0adb901e35b8c618447e7c6e314d44.jpg" data-lightbox="roadtrip" data-title="Pin On Support Our Veterans Those Serving Our Country">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/0a/db/cd0adb901e35b8c618447e7c6e314d44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6YY5pyxCoAGfftIc0b7eOqfptXSpMKmQBQ';" alt="Pin On Support Our Veterans Those Serving Our Country">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Support Our Veterans Those Serving Our Country</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/9a/d5/139ad5cc121440493d558648f437b71a.jpg" data-lightbox="roadtrip" data-title="Memorial Coliseum 1969 Portland City Oregon Places Of Interest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/9a/d5/139ad5cc121440493d558648f437b71a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQriLwOGFVemaPbJJQcAbuewAtb7mtxpV5FLA';" alt="Memorial Coliseum 1969 Portland City Oregon Places Of Interest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memorial Coliseum 1969 Portland City Oregon Places Of Interest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/06/ea/9106eadf07e652aa937e814c5b7fb616.jpg" data-lightbox="roadtrip" data-title="Oregon Ballet Theatre Prima Ballerina Retires Blog At Edge Com Dance Images Ballet Theater Dance Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/06/ea/9106eadf07e652aa937e814c5b7fb616.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cgy1qSzx9qEue_TPh1nFDh5tzhQmLbIjMQ';" alt="Oregon Ballet Theatre Prima Ballerina Retires Blog At Edge Com Dance Images Ballet Theater Dance Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Ballet Theatre Prima Ballerina Retires Blog At Edge Com Dance Images Ballet Theater Dance Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/6e/8d/516e8db75d16048adf7a37f357367958.jpg" data-lightbox="roadtrip" data-title="Circa 1917 Wwi Portland Oregon Us Army Badge By Whitehead Hoag Army Badge Us Army Badges Badge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/6e/8d/516e8db75d16048adf7a37f357367958.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQI72UdK4D24l0573a8tlvltJJ3LXMUWL96g';" alt="Circa 1917 Wwi Portland Oregon Us Army Badge By Whitehead Hoag Army Badge Us Army Badges Badge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Circa 1917 Wwi Portland Oregon Us Army Badge By Whitehead Hoag Army Badge Us Army Badges Badge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/korea-imf-crisis-reason.html">Korea Imf Crisis Reason</a></li>
+													<li class="list-group-item"><a href="/jordan-imf-program-2020.html">Jordan Imf Program 2020</a></li>
+													<li class="list-group-item"><a href="/lmao-example.html">Lmao Example</a></li>
+													<li class="list-group-item"><a href="/kohls-military-discount-online.html">Kohls Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/lmao-bet-meaning.html">Lmao Bet Meaning</a></li>
+													<li class="list-group-item"><a href="/lmao-chill-meaning.html">Lmao Chill Meaning</a></li>
+													<li class="list-group-item"><a href="/key-differences-between-imf-and-world-bank.html">Key Differences Between Imf And World Bank</a></li>
+													<li class="list-group-item"><a href="/kohls-military-discount-coupons.html">Kohls Military Discount Coupons</a></li>
+													<li class="list-group-item"><a href="/lmao-jk.html">Lmao Jk</a></li>
+													<li class="list-group-item"><a href="/lmao-cat-meme.html">Lmao Cat Meme</a></li>
+													<li class="list-group-item"><a href="/lagarde-imf-greece.html">Lagarde Imf Greece</a></li>
+													<li class="list-group-item"><a href="/lmao-joke.html">Lmao Joke</a></li>
+													<li class="list-group-item"><a href="/lmao-expansion.html">Lmao Expansion</a></li>
+													<li class="list-group-item"><a href="/kohls-military-discount-code.html">Kohls Military Discount Code</a></li>
+													<li class="list-group-item"><a href="/lmao-haha.html">Lmao Haha</a></li>
+													<li class="list-group-item"><a href="/kohls-military-promo.html">Kohls Military Promo</a></li>
+													<li class="list-group-item"><a href="/kohls-womens-military-jacket.html">Kohls Womens Military Jacket</a></li>
+													<li class="list-group-item"><a href="/jw-marriott-orlando-military-discount.html">Jw Marriott Orlando Military Discount</a></li>
+													<li class="list-group-item"><a href="/kohls-military-discount-code-online.html">Kohls Military Discount Code Online</a></li>
+													<li class="list-group-item"><a href="/kohls-military-veterans.html">Kohls Military Veterans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

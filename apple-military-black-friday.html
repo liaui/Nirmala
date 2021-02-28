@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Apple Military Black Friday - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Apple Military Black Friday",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/fd/11/07/fd11076ccb90317be250d9366dd8d753.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=apple+military+black+friday",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Apple Military Black Friday</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">50 off the iPhone 6S Plus was another stand-out bargain selling at 299 compared to 349. Can I get free shipping at Apple Store when using a coupon. Visit the Apple Military Discount Website or visit and order from any US. <br>				
+			</p>
+										<a class="badge badge-light" href="/imf-debt-on-countries.html">imf debt on countries</a>
+											<a class="badge badge-primary" href="/imf-debt-per-country.html">imf debt per country</a>
+											<a class="badge badge-warning" href="/imf-data-mapper-world-economic-outlook.html">imf data mapper world economic outlook</a>
+											<a class="badge badge-warning" href="/imf-data-ukraine.html">imf data ukraine</a>
+											<a class="badge badge-warning" href="/imf-debt-relief-25-countries-list.html">imf debt relief 25 countries list</a>
+											<a class="badge badge-primary" href="/imf-data-hub.html">imf data hub</a>
+											<a class="badge badge-light" href="/imf-data-uzbekistan.html">imf data uzbekistan</a>
+											<a class="badge badge-success" href="/imf-data-release.html">imf data release</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/d1/e1/7bd1e1ab779b80aa735475914e2d49ac.jpg" data-lightbox="roadtrip" data-title="More Top 5 Worthy Black Friday Deals Black Friday Deals Black Friday Best Black Friday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/d1/e1/7bd1e1ab779b80aa735475914e2d49ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP906Fk4BGhXO_aL5oFC7oIQm8oW9yLcvZSQ';" alt="More Top 5 Worthy Black Friday Deals Black Friday Deals Black Friday Best Black Friday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Top 5 Worthy Black Friday Deals Black Friday Deals Black Friday Best Black Friday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/7c/0f/857c0fc8237a0cd579ccbd092d4ce91c.jpg" data-lightbox="roadtrip" data-title="Griffin Gb35108 Survivor Extreme Duty Military Case For The New Ipad 4th Generation Ipad 3 And Ipad 2 Black Best Ipad Ipad Apps Apple Ipad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/7c/0f/857c0fc8237a0cd579ccbd092d4ce91c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtMKoKJoClxpU95WIKmVOi1B0YYQRHRSbJg';" alt="Griffin Gb35108 Survivor Extreme Duty Military Case For The New Ipad 4th Generation Ipad 3 And Ipad 2 Black Best Ipad Ipad Apps Apple Ipad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Griffin Gb35108 Survivor Extreme Duty Military Case For The New Ipad 4th Generation Ipad 3 And Ipad 2 Black Best Ipad Ipad Apps Apple Ipad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/54/13/295413e2dfbadb4c1345965580781f0b.png" data-lightbox="roadtrip" data-title="Apple Launches Online Store For Active Military And Veterans With Discounted Pricing Apple New News Online This Or That Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/54/13/295413e2dfbadb4c1345965580781f0b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBU340kcBnnXzymnfAx6jCqM1jAYqd6jeInQ';" alt="Apple Launches Online Store For Active Military And Veterans With Discounted Pricing Apple New News Online This Or That Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Launches Online Store For Active Military And Veterans With Discounted Pricing Apple New News Online This Or That Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/11/07/fd11076ccb90317be250d9366dd8d753.png" data-lightbox="roadtrip" data-title="Black Ops Apple Watch Band Element Case Apple Watch Bands Watch Bands Apple Watch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/11/07/fd11076ccb90317be250d9366dd8d753.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTct8fGAm3bibuDiygb49rU4RoQja5q2GSykQ';" alt="Black Ops Apple Watch Band Element Case Apple Watch Bands Watch Bands Apple Watch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Ops Apple Watch Band Element Case Apple Watch Bands Watch Bands Apple Watch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/c4/77/d2c477b8ca203e99805afa72aac006e2.png" data-lightbox="roadtrip" data-title="Pin On Black Friday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/c4/77/d2c477b8ca203e99805afa72aac006e2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pkPMxHX-ptY7q-mdvw5Biy4Tb4Dnpp4ncA';" alt="Pin On Black Friday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black Friday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/d2/6e/fdd26e24e855d1f5acc62b2073be56b4.jpg" data-lightbox="roadtrip" data-title="Spigen Rugged Armor Pro Defensive Apple Watch Case Protects Your Smartwatch From Daily Use Apple Watch Apple Watch Case Watch Case">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/d2/6e/fdd26e24e855d1f5acc62b2073be56b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8m-_0wB9f0JR9zVZvE0Em_W6aZMWdLtKKw';" alt="Spigen Rugged Armor Pro Defensive Apple Watch Case Protects Your Smartwatch From Daily Use Apple Watch Apple Watch Case Watch Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spigen Rugged Armor Pro Defensive Apple Watch Case Protects Your Smartwatch From Daily Use Apple Watch Apple Watch Case Watch Case</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fd/11/07/fd11076ccb90317be250d9366dd8d753.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8m-_0wB9f0JR9zVZvE0Em_W6aZMWdLtKKw';" alt="Spigen Rugged Armor Pro Defensive Apple Watch Case Protects Your Smartwatch From Daily Use Apple Watch Apple Watch Case Watch Case">
+										<div class="card-body">
+						<h3 class="h5"><b>Black Friday 2021 Find Black Friday and Cyber Monday deals for military families and veterans including the exchange and commissaries.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Apple military black friday</strong>. 
+								
+																	You can now shop the Exchanges on online. 
+																	Apple Head online or in-store for Apples Black Friday Shopping event. 
+																	Early shopping starts Monday November 23rd. 
+																	Apple iPad Pro 11 in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple Vacations Military Discount an exclusive offer for military members is always promoted by Apple Vacations The military offer only avaliable for military staff such as veterans active duty members and retirees even their familiesVerify your military ID and check out with the offers on Apple Vacations Military Discount February 2021 list. 
+																	Black Friday is November 26 2021 and in case you miss that day Cyber Monday is on November 29 2021. 
+																	Apple Military Discount Student Discount and Apple Card Offer. 
+																	Save between 40-60 on home goods and supplies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple holds Black Friday and Cyber Monday deals with their Four-Day Shopping event. 
+																	The very best Apple device deals available now through to Black Friday at Best Buy Walmart Target and Amazon. 
+																	Most often the Apple Store military discount offers 10 off most items. 
+																	Variable APRs for Apple Card other than Apple Card Monthly Installments range from 1099 to 2199 based on creditworthiness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Best Apple Black Friday 2020 deals from Walmart Best Buy and Amazon. 
+																	19900 14900 Sale You save. 
+																	The Apple military discount is 10 on most products. 
+																	Heres what to know about the early 2020 deals and discounts for Apple Watches iPads iPhones Airpods and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manage Account Pay Bill. 
+																	Apple Watch Series 3 GPS Space Gray Aluminum Case with Black Sport Band. 
+																	Promotions Offers. 
+																	Rates as of April 1 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When it comes to great deals out of Cupertino the best youll probably get is a gift card when you pay full price for an Apple gadget. 
+																	Save 20 at Best Buy and snag the new iWatch for 409. 
+																	Taxes and shipping are not included in Apple Card Monthly Installments and are subject to your standard purchase APR. 
+																	Apple retail store at an online kiosk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple is making it more affordable and easier for veterans and military to purchase their products. 
+																	You can also find great Apple Store coupon deals on most items through Black Friday sales promotional sales or weekly sales. 
+																	Free 1-year Apple TV subscription. 
+																	Save on AirPods iPhones iPads Apple Watches and the new M1 MacBook Air and MacBook Pro. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you cannot find the information you need. 
+																	Other iWatch Black Friday deals. 
+																	Wondering what sort of deals were around for Apple products on Black Friday in 2019. 
+																	Bed Bath Beyond Up to 150 on Dyson products. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To use the military discount visit the Apple military discount website to order. 
+																	See the Apple Card Customer Agreement for more information. 
+																	Apple doesnt do Black Friday. 
+																	Past Black Friday Deals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple Black Friday Apple Watch Deal 1119 Apple Watch Series 6 GPS Cellular 40mm Graphite Stainless Steel Graphite Milanese Loop Band - 699 save 50 - BH - shop deal now. 
+																	The best Apple device deals. 
+																	Key dates to know for Apples Black Friday sale this year. 
+																	Black Friday Apples biggest deals are typically released on Black Friday itself which is November 27th this year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many businesses have announced that the Black Friday Deals will start ahead of schedule. 
+																	Apple Vacations Black Friday Deals will also be started before November 27 2020. 
+																	Argos took 20 off Apple AirPods you could get your hands on a pair for 139 instead of 159. 
+																	Many will return this year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The retailer offers an Apple military discount in addition to a student discount and a way to purchase products interest-free with an Apple Card. 
+																	Best Buy Find Black Friday deals on Samsung TVs iPads MacBook Air Amazon Echo Show 5 and. 
+																	But because it lists so many. 
+																	5000 2513 0 financing plus no payments for 12 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	² Discount on iPhone applies only to SIM-free phones. 
+																	Save 20 with Amazon and get the Apple iWatch Series 6 for 409 and the Apple Watch SE. 
+																	Carrier phones are not eligible for the discounted price. 
+																	¹ IDme is an Apple service provider and is only permitted to use your information for the purpose of verifying your eligibility for the Veterans and Military Purchase Plan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	64GB with WiFi. 
+																	Cyber Monday you can continue shopping through the weekend and into Monday November 30th. 
+																	Apple Black Friday deals last year. 
+																	The Apple AirPods Pro are a quality pair of earbuds and if youve wanted to snag yourself a pair at a good price youll be happy to know that their Black Friday price is back for a limited time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Although this years Black Friday will come on November 27 2020 this years shopping spree will be very different from previous years. 
+																	Amazon Amazons Black Friday deals are amazing every year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/a5/4a/3ba54aefd0b76f475351ba79ada057cf.jpg" data-lightbox="roadtrip" data-title="Aafes Black Friday Ad Scan Deals And Sales 2019 Black Friday Ads Black Friday Black Friday News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/a5/4a/3ba54aefd0b76f475351ba79ada057cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD5dziiyCPv5k4jdQt25exmyGcBR2_JiBaaQ';" alt="Aafes Black Friday Ad Scan Deals And Sales 2019 Black Friday Ads Black Friday Black Friday News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aafes Black Friday Ad Scan Deals And Sales 2019 Black Friday Ads Black Friday Black Friday News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/73/3c/d8733cb85698ceda5b02a2812ff5ff41.png" data-lightbox="roadtrip" data-title="Pin On Poison For Your Apple Watch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/73/3c/d8733cb85698ceda5b02a2812ff5ff41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG5rW1m9DG7nsrfuT_I9BXSRs7Q89VWkIZ_w';" alt="Pin On Poison For Your Apple Watch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Poison For Your Apple Watch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/45/38/b44538f776d210c142cfa6619b5e5413.jpg" data-lightbox="roadtrip" data-title="Aafes Black Friday Ad Scan Deals And Sales 2019 Black Friday Ads Black Friday Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/45/38/b44538f776d210c142cfa6619b5e5413.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE6xI2Gw99SqiaezKVWNE5h0OKHNyU-aLDzQ';" alt="Aafes Black Friday Ad Scan Deals And Sales 2019 Black Friday Ads Black Friday Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aafes Black Friday Ad Scan Deals And Sales 2019 Black Friday Ads Black Friday Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/49/89/7349896a780fdd1608b988fca0113a10.jpg" data-lightbox="roadtrip" data-title="Apple Watch Series 3 2 1 42mm Case Rugged Armor Apple Watch Accessories Best Apple Watch Spigen Apple Watch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/49/89/7349896a780fdd1608b988fca0113a10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ePu6oGwlPeOjlRipIXUMt4ZLHD6b8pQO1g';" alt="Apple Watch Series 3 2 1 42mm Case Rugged Armor Apple Watch Accessories Best Apple Watch Spigen Apple Watch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Watch Series 3 2 1 42mm Case Rugged Armor Apple Watch Accessories Best Apple Watch Spigen Apple Watch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/0c/6f/440c6fe06347333030487e314a99db0a.png" data-lightbox="roadtrip" data-title="Veterans Day 2020 Free Deals For The Military Military Wife Life Military Spouse Quotes Spouse Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/0c/6f/440c6fe06347333030487e314a99db0a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3iELNbEqRY2wBCaBL77PEI2UQ4h8T1XI9mA';" alt="Veterans Day 2020 Free Deals For The Military Military Wife Life Military Spouse Quotes Spouse Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day 2020 Free Deals For The Military Military Wife Life Military Spouse Quotes Spouse Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/e9/fd/38e9fd0b801c790fed90a429837a016c.jpg" data-lightbox="roadtrip" data-title="Earn Cash Back At Stores You Man On The Moon Man Moon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/e9/fd/38e9fd0b801c790fed90a429837a016c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFcKud8bWNadMKKbIvlX977OJKlZUlVD1QHA';" alt="Earn Cash Back At Stores You Man On The Moon Man Moon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Earn Cash Back At Stores You Man On The Moon Man Moon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/19/81/0119810baa3db1871e359eba8fce4a90.jpg" data-lightbox="roadtrip" data-title="Iphone X Case Iphone Xs Case Military Grade 15ft Drop Tested Protective Case Kickstand Best Iphone Cool Iphone Cases Iphone Cases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/19/81/0119810baa3db1871e359eba8fce4a90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBfdT8LWN3s9CQi8pMQor39_Fnboe6-ntkpg';" alt="Iphone X Case Iphone Xs Case Military Grade 15ft Drop Tested Protective Case Kickstand Best Iphone Cool Iphone Cases Iphone Cases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iphone X Case Iphone Xs Case Military Grade 15ft Drop Tested Protective Case Kickstand Best Iphone Cool Iphone Cases Iphone Cases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/d2/f2/66d2f29682df8b4cfd1e51cf6a2022a8.png" data-lightbox="roadtrip" data-title="Pin On Carterjett Promotionals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/d2/f2/66d2f29682df8b4cfd1e51cf6a2022a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zpfGKWUHURDbm6oCT1PFfaU9v76IHhpayQ';" alt="Pin On Carterjett Promotionals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Carterjett Promotionals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/66/e1/7866e1303e89026d05f2b0ce56260bda.jpg" data-lightbox="roadtrip" data-title="Amazon Com Iphone 6 Plus Case Verus Heavy Drop Protection Iphone 6 Plus 5 5 Case Thor Satin Silver Extra Slim Fit Dual L Iphone Iphone 6 Apple Iphone 6">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/66/e1/7866e1303e89026d05f2b0ce56260bda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkXOQg4w5QAgaNvRd6XoYt1ovVtXlxWRIBA';" alt="Amazon Com Iphone 6 Plus Case Verus Heavy Drop Protection Iphone 6 Plus 5 5 Case Thor Satin Silver Extra Slim Fit Dual L Iphone Iphone 6 Apple Iphone 6">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazon Com Iphone 6 Plus Case Verus Heavy Drop Protection Iphone 6 Plus 5 5 Case Thor Satin Silver Extra Slim Fit Dual L Iphone Iphone 6 Apple Iphone 6</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/38/77/113877f6617f0a174fb66e99c1c43b52.jpg" data-lightbox="roadtrip" data-title="Apple Watch Series 3 2 Catalyst Case 42mm Waterproof Shock Resistant Fast Ship Apple Watch Best Apple Watch Apple Watch Case">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/38/77/113877f6617f0a174fb66e99c1c43b52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLE-8d1XLde7EGLdQCDxxPjVwVXsIG3yWKlg';" alt="Apple Watch Series 3 2 Catalyst Case 42mm Waterproof Shock Resistant Fast Ship Apple Watch Best Apple Watch Apple Watch Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Watch Series 3 2 Catalyst Case 42mm Waterproof Shock Resistant Fast Ship Apple Watch Best Apple Watch Apple Watch Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/1e/bd/8a1ebd61593411d739cbe24d80c1b175.jpg" data-lightbox="roadtrip" data-title="25 Apple Tv Products At Target Black Friday Sneak Preview Sale Ad Apple Tv Apple Products Apple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/1e/bd/8a1ebd61593411d739cbe24d80c1b175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSMTuQRtTbOUbBPbt8nBrXjvHqvob7zI2Fw';" alt="25 Apple Tv Products At Target Black Friday Sneak Preview Sale Ad Apple Tv Apple Products Apple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">25 Apple Tv Products At Target Black Friday Sneak Preview Sale Ad Apple Tv Apple Products Apple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/e8/78/c6e878d05529abdc706144919d7b2050.jpg" data-lightbox="roadtrip" data-title="Pin On Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/e8/78/c6e878d05529abdc706144919d7b2050.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhJdszBD68i0r4ch-srXbe9TKDopBp0IR8g';" alt="Pin On Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/34/45/673445109d278f9dec54d7d958878f91.png" data-lightbox="roadtrip" data-title="Pin On Tech Articles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/34/45/673445109d278f9dec54d7d958878f91.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuLr0arEP_hG-zko7Nqr1TRpiys2VvlZSn9w';" alt="Pin On Tech Articles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tech Articles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/c4/01/e3c401ef838ca75c3c04103c69341c01.png" data-lightbox="roadtrip" data-title="Macsales Owc Black Friday Sale 2019 Get Up To 90 Off Black Friday Sale Black Friday Apple Mac Mini">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/c4/01/e3c401ef838ca75c3c04103c69341c01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBmkfskBKfNZoHO-cFCZVMRGSW-XW0AxPSRQ';" alt="Macsales Owc Black Friday Sale 2019 Get Up To 90 Off Black Friday Sale Black Friday Apple Mac Mini">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Macsales Owc Black Friday Sale 2019 Get Up To 90 Off Black Friday Sale Black Friday Apple Mac Mini</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/b3/23/aab323c6d05aed4d26ace732f3e42502.jpg" data-lightbox="roadtrip" data-title="Pin By Ringke On Tecnologia In 2021 Iphone Case Iphone Cases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/b3/23/aab323c6d05aed4d26ace732f3e42502.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAvojZy9NlOgNHLvmbL5h0ED6_uTRn3yQ6g';" alt="Pin By Ringke On Tecnologia In 2021 Iphone Case Iphone Cases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ringke On Tecnologia In 2021 Iphone Case Iphone Cases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/harley-davidson-wla-military-for-sale.html">Harley Davidson Wla Military For Sale</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-veterans-day-sale.html">Harley Davidson Veterans Day Sale</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-motorcycle-training.html">Harley Davidson Military Motorcycle Training</a></li>
+													<li class="list-group-item"><a href="/full-form-of-imf-in-accounting.html">Full Form Of Imf In Accounting</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-t-shirts.html">Harley Davidson Military T Shirts</a></li>
+													<li class="list-group-item"><a href="/fortune-500-companies-hiring-veterans.html">Fortune 500 Companies Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-sales-overseas-tour.html">Harley Davidson Military Sales Overseas Tour</a></li>
+													<li class="list-group-item"><a href="/frontier-military-discount.html">Frontier Military Discount</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-sales.html">Harley Davidson Military Sales</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-financing.html">Harley Davidson Military Financing</a></li>
+													<li class="list-group-item"><a href="/gdp-per-capita-imf-wiki.html">Gdp Per Capita Imf Wiki</a></li>
+													<li class="list-group-item"><a href="/foot-locker-veteran-discount.html">Foot Locker Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/greek-default-imf-2015.html">Greek Default Imf 2015</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-bobber.html">Harley Davidson Military Bobber</a></li>
+													<li class="list-group-item"><a href="/grants-for-companies-hiring-veterans.html">Grants For Companies Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/full-form-of-bff-in-chat.html">Full Form Of Bff In Chat</a></li>
+													<li class="list-group-item"><a href="/foreign-debt-by-country-imf.html">Foreign Debt By Country Imf</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-style-bike.html">Harley Davidson Military Style Bike</a></li>
+													<li class="list-group-item"><a href="/google-veteran-owned-business-badge.html">Google Veteran Owned Business Badge</a></li>
+													<li class="list-group-item"><a href="/fred-meyer-military-discount-days.html">Fred Meyer Military Discount Days</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

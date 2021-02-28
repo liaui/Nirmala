@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Vs Navy - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Vs Navy",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/564x/2c/a8/20/2ca820472b3d4a16bddcb7fa60356986.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+vs+navy",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Vs Navy</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There are currently 476000 active-duty personnel in the US. The Marines are commanded by a 4-star general called the Commandant of the Marine Corps. Pay in the all branches of the US. <br>				
+			</p>
+										<a class="badge badge-danger" href="/u-s-navy-dd-214-records.html">u s navy dd 214 records</a>
+											<a class="badge badge-secondary" href="/topgolf-veteran-discount.html">topgolf veteran discount</a>
+											<a class="badge badge-danger" href="/target-military-discount-november-2020.html">target military discount november 2020</a>
+											<a class="badge badge-light" href="/sprint-military-discount-sign-up.html">sprint military discount sign up</a>
+											<a class="badge badge-info" href="/under-imf-the-exchange-rate-system-was.html">under imf the exchange rate system was</a>
+											<a class="badge badge-info" href="/sprint-military-discount-website.html">sprint military discount website</a>
+											<a class="badge badge-primary" href="/uk-military-discount-disney-world.html">uk military discount disney world</a>
+											<a class="badge badge-dark" href="/sprint-military-veteran-discount.html">sprint military veteran discount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our site gives you hints for seeing the highest quality video and image content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/a0/97/6aa09771dcf1f1da2072744dae7b9e73.jpg" data-lightbox="roadtrip" data-title="Army Navy 2010 Salutes For Army And Navy Army Navy Football Army Vs Navy Football Army Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/a0/97/6aa09771dcf1f1da2072744dae7b9e73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStDnYkTc3DfqVJWTglMs2MA42lH7IURwuu5Q';" alt="Army Navy 2010 Salutes For Army And Navy Army Navy Football Army Vs Navy Football Army Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy 2010 Salutes For Army And Navy Army Navy Football Army Vs Navy Football Army Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/18/94/d11894d95453501b7e23aca8923787ea.jpg" data-lightbox="roadtrip" data-title="Pin By Jorge S On Us Navy Navy Humor Military Humor Navy Navy Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/18/94/d11894d95453501b7e23aca8923787ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR_SeI9qZGH8o5EJgvIC8Q2bc4HuLEXT3iKw';" alt="Pin By Jorge S On Us Navy Navy Humor Military Humor Navy Navy Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jorge S On Us Navy Navy Humor Military Humor Navy Navy Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/f9/6e/89f96e6ce2e54261376df12ca220fc57.jpg" data-lightbox="roadtrip" data-title="Go Army West Point Beat Navy Army Vs Navy Football Army Vs Navy Army Navy Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/f9/6e/89f96e6ce2e54261376df12ca220fc57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVHp1gr7s-pU7NolFDix_MUCnEnpwagH9alQ';" alt="Go Army West Point Beat Navy Army Vs Navy Football Army Vs Navy Army Navy Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Army West Point Beat Navy Army Vs Navy Football Army Vs Navy Army Navy Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/73/05/47/7305479ca0b5b38e2f7c29a7e0b75d46.jpg" data-lightbox="roadtrip" data-title="Delta Force Vs Navy Seals An Infographic Showing U S Delta Force And Navy Seal Soldiers Special Forces Military Special Forces Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/73/05/47/7305479ca0b5b38e2f7c29a7e0b75d46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHfxL9nZrN0gGRo03Wvd0ant5NyqJLINaTVg';" alt="Delta Force Vs Navy Seals An Infographic Showing U S Delta Force And Navy Seal Soldiers Special Forces Military Special Forces Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Delta Force Vs Navy Seals An Infographic Showing U S Delta Force And Navy Seal Soldiers Special Forces Military Special Forces Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/41/3c/d1413c3b69bc215c9aa2077f6db91ce7.jpg" data-lightbox="roadtrip" data-title="Nike Army Vs Navy Army Navy Football Navy Football Army Vs Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/41/3c/d1413c3b69bc215c9aa2077f6db91ce7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCffxd0lO3pJdtXnwGl99VjaaH6aRtLHybKA';" alt="Nike Army Vs Navy Army Navy Football Navy Football Army Vs Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nike Army Vs Navy Army Navy Football Navy Football Army Vs Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/cb/9a/c7cb9a31e14f6045bb637e427535ffe2.jpg" data-lightbox="roadtrip" data-title="Pin By Katie O Malley On Dad Army Navy Football Navy Football Football Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/cb/9a/c7cb9a31e14f6045bb637e427535ffe2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0uIHjVKD8p5R1FqsIUfWeAibgsj9YwCGiw';" alt="Pin By Katie O Malley On Dad Army Navy Football Navy Football Football Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Katie O Malley On Dad Army Navy Football Navy Football Football Poster</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6c/3d/69/6c3d694e278bd204413a0baabbe805f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0uIHjVKD8p5R1FqsIUfWeAibgsj9YwCGiw';" alt="Pin By Katie O Malley On Dad Army Navy Football Navy Football Football Poster">
+										<div class="card-body">
+						<h3 class="h5"><b>Does the Air Force pay more than the Navy.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military vs navy</strong>. 
+								
+																	Navy SEALs Navy EOD SWCC and SAR Swimmers. 
+																	While USAF basic training is slightly longer than Navy boot camp the swimming requirements for the Navy means many recruits find it more challenging. 
+																	If you feel like youre going to need some structure with your military career then the Navy is a better choice when comparing it to the Air Force. 
+																	Military Strength Comparisons 2021 Online tool for comparing the current military strengths of two world powers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The college football rivalry began when the Army Black Knights of the United States Military Academy at West Point New York and the Navy Midshipmen of the United States Naval Academy at Annapolis Maryland first played each other in 1890. 
+																	It has even a larger margin compared to the second biggest US. 
+																	Its also possible to join the Army and the Navy as a Reserve which means you will serve part-time. 
+																	Comparisons are made between the different systems used by nations to categorize the hierarchy of an armed force compared to another. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To the untrained civilian eye and even to some in the military theres no difference between two jobs. 
+																	Army consists of infantry and armed soldiers that travel on the ground to attack enemies. 
+																	For the gung-ho sailor the Navy possesses special operations forces. 
+																	The Navy however can attack targets from miles away using heavy guns and cruise missiles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army had another chance to score in the third period when a long booming punt by Vin Barta was fumbled by Harry Hurst and recovered by Melnik on the Navy 19. 
+																	The Army is commanded by a four-star general known as the Army Chief of Staff. 
+																	Navy is the unit of army that is concerned with protecting the waters of the country. 
+																	The Army having to protect the grounds and land-area of the US utilizes tanks and artillery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both the Army and the Navy offer the same basic ways you can join. 
+																	Get Army Black Knights vs. 
+																	Several of these lists mention NATO reference codesThese are the NATO rank reference codes used for easy comparison among NATO countries. 
+																	However Navy played a better schedule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy Midshipmen historic matchup records and real-time lines and odds before placing your next bet. 
+																	The top military member in the Air Force is the Air Force Chief of Staff. 
+																	Navy as an Office. 
+																	The Navy is commanded by a four-star admiral called the Chief of Naval Operations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military is based on rank and time in service. 
+																	The ArmyNavy Game is an American college football rivalry game between the Army Black Knights of the United States Military Academy at West Point New York and the Navy Midshipmen of the United States Naval Academy at Annapolis Maryland. 
+																	The GFP country comparison form is provided to allow you to make direct side-by-side comparisons of any two world powers represented in the GFP database. 
+																	The Navy while not as rigid as the Marines and Army has many deep-set customs and traditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It beat Tulane on the road and Army just lost 38-12 to the. 
+																	Submarines equipped with ballistic missiles for quick attacks are also utilized. 
+																	The US Army is by far the largest military branch in the United States. 
+																	They attack the terrorist at a close proximity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army wont win that easily but it runs better than Navy and is a whole lot stronger defensively. 
+																	Army is favored however and deservedly so. 
+																	Links to comparison charts can be found below. 
+																	Youll still have fewer rigid rules to follow than what youll find in the Army or the Marines but there are several deeply set traditions and customs that must be followed to have a successful career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition you can join the US. 
+																	The Black Knights or Cadets and Midshipmen each represent their services oldest officer commissioning sources. 
+																	As such the game has come to embody the spirit of the interservice rivalry of the United States Armed Forces. 
+																	The ArmyNavy Game is an American college football rivalry game between the Army Black Knights of the United States Military Academy USMA at West Point New York and the Navy Midshipmen of the United States Naval Academy USNA at Annapolis Maryland. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy when you add the United States National Guard and Reserves. 
+																	They act not only during war but even during times of peace when there are threats such as pirates. 
+																	The fact is both Army medics and Navy corpsmen provide the same service and deliver the best patient care they can muster. 
+																	This article is a list of various states armed forces ranking designations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This year Navy is looking to start a new win streak after ending Armys three-game streak last season with a. 
+																	The game marks the end of. 
+																	You can join as an Active Duty member which means youll be a full time member of the Army or Navy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/8c/cb/4e8ccb6a8fc614dcd33abe2f0d268db9.jpg" data-lightbox="roadtrip" data-title="Navy Midshipmen Vs Army West Point Black Knights Navy Midshipmen Army Vs Navy Football Army Black Knights Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/8c/cb/4e8ccb6a8fc614dcd33abe2f0d268db9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUiR0vW8iB2lxAhHseCC2b-vx872izEJz7Qw';" alt="Navy Midshipmen Vs Army West Point Black Knights Navy Midshipmen Army Vs Navy Football Army Black Knights Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Midshipmen Vs Army West Point Black Knights Navy Midshipmen Army Vs Navy Football Army Black Knights Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/2d/cb/d22dcbfdeaea6f5c10eee8fe11d1441b.jpg" data-lightbox="roadtrip" data-title="Pin By Ke Pinning On Go Navy Beat Army Go Navy Beat Army Army Navy Football Army Vs Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/2d/cb/d22dcbfdeaea6f5c10eee8fe11d1441b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPliBIsI17_iY_vsYQlKHgazanrfBlJW6hw';" alt="Pin By Ke Pinning On Go Navy Beat Army Go Navy Beat Army Army Navy Football Army Vs Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ke Pinning On Go Navy Beat Army Go Navy Beat Army Army Navy Football Army Vs Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/45/c9/0a45c92705a263ebe5f3c40a54fa6eed.jpg" data-lightbox="roadtrip" data-title="Pin By Lynda Wirts On Army Navy Army Vs Navy Navy Games Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/45/c9/0a45c92705a263ebe5f3c40a54fa6eed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK_REI6pJmhS7op32-Q2hECIpjo5OwG2EVpw';" alt="Pin By Lynda Wirts On Army Navy Army Vs Navy Navy Games Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lynda Wirts On Army Navy Army Vs Navy Navy Games Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/1a/6f/ca1a6faf615b36ecfe7f4e566ca2d416.jpg" data-lightbox="roadtrip" data-title="Army Camouflage Vs Navy Marines Air Force Camouflages Dr Evil Quotes Military Motivation Army Vs Marines Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/1a/6f/ca1a6faf615b36ecfe7f4e566ca2d416.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJZU0m9MX5LFgE1QqNBTxJwT0kE004Y_sLg';" alt="Army Camouflage Vs Navy Marines Air Force Camouflages Dr Evil Quotes Military Motivation Army Vs Marines Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Camouflage Vs Navy Marines Air Force Camouflages Dr Evil Quotes Military Motivation Army Vs Marines Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/d9/96/7ed996aeb7e90b564691eb37da4e6922.jpg" data-lightbox="roadtrip" data-title="Go Army Beat Navy Army Football Army Navy Football Army Vs Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/d9/96/7ed996aeb7e90b564691eb37da4e6922.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLIr2DE8C8M_CXXFnqVbi2M0aoS0QxCGocQ';" alt="Go Army Beat Navy Army Football Army Navy Football Army Vs Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Army Beat Navy Army Football Army Navy Football Army Vs Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/56/7f/56567ff7bff89fdad166fad8cba6fb71.jpg" data-lightbox="roadtrip" data-title="Best Football Game Of The Year One Year I Ll See It In Person Army Navy Football Army Vs Navy Football Go Navy Beat Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/56/7f/56567ff7bff89fdad166fad8cba6fb71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQnDVCpP_mNXhIj2LY8DStACgGMjutZPDnaw';" alt="Best Football Game Of The Year One Year I Ll See It In Person Army Navy Football Army Vs Navy Football Go Navy Beat Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Football Game Of The Year One Year I Ll See It In Person Army Navy Football Army Vs Navy Football Go Navy Beat Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/30/cf/1730cfeb2649cf7f34763b8fdc51c524.jpg" data-lightbox="roadtrip" data-title="1944 Army Black Knights Vs Navy Midshipmen 22 X 30 Canvas Historic Football Poster Army Navy Football Navy Football Army Vs Navy Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/30/cf/1730cfeb2649cf7f34763b8fdc51c524.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIY8xk9A2WxsKWz_lVr_CBIgrmqp0GRCgKqQ';" alt="1944 Army Black Knights Vs Navy Midshipmen 22 X 30 Canvas Historic Football Poster Army Navy Football Navy Football Army Vs Navy Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1944 Army Black Knights Vs Navy Midshipmen 22 X 30 Canvas Historic Football Poster Army Navy Football Navy Football Army Vs Navy Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/3d/69/6c3d694e278bd204413a0baabbe805f4.jpg" data-lightbox="roadtrip" data-title="Navy Vs Air Force Army Humor Military Memes Military Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/3d/69/6c3d694e278bd204413a0baabbe805f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRenmCX5ZHXyAHI2yCZ_PbRFON3VZhcKgC4SA';" alt="Navy Vs Air Force Army Humor Military Memes Military Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Vs Air Force Army Humor Military Memes Military Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/5a/1c/855a1c320192fc2260cfcdf4d318b1ef.jpg" data-lightbox="roadtrip" data-title="Armed Forces Vs Et Al Military Humor Army Humor Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/5a/1c/855a1c320192fc2260cfcdf4d318b1ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26wgV4n9-Yx01YUlIjV1yDazjWR6jJF5l0g';" alt="Armed Forces Vs Et Al Military Humor Army Humor Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Vs Et Al Military Humor Army Humor Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/31/c7/2631c7cb8f57dc4c008b985dcf1a3bf6.jpg" data-lightbox="roadtrip" data-title="Army And Navy To Take The Field With New Uniform Designs This Weekend Navy Football Navy Midshipmen College Football Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/31/c7/2631c7cb8f57dc4c008b985dcf1a3bf6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcvYoFQwpdvzqcGYl4Sk5jFDkMwBZTvvw1sg';" alt="Army And Navy To Take The Field With New Uniform Designs This Weekend Navy Football Navy Midshipmen College Football Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army And Navy To Take The Field With New Uniform Designs This Weekend Navy Football Navy Midshipmen College Football Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/52/34/605234b9c865f1aa7f3673f636060e86.jpg" data-lightbox="roadtrip" data-title="Navyrules Armydrools Go Navy Beat Army Go Navy Military Humor Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/52/34/605234b9c865f1aa7f3673f636060e86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Yp93CDOh8gEHvTth8WKzi6l4qv6zAjroCA';" alt="Navyrules Armydrools Go Navy Beat Army Go Navy Military Humor Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navyrules Armydrools Go Navy Beat Army Go Navy Military Humor Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/c8/16/6ec81665be0706cc5a9fdb1b06866430.jpg" data-lightbox="roadtrip" data-title="Fantanista Keys To The Army Vs Navy Football Game Navy Football Army Navy Football Army Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/c8/16/6ec81665be0706cc5a9fdb1b06866430.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpUd30pc7V6FOwRHRS0hqHYRkCMAINK7HNNA';" alt="Fantanista Keys To The Army Vs Navy Football Game Navy Football Army Navy Football Army Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fantanista Keys To The Army Vs Navy Football Game Navy Football Army Navy Football Army Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/da/66/d3da66b8e4e55091f0b3c1fc467c773f.jpg" data-lightbox="roadtrip" data-title="Army Navy Game Presented By Usaa Army Navy Football Army Football Army Vs Navy Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/da/66/d3da66b8e4e55091f0b3c1fc467c773f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPy7ywiPQVuI-Ii_-aZMk3vB3XzvipmtEAA';" alt="Army Navy Game Presented By Usaa Army Navy Football Army Football Army Vs Navy Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Game Presented By Usaa Army Navy Football Army Football Army Vs Navy Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/73/8a/f5738a0c4ea701471324564415ca9739.jpg" data-lightbox="roadtrip" data-title="1996 Cover Of Army Navy Game Program Army Vs Navy Football Army Navy Football Army Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/73/8a/f5738a0c4ea701471324564415ca9739.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjNu-40STSVD8LFkXJkxXlG6xxesIRF9qVQ';" alt="1996 Cover Of Army Navy Game Program Army Vs Navy Football Army Navy Football Army Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1996 Cover Of Army Navy Game Program Army Vs Navy Football Army Navy Football Army Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/ff/50/3cff50b9d905446e2b8b6633a4c06df0.jpg" data-lightbox="roadtrip" data-title="Youtube Navy Seals Army Vs Marines Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/ff/50/3cff50b9d905446e2b8b6633a4c06df0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakJo3_IolDW2SeeiuttkY2Fmxca5jvU2cUw';" alt="Youtube Navy Seals Army Vs Marines Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Navy Seals Army Vs Marines Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-angola-third-review.html">Imf Angola Third Review</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-jobs.html">Imf And World Bank Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-meeting.html">Imf And World Bank Meeting</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-the-decisions-are-taken-by.html">Imf And World Bank The Decisions Are Taken By</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-quotes.html">Imf And World Bank Quotes</a></li>
+													<li class="list-group-item"><a href="/imf-annual-external-sector-report.html">Imf Annual External Sector Report</a></li>
+													<li class="list-group-item"><a href="/imf-and-india.html">Imf And India</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-objectives-and-functions.html">Imf And World Bank Objectives And Functions</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-spring-meetings.html">Imf And World Bank Spring Meetings</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-tagalog.html">Imf And World Bank Tagalog</a></li>
+													<li class="list-group-item"><a href="/imf-and-afghanistan.html">Imf And Afghanistan</a></li>
+													<li class="list-group-item"><a href="/imf-and-bretton-woods-system.html">Imf And Bretton Woods System</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-funding.html">Imf And World Bank Funding</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-established.html">Imf And World Bank Established</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-similarities.html">Imf And World Bank Similarities</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-bribe.html">Imf And World Bank Bribe</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-bretton-woods.html">Imf And World Bank Bretton Woods</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-difference-in-hindi.html">Imf And World Bank Difference In Hindi</a></li>
+													<li class="list-group-item"><a href="/imf-angola-country-report.html">Imf Angola Country Report</a></li>
+													<li class="list-group-item"><a href="/imf-and-india-upsc.html">Imf And India Upsc</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

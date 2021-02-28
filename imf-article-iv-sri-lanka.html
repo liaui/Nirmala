@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Article Iv Sri Lanka - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Article Iv Sri Lanka",
+  "datePublished": "2021-02-28",
+  "image": "/search?q=woman+togo+beach&amp;tbm=isch",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+article+iv+sri+lanka",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Article Iv Sri Lanka</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Full text of the IMF statement is reproduced below. Staff Report for the 2016 Article IV Consultation and Request for a Three-Year Extended Arrangement under the Extended Fund Facility-Press Release. Program discussions will continue in April in Washington DC. <br>				
+			</p>
+										<a class="badge badge-warning" href="/best-military-workout-programs.html">best military workout programs</a>
+											<a class="badge badge-success" href="/best-companies-for-veterans-2020.html">best companies for veterans 2020</a>
+											<a class="badge badge-primary" href="/bed-bath-and-beyond-coupon-military-discount.html">bed bath and beyond coupon military discount</a>
+											<a class="badge badge-warning" href="/best-military-discount-on-laptops.html">best military discount on laptops</a>
+											<a class="badge badge-primary" href="/best-universities-for-vets-in-the-us.html">best universities for vets in the us</a>
+											<a class="badge badge-light" href="/bank-of-america-va-beach.html">bank of america va beach</a>
+											<a class="badge badge-dark" href="/bank-of-america-veterans-memorial.html">bank of america veterans memorial</a>
+											<a class="badge badge-info" href="/best-companies-to-work-for-as-veteran.html">best companies to work for as veteran</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/f6/51/34f6510cb1695d2e5508fa1718037d5e.jpg" data-lightbox="roadtrip" data-title="Imf Staff Completes 2015 Article Iv Mission To Bangladesh Mission Bangladesh Cover Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/f6/51/34f6510cb1695d2e5508fa1718037d5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXn-InU06kopWlkV-6OiagnEkOPlqMsk1JIA';" alt="Imf Staff Completes 2015 Article Iv Mission To Bangladesh Mission Bangladesh Cover Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Staff Completes 2015 Article Iv Mission To Bangladesh Mission Bangladesh Cover Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/c8/3c/5fc83c593dd4ccab7e92b6bfda9281ef.jpg" data-lightbox="roadtrip" data-title="Shop By Category Ebay Keyless Keyless Ignition Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/c8/3c/5fc83c593dd4ccab7e92b6bfda9281ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToiLI7l2PkkSNqkxLLEzOQW4vPOU6_qdCk_w';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop By Category Ebay Keyless Keyless Ignition Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/b2/d9/1cb2d98eb55961701b0c1b9794d45e70--audit-economic-development.jpg" data-lightbox="roadtrip" data-title="Ukraine S Economic Development And Trade Ministry Says Eleven Large State Owned Enterprises Soes Are Fully Sabotaging The Economic Development Audit Ukraine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/b2/d9/1cb2d98eb55961701b0c1b9794d45e70--audit-economic-development.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTnr84GSoLysUXAfQa11k3Iba1xsiw4rUGFw';" alt="Ukraine S Economic Development And Trade Ministry Says Eleven Large State Owned Enterprises Soes Are Fully Sabotaging The Economic Development Audit Ukraine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ukraine S Economic Development And Trade Ministry Says Eleven Large State Owned Enterprises Soes Are Fully Sabotaging The Economic Development Audit Ukraine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/37/25/f63725adac787c9b7b9f0c51c4fb895b.jpg" data-lightbox="roadtrip" data-title="Pin On Exotic Vacation Destinations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/37/25/f63725adac787c9b7b9f0c51c4fb895b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG0FEWlohDByTzxsLyvcVGCBu6XFza4o-Sug';" alt="Pin On Exotic Vacation Destinations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Exotic Vacation Destinations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/30/5e/4a305eb842868b4a29712af60eb81207.jpg" data-lightbox="roadtrip" data-title="Fia Summons Suleman Shahbaz To Justify Rs9 2 Billion Transactions Pakistan Lahore Karachi Islamabad Pakistan In 2020 Citing Sources Pakistan News Money Laundering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/30/5e/4a305eb842868b4a29712af60eb81207.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5xNrOFSEdYNNjiGwU1qDyzv3NHEyeZ7QV2Q';" alt="Fia Summons Suleman Shahbaz To Justify Rs9 2 Billion Transactions Pakistan Lahore Karachi Islamabad Pakistan In 2020 Citing Sources Pakistan News Money Laundering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fia Summons Suleman Shahbaz To Justify Rs9 2 Billion Transactions Pakistan Lahore Karachi Islamabad Pakistan In 2020 Citing Sources Pakistan News Money Laundering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/66/a5/a2/66a5a2421ebfd3873ccc9bc627e468d1.jpg" data-lightbox="roadtrip" data-title="Shop By Category Ebay Keyless Keyless Ignition Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/66/a5/a2/66a5a2421ebfd3873ccc9bc627e468d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGinDPsVcTjSHx6EQQCZPKn4GHkSKHZ_nXw';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop By Category Ebay Keyless Keyless Ignition Car</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="/search?q=nightlife+lome+togo&amp;tbm=isch" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGinDPsVcTjSHx6EQQCZPKn4GHkSKHZ_nXw';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										<div class="card-body">
+						<h3 class="h5"><b>Under Article IV of the IMFs Articles of Agreement the IMF holds bilateral discussions with members usually every year.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf article iv sri lanka</strong>. 
+								
+																	The Sri Lankan economy has good underlying momentum but is starting to show signs of strain from a combination of an increasingly difficult external environment and challenging policy adjustments. 
+																	1 Background Since the last Article IV consultation the economy has shown resilience in an environment of rising oil prices and the removal of export quotas for textiles and apparel. 
+																	Under Article IV of the IMFs Articles of Agreement the IMF holds bilateral discussions with members usually every year. 
+																	Recent developments and outlook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Executive Board Concludes 2018 Article IV Consultation and Completes Fourth Review under the Extended Arrangement Under the Extended Fund Facility with Sri Lanka Approving US 252 Million Disbursement. 
+																	The slowdown in growth and decline in imports have significantly. 
+																	This 2018 Article IV Consultation highlights the expectation that the Sri Lankan economy will normalize gradually. 
+																	During the Spring Meetings of the IMF and the World Bank. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The RFI request was on the IMF Executive Board agenda on 8 February along with the Article IV AIV consultation. 
+																	1 Background Sri Lankas economy grew steadily during the last two decades despite the civil conflict which has been going on for over 19 years. 
+																	On 3 June the Executive Board of the International Monetary Fund IMF concluded the Article IV consultation with Sri Lanka. 
+																	Staff Statement and Statement by the Executive Director for Sri Lanka. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Press Release IMF Staff Concludes Visit to Sri Lanka February 7 2020 Read the Sixth Review Press Release November 1 2019 and Staff Report November 4 2019 The last Article IV Executive Board Consultation was on June 1 2018. 
+																	Asia and Pacific Dept. 
+																	The staff report for the 2007 Article IV Consultation on Sri Lanka highlights economic growth development and performance. 
+																	On October 25 2006 the Executive Board of the International Monetary Fund IMF concluded the Article IV consultation with Sri Lanka. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Following subdued growth in 2017 owing to the lingering effects of weather-related shocks a recovery is underway as agriculture has started to rebound and growth in exports remains robust. 
+																	A staff team visits the country collects economic and financial information and discusses with officials the countrys economic developments and policies. 
+																	Sri Lanka continues to make important progress under the program. 
+																	In the context of the 2014 Article IV consultation with Sri Lanka the following documents have been released and are included in this package. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Despite positive growth momentum the Sri Lankan economy is facing challenges due to the difficult external environment and a period of significant political transition the IMF executive board. 
+																	The International Monetary Fund IMF on Friday said it has reached an agreement with Sri Lanka to extend a 15 billion loan facility for an extra year a move some analysts say could allow the. 
+																	Real GDP growth was revised to 27 percent in 2019 from 36 percent at the fifth review and is expected to strengthen to 35 percent in 2020 as tourism and related activities normalize. 
+																	Article IV documents include but are not limited to a press release an Executive Board assessment staff report and statement by the Executive Director. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Article IV reports are one surveillance tool through which the IMF gives advice to individual countries on macroeconomic policy. 
+																	Sri Lanka published on by INTERNATIONAL MONETARY FUND. 
+																	The Sri Lankan economy is gradually recovering from the severe impact of the Easter Sunday terrorist attacks. 
+																	Sri Lankas current IMF Program On 3 June 2016 the Executive Board of the IMF approved the Sri Lankan Governments request for a 36-month lending arrangement under the EFF lending facility25 This was worth SDR 11 billion which was equivalent to around 15 billion at the time and was smaller than the lending arrangement agreed in 2009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On September 3 2002 the Executive Board of the International Monetary Fund IMF concluded the Article IV consultation with Sri Lanka. 
+																	The IMF mission had constructive discussions with the Sri Lankan authorities on the 2018 Article IV Consultation and made progress towards a staff-level agreement on the fourth review of the EFF-supported program. 
+																	Ultimately the IMF published the Article IV on 11 February and noted the authorities interest in emergency financing with the Fund to support their stabilisation and reform efforts with some Directors encouraging a longer-term arrangement to address structural challenges. 
+																	Rising inflation a high current account deficit and low unemployment rate indicate that the economy may be operating at full capacity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Executive Board Concludes 2018 Article IV Consultation and Completes Fourth Review under the Extended Arrangement Under the Extended Fund Facility with Sri Lanka Approving US 252 Million Disbursement June 1 2018. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/ef/44/37/ef44377d6db4940f289c877ead541512--dyslexia-princess-diana.jpg" data-lightbox="roadtrip" data-title="The Countess Of Wessex Launches Dyslexia Awareness Week At The King S Countess Louise Mountbatten Duke And Duchess">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/ef/44/37/ef44377d6db4940f289c877ead541512--dyslexia-princess-diana.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxW1c7TzpdAN8UOq5Re-f6rAWPlhJEVAbCQ';" alt="The Countess Of Wessex Launches Dyslexia Awareness Week At The King S Countess Louise Mountbatten Duke And Duchess">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Countess Of Wessex Launches Dyslexia Awareness Week At The King S Countess Louise Mountbatten Duke And Duchess</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/ee/3e/ec/ee3eec5621e5e1911d21c90ab4dbf0b9.jpg" data-lightbox="roadtrip" data-title="Shop By Category Ebay Keyless Keyless Ignition Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/ee/3e/ec/ee3eec5621e5e1911d21c90ab4dbf0b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4axhUfehj-9oHKg5S55OfsXUSWfyp2TFgw';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop By Category Ebay Keyless Keyless Ignition Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/46/9f/76/469f76fdd47ce2f06bddfa41536a9b9a.jpg" data-lightbox="roadtrip" data-title="Shop By Category Ebay Keyless Keyless Ignition Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/46/9f/76/469f76fdd47ce2f06bddfa41536a9b9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGyAJhWQoTEAm1LjRFFkPDdm8KPKIMrXnnbw';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop By Category Ebay Keyless Keyless Ignition Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/55/64/74/5564748ef454f331ba062bbb4323d902.jpg" data-lightbox="roadtrip" data-title="Shop By Category Ebay Keyless Keyless Ignition Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/55/64/74/5564748ef454f331ba062bbb4323d902.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LGpYIqNTrINul6Yqbn40kpk2ff1XIbJ-ow';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop By Category Ebay Keyless Keyless Ignition Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/90/ab/5a90abef62d197a9c99e152b4affc082.jpg" data-lightbox="roadtrip" data-title="Massive Attack Announce Mezzanine Anniversary Tour With Cocteau Twins Liz Fraser Massive Attack Fraser Travel Tours">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/90/ab/5a90abef62d197a9c99e152b4affc082.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXPp4JPww_xmR6QGyfm8jvBbrB1HOAUVCIQ';" alt="Massive Attack Announce Mezzanine Anniversary Tour With Cocteau Twins Liz Fraser Massive Attack Fraser Travel Tours">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Massive Attack Announce Mezzanine Anniversary Tour With Cocteau Twins Liz Fraser Massive Attack Fraser Travel Tours</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/83/97/81/8397815b93bf98088af8327bfe49e516.jpg" data-lightbox="roadtrip" data-title="Shop By Category Ebay Keyless Keyless Ignition Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/83/97/81/8397815b93bf98088af8327bfe49e516.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwvd2HRDimlXBTlM0CeZ7lSCEQ3ZMoY0dSMw';" alt="Shop By Category Ebay Keyless Keyless Ignition Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop By Category Ebay Keyless Keyless Ignition Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=togo+lome+hotels&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrcobfgrfrzvuxc9fpgnrtxk58hftufu2dbtr6rbcnahdohvuvw Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=togo+lome+hotels&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=togo+lome+hotels&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrcobfgrfrzvuxc9fpgnrtxk58hftufu2dbtr6rbcnahdohvuvw Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrcobfgrfrzvuxc9fpgnrtxk58hftufu2dbtr6rbcnahdohvuvw Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=woman+togo+beach&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsxnbr76kigqyjmfz9y39tlwi6trlspv0u7aqppjy7zubu9w7lc Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=woman+togo+beach&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=woman+togo+beach&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsxnbr76kigqyjmfz9y39tlwi6trlspv0u7aqppjy7zubu9w7lc Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsxnbr76kigqyjmfz9y39tlwi6trlspv0u7aqppjy7zubu9w7lc Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=nightlife+lome+togo&amp;tbm=isch" data-lightbox="roadtrip" data-title="1">
+											<img class="card-img v-image ads-img " src="/search?q=nightlife+lome+togo&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=nightlife+lome+togo&amp;tbm=isch';" alt="1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-egypt-reform.html">Imf Egypt Reform</a></li>
+													<li class="list-group-item"><a href="/imf-eurozone-crisis.html">Imf Eurozone Crisis</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-arrangements-2020.html">Imf Exchange Rate Arrangements 2020</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-kenya.html">Imf Economic Outlook Kenya</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-growth-2020.html">Imf Egypt Growth 2020</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-loan-conditions.html">Imf Egypt Loan Conditions</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-fifth-review-pdf.html">Imf Egypt Fifth Review Pdf</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-july-2020.html">Imf Economic Outlook July 2020</a></li>
+													<li class="list-group-item"><a href="/imf-eu-gdp-2020.html">Imf Eu Gdp 2020</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-saudi-arabia.html">Imf Economic Outlook Saudi Arabia</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-second-review.html">Imf Egypt Second Review</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-update-june-2020.html">Imf Economic Outlook Update June 2020</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-ukraine.html">Imf Economic Outlook Ukraine</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-october-2020.html">Imf Egypt October 2020</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-by-country.html">Imf Exchange Rate By Country</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-program.html">Imf Egypt Program</a></li>
+													<li class="list-group-item"><a href="/imf-evil-bank-manager.html">Imf Evil Bank Manager</a></li>
+													<li class="list-group-item"><a href="/imf-exchange-rate-assessment.html">Imf Exchange Rate Assessment</a></li>
+													<li class="list-group-item"><a href="/imf-ethiopia-gdp-2020.html">Imf Ethiopia Gdp 2020</a></li>
+													<li class="list-group-item"><a href="/imf-economic-review-2020.html">Imf Economic Review 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

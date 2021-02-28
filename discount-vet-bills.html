@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Discount Vet Bills - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Discount Vet Bills",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/15/84/af/1584af801f833587fd5df743dc194563.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=discount+vet+bills",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Discount Vet Bills</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">From the main menu choose Bill. According to the 2017 2018 National Pet Owners Survey by the American Pet Products Association the average dog owner in the United States spent a total of 1518 on vet visits and medicines in 2016. These organizations may be able to help you pay your pets vet bills. <br>				
+			</p>
+										<a class="badge badge-primary" href="/disney-trip-military-discount.html">disney trip military discount</a>
+											<a class="badge badge-primary" href="/disability-retirement-from-military.html">disability retirement from military</a>
+											<a class="badge badge-primary" href="/discount-vet-in-my-area.html">discount vet in my area</a>
+											<a class="badge badge-warning" href="/discount-vet-brisbane.html">discount vet brisbane</a>
+											<a class="badge badge-primary" href="/disney-military-tickets-faq.html">disney military tickets faq</a>
+											<a class="badge badge-dark" href="/discount-tire-military-discount-oregon.html">discount tire military discount oregon</a>
+											<a class="badge badge-dark" href="/defence-forces-discount-ireland.html">defence forces discount ireland</a>
+											<a class="badge badge-warning" href="/discount-tire-veterans-day-sale.html">discount tire veterans day sale</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to view.  It is also possible to bring about supporting this site by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/32/78/ea3278e3aa9a6e1d4f05b5af3fd73fdb.jpg" data-lightbox="roadtrip" data-title="Vet Bill Help Vet Bills Cheap Pet Insurance Canine Cancer Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/32/78/ea3278e3aa9a6e1d4f05b5af3fd73fdb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLQtidOT24ZZU6-ft8f0NPKuRfKZjxPbTypg';" alt="Vet Bill Help Vet Bills Cheap Pet Insurance Canine Cancer Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vet Bill Help Vet Bills Cheap Pet Insurance Canine Cancer Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/ea/bf/f9eabf41cbe009f283c079d96788f77a.jpg" data-lightbox="roadtrip" data-title="For Those Who Need Help With Vet Bills Veterinary Animal Hospital Vet Clinics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/ea/bf/f9eabf41cbe009f283c079d96788f77a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMZGN4iYf4QyG7JruIw0jaasSuxFXvU245g';" alt="For Those Who Need Help With Vet Bills Veterinary Animal Hospital Vet Clinics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Those Who Need Help With Vet Bills Veterinary Animal Hospital Vet Clinics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/a1/2a/05a12a46062e7d674481e9e03f7dae4c.jpg" data-lightbox="roadtrip" data-title="Vet Bill Assistance Vet Bills Cheap Pet Insurance Pet Insurance Reviews">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/a1/2a/05a12a46062e7d674481e9e03f7dae4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWBvB7GPCrP4gFiLd79komRIWvIFV-vQUwQ';" alt="Vet Bill Assistance Vet Bills Cheap Pet Insurance Pet Insurance Reviews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vet Bill Assistance Vet Bills Cheap Pet Insurance Pet Insurance Reviews</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/2b/08/492b085fce0fc7a6cc7990a42a81740b.jpg" data-lightbox="roadtrip" data-title="Financial Assistance With Vet Bills Pet Health Pets Canine Cancer Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/2b/08/492b085fce0fc7a6cc7990a42a81740b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqP0csoXpF12F18TOwubZUhdRQ9DNcRYRmew';" alt="Financial Assistance With Vet Bills Pet Health Pets Canine Cancer Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Assistance With Vet Bills Pet Health Pets Canine Cancer Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/7c/5c/5d7c5c0ae4332c300564a6fb3dd1ab97.jpg" data-lightbox="roadtrip" data-title="Stuck With Large Vet Bills Here Are 6 Ways To Save On Vet Bills Vet Bills Dog Care Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/7c/5c/5d7c5c0ae4332c300564a6fb3dd1ab97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXX3ywWg3UxnPX_DmB_OY7hZg3bQ6Z3RTAg';" alt="Stuck With Large Vet Bills Here Are 6 Ways To Save On Vet Bills Vet Bills Dog Care Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stuck With Large Vet Bills Here Are 6 Ways To Save On Vet Bills Vet Bills Dog Care Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/9d/37/569d37a32bd701a237e41cade64fd8df.jpg" data-lightbox="roadtrip" data-title="Good To Know Vet Bills Canine Cancer Awareness Cat Illnesses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/9d/37/569d37a32bd701a237e41cade64fd8df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2hnhl-pFqmCBxwjrbcZd45doIFeRdpZA-w';" alt="Good To Know Vet Bills Canine Cancer Awareness Cat Illnesses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Good To Know Vet Bills Canine Cancer Awareness Cat Illnesses</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/15/84/af/1584af801f833587fd5df743dc194563.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2hnhl-pFqmCBxwjrbcZd45doIFeRdpZA-w';" alt="Good To Know Vet Bills Canine Cancer Awareness Cat Illnesses">
+										<div class="card-body">
+						<h3 class="h5"><b>Honorably discharged veterans of all branches of the service are also eligible for discounts or specially-priced electricity plans.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Discount vet bills</strong>. 
+								
+																	Provide proof of your veteran status such as your Veterans ID card Veterans Advantage card DD Form 214 or Military Retiree Account Statement. 
+																	If you already have a vet that youre happy with find out if they ever run a deal on dental cleanings or other preventative care services. 
+																	Click the sign to open the details. 
+																	If your animal requires emergency veterinary care and you cannot afford treatment contact nearby veterinary colleges that may have programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Back to top FitnessMedical Aids. 
+																	People doctors may not run specials but many vets do. 
+																	Verizon Wireless discount on monthly bills. 
+																	Under Current Bill scroll down to select a lines Account Charges. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It can be used alone or in addition to your dogs insurance. 
+																	It wouldnt occur to anyone in the so-called pet health industry to teach people how to properly feed and care for dogs and cats so that disease doesnt happen. 
+																	Pet Assure offers an across-the-board 25 discount on all of your dog or cats vet bills at participating veterinarians. 
+																	Adkins 301 Pet Hospital LLC low cost animal hospital veterinary clinic 5829 Gall Blvd Zephyrhills FL 33541 813-788-3135 or 813-715-9000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also check out this list from Red Rover of breed specific national organizations that may be able to provide financial assistance. 
+																	The electric bills assistance for veterans will help keep the unit running but will make it easier for those who need help paying the bill. 
+																	Applies only to the military members primary line. 
+																	If you need help with vet bills there are a number of charities who may be able to help 4. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even pre-existing conditions are covered. 
+																	To find the Meals on Wheels program nearest you enter your zip code here. 
+																	In fact most electricity suppliers offer the same discount rates to veterans and members of the Guard and Reserves as they do to active military service members. 
+																	23 discount on monthly bills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The largest veterinary discount plan starting as low as 795month. 
+																	Pet financial aid and discounted veterinary care-related organizations. 
+																	No matter the animal or the family we firmly believe that no pet should go without medical care. 
+																	50 off Verify identity with IDme Active duty and veterans Regal Entertainment Group. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many hidden discounts exist. 
+																	Save 25 on veterinary bills with our affordable pet insurance alternative. 
+																	Free Discounted and Low Cost Veterinary Services. 
+																	Scroll to the bottom of the page to Promotions and discounts to view any discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some coordinate volunteers who walk senior clients dogs and drive seniors and their pets to grooming and veterinary appointments. 
+																	Discount information appears here. 
+																	All pets are covered no matter their age health or breed. 
+																	Keep providing love and care for your fluffier counterparts and let pet fundraising lend financial help for vet bills so you can get them the medical attention they need. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 off for military personnel 20 off for Veterans Advantage members Some discounts require Veterans Advantage membership Active duty veterans retirees and family Reebok. 
+																	The Military Discount Center has many military discounts deals and freebies for active duty service members veterans and their families. 
+																	Some local groups help clients with the cost of veterinary care and boarding. 
+																	If you are unsure what qualifies as emergency veterinary care call your veterinarian and describe the symptoms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reduced-cost vaccinations and vet care for dogs and cats. 
+																	Many pet owners have started crowdfunding to raise money for their pets medical expenses. 
+																	There are many state-specific programs organizations and associations that can provide help with vet bills. 
+																	Your vet might also offer cash discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The ID required to obtain discounts varies so make sure to check that you have the correct paperwork in hand. 
+																	Dogs Trust provides free and subsidised treatments to pet owners who are homeless or in a housing crisis. 
+																	If they do be sure to schedule your pet. 
+																	Theres no waiting period or exclusions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use crowdfunding to get help paying vet bills. 
+																	Some veterinary offices can help by creating payment plans to spread out your expenses. 
+																	This figure includes the cost of routine checkups vaccinations sick visits emergency visits surgery heartworm. 
+																	Choose Discounts from the dropdown if available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One of the most significant costs of having a dog or cat is veterinary care. 
+																	Vet bills for treatment of disease have gotten so out of hand that people are now being advised to get pet health insurance. 
+																	Since 2009 our facility has been able to provide 67000 animals with affordable accessible state-of-the-art medical care. 
+																	If youre shopping around for a new vet ask if they offer a new patient discount andor a multi-pet discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Types of Electric Bills Assistance for Veterans Low Income Home Energy Assistance Program LIHEAP The government has a national program that helps to pay energy bills for those who have a financial need. 
+																	Discounted tickets purchases at the box office only Active duty and veterans. 
+																	Choose Plan from the dropdown. 
+																	The scheme runs in 112 towns and cities across England Northern Ireland Scotland and Wales. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Through our low cost veterinary services we help you keep your beloved pet. 
+																	In honor of Memorial Day The Fourth of July and Veterans Day many Florida parks attractions and other establishments offer discounts so check for savings on these holidays. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ce/e8/6f/cee86fd17e847a4b1317e83f7fd7668e.jpg" data-lightbox="roadtrip" data-title="Provide Your Pet Long Life And Get To Reduce Your Vet Bills By Obtaining The Proper Pet Insurance For Y Insurance Quotes Cheap Insurance Quotes Checkup Medical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ce/e8/6f/cee86fd17e847a4b1317e83f7fd7668e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJeSMzFdR24fRKjWWl7nOhlyboNXrpHPM6ag';" alt="Provide Your Pet Long Life And Get To Reduce Your Vet Bills By Obtaining The Proper Pet Insurance For Y Insurance Quotes Cheap Insurance Quotes Checkup Medical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Provide Your Pet Long Life And Get To Reduce Your Vet Bills By Obtaining The Proper Pet Insurance For Y Insurance Quotes Cheap Insurance Quotes Checkup Medical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/10/a3/b910a31a1c05d925a455e26569e0e389.jpg" data-lightbox="roadtrip" data-title="Getting Help To Pay Vet Bills Vet Bills Vet Costs Pet Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/10/a3/b910a31a1c05d925a455e26569e0e389.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7lBSqMjx9btWUD2ZzfxjpBPnoDlUBBsByg';" alt="Getting Help To Pay Vet Bills Vet Bills Vet Costs Pet Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Help To Pay Vet Bills Vet Bills Vet Costs Pet Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/07/3a/12073a2beefdaf9e8944f8a2c42acc38.jpg" data-lightbox="roadtrip" data-title="No One Helped Me Canine Cancer Vet Bills Pets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/07/3a/12073a2beefdaf9e8944f8a2c42acc38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQII6yvcXtLzDfgh9tdf_pClvJukwnPoleF3A';" alt="No One Helped Me Canine Cancer Vet Bills Pets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No One Helped Me Canine Cancer Vet Bills Pets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/f9/50/60f950ad333bb8c95ecc492a9ea05731.jpg" data-lightbox="roadtrip" data-title="Resources Veterinary Bills Financial Assistance Non Profit Animal Rescue Fundraising Animal Fundraising Dog Friends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/f9/50/60f950ad333bb8c95ecc492a9ea05731.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb-ONwRtKNAFWe5OdjtN1FqppFrtd_-bH3JA';" alt="Resources Veterinary Bills Financial Assistance Non Profit Animal Rescue Fundraising Animal Fundraising Dog Friends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resources Veterinary Bills Financial Assistance Non Profit Animal Rescue Fundraising Animal Fundraising Dog Friends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/36/ce/2c36cef718823908cdc2895dbd3725c3.jpg" data-lightbox="roadtrip" data-title="Pin On Healthy Paws Pet Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/36/ce/2c36cef718823908cdc2895dbd3725c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJFK0snsAMG475ov0ai-RO0EizC655Rh3xw';" alt="Pin On Healthy Paws Pet Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Healthy Paws Pet Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/5e/96/ca5e965acdbb9cbddb9686033d4af34e.jpg" data-lightbox="roadtrip" data-title="Help With Vet Bill Affordability The Mummy Toolbox Vet Bills Pet Care Dogs Puppies Cat Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/5e/96/ca5e965acdbb9cbddb9686033d4af34e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxVtujV_5UXW-JH4_ZXIQzpcAZ28-V9eXvA';" alt="Help With Vet Bill Affordability The Mummy Toolbox Vet Bills Pet Care Dogs Puppies Cat Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help With Vet Bill Affordability The Mummy Toolbox Vet Bills Pet Care Dogs Puppies Cat Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/38/94/e03894a38fa1309af5943751c44e6deb.jpg" data-lightbox="roadtrip" data-title="Finally A Remedy For Yeast Ear Infections In Your Dog Healthy Pets Dog Birthday Cake Dog Birthday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/38/94/e03894a38fa1309af5943751c44e6deb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8boTnFhh_JgR-IWAT3RWpaI4FKXhdSNd6w';" alt="Finally A Remedy For Yeast Ear Infections In Your Dog Healthy Pets Dog Birthday Cake Dog Birthday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finally A Remedy For Yeast Ear Infections In Your Dog Healthy Pets Dog Birthday Cake Dog Birthday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/5c/f7/605cf7a7791d292a3b2b6c2d37e08e57.png" data-lightbox="roadtrip" data-title="Control Your High Vet Bills Bagofcent Vet Bills Personal Finance Articles Smart Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/5c/f7/605cf7a7791d292a3b2b6c2d37e08e57.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9BlbMnUY794c1la_Sd0ORzo-_SL51jhOAfw';" alt="Control Your High Vet Bills Bagofcent Vet Bills Personal Finance Articles Smart Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Control Your High Vet Bills Bagofcent Vet Bills Personal Finance Articles Smart Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/57/c2/2057c2ce27f612e75c560b71111c4ba4.jpg" data-lightbox="roadtrip" data-title="Dogs Ain T Cheap Dogs Vet Bills Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/57/c2/2057c2ce27f612e75c560b71111c4ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-L0Ptkd4tC8oKu0vZ8PXi0rghVGFONkjjg';" alt="Dogs Ain T Cheap Dogs Vet Bills Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dogs Ain T Cheap Dogs Vet Bills Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/ac/4f/4dac4feb84baa0e5f1641fc2ff91067b.png" data-lightbox="roadtrip" data-title="Pin By Kathy Wellborn On Pet Stuff Sick Cat Vet Bills Canine Cancer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/ac/4f/4dac4feb84baa0e5f1641fc2ff91067b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWeHgf_yzgkjAzaPP9S-l1SAZhLCadn2mgw';" alt="Pin By Kathy Wellborn On Pet Stuff Sick Cat Vet Bills Canine Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kathy Wellborn On Pet Stuff Sick Cat Vet Bills Canine Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/f7/98/1af7989d8b02205520b25e9785f3653a.jpg" data-lightbox="roadtrip" data-title="Can T Afford A Vet What To Do If You Can T Pay Your Vet Bill Cat Health Problems Vet Bills Cat Vet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/f7/98/1af7989d8b02205520b25e9785f3653a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXgEEzyMxc8RJspweZHnNKRPCXFL-Vz88vw';" alt="Can T Afford A Vet What To Do If You Can T Pay Your Vet Bill Cat Health Problems Vet Bills Cat Vet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can T Afford A Vet What To Do If You Can T Pay Your Vet Bill Cat Health Problems Vet Bills Cat Vet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/49/3a/33493a90cec7b27a0de3edfa56f69230.png" data-lightbox="roadtrip" data-title="Buy A T Shirt To Support Dachshund Rescue Nw Fundraiser For Our Vet Bills Please Share Dachshund Rescue Vet Bills Wiener Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/49/3a/33493a90cec7b27a0de3edfa56f69230.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5J493yEMisbASej_M04TmGzHqe3HnZOXkg';" alt="Buy A T Shirt To Support Dachshund Rescue Nw Fundraiser For Our Vet Bills Please Share Dachshund Rescue Vet Bills Wiener Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy A T Shirt To Support Dachshund Rescue Nw Fundraiser For Our Vet Bills Please Share Dachshund Rescue Vet Bills Wiener Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/7c/c0/c47cc0d57b4f94af86f4c3c93e5ac3db.gif" data-lightbox="roadtrip" data-title="Pet Assurance Plan Only 1 For A 3 Month Trial Period Limited Time Offer How To Plan Pets Vet Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/7c/c0/c47cc0d57b4f94af86f4c3c93e5ac3db.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQphamIdnZH80uJ1pEy1PTa0I2QMh4KWPf2w';" alt="Pet Assurance Plan Only 1 For A 3 Month Trial Period Limited Time Offer How To Plan Pets Vet Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pet Assurance Plan Only 1 For A 3 Month Trial Period Limited Time Offer How To Plan Pets Vet Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/63/58/4c635896ce99b6d18fa2f0f663dbf421.jpg" data-lightbox="roadtrip" data-title="How Much Are Rabbits Vet Bills Rabbit Much">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/63/58/4c635896ce99b6d18fa2f0f663dbf421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8VlFNsulHbu47pXYtKfY6PK0UTZs29S1GIg';" alt="How Much Are Rabbits Vet Bills Rabbit Much">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Are Rabbits Vet Bills Rabbit Much</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/65/61/2d6561b58ccf7b0d6ec1fae051cd4cdb.png" data-lightbox="roadtrip" data-title="Discount Pet Care Pet Websites Animal Charities Animal Donations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/65/61/2d6561b58ccf7b0d6ec1fae051cd4cdb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrKK1bnUXtSN3zm_PyIZVU9ZBMvQ9a6GhecA';" alt="Discount Pet Care Pet Websites Animal Charities Animal Donations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discount Pet Care Pet Websites Animal Charities Animal Donations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-article-iv-report-oman.html">Imf Article Iv Report Oman</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-namibia.html">Imf Article Iv Namibia</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-zambia.html">Imf Article Iv Zambia</a></li>
+													<li class="list-group-item"><a href="/imf-bank-ceo.html">Imf Bank Ceo</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-uae-2019.html">Imf Article Iv Uae 2019</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-nigeria-2019.html">Imf Article Iv Nigeria 2019</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-liberia.html">Imf Article Iv Liberia</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-poland.html">Imf Article Iv Poland</a></li>
+													<li class="list-group-item"><a href="/imf-bahrain-report.html">Imf Bahrain Report</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-pakistan.html">Imf Article Iv Pakistan</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-review.html">Imf Article Iv Review</a></li>
+													<li class="list-group-item"><a href="/imf-bailout-of-greece.html">Imf Bailout Of Greece</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-report-jordan.html">Imf Article Iv Report Jordan</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-report-nigeria.html">Imf Article Iv Report Nigeria</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-kiribati.html">Imf Article Iv Kiribati</a></li>
+													<li class="list-group-item"><a href="/imf-bahrain-economy.html">Imf Bahrain Economy</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-togo.html">Imf Article Iv Togo</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-wiki.html">Imf Article Iv Wiki</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-turkey.html">Imf Article Iv Turkey</a></li>
+													<li class="list-group-item"><a href="/imf-article-iv-vietnam.html">Imf Article Iv Vietnam</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

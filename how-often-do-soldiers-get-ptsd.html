@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Often Do Soldiers Get Ptsd - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Often Do Soldiers Get Ptsd",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/ab/85/56/ab85565fe79d81d35cdc8351fcf00c93.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+often+do+soldiers+get+ptsd",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Often Do Soldiers Get Ptsd</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">One out of eight returning soldiers are diagnosed with Post Traumatic Stress Disorder. A new study published in the journal Clinical Psychological Science found that soldiers who enlisted before the age of 25 were seven times more likely to develop post-traumatic stress syndrome. The effects of war can be far-reaching. <br>				
+			</p>
+										<a class="badge badge-warning" href="/imf-argentina-report.html">imf argentina report</a>
+											<a class="badge badge-dark" href="/imf-argentina-news.html">imf argentina news</a>
+											<a class="badge badge-success" href="/imf-argentina-article-iv.html">imf argentina article iv</a>
+											<a class="badge badge-dark" href="/imf-annual-report-on-exchange-rate-arrangements-2018.html">imf annual report on exchange rate arrangements 2018</a>
+											<a class="badge badge-light" href="/imf-article-4-afghanistan.html">imf article 4 afghanistan</a>
+											<a class="badge badge-info" href="/imf-article-iv-consultation-report.html">imf article iv consultation report</a>
+											<a class="badge badge-danger" href="/imf-argentina-crisis.html">imf argentina crisis</a>
+											<a class="badge badge-dark" href="/imf-article-iv-germany.html">imf article iv germany</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the right site.  Our site gives you hints for seeing the highest quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://centerstone.org/wp-content/uploads/PTSD-infographic.png" data-lightbox="roadtrip" data-title="What Is Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://centerstone.org/wp-content/uploads/PTSD-infographic.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsJ_DKbO6B6sjr8mC2giXe0FCrgmFL0FeZQ';" alt="What Is Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2013/03/09/285154/original.jpg" data-lightbox="roadtrip" data-title="Study Finds Soldiers Ptsd Diagnoses Accurate Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2013/03/09/285154/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTagCCCwq398aVktE4poAz2717ZXLJEVZDyIA';" alt="Study Finds Soldiers Ptsd Diagnoses Accurate Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Study Finds Soldiers Ptsd Diagnoses Accurate Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/c0/b0/bec0b0e971134d6c580196fa1d4b5099.jpg" data-lightbox="roadtrip" data-title="Pin On German West German Bundeswehr">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/c0/b0/bec0b0e971134d6c580196fa1d4b5099.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBZ0AfFu_vs_mrQYhw3ARV6BL3qftTVAz2Q';" alt="Pin On German West German Bundeswehr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On German West German Bundeswehr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/12/ptsd-military-families.jpg" data-lightbox="roadtrip" data-title="Military Families And Ptsd Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/12/ptsd-military-families.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-_5Xr7U6UGVsgVi-xkKLt2ONfXYfLp5iPw';" alt="Military Families And Ptsd Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Families And Ptsd Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.milwaukeeindependent.com/wp-content/uploads/2020/02/012220_VeteranPTSD_01.jpg" data-lightbox="roadtrip" data-title="Conversations About Combat Our Misunderstanding Of Who Suffers From Ptsd And Why The Milwaukee Independent">
+											<img class="card-img v-image ads-img " src="http://www.milwaukeeindependent.com/wp-content/uploads/2020/02/012220_VeteranPTSD_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs2sAhimgP91imFcrtBTxoyxUGSA_IlrgkqQ';" alt="Conversations About Combat Our Misunderstanding Of Who Suffers From Ptsd And Why The Milwaukee Independent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conversations About Combat Our Misunderstanding Of Who Suffers From Ptsd And Why The Milwaukee Independent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2017/04/PROVING-YOUR-PTSD.png" data-lightbox="roadtrip" data-title="Guide To Proving Service Connection Of Ptsd Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2017/04/PROVING-YOUR-PTSD.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlwwnsWSpjMxbqxsXBg1SpcqT1jezoqnAsw';" alt="Guide To Proving Service Connection Of Ptsd Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guide To Proving Service Connection Of Ptsd Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b7/37/af/b737af31fb3688f543cf11d3c57c997f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlwwnsWSpjMxbqxsXBg1SpcqT1jezoqnAsw';" alt="Guide To Proving Service Connection Of Ptsd Hill Ponton P A">
+										<div class="card-body">
+						<h3 class="h5"><b>Download VA Form 21-0781a PDF Note.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How often do soldiers get ptsd</strong>. 
+								
+																	About 15 out of every 100 Vietnam veterans 15 were currently. 
+																	A Statement in Support of Claim for Service Connection for Post-Traumatic Stress Disorder Secondary to Personal Assault VA Form 21-0781a. 
+																	In addition to the tremendous support flexibility and care that wives of soldiers exhibit dealing with a spouse with post-traumatic stress disorder can add to existent familial relationship and individual stressors. 
+																	PTSD is trauma-based and often misdiagnosed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How Common Is PTSD Among Veterans. 
+																	In our screening process well focus on getting a full understanding of your PTSD to help determine your eligibility for disability benefits. 
+																	607 of men and 512 of women reported at least one traumatic event. 
+																	An important change in DSM-5 is that PTSD is no longer an Anxiety Disorder. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Of the soldiers who experienced any potentially traumatic combat exposures only 316 developed the PTSD syndrome. 
+																	Recent data shows about 4 of every 100 American men or 4 and 10 out every 100 American women or 10 will be diagnosed with PTSD in their lifetime. 
+																	My guess is that the number should be much higher for those who have been in combat more like one in four. 
+																	PTSD prevalence in the military varies by war but if you or a loved one has been affected by the mental illness as a result of trauma know that relief is possible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About 12 out of every 100 Gulf War Veterans or 12 have PTSD in a given year. 
+																	When the researchers limited their analysis to the soldiers who experienced the most severe traumatic exposures there was still a substantial proportion about 30 that did not develop the syndrome. 
+																	People in the military especially during wartime may be at high risk for PTSD. 
+																	A soldiers family may also experience high levels of stress. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	June is Post-Traumatic Stress Disorder Awareness Month a time to shed light on the debilitating mental disorder that affects up to 8 percent of all Americans at some point during their lives. 
+																	One important finding which was not clear at first is that PTSD is relatively common. 
+																	For wives of soldiers with PTSD and husbands of women who have developed the severe anxiety disorder in the line of service the effects of trauma can be far-reaching. 
+																	The researchers also found that soldiers who inflicted harm on civilians or prisoners of war were much more likely to develop PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PTSD stands for Post Traumatic Stress Disorder and most often comes as a result of a very stressful or traumatic experience. 
+																	However help is available and there are a number of resources for military soldiers and their families trying to cope. 
+																	Clinicians frequently confuse PTSD with depression bipolar or anxiety. 
+																	Click to see full answer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the last several hundred years medical doctors have described a few PTSD-like illnesses particularly in soldiers who experienced combat. 
+																	Gulf War Desert Storm. 
+																	Most often seen in soldiers and rape victims. 
+																	Operations Iraqi Freedom OIF and Enduring Freedom OEF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yet this rate is much higher for military veterans and the exact amount depends largely on which conflict they endured. 
+																	About 8 of all Americans will experience PTSD at some point in their lives according to the Veterans Administration. 
+																	Nostalgia and Soldiers Heart. 
+																	War is often a very stressful and traumatic experience which can cause PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About 11-20 out of every 100 Veterans or between 11-20 who. 
+																	Women 104 are twice as likely as men 5 to develop PTSD and they represent a small portion of those who have experienced least one traumatic event. 
+																	According to the US. 
+																	Often triggered by the melodies of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs approximately 7 to 8 percent of the population will experience PTSD at some time in their lives. 
+																	Learn about the risk factors. 
+																	This isnt surprising considering many symptoms of PTSDlike hypervigilance hyperawareness and adrenaline-quick reflexeshelped you survive when you were deployed. 
+																	The number of Veterans with PTSD varies by service era. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We dont know why some soldiers develop PTSD and others dont but we do know that the incidence goes up with the number of tours and the amount of combat you experienced. 
+																	Is PTSD More Common Among Soldiers Now Than in the Past. 
+																	About 11 to 20 out of every 100 veterans or between 11 and 20 who served in operations Iraqi Freedom and Enduring. 
+																	Of the soldiers who experienced any potentially traumatic combat exposures only 316 developed the PTSD syndrome. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rates are even higher among those with prior military service with 11 to 30 percent of veterans suffering from PTSD. 
+																	American Psychiatric Association put it in the books as post-traumatic stress disorder in 1980. 
+																	About 12 out of every 100 Gulf War Veterans or 12 have PTSD in a given year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/85/56/ab85565fe79d81d35cdc8351fcf00c93.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/85/56/ab85565fe79d81d35cdc8351fcf00c93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXDpd40RREwZ_n0juvlnUIun1-h11azbWB8Q';" alt="Pin On Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://now.tufts.edu/sites/default/files/170127_ptsd_L.jpg" data-lightbox="roadtrip" data-title="Soldiering On With Ptsd Tufts Now">
+											<img class="card-img v-image ads-img " src="https://now.tufts.edu/sites/default/files/170127_ptsd_L.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-X-Xky7ltQa2Xbn68Iv8lZmPxE-xsH6baQ';" alt="Soldiering On With Ptsd Tufts Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldiering On With Ptsd Tufts Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/11/66/ae11661a115c98747db96dca64c26080.jpg" data-lightbox="roadtrip" data-title="Pin On Head Space And Timing Blog Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/11/66/ae11661a115c98747db96dca64c26080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaD0H11n6_kENkCF9v1Pa_hI6EJuRXymZ3vQ';" alt="Pin On Head Space And Timing Blog Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Head Space And Timing Blog Posts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/39/57/493957e240e8a8ea60c6668d3dbcf372.jpg" data-lightbox="roadtrip" data-title="The Heartbreaking Military Confessions Of Whisper Military Love Whisper Confessions Whisper App Confessions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/39/57/493957e240e8a8ea60c6668d3dbcf372.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0cPYstSCRnCDypV31rieW4C3gQwA735s1g';" alt="The Heartbreaking Military Confessions Of Whisper Military Love Whisper Confessions Whisper App Confessions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Heartbreaking Military Confessions Of Whisper Military Love Whisper Confessions Whisper App Confessions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/37/af/b737af31fb3688f543cf11d3c57c997f.jpg" data-lightbox="roadtrip" data-title="Pin On Military News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/37/af/b737af31fb3688f543cf11d3c57c997f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRlDSMfszbAqKMtmiDVP5jCrcgzkuoID7sgQ';" alt="Pin On Military News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/56/ca/f056ca6848643763cb440eb7071b9d2e.jpg" data-lightbox="roadtrip" data-title="Is That What They Say To Them After Carrying Heavy Loads Military Humor American Soldiers Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/56/ca/f056ca6848643763cb440eb7071b9d2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXR3YALkhuu9uoT4KEgiF50sJtzD2cWBKb2w';" alt="Is That What They Say To Them After Carrying Heavy Loads Military Humor American Soldiers Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is That What They Say To Them After Carrying Heavy Loads Military Humor American Soldiers Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/01/ptsd-ratings-part-4.png" data-lightbox="roadtrip" data-title="Va Disability Rating For Ptsd Explained Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/01/ptsd-ratings-part-4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0WRxTP5GapFv8TfcVlTV71y1oe4PEQhRXg';" alt="Va Disability Rating For Ptsd Explained Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Ptsd Explained Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/44/e6/9d44e60244546db9dfcb68d85f4197f9.jpg" data-lightbox="roadtrip" data-title="The Hidden Soldiers Women Of War In Pictures Female Soldier British Army Military Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/44/e6/9d44e60244546db9dfcb68d85f4197f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKXHewet8FXxp8cgNraEowsDmI-2GXgKpbg';" alt="The Hidden Soldiers Women Of War In Pictures Female Soldier British Army Military Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hidden Soldiers Women Of War In Pictures Female Soldier British Army Military Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/02/df/7f02df9c88d70019cbea1db287ad7bfe.jpg" data-lightbox="roadtrip" data-title="A Soldier Dies On The Battle Field At The Gates Of Heaven Where He Met God He Said To God Lord I Know I Ve Done Many Things I M N Me Myself">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/02/df/7f02df9c88d70019cbea1db287ad7bfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmwrUIyA0JG6A0h5f8MsGDCzjWAISbORHMQ';" alt="A Soldier Dies On The Battle Field At The Gates Of Heaven Where He Met God He Said To God Lord I Know I Ve Done Many Things I M N Me Myself">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Soldier Dies On The Battle Field At The Gates Of Heaven Where He Met God He Said To God Lord I Know I Ve Done Many Things I M N Me Myself</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a7/43/89/a74389edd56b40919a1fb559686ccf2b.jpg" data-lightbox="roadtrip" data-title="Pin On Chemical Dependency Military Veterans Sw3263">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a7/43/89/a74389edd56b40919a1fb559686ccf2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-mUM2_lfspaK0bFwuuVZjdop4sS0WAeKxA';" alt="Pin On Chemical Dependency Military Veterans Sw3263">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chemical Dependency Military Veterans Sw3263</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/a7/5e/18a75ebb36669e5a68d9d9110de46cd5.jpg" data-lightbox="roadtrip" data-title="The Best Way To Not Feel Hopeless Is To Get Up And Do Something Don T Wait For Good Things To Happen To Military Community Military Veterans Feeling Hopeless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/a7/5e/18a75ebb36669e5a68d9d9110de46cd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwEtq6ppefg_sxJ7a7L_oLuqapygyzUPP_aw';" alt="The Best Way To Not Feel Hopeless Is To Get Up And Do Something Don T Wait For Good Things To Happen To Military Community Military Veterans Feeling Hopeless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Way To Not Feel Hopeless Is To Get Up And Do Something Don T Wait For Good Things To Happen To Military Community Military Veterans Feeling Hopeless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.vanityfair.com/photos/554a6f091aaec7043ea428d1/master/w_1600%2Cc_limit/the-bonds-of-battle-ptsd-sebastian-junger-vf-03.jpg" data-lightbox="roadtrip" data-title="Ptsd The War Disorder That Goes Far Beyond The Battlefield Vanity Fair">
+											<img class="card-img v-image ads-img " src="https://media.vanityfair.com/photos/554a6f091aaec7043ea428d1/master/w_1600%2Cc_limit/the-bonds-of-battle-ptsd-sebastian-junger-vf-03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTEEHB_TCGumPQ-H46mltQDgJUvYYQDMVtw';" alt="Ptsd The War Disorder That Goes Far Beyond The Battlefield Vanity Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd The War Disorder That Goes Far Beyond The Battlefield Vanity Fair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/w_1mnQwHoKM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Ptsd In The Special Forces Everything You Need To Know">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/w_1mnQwHoKM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAogWckJ6Donhm9dR40RxlRGXKuZ8M3hISg';" alt="Ptsd In The Special Forces Everything You Need To Know">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd In The Special Forces Everything You Need To Know</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.heroesmile.com/wp-content/uploads/2020/08/shutterstock_1173167254.jpg" data-lightbox="roadtrip" data-title="Ptsd Symptoms And How To Get Help Heroes Mile Veteran Rehab">
+											<img class="card-img v-image ads-img " src="https://www.heroesmile.com/wp-content/uploads/2020/08/shutterstock_1173167254.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-uxuRnQ3z-sBCailGOeuBpCoif02XU-vc2g';" alt="Ptsd Symptoms And How To Get Help Heroes Mile Veteran Rehab">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd Symptoms And How To Get Help Heroes Mile Veteran Rehab</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2012/06/15/252084/original.jpg" data-lightbox="roadtrip" data-title="Army Research Looks At New Ptsd Treatment Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2012/06/15/252084/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeAxtTZDG9OdVRQD1fqZl8H38RQPWRvTk4nQ';" alt="Army Research Looks At New Ptsd Treatment Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Research Looks At New Ptsd Treatment Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/harley-davidson-military-edition.html">Harley Davidson Military Edition</a></li>
+													<li class="list-group-item"><a href="/gita-gopinath-imf-indian-economy.html">Gita Gopinath Imf Indian Economy</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-model.html">Harley Davidson Military Model</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-bike.html">Harley Davidson Military Bike</a></li>
+													<li class="list-group-item"><a href="/gdp-per-capita-colombia-imf.html">Gdp Per Capita Colombia Imf</a></li>
+													<li class="list-group-item"><a href="/former-imf-chief-acquitted.html">Former Imf Chief Acquitted</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-discount-uk.html">Harley Davidson Military Discount Uk</a></li>
+													<li class="list-group-item"><a href="/glendale-national-cemetery-richmond-va.html">Glendale National Cemetery Richmond Va</a></li>
+													<li class="list-group-item"><a href="/fred-meyer-military-discount-days.html">Fred Meyer Military Discount Days</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-motorcycle.html">Harley Davidson Military Motorcycle</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-price.html">Harley Davidson Military Price</a></li>
+													<li class="list-group-item"><a href="/full-form-of-imf-in-economics.html">Full Form Of Imf In Economics</a></li>
+													<li class="list-group-item"><a href="/greece-imf-programme.html">Greece Imf Programme</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-sales.html">Harley Davidson Military Sales</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-overseas-tour.html">Harley Davidson Military Overseas Tour</a></li>
+													<li class="list-group-item"><a href="/full-form-of-bff-in-chat.html">Full Form Of Bff In Chat</a></li>
+													<li class="list-group-item"><a href="/greece-debt-imf-bailout.html">Greece Debt Imf Bailout</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-sales-overseas-tour.html">Harley Davidson Military Sales Overseas Tour</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-softail-slim.html">Harley Davidson Military Softail Slim</a></li>
+													<li class="list-group-item"><a href="/greece-early-imf-repayment.html">Greece Early Imf Repayment</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

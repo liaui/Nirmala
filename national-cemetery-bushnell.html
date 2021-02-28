@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Cemetery Bushnell - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Cemetery Bushnell",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/30/c3/4b/30c34bc4ede976dc6d6eacb1a130c798.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+cemetery+bushnell",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Cemetery Bushnell</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">18600 se 240th st kent wa 98042-4868 425 413-9614. Cape Canaveral National Cemetery. Joe was an extra-ordinary patriotic man with strong values. <br>				
+			</p>
+										<a class="badge badge-primary" href="/how-do-i-contact-the-imf.html">how do i contact the imf</a>
+											<a class="badge badge-secondary" href="/head-office-of-imf.html">head office of imf</a>
+											<a class="badge badge-danger" href="/hiring-veterans-austin-texas.html">hiring veterans austin texas</a>
+											<a class="badge badge-danger" href="/how-much-does-greece-owe-the-imf.html">how much does greece owe the imf</a>
+											<a class="badge badge-light" href="/help-veteran-transition.html">help veteran transition</a>
+											<a class="badge badge-success" href="/how-do-i-hire-vets-on-sims-4.html">how do i hire vets on sims 4</a>
+											<a class="badge badge-secondary" href="/hotels-near-imf-headquarters-washington-dc.html">hotels near imf headquarters washington dc</a>
+											<a class="badge badge-light" href="/how-did-imf-help-greece.html">how did imf help greece</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/02/fa/0c02fa64c8e281eb0abdc864db1af699.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl Memorial Day Photos Memorial Day I Love America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/02/fa/0c02fa64c8e281eb0abdc864db1af699.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcIw5n0qZoDqk2h__SJJxrYngN_29K4jA5w';" alt="Florida National Cemetery Bushnell Fl Memorial Day Photos Memorial Day I Love America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl Memorial Day Photos Memorial Day I Love America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/01/7c/fb017c4ad4cbe0e5db4baba7f9bb479f.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Florida My Grandpa Szucs Is Buried Here Miss You Papa National Cemetery Bushnell Florida Favorite Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/01/7c/fb017c4ad4cbe0e5db4baba7f9bb479f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkJpXpA93PLCenKoChjpc7o6J1l_7xxfIng';" alt="Florida National Cemetery Bushnell Florida My Grandpa Szucs Is Buried Here Miss You Papa National Cemetery Bushnell Florida Favorite Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Florida My Grandpa Szucs Is Buried Here Miss You Papa National Cemetery Bushnell Florida Favorite Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/f4/74/bff474a878a3cb2b9c706d9519420e12.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl National Cemetery Cemeteries Headstones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/f4/74/bff474a878a3cb2b9c706d9519420e12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkTEskysa1AXYR86znWp3Tgyaos0OxC_khA';" alt="Florida National Cemetery Bushnell Fl National Cemetery Cemeteries Headstones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl National Cemetery Cemeteries Headstones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/62/25/ff6225d86faace1a1db1591f6daf6268.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Florida Bushnell Florida National Cemetery Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/62/25/ff6225d86faace1a1db1591f6daf6268.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYIouINtpJ3VjEAGNoLWMhOWpgiNmpt2IkhQ';" alt="Florida National Cemetery Bushnell Florida Bushnell Florida National Cemetery Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Florida Bushnell Florida National Cemetery Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/be/9a/acbe9a16edc3b2a8d6a229c34d24af38.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell National Cemetery Florida Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/be/9a/acbe9a16edc3b2a8d6a229c34d24af38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVziXK2dezAvb9dAoFLz_VEomxc3C3WkXgw';" alt="Florida National Cemetery Bushnell National Cemetery Florida Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell National Cemetery Florida Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/73/53/e47353d467e6206d9800e4bc0ed33394.jpg" data-lightbox="roadtrip" data-title="National Cemetery In Bushnell Florida Bushnell Florida National Cemetery Memorial Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/73/53/e47353d467e6206d9800e4bc0ed33394.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENuy3dEQL3KSvn3EOA_XnENssMzefNuueUQ';" alt="National Cemetery In Bushnell Florida Bushnell Florida National Cemetery Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Cemetery In Bushnell Florida Bushnell Florida National Cemetery Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ff/62/25/ff6225d86faace1a1db1591f6daf6268.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENuy3dEQL3KSvn3EOA_XnENssMzefNuueUQ';" alt="National Cemetery In Bushnell Florida Bushnell Florida National Cemetery Memorial Day">
+										<div class="card-body">
+						<h3 class="h5"><b>The first interment was in 1988.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National cemetery bushnell</strong>. 
+								
+																	185 mi Cypress House Ranch Bed and Breakfast 602 mi Hampton Inn Brooksville Dade City 629 mi Microtel Inn. 
+																	Find traveler reviews and candid photos of dining near Florida National Cemetery in Bushnell Florida. 
+																	Interred in Florida National Cemetery Bushnell FL _____ Joe Kotouc Clema was born on September 23 1938 in Omaha NE of Czechoslovakian heritage to Joe A. 
+																	It is now one of the busiest cemeteries in the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	352-793-9560 Map Driving Directions. 
+																	Conner garlin murl. 
+																	Florida National Cemetery is a United States National Cemetery located near the city of Bushnell in Sumter County Florida. 
+																	The Withlacoochee site though more environmentally sensitive was supported by government officials. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Before it became a national veterans cemetery the site played a pivotal part in the flamboyant history of St. 
+																	The first interment was in 1988. 
+																	Maintained by chuck cummins contributor 47514473. 
+																	The cemetery features a Memorial Pathway that is lined with a variety of memorials that honor Americas veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	World war ii. 
+																	The Florida National Cemetery located just off I-75 in Central Florida near Bushnell is beautiful designed very efficiently operated and staffed with thoughtful compassionate volunteers and. 
+																	This cemetery provides burial options for veterans who have died in combat or those that were previous veterans who wish to be buried with the honors bestowed upon those who have served our great nation. 
+																	Quiet Honor at the Florida National Cemetery in Bushnell Cemetery headstones can add only little to an understanding of a persons existence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We provide a dignified burial and lasting memorial for Veterans and their eligible family members and we maintain our Veterans cemeteries as national shrines. 
+																	Administered by the United States Department of Veterans Affairs it encompasses 5129 acres 2076 ha and began interments in 1988. 
+																	View all hotels near Florida National Cemetery on Tripadvisor. 
+																	102nd Avenue Bushnell FL 33513 Phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hotels near Florida National Cemetery. 
+																	Accessed memorial page for Stephen T Christie 7 Aug 192510 Sep 2002 Find a Grave Memorial no. 
+																	But in Florida National Cemetery we already know what those soldiers sailors airmen and nurses accomplished. 
+																	Designated a national cemetery in 1881 the historic St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the Wreaths Across America Bushnell Inc FL0021s Wreaths Across America Page. 
+																	Cross Florida Barge Canal and Withlacoochee State Forest. 
+																	Their legacy surrounds us every day. 
+																	We provide a dignified burial and lasting memorial for veterans and their eligible family members and we maintain our veterans cemeteries as national shrines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two major locations for the cemetery were studied. 
+																	Bushnell fl 33513 352 793-7740. 
+																	Augustine the oldest city in the Nation. 
+																	Return to top. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15 1983 the state transferred land to the VA for the development of a Florida National Cemetery. 
+																	Committal service information is available for all VA national cemeteries. 
+																	Conner fred lee. 
+																	All visitors must use the Moline Gate and obtain a visitor pass. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1st lt us army. 
+																	Skip links View the Web Site. 
+																	The Department of Veterans Affairs VA National Cemetery Administration NCA Daily Burial Schedule allows the public to search for the committal service date time and cemetery for the scheduled burial of a Veteran spouse or other eligible family member. 
+																	World war ii. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Highway 1 Mims FL 32754 Phone. 
+																	Section 3c row e site 6. 
+																	1-800-273-8255 Press 1 Social Media. 
+																	Rock Island National Cemetery which is located on RIA is open to visitors who obtain a visitor pass of up to 30 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bushnell Veteran Funerals By Baldwin Brothers Located in Sumter County FL near the town of Bushnell Florida lies the Florida National Cemetery. 
+																	Clema and Sylva Marie Kotouc. 
+																	102nd Avenue Bushnell FL 33513 Phone. 
+																	Committal Services consisting of 25 or fewer family members and Military Honors are available per NCARIA COVID-19 guidelines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Augustine founded in the 17th century as a Spanish colonial possession. 
+																	147841290 citing Florida National Cemetery Bushnell Sumter County Florida USA. 
+																	Restaurants near Florida National Cemetery Bushnell on Tripadvisor. 
+																	On December 18 at 1200 pm 2021 Wreaths Across America Bushnell Inc FL0021 will be helping Florida National Cemetery to Remember and Honor our veterans by laying Remembrance wreaths on the graves of our countrys fallen heroes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA National Cemetery Administration honors the military service of our Nations Veterans. 
+																	Pfc us army. 
+																	The VA National Cemetery Administration honors the military service of our Nations veterans. 
+																	Augustine National Cemetery is set in the city of St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As an Army veteran and a military scientist Joe had a long career and life of achievements in. 
+																	15 1983 the state transferred land to the VA for the development of a Florida National Cemetery. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/7d/1d/167d1d03e3f3888c0bb1109cfc0739ca.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl This Is Where My Pop Lives Now So Proud Of My Dad Great Man Great Father And Hu National Cemetery Florida Cemetary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/7d/1d/167d1d03e3f3888c0bb1109cfc0739ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hhqyFB838gGFBFAoeV3jY_TiP0sq7mYbBg';" alt="Florida National Cemetery Bushnell Fl This Is Where My Pop Lives Now So Proud Of My Dad Great Man Great Father And Hu National Cemetery Florida Cemetary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl This Is Where My Pop Lives Now So Proud Of My Dad Great Man Great Father And Hu National Cemetery Florida Cemetary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/e1/c2/94e1c286ce126503b04972ed83a47b5e.jpg" data-lightbox="roadtrip" data-title="Florida National Veteran S Cemetery In Bushnell Florida On Memorial Day 2014 Veterans Cemetery Long Road Trip Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/e1/c2/94e1c286ce126503b04972ed83a47b5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStq3xW9tiK-y71cMybk3lFEPGqhtwxr4mIgg';" alt="Florida National Veteran S Cemetery In Bushnell Florida On Memorial Day 2014 Veterans Cemetery Long Road Trip Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Veteran S Cemetery In Bushnell Florida On Memorial Day 2014 Veterans Cemetery Long Road Trip Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/da/a0/53/daa05365399491a9b87bab622008fd70.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery National Cemetery Cemetery Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/da/a0/53/daa05365399491a9b87bab622008fd70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJMRPd-F5yHjUhIpaWdX46aI9U_QsOPPMpA';" alt="Florida National Cemetery National Cemetery Cemetery Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery National Cemetery Cemetery Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/7e/c5/1b7ec5ccd9268f543c6529080d20943f.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Florida Cremated Remains Section Bushnell Florida National Cemetery Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/7e/c5/1b7ec5ccd9268f543c6529080d20943f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVPUgDHrke5tMOhg9wcYRMsIcx0xfbJO_tLA';" alt="Florida National Cemetery Bushnell Florida Cremated Remains Section Bushnell Florida National Cemetery Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Florida Cremated Remains Section Bushnell Florida National Cemetery Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/aa/bf/27aabf83db3aeea82fa58704ce4a42c5.jpg" data-lightbox="roadtrip" data-title="Bushnell Fl Florida National Cemetery C M O Mckinley 2011 National Cemetery Dolores Park Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/aa/bf/27aabf83db3aeea82fa58704ce4a42c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjIk6oZtlQWIG8EefXb4qibmMA2aJFiur-Rg';" alt="Bushnell Fl Florida National Cemetery C M O Mckinley 2011 National Cemetery Dolores Park Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bushnell Fl Florida National Cemetery C M O Mckinley 2011 National Cemetery Dolores Park Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/18/9f/39189f15d9d033d41c7247b839813ec8.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl National Cemetery Headstones Bushnell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/18/9f/39189f15d9d033d41c7247b839813ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6Y6kO7KIQx0Jo9MQVdh6h433MJKMZxX8Vg';" alt="Florida National Cemetery Bushnell Fl National Cemetery Headstones Bushnell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl National Cemetery Headstones Bushnell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/c3/4b/30c34bc4ede976dc6d6eacb1a130c798.jpg" data-lightbox="roadtrip" data-title="Map Of Florida National Cemetery National Cemetery Map Of Florida Bushnell Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/c3/4b/30c34bc4ede976dc6d6eacb1a130c798.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcW1DExmhwZNr8P5qcnujwnLQAIfsxG1u7jg';" alt="Map Of Florida National Cemetery National Cemetery Map Of Florida Bushnell Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Florida National Cemetery National Cemetery Map Of Florida Bushnell Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/e6/af/46e6afb98c5a7a19457698a5fb884740.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery National Cemetery State Forest Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/e6/af/46e6afb98c5a7a19457698a5fb884740.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtzda-mAIyrm2jADXMMIst32Czja90lAdxA';" alt="Florida National Cemetery National Cemetery State Forest Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery National Cemetery State Forest Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/2d/b6/a12db693002df4f0a3b16a7edb04059f.jpg" data-lightbox="roadtrip" data-title="Nine Thousand Two Hundred Wreaths Lay On The Graves Of Servicemen And Women At The Florida National Thank You Soldiers Wreaths Across America American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/2d/b6/a12db693002df4f0a3b16a7edb04059f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBhWcaHPOvNTbIl0v3wSEV2HvPxPcfSjUGA';" alt="Nine Thousand Two Hundred Wreaths Lay On The Graves Of Servicemen And Women At The Florida National Thank You Soldiers Wreaths Across America American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nine Thousand Two Hundred Wreaths Lay On The Graves Of Servicemen And Women At The Florida National Thank You Soldiers Wreaths Across America American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/d7/bb/77d7bb08fa7046749404478d7ad220e4.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl They Are Not The Days Of Wine And Roses Out Of A Misty Dream Our Path Flower Garden National Cemetery Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/d7/bb/77d7bb08fa7046749404478d7ad220e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpSFekdTqumBOqryOJ-FY5dsG6fcDJvAzCRg';" alt="Florida National Cemetery Bushnell Fl They Are Not The Days Of Wine And Roses Out Of A Misty Dream Our Path Flower Garden National Cemetery Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl They Are Not The Days Of Wine And Roses Out Of A Misty Dream Our Path Flower Garden National Cemetery Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/51/56/05515678d0cc9c27cbce003e1d02c5c1.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Bushnell Fl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/51/56/05515678d0cc9c27cbce003e1d02c5c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9Lszko-ik6-rbWwSnktMHz2H2ceeyCKgNA';" alt="Florida National Cemetery Bushnell Fl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Bushnell Fl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/ba/76/8aba768f918b8480da27b0f79233a3f9.jpg" data-lightbox="roadtrip" data-title="Maj David Moniac 1802 1836 Seminole Wars National Cemetery Grave Memorials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/ba/76/8aba768f918b8480da27b0f79233a3f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpKdkrNnUcXg5oEtDp-VbvIGLWslUcCOt0TQ';" alt="Maj David Moniac 1802 1836 Seminole Wars National Cemetery Grave Memorials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maj David Moniac 1802 1836 Seminole Wars National Cemetery Grave Memorials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/c2/2e/6dc22ef6163589360b42abce49386e62.jpg" data-lightbox="roadtrip" data-title="Florida National Cemetery Wikipedia The Free Encyclopedia National Cemetery Cemetery Sumter County">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/c2/2e/6dc22ef6163589360b42abce49386e62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jMEtCiRw8Fj8-gNb9M4MwtIUXyhiOlDXlA';" alt="Florida National Cemetery Wikipedia The Free Encyclopedia National Cemetery Cemetery Sumter County">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Cemetery Wikipedia The Free Encyclopedia National Cemetery Cemetery Sumter County</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/a7/c8/aba7c8c050a756990fd185ec94ec3a22.jpg" data-lightbox="roadtrip" data-title="Pin On Graveyards Tombstones Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/a7/c8/aba7c8c050a756990fd185ec94ec3a22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHyCghBaWCrQB91fiHEcHh7ZD0-XNe1ifQmA';" alt="Pin On Graveyards Tombstones Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Graveyards Tombstones Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/ed/b7/27edb731941b931d1645a90b53ba0060.jpg" data-lightbox="roadtrip" data-title="Find A Grave Millions Of Cemetery Records And Online Memorials National Cemetery Cemetery Records Oregon Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/ed/b7/27edb731941b931d1645a90b53ba0060.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPgWM2b5QiKtj-B8fh3GNqIjVvqKo4kK8p_g';" alt="Find A Grave Millions Of Cemetery Records And Online Memorials National Cemetery Cemetery Records Oregon Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find A Grave Millions Of Cemetery Records And Online Memorials National Cemetery Cemetery Records Oregon Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-chief-on-indian-economy.html">Imf Chief On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-data-download.html">Imf Data Download</a></li>
+													<li class="list-group-item"><a href="/imf-data-access-to-macroeconomic-and-financial-data.html">Imf Data Access To Macroeconomic And Financial Data</a></li>
+													<li class="list-group-item"><a href="/imf-data-government-expenditure.html">Imf Data Government Expenditure</a></li>
+													<li class="list-group-item"><a href="/imf-data-excel.html">Imf Data Excel</a></li>
+													<li class="list-group-item"><a href="/imf-chief-french.html">Imf Chief French</a></li>
+													<li class="list-group-item"><a href="/imf-data-budget-deficit.html">Imf Data Budget Deficit</a></li>
+													<li class="list-group-item"><a href="/imf-crisis-1976.html">Imf Crisis 1976</a></li>
+													<li class="list-group-item"><a href="/imf-country-definition.html">Imf Country Definition</a></li>
+													<li class="list-group-item"><a href="/imf-crisis-2008.html">Imf Crisis 2008</a></li>
+													<li class="list-group-item"><a href="/imf-data-economic-outlook.html">Imf Data Economic Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-chief-investment-officer.html">Imf Chief Investment Officer</a></li>
+													<li class="list-group-item"><a href="/imf-currency-rate-forecast.html">Imf Currency Rate Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-chief-kristalina-georgieva-on-indian-economy.html">Imf Chief Kristalina Georgieva On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-data-debt-to-gdp.html">Imf Data Debt To Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-chief-on-farm-laws.html">Imf Chief On Farm Laws</a></li>
+													<li class="list-group-item"><a href="/imf-data-gdp.html">Imf Data Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-credit-line-argentina.html">Imf Credit Line Argentina</a></li>
+													<li class="list-group-item"><a href="/imf-data-home-page.html">Imf Data Home Page</a></li>
+													<li class="list-group-item"><a href="/imf-criticism-greece.html">Imf Criticism Greece</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

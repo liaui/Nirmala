@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Best Practices For Hiring Veterans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Best Practices For Hiring Veterans",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=best+practices+for+hiring+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Best Practices For Hiring Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">9 EMPLOYER GUIDE TO HIRING VETERANS wwwVeteransgov wwwdolgovagenciesVETS Veteran Hiring Best Practices Keep these best practices in mind as you craft a plan. Establish employer value proposition Prompt and listen to employers stories about past hiring experiences Outcome. Number of positions job functions competencies certifications educational level and skills of Veterans as well as their spouses. <br>				
+			</p>
+										<a class="badge badge-light" href="/navy-dd214-request.html">navy dd214 request</a>
+											<a class="badge badge-primary" href="/national-cemetery-bushnell.html">national cemetery bushnell</a>
+											<a class="badge badge-danger" href="/mst-ptsd-claims.html">mst ptsd claims</a>
+											<a class="badge badge-warning" href="/national-cemetery-korea.html">national cemetery korea</a>
+											<a class="badge badge-secondary" href="/military-vets-motorcycle-club.html">military vets motorcycle club</a>
+											<a class="badge badge-success" href="/oakley-military-discount-canada.html">oakley military discount canada</a>
+											<a class="badge badge-success" href="/navy-veteran-beaten-youtube.html">navy veteran beaten youtube</a>
+											<a class="badge badge-light" href="/navy-reserve-retirement-dd214.html">navy reserve retirement dd214</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the ideal site.  Our site provides you with hints for seeing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/33/58/3f3358e741a3b801471bdb24b5a7a010.jpg" data-lightbox="roadtrip" data-title="Hey Employers A Veteran S Point Of View On Best Hiring Practices 7 Reasons Why You Should Hire A Veteran And How To Hiring Veterans Do It Right Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/33/58/3f3358e741a3b801471bdb24b5a7a010.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZGJ-73X1HGweH03cMQOxua0dYgRSjrIjfQ';" alt="Hey Employers A Veteran S Point Of View On Best Hiring Practices 7 Reasons Why You Should Hire A Veteran And How To Hiring Veterans Do It Right Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hey Employers A Veteran S Point Of View On Best Hiring Practices 7 Reasons Why You Should Hire A Veteran And How To Hiring Veterans Do It Right Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" data-lightbox="roadtrip" data-title="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPy3Pye4XsnK-P4nE8aMp8DQLKfA9eQ84Tiw';" alt="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" data-lightbox="roadtrip" data-title="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwP9mlF2vKjSf_Q1d7lj499WG1YwMB6ndEQ';" alt="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/7f/a6/3a7fa6c25fd654f39cc7a67f924fc45a.jpg" data-lightbox="roadtrip" data-title="Prescription Top Reasons To Hire An Applicant With A Disability Flyer Inclusionworks Disabilities Recruiting Staffing Adisa Disability Hiring Application">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/7f/a6/3a7fa6c25fd654f39cc7a67f924fc45a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUVnBLd8ozz-uKVXONYILVBRjAGazdKq7bnA';" alt="Prescription Top Reasons To Hire An Applicant With A Disability Flyer Inclusionworks Disabilities Recruiting Staffing Adisa Disability Hiring Application">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prescription Top Reasons To Hire An Applicant With A Disability Flyer Inclusionworks Disabilities Recruiting Staffing Adisa Disability Hiring Application</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/97/8e/3c978e231b9b2dfa498ba7e2d06b7552.png" data-lightbox="roadtrip" data-title="The 5 Best Job Search Tips For Veterans Glassdoor Job Search Tips Job Search Job Hunting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/97/8e/3c978e231b9b2dfa498ba7e2d06b7552.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQieqmkcPm6Spna_WOFg1hazXSdggIBxRaobA';" alt="The 5 Best Job Search Tips For Veterans Glassdoor Job Search Tips Job Search Job Hunting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 5 Best Job Search Tips For Veterans Glassdoor Job Search Tips Job Search Job Hunting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/3e/9d/d83e9de3c61dadd438b42d2dd39c591d.png" data-lightbox="roadtrip" data-title="Military Veterans Abelard Construction Is A Veteran Owned Business And We Hire Veterans Visit Our Websit Veteran Jobs Veteran Owned Business Hiring Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/3e/9d/d83e9de3c61dadd438b42d2dd39c591d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqPmk9jnNXqLrYqmURP3Cwb6gJp5nf2B-MQ';" alt="Military Veterans Abelard Construction Is A Veteran Owned Business And We Hire Veterans Visit Our Websit Veteran Jobs Veteran Owned Business Hiring Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veterans Abelard Construction Is A Veteran Owned Business And We Hire Veterans Visit Our Websit Veteran Jobs Veteran Owned Business Hiring Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a5/b3/68/a5b3685436a1d44da7eb76807cc4fecc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqPmk9jnNXqLrYqmURP3Cwb6gJp5nf2B-MQ';" alt="Military Veterans Abelard Construction Is A Veteran Owned Business And We Hire Veterans Visit Our Websit Veteran Jobs Veteran Owned Business Hiring Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>Educate hiring teams on military structure.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Best practices for hiring veterans</strong>. 
+								
+																	She travels all over the state of Montana assisting organizations with the development and implementation of successful Veteran. 
+																	A 2016 study by the US. 
+																	Develop a list of veteran-friendly hiring employers and associations. 
+																	So they changed their hiring practice and began focusing on specific veterans with specific skill sets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Understand hiring and support needs Understand and access employers network Outcome. 
+																	Anne Meree is gifted at connecting dots in creating serendipity for our veterans and works to grow the enduring relationships necessary to enable real success. 
+																	Here are five best practices for attracting and hiring veterans. 
+																	FROM THE TOP TO THE BOTTOM MAKE SURE EVERYONE IS ON BOARD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Set hiring goals and make a commitment to build a Veteran hiring planprogram. 
+																	Put your money where your mouth is. 
+																	Cultural norms expectations work and communication styles special events and company history. 
+																	Often company leaders say theyre going to focus on hiring more veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Companies that successfully recruit hire and develop veterans often follow these best practices. 
+																	Successful veteran hiring programs need buy-in by organization leadership. 
+																	Leverage networks and your existing team members. 
+																	Organizations like IBM Accenture and Google are already following this practice to give due attention to veterans and veteran hiring programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Write job postings in. 
+																	BEST PRACTICES FOR VETERANS. 
+																	Train your hiring managers and teams to understand how military skill sets can transfer to your open roles. 
+																	PsychArmor Institute Video 15 Things Veterans Want You To Know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A comprehensive guidebook sharing the best research-based practices on hiring and retaining veterans. 
+																	Executive sponsorship of veteran hiring programs empowers everyone in the company to implement many of these best practices. 
+																	Utilize Social Media Platforms to Widen Reach. 
+																	Make the business case for hiring a veteran Outcome. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Handbook for Veteran Hiring Transitioning and Thriving in the Workplace Constantine provides employers with best practices for hiring and retaining veterans. 
+																	Department of Veterans Affairs offers a checklist for employers Id like to suggest five important onboarding best practices. 
+																	Your civilian hires appreciate a roadmap at the outset of their employment. 
+																	This recruitment strategy can include attending job fairs on military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Listening to stories from people similar to them would give veterans the required confidence and boost. 
+																	Integrating someone with a military career into a predominantly. 
+																	Best Practices for Hiring Veterans. 
+																	Recruiters and hiring managers need to understand all niche talent groups unique needs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Getting Started Employers must first review your organizational requirements. 
+																	Ask your workforce especially those that are. 
+																	A local-impact brochure with a list of recommended service projects partners and. 
+																	Pair the veteran with a mentor or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meet candidates on military-friendly job boards. 
+																	When building a veteran hiring strategy start broad. 
+																	13 BEST PRACTICES GAIN EXECUTIVE SPONSORSHIP FOR YOUR VETERAN PROGRAM. 
+																	Veterans are mission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heres How You Can Too 1. 
+																	13 Best Practices to Hire Veterans Focus on the entire military family. 
+																	Here are five recruiting practices that will help your company draw in veterans. 
+																	Chamber of Commerce Association found that more than half of HR professionals have little to no understanding of military rank and structure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Specifically we outline how. 
+																	We know most candidates look for jobs online and veterans are no. 
+																	November 10 2020 900 am - 1100 am. 
+																	Give recruiters the 411. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In his book From We Will to At Will. 
+																	Of all the chapters in his book he said the most helpful for employers are about military mannerisms. 
+																	Morgan found that when simply looking for veterans in general only 10 were actually hired. 
+																	Case for hiring veterans and identify best practices for employers wishing to recruit hire and retain military job seekers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	USAA Hiring Veterans and Military Spouses A Workbook for Employers. 
+																	Best Practices for Hiring Veterans. 
+																	A successful veteran hiring program needs to have strong commitment throughout the organization from the top down. 
+																	Develop a winning military recruiting strategy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now a third of all veterans they interview are hired and when a veteran submits a resume they respond within five days. 
+																	Champion and provide advocacy and outward support for workforce readiness alignment and balance of your workforce in all employment programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/d2/08/cbd2088587274a21bdcc2a534040a905.jpg" data-lightbox="roadtrip" data-title="Tips For Hiring Veterans In Workforce Hiring Veterans Veterans Services Hiring Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/d2/08/cbd2088587274a21bdcc2a534040a905.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8sNsELamh68Crrkx25OJ_sZB9FWnSNu_8gg';" alt="Tips For Hiring Veterans In Workforce Hiring Veterans Veterans Services Hiring Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips For Hiring Veterans In Workforce Hiring Veterans Veterans Services Hiring Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/49/9e/7f499ed4a83d5ec0f98efb60eda02f6d.png" data-lightbox="roadtrip" data-title="Veteran Employment Military Friendly Employers Military Com Veteran Employment Employment Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/49/9e/7f499ed4a83d5ec0f98efb60eda02f6d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd7zZNs3u-m0zpCTK7gUXLR9lz5pqlkRy75g';" alt="Veteran Employment Military Friendly Employers Military Com Veteran Employment Employment Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Employment Military Friendly Employers Military Com Veteran Employment Employment Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/04/5f/1a045f877c9d369b67a8cea78fdabb45.png" data-lightbox="roadtrip" data-title="Join This Live Panel Webinar How Civilian Ta Pros Can Better Recruit Military Talent Hosted By Recruitics Webinar Recruitment Recruitment Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/04/5f/1a045f877c9d369b67a8cea78fdabb45.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEYETs1JxqiX-CaxYk5JHs0GK_7TF6i51zw';" alt="Join This Live Panel Webinar How Civilian Ta Pros Can Better Recruit Military Talent Hosted By Recruitics Webinar Recruitment Recruitment Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join This Live Panel Webinar How Civilian Ta Pros Can Better Recruit Military Talent Hosted By Recruitics Webinar Recruitment Recruitment Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/6b/0c/066b0ce8c04f648e395623e131ba7900.jpg" data-lightbox="roadtrip" data-title="Employers Invest In Veteran Friendly Hiring Practices Whirlpool Appliance Logo Kitchen Design Trends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/6b/0c/066b0ce8c04f648e395623e131ba7900.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZxAqjyxE-gZYSU6eSJDjev4yXRZfaZRO0A';" alt="Employers Invest In Veteran Friendly Hiring Practices Whirlpool Appliance Logo Kitchen Design Trends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employers Invest In Veteran Friendly Hiring Practices Whirlpool Appliance Logo Kitchen Design Trends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/77/3c/05773c84cc815bdc41e0d7ba03116406.png" data-lightbox="roadtrip" data-title="Hiring Employees With Disabilities Hiring Employees Career Counseling Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/77/3c/05773c84cc815bdc41e0d7ba03116406.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvFTpYAbcpJLagw0JQ7ZUOmh667x89yjLIA';" alt="Hiring Employees With Disabilities Hiring Employees Career Counseling Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Employees With Disabilities Hiring Employees Career Counseling Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/06/7d/e0/067de0d256773454c4a6d6bee24bd3ab.jpg" data-lightbox="roadtrip" data-title="Paralyzed Veterans Of America National President Bill Lawson We Stand Ready To Help Walmart And Any Other Business Veteran Jobs Veteran Leadership Abilities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/06/7d/e0/067de0d256773454c4a6d6bee24bd3ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-k1n0b__CRGGZK8CpCrvXEkJmTvFc6HS3w';" alt="Paralyzed Veterans Of America National President Bill Lawson We Stand Ready To Help Walmart And Any Other Business Veteran Jobs Veteran Leadership Abilities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paralyzed Veterans Of America National President Bill Lawson We Stand Ready To Help Walmart And Any Other Business Veteran Jobs Veteran Leadership Abilities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/53/fb/f553fbcc114adda3a2e4a8fd043cefd2.jpg" data-lightbox="roadtrip" data-title="This Is What Our Job Fairs For Veterans Look Like Have You Attended Yet Job Fair Veteran Jobs Job Seeking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/53/fb/f553fbcc114adda3a2e4a8fd043cefd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuDCVLeNDXPq5d4pb4iYfU-pMTKijee9nHng';" alt="This Is What Our Job Fairs For Veterans Look Like Have You Attended Yet Job Fair Veteran Jobs Job Seeking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What Our Job Fairs For Veterans Look Like Have You Attended Yet Job Fair Veteran Jobs Job Seeking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/8d/51/f58d51a5869e5fa875101ff26a97cc11.jpg" data-lightbox="roadtrip" data-title="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Veteran Jobs Military Jobs Job Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/8d/51/f58d51a5869e5fa875101ff26a97cc11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuy_W7hsQQeeCFBa53EVyAS_b1K0E1XYI2yA';" alt="Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Veteran Jobs Military Jobs Job Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Veteran Jobs Military Jobs Job Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/2e/76/522e76f76d9fa375b0bf6e7e1a41749b.png" data-lightbox="roadtrip" data-title="Recruitment Metrics Dashboards Recruitment Metric Metrics Dashboard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/2e/76/522e76f76d9fa375b0bf6e7e1a41749b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUouzd1Acgn3i-Yg5c_gXzn3OfkWWZNv7yg';" alt="Recruitment Metrics Dashboards Recruitment Metric Metrics Dashboard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruitment Metrics Dashboards Recruitment Metric Metrics Dashboard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/92/01/ea9201ffcf9220e722460d61e0728742.jpg" data-lightbox="roadtrip" data-title="U S Small Business Administration Offers Help To Veterans Small Business Start Up Small Business Administration Small Business Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/92/01/ea9201ffcf9220e722460d61e0728742.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQUqjfxbNCeiZqqvayeRLV_eFWqmNm6B6Kg';" alt="U S Small Business Administration Offers Help To Veterans Small Business Start Up Small Business Administration Small Business Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Small Business Administration Offers Help To Veterans Small Business Start Up Small Business Administration Small Business Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/f7/90/aff790f8868245313ec9fcee5aadfde9.png" data-lightbox="roadtrip" data-title="Syracuse S Ivmf Preps Veterans For The Workforce Veteran Capital Resources Prepping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/f7/90/aff790f8868245313ec9fcee5aadfde9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8BSwbmqIlKfDKq6iVsyBcpBbyFM1W7rU6fw';" alt="Syracuse S Ivmf Preps Veterans For The Workforce Veteran Capital Resources Prepping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Syracuse S Ivmf Preps Veterans For The Workforce Veteran Capital Resources Prepping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/b3/68/a5b3685436a1d44da7eb76807cc4fecc.jpg" data-lightbox="roadtrip" data-title="Pin On Military Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/b3/68/a5b3685436a1d44da7eb76807cc4fecc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPK7hc01P28KAOPcfQ5vhn2K_1AJJGMkB9Q';" alt="Pin On Military Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/f6/b2/3ff6b258471cf158e8faef5ec0e85918.png" data-lightbox="roadtrip" data-title="6 Reasons Why Working As A Contractor Could Be Your Best Career More Yet Best Careers Staffing Agency Contractors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/f6/b2/3ff6b258471cf158e8faef5ec0e85918.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YK-xzyuryofUxQV_p_CHc36rgM4bO6JM5g';" alt="6 Reasons Why Working As A Contractor Could Be Your Best Career More Yet Best Careers Staffing Agency Contractors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Why Working As A Contractor Could Be Your Best Career More Yet Best Careers Staffing Agency Contractors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/f9/50/b5f950eacc59061376d43007f59528c1.png" data-lightbox="roadtrip" data-title="Why Restaurant Workers Quit How To Fix It Employee Turnover Good Employee Angry Customer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/f9/50/b5f950eacc59061376d43007f59528c1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHVqpr3tB_oYVvQiDcEqrCF-n2ofK9vTBPlg';" alt="Why Restaurant Workers Quit How To Fix It Employee Turnover Good Employee Angry Customer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Restaurant Workers Quit How To Fix It Employee Turnover Good Employee Angry Customer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/09/fd/7d09fd4c9a93dc3aae381a12d928c454.png" data-lightbox="roadtrip" data-title="Linkedin Human Resources Career Getting To Know You Career Opportunities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/09/fd/7d09fd4c9a93dc3aae381a12d928c454.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEB8mSlpR4_0-yTci9x6RyrBONvRPjEcKQg';" alt="Linkedin Human Resources Career Getting To Know You Career Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Linkedin Human Resources Career Getting To Know You Career Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-chief-arrested-in-nyc.html">Imf Chief Arrested In Nyc</a></li>
+													<li class="list-group-item"><a href="/imf-chemistry-full-form.html">Imf Chemistry Full Form</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-on-indian-economy.html">Imf Chief Economist On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-interest-rates.html">Imf Central Bank Interest Rates</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-reserves-data.html">Imf Central Bank Reserves Data</a></li>
+													<li class="list-group-item"><a href="/imf-chief-comments-on-indian-economy.html">Imf Chief Comments On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-chief-financial-times.html">Imf Chief Financial Times</a></li>
+													<li class="list-group-item"><a href="/imf-browsing-history-credit-score.html">Imf Browsing History Credit Score</a></li>
+													<li class="list-group-item"><a href="/imf-careers-jobs.html">Imf Careers Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-blog.html">Imf Chief Economist Blog</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-name.html">Imf Chief Economist Name</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-gita-gopinath-salary.html">Imf Chief Economist Gita Gopinath Salary</a></li>
+													<li class="list-group-item"><a href="/imf-ceo-salary.html">Imf Ceo Salary</a></li>
+													<li class="list-group-item"><a href="/imf-ceo-2019.html">Imf Ceo 2019</a></li>
+													<li class="list-group-item"><a href="/imf-chemistry-meaning.html">Imf Chemistry Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-bretton-woods-system.html">Imf Bretton Woods System</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-legislation-database.html">Imf Central Bank Legislation Database</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-transparency-code.html">Imf Central Bank Transparency Code</a></li>
+													<li class="list-group-item"><a href="/imf-chief-depression.html">Imf Chief Depression</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-india.html">Imf Chief Economist India</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

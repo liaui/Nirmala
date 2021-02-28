@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Christian Military Charities - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Christian Military Charities",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/ad/0d/75/ad0d7585b9d48240144e65c2a371ad26.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=christian+military+charities",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Christian Military Charities</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Some of the Absolute Best Charities with a Christian Mission. Armed Services YMCA of the USA A Bob Woodruff Family Foundation A Fisher House Foundation A Gary Sinise Foundation A Homes for Our Troops A Hope For The Warriors A Intrepid Fallen Heroes Fund A- K9s For Warriors A-. Charities that support the Military and their families 2. <br>				
+			</p>
+										<a class="badge badge-light" href="/sign-up-for-bed-bath-and-beyond-military-discount.html">sign up for bed bath and beyond military discount</a>
+											<a class="badge badge-light" href="/role-of-imf-in-exchange-rate-stabilization.html">role of imf in exchange rate stabilization</a>
+											<a class="badge badge-secondary" href="/request-dd214-va.html">request dd214 va</a>
+											<a class="badge badge-warning" href="/retired-military-news.html">retired military news</a>
+											<a class="badge badge-danger" href="/sacramento-valley-va-national-cemetery-dixon.html">sacramento valley va national cemetery dixon</a>
+											<a class="badge badge-info" href="/sprint-military-discount-online.html">sprint military discount online</a>
+											<a class="badge badge-light" href="/sprint-active-duty-military-discount.html">sprint active duty military discount</a>
+											<a class="badge badge-light" href="/request-lost-dd214.html">request lost dd214</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the highest quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/ee/ff/b2eeffa2778b8c6593a593fabce85deb.jpg" data-lightbox="roadtrip" data-title="Themilitarywifelife Com Military Wife Life Supportive Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/ee/ff/b2eeffa2778b8c6593a593fabce85deb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFC9pYddQXd1xU_0LwakAbzOOR0asPT2Qspw';" alt="Themilitarywifelife Com Military Wife Life Supportive Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Themilitarywifelife Com Military Wife Life Supportive Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/07/8a/e9078ae5c7aaea9c62aea443d021162d.jpg" data-lightbox="roadtrip" data-title="Overcoming Worry Fear As A Military Spouse Singing Through The Rain Military Bible Christian Military Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/07/8a/e9078ae5c7aaea9c62aea443d021162d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02Yg9OdW5pXJpZ15SBc0ZGP_34kjYsRKGiA';" alt="Overcoming Worry Fear As A Military Spouse Singing Through The Rain Military Bible Christian Military Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Overcoming Worry Fear As A Military Spouse Singing Through The Rain Military Bible Christian Military Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/a7/9e/49a79eb219e66679c009a21439a74c11.jpg" data-lightbox="roadtrip" data-title="Honor Veterans Day Holidays Ecard Free Christian Ecards Online Greeting Cards Veterans Day Quotes Veterans Day Images Happy Veterans Day Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/a7/9e/49a79eb219e66679c009a21439a74c11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4vaXUfeSFdTx3NuYrFH-CRtrb8e_dSF56A';" alt="Honor Veterans Day Holidays Ecard Free Christian Ecards Online Greeting Cards Veterans Day Quotes Veterans Day Images Happy Veterans Day Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honor Veterans Day Holidays Ecard Free Christian Ecards Online Greeting Cards Veterans Day Quotes Veterans Day Images Happy Veterans Day Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/8d/e2/ac8de284fcfd340ad226d0b8186e2b3f.jpg" data-lightbox="roadtrip" data-title="Honoring Veteran S Day Veterans Day Holidays Ecards Free Christian Ecards Online Greeting C Veterans Day Quotes Veterans Day Images Happy Thanksgiving Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/8d/e2/ac8de284fcfd340ad226d0b8186e2b3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVUj3GLzFwzSCwsKuyR75kVMn3ki8Dos_2bA';" alt="Honoring Veteran S Day Veterans Day Holidays Ecards Free Christian Ecards Online Greeting C Veterans Day Quotes Veterans Day Images Happy Thanksgiving Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honoring Veteran S Day Veterans Day Holidays Ecards Free Christian Ecards Online Greeting C Veterans Day Quotes Veterans Day Images Happy Thanksgiving Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/db/57/c0db57c7f80cf3a4dcdb65da1dcfb3aa.jpg" data-lightbox="roadtrip" data-title="Lord Bless Our Military With New Strength From You As They Step Forward To Defend The Freedoms You Gave And Esta Kneeling In Prayer Philippians Names Of Jesus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/db/57/c0db57c7f80cf3a4dcdb65da1dcfb3aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS148NWJDYHhC6Wkg2xX5QbnDllN7B9b36vjA';" alt="Lord Bless Our Military With New Strength From You As They Step Forward To Defend The Freedoms You Gave And Esta Kneeling In Prayer Philippians Names Of Jesus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lord Bless Our Military With New Strength From You As They Step Forward To Defend The Freedoms You Gave And Esta Kneeling In Prayer Philippians Names Of Jesus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/73/89/897389469c698239c9a62ae4aacfefa7.png" data-lightbox="roadtrip" data-title="God Is My Strength And Power Christian Verses You Are The Father Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/73/89/897389469c698239c9a62ae4aacfefa7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReEdUo4EpepOTZPOvilxSy0k-reIul1DJv0A';" alt="God Is My Strength And Power Christian Verses You Are The Father Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">God Is My Strength And Power Christian Verses You Are The Father Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b2/ee/ff/b2eeffa2778b8c6593a593fabce85deb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReEdUo4EpepOTZPOvilxSy0k-reIul1DJv0A';" alt="God Is My Strength And Power Christian Verses You Are The Father Military Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>CMF involves all elements of that society including all ranks family members veterans retirees and civilian employees.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Christian military charities</strong>. 
+								
+																	Here are the veteransmilitary charities that CharityWatch ranks the highest as of late 2020. 
+																	CVO is all about veterans helping veterans. 
+																	Want to donate or volunteer. 
+																	Find the best non-profit or charity in Jacksonville FL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CVOs mission is to go where God leads with whomever He assigns for the purpose that He ordains. 
+																	Charities that support Veterans and 3. 
+																	Eight charitable outreach programs to the Dallas Metro residences including an online outreach and Veteran Advocacy with Congressional Advisory Committees. 
+																	Website See Our Services More Info. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Providing help in a relaxed setting among like-minded people who have served before and are once again saved to serve. 
+																	VFC is an outreach for our brother and sister veterans and servicemen. 
+																	Find and review Jacksonville charities nonprofits and volunteering and donation opportunities. 
+																	Charities Veterans Military Organizations Social Service Organizations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VETERANS FOR CHRIST- CORP - A Part of Rob Johnson Veteran Ministries. 
+																	Find reviews ways to donate and volunteer for nonprofits charities and NGOs related to veterans in Jacksonville FL. 
+																	Children of Fallen Patriots Foundation 65. 
+																	Challenged Athletes Foundation 68. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The charity list below provides information on top-rated charities whose main purpose is to support veterans military and their families. 
+																	This is an opportunity for all of our members and friends to do something exceptional for this ministry TELL A FRIEND. 
+																	Christian Light Ministries Inc. 
+																	When you schedule a free donation pickup in Jacksonville this VVA chapter is able to further its efforts in offering programs for veterans in need. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Or you can check out our list of the top charities to help you get started. 
+																	Chapter 1046 of Jacksonville is dedicated to providing assistance to our nations veterans. 
+																	Charities are broken up into five main categories. 
+																	Less than one percent of the thousands of charities rated by Charity Navigator have earned perfect scores. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard Foundation 70. 
+																	5 Ways You Can Donate to Charity Without Spending a Dime. 
+																	Each year September through December the Christian Military Fellowship participates in the Combined Federal Campaign. 
+																	Children cancer policelaw enforcement veterans fire and other. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Charity Navigator recently shared a list of 10 outstanding wounded veterans charities who have been recognized for their efforts to assist injured troops and their families. 
+																	To act a liaison between veteran serving organizations in the community and the City of Jacksonvilles Military Affairs and Veterans Department MAVD To improve communication coordination and support between veteran serving organizations and the MAVD on matters affecting Veterans. 
+																	It also exposes any instances of abuse that it discovers within any charities. 
+																	Officers Christian Fellowship 62. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Americans love respect and honor our troops all year round -- in fact people donate more than 25 billion annually to the over 40000 American charities with military-related missions. 
+																	See reviews photos directions phone numbers and more for the best Charities in Jacksonville Beach FL. 
+																	Since 1941 it has provided care packages entertainment and. 
+																	Those two scores then translate into a perfect 100 point overall score. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These fifty charities account for more than 135 Billion in donations. 
+																	Top Choices Among Veterans Charities. 
+																	A charitys name may signal worthy a cause such as feeding the hungry or supporting veterans. 
+																	Each November we set aside a special time to honor the sacrifices our brave military veterans have made. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Charities specifically supporting military children military spouses and survivors. 
+																	Christian Military Fellowship CMF is an association of believers who are committed to encouraging Men and Women in the United States Armed Forces and their families to love and serve the Lord Jesus Christ. 
+																	But you need to look carefully at the organization to make sure you are sending your money to the. 
+																	Who is part of the Federal Work Force Civil Servant or Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Travis Manion Foundation 64. 
+																	You can go spend a few hours looking for charities now. 
+																	Donate household items in Jacksonville and you can show your support for the Vietnam Veterans of America. 
+																	Chadbourne Street San Angelo TX 76903. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The USO United Service Organizations is a nonprofit organization chartered by Congress but is not a part of the federal government. 
+																	AdoptAPlatoon Soldier Support Effort. 
+																	Of that 970 million went not to victims but to the people who collected the money. 
+																	Military Community Youth Ministries 69. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We applaud these charities for exceeding industry standards and outperforming other organizations performing similar work. 
+																	Approved Charity Combined Federal Campaign. 
+																	Wounded Warrior Project 66. 
+																	10 Highly Rated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However its members area gives access to deeper insights on charities. 
+																	When I heard about the mission of ONU it sounded really important and filled a huge need for former military making the transition to the corporate world. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/66/a4/8766a4101e9c01b1bb091e5bbab252f1.jpg" data-lightbox="roadtrip" data-title="If Christian Military Women From Korea To Kansas And Germany To Georgia All Did What God Called Us To Today Christian Military Military Life Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/66/a4/8766a4101e9c01b1bb091e5bbab252f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdktuQhTHSo1mfqCBraRNFVkAJQxq66bAY8Q';" alt="If Christian Military Women From Korea To Kansas And Germany To Georgia All Did What God Called Us To Today Christian Military Military Life Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If Christian Military Women From Korea To Kansas And Germany To Georgia All Did What God Called Us To Today Christian Military Military Life Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/84/33/e28433706da8fc28fe5430eeffd30d77.jpg" data-lightbox="roadtrip" data-title="Giving Back 50 Of Profits Go Back To Veterans Warfighter Hemp Hyperbaric Oxygen Therapy Therapeutic Recreation Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/84/33/e28433706da8fc28fe5430eeffd30d77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHNv9OM2-JXvpHpFjUxWM9ejjOjIElIQj3Q';" alt="Giving Back 50 Of Profits Go Back To Veterans Warfighter Hemp Hyperbaric Oxygen Therapy Therapeutic Recreation Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Giving Back 50 Of Profits Go Back To Veterans Warfighter Hemp Hyperbaric Oxygen Therapy Therapeutic Recreation Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/a9/c9/ada9c9a570fa65d50393589620370b61.png" data-lightbox="roadtrip" data-title="Pin By Shauna Karr Brennan On Charities Military Veterans Life Charity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/a9/c9/ada9c9a570fa65d50393589620370b61.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR48ZWupYHpJDQkE27LDqo-MpaofzFmt_LzNw';" alt="Pin By Shauna Karr Brennan On Charities Military Veterans Life Charity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Shauna Karr Brennan On Charities Military Veterans Life Charity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/18/9c/fa189ca6f40b3e6d6116790fd069809a.jpg" data-lightbox="roadtrip" data-title="If You Have Watched The News In The Last Few Months You Ve Seen Military Organizations Like Wounded Warrior Project Come Military Spouse Blog Military Charity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/18/9c/fa189ca6f40b3e6d6116790fd069809a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4THCDbTKam4iyGU2OBylKfruEE88jjlhRw';" alt="If You Have Watched The News In The Last Few Months You Ve Seen Military Organizations Like Wounded Warrior Project Come Military Spouse Blog Military Charity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Have Watched The News In The Last Few Months You Ve Seen Military Organizations Like Wounded Warrior Project Come Military Spouse Blog Military Charity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/e8/90/7de8901a1c35460d1b36904d64d31f2e.png" data-lightbox="roadtrip" data-title="About The Quasi Military Protestant Christian Group Known As The Salvation Army Its Organisation Charity Work And Famou Salvation Army Salvation Christianity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/e8/90/7de8901a1c35460d1b36904d64d31f2e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2xZ7vLuun7TJ9x21Ui_3a3_HA_e-SEl-G0Q';" alt="About The Quasi Military Protestant Christian Group Known As The Salvation Army Its Organisation Charity Work And Famou Salvation Army Salvation Christianity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About The Quasi Military Protestant Christian Group Known As The Salvation Army Its Organisation Charity Work And Famou Salvation Army Salvation Christianity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/0b/6e/7d0b6e8b1e8c434b0dc3f680bfe411bc.jpg" data-lightbox="roadtrip" data-title="Pin On Mn Veterans Home Hastings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/0b/6e/7d0b6e8b1e8c434b0dc3f680bfe411bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNz_BKf7V2Psagi-c2Fj5xoFtf4ebratmmqw';" alt="Pin On Mn Veterans Home Hastings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mn Veterans Home Hastings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/06/9e/1a069ec5eb7fa49715e3ef4ec9413149.jpg" data-lightbox="roadtrip" data-title="Words Of Hope News Christian Charities Security Guard Kabul">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/06/9e/1a069ec5eb7fa49715e3ef4ec9413149.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkudLJrkkI8lERw33b0QOdAfurr6hXthHqg';" alt="Words Of Hope News Christian Charities Security Guard Kabul">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Words Of Hope News Christian Charities Security Guard Kabul</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/04/d8/8a04d8f7b47399fe027e9a404d8814ea.jpg" data-lightbox="roadtrip" data-title="Pin By Niki Cole Tincher On Proud Army Mom Military Quotes Army Strong Christian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/04/d8/8a04d8f7b47399fe027e9a404d8814ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOj92-Z0dyZ3iQEq0-SBdEbMd3y9QcN2pkg';" alt="Pin By Niki Cole Tincher On Proud Army Mom Military Quotes Army Strong Christian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Niki Cole Tincher On Proud Army Mom Military Quotes Army Strong Christian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cb/ff/3f/cbff3f6fe5ad514b7579a86015d4a86d.jpg" data-lightbox="roadtrip" data-title="Brian Boru Mac Cennetig Aoh Florida State Board Brian Boru Christian Charities Brian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cb/ff/3f/cbff3f6fe5ad514b7579a86015d4a86d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr888auRAAyy2IgqWHcPHhudEQO066cJ4vA';" alt="Brian Boru Mac Cennetig Aoh Florida State Board Brian Boru Christian Charities Brian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brian Boru Mac Cennetig Aoh Florida State Board Brian Boru Christian Charities Brian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/53/c8/7f53c8c1b4cbcc268b23f313e04e880c.jpg" data-lightbox="roadtrip" data-title="Pin On Operation Holiday Joy With Woman S Day Magazine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/53/c8/7f53c8c1b4cbcc268b23f313e04e880c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnVeEykdvVTkpQWXSu5Im2_-BLiQtR1iftJg';" alt="Pin On Operation Holiday Joy With Woman S Day Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Operation Holiday Joy With Woman S Day Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/a0/83/c8a08302bfdcf9be75d50b8e5a12584f.jpg" data-lightbox="roadtrip" data-title="Operation Gratitude On Twitter Operation Gratitude Support Veterans Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/a0/83/c8a08302bfdcf9be75d50b8e5a12584f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBST-kj5LSvAOTHR3AwRCLerpCJdSvbFX4g';" alt="Operation Gratitude On Twitter Operation Gratitude Support Veterans Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Operation Gratitude On Twitter Operation Gratitude Support Veterans Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/b9/3c/4f/b93c4f34ea47896ca42dc4129049e438.jpg" data-lightbox="roadtrip" data-title="A Christian Church In Burma Is Destroyed By The Military Christian Church Church Christianity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/b9/3c/4f/b93c4f34ea47896ca42dc4129049e438.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6qN1f3Qeztd0XLYTR8zjlEtUXARqBSpxeQ';" alt="A Christian Church In Burma Is Destroyed By The Military Christian Church Church Christianity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Christian Church In Burma Is Destroyed By The Military Christian Church Church Christianity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c9/2e/8f/c92e8f5102e52a118a36081ff5799c2b.jpg" data-lightbox="roadtrip" data-title="Alliance House For Veterans Beverly Hills Magazine Warrior Quotes Helping Others Quotes Helping Others">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c9/2e/8f/c92e8f5102e52a118a36081ff5799c2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bIPHqT_tCeEsHtjR_Oedr4LGLPwo8mZKKw';" alt="Alliance House For Veterans Beverly Hills Magazine Warrior Quotes Helping Others Quotes Helping Others">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alliance House For Veterans Beverly Hills Magazine Warrior Quotes Helping Others Quotes Helping Others</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/60/86/01608604a73ff39566396ee83bb1c180.png" data-lightbox="roadtrip" data-title="Christian Face Mask God Is Bigger Than Cameo Washable Etsy In 2020 Neck Gaiter Face Mask Gaiters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/60/86/01608604a73ff39566396ee83bb1c180.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCkcpdDenlL1KoF1gdvnLVL9NxYD5XExTGA';" alt="Christian Face Mask God Is Bigger Than Cameo Washable Etsy In 2020 Neck Gaiter Face Mask Gaiters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christian Face Mask God Is Bigger Than Cameo Washable Etsy In 2020 Neck Gaiter Face Mask Gaiters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/d8/83/07d88371209201376e51294a57d4db50.jpg" data-lightbox="roadtrip" data-title="Onward Christian Soldiers Challenge Coin Christian Soldiers Challenge Coins Military Decorations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/d8/83/07d88371209201376e51294a57d4db50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI_aARQCxomQICGc-sI9qVJ9Q8gKWoGmHFQ';" alt="Onward Christian Soldiers Challenge Coin Christian Soldiers Challenge Coins Military Decorations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onward Christian Soldiers Challenge Coin Christian Soldiers Challenge Coins Military Decorations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-kohls-give-a-military-discount.html">Does Kohls Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-the-imf-really-help-developing-countries.html">Does The Imf Really Help Developing Countries</a></li>
+													<li class="list-group-item"><a href="/does-kfc-have-military-discount.html">Does Kfc Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-old-navy-give-veterans-discount.html">Does Old Navy Give Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-do-military-discount.html">Does Gamestop Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-straight-talk-have-a-military-discount.html">Does Straight Talk Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kfc-offer-military-discount.html">Does Kfc Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-living-spaces-do-military-discount.html">Does Living Spaces Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-ford-offer-military-discount.html">Does Ford Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-microsoft-offer-veterans-discount.html">Does Microsoft Offer Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-sport-clips-offer-military-discount.html">Does Sport Clips Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sprint-have-a-veterans-discount.html">Does Sprint Have A Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-offer-military-discount.html">Does Gamestop Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-have-a-military-discount.html">Does Sports Clips Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-oakley-do-military-discount.html">Does Oakley Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kohls-accept-military-discount.html">Does Kohls Accept Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-do-military-discount.html">Does Sports Clips Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-omaha-steaks-have-a-military-discount.html">Does Omaha Steaks Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-the-army-have-vets.html">Does The Army Have Vets</a></li>
+													<li class="list-group-item"><a href="/does-old-navy-have-uniforms.html">Does Old Navy Have Uniforms</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

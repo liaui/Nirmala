@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Ptsd Worksheet - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Ptsd Worksheet",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/09/d5/f2/09d5f2b164011e02eb280e0af5934877.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+ptsd+worksheet",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Ptsd Worksheet</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Use VA Form 21-0781 if youve been diagnosed with PTSD posttraumatic stress disorder and want to apply for related benefits or services. BREATHING RETRAINING HANDOUT 3 Breathing fast and taking deep breaths hyperventilating are common responses to feeling. Learn how PTSD Coach Online can help you cope with troubling symptoms like sleep problems sadness anger and anxiety. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/imf-communications-jobs.html">imf communications jobs</a>
+											<a class="badge badge-light" href="/imf-chief-shortlist.html">imf chief shortlist</a>
+											<a class="badge badge-light" href="/imf-data-afghanistan.html">imf data afghanistan</a>
+											<a class="badge badge-secondary" href="/imf-crisis-philippines.html">imf crisis philippines</a>
+											<a class="badge badge-success" href="/imf-data-government-expenditure.html">imf data government expenditure</a>
+											<a class="badge badge-dark" href="/imf-data-colombia.html">imf data colombia</a>
+											<a class="badge badge-primary" href="/imf-crisis-2008.html">imf crisis 2008</a>
+											<a class="badge badge-info" href="/imf-data-country.html">imf data country</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the right blog.  Our site gives you suggestions for seeing the highest quality video and picture content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/8a/60/ba8a60cc5a3be0c280a26825cf048573.png" data-lightbox="roadtrip" data-title="Va Compensation And Claims Therapy Worksheets Dbt Therapy Dbt Self Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/8a/60/ba8a60cc5a3be0c280a26825cf048573.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA7hZZQ061d8-WoI5wczRLVCv3gZguBlM6ag';" alt="Va Compensation And Claims Therapy Worksheets Dbt Therapy Dbt Self Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Compensation And Claims Therapy Worksheets Dbt Therapy Dbt Self Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/c3/cd/bfc3cd9efeb7de626b675c65d897abf7.jpg" data-lightbox="roadtrip" data-title="Procrastinate No More Va Career View A Worksheet To Help Prioritize Schedule Start Career Counseling Counseling Activities Procrastination">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/c3/cd/bfc3cd9efeb7de626b675c65d897abf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxcL6fM9YFqNoN5YIzb5Rw9X_grRON9rL4w';" alt="Procrastinate No More Va Career View A Worksheet To Help Prioritize Schedule Start Career Counseling Counseling Activities Procrastination">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Procrastinate No More Va Career View A Worksheet To Help Prioritize Schedule Start Career Counseling Counseling Activities Procrastination</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d8/ac/c6/d8acc60c452e08802cfa24e2e3ac07f9.jpg" data-lightbox="roadtrip" data-title="Pin On Counseling Tools">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d8/ac/c6/d8acc60c452e08802cfa24e2e3ac07f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFLX1_uDZfC1qTiLi9qR9jnCNepNNz4sfaug';" alt="Pin On Counseling Tools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Counseling Tools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b1/b3/b0/b1b3b08bf49694b258ac722ab9de32c9.jpg" data-lightbox="roadtrip" data-title="Challenging Beliefs Worksheet Examples Rational Emotive Behavior Therapy Therapy Worksheets Counseling Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b1/b3/b0/b1b3b08bf49694b258ac722ab9de32c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_a4i4oQL0n-8OW9eMt7jIoDJb4QAA3c0Kg';" alt="Challenging Beliefs Worksheet Examples Rational Emotive Behavior Therapy Therapy Worksheets Counseling Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Challenging Beliefs Worksheet Examples Rational Emotive Behavior Therapy Therapy Worksheets Counseling Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/55/1f/ee/551feeada6a5f58e20916f57a216372e.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/55/1f/ee/551feeada6a5f58e20916f57a216372e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFrOEuhRE3xUW4jf7JJH6hZazAthwye8DDw';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/af/ca/72afca61c3a44322b5d7b66b6738b672.jpg" data-lightbox="roadtrip" data-title="Relationship Advice Coping Skills Anger Management Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/af/ca/72afca61c3a44322b5d7b66b6738b672.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxZk-lZvjKT53_pz8YDu2PNa4ECYFb0UNJg';" alt="Relationship Advice Coping Skills Anger Management Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relationship Advice Coping Skills Anger Management Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/32/2b/06/322b061c36aafb024d371894dab6f91c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxZk-lZvjKT53_pz8YDu2PNa4ECYFb0UNJg';" alt="Relationship Advice Coping Skills Anger Management Post Traumatic Stress Disorder">
+										<div class="card-body">
+						<h3 class="h5"><b>There are a number of interventions available that have been shown to markedly reduce or even eliminate the symptoms of PTSD Karlin et al 2010.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va ptsd worksheet</strong>. 
+								
+																	Go to the online tool Related forms and instructions. 
+																	Does VA Have an App for That. 
+																	PTSD treatment can help. 
+																	A doctorate-level mental health provider under close supervision of a boar d-certified or board eligible psychiatrist or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CPT is effective in treating PTSD across a variety of populations including Veterans sexual assault victims and refugees. 
+																	This is a common occurrence in people who have depression and other anxiety disorders. 
+																	Download VA Form 21-0781a PDF Note. 
+																	This brochure describes PTSD and SUD Substance Use Disorder and effective treatments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some PTSD self-help worksheets might be simple exercises you can do or checklists that get you started with knowing the basics before you move to the next steps. 
+																	A standard 85 x 11 double-sided color flyer to use as a handout for Veterans and families. 
+																	PTSD can impact how we think about things our beliefs andwhat we do our behaviors. 
+																	D ROSENBERG H. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	People with PTSD also may experience a wide variety of physical symptoms. 
+																	Initial Evaluation for Post-Traumatic Stress Disorder PTSD 0910 Worksheet. 
+																	The idea of Post Traumatic Growth or PTG is a popular one that survivors of traumatic events cannot only heal from their trauma but may actually grow into a stronger more driven and more resilient person because of their trauma. 
+																	Downloadable PDF Download VA Form 21-0781 PDF Online tool. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yes CPT Coach is a mobile app that you can use with a provider during CPT. 
+																	Find handouts apps videos and courses based on current research. 
+																	This worksheet is focused on addressing the evidentiary requirements of a VA claim for compensation based on PTSD. 
+																	You can apply online instead of filling out and sending us the paper form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Review Examination for Post-Traumatic Stress Disorder PTSD Review Examination for Post-Traumatic Stress Disorder PTSD 0902 Worksheet. 
+																	This site provides educational resources for Veterans and also for health care providers researchers and the general public. 
+																	Handouts Page 1 SELECTED HANDOUTS AND WORKSHEETS FROM. 
+																	When Is Anger A Problem. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Understanding PTSD and Substance Use Disorder flyer PDF. 
+																	Done properly and honestly the worksheet will help you define the trauma so that your stressor can be documented. 
+																	You may feel anger from an upsetting situation stress or another emotion you dont entirely understand. 
+																	It typically consists of 12 weekly sessions and can be offered in an individual or a group format. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Consider how your PTSD has affected your beliefs about yourself other people and the world in the following areas. 
+																	Also get information on the PTSD Coach mobile app and the sites privacy practices. 
+																	It can also help a psychiatrist understand your trauma and assess its impact on your life. 
+																	Latest PTSD Worksheets For Therapists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PTSD Beliefs and Behaviors Worksheet. 
+																	For Veterans and Families. 
+																	Each workbook represents a complete treatment program. 
+																	CPT Coach is free and can be downloaded on most mobile devices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These kinds of worksheets get you more familiar with the intricacies of your PTSD in order to confront and address them more effectively. 
+																	In our screening process well focus on getting a full understanding of your PTSD to help determine your eligibility for disability benefits. 
+																	A board-certified psychiatrist or board eligible psychiatrist. 
+																	This is not a condition you need to live with forever. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Posttraumatic Stress Disorder PTSD is a mental health problem that can occur after a traumatic event like war assault or disaster. 
+																	Understanding PTSD and Substance Use Disorder. 
+																	The following health care providers can perform review examinations for PTSD. 
+																	Sessions last about 50 to 60 minutes when delivered individually and 90 minutes when delivered in a group. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Statement in Support of Claim for Service Connection for Post-Traumatic Stress Disorder Secondary to Personal Assault VA Form 21-0781a. 
+																	Others are more involved and require you to really pay attention to your PTSD signs symptoms and feelings and then document analyze and even challenge them usually with a chart. 
+																	A COGNITIVE RESTRUCTURING PROGRAMWASHINGTON DC. 
+																	CPT Coach can help you to learn more about CPT and PTSD symptoms and helps you stay organized with worksheets as you complete CPT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	The PTSD Workbook is part of a series of workbooks designed to give therapists and their clients easy access to pracWcal evidenced-based psychotherapy tools. 
+																	It is a powerful emotion that can be triggered by many different things. 
+																	From here lets open the manuals and begin to learn about PTSD its symptoms triggers and treatment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A licensed doctorate-level psychologist. 
+																	Links to handouts with more detailed information about PTSD and effective treatments and about the Stress First Aid SFA for Law Enforcement model. 
+																	Age ethnic background era of military service reason for referral original exam to establish PTSD diagnosis and related psychosocial impairment. 
+																	Vietnam veterans with PTSD were found to have many problems with family and other interpersonal relationships problems with employment and increased incidents of violence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Re-evaluation of status of existing service. 
+																	TREATMENT OF POSTTRAUMATIC STRESS DISORDER IN SPECIAL POPULATIONS. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/02/77/280277056f05bd080520df4846284ace.jpg" data-lightbox="roadtrip" data-title="Pin On Trauma Abuse Safety Resources For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/02/77/280277056f05bd080520df4846284ace.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkplxi5Fb2n2u3uZ4tBh8XV7_CYRw1L7pkw';" alt="Pin On Trauma Abuse Safety Resources For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trauma Abuse Safety Resources For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/52/b1/e852b12143f4853591a44c0142f99a3b.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Cptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/52/b1/e852b12143f4853591a44c0142f99a3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZ6cGyraNZRXMMZaEipMru30lO97voZpqdA';" alt="Pin On Ptsd Cptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Cptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/f1/25/55f1258d3a6ef26e91f609524496c14f.jpg" data-lightbox="roadtrip" data-title="Pin On Group Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/f1/25/55f1258d3a6ef26e91f609524496c14f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCWPg6AhkJjHn3SR9xDsw73KMIRiwLQv-gQ';" alt="Pin On Group Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Group Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f7/70/71/f770715b67abdf458842e51bb7ebe30e.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f7/70/71/f770715b67abdf458842e51bb7ebe30e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH6PFnNq1gubKvoC3AYRzHEROiY_2TzR9tJQ';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/2b/06/322b061c36aafb024d371894dab6f91c.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/2b/06/322b061c36aafb024d371894dab6f91c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReL4hUXqKArkrttrEOuHRySGAt0lZ8VsLaqw';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/64/57/6764573895cc828fc9ccdb1fbcd4a41a.jpg" data-lightbox="roadtrip" data-title="Pin On Thoughts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/64/57/6764573895cc828fc9ccdb1fbcd4a41a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkj2zwqu5karNNdi8JnRJKg2s_EiX1OKHaDQ';" alt="Pin On Thoughts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thoughts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/d1/fe/4ad1fe5f5c4640b59fc3042050780649.jpg" data-lightbox="roadtrip" data-title="Dbt Skills Dbt Therapy Dialectical Behavior Therapy Dbt Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/d1/fe/4ad1fe5f5c4640b59fc3042050780649.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOju7OoDN-CMHY7MWvip2p7FVNeRcGZEc31Q';" alt="Dbt Skills Dbt Therapy Dialectical Behavior Therapy Dbt Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dbt Skills Dbt Therapy Dialectical Behavior Therapy Dbt Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/41/ae/1e41aed0efd086bf0b4d29af0e4e2ff0.jpg" data-lightbox="roadtrip" data-title="Pin On Trauma Focused Cognitive Behavioral Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/41/ae/1e41aed0efd086bf0b4d29af0e4e2ff0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCw2OtbCzxXoZvuCTzkZUhmfSpMtAbG_z7pg';" alt="Pin On Trauma Focused Cognitive Behavioral Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trauma Focused Cognitive Behavioral Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/61/b0/8261b02e06d65370a4eb0c0dee8f34f1.jpg" data-lightbox="roadtrip" data-title="Write A Book Or Movie Review On Born On The Fourth Of July And Discuss What The Vietnam War Was Like For Social Studies Vietnam War Veterans Book Discussion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/61/b0/8261b02e06d65370a4eb0c0dee8f34f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu3RWcphelpvp3tXSzYu-jo1HXkh5CkOv7gw';" alt="Write A Book Or Movie Review On Born On The Fourth Of July And Discuss What The Vietnam War Was Like For Social Studies Vietnam War Veterans Book Discussion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Write A Book Or Movie Review On Born On The Fourth Of July And Discuss What The Vietnam War Was Like For Social Studies Vietnam War Veterans Book Discussion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/5f/c6/005fc63ec1121ce6bae36395477bdf2f.jpg" data-lightbox="roadtrip" data-title="Managing Your Stress Lesson Stress Can Kill You Stress Management Activities Stress Management Therapy Worksheets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/5f/c6/005fc63ec1121ce6bae36395477bdf2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzqCFrlwnwLs4Hyo2lA46lxP5Jq-775a0Nw';" alt="Managing Your Stress Lesson Stress Can Kill You Stress Management Activities Stress Management Therapy Worksheets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Managing Your Stress Lesson Stress Can Kill You Stress Management Activities Stress Management Therapy Worksheets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/b6/2e/4bb62efbcb9fdd0b4c98dde99243fc6b.jpg" data-lightbox="roadtrip" data-title="Pin On Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/b6/2e/4bb62efbcb9fdd0b4c98dde99243fc6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmx72YtgXrf7CAdZTFEiGjD4dtk8k7zwBTBg';" alt="Pin On Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/c0/eb/d7c0eba4b2981a1fae8af5e40fa077d3.png" data-lightbox="roadtrip" data-title="3 Actions You Need To Take Before Hiring Your First Virtual Assistant Click To Download Your Free Guide Virtual Assistant Free Workbook Online Entrepreneur">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/c0/eb/d7c0eba4b2981a1fae8af5e40fa077d3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQ81oPgdU7aH4JXc-S7HBsRnABhX5V0fNog';" alt="3 Actions You Need To Take Before Hiring Your First Virtual Assistant Click To Download Your Free Guide Virtual Assistant Free Workbook Online Entrepreneur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Actions You Need To Take Before Hiring Your First Virtual Assistant Click To Download Your Free Guide Virtual Assistant Free Workbook Online Entrepreneur</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/3f/d9/7f3fd9bcabbf8fc26ef47af1e932eebb.jpg" data-lightbox="roadtrip" data-title="Functional Ego States By Tony White Emdr Therapy Psychology Emdr">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/3f/d9/7f3fd9bcabbf8fc26ef47af1e932eebb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qZ9OT0Lfs4hsWiLvyF7MYbbx8JJ_n9qaxA';" alt="Functional Ego States By Tony White Emdr Therapy Psychology Emdr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Functional Ego States By Tony White Emdr Therapy Psychology Emdr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/7e/07/f37e07729b0494c434c7fd619e46fb1e.png" data-lightbox="roadtrip" data-title="Timeline Of Va And Psychology Historical Events And Key Va Psychology Leadership Appointments 1965 1977 Psychology History Of Psychology Counseling Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/7e/07/f37e07729b0494c434c7fd619e46fb1e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIdsDhZorEA6DrOyjxaYWEjnjHY_jdWWflQ';" alt="Timeline Of Va And Psychology Historical Events And Key Va Psychology Leadership Appointments 1965 1977 Psychology History Of Psychology Counseling Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Timeline Of Va And Psychology Historical Events And Key Va Psychology Leadership Appointments 1965 1977 Psychology History Of Psychology Counseling Psychology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/d5/f2/09d5f2b164011e02eb280e0af5934877.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/d5/f2/09d5f2b164011e02eb280e0af5934877.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5C_IgL5UZyHsErakqQTLlCOZrrPmYQPcXg';" alt="Pin On Mental Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bank-of-america-petersburg-va.html">Bank Of America Petersburg Va</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-orange-va.html">Bank Of America Orange Va</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-hours-today-vienna-va.html">Bank Of America Hours Today Vienna Va</a></li>
+													<li class="list-group-item"><a href="/army-vets-mc-belgium.html">Army Vets Mc Belgium</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-turnpike-va.html">Bank Of America Turnpike Va</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-on-veterans-memorial.html">Bank Of America On Veterans Memorial</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-ruckersville-va.html">Bank Of America Ruckersville Va</a></li>
+													<li class="list-group-item"><a href="/att-military-discount-code.html">Att Military Discount Code</a></li>
+													<li class="list-group-item"><a href="/article4-imf-japan.html">Article4 Imf Japan</a></li>
+													<li class="list-group-item"><a href="/banana-republic-military-cardigan.html">Banana Republic Military Cardigan</a></li>
+													<li class="list-group-item"><a href="/atlanta-united-tickets-military-discount.html">Atlanta United Tickets Military Discount</a></li>
+													<li class="list-group-item"><a href="/army-vs-navy-rugby-2021.html">Army Vs Navy Rugby 2021</a></li>
+													<li class="list-group-item"><a href="/army-vs-ghost-movie.html">Army Vs Ghost Movie</a></li>
+													<li class="list-group-item"><a href="/army-va-business-loan.html">Army Va Business Loan</a></li>
+													<li class="list-group-item"><a href="/army-vets-honour-run.html">Army Vets Honour Run</a></li>
+													<li class="list-group-item"><a href="/army-vacancies.html">Army Vacancies</a></li>
+													<li class="list-group-item"><a href="/att-unlimited-elite-veterans-discount.html">Att Unlimited Elite Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/army-va-pension.html">Army Va Pension</a></li>
+													<li class="list-group-item"><a href="/army-values-and-standards-pdf.html">Army Values And Standards Pdf</a></li>
+													<li class="list-group-item"><a href="/army-discount-river-island.html">Army Discount River Island</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

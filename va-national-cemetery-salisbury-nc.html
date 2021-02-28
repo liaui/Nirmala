@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va National Cemetery Salisbury Nc - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va National Cemetery Salisbury Nc",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/82/0c/52/820c52ebd1799ce0005b78f0e23dc6f7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+national+cemetery+salisbury+nc",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va National Cemetery Salisbury Nc</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is the newer of two Salisbury National Cemeteries. It contains Sections 8 to 22 and Columbarium C1 to C3 and Columbarium W1 to W10 W26 W27 W32 and W33. 704 636-2661 Salisbury National Cemetery was established by Confederate authorities to serve as the burial ground for captured Union soldiers incarcerated at the prison in Salisbury. <br>				
+			</p>
+										<a class="badge badge-dark" href="/virginia-ptsd-gun-laws.html">virginia ptsd gun laws</a>
+											<a class="badge badge-info" href="/wells-fargo-military-phone-number.html">wells fargo military phone number</a>
+											<a class="badge badge-light" href="/what-is-imf-in-india.html">what is imf in india</a>
+											<a class="badge badge-success" href="/what-are-the-objectives-of-imf-and-world-bank.html">what are the objectives of imf and world bank</a>
+											<a class="badge badge-warning" href="/what-does-npl-mean.html">what does npl mean</a>
+											<a class="badge badge-light" href="/what-is-the-full-form-of-imf.html">what is the full form of imf</a>
+											<a class="badge badge-warning" href="/what-are-imf-quotas.html">what are imf quotas</a>
+											<a class="badge badge-light" href="/virginia-beach-va-flight-discounts.html">virginia beach va flight discounts</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/14/84/681484139686b2bc96dc48cf081cfb0c.jpg" data-lightbox="roadtrip" data-title="Salisbury National Cemetery North Carolina History National Cemetery American Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/14/84/681484139686b2bc96dc48cf081cfb0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUsI_0JpisjZFFo_jZjdaeCnnjv1aaLabtw';" alt="Salisbury National Cemetery North Carolina History National Cemetery American Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salisbury National Cemetery North Carolina History National Cemetery American Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/de/fa/8cdefaa9e52c1f440789b2da91fcfab2.jpg" data-lightbox="roadtrip" data-title="Memorial Day At Salisbury National Cemetery Nc Goodncrazy National Cemetery Cemetery Veterans Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/de/fa/8cdefaa9e52c1f440789b2da91fcfab2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCME4TVQDVuVqfWJtGVBFrzFXpeNAFf-Cnw';" alt="Memorial Day At Salisbury National Cemetery Nc Goodncrazy National Cemetery Cemetery Veterans Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memorial Day At Salisbury National Cemetery Nc Goodncrazy National Cemetery Cemetery Veterans Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e3/ce/26/e3ce26d8dd1cd746175c2382de47ec0e.jpg" data-lightbox="roadtrip" data-title="Salisbury National Cemetery 501 Statesville Blvd Salisbury North Carolina The Confederate Government Establishe National Cemetery American Cemetery Salisbury">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e3/ce/26/e3ce26d8dd1cd746175c2382de47ec0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBOUsIDxDpkLKYzE-E89b2OE_yvJFbZcUpg';" alt="Salisbury National Cemetery 501 Statesville Blvd Salisbury North Carolina The Confederate Government Establishe National Cemetery American Cemetery Salisbury">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salisbury National Cemetery 501 Statesville Blvd Salisbury North Carolina The Confederate Government Establishe National Cemetery American Cemetery Salisbury</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2c/74/c4/2c74c49d5d57ef10f299427a79084475.jpg" data-lightbox="roadtrip" data-title="Visited With Dad Today At The Salisbury Nc National Cemetery Appreciate The Many Lessons He Taught Me More And More With Eac National Cemetery Teaching Lesson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2c/74/c4/2c74c49d5d57ef10f299427a79084475.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqRR7xIztzyd3r5qFfBVH5t72oE3297steIg';" alt="Visited With Dad Today At The Salisbury Nc National Cemetery Appreciate The Many Lessons He Taught Me More And More With Eac National Cemetery Teaching Lesson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visited With Dad Today At The Salisbury Nc National Cemetery Appreciate The Many Lessons He Taught Me More And More With Eac National Cemetery Teaching Lesson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/a0/42/0ba042e82243f0f91473a26ff7e7e24b.jpg" data-lightbox="roadtrip" data-title="Salisbury National Cemetery National Cemetery Military Veterans Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/a0/42/0ba042e82243f0f91473a26ff7e7e24b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDohuvULcSG9yWUhcOmRkwhET9HgdJJ6xP0g';" alt="Salisbury National Cemetery National Cemetery Military Veterans Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salisbury National Cemetery National Cemetery Military Veterans Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/e5/ea/34e5ea9d89f4840b544ff6d275e350a5.jpg" data-lightbox="roadtrip" data-title="Unclaimed Remains Of 15 Veterans Interred At National Cemetery Salisbury Post National Cemetery Cemetery Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/e5/ea/34e5ea9d89f4840b544ff6d275e350a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCtWwxcP4s_Zeq4sP36x-rUHOQgJxma0G4Q';" alt="Unclaimed Remains Of 15 Veterans Interred At National Cemetery Salisbury Post National Cemetery Cemetery Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unclaimed Remains Of 15 Veterans Interred At National Cemetery Salisbury Post National Cemetery Cemetery Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e1/5b/bf/e15bbf2b9c74d14fbf31f4e37c2ea389.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCtWwxcP4s_Zeq4sP36x-rUHOQgJxma0G4Q';" alt="Unclaimed Remains Of 15 Veterans Interred At National Cemetery Salisbury Post National Cemetery Cemetery Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>Wilmington National Cemetery 2011 Market Street Wilmington NC 28403 For info contact New Bern 252-637-2912.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va national cemetery salisbury nc</strong>. 
+								
+																	The database of burial information is updated each day. 
+																	282013 100711 AM. 
+																	Read before adding a memorial This is the newer of two Salisbury National Cemeteries. 
+																	Facility Map - W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	The historic section of the Salisbury National Cemetery is located at 202 Government Rd. 
+																	Salisbury National Cemetery Annex 501 Statesville Blvd. 
+																	501 Statesville Boulevard Salisbury NC 28144 Phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Salisbury National Cemetery has all of the key elements of a US National Cemetery. 
+																	Salisbury NC 28144 Phone. 
+																	It has the flag a half mast. 
+																	This location only has space available to accommodate subsequent interments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Burials from sections A through N and 1 to 7 see the Salisbury National Cemetery at 202 Government Road. 
+																	202 Government Rd Salisbury NC 28144. 
+																	Historic Salisbury National Cemetery. 
+																	VAMC Salisbury provides health care services to veterans in the central Piedmont area of North Carolina. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Salisbury VA Medical Center Salisbury NC. 
+																	Map of Salisbury National Cemetery Created Date. 
+																	We honor Americas veterans by providing exceptional health care that improves their health and. 
+																	We provide a dignified burial and lasting memorial for veterans and their eligible family members and we maintain our veterans cemeteries as national shrines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The cemetery is open for visitation daily from dawn to dusk. 
+																	The Salisbury National Cemetery Annex including the new administrative office and maintenance shop is located at 501 Statesville Boulevard in Salisbury behind the William Bill Hefner VA Medical Center. 
+																	It was established at the site of burials of Union soldiers who died during the American Civil War while held at a Confederate prisoner of war camp at the site. 
+																	Records for the original Salisbury National Cemetery are maintained at the Salisbury National Cemetery Annex. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA National Cemetery Administration honors the military service of our Nations veterans. 
+																	Burial in Arlington National Cemetery. 
+																	The administrative offices are located at the Salisbury National Cemetery Annex at 501 Statesville Blvd. 
+																	E Salisbury National Cemetery is a United States National Cemetery located in the city of Salisbury in Rowan County North Carolina. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Western Carolina State Veterans Cemetery 962 Old US Hwy 70 Black Mountain NC 28711. 
+																	Search for burial locations of veterans and their family members in VA National Cemeteries state veterans cemeteries various other military and Department of Interior cemeteries and for veterans buried in private cemeteries when the grave is marked with a government grave marker. 
+																	The historic section of Salisbury National Cemetery is located at 202 Government Road in Salisbury. 
+																	Kings Mountain National Military Park. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Salisbury National Cemetery is the only national cemetery in North Carolina open to new interments for Veterans and eligible family members. 
+																	The perfectly formed rows and columns of identical white marble tombstones and markers the flags at half mast a covered outdoor funeral ceremony area committal shelter and a location kiosk for looking up the location of grave markers. 
+																	Bill Hefner VA Medical Center - Salisbury NC. 
+																	Wreaths Across America in Salisbury - W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View the Web Site. 
+																	Map of Salisbury National Cemetery Keywords. 
+																	Salisbury National Cemetery 202 Government Road Salisbury NC 28144 Phone. 
+																	The following link will provide you with all the information needed in regards to burial in Arlington National Cemetery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Hefner VA Medical Center - Salisbury NC. 
+																	2011 Market Street Wilmington NC 28403 Phone. 
+																	More than 26000 Veterans and eligible family members are interred there. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2625 Park Rd Blacksburg SC 29702. 
+																	56K likes 193 talking about this 32238 were here. 
+																	Before the expansion Salisbury National Cemetery consisted of 635 acres of land 74 of which had already been developed. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/68/af/5368afd002a9c20fcb25fa2150e56bf7.jpg" data-lightbox="roadtrip" data-title="Pin On National Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/68/af/5368afd002a9c20fcb25fa2150e56bf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_vNv_7R2MLvDfdN_L_a_2S5Ngz4HZCm0vlQ';" alt="Pin On National Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/da/58/a2da585273e688d59a929b68a8b6b424.jpg" data-lightbox="roadtrip" data-title="Main Road Salisbury National Cemetery 202 Government Road Salisbury North Carolina National Cemetery Vacation Trips Union Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/da/58/a2da585273e688d59a929b68a8b6b424.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEJA0dl0msQRUulvDQJDuZjYQM--kqSpPIQ';" alt="Main Road Salisbury National Cemetery 202 Government Road Salisbury North Carolina National Cemetery Vacation Trips Union Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Main Road Salisbury National Cemetery 202 Government Road Salisbury North Carolina National Cemetery Vacation Trips Union Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/dd/bc/b7ddbcca3ff93995a4225f166f637a01.jpg" data-lightbox="roadtrip" data-title="What It Has Cost Us To Be Free Veterans Council Hosts Memorial Day Service Salisbury Post Honor Guard Memorial Day National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/dd/bc/b7ddbcca3ff93995a4225f166f637a01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnMVPB9wmuI_Q_gsWp24X195GVXmGsldYNA';" alt="What It Has Cost Us To Be Free Veterans Council Hosts Memorial Day Service Salisbury Post Honor Guard Memorial Day National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What It Has Cost Us To Be Free Veterans Council Hosts Memorial Day Service Salisbury Post Honor Guard Memorial Day National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f0/95/0c/f0950cb9e8343a33ac4e740fe580b964.jpg" data-lightbox="roadtrip" data-title="The Largest Mass Grave In The South Is Located In The Small City Of Salisbury North Carolina In 2020 Cities In North Carolina North Carolina Travel North Carolina">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f0/95/0c/f0950cb9e8343a33ac4e740fe580b964.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk2dLuGYUXXjTfM3TdTxv8DY5E_gPPzpGFIw';" alt="The Largest Mass Grave In The South Is Located In The Small City Of Salisbury North Carolina In 2020 Cities In North Carolina North Carolina Travel North Carolina">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Largest Mass Grave In The South Is Located In The Small City Of Salisbury North Carolina In 2020 Cities In North Carolina North Carolina Travel North Carolina</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/5b/bf/e15bbf2b9c74d14fbf31f4e37c2ea389.jpg" data-lightbox="roadtrip" data-title="Troops Playing Baseball At Salisbury N C Prison Camp President Lincoln Had Had A Baseball Field Cons Prisoner Of War Camp Civil War Photos Civil War History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/5b/bf/e15bbf2b9c74d14fbf31f4e37c2ea389.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdu3EKkvfsyxz-L-0TDqIILq4NAX8MgaFAQ';" alt="Troops Playing Baseball At Salisbury N C Prison Camp President Lincoln Had Had A Baseball Field Cons Prisoner Of War Camp Civil War Photos Civil War History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Troops Playing Baseball At Salisbury N C Prison Camp President Lincoln Had Had A Baseball Field Cons Prisoner Of War Camp Civil War Photos Civil War History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/cb/79/f6cb79dcd61b88922f477a11716ba6c4.jpg" data-lightbox="roadtrip" data-title="Salisbury Confederate Civil War Prison National Cemetery Burial Trenches Maps Prisoner Of War Camp National Cemetery Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/cb/79/f6cb79dcd61b88922f477a11716ba6c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg_uENuL59NkQ5rPG50HEy6wHAWsRbZnHJ6Q';" alt="Salisbury Confederate Civil War Prison National Cemetery Burial Trenches Maps Prisoner Of War Camp National Cemetery Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salisbury Confederate Civil War Prison National Cemetery Burial Trenches Maps Prisoner Of War Camp National Cemetery Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/53/82/d15382a243a8a8e9be1c8ec424281e4a.jpg" data-lightbox="roadtrip" data-title="Top 5 United States Monuments Nc American Civil War Monuments And Memorials On Waymarking Com Civil War Monuments Monument Travel Usa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/53/82/d15382a243a8a8e9be1c8ec424281e4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSerbzaourllg86InG7t8oXEfZeYRDLI6qmkg';" alt="Top 5 United States Monuments Nc American Civil War Monuments And Memorials On Waymarking Com Civil War Monuments Monument Travel Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 United States Monuments Nc American Civil War Monuments And Memorials On Waymarking Com Civil War Monuments Monument Travel Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/f2/77/dcf277a42228c126b25bb2fe0afc4019.jpg" data-lightbox="roadtrip" data-title="Salisbury Confederate Civil War Prison National Cemetery Civil War Civil War Flags Civil War Battles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/f2/77/dcf277a42228c126b25bb2fe0afc4019.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGkt8QsBfS9s6xtwDidVzco3ojug715CUmA';" alt="Salisbury Confederate Civil War Prison National Cemetery Civil War Civil War Flags Civil War Battles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salisbury Confederate Civil War Prison National Cemetery Civil War Civil War Flags Civil War Battles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/5e/63/b85e63dda1fbc80d49797d9c6e1c27bf.jpg" data-lightbox="roadtrip" data-title="Confederate Soldiers Monument Salisbury Nc Rowan County Confederate Soldiers Rowan County Civil War Monuments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/5e/63/b85e63dda1fbc80d49797d9c6e1c27bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP2OoW2aSiyoDlIi7UQ-eeTevKE0SSNNq03A';" alt="Confederate Soldiers Monument Salisbury Nc Rowan County Confederate Soldiers Rowan County Civil War Monuments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Confederate Soldiers Monument Salisbury Nc Rowan County Confederate Soldiers Rowan County Civil War Monuments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/03/e8/9303e80637fe287850218cf1bd453a5e.jpg" data-lightbox="roadtrip" data-title="Historic Sign Rowan County Courthouse In Salisbury North Carolina Note The Cupola Which Has Since Been Removed Paul Chandler Ap Rowan County Rowan Salisbury">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/03/e8/9303e80637fe287850218cf1bd453a5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQw_Wa3a_6QZy9rhnRwLUWUtobjU2L4VmrA';" alt="Historic Sign Rowan County Courthouse In Salisbury North Carolina Note The Cupola Which Has Since Been Removed Paul Chandler Ap Rowan County Rowan Salisbury">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Historic Sign Rowan County Courthouse In Salisbury North Carolina Note The Cupola Which Has Since Been Removed Paul Chandler Ap Rowan County Rowan Salisbury</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/89/cc/0589ccc7e407d7fa0fd22b13325cf23a.jpg" data-lightbox="roadtrip" data-title="Revolutionary War Cemetery In Nj Revolutionary War American Revolutionary War American Revolution">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/89/cc/0589ccc7e407d7fa0fd22b13325cf23a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKiRLZf_xBAZ3Hzrxf05wXRySPyXnM3p-jcg';" alt="Revolutionary War Cemetery In Nj Revolutionary War American Revolutionary War American Revolution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Revolutionary War Cemetery In Nj Revolutionary War American Revolutionary War American Revolution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/f5/c0/60f5c0c3fe99d53597143b47aaff58e7.jpg" data-lightbox="roadtrip" data-title="Col T J Haggard What A Great Looking Headstone Civil War Monuments American Civil War Confederate Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/f5/c0/60f5c0c3fe99d53597143b47aaff58e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwYBYzZPplFQzPrElqGXAjZLiupp4QJFopA';" alt="Col T J Haggard What A Great Looking Headstone Civil War Monuments American Civil War Confederate Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Col T J Haggard What A Great Looking Headstone Civil War Monuments American Civil War Confederate Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/0c/52/820c52ebd1799ce0005b78f0e23dc6f7.jpg" data-lightbox="roadtrip" data-title="Sign In Civil War Confederate Civil War Monuments Heroism">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/0c/52/820c52ebd1799ce0005b78f0e23dc6f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprPn6BVAymoT9UtQoBKaPU5Qlkm89m8pA8w';" alt="Sign In Civil War Confederate Civil War Monuments Heroism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign In Civil War Confederate Civil War Monuments Heroism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/b4/56/ecb45677e8ef7666c685b5ed939cd8df.jpg" data-lightbox="roadtrip" data-title="Near Appomattox Court House Va Harpers Ferry East Coast Road Trip War Memorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/b4/56/ecb45677e8ef7666c685b5ed939cd8df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1i4iChkIOBkaseWZwN_BauAgOeSsSqv0iDg';" alt="Near Appomattox Court House Va Harpers Ferry East Coast Road Trip War Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Near Appomattox Court House Va Harpers Ferry East Coast Road Trip War Memorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/91/81/42918146440cfd0b3820b8d7b796a6e2.jpg" data-lightbox="roadtrip" data-title="Pennsylvania Monument At Chickamauga Battlefield Tn Battle Of Antietam Chickamauga Battlefield Chickamauga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/91/81/42918146440cfd0b3820b8d7b796a6e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf9o8eGs6gFAd86B_DIUo3X9oCJSX-55rRwA';" alt="Pennsylvania Monument At Chickamauga Battlefield Tn Battle Of Antietam Chickamauga Battlefield Chickamauga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pennsylvania Monument At Chickamauga Battlefield Tn Battle Of Antietam Chickamauga Battlefield Chickamauga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-exchange-rate-forecast-2021.html">Imf Exchange Rate Forecast 2021</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-report.html">Imf Egypt Report</a></li>
+													<li class="list-group-item"><a href="/imf-europe-careers.html">Imf Europe Careers</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-january-2020.html">Imf Economic Outlook January 2020</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-july-2020.html">Imf Economic Outlook July 2020</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-spain.html">Imf Economic Outlook Spain</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-first-review.html">Imf Egypt First Review</a></li>
+													<li class="list-group-item"><a href="/imf-equilibrium-real-exchange-rate.html">Imf Equilibrium Real Exchange Rate</a></li>
+													<li class="list-group-item"><a href="/imf-ethiopia-jobs.html">Imf Ethiopia Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-inflation-forecast.html">Imf Egypt Inflation Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-tourism.html">Imf Egypt Tourism</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-malaysia.html">Imf Economic Outlook Malaysia</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-loan.html">Imf Egypt Loan</a></li>
+													<li class="list-group-item"><a href="/imf-economics-jobs.html">Imf Economics Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-gdp.html">Imf Economic Outlook Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-reform.html">Imf Egypt Reform</a></li>
+													<li class="list-group-item"><a href="/imf-egypt-staff-report.html">Imf Egypt Staff Report</a></li>
+													<li class="list-group-item"><a href="/imf-effective-exchange-rate-index.html">Imf Effective Exchange Rate Index</a></li>
+													<li class="list-group-item"><a href="/imf-economic-outlook-for-india.html">Imf Economic Outlook For India</a></li>
+													<li class="list-group-item"><a href="/imf-europe-definition.html">Imf Europe Definition</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Orvis Veterans Discount - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Orvis Veterans Discount",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/474x/40/ce/c8/40cec809066be47b62666029fa60f522.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=orvis+veterans+discount",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Orvis Veterans Discount</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Get 15 Off Sitewide Orvis Employee Discount. Christmas Day Deals 2020. Free shipping on all orders 2. <br>				
+			</p>
+										<a class="badge badge-danger" href="/american-military-university-programs.html">american military university programs</a>
+											<a class="badge badge-info" href="/american-airlines-military-admirals-club.html">american airlines military admirals club</a>
+											<a class="badge badge-dark" href="/academy-sports-coupon-military-discount.html">academy sports coupon military discount</a>
+											<a class="badge badge-secondary" href="/academy-sports-military-discount-code.html">academy sports military discount code</a>
+											<a class="badge badge-light" href="/active-and-reservist.html">active and reservist</a>
+											<a class="badge badge-primary" href="/ancestry-coupon-military-discount.html">ancestry coupon military discount</a>
+											<a class="badge badge-dark" href="/ace-adventure-military-discount.html">ace adventure military discount</a>
+											<a class="badge badge-primary" href="/aiib-vs-imf-and-world-bank.html">aiib vs imf and world bank</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the ideal site.  Our site gives you hints for seeing the highest quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/90/47/7a9047eadf8802b46c06d97c6b580e70.jpg" data-lightbox="roadtrip" data-title="Orvis In 2020 Orvis Fly Fishing Shirts Fly Fishing Bag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/90/47/7a9047eadf8802b46c06d97c6b580e70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy9aL7Mv5NO6xPz_VztfWcWuQoHBwopM0dNw';" alt="Orvis In 2020 Orvis Fly Fishing Shirts Fly Fishing Bag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orvis In 2020 Orvis Fly Fishing Shirts Fly Fishing Bag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/87/c8/ce/87c8ce0f394603e28957f602a33440df.jpg" data-lightbox="roadtrip" data-title="Orvis Fly Fishing Fishing Tips Fly Fishing Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/87/c8/ce/87c8ce0f394603e28957f602a33440df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZMhsSmLzAM5rOrg0S6r-UqfY80z6TQ8BKig';" alt="Orvis Fly Fishing Fishing Tips Fly Fishing Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orvis Fly Fishing Fishing Tips Fly Fishing Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/d5/65/1ad565da400bcf3851f108e5899a77d7.jpg" data-lightbox="roadtrip" data-title="Master Class Monday How To Shoot Line For Maximum Casting Efficiency Orvis News In 2020 Fly Fishing Line It Cast Fly Casting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/d5/65/1ad565da400bcf3851f108e5899a77d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQegsrp4U3su0h3XbUjWUUv4a0VPE5YB5p-w';" alt="Master Class Monday How To Shoot Line For Maximum Casting Efficiency Orvis News In 2020 Fly Fishing Line It Cast Fly Casting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Master Class Monday How To Shoot Line For Maximum Casting Efficiency Orvis News In 2020 Fly Fishing Line It Cast Fly Casting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/b5/75/49b57532675275da255c1d10adb5d64a.jpg" data-lightbox="roadtrip" data-title="Orvis Orvis Fly Fishing Fly Fishing Books Fishing Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/b5/75/49b57532675275da255c1d10adb5d64a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Zal_YOzuOGGg7s09C4JDgBXEAJXfT-UqEg';" alt="Orvis Orvis Fly Fishing Fly Fishing Books Fishing Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orvis Orvis Fly Fishing Fly Fishing Books Fishing Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/51/a4/e551a4dbf398e7cbdf50fc9c83711d3d.jpg" data-lightbox="roadtrip" data-title="Orvis Makes A 1 Donation To Casting For Recovery For Every Student Who Attends A Free Fly Fishing 101 Class This Y Fly Fishing Lessons Fly Fishing Fishing 101">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/51/a4/e551a4dbf398e7cbdf50fc9c83711d3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAbjnPX44ADplSUr5bWZ3tavlw0ZPQk3htKw';" alt="Orvis Makes A 1 Donation To Casting For Recovery For Every Student Who Attends A Free Fly Fishing 101 Class This Y Fly Fishing Lessons Fly Fishing Fishing 101">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orvis Makes A 1 Donation To Casting For Recovery For Every Student Who Attends A Free Fly Fishing 101 Class This Y Fly Fishing Lessons Fly Fishing Fishing 101</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/df/9f/6c/df9f6c66d616aa76ca94b570b5bf3e84.jpg" data-lightbox="roadtrip" data-title="Redington Form Game Casting Practice Fly Rods Fishing Rods For Sale Fly Rods Fly Fishing Equipment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/df/9f/6c/df9f6c66d616aa76ca94b570b5bf3e84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8y3bqGKn7IIpDMqWBAMTEBB3DxGTBHzd3Q';" alt="Redington Form Game Casting Practice Fly Rods Fishing Rods For Sale Fly Rods Fly Fishing Equipment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Redington Form Game Casting Practice Fly Rods Fishing Rods For Sale Fly Rods Fly Fishing Equipment</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/63/53/73/6353739b15479ad89eb8b6743c69bc68.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8y3bqGKn7IIpDMqWBAMTEBB3DxGTBHzd3Q';" alt="Redington Form Game Casting Practice Fly Rods Fishing Rods For Sale Fly Rods Fly Fishing Equipment">
+										<div class="card-body">
+						<h3 class="h5"><b>Who qualifies for the discount.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Orvis veterans discount</strong>. 
+								
+																	Make sure you click on the Orvis Coupons page for all of the best deals of the day in one convenient place. 
+																	5 off enter valid military or veterans ID at checkout. 
+																	Active Duty Military of the US Armed Forces. 
+																	FREE 3-5 Business Days Standard Ground Shipping on fishing gear. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	50 OFF at Orvis is in the control of you. 
+																	I just got a military discount at Orvis and earned 870 in cash back. 
+																	10 savings on any purchase for Active Military Reserve Veterans. 
+																	Check out these tips and articles that can help you uncover Sunshine State savings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its of great benefit for you to give your purse a relief on purchasing at Orvis. 
+																	It looks like your browser is set to block cookies. 
+																	Orvis offers a variety of wonderful Hunting goods at an alluring price. 
+																	Save with Orvis Military Discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grab 25 off on 50 or more or 50 on 200 or more Orders and Plus Free Shipping. 
+																	Since 1856 Orvis has been providing authentic products that define and enhance the Distinctive Country Lifestyle and today wants to honor military services with a 10 everyday discount for Veterans Advantage VetRewards Members. 
+																	Orvis 20 off Discount Code and Coupons for January - Up to 80 OFF. 
+																	Make use of this deal before it expires. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orvis doesnt allow multiple discounts hence was charged for shipping which offset military discount. 
+																	Save up to 70 OFF w Orvis Military Discount And Promo Code and Promo Codes Dont relinquish the good timing to pick up this fantastic offer. 
+																	You can find additional information about Orviss veterans discount policies on their customer service page here. 
+																	Orvis Military Discount - Extra 10 off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But discounts are an especially sweet way for a business to express gratitude to the military and veterans whether its an airline a Florida theme park or a hotel. 
+																	Once enrolled in the Veterans Advantage military discount program members will receive a membership card that can be used at Orvis locations and other partner stores. 
+																	Just enroll with Veterans Advantage and youll immediately get special instructions on how to get your discount. 
+																	Your bargain is waiting at the check-out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Save up to 70 OFF w Orvis Military Discount And Promo Code and Promo Codes before past due. 
+																	One of the best ways to save at Orvis is by signing up for the Rewards Visa card. 
+																	Yes Orvis does offer military discounts. 
+																	Orvis offers the Veterans Advantage Discount a year-round 10 military discount on select Orvis products. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your VetRewards discount is combinable with public sales from Orvis. 
+																	You can verify right before check out with ID services to receive your discount Friendlys Ice Cream Stores. 
+																	However shipping was waived via chat session after I threatened to cancel my order. 
+																	5 Review for Orvis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just uncheck this feature to enable cookies for your browser and youre all set. 
+																	Expire Soon 3 used. 
+																	10 discount cannot be used for the purchase of Gift Cards guns or cartridges. 
+																	Save 10 on mens womens clothing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since 1856 Orvis has been providing authentic products that define and enhance the Distinctive Country Lifestyle and today wants to honor military services with a 10 everyday discount for Veterans Advantage VetRewards Members. 
+																	Military veterans active duty military National Guard and Reserve members as well as their families. 
+																	A veteran owned company offering a 15 discount to veterans on all items in our store. 
+																	15 military discount after verification of status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orvis 20 off Discount Code and Coupons for January - Up to 80 OFF Take the chance to enjoy the limited time offer on sitewide. 
+																	The 10 Orvis discount applies to mens and womens clothing travel clothing and luggage hunting and dog care products and accessories. 
+																	A 20 off Orvis promo code on your first purchase with the. 
+																	You can also visit their homepage to see if Orvis has posted additional information on their veterans discount policies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Save 10 on travel clothing luggage. 
+																	Choose your favorite products from Orvis UK and get the promotion. 
+																	Get instant savings with this special offer from Orvis. 
+																	Save 10 on hunting dogs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enjoy Orvis Free Delivery Offer In A Limited Time Its a piece of cake to place your order at the items you want with less money. 
+																	Orvis Military Discount deals 2020. 
+																	You can save up to 50 off in their online Orvis Outlet and enjoy additional savings. 
+																	Grab 25 off on 50 or more or 50 on 200 or more Orders and Plus Free Shipping Surround yourself with a world of happiness once you check out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get a 5 Military Appreciation discount in stores and online every day with military ID. 
+																	Does Orvis ship internationally. 
+																	Details of the Deal. 
+																	Orvis has partnered with Veterans Advantage to offer a 10 discount to all US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Special discounts of anywhere from 5-20 for veterans and active duty military. 
+																	By Patrick on April 19 2017. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/48/0e/e0480e1915703fde94c397a122f5f16d.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/48/0e/e0480e1915703fde94c397a122f5f16d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cDulo2Vg3qiBbE0WwD7fpTF8g7lUXAEhdw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/e3/e1/dbe3e1b237e89420a57f6cc1502b7276.png" data-lightbox="roadtrip" data-title="Orvis Cream And Tan Oversized Sweater Tan Oversized Sweater Sweaters Oversized Orvis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/e3/e1/dbe3e1b237e89420a57f6cc1502b7276.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvTq5dWNYl4BZ5EC3KmhNrA8DqmNIsvYEng';" alt="Orvis Cream And Tan Oversized Sweater Tan Oversized Sweater Sweaters Oversized Orvis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orvis Cream And Tan Oversized Sweater Tan Oversized Sweater Sweaters Oversized Orvis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/53/73/6353739b15479ad89eb8b6743c69bc68.png" data-lightbox="roadtrip" data-title="Tarpon Sticker Decal Usa Flag Aftco Pelagic Orvis Huk Hogy 5 5 Sage Fishing Xo Fishing Decals Sports Vinyl Decals Flag Decal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/53/73/6353739b15479ad89eb8b6743c69bc68.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd7k65-OHJ6AdNTgj5015VWte0kjs-WwXgBA';" alt="Tarpon Sticker Decal Usa Flag Aftco Pelagic Orvis Huk Hogy 5 5 Sage Fishing Xo Fishing Decals Sports Vinyl Decals Flag Decal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tarpon Sticker Decal Usa Flag Aftco Pelagic Orvis Huk Hogy 5 5 Sage Fishing Xo Fishing Decals Sports Vinyl Decals Flag Decal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/40/ce/c8/40cec809066be47b62666029fa60f522.jpg" data-lightbox="roadtrip" data-title="The Orvis Guide To Small Stream Fly Fishing Book Review Fly Fishing Books Fly Fishing Fly Fishing Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/40/ce/c8/40cec809066be47b62666029fa60f522.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYMgQ4At-Rki7YDOmz91_h1iKbW55E5ZwGA';" alt="The Orvis Guide To Small Stream Fly Fishing Book Review Fly Fishing Books Fly Fishing Fly Fishing Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Orvis Guide To Small Stream Fly Fishing Book Review Fly Fishing Books Fly Fishing Fly Fishing Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/a7/e2/2aa7e2840935121d296762da2be3b686.jpg" data-lightbox="roadtrip" data-title="Photo Of The Day A Cadet S Day Out Orvis News Photo Fish Fly Fishing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/a7/e2/2aa7e2840935121d296762da2be3b686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVx3Dl1VaT9X5mAfXb8bO1RLsyLkLlczW2-g';" alt="Photo Of The Day A Cadet S Day Out Orvis News Photo Fish Fly Fishing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Of The Day A Cadet S Day Out Orvis News Photo Fish Fly Fishing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/be/63/1bbe63d993d2590ea499ca9f63a5b1bd.jpg" data-lightbox="roadtrip" data-title="Jfm Washington Wizards Washington Wizards Retired Military Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/be/63/1bbe63d993d2590ea499ca9f63a5b1bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuXp1jRu8RpYPfuAT0GimcdEO6KW85brCag';" alt="Jfm Washington Wizards Washington Wizards Retired Military Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jfm Washington Wizards Washington Wizards Retired Military Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/21/e9/6a21e950548d24c35f10dc5a032f1bec.jpg" data-lightbox="roadtrip" data-title="Photo Of The Day Gus The Trout Loving Dog Orvis News Fly Fishing Girls Fishing Girls Dog Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/21/e9/6a21e950548d24c35f10dc5a032f1bec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR07-iLgu_h_dsJGiIbH6XbVvbEP0AM8BUi3w';" alt="Photo Of The Day Gus The Trout Loving Dog Orvis News Fly Fishing Girls Fishing Girls Dog Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Of The Day Gus The Trout Loving Dog Orvis News Fly Fishing Girls Fishing Girls Dog Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/52/9f/23529f46b8ab5fc7435ed51a204a0125.jpg" data-lightbox="roadtrip" data-title="Pin On All About Pets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/52/9f/23529f46b8ab5fc7435ed51a204a0125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ6r88DV_GQecoZXX1QrbrXLbtgM-srhKlDg';" alt="Pin On All About Pets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All About Pets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/5c/c0/485cc0b44f7c7c7a0cf8ae095ef3c7e5.jpg" data-lightbox="roadtrip" data-title="Capt Spencer With The Brand New Orvis Helios 3 D 8wt Rod First Cast Redfish This Morning Wow Great Mojo Findyourwild Orvis Mercury Marine Red Fish Baffin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/5c/c0/485cc0b44f7c7c7a0cf8ae095ef3c7e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYsYBQqLlvPIickhP-MEAIH6Q-W_0v9cFAJA';" alt="Capt Spencer With The Brand New Orvis Helios 3 D 8wt Rod First Cast Redfish This Morning Wow Great Mojo Findyourwild Orvis Mercury Marine Red Fish Baffin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Capt Spencer With The Brand New Orvis Helios 3 D 8wt Rod First Cast Redfish This Morning Wow Great Mojo Findyourwild Orvis Mercury Marine Red Fish Baffin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/19/17/85191771df47654fb1efe3a8bfdaa89a.jpg" data-lightbox="roadtrip" data-title="Photos Phoebe S Last Day Brown Trout In Vermont Orvis News Brown Trout Fly Fishing Quote Orvis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/19/17/85191771df47654fb1efe3a8bfdaa89a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKMhoeHF7CwutH00QfKIRHUlQVj6uh-qxbUw';" alt="Photos Phoebe S Last Day Brown Trout In Vermont Orvis News Brown Trout Fly Fishing Quote Orvis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Phoebe S Last Day Brown Trout In Vermont Orvis News Brown Trout Fly Fishing Quote Orvis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/5c/77/225c778a3eed32a4ca3b0acb4db7638e.jpg" data-lightbox="roadtrip" data-title="Men S Clay Shooting Vest Mesh Backed Clays Vest Orvis Men Sport Vest Vest Mens Pocket Vest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/5c/77/225c778a3eed32a4ca3b0acb4db7638e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHjFd_toNTVdYZRbmC-EO9m0IuBxlfIvQtrQ';" alt="Men S Clay Shooting Vest Mesh Backed Clays Vest Orvis Men Sport Vest Vest Mens Pocket Vest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Men S Clay Shooting Vest Mesh Backed Clays Vest Orvis Men Sport Vest Vest Mens Pocket Vest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/fd/a5/9dfda57b2f6db106a6f69f3e1a1af55b.jpg" data-lightbox="roadtrip" data-title="Photos Mother Son Bonding On A Utah Trout Stream Orvis News Fishing Girls Fly Fishing Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/fd/a5/9dfda57b2f6db106a6f69f3e1a1af55b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1e6tJJosjAlgewJK8IKRBp_QOzXP9aqXwUg';" alt="Photos Mother Son Bonding On A Utah Trout Stream Orvis News Fishing Girls Fly Fishing Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Mother Son Bonding On A Utah Trout Stream Orvis News Fishing Girls Fly Fishing Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/d4/22/0ad422d482f62aafd476a7b611d90dab.jpg" data-lightbox="roadtrip" data-title="Video Damsels In Distress On A New Zealand Stream Orvis News Fly Fishing Fish Fishing Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/d4/22/0ad422d482f62aafd476a7b611d90dab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGqrVNvOA6FPdbHkjbHuR-jPkcItxHLrscA';" alt="Video Damsels In Distress On A New Zealand Stream Orvis News Fly Fishing Fish Fishing Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video Damsels In Distress On A New Zealand Stream Orvis News Fly Fishing Fish Fishing Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/8d/54/1b8d549f6d97d6dd38fc234c87d88c22.jpg" data-lightbox="roadtrip" data-title="Tuesday Tip Top 10 Flies For Stillwater Trout Orvis News Fly Fishing Fish Trout Fishing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/8d/54/1b8d549f6d97d6dd38fc234c87d88c22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dn6JtZDm_TJahgaGasfQ6nsXhg0A06wo2w';" alt="Tuesday Tip Top 10 Flies For Stillwater Trout Orvis News Fly Fishing Fish Trout Fishing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuesday Tip Top 10 Flies For Stillwater Trout Orvis News Fly Fishing Fish Trout Fishing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/75/5b/28755bb54a828e5c78834375becf9475.jpg" data-lightbox="roadtrip" data-title="Farmington Pennsylvania Fly Fishing School Fly Fishing Orvis Fly Fishing Fishing Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/75/5b/28755bb54a828e5c78834375becf9475.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGLyva9lFM_Vhal70kf-TZiimEwPT0ZhA5g';" alt="Farmington Pennsylvania Fly Fishing School Fly Fishing Orvis Fly Fishing Fishing Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Farmington Pennsylvania Fly Fishing School Fly Fishing Orvis Fly Fishing Fishing Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-an-inactive-reservist.html">What Is An Inactive Reservist</a></li>
+													<li class="list-group-item"><a href="/website-with-military-discount.html">Website With Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-is-voc-rehab-for-veterans.html">What Is Voc Rehab For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-is-imfao-in-texting.html">What Is Imfao In Texting</a></li>
+													<li class="list-group-item"><a href="/what-do-us-navy-veterans-do.html">What Do Us Navy Veterans Do</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-and-its-functions.html">What Is Imf And Its Functions</a></li>
+													<li class="list-group-item"><a href="/what-is-bretton-woods-monetary-system.html">What Is Bretton Woods Monetary System</a></li>
+													<li class="list-group-item"><a href="/what-is-apples-military-discount.html">What Is Apples Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-is-kohls-military-discount.html">What Is Kohls Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-does-the-slang-lmao-mean.html">What Does The Slang Lmao Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-navy-dd214-look-like.html">What Does A Navy Dd214 Look Like</a></li>
+													<li class="list-group-item"><a href="/what-is-article-4-imf.html">What Is Article 4 Imf</a></li>
+													<li class="list-group-item"><a href="/what-is-pro-xtra-at-home-depot.html">What Is Pro Xtra At Home Depot</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-exchange-rate-regime.html">What Is Imf Exchange Rate Regime</a></li>
+													<li class="list-group-item"><a href="/what-is-japan-consumption-tax.html">What Is Japan Consumption Tax</a></li>
+													<li class="list-group-item"><a href="/what-are-some-military-sayings.html">What Are Some Military Sayings</a></li>
+													<li class="list-group-item"><a href="/what-does-executive-membership-at-costco-get-you.html">What Does Executive Membership At Costco Get You</a></li>
+													<li class="list-group-item"><a href="/what-is-merit-pay-in-compensation.html">What Is Merit Pay In Compensation</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-fee.html">What Is Imf Fee</a></li>
+													<li class="list-group-item"><a href="/what-are-lol-lmao-called.html">What Are Lol Lmao Called</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

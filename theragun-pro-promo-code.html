@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Theragun Pro Promo Code - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Theragun Pro Promo Code",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/474x/36/d6/ef/36d6ef6a0b7769e53f3e255d5e8adad3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=theragun+pro+promo+code",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Theragun Pro Promo Code</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Supplies a variety of wonderful Computer Accessories goods at an attractive price. Outside of their normal products theyve expanded into Theraone which is a wide variety of topical lotions and creams with CBD oil all legal to help promote muscle recovery. Browse the Theragun G3Pro Promo Codes page and pick up the from the list to copy it to clipboard. <br>				
+			</p>
+										<a class="badge badge-danger" href="/home-depot-and-veterans-discount.html">home depot and veterans discount</a>
+											<a class="badge badge-primary" href="/history-about-imf.html">history about imf</a>
+											<a class="badge badge-success" href="/hi-imf-chemistry.html">hi imf chemistry</a>
+											<a class="badge badge-secondary" href="/hiring-our-heroes-corporate-fellowship-reviews.html">hiring our heroes corporate fellowship reviews</a>
+											<a class="badge badge-dark" href="/how-do-i-find-a-veteran-to-hire.html">how do i find a veteran to hire</a>
+											<a class="badge badge-secondary" href="/hiring-our-heroes-corporate-fellowship-amazon.html">hiring our heroes corporate fellowship amazon</a>
+											<a class="badge badge-primary" href="/how-does-sprint-military-discount-work.html">how does sprint military discount work</a>
+											<a class="badge badge-danger" href="/hiring-30-disabled-veterans.html">hiring 30 disabled veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the right blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://spyj82wkesvym5c49l0szbra-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/theragun-therabody-1.png" data-lightbox="roadtrip" data-title="Theragun Promo Review February 2021 Therabody Coupon Review">
+											<img class="card-img v-image ads-img " src="https://spyj82wkesvym5c49l0szbra-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/theragun-therabody-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOgwuxgxwBic8EwFi1n3kLh8xcs99MRiO7A';" alt="Theragun Promo Review February 2021 Therabody Coupon Review">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun Promo Review February 2021 Therabody Coupon Review</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.us-east-1.amazonaws.com/refermate/stores/19666/share/sd.jpg?1585146245" data-lightbox="roadtrip" data-title="150 Off Theragun Coupons Promo Codes February 2021 Refermate">
+											<img class="card-img v-image ads-img " src="https://s3.us-east-1.amazonaws.com/refermate/stores/19666/share/sd.jpg?1585146245" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5etaFMQ6LL80xUxAv0mBmu8Uu2VHt1eAfQ';" alt="150 Off Theragun Coupons Promo Codes February 2021 Refermate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">150 Off Theragun Coupons Promo Codes February 2021 Refermate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shopify.com/s/files/1/0101/7777/3632/products/TheraGun-G3PRO-1200x1200_1024x1024@2x.jpg?v=1551094244" data-lightbox="roadtrip" data-title="Theragun G3pro Therapy Massager Deep Tissue Massage Massage">
+											<img class="card-img v-image ads-img " src="https://cdn.shopify.com/s/files/1/0101/7777/3632/products/TheraGun-G3PRO-1200x1200_1024x1024@2x.jpg?v=1551094244" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7Ys3mJOYK4kgZ20-Vq58BL5N9PWtB-YEAw';" alt="Theragun G3pro Therapy Massager Deep Tissue Massage Massage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun G3pro Therapy Massager Deep Tissue Massage Massage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sociablelabs.com/images/store-logo/theragun-coupons.png" data-lightbox="roadtrip" data-title="35 Off Theragun Coupons Promo Discount Codes 2020">
+											<img class="card-img v-image ads-img " src="https://www.sociablelabs.com/images/store-logo/theragun-coupons.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4uqqxgTmX_f-1QY7ddQRhzgz8yswRZVIjkw';" alt="35 Off Theragun Coupons Promo Discount Codes 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 Off Theragun Coupons Promo Discount Codes 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet2.cbsistatic.com/img/E-Ca_SVj5fLeMm0CXSveaU-snoA=/1200x630/2020/11/17/654826ac-2827-4171-b944-58a872dbedf7/theragun-mini-colors.jpg" data-lightbox="roadtrip" data-title="Cyber Monday Massage Gun Deals Save 150 On Theragun Pro 100 Off Theragun Elite And More Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet2.cbsistatic.com/img/E-Ca_SVj5fLeMm0CXSveaU-snoA=/1200x630/2020/11/17/654826ac-2827-4171-b944-58a872dbedf7/theragun-mini-colors.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpb474dJ8A9y0qdbV8Pubx9xJvTkLQV7QnTg';" alt="Cyber Monday Massage Gun Deals Save 150 On Theragun Pro 100 Off Theragun Elite And More Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cyber Monday Massage Gun Deals Save 150 On Theragun Pro 100 Off Theragun Elite And More Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/8c/75/2c/8c752c4f61a16298d99c8280a06516e8.jpg" data-lightbox="roadtrip" data-title="Power Massager Pro Massage Before And After Gym Massage Ball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/8c/75/2c/8c752c4f61a16298d99c8280a06516e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71aWkASPGuAsCLef9j9_Rnuhj4Lvcnz8sbQ';" alt="Power Massager Pro Massage Before And After Gym Massage Ball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Power Massager Pro Massage Before And After Gym Massage Ball</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.alltricks.com/hd/15080985e81c798062530.34351323.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71aWkASPGuAsCLef9j9_Rnuhj4Lvcnz8sbQ';" alt="Power Massager Pro Massage Before And After Gym Massage Ball">
+										<div class="card-body">
+						<h3 class="h5"><b>They do have discount coupon codes for a wide variety of customers but mainly first responders EMTs nurses doctors med professionals military and a ton more.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Theragun pro promo code</strong>. 
+								
+																	They dont have promo codes or coupons like some other sites claim they do so just snag your fave whenever you can. 
+																	¹Upon the verification of an eligible Theragun device displaying a valid serial number customer will receive one 25 Off promo code per 3rd generation device validated and one 15 Off promo code per G2PRO validated. 
+																	Select the Theragun PRO on some top brands like Amazon Ebay etc. 
+																	Click Reveal Code to copy the promo code to your clipboard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hurry Up Expire Soon. 
+																	Look for the box labeled Enter couponpromo code and apply the. 
+																	Are There Promo Codes or Coupons. 
+																	Find the promo code box paste your code and click apply. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At is the best choice for you. 
+																	Its our mission to provide effective and natural whole-body wellness solutions to help people feel better and do more of what moves them. 
+																	Double check the right items are in your cart. 
+																	And add it to shopping cart. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With over a decade dedicated to the breakthrough science of percussive therapy Theragun continues to innovate modern solutions for muscle pain relief performance enhancement and faster recovery. 
+																	Theragun is a health and wellness brand founded by chiropractor Dr. 
+																	However the larger the amount of your order in TheraGun the more benefits you can enjoy such as free shipping and getting gifts. 
+																	Therabody promo codes coupons deals February 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TheraGun does provide customers with up to 84 kinds of coupons but does not support using multiple promo codes at the same time. 
+																	Shoppers saved an average of 100 w Therabody site-wide codes 25 off vouchers free shipping codes. 
+																	Theragun is pretty awesome when it comes to. 
+																	Visit the Theragun PRO Promo Codes page and click the Get Code to copy the to your clipboard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Theragun Promo Code Couopn Code January 2021. 
+																	Go back to the shopping cart page and proceed to check out along with billing info and shipping address. 
+																	2 Promo Codes and 6 deals. 
+																	Jason Wersland in 2008 and officially launched in 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Weve evolved from Theragun to Therabody. 
+																	The above discounts are the latest Theragun G2Pro coupons over the web. 
+																	Use the coupons and deals to get extra discount. 
+																	Well break down the latest and great below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some discounts can even reach 10 OFF. 
+																	Save on your shopping with Coupon Code Free Shipping. 
+																	Review your savings before finishing checkout. 
+																	Promo code valid towards the online purchase of a single Theragun PRO Elite Prime or mini and excludes all TheraOne products. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enhance muscle recovery release stress and tension and soothe discomfort with the smart percussive therapy device in a league of its own. 
+																	Save big w 16 verified Therabody coupon codes storewide deals Therabody price drops at Amazon. 
+																	Purchase at TheraGun and grab 20 OFF on your order with the promotions at TheraGun Promo Codes Coupons page. 
+																	Therabody email newsletter codes military senior first responder discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And now CouponAnnie has 12 discounts for Theragun G2Pro in general including 1 discount code 11 deal and 0 free delivery offer. 
+																	The deep muscle treatment pros trust with the durability and features they rely on. 
+																	Click to enjoy the latest deals and coupons of Therabody and save up to 40 when making purchase at checkout. 
+																	The TheraGun Reddit coupon is like almost any other common coupon that youve been seeing all the time easy to use. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We stand by PROs professional-grade. 
+																	Go back to the shopping cart page and finish your billing and shipping address. 
+																	Use this code at checkout. 
+																	Up To 20 Off New Years Day Coupons And Promo Codes 2021 from TheraGun with promo code JANUARY20. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ok so heres the deal with their promo code offers. 
+																	This amazing deal is yours but only for a short time so act fast to save big. 
+																	Powerfully quiet professional-grade performance. 
+																	Can I combine TheraGuns coupons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discount automatically applied in cart. 
+																	Select a TheraGun promo code that fits your order. 
+																	Untill now HotDeals provides you with 50 TheraGun coupons. 
+																	After youve collected the TheraGun Reddit coupon dont forget the code since youre gonna use it somewhere else the checkout page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Theragun Pro 30-Day Money Back Guarantee Buy Now. 
+																	Look for the box of Enter couponpromo code and apply the code to enjoy a lower price. 
+																	Only valid at TheraGun. 
+																	Get 43 Therabody coupon codes and promo codes at CouponBirds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PRO Professional-grade Elite Premium Prime Simplified mini Ultra-portable PRODUCTRED Special edition 24K Gold PRO Special edition Compare Devices. 
+																	With a median discount of 17 off shoppers may score terrific bargain up to 30 off. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dealspotr.com/io-images/logo/theragun.jpg?aspect=center&amp;snap=false&amp;width=500&amp;height=500" data-lightbox="roadtrip" data-title="30 Off Therabody Coupon 2 Promo Codes February 2021">
+											<img class="card-img v-image ads-img " src="https://cdn.dealspotr.com/io-images/logo/theragun.jpg?aspect=center&amp;snap=false&amp;width=500&amp;height=500" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGUig6LI3NZ4vLkcVx-dNgXOSYYD0LLyPGIg';" alt="30 Off Therabody Coupon 2 Promo Codes February 2021">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Off Therabody Coupon 2 Promo Codes February 2021</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/a8/34/a1a834e0bd648309a6f51534c000d36c.jpg" data-lightbox="roadtrip" data-title="Pin On Exercise">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/a8/34/a1a834e0bd648309a6f51534c000d36c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Uowx0cqnu0jpK9rjd6xx5O8fbIJsVi5TYQ';" alt="Pin On Exercise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Exercise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://massagegunfight.com/wp-content/uploads/2019/11/Theragun-Sale.png" data-lightbox="roadtrip" data-title="Black Friday Theragun Sale Up To 150 Off Massage Gunfight">
+											<img class="card-img v-image ads-img " src="https://massagegunfight.com/wp-content/uploads/2019/11/Theragun-Sale.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFzXPG4DIHB1j3uMLVpUlWwhlxDl5Y8z1vw';" alt="Black Friday Theragun Sale Up To 150 Off Massage Gunfight">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Friday Theragun Sale Up To 150 Off Massage Gunfight</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/36/d6/ef/36d6ef6a0b7769e53f3e255d5e8adad3.jpg" data-lightbox="roadtrip" data-title="80 Off Side Kick Coupon And Promo Codes Muscle Swerve Coding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/36/d6/ef/36d6ef6a0b7769e53f3e255d5e8adad3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF04-x60QReqnzi92vnKhC974V_d7d1j3EAw';" alt="80 Off Side Kick Coupon And Promo Codes Muscle Swerve Coding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">80 Off Side Kick Coupon And Promo Codes Muscle Swerve Coding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/15/4b/09154b2e8a512a3a9c1d761aa57499f4.jpg" data-lightbox="roadtrip" data-title="Pin On Best Massage Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/15/4b/09154b2e8a512a3a9c1d761aa57499f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl94xYDkcfbmXXVA_AzPEzTZHuAaDo9N1oqQ';" alt="Pin On Best Massage Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Massage Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3i1e5d437yd84efcy34dardm-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/theragun-therabody.png" data-lightbox="roadtrip" data-title="Theragun Review February 2021 Therabody Best Sellers">
+											<img class="card-img v-image ads-img " src="https://3i1e5d437yd84efcy34dardm-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/theragun-therabody.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThYFF-ekB02DqiUXDUv9MsRPiM4wX2VWkoRg';" alt="Theragun Review February 2021 Therabody Best Sellers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun Review February 2021 Therabody Best Sellers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.alltricks.com/hd/15080985e81c798062530.34351323.jpg" data-lightbox="roadtrip" data-title="Theragun Pro Massage Gun Alltricks Com">
+											<img class="card-img v-image ads-img " src="https://media.alltricks.com/hd/15080985e81c798062530.34351323.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHO5UyUPB9YS0gDwrK8c85T168rJS7dirAEw';" alt="Theragun Pro Massage Gun Alltricks Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun Pro Massage Gun Alltricks Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theragun.com/on/demandware.static/-/Library-Sites-TheragunSharedLibrary/default/dw3ce93aae/images/BFCM/BFCM_THERAGUN_HERO_2_DESK.jpg" data-lightbox="roadtrip" data-title="Holiday Offer">
+											<img class="card-img v-image ads-img " src="https://www.theragun.com/on/demandware.static/-/Library-Sites-TheragunSharedLibrary/default/dw3ce93aae/images/BFCM/BFCM_THERAGUN_HERO_2_DESK.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTcRgaWH0JE-huQIdK6LDWb62FBXtjRgRQQg';" alt="Holiday Offer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Holiday Offer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/62/6e/21/626e2121d5324532397870039b51e421.jpg" data-lightbox="roadtrip" data-title="Pin By Pso Rite On Pso Rite Self Massage Massage Tools Psoas Release">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/62/6e/21/626e2121d5324532397870039b51e421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGnW7voPSQNO3y-MeZ92aEy_KkoSmkW3iqw';" alt="Pin By Pso Rite On Pso Rite Self Massage Massage Tools Psoas Release">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Pso Rite On Pso Rite Self Massage Massage Tools Psoas Release</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theragun.com/on/demandware.static/-/Sites-thg-master/default/dw779fe12b/images/Home/PRO_PNG.png" data-lightbox="roadtrip" data-title="Theragun Gowod">
+											<img class="card-img v-image ads-img " src="https://www.theragun.com/on/demandware.static/-/Sites-thg-master/default/dw779fe12b/images/Home/PRO_PNG.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZte4zUpiy4alIYfm28wFsUvmwLExVEhZbnQ';" alt="Theragun Gowod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun Gowod</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/b8/54/06b854033a568b99630d51cf5cb91fe4.png" data-lightbox="roadtrip" data-title="Pin On Massager">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/b8/54/06b854033a568b99630d51cf5cb91fe4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVDjT2y8_ILaTkq2UYAvPCH09_TqUDOTcqA';" alt="Pin On Massager">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Massager</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/f5/7a/6ff57a4e171da837bacc8a636cbdc849.png" data-lightbox="roadtrip" data-title="Pin On Best Massage Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/f5/7a/6ff57a4e171da837bacc8a636cbdc849.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrfxpHVRIgtgY5hwOePzoYbJmiude4aGqUUg';" alt="Pin On Best Massage Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Massage Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/ag9jshGrYi4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Theragun Prime Unboxing And Review Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/ag9jshGrYi4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwUaGqD31anSsg9-D_eiPtGzBpuwSXwywchA';" alt="Theragun Prime Unboxing And Review Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun Prime Unboxing And Review Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=162819648541660" data-lightbox="roadtrip" data-title="Theragun Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=162819648541660" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSK_rjztYVUMiAk3kvMgO3rjYu2sj4vXfiTw';" alt="Theragun Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theragun Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dwa3c42525/images/PDP/PRIME_HERO_1.jpg?sw=720" data-lightbox="roadtrip" data-title="Percussive Therapy Gun Theragun Prime Theragun">
+											<img class="card-img v-image ads-img " src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dwa3c42525/images/PDP/PRIME_HERO_1.jpg?sw=720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCy8da8A8-OFckAh-wrYIlCmb7fLWFR3aoww';" alt="Percussive Therapy Gun Theragun Prime Theragun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Percussive Therapy Gun Theragun Prime Theragun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-national-cemetery-information.html">Va National Cemetery Information</a></li>
+													<li class="list-group-item"><a href="/us-navy-suffolk-va.html">Us Navy Suffolk Va</a></li>
+													<li class="list-group-item"><a href="/va-military-hunting-license.html">Va Military Hunting License</a></li>
+													<li class="list-group-item"><a href="/va-disney-discounts.html">Va Disney Discounts</a></li>
+													<li class="list-group-item"><a href="/va-national-ptsd-brain-bank.html">Va National Ptsd Brain Bank</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-indiana.html">Va National Cemetery Indiana</a></li>
+													<li class="list-group-item"><a href="/us-military-vets-mc-nc.html">Us Military Vets Mc Nc</a></li>
+													<li class="list-group-item"><a href="/va-employee-car-rental-discounts.html">Va Employee Car Rental Discounts</a></li>
+													<li class="list-group-item"><a href="/us-navy-dd214-separation-codes.html">Us Navy Dd214 Separation Codes</a></li>
+													<li class="list-group-item"><a href="/va-clinic-on-military-drive.html">Va Clinic On Military Drive</a></li>
+													<li class="list-group-item"><a href="/usaa-va-pay-dates-2021.html">Usaa Va Pay Dates 2021</a></li>
+													<li class="list-group-item"><a href="/va-federal-employee-discounts.html">Va Federal Employee Discounts</a></li>
+													<li class="list-group-item"><a href="/us-navy-little-creek-va.html">Us Navy Little Creek Va</a></li>
+													<li class="list-group-item"><a href="/va-and-mst.html">Va And Mst</a></li>
+													<li class="list-group-item"><a href="/va-id-card-for-discounts.html">Va Id Card For Discounts</a></li>
+													<li class="list-group-item"><a href="/va-disability-and-military-retirement-pay-calculator.html">Va Disability And Military Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/va-discounts-for-disneyland.html">Va Discounts For Disneyland</a></li>
+													<li class="list-group-item"><a href="/us-military-vets-mc-wv.html">Us Military Vets Mc Wv</a></li>
+													<li class="list-group-item"><a href="/va-mst-call.html">Va Mst Call</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-san-diego.html">Va National Cemetery San Diego</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

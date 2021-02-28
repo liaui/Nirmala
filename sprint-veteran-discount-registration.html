@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Sprint Veteran Discount Registration - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Sprint Veteran Discount Registration",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/fa/37/1d/fa371dd3bf00dd62f468337822504b58.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=sprint+veteran+discount+registration",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Sprint Veteran Discount Registration</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The form requests your name military branch email and current phone number. Includes unlimited domestic calling texting and data 3G-speed MHS VPN P2P. Sprint Essentials and Sprint Value Essentials. <br>				
+			</p>
+										<a class="badge badge-warning" href="/theragun-elite-promo-code.html">theragun elite promo code</a>
+											<a class="badge badge-secondary" href="/the-national-military-cemetery.html">the national military cemetery</a>
+											<a class="badge badge-primary" href="/the-imf-and-the-world-bank-how-do-they-differ.html">the imf and the world bank how do they differ</a>
+											<a class="badge badge-secondary" href="/toro-mowers-military-discount.html">toro mowers military discount</a>
+											<a class="badge badge-danger" href="/sprint-military-discount-sign-up.html">sprint military discount sign up</a>
+											<a class="badge badge-primary" href="/tf-lmao-meaning.html">tf lmao meaning</a>
+											<a class="badge badge-success" href="/symptoms-of-ptsd-due-to-mst.html">symptoms of ptsd due to mst</a>
+											<a class="badge badge-info" href="/tanzania-gdp-2020-imf.html">tanzania gdp 2020 imf</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the ideal site.  Our website provides you with hints for viewing the maximum quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/a3/19/5ea31917292c64ed13a02e295d30c2ce.png" data-lightbox="roadtrip" data-title="Pin On Crafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/a3/19/5ea31917292c64ed13a02e295d30c2ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF75HpMLbKdiVsFpHVnh4hnmf3zPJu8FVJew';" alt="Pin On Crafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Crafts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/93/8d/1f938d12ac04af488ec42bf336585230.jpg" data-lightbox="roadtrip" data-title="Early Registration 30 Spooky Cantigny Park Curious George">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/93/8d/1f938d12ac04af488ec42bf336585230.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpD59v_WOF4z1zHB20o77lwBVbTHIxT95iA';" alt="Early Registration 30 Spooky Cantigny Park Curious George">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Early Registration 30 Spooky Cantigny Park Curious George</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ab/0b/51/ab0b51befb42980a260ed5d8fe8c60c1.jpg" data-lightbox="roadtrip" data-title="Pin On Us Giveaways">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ab/0b/51/ab0b51befb42980a260ed5d8fe8c60c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5OOPonI2_v5UXyhRP84eNwvbleI_SqrpTA';" alt="Pin On Us Giveaways">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Giveaways</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/85/49/f785499586296a5bf57e516e2d819d01.png" data-lightbox="roadtrip" data-title="Veteran Or First Timer The Ca Triathlon Is A Race For All Level Athletes Staged At Clemens Crossing Pool In Columbia Md Par Triathlon Columbia Running Race">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/85/49/f785499586296a5bf57e516e2d819d01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LJ63bv-PPfSma5IbTgM-xuxpwJ9HvJGhyQ';" alt="Veteran Or First Timer The Ca Triathlon Is A Race For All Level Athletes Staged At Clemens Crossing Pool In Columbia Md Par Triathlon Columbia Running Race">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Or First Timer The Ca Triathlon Is A Race For All Level Athletes Staged At Clemens Crossing Pool In Columbia Md Par Triathlon Columbia Running Race</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/26/82/e1268219c859e972710135a0e9654756.jpg" data-lightbox="roadtrip" data-title="No Excuses 5k Run 5 27 13 Fun Run Running 5k Running">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/26/82/e1268219c859e972710135a0e9654756.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0I5Bs1ffKxzkEltro3ZmfnvjZY8xyPtOGXw';" alt="No Excuses 5k Run 5 27 13 Fun Run Running 5k Running">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No Excuses 5k Run 5 27 13 Fun Run Running 5k Running</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/37/1d/fa371dd3bf00dd62f468337822504b58.jpg" data-lightbox="roadtrip" data-title="Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Half Marathon Senior Veteran Finishers Registration Open T Half Marathon Veteran Marathon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/37/1d/fa371dd3bf00dd62f468337822504b58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71ecJGss7e_lfTSzWIQFhi7txnuq-7GlW_A';" alt="Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Half Marathon Senior Veteran Finishers Registration Open T Half Marathon Veteran Marathon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Half Marathon Senior Veteran Finishers Registration Open T Half Marathon Veteran Marathon</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5e/a3/19/5ea31917292c64ed13a02e295d30c2ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71ecJGss7e_lfTSzWIQFhi7txnuq-7GlW_A';" alt="Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Half Marathon Senior Veteran Finishers Registration Open T Half Marathon Veteran Marathon">
+										<div class="card-body">
+						<h3 class="h5"><b>You can also walk into any Sprint store and have an associate help you setup your discount.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Sprint veteran discount registration</strong>. 
+								
+																	Sprint Perks Military Verification Form Do you have questions. 
+																	Text data fax other landline svc. 
+																	National Guard and Reserves through the Sprint Works program. 
+																	Third-party contentdownloads are addl. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Sprint military discount currently offers service members savings of up to 50 off select phone lines. 
+																	I need to lower my cost of my phone bill need to know if im getting employee discount and any other discounts like military and how do i get Sprint Community Registration currently closed. 
+																	You can pay your bill without signing in. 
+																	Well reply to your email within 3 business days Thanks for being a Sprint customer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No plan discounts apply. 
+																	If youre not signed up for Veterans Advantage youre taken through a short registration process. 
+																	Sprint Active Duty Reserve and Veteran Discounts. 
+																	To confirm your eligibility for Sprint Perks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is an impressive discount that could save you and your family hundreds of dollars each year on phone coverage. 
+																	Does anyone know if Sprint provides Active Military discount or a USAA member discount. 
+																	Free Veteran License Plates. 
+																	Apply for new discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	May not be same as landline 911. 
+																	The Virgin Islands Office of Veterans Affairs said that the new Veterans License Plate is available at the St. 
+																	Sprint Community is Read Only. 
+																	All military personnel receive benefits and savings when you register with Sprint. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And 330 pm Monday through Friday. 
+																	Text data fax other landline svc. 
+																	You can use the DD Form 214 when validating eligibility for the military discount. 
+																	Express payment is simple and quick. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visit our registration how to page for details about signing up for the discount program with this form. 
+																	Existing customers on Sprint service can still receive their discounts. 
+																	However all promotions of Sprint service are no longer valid and were expired on 812020. 
+																	No plan discounts apply. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Croix offices and will be issued between the hours of 9 am. 
+																	Verification services powered by SheerID. 
+																	1 days ago How to Get the Sprint Military Discount. 
+																	Sprint Essentials and Sprint Value Essentials. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are currently in the military then you can use yourmil email address to verify your eligibility. 
+																	Scroll down to Verify your eligibility or check on the status of your military discount and click to start the MilVet ID verification process using your Veterans Advantage credentials. 
+																	Thank you for your service. 
+																	Go to Military Discounts Career Programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sprint is now T-Mobile and all T-Mobile discounts apply to new wireless customers. 
+																	The Sprint Unlimited Military Plan is available to all current and former military members including active duty National Guard Reserves veterans and their family members when the military member or veteran is the primary account holder. 
+																	Sprint Military Discount Eligibility. 
+																	Shop T-Mobiles Military Discount Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Magenta Military plans Exclusive to active-duty military veterans and their families with 50 off our regular Magenta plan rates for family lines. 
+																	Sprint currently provides the military discount for active duty retired veterans US. 
+																	Please complete the verification form below using the eligible service members information not spouse. 
+																	Many of our service plans are already discounted and may not qualify Verify your eligibility to continue receiving discounts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However you must pay for the registration process. 
+																	By entering your Sprint phone number youll be able to. 
+																	May not be same as landline 911. 
+																	Third-party contentdownloads are addl. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre already with Sprint just visit the same page and click the Activate button under the pre-registration form. 
+																	Spouses and next of kin can register for the discount even if the military member wasnt the Account Owner or Account Manager. 
+																	Check the status of a discount request. 
+																	Includes unlimited domestic calling texting and data 3G-speed MHS VPN P2P. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sprint verifies eligibility via an application form on their website. 
+																	Step 1 Verify required. 
+																	Current military discounts are part of T-Mobiles Magenta Military Phone Plans. 
+																	Veterans license plates are free to veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once your pre-registration is accepted youll get an offer code via email with instructions on completing your military discount. 
+																	Visit the Sprint website and fill out the pre-registration form. 
+																	Military members status. 
+																	Learn about Magenta military plans with discounts for active-duty and veteran families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Customers who originally signed up under Sprint can still receive their discounts however all Sprint service promotions expired on August 1 2020 and are no longer valid. 
+																	Sprint has transitioned to T-Mobile and all T-Mobile discounts apply to new wireless customers. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/13/3b/ca133b5bd4a58437b90cd8aae86d3169.jpg" data-lightbox="roadtrip" data-title="Registration City Marathon April Fools Marathon Races">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/13/3b/ca133b5bd4a58437b90cd8aae86d3169.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsI6LtoJc8n8IosLiVmlDh3B6Xzs3oVrPLhg';" alt="Registration City Marathon April Fools Marathon Races">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Registration City Marathon April Fools Marathon Races</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/cb/6e/7ccb6ee31c989d10a25b33b5e1b2830e.jpg" data-lightbox="roadtrip" data-title="Bruce Plante Cartoon College Football College Football College Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/cb/6e/7ccb6ee31c989d10a25b33b5e1b2830e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRauS_HAqAK4yiJr6MSN28KrYjrW4RlihBXBg';" alt="Bruce Plante Cartoon College Football College Football College Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bruce Plante Cartoon College Football College Football College Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/c9/5c/f5c95c73b56714b7fee0af6f7b9a013c.jpg" data-lightbox="roadtrip" data-title="Superhero 5k Run Bring The Kids And Dress As A Superhero Fun Run Kids Running Hero Run">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/c9/5c/f5c95c73b56714b7fee0af6f7b9a013c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVR09TsnFSL4ZbUNbpv2rtrTkj6c0BCSLRw';" alt="Superhero 5k Run Bring The Kids And Dress As A Superhero Fun Run Kids Running Hero Run">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Superhero 5k Run Bring The Kids And Dress As A Superhero Fun Run Kids Running Hero Run</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/90/d4/4790d4a4467fef13ef65a67234cd6dd2.jpg" data-lightbox="roadtrip" data-title="Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Marathon Veteran Finishers Registration Open Till 31s Veteran Amc Municipal Corporation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/90/d4/4790d4a4467fef13ef65a67234cd6dd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyWmP4IFWS-AUSynp-AJBMJGzK_UBvWi8QQ';" alt="Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Marathon Veteran Finishers Registration Open Till 31s Veteran Amc Municipal Corporation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guys Here You Find Glimpse Of All Prizes Of Marathon Prizes For Top Marathon Veteran Finishers Registration Open Till 31s Veteran Amc Municipal Corporation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/71/cc/d771ccbb92e34b801933b2a1bfb4cbb3.jpg" data-lightbox="roadtrip" data-title="Repost Bruteforcesandbags Get Repost Workout Announcement The Workout For The 12 Days Of Christm Christmas Workout Sandbag Workout Wod Crossfit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/71/cc/d771ccbb92e34b801933b2a1bfb4cbb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTSb8zds5rfjZIn3pqpSlUVcRrhgmbtyf7w';" alt="Repost Bruteforcesandbags Get Repost Workout Announcement The Workout For The 12 Days Of Christm Christmas Workout Sandbag Workout Wod Crossfit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Repost Bruteforcesandbags Get Repost Workout Announcement The Workout For The 12 Days Of Christm Christmas Workout Sandbag Workout Wod Crossfit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/20/f7/1c20f7fa20848580401b3b16db2d74f2.jpg" data-lightbox="roadtrip" data-title="How To Recover Deleted Text Messages From Android 01recovery Text Messages Messages Have A Nice Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/20/f7/1c20f7fa20848580401b3b16db2d74f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafTxOZtWZEwkH2yrhJSiGF1Fyl2EF6xL1DQ';" alt="How To Recover Deleted Text Messages From Android 01recovery Text Messages Messages Have A Nice Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Recover Deleted Text Messages From Android 01recovery Text Messages Messages Have A Nice Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/fa/24/90fa240daaeec3511c2b362c1175865e.png" data-lightbox="roadtrip" data-title="10 Just Eat Discount Code Pizza W 3 Off Voucher Codes 2021 Promocodefor2019 Com Coding Discount Code Promo Codes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/fa/24/90fa240daaeec3511c2b362c1175865e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVB01CT7qhvRWh1QG-KfcEnUvudFN3kOyJEQ';" alt="10 Just Eat Discount Code Pizza W 3 Off Voucher Codes 2021 Promocodefor2019 Com Coding Discount Code Promo Codes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Just Eat Discount Code Pizza W 3 Off Voucher Codes 2021 Promocodefor2019 Com Coding Discount Code Promo Codes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/b0/d6/5cb0d6dc51af38eedf7514cea8380332.jpg" data-lightbox="roadtrip" data-title="Incredible Teacher Day Quotes Your Word A Fired In My Heart This Is 2013 Cards I Invite You My Teacher A Teachers Day Celebration Teachers Day Heart Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/b0/d6/5cb0d6dc51af38eedf7514cea8380332.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDEazOVvNrWJK7SJxpztQ0ZWYxBDv_8fq1w';" alt="Incredible Teacher Day Quotes Your Word A Fired In My Heart This Is 2013 Cards I Invite You My Teacher A Teachers Day Celebration Teachers Day Heart Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Incredible Teacher Day Quotes Your Word A Fired In My Heart This Is 2013 Cards I Invite You My Teacher A Teachers Day Celebration Teachers Day Heart Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/c9/a9/52c9a9ac6c7b2d22fa0403cfb31f7740.jpg" data-lightbox="roadtrip" data-title="Get Your Nclex Pass Results Immediately With The Pearson Vue Trick Nclex Trick Words Passed Nclex">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/c9/a9/52c9a9ac6c7b2d22fa0403cfb31f7740.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe2gPcIIzTxUGtFB71kmG1oAXSjwmVPhghiw';" alt="Get Your Nclex Pass Results Immediately With The Pearson Vue Trick Nclex Trick Words Passed Nclex">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Your Nclex Pass Results Immediately With The Pearson Vue Trick Nclex Trick Words Passed Nclex</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/1c/ca/d41ccab2eb8396d391c02ae4b7a3cc17.png" data-lightbox="roadtrip" data-title="How To Earn Bitcoin Ethereum Litecoin Bitcoin Cash Dogecoin Ripple Dash Golem Cardano Curecoin Nem Monero Zcash Bitcoin Affiliate Programs Earnings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/1c/ca/d41ccab2eb8396d391c02ae4b7a3cc17.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr45U7I1u7gi8GpS_gRLptttVNemwAq5mXg';" alt="How To Earn Bitcoin Ethereum Litecoin Bitcoin Cash Dogecoin Ripple Dash Golem Cardano Curecoin Nem Monero Zcash Bitcoin Affiliate Programs Earnings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Earn Bitcoin Ethereum Litecoin Bitcoin Cash Dogecoin Ripple Dash Golem Cardano Curecoin Nem Monero Zcash Bitcoin Affiliate Programs Earnings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/14/b0/f114b003ca1765e503fe41dd94eec1e2.jpg" data-lightbox="roadtrip" data-title="Pin On Royal Enfield">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/14/b0/f114b003ca1765e503fe41dd94eec1e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5V0JEkOCKxT8scaYUcvhxo8j3m3Zd1KiSlA';" alt="Pin On Royal Enfield">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Royal Enfield</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/75/0c/c4750c134da7bf05de3c63a85edca1df.jpg" data-lightbox="roadtrip" data-title="Pin On Central Valley Running">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/75/0c/c4750c134da7bf05de3c63a85edca1df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzDDFnXrEcBJ2WmzYgzMVA5gdACuTwXui23A';" alt="Pin On Central Valley Running">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Central Valley Running</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/d3/b5/91d3b51e86baeccf9082dd25ea1e7b1c.jpg" data-lightbox="roadtrip" data-title="Tulip Rallye Veteran 1964 Alfa Romeo Giulia Sprint Gt Alfa Romeo Giulia Alfa Romeo Classic Cars Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/d3/b5/91d3b51e86baeccf9082dd25ea1e7b1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxDcDg-xt6HUejjV_XO68TtYeUzDMb6dh5TA';" alt="Tulip Rallye Veteran 1964 Alfa Romeo Giulia Sprint Gt Alfa Romeo Giulia Alfa Romeo Classic Cars Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tulip Rallye Veteran 1964 Alfa Romeo Giulia Sprint Gt Alfa Romeo Giulia Alfa Romeo Classic Cars Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/f3/d0/78f3d0445f038c8e50d6996669e96f72.jpg" data-lightbox="roadtrip" data-title="Sometimes I Don T Give Him Enough Credit Love And Marriage Understanding Yourself Saying Sorry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/f3/d0/78f3d0445f038c8e50d6996669e96f72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZQhVkxwpifrJt6w-OIVOSv8EN-z4NJN2ag';" alt="Sometimes I Don T Give Him Enough Credit Love And Marriage Understanding Yourself Saying Sorry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sometimes I Don T Give Him Enough Credit Love And Marriage Understanding Yourself Saying Sorry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/6b/3c/ca6b3c8af8f140f07376c3c0d7d6c5d3.jpg" data-lightbox="roadtrip" data-title="29th Annual Oc Chamber Cup Golf Tournament May 17 2016 Ocean City Ocean City Md Ocean City Maryland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/6b/3c/ca6b3c8af8f140f07376c3c0d7d6c5d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PThYzthyOrz5zdvLacTbYj-MzBpukJ0SCQ';" alt="29th Annual Oc Chamber Cup Golf Tournament May 17 2016 Ocean City Ocean City Md Ocean City Maryland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">29th Annual Oc Chamber Cup Golf Tournament May 17 2016 Ocean City Ocean City Md Ocean City Maryland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-tank-hire-melbourne.html">Military Tank Hire Melbourne</a></li>
+													<li class="list-group-item"><a href="/military-disney-halloween-tickets.html">Military Disney Halloween Tickets</a></li>
+													<li class="list-group-item"><a href="/military-veteran-funeral-poems.html">Military Veteran Funeral Poems</a></li>
+													<li class="list-group-item"><a href="/military-pmp-programs.html">Military Pmp Programs</a></li>
+													<li class="list-group-item"><a href="/military-discount-website-oakley.html">Military Discount Website Oakley</a></li>
+													<li class="list-group-item"><a href="/military-funeral-for-vets.html">Military Funeral For Vets</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-uber.html">Military Discount On Uber</a></li>
+													<li class="list-group-item"><a href="/military-discount-tokyo-disneyland.html">Military Discount Tokyo Disneyland</a></li>
+													<li class="list-group-item"><a href="/military-times-best-for-vets-employers.html">Military Times Best For Vets Employers</a></li>
+													<li class="list-group-item"><a href="/military-spouse-owned-business.html">Military Spouse Owned Business</a></li>
+													<li class="list-group-item"><a href="/military-veterans.html">Military Veterans</a></li>
+													<li class="list-group-item"><a href="/military-msw-programs.html">Military Msw Programs</a></li>
+													<li class="list-group-item"><a href="/military-veteran-job-programs.html">Military Veteran Job Programs</a></li>
+													<li class="list-group-item"><a href="/military-for-hire-word.html">Military For Hire Word</a></li>
+													<li class="list-group-item"><a href="/military-veteran-clothing-company.html">Military Veteran Clothing Company</a></li>
+													<li class="list-group-item"><a href="/military-grants-and-scholarships-for-college.html">Military Grants And Scholarships For College</a></li>
+													<li class="list-group-item"><a href="/military-healthcare-programs.html">Military Healthcare Programs</a></li>
+													<li class="list-group-item"><a href="/military-for-hire-blackwater.html">Military For Hire Blackwater</a></li>
+													<li class="list-group-item"><a href="/military-grants-for-small-business.html">Military Grants For Small Business</a></li>
+													<li class="list-group-item"><a href="/military-dpt-programs.html">Military Dpt Programs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Discounts To Disney World - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Discounts To Disney World",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/7f/d5/02/7fd5021668a297400ea4dd1810262aa1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+discounts+to+disney+world",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Discounts To Disney World</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Disney Armed Forces Salute program also applies to Disney Resort hotels where military members can get select rooms at 30 to 40 off the normal rates. 4-Day Military Promotional Tickets. Military personnel by offering promotional theme park tickets. <br>				
+			</p>
+										<a class="badge badge-light" href="/veteran-owned-business-organizations.html">veteran owned business organizations</a>
+											<a class="badge badge-dark" href="/veterans-cemetery-illinois.html">veterans cemetery illinois</a>
+											<a class="badge badge-dark" href="/veterans-cemetery-in-washington-state.html">veterans cemetery in washington state</a>
+											<a class="badge badge-warning" href="/vets-for-hire-program.html">vets for hire program</a>
+											<a class="badge badge-info" href="/vets-army-navy-lakeland.html">vets army navy lakeland</a>
+											<a class="badge badge-info" href="/veteran-rv-discounts.html">veteran rv discounts</a>
+											<a class="badge badge-light" href="/vets-that-hire-at-17.html">vets that hire at 17</a>
+											<a class="badge badge-info" href="/veteran-owned-business-list.html">veteran owned business list</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the right site.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e7/5b/5c/e75b5cae41139e827859c9658165839b.jpg" data-lightbox="roadtrip" data-title="Military Disney Discounts If You Are A Military Family Active Duty Reserve Or Ve Discount Disney World Tickets Disney World Tickets Military Disney Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e7/5b/5c/e75b5cae41139e827859c9658165839b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1uXny1H336pxeZ65KbIu3fURlGO5DvZq9g';" alt="Military Disney Discounts If You Are A Military Family Active Duty Reserve Or Ve Discount Disney World Tickets Disney World Tickets Military Disney Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disney Discounts If You Are A Military Family Active Duty Reserve Or Ve Discount Disney World Tickets Disney World Tickets Military Disney Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fe/53/a4/fe53a4f115b1d9babe1a659fa0883174.jpg" data-lightbox="roadtrip" data-title="2021 Disney Military Discounts Military Discounts Military Disney Tickets Disney World Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fe/53/a4/fe53a4f115b1d9babe1a659fa0883174.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-NxA--htzLzjpMYft7UDPEg8R3s2WPR7uw';" alt="2021 Disney Military Discounts Military Discounts Military Disney Tickets Disney World Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Disney Military Discounts Military Discounts Military Disney Tickets Disney World Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/71/5c/91715c08973b33bc34604a68732a2a9b.jpg" data-lightbox="roadtrip" data-title="A Super Easy Guide To Military Discounts At Disney World Disney World Disney World Magic Kingdom Disney Castle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/71/5c/91715c08973b33bc34604a68732a2a9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzEFLSSL_-UKhhLERMgvt-qffO7HIpm0VboA';" alt="A Super Easy Guide To Military Discounts At Disney World Disney World Disney World Magic Kingdom Disney Castle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Super Easy Guide To Military Discounts At Disney World Disney World Disney World Magic Kingdom Disney Castle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/35/2b/c4352bc83eabceaae6339f7e750fca39.jpg" data-lightbox="roadtrip" data-title="7 Things Every Military Family Planning A Disney World Trip Should Know About Army Wife 101 Disney World Military Disney World Trip Disney World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/35/2b/c4352bc83eabceaae6339f7e750fca39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl-tnDmWM8kLJguHcI4cNqa3H1wLd-nXCSgA';" alt="7 Things Every Military Family Planning A Disney World Trip Should Know About Army Wife 101 Disney World Military Disney World Trip Disney World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Things Every Military Family Planning A Disney World Trip Should Know About Army Wife 101 Disney World Military Disney World Trip Disney World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/ed/dd/b3edddd0738533a56decc1467042128f.png" data-lightbox="roadtrip" data-title="Disney Veteran Discount And Disney Military Discount Eligibility Guide Military Disney Tips Blog Military Discounts Disney Tips Disney World Tips And Tricks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/ed/dd/b3edddd0738533a56decc1467042128f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2sL69iEijLqPhO9N-f_VxXGO9DszI7WGdQ';" alt="Disney Veteran Discount And Disney Military Discount Eligibility Guide Military Disney Tips Blog Military Discounts Disney Tips Disney World Tips And Tricks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disney Veteran Discount And Disney Military Discount Eligibility Guide Military Disney Tips Blog Military Discounts Disney Tips Disney World Tips And Tricks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/86/f8/3786f8e9b7678c6e83be51012a764340.jpg" data-lightbox="roadtrip" data-title="Shades Of Green Stays For Non Retired Veterans Military Disney Tips Blog Disney World Military Shades Of Green Military Resorts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/86/f8/3786f8e9b7678c6e83be51012a764340.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbUrqyIFHpOcTWKM2-OREeAeTQByJW9beI7A';" alt="Shades Of Green Stays For Non Retired Veterans Military Disney Tips Blog Disney World Military Shades Of Green Military Resorts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shades Of Green Stays For Non Retired Veterans Military Disney Tips Blog Disney World Military Shades Of Green Military Resorts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/91/17/5d/91175d5f35bd254facec6d6871ae45f9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbUrqyIFHpOcTWKM2-OREeAeTQByJW9beI7A';" alt="Shades Of Green Stays For Non Retired Veterans Military Disney Tips Blog Disney World Military Shades Of Green Military Resorts">
+										<div class="card-body">
+						<h3 class="h5"><b>There are no military discounts at the restaurants operated by Disney World.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran discounts to disney world</strong>. 
+								
+																	Receive admission for 4 5 or 6 days when you visit during the period from December 19 2020 through September 26 2021. 
+																	Be sure to. 
+																	This includes a variety of deluxe. 
+																	Save Up To 17 at Walt Disney World Florida Veterans Advantage Members enrolled in VetRewards are eligible for special discounted offers on theme park tickets at Walt Disney World Florida from our entertainment partner Working Advantage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order to qualify for Disneys Armed Forces Salute and Shades of Green the military owned and operated resort on Walt Disney World property you need to be a 100 service connected disabled veteran AND have the required ID. 
+																	With the Park Hopper Option. 
+																	Walt Disney World Resort is saluting US. 
+																	Walt Disney World released a new Military ticket offer today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disney Worlds FREE Ticket Offer Is NOW Available. 
+																	100 Disabled Vets are also eligible to stay at Shades of Green the military owned and operated reasort on Disney property and purchase military discounted tickets there. 
+																	Disney is saluting US. 
+																	Valid military ID is required. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military personnel by offering Walt Disney World Resort promotional theme park tickets. 
+																	Disney also offers military discounts to military members retirees and their spouses. 
+																	NEW and Extended US. 
+																	Military can choose between a 4-day 5-day or 6-day Disney Military Promotional Ticket. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The promotional tickets below are available for purchase. 
+																	Disney World Hopper Option Pricing For 2020 and extending into 2021. 
+																	Disney World renewed the specially priced ticket offer for military personnel. 
+																	Military Ticket Offer Disney is once again offering amazing deals on theme park tickets for eligible military personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Details of the Offer Save up to 17 at Walt Disney World Florida by purchasing tickets that are mailed to you. 
+																	However the number of rooms is limited there may be length of stay requirements and blackout dates may apply. 
+																	5 hours ago There Are Two New Experiences Coming to Disneys Animal Kingdom 6 hours ago Drop Those Crocs and Hop on Disneys Latest Shoe Trend. 
+																	22 hours ago What. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Discount 265 plus tax. 
+																	4-Day Military Promotional Tickets. 
+																	Purchase now through December 18 2020 extended through February 14 2021 With the Park Hopper Option. 
+																	See what has changed compared to last year and how the previously extended offer affects what you can take advantage of in 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As you can see Disney is giving military families a great discount. 
+																	6-Day Military Promotional Tickets. 
+																	Military with special offers at Walt Disney World. 
+																	Below is a chart showing the IDs that Disney accepts for veterans eligibility for the Disney Armed Forces Salute and regular military discounted Magic Your Way tickets from your local base ITT Office or Shades of Green. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recent Walt Disney World 5 hours ago Disney Reveals NEW 2021 Military Ticket Offer 5 hours ago Disney Surveys Guests On Impact of Crowds Suspended Experiences and More. 
+																	6-Day Ticket Regular Price 578 plus tax. 
+																	Here are ALL of the Disney World Discounts Available NOW. 
+																	The Disney Armed Forces Salute allows qualified individuals to purchase steeply discounted Disney theme park tickets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4-Day and 5. 
+																	With the Park Hopper Option. 
+																	Disney continues to honor active-duty and retired members of the US. 
+																	Discounts can be up to 20-30 off regular rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	26 2021 Choose between a 4-day 5-day or 6-day Disney. 
+																	4-Day Ticket Regular Price 561 plus tax. 
+																	Receive admission for 4 5 or 6 days when you visit during the period from January 1 2020 through September 26 2021. 
+																	But third-party restaurants such as Raglan Road and House of Blues at Disney Springs offer savings of 10 to 25. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Purchase now through February 14 2021. 
+																	Walt Disney World military discount ticket prices for purchase after Feb. 
+																	Armed Force Salute 2021 prices for Disneyland in Anaheim California have not yet. 
+																	21 hours ago 18 Photos and Videos from Our Day in Disney World. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shades of Greens policy says Honorably Discharged Veterans with 100 service-connected disability and their families are eligible. 
+																	The offer is for both Walt Disney World near Orlando Florida and Disneyland in Anaheim California. 
+																	With the Park Hopper Option. 
+																	2021 offer for use through Sept. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Offers on Tickets and Hotels in Disney World. 
+																	Military Discount 283 plus tax. 
+																	A Look at the Current Disney World Military Offers. 
+																	Military Ticket Discounts Just Announced for Disney World. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5-Day Ticket Regular Price 571 plus tax. 
+																	The Disney Armed Forces Salute is a special temporary offer which runs for a specified time period. 
+																	14 2021 have not yet been announced. 
+																	Members of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Regularly priced at 169 Disney World offers Memory Maker at 98 to eligible service members. 
+																	Purchase now through February 14 2021. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/95/64/d49564f77614733a41686bbe3ce049e9.png" data-lightbox="roadtrip" data-title="Canadian Military Veteran Discounts Guide For Florida Disney Vacations Disney World Tips And Tricks Disney World Planning Disney Cruise">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/95/64/d49564f77614733a41686bbe3ce049e9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLkqmb1pwihucJoYSMF5VrZGZIVZFeD0saZQ';" alt="Canadian Military Veteran Discounts Guide For Florida Disney Vacations Disney World Tips And Tricks Disney World Planning Disney Cruise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Military Veteran Discounts Guide For Florida Disney Vacations Disney World Tips And Tricks Disney World Planning Disney Cruise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/13/c3/2f/13c32fb2a7dc014c5c8cf62d7cc22e20.jpg" data-lightbox="roadtrip" data-title="Pin On Military Disney Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/13/c3/2f/13c32fb2a7dc014c5c8cf62d7cc22e20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRordS_e278JnDP4gxK9anu80uoJxRt3Qj92w';" alt="Pin On Military Disney Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Disney Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/e1/bc/1ce1bc6620233ee4fd5e7a990232e3e6.jpg" data-lightbox="roadtrip" data-title="Pin On Disneyland Dlr Parks And Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/e1/bc/1ce1bc6620233ee4fd5e7a990232e3e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzo3znc0AD3mGAYJCXOsdBsikJAbQEX8tr3A';" alt="Pin On Disneyland Dlr Parks And Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Disneyland Dlr Parks And Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/17/5d/91175d5f35bd254facec6d6871ae45f9.png" data-lightbox="roadtrip" data-title="List Of Military Discounts In Orlando Florida The Daily Impressions Military Discounts Crayola Experience Orlando Orlando">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/17/5d/91175d5f35bd254facec6d6871ae45f9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtAUNlYiiXrWzWLh39eFdtZasJ9wJoSI_3A';" alt="List Of Military Discounts In Orlando Florida The Daily Impressions Military Discounts Crayola Experience Orlando Orlando">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Military Discounts In Orlando Florida The Daily Impressions Military Discounts Crayola Experience Orlando Orlando</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/77/87/1277876744b8d52c1eab52d7d0558f48.jpg" data-lightbox="roadtrip" data-title="Disney World Park Ticket Options Disney World Park Tickets Disney World Parks Disney Park Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/77/87/1277876744b8d52c1eab52d7d0558f48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIHHzmt-Nc-P5k8A6cWrg4jQOiS4gk1i53g';" alt="Disney World Park Ticket Options Disney World Park Tickets Disney World Parks Disney Park Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disney World Park Ticket Options Disney World Park Tickets Disney World Parks Disney Park Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/bd/51/0ebd519a96a430862b557744a0cc8583.jpg" data-lightbox="roadtrip" data-title="Current Disney Ticket Prices Disney Insider Tips Disney Tickets Disney Ticket Prices Walt Disney World Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/bd/51/0ebd519a96a430862b557744a0cc8583.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscQPhoIH_BI2cngQldqigH2AJ9u5oeM_9QQ';" alt="Current Disney Ticket Prices Disney Insider Tips Disney Tickets Disney Ticket Prices Walt Disney World Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Current Disney Ticket Prices Disney Insider Tips Disney Tickets Disney Ticket Prices Walt Disney World Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/4e/67/da4e67cd23bc1c2fb2bd57778a60b544.jpg" data-lightbox="roadtrip" data-title="Thank You Veterans Disney Quote Thank You Veteran Disney Quotes Veterans Day Thank You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/4e/67/da4e67cd23bc1c2fb2bd57778a60b544.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsyzhplPR9IKRlMozwR5pDb6CxFE7bCkF6w';" alt="Thank You Veterans Disney Quote Thank You Veteran Disney Quotes Veterans Day Thank You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Veterans Disney Quote Thank You Veteran Disney Quotes Veterans Day Thank You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/09/75/800975730090592b8822933a84d9dd93.jpg" data-lightbox="roadtrip" data-title="Best Military Discounts At Disney World Disney Deciphered Disney World Vacation Planning Disney Discounts Disney World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/09/75/800975730090592b8822933a84d9dd93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsr9Rqgg_fDVS-XlgsJ4iolVZE_eUOARnZ1w';" alt="Best Military Discounts At Disney World Disney Deciphered Disney World Vacation Planning Disney Discounts Disney World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Military Discounts At Disney World Disney Deciphered Disney World Vacation Planning Disney Discounts Disney World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/6a/60/866a6089b7b4aed68fe637decc1c0b02.jpg" data-lightbox="roadtrip" data-title="How To Visit Disney Parks Solo Nomad By Trade Disney World Tips And Tricks Solo Travel Disney World Vacation Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/6a/60/866a6089b7b4aed68fe637decc1c0b02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNrb5aIJNTCCaxk7-1Tz1ajRe4apIRsc59LA';" alt="How To Visit Disney Parks Solo Nomad By Trade Disney World Tips And Tricks Solo Travel Disney World Vacation Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Visit Disney Parks Solo Nomad By Trade Disney World Tips And Tricks Solo Travel Disney World Vacation Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/92/48/fb92488940c0ee87f3c2236ee1d91858.jpg" data-lightbox="roadtrip" data-title="5 Secrets For Planning A Stress Free Disney Vacation Really Disney World Secrets Disney World Trip Disney World Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/92/48/fb92488940c0ee87f3c2236ee1d91858.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCcar56MPlyANOls260A2g9r7oR71Izvs3w';" alt="5 Secrets For Planning A Stress Free Disney Vacation Really Disney World Secrets Disney World Trip Disney World Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Secrets For Planning A Stress Free Disney Vacation Really Disney World Secrets Disney World Trip Disney World Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/d5/02/7fd5021668a297400ea4dd1810262aa1.jpg" data-lightbox="roadtrip" data-title="Disney Military Discount Id Guide Military Disney Tips Blog Disney World Military Disney World Tips And Tricks Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/d5/02/7fd5021668a297400ea4dd1810262aa1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJ79ov9W7JnAWeHue42a58BIErZRUcHFUEA';" alt="Disney Military Discount Id Guide Military Disney Tips Blog Disney World Military Disney World Tips And Tricks Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disney Military Discount Id Guide Military Disney Tips Blog Disney World Military Disney World Tips And Tricks Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9d/27/14/9d2714fa1a5f2c047ca4faf6c2d74ddc.jpg" data-lightbox="roadtrip" data-title="4 Awesome Benefits Of Disney World Park Hopper Tickets Disney World Park Hopper Disney World Parks Walt Disney World Vacations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9d/27/14/9d2714fa1a5f2c047ca4faf6c2d74ddc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG189i2I3wIOSJVn9utazmKcDHhC3Pk5R30Q';" alt="4 Awesome Benefits Of Disney World Park Hopper Tickets Disney World Park Hopper Disney World Parks Walt Disney World Vacations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Awesome Benefits Of Disney World Park Hopper Tickets Disney World Park Hopper Disney World Parks Walt Disney World Vacations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/54/2e/2d/542e2dcabcdfd90d311cea404b5eb4c0.jpg" data-lightbox="roadtrip" data-title="Learn The Difference Between Magic Morning And Extra Magic Hour At Disneyland Disney Trip Surprise Disneyland Planning Disneyland Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/54/2e/2d/542e2dcabcdfd90d311cea404b5eb4c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQna7GrIaiEbbtKlHTosf2wv6zv6gFy6YjkKg';" alt="Learn The Difference Between Magic Morning And Extra Magic Hour At Disneyland Disney Trip Surprise Disneyland Planning Disneyland Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn The Difference Between Magic Morning And Extra Magic Hour At Disneyland Disney Trip Surprise Disneyland Planning Disneyland Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/9b/1a/3e9b1a50a83957d07cbb81d0c28772e9.jpg" data-lightbox="roadtrip" data-title="Disney S Salute To Our Troops Brand New Prices To Honor Our Heroes Disney S Disney Dream Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/9b/1a/3e9b1a50a83957d07cbb81d0c28772e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMzyFLdKRToF7C10G8OZ2BHmlxJIBaOZHi6Q';" alt="Disney S Salute To Our Troops Brand New Prices To Honor Our Heroes Disney S Disney Dream Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disney S Salute To Our Troops Brand New Prices To Honor Our Heroes Disney S Disney Dream Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/e0/5d/74e05d071da7833d5e35b67639e065fc.png" data-lightbox="roadtrip" data-title="The 38 Best Disney World Tips From Moms Who Go All The Time Floridians Disney World Vacation Walt Disney World Vacations Disney World Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/e0/5d/74e05d071da7833d5e35b67639e065fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_PqH0pkxRM-EbrtJgYyBJ7pxt3hVmtKpkWA';" alt="The 38 Best Disney World Tips From Moms Who Go All The Time Floridians Disney World Vacation Walt Disney World Vacations Disney World Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 38 Best Disney World Tips From Moms Who Go All The Time Floridians Disney World Vacation Walt Disney World Vacations Disney World Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-you-get-a-dd-214-online.html">Can You Get A Dd 214 Online</a></li>
+													<li class="list-group-item"><a href="/canadian-military-car-rental-discounts.html">Canadian Military Car Rental Discounts</a></li>
+													<li class="list-group-item"><a href="/companies-hiring-in-northern-va.html">Companies Hiring In Northern Va</a></li>
+													<li class="list-group-item"><a href="/btw-lmao-meaning.html">Btw Lmao Meaning</a></li>
+													<li class="list-group-item"><a href="/can-you-retire-as-a-reservist.html">Can You Retire As A Reservist</a></li>
+													<li class="list-group-item"><a href="/companies-hiring-veterans-2020.html">Companies Hiring Veterans 2020</a></li>
+													<li class="list-group-item"><a href="/china-vs-us-navy.html">China Vs Us Navy</a></li>
+													<li class="list-group-item"><a href="/companies-hiring-veterans-in-michigan.html">Companies Hiring Veterans In Michigan</a></li>
+													<li class="list-group-item"><a href="/companies-hiring-military-spouses.html">Companies Hiring Military Spouses</a></li>
+													<li class="list-group-item"><a href="/comcast-internet-military-discount.html">Comcast Internet Military Discount</a></li>
+													<li class="list-group-item"><a href="/companies-hiring-military-officers.html">Companies Hiring Military Officers</a></li>
+													<li class="list-group-item"><a href="/comcast-offer-military-discount.html">Comcast Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/charities-for-military-ptsd.html">Charities For Military Ptsd</a></li>
+													<li class="list-group-item"><a href="/can-you-use-military-discount-online-at-kohls.html">Can You Use Military Discount Online At Kohls</a></li>
+													<li class="list-group-item"><a href="/can-military-spouse-get-unemployment.html">Can Military Spouse Get Unemployment</a></li>
+													<li class="list-group-item"><a href="/comcast-mobile-military-discount.html">Comcast Mobile Military Discount</a></li>
+													<li class="list-group-item"><a href="/companies-hiring-veterans-now.html">Companies Hiring Veterans Now</a></li>
+													<li class="list-group-item"><a href="/can-lowes-military-discount-be-used-online.html">Can Lowes Military Discount Be Used Online</a></li>
+													<li class="list-group-item"><a href="/chipotle-military-discount-promo-code.html">Chipotle Military Discount Promo Code</a></li>
+													<li class="list-group-item"><a href="/cabelas-military-discount-america.html">Cabelas Military Discount America</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

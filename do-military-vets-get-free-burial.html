@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do Military Vets Get Free Burial - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do Military Vets Get Free Burial",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/bd/ec/9f/bdec9fdde582d643cb8d56dc99cfc55d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+military+vets+get+free+burial",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do Military Vets Get Free Burial</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is also true for some civilians who have been involved in military service and certain Public Health Service personnel. Death during active duty. I agree to have a Veterans Burial Cremation Expert from my nearest VFMC funeral home provider contact me in order to ensure that my wishes are fulfilled. <br>				
+			</p>
+										<a class="badge badge-warning" href="/bjs-restaurant-military-discount-code.html">bjs restaurant military discount code</a>
+											<a class="badge badge-light" href="/bj-brewery-military-discount.html">bj brewery military discount</a>
+											<a class="badge badge-primary" href="/best-places-for-homeless-veterans.html">best places for homeless veterans</a>
+											<a class="badge badge-light" href="/best-health-insurance-companies-for-veterans.html">best health insurance companies for veterans</a>
+											<a class="badge badge-secondary" href="/benefits-of-hiring-veterans-statistics.html">benefits of hiring veterans statistics</a>
+											<a class="badge badge-warning" href="/bank-of-america-va-mortgage-rates.html">bank of america va mortgage rates</a>
+											<a class="badge badge-info" href="/best-vets-for-boas-surgery.html">best vets for boas surgery</a>
+											<a class="badge badge-danger" href="/bjs-veteran-discount.html">bjs veteran discount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal site.  Our website provides you with hints for viewing the maximum quality video and image content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/3d/c7/f13dc7d9eae27c4994372815ed68a970.jpg" data-lightbox="roadtrip" data-title="My Local Veteran S Cemetery Finally Has The Flags It Deserves For Memorial Day R Murica Arlington National Cemetery Cemetery Veterans Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/3d/c7/f13dc7d9eae27c4994372815ed68a970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwj0L8AqyIZHfNiCiNJf-AILezwY0iY7OqDQ';" alt="My Local Veteran S Cemetery Finally Has The Flags It Deserves For Memorial Day R Murica Arlington National Cemetery Cemetery Veterans Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Local Veteran S Cemetery Finally Has The Flags It Deserves For Memorial Day R Murica Arlington National Cemetery Cemetery Veterans Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/44/6f/ae446f62e84826ed40c84c7001657d17.gif" data-lightbox="roadtrip" data-title="Companion Match Veterans Bronze Grave Marker On Concrete Headstones Grave Marker Memorial Plaque">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/44/6f/ae446f62e84826ed40c84c7001657d17.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVjteRuCzEkNqlzlyxMYahHF1kkVH05ViKw';" alt="Companion Match Veterans Bronze Grave Marker On Concrete Headstones Grave Marker Memorial Plaque">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Companion Match Veterans Bronze Grave Marker On Concrete Headstones Grave Marker Memorial Plaque</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/d8/a9/a2d8a908de25344524178707b3d05a83.jpg" data-lightbox="roadtrip" data-title="American War Veteran Cemetery Photo By Photographer Michael Abrahams Veterans Cemetery American Cemetery Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/d8/a9/a2d8a908de25344524178707b3d05a83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpq7tiMfyVc6tFnzwVQbc8TphxoCedE_DNvg';" alt="American War Veteran Cemetery Photo By Photographer Michael Abrahams Veterans Cemetery American Cemetery Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American War Veteran Cemetery Photo By Photographer Michael Abrahams Veterans Cemetery American Cemetery Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/38/6c/54386c13ec87ae76725886ba2bf7c0f8.jpg" data-lightbox="roadtrip" data-title="Civil War Veteran Coming Home For Burial Http Militaryoneclick Com Civil War Veteran Home Burial War Veterans Arlington National Cemetery Veterans Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/38/6c/54386c13ec87ae76725886ba2bf7c0f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT32aMnVcj9sGPRDj4lz64A-VFinVloBofrLw';" alt="Civil War Veteran Coming Home For Burial Http Militaryoneclick Com Civil War Veteran Home Burial War Veterans Arlington National Cemetery Veterans Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Veteran Coming Home For Burial Http Militaryoneclick Com Civil War Veteran Home Burial War Veterans Arlington National Cemetery Veterans Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/e4/48/a4e4485331a3e67463cd0b11854dfb1a.jpg" data-lightbox="roadtrip" data-title="Pin By Just For Fun On Land Of The Free Home Of The Brave Memorial Day Military Love Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/e4/48/a4e4485331a3e67463cd0b11854dfb1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSumiFlpv5fCNNz8MxUoiI9CIlk8oYxyUm0jQ';" alt="Pin By Just For Fun On Land Of The Free Home Of The Brave Memorial Day Military Love Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Just For Fun On Land Of The Free Home Of The Brave Memorial Day Military Love Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/c8/24/5ac824299c139d3f5f2550f8a6dad058.jpg" data-lightbox="roadtrip" data-title="Working With Our Country S Military Veterans Is One Of The Greatest Honors We Have Here At Family Memorials By Gibson M Headstones Military Medallions Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/c8/24/5ac824299c139d3f5f2550f8a6dad058.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P6XMj_QDtt5X6qllC0c9rmEC8Oyc5wNX8g';" alt="Working With Our Country S Military Veterans Is One Of The Greatest Honors We Have Here At Family Memorials By Gibson M Headstones Military Medallions Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Working With Our Country S Military Veterans Is One Of The Greatest Honors We Have Here At Family Memorials By Gibson M Headstones Military Medallions Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dd/c6/5d/ddc65da0a5599e27b30e96506363801b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P6XMj_QDtt5X6qllC0c9rmEC8Oyc5wNX8g';" alt="Working With Our Country S Military Veterans Is One Of The Greatest Honors We Have Here At Family Memorials By Gibson M Headstones Military Medallions Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>As the sacrifices made by those who have served cannot be overstated veterans burial benefits are offered to honor those in the military.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do military vets get free burial</strong>. 
+								
+																	You cant get burial allowances for certain individuals. 
+																	Veterans may also be eligible if they were a member or former member of the selected reserve. 
+																	When a Veteran service member or family member qualifies for burial in a VA national cemetery they receive certain burial benefits at no cost to their family. 
+																	Yes the spouse and dependents of an eligible veteran can receive a free burial in a VA cemetery even if they die before the veteran. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Funeral Honors and Memorial Items. 
+																	Are military funerals free. 
+																	The VA doesnt pay the money directly to any provider. 
+																	On active duty or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To be eligible for a free military burial a veteran must have died while on active duty or must have received a discharge other than dishonorable. 
+																	Cremated remains are buried or inurned in national cemeteries in the same manner and with the same honors as casketed remains. 
+																	A gravesite in any of our 138 national cemeteries with available space. 
+																	If youre a veteran and your discharge was not dishonorable you can probably be buried in a national veterans cemetery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Burial benefits available include a gravesite in any of our national cemeteries with available space opening and closing of the grave perpetual care a Government headstone or marker a burial flag and a Presidential Memorial Certificate at no cost to the family. 
+																	Some state Veterans cemeteries may charge the applicant a nominal fee for setting a Government-furnished headstone or marker. 
+																	Usually a family is responsible for all other expenses such as body preparation casket or urn and transportation. 
+																	VA will pay up to 2000 toward burial expenses for deaths on or after September 11 2001 or up to 1500 for deaths prior to September 11 2001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA provides burial benefits to eligible veterans to help cover the expense of cremation or a funeral. 
+																	Some Veterans may also be eligible for Burial Allowances. 
+																	Spouses and Family Burials. 
+																	A veteran must be or must have been eligible for burial benefits himself for his spouse to receive burial benefits from the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We dont provide burial allowances if the individual died. 
+																	Military funeral honors are a benefit earned by all who served honorably in the US Armed Forces and are provided free of charge as a last thank you from a grateful nation. 
+																	The benefit is provided as a reimbursement. 
+																	For burial in a private cemetery veterans will only receive a free government-issued headstone or marker and a flag. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA recommends you request a pre-determination of burial. 
+																	All veterans with other-than-dishonorable discharges are eligible for free burial in a national VA cemetery. 
+																	And in some specific cases veterans can get buried for free. 
+																	These burial benefits include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some veterans may also be eligible for Burial Allowances. 
+																	Yes Id Like to Learn More. 
+																	Had chosen to get military retired pay instead of compensation. 
+																	Almost all veterans can receive military funeral honors at no cost. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That means families must first pay for the cost of cremation or burial and then submit a request along with receipts. 
+																	Cemetery staff in national military post and military base cemeteries are responsible for setting the headstone or marker at no cost to the applicant. 
+																	Veteran burial benefits for a private cemetery include a Government headstone or marker a burial flag and a Presidential Memorial Certificate at no cost to the family. 
+																	They are also usually eligible for free memorial items including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the Veteran is buried in a VA national cemetery some or all of the cost of transporting the deceased may be reimbursed. 
+																	Arlington National Cemetery has stricter eligibility rules than other national cemeteries. 
+																	An eligible spouse can receive a free burial space and a free marker. 
+																	Department of Veterans Affairs VA grants burial benefits for spouses of veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The government probably wont cover all the costs but you may be eligible for reimbursement from the VA for burial expenses if you paid for a veterans burial or funeral and you have not been reimbursed by another government agency or some other source such as burial insurance or the deceased veterans employer. 
+																	There are no benefits available to spouses and dependents buried in a private cemetery. 
+																	Military Funeral Honors are available for an eligible veteran free of charge if requested by the family. 
+																	It will include perpetual care their names and birth dates are inscribed on the veterans headstone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I acknowledge that the VA DOES NOT PAY for funeral or cremation costs which are required before the Free Burial can take place. 
+																	Firstly veterans are indeed entitled to a free burial within a national cemetery along with some type of grave marker. 
+																	Well also provide an allowance for the cost of transporting a Veterans remains for burial in a national cemetery. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/07/f4/2107f4e717ec86010d936766e19664d7.jpg" data-lightbox="roadtrip" data-title="10 Free Sites For Researching U S Military Veterans Who Died In Service Memorial Day Pictures What Is Memorial Day Memorial Day Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/07/f4/2107f4e717ec86010d936766e19664d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRecU9H96cFkpMTYkYAFDlkGEE2z3I4t8hqFA';" alt="10 Free Sites For Researching U S Military Veterans Who Died In Service Memorial Day Pictures What Is Memorial Day Memorial Day Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Free Sites For Researching U S Military Veterans Who Died In Service Memorial Day Pictures What Is Memorial Day Memorial Day Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/2d/9f/f12d9f71f96a58da092239d2364a944f.jpg" data-lightbox="roadtrip" data-title="American Seattle Wa Cremation Funeral Home Burial Funeral Service Crematory Mortuary Memorial Ceme God Bless America Military Heroes American Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/2d/9f/f12d9f71f96a58da092239d2364a944f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9SfWT3akgdgy0zX70mtC_IKm_TPi1psmJA';" alt="American Seattle Wa Cremation Funeral Home Burial Funeral Service Crematory Mortuary Memorial Ceme God Bless America Military Heroes American Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Seattle Wa Cremation Funeral Home Burial Funeral Service Crematory Mortuary Memorial Ceme God Bless America Military Heroes American Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/2d/4e/792d4ea8d3c8a26f283452fb8d737fb3.jpg" data-lightbox="roadtrip" data-title="Honoring Your Service Thank You Veterans Arlington National Cemetery Military Heroes Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/2d/4e/792d4ea8d3c8a26f283452fb8d737fb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQzRjAOS7dvDE4f9hyHnMkvAr7aUQjFGE_Q';" alt="Honoring Your Service Thank You Veterans Arlington National Cemetery Military Heroes Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honoring Your Service Thank You Veterans Arlington National Cemetery Military Heroes Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/c6/5d/ddc65da0a5599e27b30e96506363801b.jpg" data-lightbox="roadtrip" data-title="Bronze Veterans Niche Grave Marker Grave Marker Markers Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/c6/5d/ddc65da0a5599e27b30e96506363801b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaiiojpVtbIxVeekjLqmMz8pzKHClQoWb7g';" alt="Bronze Veterans Niche Grave Marker Grave Marker Markers Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bronze Veterans Niche Grave Marker Grave Marker Markers Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/85/e6/5185e69131efd309169a2b9d5c9b11dd.jpg" data-lightbox="roadtrip" data-title="Burial Is Free At A Veterans Affairs National Cemetery This Includes The Grave Vault Opening And Closing Marker And Veterans Cemetery Memorial Day Funeral">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/85/e6/5185e69131efd309169a2b9d5c9b11dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTch1gFul2xJfOJC5kj5htlcyTd0uMFNkt0A';" alt="Burial Is Free At A Veterans Affairs National Cemetery This Includes The Grave Vault Opening And Closing Marker And Veterans Cemetery Memorial Day Funeral">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Burial Is Free At A Veterans Affairs National Cemetery This Includes The Grave Vault Opening And Closing Marker And Veterans Cemetery Memorial Day Funeral</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/9d/70/f19d70c618322b0e6bae9a9a72a89055.jpg" data-lightbox="roadtrip" data-title="Veteran American Flag Headstone Headstones Memorial Markers Grave Statues">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/9d/70/f19d70c618322b0e6bae9a9a72a89055.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRaof1FZ7pKcspRdSTFhnv86IzlEj2VMu8Hg';" alt="Veteran American Flag Headstone Headstones Memorial Markers Grave Statues">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran American Flag Headstone Headstones Memorial Markers Grave Statues</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/5a/c3/2c5ac3d098da5a0c9fe105a8aab0a63b.jpg" data-lightbox="roadtrip" data-title="Arlington In December Wreaths Across America Wreaths Across America Arlington National Cemetery National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/5a/c3/2c5ac3d098da5a0c9fe105a8aab0a63b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD6hVo798fykmIZKfAynFH404n7VcWlVn42Q';" alt="Arlington In December Wreaths Across America Wreaths Across America Arlington National Cemetery National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arlington In December Wreaths Across America Wreaths Across America Arlington National Cemetery National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/b1/b8/6bb1b8010acf626a79ca4dfa54202670.jpg" data-lightbox="roadtrip" data-title="Photo Of Eagle On Fort Snelling Gravestone Touches Hearts Goes Viral National Cemetery Military Cemetery Snelling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/b1/b8/6bb1b8010acf626a79ca4dfa54202670.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IUHOhgApM6oNzyf5PzHHD9QKb92Vmcpk5Q';" alt="Photo Of Eagle On Fort Snelling Gravestone Touches Hearts Goes Viral National Cemetery Military Cemetery Snelling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Of Eagle On Fort Snelling Gravestone Touches Hearts Goes Viral National Cemetery Military Cemetery Snelling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/53/2a/ec532ac5fd4a96b2cc5e8fb6378fdee1.jpg" data-lightbox="roadtrip" data-title="Tribute To Veterans Texas Country Retired Military Fallen Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/53/2a/ec532ac5fd4a96b2cc5e8fb6378fdee1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBcz1mTDNPQyX-0jguLi0bMkEtL-JvN49n8w';" alt="Tribute To Veterans Texas Country Retired Military Fallen Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tribute To Veterans Texas Country Retired Military Fallen Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/f0/54/acf0546210ad707a9d16d5b17a838f2d.jpg" data-lightbox="roadtrip" data-title="Rocker Glider Recliner With Ottoman Arlington National Cemetery Small American Flags National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/f0/54/acf0546210ad707a9d16d5b17a838f2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fTTdlLcvXeLg105-9jaDVra9EcOWGKkgMA';" alt="Rocker Glider Recliner With Ottoman Arlington National Cemetery Small American Flags National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rocker Glider Recliner With Ottoman Arlington National Cemetery Small American Flags National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/ab/b0/d5abb055f50d15639115a0ec211358f1.jpg" data-lightbox="roadtrip" data-title="American Back View Burial Cemetery Child Commemorate Cross Funeral Grave Graveyard Grief Historic History Memorial Day Veteran National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/ab/b0/d5abb055f50d15639115a0ec211358f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-UxJk1VmZKqFWb9FgxZvxnmb-KUZDUcCZw';" alt="American Back View Burial Cemetery Child Commemorate Cross Funeral Grave Graveyard Grief Historic History Memorial Day Veteran National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Back View Burial Cemetery Child Commemorate Cross Funeral Grave Graveyard Grief Historic History Memorial Day Veteran National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/29/b9/f329b97406bb79fa4c378f68567281b5.jpg" data-lightbox="roadtrip" data-title="Arlington National Cemetery Grave Of Audie Murphy Veterans Day Arlington Arlington National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/29/b9/f329b97406bb79fa4c378f68567281b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsvv8xORjX14WmirIKsdA4I5ojp4O4Y58Csg';" alt="Arlington National Cemetery Grave Of Audie Murphy Veterans Day Arlington Arlington National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arlington National Cemetery Grave Of Audie Murphy Veterans Day Arlington Arlington National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/b8/7c/69b87c91462106c05ded5cb582cdf29e.jpg" data-lightbox="roadtrip" data-title="68th D Day Anniversary D Day Military Veterans Military Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/b8/7c/69b87c91462106c05ded5cb582cdf29e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfTDLnsVh8yyIzsgJa0Pso0REUtCtJZoExjA';" alt="68th D Day Anniversary D Day Military Veterans Military Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">68th D Day Anniversary D Day Military Veterans Military Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/ec/9f/bdec9fdde582d643cb8d56dc99cfc55d.jpg" data-lightbox="roadtrip" data-title="If You See A Quarter Sitting On Top Of A Grave Stone This Is What It Means Stone Quotes Headstones Funeral Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/ec/9f/bdec9fdde582d643cb8d56dc99cfc55d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiriFPVjgovCfsAtcUgbiQhDZGQ4Dk8_aiGw';" alt="If You See A Quarter Sitting On Top Of A Grave Stone This Is What It Means Stone Quotes Headstones Funeral Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You See A Quarter Sitting On Top Of A Grave Stone This Is What It Means Stone Quotes Headstones Funeral Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/4c/b6/484cb6afc9c503365805a8bc71a675e6.jpg" data-lightbox="roadtrip" data-title="A Picture Worth A Thousand Words Discussion Forums Banjo Hangout National Cemetery Military Cemetery Snelling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/4c/b6/484cb6afc9c503365805a8bc71a675e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyY2b4m9WYfdPymoferjiI_NzwKZZi0vcWcw';" alt="A Picture Worth A Thousand Words Discussion Forums Banjo Hangout National Cemetery Military Cemetery Snelling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Picture Worth A Thousand Words Discussion Forums Banjo Hangout National Cemetery Military Cemetery Snelling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/target-military-discount-2020-exclusions.html">Target Military Discount 2020 Exclusions</a></li>
+													<li class="list-group-item"><a href="/swiss-army-watch-discount.html">Swiss Army Watch Discount</a></li>
+													<li class="list-group-item"><a href="/sprint-military-veteran-discount.html">Sprint Military Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-veterans-day-sale-2020.html">Tractor Supply Veterans Day Sale 2020</a></li>
+													<li class="list-group-item"><a href="/tsc-tractor-supply-military-discount.html">Tsc Tractor Supply Military Discount</a></li>
+													<li class="list-group-item"><a href="/t-mobile-veteran-phone-deals.html">T Mobile Veteran Phone Deals</a></li>
+													<li class="list-group-item"><a href="/sprint-military-discount-unlimited-plus.html">Sprint Military Discount Unlimited Plus</a></li>
+													<li class="list-group-item"><a href="/the-imf-history.html">The Imf History</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-veterans-day-sale.html">Tractor Supply Veterans Day Sale</a></li>
+													<li class="list-group-item"><a href="/sprint-veteran-discount-plan.html">Sprint Veteran Discount Plan</a></li>
+													<li class="list-group-item"><a href="/sprint-military-discount-unlimited-plan.html">Sprint Military Discount Unlimited Plan</a></li>
+													<li class="list-group-item"><a href="/the-imf-and-world-bank-benefit-global-marketers-by.html">The Imf And World Bank Benefit Global Marketers By</a></li>
+													<li class="list-group-item"><a href="/ttu-military-veterans-programs.html">Ttu Military Veterans Programs</a></li>
+													<li class="list-group-item"><a href="/t-mobile-military-discount-on-iphone.html">T Mobile Military Discount On Iphone</a></li>
+													<li class="list-group-item"><a href="/toro-zero-turn-military-discount.html">Toro Zero Turn Military Discount</a></li>
+													<li class="list-group-item"><a href="/sprint-military-phone-deals.html">Sprint Military Phone Deals</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-give-military-discount.html">Tractor Supply Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/tucson-veterans-day-deals.html">Tucson Veterans Day Deals</a></li>
+													<li class="list-group-item"><a href="/top-10-best-companies-for-veterans.html">Top 10 Best Companies For Veterans</a></li>
+													<li class="list-group-item"><a href="/tractor-supply-military-discount-2020.html">Tractor Supply Military Discount 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

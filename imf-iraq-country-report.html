@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Iraq Country Report - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Iraq Country Report",
+  "datePublished": "2021-02-28",
+  "image": "http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/06/Regional-Economic-Outlook.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+iraq+country+report",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Iraq Country Report</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A financial program that aims to ensure macroeconomic stability of Iraq was discussed. It also has 18103 votes which is 036 of the total votes distributed to the member countries of the IMF. Copies of this report are available to the public from. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/apple-military-cac-reader.html">apple military cac reader</a>
+											<a class="badge badge-warning" href="/apple-military-id.html">apple military id</a>
+											<a class="badge badge-light" href="/apple-airpods-military-exchange.html">apple airpods military exchange</a>
+											<a class="badge badge-secondary" href="/apple-arcade-military-games.html">apple arcade military games</a>
+											<a class="badge badge-danger" href="/apple-hiring-veterans.html">apple hiring veterans</a>
+											<a class="badge badge-info" href="/academy-sports-military-discount-memorial-day.html">academy sports military discount memorial day</a>
+											<a class="badge badge-success" href="/active-duty-navy-reservist.html">active duty navy reservist</a>
+											<a class="badge badge-warning" href="/adventure-academy-military-discount.html">adventure academy military discount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right blog.  Our website gives you hints for viewing the highest quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/Countries/detail-page/IRQ/irq-banner.ashx?h=280&amp;w=1099&amp;la=en" data-lightbox="roadtrip" data-title="Iraq And The Imf">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/Countries/detail-page/IRQ/irq-banner.ashx?h=280&amp;w=1099&amp;la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROl96A6numMefaJNyIj2iMMrDNw7eFojArSw';" alt="Iraq And The Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq And The Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/~/media/Images/IMF/Live-Page/imf-live-rgb-h.ashx?la=en" data-lightbox="roadtrip" data-title="Iraq 2020 Article Iv Consultation Press Release Staff Report And Statement By The Executive Director For Iraq">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/~/media/Images/IMF/Live-Page/imf-live-rgb-h.ashx?la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS43VAmqaLQXKYFT0x4wwz6-HSAdO9MHpdcOQ';" alt="Iraq 2020 Article Iv Consultation Press Release Staff Report And Statement By The Executive Director For Iraq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq 2020 Article Iv Consultation Press Release Staff Report And Statement By The Executive Director For Iraq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/LC/pr16321.ashx?h=226&amp;w=210" data-lightbox="roadtrip" data-title="Imf Executive Board Approves Us 5 34 Billion Stand By Arrangement For Iraq">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/LC/pr16321.ashx?h=226&amp;w=210" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSSSn7zWViYcKtiPNYzT-jPHFQXnAJSSWhQ';" alt="Imf Executive Board Approves Us 5 34 Billion Stand By Arrangement For Iraq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Executive Board Approves Us 5 34 Billion Stand By Arrangement For Iraq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="rHCEMlJyR_c8xM" data-lightbox="roadtrip" data-title="Https Www Imf Org Media Files Publications Cr 2017 Cr17252 Ashx">
+											<img class="card-img v-image ads-img " src="rHCEMlJyR_c8xM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzI5X1YgBU1WZ2zEUhaJMJbrJihdAKZdV5w';" alt="Https Www Imf Org Media Files Publications Cr 2017 Cr17252 Ashx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Imf Org Media Files Publications Cr 2017 Cr17252 Ashx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/en/News/Articles/2019/07/26/~/media/8D9EE0D795CD4DB4BB09C04C35774301.ashx" data-lightbox="roadtrip" data-title="Imf Executive Board Concludes 2019 Article Iv Consultation With Iraq">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/en/News/Articles/2019/07/26/~/media/8D9EE0D795CD4DB4BB09C04C35774301.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgrFVWzqYN1jOeQHJoTO7u-Deb1aSGvjYKQ';" alt="Imf Executive Board Concludes 2019 Article Iv Consultation With Iraq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Executive Board Concludes 2019 Article Iv Consultation With Iraq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/12/65567.jpg" data-lightbox="roadtrip" data-title="Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network">
+											<img class="card-img v-image ads-img " src="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/12/65567.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PPBp2mg2iKAc5yiD0_vZRLwFS2cCABPf6Q';" alt="Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c5/40/31/c54031709ea02875a64f831c5df7b68b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PPBp2mg2iKAc5yiD0_vZRLwFS2cCABPf6Q';" alt="Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network">
+										<div class="card-body">
+						<h3 class="h5"><b>International Monetary Fund said Iraqs economy shrank by 11 in 2020 while the countrys external public debt has reached its peak.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf iraq country report</strong>. 
+								
+																	Reuters - Iraq has requested emergency assistance from the International Monetary Fund and talks are ongoing between the parties the IMF said late on Sunday. 
+																	Iraqs economy is heavily dependent on crude oil export revenues. 
+																	Washington DC December 12 2020. 
+																	Social conditions remain harsh following the war with ISIS with slow progress at reconstruction weak public services and a lack of job opportunities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For optimum experience we recommend to update your browser to the latest version. 
+																	The Iraqi economy was severely affected in 2009 by the decline in oil prices. 
+																	Health education and the pension system. 
+																	The conflict has hurt the economy through displacement and impoverishment of millions of people and destruction of infrastructure and assets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The report specifically examines three vital sectors. 
+																	Each report prepared by a staff team after discussions with officials of the country is published at the option of the member. 
+																	The recent rebound in oil prices helped deliver a large budget surplus and healthy build-up in reserves in 2018 but post-war recovery has been. 
+																	The Middle East and Central Asia countries acted quickly and decisively in response to COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iraq was one of the original members of the IMF joining the IMF on December 27 1945. 
+																	Iraq is an oil-dependent and state-dominated fragile economy that has been hit hard by the conflict with ISIS and the fall in oil prices. 
+																	The Bank is finalizing the Iraq Human Development Public Expenditure Review Report which offers evidencebased policy recommendations to inform urgently needed reforms to spur human capital development. 
+																	It is based on the information available at the time it was completed on July 14 2015. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iraqs socio-economic fragilities have been severely aggravated by the pandemic and the sharp decline in oil revenues which arrived on the heels of widespread social unrest and political instability. 
+																	Growth projections have been revised down since the April 2020 Regional Economic Outlook the IMF says in its latest update to the report. 
+																	Iraq is substantially exposed to fiscal risks related to guarantees issued by the State with a stock of guarantees related to foreign currency service payments and debt of USD 217 billion at end-June 2017 and a stock of domestic guarantees that remains to be fully assessed. 
+																	17252 IRAQ SELECTED ISSUES This Selected Issues paper on Iraq was prepared by a staff team of the International Monetary Fund as background documentation for the periodic consultation with the member country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF Country Report No. 
+																	It is based on the information available at the time it was completed on July 25 2017. 
+																	IMF Country Reports cover economic and financial developments and trends in member countries. 
+																	The oil price decline has resulted in a massive reduction in Iraqs budget revenue pushing the fiscal deficit to an unsustainable level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2017 the Council of Ministers approved a set of procedures to tighten controls on the approval of State guarantees. 
+																	17251 iraq staff report for the 2017 article iv consultation second review under the three-year stand-by arrangement and requests for waivers of nonobservance and applicability of performance criteria and modification of performance criteria press release. 
+																	At the end of the virtual mission Mr. 
+																	Despite their efforts the pandemic has inflicted heavy economic damage on the region. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This paper discusses Iraqs First and Second Reviews of the Staff-Monitored Program SMP and Request for a Three-Year Stand-By Arrangement. 
+																	The authorities are responding to the crisis with a mix of necessary fiscal adjustment and financing maintaining. 
+																	And statement by the executive director for iraq. 
+																	An International Monetary Fund IMF team led by Tokhir Mirzoev held a virtual mission with the Iraqi authorities from November 11 to December 10 to conduct discussions for the 2020 Article IV consultation with Iraq. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Based on information available at the time of these discussions the staff report was completed on July 3 2019. 
+																	In 201 7 crude oil export revenue accounted for an estimated 89 of Iraqs total government revenues according to the International Monetary Fund IMF2 In 2017 Iraq excluding KRG earned almost 60 billion in. 
+																	Iraq provided 166389 million SDR Special Drawing Rights to the IMF which is 035 of total SDR paid to the IMF. 
+																	Policy discussions were framed by Iraqs medium-term prospects especially with regard to the development of its vast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your browser is not up-to-date. 
+																	15236 IRAQ SELECTED ISSUES This paper on Iraq was prepared by a staff team of the International Monetary Fund as background documentation for the periodic consultation with the member country. 
+																	Forty years of upheaval has eroded physical and human capital and weakened public institutions. 
+																	Macroeconomic stability was maintained in 2010 despite a highly uncertain domestic and external environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The health systems limited capacity has been strained while the fiscal position has become untenable as oil revenues declined sharply to a level that barely covers the governments large. 
+																	The Staff Report prepared by a staff team of the IMF for the Executive Boards consideration on July 19 2019 following discussions that ended on May 2 2019 with the officials of Iraq on economic developments and policies. 
+																	Imf country report no. 
+																	Mirzoev issued the following statement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This reflects the slowdown in economic activities in Iraq as a result of OPEC agreement to cut oil production. 
+																	2015 International Monetary Fund IMF Country Report No. 
+																	Iraqi Finance Minister Ali Allawi. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.bnnbloomberg.ca/polopoly_fs/1.1459294!/fileimage/httpImage/image.png_gen/derivatives/landscape_620/bc-iraq-seeks-imf-loan-saudi-investments-to-boost-oil-battered-economy.png" data-lightbox="roadtrip" data-title="Iraq Seeks Imf Loan Saudi Investments To Boost Oil Battered Economy Bnn Bloomberg">
+											<img class="card-img v-image ads-img " src="http://www.bnnbloomberg.ca/polopoly_fs/1.1459294!/fileimage/httpImage/image.png_gen/derivatives/landscape_620/bc-iraq-seeks-imf-loan-saudi-investments-to-boost-oil-battered-economy.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdEXrCGIAOvgto_1wqnooKNpIl7slD0mMbgg';" alt="Iraq Seeks Imf Loan Saudi Investments To Boost Oil Battered Economy Bnn Bloomberg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Seeks Imf Loan Saudi Investments To Boost Oil Battered Economy Bnn Bloomberg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/2f/43/4c2f439c7f0245c2346eb7a3f8cb8b8b.jpg" data-lightbox="roadtrip" data-title="Iraq Is On Fifth In The List Of 5 Largest Oil Producing Countries In The World Countries Of The World World Iraq">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/2f/43/4c2f439c7f0245c2346eb7a3f8cb8b8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmQc9jibgdAifNGZ6p6Eh0ipiZoeIsNdRdvA';" alt="Iraq Is On Fifth In The List Of 5 Largest Oil Producing Countries In The World Countries Of The World World Iraq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Is On Fifth In The List Of 5 Largest Oil Producing Countries In The World Countries Of The World World Iraq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/pr20335fig1.ashx" data-lightbox="roadtrip" data-title="Imf Releases The 2020 Financial Access Survey Results">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/pr20335fig1.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpOw8rjECt_x4s4JytTx9YbkWwX_aBKEGAA';" alt="Imf Releases The 2020 Financial Access Survey Results">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Releases The 2020 Financial Access Survey Results</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/77/6b/1f776b4e0eb06b22b0ca0891e705a98d.jpg" data-lightbox="roadtrip" data-title="Pin On Spirituality Researche">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/77/6b/1f776b4e0eb06b22b0ca0891e705a98d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKQQeucufnX-uwtMIytQJl-j2UtFcWZC4pg';" alt="Pin On Spirituality Researche">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Spirituality Researche</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/news-article-images/CBLDatabasecharts3.ashx?la=en&amp;hash=1B5AA3697EE71EF4D5221819292EB0E1601AC015&amp;h=582&amp;w=500" data-lightbox="roadtrip" data-title="Imf Updates Central Bank Legislation Database">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/news-article-images/CBLDatabasecharts3.ashx?la=en&amp;hash=1B5AA3697EE71EF4D5221819292EB0E1601AC015&amp;h=582&amp;w=500" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVBH4Dg_cn6VHlRyDwhe35gNHd5AyCKJTVQ';" alt="Imf Updates Central Bank Legislation Database">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Updates Central Bank Legislation Database</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/a1/c6/59a1c697d766554657e39a9a841dce38.png" data-lightbox="roadtrip" data-title="Africa Economic Success African Countries Africa Success">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/a1/c6/59a1c697d766554657e39a9a841dce38.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfePX1aJOX-TTft9kbczTCGMLmrzZVs3EZZg';" alt="Africa Economic Success African Countries Africa Success">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Africa Economic Success African Countries Africa Success</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/40/31/c54031709ea02875a64f831c5df7b68b.jpg" data-lightbox="roadtrip" data-title="Iran Iraq War Jpg 1368 1570 Iraq Iraq War War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/40/31/c54031709ea02875a64f831c5df7b68b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_0iNjaNs5RIOJ1Jx2KFpC9DEd6hVfTu59Q';" alt="Iran Iraq War Jpg 1368 1570 Iraq Iraq War War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Iraq War Jpg 1368 1570 Iraq Iraq War War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/41/76/854176d57f46190bcc341cc75684dd62.gif" data-lightbox="roadtrip" data-title="Pin On Map Of North America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/41/76/854176d57f46190bcc341cc75684dd62.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9JPRuBx-pIyZUznuyBRdcpSSuxxj2IYH7fQ';" alt="Pin On Map Of North America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Map Of North America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/2019-04/7A595019-47C9-4514-9DF3-28F1D049EE5A.jpg?itok=PHR1ThzG" data-lightbox="roadtrip" data-title="Imf Warns Of Economic Calamity In Middle East From Coronavirus Pandemic Voice Of America English">
+											<img class="card-img v-image ads-img " src="https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/2019-04/7A595019-47C9-4514-9DF3-28F1D049EE5A.jpg?itok=PHR1ThzG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrchOsgBuq1y_0Z6co3xILgtOHlugxI-9mYg';" alt="Imf Warns Of Economic Calamity In Middle East From Coronavirus Pandemic Voice Of America English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Warns Of Economic Calamity In Middle East From Coronavirus Pandemic Voice Of America English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/06/Regional-Economic-Outlook.jpg" data-lightbox="roadtrip" data-title="Imf Regional Economic Outlook Update With Reference To Iraq April 2020 Iraqi Economists Network">
+											<img class="card-img v-image ads-img " src="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/06/Regional-Economic-Outlook.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVLCJFr3Z9mkzMSjlE3tCtOpfbW00c-ZNVQ';" alt="Imf Regional Economic Outlook Update With Reference To Iraq April 2020 Iraqi Economists Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Regional Economic Outlook Update With Reference To Iraq April 2020 Iraqi Economists Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/fe/3e/ddfe3e60543f7077acb715ddba7ef87b.jpg" data-lightbox="roadtrip" data-title="The Real Score Behind Iraq S Currency Dinar With How Dinar Has Caught The World S Attention The Existence Of Online Fake Budgeting Iraqi Social Security Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/fe/3e/ddfe3e60543f7077acb715ddba7ef87b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8O41x-grWHPWY3UlQnzE90GjPCiXucxo1w';" alt="The Real Score Behind Iraq S Currency Dinar With How Dinar Has Caught The World S Attention The Existence Of Online Fake Budgeting Iraqi Social Security Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Real Score Behind Iraq S Currency Dinar With How Dinar Has Caught The World S Attention The Existence Of Online Fake Budgeting Iraqi Social Security Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.rudaw.net/contentfiles/559919Image1.jpg?version=1951489" data-lightbox="roadtrip" data-title="Iraq Requests Emergency Assistance From Imf Rudaw Net">
+											<img class="card-img v-image ads-img " src="https://www.rudaw.net/contentfiles/559919Image1.jpg?version=1951489" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFlin3xElT8vvQX7Vi881f1NaJHmdo3fXVA';" alt="Iraq Requests Emergency Assistance From Imf Rudaw Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Requests Emergency Assistance From Imf Rudaw Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/external/15/images/header/imf.png" data-lightbox="roadtrip" data-title="Financial System Stability Assessment Fssa">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/external/15/images/header/imf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRydPYkL-XQ1vWqIQYTy9DC0sqaykaEuh5VQ';" alt="Financial System Stability Assessment Fssa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial System Stability Assessment Fssa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/~/media/Images/IMF/News/news-article-images/menap-growth-tablefinal-for-cfarticle-1.ashx?h=699&amp;w=556&amp;hash=5C03A14420084C6B43D3A57FD4277372F30F1E37&amp;hash=5C03A14420084C6B43D3A57FD4277372F30F1E37&amp;la=en" data-lightbox="roadtrip" data-title="For Middle East And North Africa Region Reforms Can Refuel Growth Engines">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/~/media/Images/IMF/News/news-article-images/menap-growth-tablefinal-for-cfarticle-1.ashx?h=699&amp;w=556&amp;hash=5C03A14420084C6B43D3A57FD4277372F30F1E37&amp;hash=5C03A14420084C6B43D3A57FD4277372F30F1E37&amp;la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIQFrWBdRNtOQz64V2LIagZCAD3hK_p3vTtQ';" alt="For Middle East And North Africa Region Reforms Can Refuel Growth Engines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Middle East And North Africa Region Reforms Can Refuel Growth Engines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/88/dc/6288dc90102656b5ecd5ae29e5f2aca7.png" data-lightbox="roadtrip" data-title="Syria V Libya V Iraq Libya Syria Syrian Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/88/dc/6288dc90102656b5ecd5ae29e5f2aca7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLoaRr-BhzueQO82GzIZGaLZpTaBIwwB0adg';" alt="Syria V Libya V Iraq Libya Syria Syrian Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Syria V Libya V Iraq Libya Syria Syrian Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-the-va-loan-interest-free.html">Is The Va Loan Interest Free</a></li>
+													<li class="list-group-item"><a href="/jobs-hiring-veterans-in-florida.html">Jobs Hiring Veterans In Florida</a></li>
+													<li class="list-group-item"><a href="/irobot-discount-for-military.html">Irobot Discount For Military</a></li>
+													<li class="list-group-item"><a href="/jk-army-discount-code.html">Jk Army Discount Code</a></li>
+													<li class="list-group-item"><a href="/ivmp-server-list.html">Ivmp Server List</a></li>
+													<li class="list-group-item"><a href="/international-monetary-fund-imf-jobs.html">International Monetary Fund Imf Jobs</a></li>
+													<li class="list-group-item"><a href="/ivms-bahwan-cybertek.html">Ivms Bahwan Cybertek</a></li>
+													<li class="list-group-item"><a href="/is-bank-of-america-closed-today-veterans-day.html">Is Bank Of America Closed Today Veterans Day</a></li>
+													<li class="list-group-item"><a href="/ivms-4200-lite-pc.html">Ivms 4200 Lite Pc</a></li>
+													<li class="list-group-item"><a href="/ivf-c-injection-dosage.html">Ivf C Injection Dosage</a></li>
+													<li class="list-group-item"><a href="/is-india-founding-member-of-imf.html">Is India Founding Member Of Imf</a></li>
+													<li class="list-group-item"><a href="/jobs-with-imf.html">Jobs With Imf</a></li>
+													<li class="list-group-item"><a href="/ivms-4500-google-home.html">Ivms 4500 Google Home</a></li>
+													<li class="list-group-item"><a href="/ivmp-500-mg.html">Ivmp 500 Mg</a></li>
+													<li class="list-group-item"><a href="/is-there-a-military-discount-for-ticketmaster.html">Is There A Military Discount For Ticketmaster</a></li>
+													<li class="list-group-item"><a href="/ivms-4500-android-pc.html">Ivms 4500 Android Pc</a></li>
+													<li class="list-group-item"><a href="/japan-imf-scholarship-program-for-asia.html">Japan Imf Scholarship Program For Asia</a></li>
+													<li class="list-group-item"><a href="/jobs-that-hire-prior-military.html">Jobs That Hire Prior Military</a></li>
+													<li class="list-group-item"><a href="/is-there-a-military-discount-for-apple-products.html">Is There A Military Discount For Apple Products</a></li>
+													<li class="list-group-item"><a href="/ivms-4200-client-locked.html">Ivms 4200 Client Locked</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

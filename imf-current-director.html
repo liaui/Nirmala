@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Current Director - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Current Director",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/3c/60/d0/3c60d02fabee659c620539d6579d16f2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+current+director",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Current Director</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Executive Director salaries 137k Officer jobs. International Monetary Fund IMF - REUTERS CAIRO 14 February 2021. 11 She supervises four Deputy Managing Directors. <br>				
+			</p>
+										<a class="badge badge-success" href="/does-ups-do-military-discount.html">does ups do military discount</a>
+											<a class="badge badge-danger" href="/enterprise-vet-discount.html">enterprise vet discount</a>
+											<a class="badge badge-success" href="/eastbay-veterans-day-sale.html">eastbay veterans day sale</a>
+											<a class="badge badge-danger" href="/egypt-cpi-imf.html">egypt cpi imf</a>
+											<a class="badge badge-warning" href="/dol-hire-vets-medallion-awards.html">dol hire vets medallion awards</a>
+											<a class="badge badge-success" href="/everyday-veteran-discounts.html">everyday veteran discounts</a>
+											<a class="badge badge-dark" href="/enterprise-army-discount.html">enterprise army discount</a>
+											<a class="badge badge-dark" href="/epic-mountain-express-military-discount.html">epic mountain express military discount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/64/3c/25643c83d51608e65e62b47a0d111c29.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde First Woman To Serve As Managing Director Of The Imf Imf Md Is One Of The Most Powerful Positions In Glo Powerful Women Women French Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/64/3c/25643c83d51608e65e62b47a0d111c29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScjV1XHAj57zHCs-bR7UBP6hD5XKHsdRv8lA';" alt="Christine Lagarde First Woman To Serve As Managing Director Of The Imf Imf Md Is One Of The Most Powerful Positions In Glo Powerful Women Women French Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde First Woman To Serve As Managing Director Of The Imf Imf Md Is One Of The Most Powerful Positions In Glo Powerful Women Women French Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/77/29/f9772991591c89a31c6a150538a86355.jpg" data-lightbox="roadtrip" data-title="Managing Director Christine Lagarde 2011 2019 Powerful Women Fashion Over Fifty Older Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/77/29/f9772991591c89a31c6a150538a86355.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0GavWhGeHRKeebxGtx6d3DGLa74PfytLA3Q';" alt="Managing Director Christine Lagarde 2011 2019 Powerful Women Fashion Over Fifty Older Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Managing Director Christine Lagarde 2011 2019 Powerful Women Fashion Over Fifty Older Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/87/8d/f6878ddeb673081e5035c4639fcac982.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Christine Lagarde Takes Over As Managing Director Of Imf Power Dressing Over 50 Womens Fashion Christine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/87/8d/f6878ddeb673081e5035c4639fcac982.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohDpHKOU7UgE_2qbQBOyjdl-Mg2Ic-0Pdhg';" alt="Christine Lagarde Photos Photos Christine Lagarde Takes Over As Managing Director Of Imf Power Dressing Over 50 Womens Fashion Christine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Christine Lagarde Takes Over As Managing Director Of Imf Power Dressing Over 50 Womens Fashion Christine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/7a/c0/8e7ac060161a65b16124c1f7db8a80d2.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Older Women Fashion Work Outfit Inspiration French Girl Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/7a/c0/8e7ac060161a65b16124c1f7db8a80d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLIgEwcnlVYnriodeDDdujyllRahCFdLjMRw';" alt="Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Older Women Fashion Work Outfit Inspiration French Girl Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Older Women Fashion Work Outfit Inspiration French Girl Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/09/bc/3d09bcb0443a0f7513d848315297044b.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Women Ceo Christine Orange Pencil Skirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/09/bc/3d09bcb0443a0f7513d848315297044b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJM0dfy0ERHwzfctx1gonoRdl75oxOjs1Qw';" alt="Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Women Ceo Christine Orange Pencil Skirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Women Ceo Christine Orange Pencil Skirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/db/1a/08db1a50da37daf3d60df8a3e20a42a3.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Imf Managing Director Christine Lagarde Holds News Conf On U S Economy Powerful Women Aging Beautifully Christine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/db/1a/08db1a50da37daf3d60df8a3e20a42a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKJ05V0tK8n9Cn_OvClfESnQd8Xm8lYj99g';" alt="Christine Lagarde Photos Imf Managing Director Christine Lagarde Holds News Conf On U S Economy Powerful Women Aging Beautifully Christine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Imf Managing Director Christine Lagarde Holds News Conf On U S Economy Powerful Women Aging Beautifully Christine</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d7/c3/0f/d7c30f98bb73e2153399d53adc98254d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKJ05V0tK8n9Cn_OvClfESnQd8Xm8lYj99g';" alt="Christine Lagarde Photos Imf Managing Director Christine Lagarde Holds News Conf On U S Economy Powerful Women Aging Beautifully Christine">
+										<div class="card-body">
+						<h3 class="h5"><b>Getting out of the Coronavirus crisis and supporting those affected by it is the most important priority for the Egyptian government during the current stage Managing Director of the International Monetary Fund IMF Kristalina Georgieva said in a TV interview on Saturday.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf current director</strong>. 
+								
+																	He advises the IMFs management Executive Board and membership on all legal aspects of IMF operations including its regulatory advisory and lending functions. 
+																	Min Zhu Former IMF Deputy Managing Director former Peoples Bank of China Deputy Governor. 
+																	IMF Structure The IMF chief has been Managing Director Kristalina Georgieva since Sept. 
+																	Headquarters 1 is located on 720 19th street while Headquarters 2 is located on 1900 Pennsylvania Avenue Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Getting out of the Coronavirus crisis and supporting those affected by it is the most important priority for the Egyptian government during the current stage Managing Director of the International Monetary Fund IMF Kristalina Georgieva said. 
+																	Abdul Hafeez Sheikh B. 
+																	Officer salaries 72k Accounting Assistant jobs. 
+																	We therefore promise our recruits challenge professional growth and the opportunity to join an international team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jitendra Gopal Borpujari - economist on the executive board of the IMF from 1996 to 2005. 
+																	He was previously in private practice in New York and Tokyo. 
+																	The following is an evolving list in alphabetical order of notable current and former employees of the International Monetary Fund IMF. 
+																	Madame Christine Lagarde from France was Managing Director and Chairman of the Executive Board from July 5 2011 to September 12 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On 28 June 2011 the IMF board elected Lagarde as its next managing director and chairman for a five-year term starting on 5 July 2011. 
+																	The Portuguese finance minister and current Eurogroup. 
+																	The current Managing Director MD and Chairwoman of the IMF is Bulgarian economist Kristalina Georgieva who has held the post since October 1 2019. 
+																	Christine Lagarde France is serving her second 5 year term since July 5 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lagarde has resigned as managing director to head the ECB. 
+																	Our Work Our Work. 
+																	The Executive Board the Board is responsible for conducting the day-to-day business of the IMF. 
+																	Statistics Department Chief Statistician and Data Officer and Director. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He has published extensively on both the law of the IMF and a broad range of legal issues relating to the prevention and resolution of financial crisis with a particular emphasis on insolvency. 
+																	As the quality of our staff is key to the IMFs success we recruit only the most talented and dedicated individuals. 
+																	The IMFs executive board praised both candidates as well-qualified but decided on Lagarde by consensus. 
+																	Picks the World Bank chief. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prior to her appointment at the IMF Gopinath served as the economic adviser to the Chief Minister of Kerala India. 
+																	Gita Gopinath was appointed as Chief Economist of IMF from 1 October 2018. 
+																	Pakistan Current Affairs MCQs Pakistan Current Affairs MCQs 2020. 
+																	The Managing Director of IMF is assisted by a First Deputy Managing Director and 3 Deputy Managing Directors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Board usually meets several times each week. 
+																	Pakistan Current Affairs sample test and practice questions for job Test. 
+																	Its involvement in world economic affairs puts the IMF in the news every day and makes it a stimulating demanding place to work. 
+																	Policy support is key to financial stability with IMFs Fabio Natalucci SDR Rates for February 11 2021 SDR Interest Rate 0090 1 USD SDR 069329 MORE The IMF and COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Executive Board of the International Monetary Fund IMF today selected Kristalina Georgieva to serve as IMF Managing Director and Chair of the Executive Board for a five-year term starting on October 1 2019. 
+																	Dominique Strauss-Kahn from France was Managing Director and Chairman of the Executive Board from November 1 2007 to May 18 2011. 
+																	CAIRO 14 February 2021. 
+																	Strategy Policy and Review Department Director. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is composed of 24 Directors who are elected by member countries or by groups of countries and the Managing Director who serves as its Chairman. 
+																	The current managing director of IMF is Christine Legarde. 
+																	About IMF The International Monetary Fund IMF is an organization of 189 countries working to foster global monetary cooperation secure. 
+																	Sean Hagan is General Counsel and Director of the IMFs Legal Department. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Managing Director is the chief of the IMFs 2700 employees from 147 countries. 
+																	Lagarde became the first woman to be elected as the head of the IMF. 
+																	Kristalina Georgieva from Bulgaria is Managing Director and Chairman of the Executive Board from October 1 2019. 
+																	She is Chair of the 24-member Executive Board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The head of the IMF is a European while the US. 
+																	Secretary of the Fund and Secretarys Department Director. 
+																	Who is the Current director of IMF Middle East and South Asia. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/f9/f4/6ef9f444291388122db13199e266aa0b.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Imf Managing Director Candidate Christine Lagarde Addresses Press In Dc Beautiful Women Over 50 Fashion Lady">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/f9/f4/6ef9f444291388122db13199e266aa0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyUh4J80i8tVa3PgINdFPF5JD9gvUULgF5VA';" alt="Christine Lagarde Photos Photos Imf Managing Director Candidate Christine Lagarde Addresses Press In Dc Beautiful Women Over 50 Fashion Lady">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Imf Managing Director Candidate Christine Lagarde Addresses Press In Dc Beautiful Women Over 50 Fashion Lady</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/9c/74/889c747c2d7fc4998b40a5393ff934d7.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Christine Economy Greece">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/9c/74/889c747c2d7fc4998b40a5393ff934d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8aH5nTK1gGrg0Pfkkc0iOrP10J2-LsfnGRw';" alt="Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Christine Economy Greece">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Imf Managing Director Christine Lagarde Holds A Press Conference About The State Of The Uk Economy Christine Economy Greece</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/20/c9/4620c920185945627f32c5bf2c9c2580.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Imf World Bank Group Annual Meetings Annual Meeting Christine Role Models">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/20/c9/4620c920185945627f32c5bf2c9c2580.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxSJBnRKYmz9RZqglbk_JJccL_xluh6o7i-Q';" alt="Christine Lagarde Photos Photos Imf World Bank Group Annual Meetings Annual Meeting Christine Role Models">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Imf World Bank Group Annual Meetings Annual Meeting Christine Role Models</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b2/9c/e8/b29ce8af2cd1142b673c7c62016587c3.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos French Finance Minister Christine Lagarde Departs International Monetary Fund Headquarters June Fashion Style Power Dressing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b2/9c/e8/b29ce8af2cd1142b673c7c62016587c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoPo6QD_CQf4O-n4-fxe1Fl8SSIxkcvRR4gA';" alt="Christine Lagarde Photos Photos French Finance Minister Christine Lagarde Departs International Monetary Fund Headquarters June Fashion Style Power Dressing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos French Finance Minister Christine Lagarde Departs International Monetary Fund Headquarters June Fashion Style Power Dressing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/28/8c/3f288c9431842a405ae952961bbc5625.jpg" data-lightbox="roadtrip" data-title="Fashion In Politics Christine Lagarde Style Older Fashion Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/28/8c/3f288c9431842a405ae952961bbc5625.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhcK6j9xo21h2mZ7_RO6Ek4WL1zPXWOd2Bg';" alt="Fashion In Politics Christine Lagarde Style Older Fashion Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fashion In Politics Christine Lagarde Style Older Fashion Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/30/7a/24307a8a09fa8383b2246c40c0adc4f7.jpg" data-lightbox="roadtrip" data-title="Pin On Gorgeous Grey">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/30/7a/24307a8a09fa8383b2246c40c0adc4f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6eAV9F1ttSO6yvAP4Pe9q_nhDKXoB4URuTw';" alt="Pin On Gorgeous Grey">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gorgeous Grey</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/44/48/7244488b36d18f007ebafe5814e85623.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/44/48/7244488b36d18f007ebafe5814e85623.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB0j2-5L0lFwc_ufRMayTdUGRhto9UT2Et3A';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/60/d0/3c60d02fabee659c620539d6579d16f2.jpg" data-lightbox="roadtrip" data-title="News Centralbanking Imf Chief Lagarde Calls For Exploration Of State Backed Digital Currencies Bit Ly Ebidsale Bi Bitcoin Currency What Is Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/60/d0/3c60d02fabee659c620539d6579d16f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQok9WbO_1D0WNZFU3sXvrCtMbUUodolCphHw';" alt="News Centralbanking Imf Chief Lagarde Calls For Exploration Of State Backed Digital Currencies Bit Ly Ebidsale Bi Bitcoin Currency What Is Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Centralbanking Imf Chief Lagarde Calls For Exploration Of State Backed Digital Currencies Bit Ly Ebidsale Bi Bitcoin Currency What Is Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/ec/03/8bec039bf8dcf0b209632491031f5d74.jpg" data-lightbox="roadtrip" data-title="Imf Funds For Greece Not Assured Grey Hair Inspiration Beautiful Women Over 50 Older Women Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/ec/03/8bec039bf8dcf0b209632491031f5d74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT54g_6sxd0h0pjr_dsk7Nk4PA9hOFW52GPgg';" alt="Imf Funds For Greece Not Assured Grey Hair Inspiration Beautiful Women Over 50 Older Women Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Funds For Greece Not Assured Grey Hair Inspiration Beautiful Women Over 50 Older Women Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/2c/90/692c90641159c1ade29ed37b1d14f3c6.png" data-lightbox="roadtrip" data-title="Former International Monetary Fund Imf Chief Christine Lagarde Has Recently Stepped Down From Her Post After Eight Boost Economy Economy Today Secret Meeting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/2c/90/692c90641159c1ade29ed37b1d14f3c6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXZ5rNpflEwEHNWkXjsOVNnns8IEbXom50MA';" alt="Former International Monetary Fund Imf Chief Christine Lagarde Has Recently Stepped Down From Her Post After Eight Boost Economy Economy Today Secret Meeting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Former International Monetary Fund Imf Chief Christine Lagarde Has Recently Stepped Down From Her Post After Eight Boost Economy Economy Today Secret Meeting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/39/0a/b4/390ab42de732973f8882b6d5834538d8.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Imf Chief Christine Lagarde Visits Fox Business Network Powerful Women Business Women Aging Beautifully">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/39/0a/b4/390ab42de732973f8882b6d5834538d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoKlnf-QtowlweqPxShOlWmO-qrk-8KieDWg';" alt="Christine Lagarde Photos Photos Imf Chief Christine Lagarde Visits Fox Business Network Powerful Women Business Women Aging Beautifully">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Imf Chief Christine Lagarde Visits Fox Business Network Powerful Women Business Women Aging Beautifully</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/7e/8f/b17e8f57d24d81e889e100e9d6148284.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Chancellor George Osborne Imf Managing Director Christine Lagarde Speak At Chatham House Christine Parisian Style Chatham">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/7e/8f/b17e8f57d24d81e889e100e9d6148284.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGvr9fHvmb-3vsrklfIYV2VKqoP48bXcQ7A';" alt="Christine Lagarde Photos Photos Chancellor George Osborne Imf Managing Director Christine Lagarde Speak At Chatham House Christine Parisian Style Chatham">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Chancellor George Osborne Imf Managing Director Christine Lagarde Speak At Chatham House Christine Parisian Style Chatham</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/29/6b/99296bc827b18fa297a8517a66a15199.jpg" data-lightbox="roadtrip" data-title="Pin On This Girl Is On Fire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/29/6b/99296bc827b18fa297a8517a66a15199.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNgHkFOI5PHeo2o7EPaqp-A5vVrqMmvFGyrQ';" alt="Pin On This Girl Is On Fire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On This Girl Is On Fire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/35/d9/9035d9d484d0bd239be41531e11dddc5.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Spring Meetings Held In Washington Dc Older Women Fashion Stylish Older Women Powerful Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/35/d9/9035d9d484d0bd239be41531e11dddc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYlOWfZjbvayUSExuo_ceFnYGlJjJRdbzyg';" alt="Christine Lagarde Photos Photos Spring Meetings Held In Washington Dc Older Women Fashion Stylish Older Women Powerful Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Spring Meetings Held In Washington Dc Older Women Fashion Stylish Older Women Powerful Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/c3/0f/d7c30f98bb73e2153399d53adc98254d.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Imf Md Beautiful Women Over 50 Over 50 Womens Fashion Powerful Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/c3/0f/d7c30f98bb73e2153399d53adc98254d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhbBBYXD3lpwLqC-UcyhavJBhUWFl-rsSQ-Q';" alt="Christine Lagarde Imf Md Beautiful Women Over 50 Over 50 Womens Fashion Powerful Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Imf Md Beautiful Women Over 50 Over 50 Womens Fashion Powerful Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/argentina-imf-talks.html">Argentina Imf Talks</a></li>
+													<li class="list-group-item"><a href="/applebees-veterans.html">Applebees Veterans</a></li>
+													<li class="list-group-item"><a href="/army-discount-ee.html">Army Discount Ee</a></li>
+													<li class="list-group-item"><a href="/argentina-imf-fernandez.html">Argentina Imf Fernandez</a></li>
+													<li class="list-group-item"><a href="/apple-music-military-rate.html">Apple Music Military Rate</a></li>
+													<li class="list-group-item"><a href="/argentina-imf-agreement-2018.html">Argentina Imf Agreement 2018</a></li>
+													<li class="list-group-item"><a href="/army-discount-haven.html">Army Discount Haven</a></li>
+													<li class="list-group-item"><a href="/apple-veterans-website.html">Apple Veterans Website</a></li>
+													<li class="list-group-item"><a href="/apple-veterans-affairs.html">Apple Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/army-discount-argos.html">Army Discount Argos</a></li>
+													<li class="list-group-item"><a href="/army-canteen-discount-on-electronics.html">Army Canteen Discount On Electronics</a></li>
+													<li class="list-group-item"><a href="/army-discount-apple.html">Army Discount Apple</a></li>
+													<li class="list-group-item"><a href="/apple-watch-veterans-day-challenge.html">Apple Watch Veterans Day Challenge</a></li>
+													<li class="list-group-item"><a href="/are-there-any-coupons-for-old-navy.html">Are There Any Coupons For Old Navy</a></li>
+													<li class="list-group-item"><a href="/army-calling-back-vets-2020.html">Army Calling Back Vets 2020</a></li>
+													<li class="list-group-item"><a href="/armed-forces-veterans-day-images.html">Armed Forces Veterans Day Images</a></li>
+													<li class="list-group-item"><a href="/army-bike-discount.html">Army Bike Discount</a></li>
+													<li class="list-group-item"><a href="/army-discount-for-disneyland.html">Army Discount For Disneyland</a></li>
+													<li class="list-group-item"><a href="/apple-music-for-veterans.html">Apple Music For Veterans</a></li>
+													<li class="list-group-item"><a href="/army-discount-colchester-zoo.html">Army Discount Colchester Zoo</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

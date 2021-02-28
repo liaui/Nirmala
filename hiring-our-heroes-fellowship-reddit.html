@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hiring Our Heroes Fellowship Reddit - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hiring Our Heroes Fellowship Reddit",
+  "datePublished": "2021-02-28",
+  "image": "https://mms.businesswire.com/media/20160719005581/en/535464/5/DSC06586.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hiring+our+heroes+fellowship+reddit",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hiring Our Heroes Fellowship Reddit</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Hiring Our Heroes Corporate Fellowship Program Information Session for Prospective Fellows. We can help veterans tailor their resumes to appeal to civilian employers. Bureau of Labor Statistics. <br>				
+			</p>
+										<a class="badge badge-success" href="/retired-military-jets-for-sale.html">retired military jets for sale</a>
+											<a class="badge badge-success" href="/retired-military-wearing-uniform.html">retired military wearing uniform</a>
+											<a class="badge badge-danger" href="/sample-dd-214-navy.html">sample dd 214 navy</a>
+											<a class="badge badge-secondary" href="/request-old-dd214.html">request old dd214</a>
+											<a class="badge badge-success" href="/reservist-recall-active-duty.html">reservist recall active duty</a>
+											<a class="badge badge-primary" href="/sacramento-valley-va-national-cemetery-dixon.html">sacramento valley va national cemetery dixon</a>
+											<a class="badge badge-danger" href="/retired-military-united-airlines.html">retired military united airlines</a>
+											<a class="badge badge-success" href="/semi-annual-report-by-imf.html">semi annual report by imf</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/6nZHHCWAL_c/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Corporate Fellowship Program National Capital Region Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/6nZHHCWAL_c/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg_JI1OivMDR_Q6r443YzWioNiXmWxM-l-0g';" alt="Hiring Our Heroes Corporate Fellowship Program National Capital Region Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Corporate Fellowship Program National Capital Region Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2017/05/26/479496/original.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Corporate Fellowship Program Offers Management Opportunities Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2017/05/26/479496/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPI5_d7WqC-vz9C5FKo62AfqaIWJPCvCXiVw';" alt="Hiring Our Heroes Corporate Fellowship Program Offers Management Opportunities Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Corporate Fellowship Program Offers Management Opportunities Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image800w/public/20200521-SFP-Annoucement-fb-tw-li.jpg?itok=vTauv1mG" data-lightbox="roadtrip" data-title="Hiring Our Heroes Salesforce Fellowship Puts Veterans Military Spouses On Path For In Demand Tech Careers U S Chamber Of Commerce Foundation">
+											<img class="card-img v-image ads-img " src="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image800w/public/20200521-SFP-Annoucement-fb-tw-li.jpg?itok=vTauv1mG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWRf4XOKKCvTawE6GKx2JOmKw3wGhgz5BhQ';" alt="Hiring Our Heroes Salesforce Fellowship Puts Veterans Military Spouses On Path For In Demand Tech Careers U S Chamber Of Commerce Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Salesforce Fellowship Puts Veterans Military Spouses On Path For In Demand Tech Careers U S Chamber Of Commerce Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2017/03/15/470001/size0-full.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Fellowship Available To Soldiers Here Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2017/03/15/470001/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScK40v-zbsxWa-_JYmC0g53gQkHkINAjipuA';" alt="Hiring Our Heroes Fellowship Available To Soldiers Here Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Fellowship Available To Soldiers Here Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2018/03/Corporate-Fellows-Gabrielle-Quatse-Verizon.png" data-lightbox="roadtrip" data-title="Verizon Archives Hiring Our Heroes Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2018/03/Corporate-Fellows-Gabrielle-Quatse-Verizon.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcDLKm7NHgyjH6oErMYgKpJXSoMz-rVbOhw';" alt="Verizon Archives Hiring Our Heroes Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Verizon Archives Hiring Our Heroes Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2016/02/29/424989/original.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Program Offers Potential Job Opportunities To Transitioning Service Members Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2016/02/29/424989/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgabPT8w-4Lm5qx-IplLzXGf_KxxLuJ2Cg1Q';" alt="Hiring Our Heroes Program Offers Potential Job Opportunities To Transitioning Service Members Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Program Offers Potential Job Opportunities To Transitioning Service Members Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://online.fliphtml5.com/ugwgi/jqgq/files/large/2.jpg?1609859613" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgabPT8w-4Lm5qx-IplLzXGf_KxxLuJ2Cg1Q';" alt="Hiring Our Heroes Program Offers Potential Job Opportunities To Transitioning Service Members Article The United States Army">
+										<div class="card-body">
+						<h3 class="h5"><b>Chamber of Commerce Foundations Hiring Our Heroes HOH initiative launched in March 2011 as a nationwide effort to connect veterans service members and military spouses with meaningful employment opportunities.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hiring our heroes fellowship reddit</strong>. 
+								
+																	Program managers also monitor and ensure the programs effectiveness handle. 
+																	All storiesanecdotes are welcome -- good bad and ugly alike. 
+																	When veterans leave the military to find civilian employment Hire Our Heroes is right there to assist them including assistance in writing resumes and finding employment. 
+																	View Digna Marie Forbes MPHS profile on LinkedIn the worlds largest professional community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My experience in the Hiring Our Heroes Corporate Fellowship Program has been very educational and a great way to help in my transition from 20 years of service to a private sector job search. 
+																	Although the CFP is held in part in a workplace it is intended to provide training similar to what you would receive from an educational institution and is not employment. 
+																	Working with the US. 
+																	As part of their 11-week Fellowship our 27 Hiring Our Heroes Fellows will make an impact across the business in areas like Corporate Global Network and Technology GNT Verizon Business Group VBG and Verizon Consumer Group VCG. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chamber of Commerce Foundation. 
+																	See the complete profile on LinkedIn and discover. 
+																	The Military Spouse Fellowship Program is one of the many ways Wounded Warrior Project and Hiring Our Heroes collaborate to provide the veteran and caregiver community the resources they need and deserve. 
+																	Active duty candidates must. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Program managers coordinate with the fellows military leadership and act as a liaison with the host companies. 
+																	Please explore some of the resume builder links and templates below to help get you started. 
+																	The program offers three-month. 
+																	The professional development and direct connection to local employers offered through the 6-week program enable military spouses to quickly build their networks and gain localized. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Hiring Our Heroes Corporate Fellowship Program CFP is an innovative program that provides transitioning service members and military spouses with professional training and hands-on experience in the civilian workforce. 
+																	So Im considering transitioning from Active Duty to the civilian world towards the end of next year. 
+																	The professional training networking and hands-on experience the program affords will continue to present life-changing opportunities. 
+																	Bailey Rinella manager of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join me at this Hiring Our Heroes webinar. 
+																	In 2018 the program served 729 corporate fellows in three cohorts across 15 locations. 
+																	The Hiring Our Heroes Corporate Fellowship Program CFP can help launch your civilian career in the industry best suited to your skill set and experience level. 
+																	Hiring Our Heroes is a nationwide initiative to help veterans transitioning service members and military spouses find meaningful employment opportunitiesDonate Today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The experiences from working directly with Amazon over the last 12 weeks have been amazing. 
+																	Has anyone used the Hiring Our Heroes Corporate Fellowship Program that can give me some pros and cons. 
+																	The Hiring Our Heroes Military Spouse Fellowship Program MSFP is a cutting-edge initiative that provides military spouses with professional training networking and hands-on experience in the civilian workforce. 
+																	Hiring our Heroes For those of you within 180 days of separationretirement you can apply for the Hiring Heroes fellowship program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We help our candidates tell their personal story in a compelling way and our hostsponsors coach them throughout the fellowship ensuring theyre on track for a full. 
+																	Louis noted that Hiring Our Heroes launched in 2011 when veteran unemployment stood at 121 according to the US. 
+																	Hiring Our Heroes provides a program manager to monitor each fellows participation and progress. 
+																	You are participating in training Training Program at the Fellowship Host noted below Fellowship Host for your educational benefit as part of the Corpor ate Fellowship Program CFP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lockheed Martin Heroes removes the guesswork by translating military or career skills to our career opportunities and prepares Lockheed Martin Heroes for dynamic career changes. 
+																	Im currently in the NCR if any of the experiences are specific to this area. 
+																	Chamber of Commerce Foundations Hiring Our Heroes fellowship program in St. 
+																	Fort Huachuca Arizona -- Hiring Our Heroes held an information briefing for the Arizona Corporate Fellowship Program Mar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Hiring Our Heroes Corporate Fellowship Program is coming off a banner year. 
+																	More than 200 companies have participated in the program including Amazon CarMax Compass Group Cushman Wakefield Dell Hangar Hospital Corporation of America HCA IBM. 
+																	A program of the US. 
+																	Chamber of Commerces vast network of state and local chambers and strategic partners from the public private and non-profit sectors our goal is to create a movement across America in hundreds of communities where veterans and military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be on active duty and within 180 days of transition separation or retirement from military service at the time of the 12-week program and. 
+																	2 at the Education Center here. 
+																	By 2019 it had fallen to 31 the lowest rate reported since 2000. 
+																	Digna has 14 jobs listed on their profile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joining us from the Army Air Force Navy and Marine Corps our new Fellows are excited to join the V Team. 
+																	What is the role of the Fellowship Program Manager. 
+																	It is limited to certain installations. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hcatodayblog.com/wp-content/uploads/2017/08/MichellMarkGrad-1.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Veteran Shares Transition To Hca Through Fellowship Program Hca Today">
+											<img class="card-img v-image ads-img " src="https://hcatodayblog.com/wp-content/uploads/2017/08/MichellMarkGrad-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNkpZmvSxcTIBIMiWJflubbdGy0ntn44VPzA';" alt="Hiring Our Heroes Veteran Shares Transition To Hca Through Fellowship Program Hca Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Veteran Shares Transition To Hca Through Fellowship Program Hca Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/-Ijzuo85tYE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Corporate Fellowship Program Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/-Ijzuo85tYE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjfGNBQ07QvLIsQb9UF9CWyHIwb0f_CE8eA';" alt="Hiring Our Heroes Corporate Fellowship Program Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Corporate Fellowship Program Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image800w/public/20258374_653359881504476_2483844282177706371_n.jpg?itok=rF63Zijj" data-lightbox="roadtrip" data-title="Hiring Our Heroes Corporate Fellowship Program Celebrates Three Years In Washington U S Chamber Of Commerce Foundation">
+											<img class="card-img v-image ads-img " src="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image800w/public/20258374_653359881504476_2483844282177706371_n.jpg?itok=rF63Zijj" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrNTZxfczq2kSdURus5q4JSTw2zKWjbivHzg';" alt="Hiring Our Heroes Corporate Fellowship Program Celebrates Three Years In Washington U S Chamber Of Commerce Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Corporate Fellowship Program Celebrates Three Years In Washington U S Chamber Of Commerce Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ausa.org/sites/default/files/articles/hiringourheroes.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Jobs For Veterans And Military Spouses Ausa">
+											<img class="card-img v-image ads-img " src="https://www.ausa.org/sites/default/files/articles/hiringourheroes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVv3HplPI5UYqFHgyuekmXKFHjxpQ4hokVCw';" alt="Hiring Our Heroes Jobs For Veterans And Military Spouses Ausa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Jobs For Veterans And Military Spouses Ausa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://online.fliphtml5.com/ugwgi/jqgq/files/large/2.jpg?1609859613" data-lightbox="roadtrip" data-title="Mseez Playbook Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://online.fliphtml5.com/ugwgi/jqgq/files/large/2.jpg?1609859613" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCxWrSlTAZZf8q5R8K2INpYxmjVgHEZ0PnQ';" alt="Mseez Playbook Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mseez Playbook Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="zm165zMpC32N3M" data-lightbox="roadtrip" data-title="Https Home Army Mil Imcom Index Php Download File Force 216 320">
+											<img class="card-img v-image ads-img " src="zm165zMpC32N3M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTsKHGQSBxFRfJl8fszTkSUp4GfPEdrSnuAA';" alt="Https Home Army Mil Imcom Index Php Download File Force 216 320">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Home Army Mil Imcom Index Php Download File Force 216 320</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/best-bets.jpg" data-lightbox="roadtrip" data-title="Salesforce Fellowship Program Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/best-bets.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaiRYpB9nZQFvRsDV-FI-lQK1cTU08DmlGg';" alt="Salesforce Fellowship Program Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salesforce Fellowship Program Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2018/12/Summit-Banner-2.jpg" data-lightbox="roadtrip" data-title="Corporate Fellowship Program Faqs Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2018/12/Summit-Banner-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8q-_FVm4OLV6CBkDSNv5JjApF1mOKwNWKA';" alt="Corporate Fellowship Program Faqs Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corporate Fellowship Program Faqs Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/corporate-fellowship-program.jpg" data-lightbox="roadtrip" data-title="Apply To Become A Fellow Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/corporate-fellowship-program.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0R5cVVLZIIgAUtHfHYLN110A_OeOcJPaKQ';" alt="Apply To Become A Fellow Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apply To Become A Fellow Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mms.businesswire.com/media/20160719005581/en/535464/5/DSC06586.jpg" data-lightbox="roadtrip" data-title="Simplilearn Partners With Hiring Our Heroes To Offer Skills Based Training And Certification To Active Duty Military Business Wire">
+											<img class="card-img v-image ads-img " src="https://mms.businesswire.com/media/20160719005581/en/535464/5/DSC06586.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbaDdNGT73kWRq9YPOHgtcOtUG6IpTUSVqvA';" alt="Simplilearn Partners With Hiring Our Heroes To Offer Skills Based Training And Certification To Active Duty Military Business Wire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Simplilearn Partners With Hiring Our Heroes To Offer Skills Based Training And Certification To Active Duty Military Business Wire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/12/2019-Highlights-Hiring-Our-Heroes.jpg" data-lightbox="roadtrip" data-title="Lockheed Martin Archives Hiring Our Heroes Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/12/2019-Highlights-Hiring-Our-Heroes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3wlegHtV1n8ZpV9qf-9gl0NZ4dBiYuCkIQg';" alt="Lockheed Martin Archives Hiring Our Heroes Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lockheed Martin Archives Hiring Our Heroes Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uschamberfoundation.org/sites/default/files/styles/slideshow_image_800x470/public/slide/images/Colby.png?itok=NQqXlIRx" data-lightbox="roadtrip" data-title="Testimonials U S Chamber Of Commerce Foundation">
+											<img class="card-img v-image ads-img " src="https://www.uschamberfoundation.org/sites/default/files/styles/slideshow_image_800x470/public/slide/images/Colby.png?itok=NQqXlIRx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoO2DfTlHPV-BZMOxmV9VwpWmBEKiuexiYdA';" alt="Testimonials U S Chamber Of Commerce Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Testimonials U S Chamber Of Commerce Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/online.fliphtml5.com/ugwgi/nfls/files/large/2.jpg" data-lightbox="roadtrip" data-title="Best Bets Military Spouse Careers Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/online.fliphtml5.com/ugwgi/nfls/files/large/2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8jOY6rXXOlicd5NM72iLiZrptsaH3JumOPQ';" alt="Best Bets Military Spouse Careers Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Bets Military Spouse Careers Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/N30CrXRVTz4/hqdefault.jpg" data-lightbox="roadtrip" data-title="Corporate Fellowship Program Year In Review 2020 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/N30CrXRVTz4/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdbMiLCqbNBPL28Qy_YvMCe33FIIicIiExw';" alt="Corporate Fellowship Program Year In Review 2020 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corporate Fellowship Program Year In Review 2020 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/C6DKq830v48/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Hiring Our Heroes Corporate Fellowship Program Overview Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/C6DKq830v48/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4m2VDA4cCEHNJdLsI25VMqFostJjj1quSA';" alt="Hiring Our Heroes Corporate Fellowship Program Overview Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring Our Heroes Corporate Fellowship Program Overview Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-owned-business-christmas-gifts.html">Veteran Owned Business Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-colorado-springs.html">Veteran Owned Business Colorado Springs</a></li>
+													<li class="list-group-item"><a href="/veteran-deals-in-portland-oregon.html">Veteran Deals In Portland Oregon</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-google.html">Veteran Owned Business Google</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-face-mask.html">Veteran Owned Business Face Mask</a></li>
+													<li class="list-group-item"><a href="/veteran-deals-in-wenatchee-washington.html">Veteran Deals In Wenatchee Washington</a></li>
+													<li class="list-group-item"><a href="/veteran-affairs-employee-discounts.html">Veteran Affairs Employee Discounts</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-4th-of-july.html">Veteran Discounts 4th Of July</a></li>
+													<li class="list-group-item"><a href="/veteran-meal-deals-near-me.html">Veteran Meal Deals Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-credit-card-deals.html">Veteran Credit Card Deals</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-vacations.html">Veteran Discounts Vacations</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-at-lowes.html">Veteran Discounts At Lowes</a></li>
+													<li class="list-group-item"><a href="/veteran-benefits-discounts.html">Veteran Benefits Discounts</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-business-benefits.html">Veteran Owned Business Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-att.html">Veteran Discounts Att</a></li>
+													<li class="list-group-item"><a href="/veteran-day-deals-in-las-vegas.html">Veteran Day Deals In Las Vegas</a></li>
+													<li class="list-group-item"><a href="/vet-tv-discount-code.html">Vet Tv Discount Code</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-today.html">Veteran Discounts Today</a></li>
+													<li class="list-group-item"><a href="/veteran-day-deals-houston.html">Veteran Day Deals Houston</a></li>
+													<li class="list-group-item"><a href="/veteran-discounts-in-oklahoma.html">Veteran Discounts In Oklahoma</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

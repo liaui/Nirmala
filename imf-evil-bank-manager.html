@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Evil Bank Manager - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Evil Bank Manager",
+  "datePublished": "2021-02-28",
+  "image": "http://www.marvingames.com/wp-content/uploads/2018/12/evil-bank-manager-screenshot.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+evil+bank+manager",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Evil Bank Manager</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">From Evil Bank Manager Wiki. Investment candidates are first. View Kenny DAngelos profile on LinkedIn the worlds largest professional community. <br>				
+			</p>
+										<a class="badge badge-dark" href="/imf-world-bank-meetings-2021.html">imf world bank meetings 2021</a>
+											<a class="badge badge-danger" href="/imf-world-economic-outlook-july-2018.html">imf world economic outlook july 2018</a>
+											<a class="badge badge-warning" href="/imf-world-economic-outlook-exchange-rate.html">imf world economic outlook exchange rate</a>
+											<a class="badge badge-secondary" href="/imf-world-economic-outlook-nepal.html">imf world economic outlook nepal</a>
+											<a class="badge badge-primary" href="/imf-world-economic-outlook-ghana.html">imf world economic outlook ghana</a>
+											<a class="badge badge-info" href="/imf-world-crisis.html">imf world crisis</a>
+											<a class="badge badge-primary" href="/imf-world-bank-wto.html">imf world bank wto</a>
+											<a class="badge badge-dark" href="/imf-world-economic-outlook-india-gdp.html">imf world economic outlook india gdp</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the highest quality video and picture content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/78ybm0etIiU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Let S Play Part 5 Imf Evil Bank Manager Gameplay Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/78ybm0etIiU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_oDgA7udkvydctzquzTJFCRIPFvuGRp8pA';" alt="Evil Bank Manager Let S Play Part 5 Imf Evil Bank Manager Gameplay Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Let S Play Part 5 Imf Evil Bank Manager Gameplay Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/ShSxsFlMPa8/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Imf Auction Let S Play Ep 5 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/ShSxsFlMPa8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQozdI9UTbhrUkbxaaQuMej1lgKxXFfgFqXvQ';" alt="Evil Bank Manager Imf Auction Let S Play Ep 5 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Imf Auction Let S Play Ep 5 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://imageshack.com/a/img921/6008/NRhwpu.png" data-lightbox="roadtrip" data-title="Reports About Bugs Evil Bank Manager General Discussions">
+											<img class="card-img v-image ads-img " src="https://imageshack.com/a/img921/6008/NRhwpu.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6pDnbICaE24BrP6jg_5QsSOGELjsCURofA';" alt="Reports About Bugs Evil Bank Manager General Discussions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reports About Bugs Evil Bank Manager General Discussions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.zeepond.com/images/reviews3/evil-bank-manager-bottom-screenshot.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager">
+											<img class="card-img v-image ads-img " src="https://www.zeepond.com/images/reviews3/evil-bank-manager-bottom-screenshot.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcw54H2IeanXbo5AUdSURdHlZ8Ixb8xYEGeg';" alt="Evil Bank Manager">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.yekbot.com/wp-content/uploads/2018/11/Evil-Bank-Manager-Tips-and-Tricks.jpeg" data-lightbox="roadtrip" data-title="Evil Bank Manager Tips And Tricks">
+											<img class="card-img v-image ads-img " src="https://www.yekbot.com/wp-content/uploads/2018/11/Evil-Bank-Manager-Tips-and-Tricks.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV79uyoRmxi0h5h4pugj-sqKdsaNmz3iYDKA';" alt="Evil Bank Manager Tips And Tricks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Tips And Tricks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.imgur.com/43IL7HP.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Ultra Hard First Attempt Victory Album On Imgur">
+											<img class="card-img v-image ads-img " src="https://i.imgur.com/43IL7HP.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfvB4sm9FG4DqKn_G40Nl1y6MbNvKScfdGA';" alt="Evil Bank Manager Ultra Hard First Attempt Victory Album On Imgur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Ultra Hard First Attempt Victory Album On Imgur</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.ytimg.com/vi/IRSf2nF6nvE/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfvB4sm9FG4DqKn_G40Nl1y6MbNvKScfdGA';" alt="Evil Bank Manager Ultra Hard First Attempt Victory Album On Imgur">
+										<div class="card-body">
+						<h3 class="h5"><b>Aug 2016 Present 3 years 5 months.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf evil bank manager</strong>. 
+								
+																	Earn your billion during the era of great geographical discoveries and before the industrial revolution. 
+																	Were trying our hand at managing a bank. 
+																	GlobalPhone Gphone is pleased to provide phone services in the Jacksonville FL area. 
+																	Science represents the technological development of your bank and offers a number of bonuses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Back by popular demand Evil Bank Manager is an economic simulator where you compete to control the entire worlds wealth. 
+																	Acquire 51 of IMF. 
+																	So are you ready to create the biggest bank in the world. 
+																	This is covert and total enslavement of many foreign government agents who do their work through corruption to make sure the system runs smooth with no disruptions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But it could be an idea to add multiple smaller steps when the price gets closer to the lowest possible value1. 
+																	IMF achievement in Evil Bank Manager. 
+																	You use money for almost everything and in a way its your health bar. 
+																	Buy 51 IMF shares. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Research points are accumulated so even if you forget to set a research goal youre never in a losing position. 
+																	Hope this helps all starters. 
+																	Your goal is to become the biggest bank in the world. 
+																	This is actually a sound. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Managers produce Science Points. 
+																	Help Reddit App Reddit coins Reddit premium Reddit gifts. 
+																	The complex economy system of the game allows you to profit from every conflict and situation. 
+																	I thought Id throw together some of my thoughts and experience from playing the game recently. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ada Varchola Vice President at Goldman. 
+																	Each Manager produces 25 Science Points and 1 Science Point for each Managers stat point. 
+																	Find guides to this achievement here. 
+																	Thats a player choice in the end. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Created Feb 3 2019. 
+																	Both institutions rely on funds p. 
+																	Billions before the Industrial Revolution. 
+																	Evil Bank Manager Evil Bank Manger is a strategy simulation game developed and published by Hamster Gaming where you have to establish your own bank throughout Europe North Africa and Asia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can keep playing after victory perhaps. 
+																	Money is the root of all evil and the primary resource of the game. 
+																	Jacksonville Florida Area. 
+																	Guides Evil Bank Manager - Starting Guide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Research is conducted automatically. 
+																	All Discussions Screenshots Artwork Broadcasts Videos News Guides Reviews. 
+																	SVP Consumer Product Strategy Manager Bank of America. 
+																	Evil Bank Manager - Starting Guide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gain influence wealth as well as respect and make billions in times of great geographical development and pre the industrial revolution. 
+																	Building a Community around the new game Evil Bank Manager by Hamsters Gaming. 
+																	The IMF and World Bank set up the World beautifully only to fulfill their needs countries signing over the deeds. 
+																	The stories youve been reading refer to a period in the 1980s where many developing countries ran into problems servicing their foreign debts and turned to the World Bank and IMF for help. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Assets investments credit repos. 
+																	An investment bank that just so happens to influence countries and do other shady stuff. 
+																	Starting from a simple position as a regional banker in one particular nation your ultimate goal is to become the head of the international markets controlled by the IMF. 
+																	And the last jump before it goes to 1 was higher then the complete worth of my bank. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No they are not evil. 
+																	Written by mssux Oct 7 2019 As the game only has a very simple tutorial and limited help. 
+																	Victory by owning 51 of IMF is kinda no fun for me. 
+																	2 I always chose the most expensive candidates because they offer more limit for all jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See the complete profile on LinkedIn and discover Kennys. 
+																	Kenny has 10 jobs listed on their profile. 
+																	1 First I skipped the tutorial because it forces me to chose a bad candidate for investments. 
+																	Because in the later auctions it went from 300mil to 1 which seems kinda insane. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Policy support is key to financial stability with IMFs Fabio Natalucci SDR Rates for February 11 2021 SDR Interest Rate 0090 1 USD SDR 069329 MORE The IMF and COVID-19. 
+																	Unlike most strategy games Evil Bank Manager differentiates between different kinds of assets including properties resources and actual hard cold cash. 
+																	But with a new game called Evil Bank Manager one developer wants to take a more tongue-in-cheek approach to the issue. 
+																	Your goal is not to make a lot of money but to start printing them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im not sure how hard it would be. 
+																	I would like victory by destroying other banks or babysitting one country to total domination. 
+																	Tips and Tricks 0 Choose the faction of your choicedecide visely depending on your gameplay. 
+																	Evil Bank Manager is an exciting economic simulator from Hamsters Gaming in which you can become the most successful capitalist in the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Founded in 1995 GlobalPhone is licensed by the FCC as a 214 carrier and we operate our very own TDM and VoIP-based voice switches to ensure better service at lower cost. 
+																	Get the game here. 
+																	Evil Bank Manager offers you the opportunity to fulfill your dream of millions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.marvingames.com/wp-content/uploads/2018/12/evil-bank-manager-screenshot.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Walkthrough And Guide Part 1 To 9 Marvin Games">
+											<img class="card-img v-image ads-img " src="http://www.marvingames.com/wp-content/uploads/2018/12/evil-bank-manager-screenshot.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3eDpFJLOlh8iUC2hcsG-bzRUmmGP40L4mPQ';" alt="Evil Bank Manager Walkthrough And Guide Part 1 To 9 Marvin Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Walkthrough And Guide Part 1 To 9 Marvin Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.youtube.com/vi/zUhyqjBd4HY/0.jpg" data-lightbox="roadtrip" data-title="Imf How Many Turn Take To The Next Img Bid Evil Bank Manager General Discussions">
+											<img class="card-img v-image ads-img " src="https://img.youtube.com/vi/zUhyqjBd4HY/0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP72q_VvRTIFmH7rUFSyAuAeDK1yd2k4iAZw';" alt="Imf How Many Turn Take To The Next Img Bid Evil Bank Manager General Discussions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf How Many Turn Take To The Next Img Bid Evil Bank Manager General Discussions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.imgur.com/PgU62W7.png" data-lightbox="roadtrip" data-title="Evil Bank Manager Science Victory Album On Imgur">
+											<img class="card-img v-image ads-img " src="https://i.imgur.com/PgU62W7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejqOXagK5oL6xn0b44U0qEWQLAgybbYob1A';" alt="Evil Bank Manager Science Victory Album On Imgur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Science Victory Album On Imgur</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.akamai.steamstatic.com/steam/apps/896160/header.jpg?t=1599840357" data-lightbox="roadtrip" data-title="Evil Bank Manager Steam News Hub">
+											<img class="card-img v-image ads-img " src="https://cdn.akamai.steamstatic.com/steam/apps/896160/header.jpg?t=1599840357" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8absCzSR8DsXcObOsx5UdfnoKemiveGMdVA';" alt="Evil Bank Manager Steam News Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Steam News Hub</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/IRSf2nF6nvE/hqdefault.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Gameplay Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/IRSf2nF6nvE/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykY-8OGIuFOuscCQaxExK6ln_btni-NpZoQ';" alt="Evil Bank Manager Gameplay Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Gameplay Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.wikia.nocookie.net/evilbankmanager_gamepedia_en/images/6/6d/Coin.png/revision/latest/scale-to-width-down/214?cb=20200114124003" data-lightbox="roadtrip" data-title="Money Evil Bank Manager Wiki">
+											<img class="card-img v-image ads-img " src="https://static.wikia.nocookie.net/evilbankmanager_gamepedia_en/images/6/6d/Coin.png/revision/latest/scale-to-width-down/214?cb=20200114124003" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrG0DddNnAE75m1WjftpUzgEzQRpPjtMLveA';" alt="Money Evil Bank Manager Wiki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Money Evil Bank Manager Wiki</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/33825583/b6efd7647d5ee987b64cc1bab6eb7e9e989cf66d.png" data-lightbox="roadtrip" data-title="Steam Community Evil Bank Manager">
+											<img class="card-img v-image ads-img " src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/33825583/b6efd7647d5ee987b64cc1bab6eb7e9e989cf66d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtUsQBbCcB287ULFDxEEQtOw6v0Ln9A1S6w';" alt="Steam Community Evil Bank Manager">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steam Community Evil Bank Manager</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/C7nUBY2nK8s/maxresdefault.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/C7nUBY2nK8s/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiB_5WmQUkWh9DAqcareljvk_vVjTI4R3Z6A';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://steamuserimages-a.akamaihd.net/ugc/949597315710764694/7FF442B2BF9B69CAE8EDB6A55F3DDDE0680C403A/" data-lightbox="roadtrip" data-title="Steam Community Guide Ultra Hard Guide">
+											<img class="card-img v-image ads-img " src="https://steamuserimages-a.akamaihd.net/ugc/949597315710764694/7FF442B2BF9B69CAE8EDB6A55F3DDDE0680C403A/" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeFNEeuJQzUcHozpwMCB3K-GFsNVOsmoGuIg';" alt="Steam Community Guide Ultra Hard Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steam Community Guide Ultra Hard Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/2FRBcpSFmsE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Control The World S Wealth End Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/2FRBcpSFmsE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIodBVKsnVaobBZuN09ZIWMwIPDP-RKGpqg';" alt="Evil Bank Manager Control The World S Wealth End Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Control The World S Wealth End Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gameplay.tips/uploads/posts/2019-10/1570441010_evil-bank-manager.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Starting Guide">
+											<img class="card-img v-image ads-img " src="https://gameplay.tips/uploads/posts/2019-10/1570441010_evil-bank-manager.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu9YclRBgoWY1FXB5XpKkCSRmaWiaT_43XlA';" alt="Evil Bank Manager Starting Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Starting Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/33825583/2c259db0812e6c009048a77430de70d74bd18694.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/33825583/2c259db0812e6c009048a77430de70d74bd18694.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaoo5gmilz8T8Cz-fBxSF_SixMQUsFEK9kwg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/6e/1a/1b/6e1a1bc6dd2aefc2101528447c58f330.jpg" data-lightbox="roadtrip" data-title="Evil Bank Manager Spiel Manager Spiel Management Evil Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/6e/1a/1b/6e1a1bc6dd2aefc2101528447c58f330.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfFjC-Bpf-m9XK6iUFz8sAqAJ0fJcrT4AziA';" alt="Evil Bank Manager Spiel Manager Spiel Management Evil Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evil Bank Manager Spiel Manager Spiel Management Evil Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/LBLD8SZTnMM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/LBLD8SZTnMM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd6tKosNwg90cXqqU1pd6ILjDhA4GzehVKQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog-imgs-123.fc2.com/k/o/k/kokopa/20181201220209_1.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://blog-imgs-123.fc2.com/k/o/k/kokopa/20181201220209_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNBSj26L2HzlRtgp1rpbb5RL2fwXWC_izkg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-tsc-have-a-military-discount.html">Does Tsc Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/egypt-imf-agreement.html">Egypt Imf Agreement</a></li>
+													<li class="list-group-item"><a href="/first-indian-chief-economist-of-imf.html">First Indian Chief Economist Of Imf</a></li>
+													<li class="list-group-item"><a href="/egypt-imf-loan-plan.html">Egypt Imf Loan Plan</a></li>
+													<li class="list-group-item"><a href="/does-xfinity-give-veteran-discounts.html">Does Xfinity Give Veteran Discounts</a></li>
+													<li class="list-group-item"><a href="/does-tsc-do-military-discount.html">Does Tsc Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/famous-us-navy-veterans.html">Famous Us Navy Veterans</a></li>
+													<li class="list-group-item"><a href="/eastbay-military-discount-promo.html">Eastbay Military Discount Promo</a></li>
+													<li class="list-group-item"><a href="/feds-hire-vets-reddit.html">Feds Hire Vets Reddit</a></li>
+													<li class="list-group-item"><a href="/famous-daves-veterans-day-discounts.html">Famous Daves Veterans Day Discounts</a></li>
+													<li class="list-group-item"><a href="/famous-daves-military-mondays.html">Famous Daves Military Mondays</a></li>
+													<li class="list-group-item"><a href="/eastbay-military-discount-online.html">Eastbay Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-tractor-supply-store-give-military-discount.html">Does Tractor Supply Store Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/egypt-after-imf-program.html">Egypt After Imf Program</a></li>
+													<li class="list-group-item"><a href="/embark-vet-discount-code.html">Embark Vet Discount Code</a></li>
+													<li class="list-group-item"><a href="/eastbay-military-discount-promo-code.html">Eastbay Military Discount Promo Code</a></li>
+													<li class="list-group-item"><a href="/does-tsc-offer-military-discount.html">Does Tsc Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/epic-mountain-express-military-discount.html">Epic Mountain Express Military Discount</a></li>
+													<li class="list-group-item"><a href="/dubai-imf-loan.html">Dubai Imf Loan</a></li>
+													<li class="list-group-item"><a href="/eastbay-do-military-discount.html">Eastbay Do Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf World Bank Spring Meetings 2020 - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf World Bank Spring Meetings 2020",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/a0/6a/2b/a06a2b2e730625fbf287d13f613c5638.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+world+bank+spring+meetings+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf World Bank Spring Meetings 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Monday April 15 to Sunday April 21 2025. Monday April 12 to Sunday April 18. Key events are scheduled for the dates listed above. <br>				
+			</p>
+										<a class="badge badge-info" href="/dd214-navy-shirt.html">dd214 navy shirt</a>
+											<a class="badge badge-warning" href="/disney-cruise-line-military-offers.html">disney cruise line military offers</a>
+											<a class="badge badge-warning" href="/discount-vet-new-orleans.html">discount vet new orleans</a>
+											<a class="badge badge-dark" href="/costco-army-discount-uk.html">costco army discount uk</a>
+											<a class="badge badge-light" href="/disabled-veteran-discounts-california.html">disabled veteran discounts california</a>
+											<a class="badge badge-dark" href="/debt-the-imf-and-the-world-bank-sixty-questions-sixty-answers.html">debt the imf and the world bank sixty questions sixty answers</a>
+											<a class="badge badge-primary" href="/discount-vet-shots-near-me.html">discount vet shots near me</a>
+											<a class="badge badge-primary" href="/dell-veteran-coupon-code.html">dell veteran coupon code</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the highest quality video and picture content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/34/e2/ec/34e2ece00ad046910b16dfe902cd0a55.jpg" data-lightbox="roadtrip" data-title="The Big Asks Africa Needs To Table With The Imf And World Bank Here S The List In 2020 Africa African States List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/34/e2/ec/34e2ece00ad046910b16dfe902cd0a55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FV1laOEvr6zkVrBrkZkfibhKJcbgUwkZWg';" alt="The Big Asks Africa Needs To Table With The Imf And World Bank Here S The List In 2020 Africa African States List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Big Asks Africa Needs To Table With The Imf And World Bank Here S The List In 2020 Africa African States List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/43/53/bf43533898e836a70ca178f80e15cef4.jpg" data-lightbox="roadtrip" data-title="Imf Spring Meetings Digital Money Is Imminent But No Decentralization In Sight Cryptocurrency Blockchain Central Bank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/43/53/bf43533898e836a70ca178f80e15cef4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbwUMFLOUM9iyRI1TYR8MekW4tICO-roeidQ';" alt="Imf Spring Meetings Digital Money Is Imminent But No Decentralization In Sight Cryptocurrency Blockchain Central Bank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Spring Meetings Digital Money Is Imminent But No Decentralization In Sight Cryptocurrency Blockchain Central Bank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/91/b1/08/91b108b323a5800abfa1201670187e04.jpg" data-lightbox="roadtrip" data-title="Bretton Woods Bancor Xrp Imf World Bank Ripple And Sdr Bretton Woods World Ripple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/91/b1/08/91b108b323a5800abfa1201670187e04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvt9l63BMmNJy55Feo_oTx_MwtFJPcjY_7YA';" alt="Bretton Woods Bancor Xrp Imf World Bank Ripple And Sdr Bretton Woods World Ripple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bretton Woods Bancor Xrp Imf World Bank Ripple And Sdr Bretton Woods World Ripple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/b3/fe/2eb3fe87d7f207c906e63612ac988fd9.jpg" data-lightbox="roadtrip" data-title="Imf World Bank Urge Caution With China Loans Loan Developed Nation World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/b3/fe/2eb3fe87d7f207c906e63612ac988fd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtziMtoITSLAQBdI-WpjAfnSoVzTjA-_y6KA';" alt="Imf World Bank Urge Caution With China Loans Loan Developed Nation World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf World Bank Urge Caution With China Loans Loan Developed Nation World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/1c/a9/651ca95dfa4cd2ff1b5dbd168f017af4.jpg" data-lightbox="roadtrip" data-title="Washington Queen Maxima Together With Doctor Kim At The World Bank In Washington She Takes Part In The Queen Maxima Of The Netherlands Queen Maxima Utrecht">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/1c/a9/651ca95dfa4cd2ff1b5dbd168f017af4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRb6m1NfrfZKClvUv2JzC7OJmFliQiA6WJg';" alt="Washington Queen Maxima Together With Doctor Kim At The World Bank In Washington She Takes Part In The Queen Maxima Of The Netherlands Queen Maxima Utrecht">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington Queen Maxima Together With Doctor Kim At The World Bank In Washington She Takes Part In The Queen Maxima Of The Netherlands Queen Maxima Utrecht</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/6a/2b/a06a2b2e730625fbf287d13f613c5638.jpg" data-lightbox="roadtrip" data-title="Pin Auf Sandra Navidi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/6a/2b/a06a2b2e730625fbf287d13f613c5638.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFrSkMfupAoPlrvTRB1oEg2cIDNgWyw5hzQ';" alt="Pin Auf Sandra Navidi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf Sandra Navidi</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b1/61/11/b161112004840b58cfc99acdcfc1b885.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFrSkMfupAoPlrvTRB1oEg2cIDNgWyw5hzQ';" alt="Pin Auf Sandra Navidi">
+										<div class="card-body">
+						<h3 class="h5"><b>IMF-World Bank Spring Meetings 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf world bank spring meetings 2020</strong>. 
+								
+																	Annual Meetings of the World Bank Group and the International Monetary Fund Washington DC. 
+																	Kristalina Georgieva Managing Director of the International Monetary Fund IMF Due to concerns related to COVID-19 the World Bank Group and International Monetary Fund IMF have announced that the 2020 Spring Meetings scheduled to hold between April 13 and 19 will now transition to a virtual format. 
+																	Monday April 18 to Sunday April 24 2023. 
+																	See our FAQ for more information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virtual Spring Meetings of the International Monetary Fund and the World Bank Group. 
+																	The International Monetary Fund IMF-World Bank virtual Spring Meetings took place as global economic turmoil deepened. 
+																	With 189 member countries staff from more than 170 countries and offices in over 130 locations the World Bank Group is a unique global partnership. 
+																	February 26 2020 710 PM PST. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMFC communiqué analysis - Spring Meetings 2020 Analysis of the IMFC communiqué issued on 16 April from the 2020 World Bank and IMF virtual Spring Meetings. 
+																	2020 Spring Meetings of the World Bank Group and the International Monetary Fund Virtual Due to concerns related to COVID-19 the World Bank Group and International Monetary Fund IMF have agreed that the 2020 Spring Meetings will transition to a virtual format. 
+																	Monday April 5 to Sunday April 11 2022. 
+																	Friday October 16 2020 700 am - 930 am EDT International Monetary and Financial Committee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the heart of the Spring Meetings are meetings of the joint World Bank GroupIMF Development Committee and the IMF International Monetary and Financial Committee which discuss progress on the work of. 
+																	Fund has suspended. 
+																	The International Monetary Fund and the World Bank citing concerns about the fast-spreading coronavirus on Tuesday said they will adopt a virtual format for their spring meetings instead of. 
+																	The International Monetary Fund IMF headquarters building is seen ahead of the IMFWorld Bank spring meetings in Washington US April 8 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Monday April 17 to Sunday April 23 2024. 
+																	Thursday October 15 2020 830 am - 1030 am EDT. 
+																	World BankIMF Spring Meetings 2020. 
+																	This years event will take place virtually on April 14-17 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Annual Meetings of the World Bank Group and the International Monetary Fund Washington DC. 
+																	The IMF and the World Bank have agreed to implement a joint plan to adapt the 2020 IMF-World Bank Spring Meetings to a virtual format. 
+																	In the questions answers below we have provided more detailed information on what that means for delegates civil society parliamentarians the media and all other participants in the Spring Meetings. 
+																	2020 Spring Meetings In response to the COVID-19 pandemic the IMF and World Bank Group hosted the 2020 Spring Meetings using a virtual format. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A world in crisis looks for leadership. 
+																	Both Open and Official events were held online during the week of April 14-17. 
+																	Development Committee Communiqué 1. 
+																	Five institutions working for sustainable solutions that reduce poverty and build shared prosperity in developing countries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Mark Perera Maria Jose Romero. 
+																	Helping countries build a green and resilient recovery. 
+																	Monday April 13 to Sunday April 19 2027. 
+																	October 14 16 2022 Marrakech Morocco. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Given growing health concerns related to the virus the Management of the IMF and World Bank Group and their Executive Boards have agreed to implement a joint plan to adapt the 2020 IMF-World Bank Spring Meetings to a virtual format. 
+																	Monday April 21 to Sunday April 27 2026. 
+																	The Spring Meetings will center around the broad theme of From Crisis to Resilience. 
+																	October 15 17 2021 Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	April 9 11 2021 Washington DC. 
+																	Our goal is to serve our membership effectively while ensuring the health and safety of Spring Meetings participants and staff. 
+																	Scale and scope of April gatherings are under reconsideration. 
+																	April 22 24 2022 Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The IMF projected the worst recession since the Great Depression and warned that even this forecast might be too optimistic. 
+																	The Annual Meetings of the Boards of Governors of the World Bank Group WBG and the International Monetary Fund IMF bring together central bankers ministers of finance and development private sector executives representatives from civil society organizations and academics to discuss issues of global concern including the world economic outlook poverty eradication economic development. 
+																	IMF World Bank Weigh Fate of Spring Meetings Amid Outbreak. 
+																	Questions Answers about the 2020 Spring Meetings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Development Committee met virtually today April 17 2020. 
+																	Following the Annual Meetings tradition the Development Committee meets in Washington two years out of three and in order to reflect the international character of the two institutions every third year in a different member country. 
+																	The Spring Meetings will feature the Development Committee and the International Monetary and Financial Committee plenary sessions which discuss progress on the work of the institutions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/2e/0f/0e2e0f763a8d6f96673b25ba980a6363.png" data-lightbox="roadtrip" data-title="About The Imf The International Monetary Fund Imf Is An Organization Of 189 Countries Working To Foster Global Monetary C Finance Projects Indian Government">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/2e/0f/0e2e0f763a8d6f96673b25ba980a6363.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTidREJRMijWxjV1t3sm6hRbHul68_FfFyT_w';" alt="About The Imf The International Monetary Fund Imf Is An Organization Of 189 Countries Working To Foster Global Monetary C Finance Projects Indian Government">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About The Imf The International Monetary Fund Imf Is An Organization Of 189 Countries Working To Foster Global Monetary C Finance Projects Indian Government</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/63/a8/e663a826a9dd32d4d16f5dbaa6590331.jpg" data-lightbox="roadtrip" data-title="Queen Rania At The Imf World Bank 2016 Spring Meeting Queen Rania Royalty Fashion Her Majesty The Queen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/63/a8/e663a826a9dd32d4d16f5dbaa6590331.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewuc_C3AK269WujrTl9IY3MABjX5tt8vs5g';" alt="Queen Rania At The Imf World Bank 2016 Spring Meeting Queen Rania Royalty Fashion Her Majesty The Queen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Queen Rania At The Imf World Bank 2016 Spring Meeting Queen Rania Royalty Fashion Her Majesty The Queen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f3/96/02/f3960275324942db594cb46e7debf759.jpg" data-lightbox="roadtrip" data-title="Washington Queen Maxima Together With Doctor Kim At The World Bank In Washington She Takes Part In The S Queen Maxima Queen Maxima Of The Netherlands Maxima">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f3/96/02/f3960275324942db594cb46e7debf759.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsczemR74kmOz7fXAeMHn7_3hR3RJmN6UxxQ';" alt="Washington Queen Maxima Together With Doctor Kim At The World Bank In Washington She Takes Part In The S Queen Maxima Queen Maxima Of The Netherlands Maxima">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington Queen Maxima Together With Doctor Kim At The World Bank In Washington She Takes Part In The S Queen Maxima Queen Maxima Of The Netherlands Maxima</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a0/e5/ad/a0e5ad45e07e0c88ef9f59fdc7d42818.jpg" data-lightbox="roadtrip" data-title="Pin On Global Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a0/e5/ad/a0e5ad45e07e0c88ef9f59fdc7d42818.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfi9zFBmWuCc6IPN40MxMR30uSefz0iQ7usw';" alt="Pin On Global Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Global Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c5/44/35/c544353914fa30c9179b4671112c27f7.jpg" data-lightbox="roadtrip" data-title="Washington Koningin Maxima Wordt Bij De Wereld Bank In Washington Verwelkomd Door Directeur Frank Heemsk Queen Maxima Utrecht Queen Maxima Of The Netherlands">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c5/44/35/c544353914fa30c9179b4671112c27f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNoC-KHoHJxfDCK_LOy3LwHh4TX0UKuZgp2w';" alt="Washington Koningin Maxima Wordt Bij De Wereld Bank In Washington Verwelkomd Door Directeur Frank Heemsk Queen Maxima Utrecht Queen Maxima Of The Netherlands">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington Koningin Maxima Wordt Bij De Wereld Bank In Washington Verwelkomd Door Directeur Frank Heemsk Queen Maxima Utrecht Queen Maxima Of The Netherlands</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/e7/74/5be7740ff856f8c37f2bfd940f74a503.jpg" data-lightbox="roadtrip" data-title="Cloud Over Global Economy Getting Darker Imf Chief Global Economy Social Global">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/e7/74/5be7740ff856f8c37f2bfd940f74a503.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7B3x5znsJyhbZRUyCooVMIZ3rrDFjU-Msw';" alt="Cloud Over Global Economy Getting Darker Imf Chief Global Economy Social Global">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cloud Over Global Economy Getting Darker Imf Chief Global Economy Social Global</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/e6/c0/cfe6c0b83fe440f16df7eed3bd4bf9e1.jpg" data-lightbox="roadtrip" data-title="Who Ebola Recovery Path In 2020 Health System How To Plan Ebola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/e6/c0/cfe6c0b83fe440f16df7eed3bd4bf9e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMOxBiryvqye7KhVqmk5tw7qRUyoMnRLIvA';" alt="Who Ebola Recovery Path In 2020 Health System How To Plan Ebola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Ebola Recovery Path In 2020 Health System How To Plan Ebola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/b1/de/2fb1de298c13415bd12591d10edb00c2.jpg" data-lightbox="roadtrip" data-title="Word Of The Day 26dec19 In 2020 Good Vocabulary Words Learn English Words English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/b1/de/2fb1de298c13415bd12591d10edb00c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbYWEtCN-q9og4djCgS3kwFWjg2KCAEfPSA';" alt="Word Of The Day 26dec19 In 2020 Good Vocabulary Words Learn English Words English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Word Of The Day 26dec19 In 2020 Good Vocabulary Words Learn English Words English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/c9/e7/dac9e7e538ba77d27437cc33b36f1478.jpg" data-lightbox="roadtrip" data-title="Imf Chief Christine Lagarde To Stand Trial For Negligence In France Christine Orange Pencil Skirts Power Dressing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/c9/e7/dac9e7e538ba77d27437cc33b36f1478.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPf9_7DEGWrtu9sYNCZwe2YupNt_7lCAwhg';" alt="Imf Chief Christine Lagarde To Stand Trial For Negligence In France Christine Orange Pencil Skirts Power Dressing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Chief Christine Lagarde To Stand Trial For Negligence In France Christine Orange Pencil Skirts Power Dressing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/1f/1c/df/1f1cdfa7c7e5a31a690c0cbe1ffab460.jpg" data-lightbox="roadtrip" data-title="Christine Lagarde Photos Photos Spring Meetings Held In Washington Dc Older Women Fashion Stylish Older Women Powerful Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/1f/1c/df/1f1cdfa7c7e5a31a690c0cbe1ffab460.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9I5B7YCe1_j1DLVGWW_uJIWubxlC9TKzj5g';" alt="Christine Lagarde Photos Photos Spring Meetings Held In Washington Dc Older Women Fashion Stylish Older Women Powerful Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christine Lagarde Photos Photos Spring Meetings Held In Washington Dc Older Women Fashion Stylish Older Women Powerful Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2c/60/50/2c6050355f9367dfaf428b0d33bee30f.jpg" data-lightbox="roadtrip" data-title="14 04 2019 Queen Maxima Is In Washington Dc To Attend The Spring Meetings Of The International Monetary Fund And The World Bank Group In Her Capacity As The Un">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2c/60/50/2c6050355f9367dfaf428b0d33bee30f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_1GCA4q4t_loOOn1-GS69EWgg97pHdcs-g';" alt="14 04 2019 Queen Maxima Is In Washington Dc To Attend The Spring Meetings Of The International Monetary Fund And The World Bank Group In Her Capacity As The Un">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 04 2019 Queen Maxima Is In Washington Dc To Attend The Spring Meetings Of The International Monetary Fund And The World Bank Group In Her Capacity As The Un</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/92/52/a1/9252a18866f5219f9c12df86f2140dc0.jpg" data-lightbox="roadtrip" data-title="Opec On Thursday Forecast World Demand For Its Crude Will Decline Next Year As Rivals Pump More Pointing To The Return Of A Surplus Des Big Oil Oils Crude Oil">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/92/52/a1/9252a18866f5219f9c12df86f2140dc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEsu2lzLHJnjxtabxmoUshDK4bXPX_FJMd1g';" alt="Opec On Thursday Forecast World Demand For Its Crude Will Decline Next Year As Rivals Pump More Pointing To The Return Of A Surplus Des Big Oil Oils Crude Oil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opec On Thursday Forecast World Demand For Its Crude Will Decline Next Year As Rivals Pump More Pointing To The Return Of A Surplus Des Big Oil Oils Crude Oil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9b/0e/87/9b0e8785511f72bc151060b21dd3cc66.jpg" data-lightbox="roadtrip" data-title="Imf On Twitter In 2020 Fund Economy Financial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9b/0e/87/9b0e8785511f72bc151060b21dd3cc66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsHw3nmz6mDCa6JIW8-6YNCQnOpIIjuaDrRg';" alt="Imf On Twitter In 2020 Fund Economy Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf On Twitter In 2020 Fund Economy Financial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/3f/0d/6e3f0d86da5d4e4e41755f9d36fc9169.jpg" data-lightbox="roadtrip" data-title="Victorysp Queen Maxima Is On Her Way To Attend The Spring Meeting Of The Worldbank In Her Role As Un Advoc Queen Maxima Queen Maxima Of The Netherlands Queen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/3f/0d/6e3f0d86da5d4e4e41755f9d36fc9169.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFzj0-CYFLtp0Z2YQbHYbcq4VcOEZXjZrTQ';" alt="Victorysp Queen Maxima Is On Her Way To Attend The Spring Meeting Of The Worldbank In Her Role As Un Advoc Queen Maxima Queen Maxima Of The Netherlands Queen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Victorysp Queen Maxima Is On Her Way To Attend The Spring Meeting Of The Worldbank In Her Role As Un Advoc Queen Maxima Queen Maxima Of The Netherlands Queen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/03/37/ed/0337ede756399d675a421f8d7fce1511.jpg" data-lightbox="roadtrip" data-title="Pin On My Collections">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/03/37/ed/0337ede756399d675a421f8d7fce1511.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSRRtPCyQMwhDD4atOApcz0OcJDnhOIR7Xg';" alt="Pin On My Collections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Collections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-and-world-bank-jobs.html">Imf And World Bank Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-and-argentina-history.html">Imf And Argentina History</a></li>
+													<li class="list-group-item"><a href="/imf-and-india-in-hindi.html">Imf And India In Hindi</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-were-created-through.html">Imf And World Bank Were Created Through</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-loan-conditions.html">Imf And World Bank Loan Conditions</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-relationship.html">Imf And World Bank Relationship</a></li>
+													<li class="list-group-item"><a href="/imf-and-argentina-2019.html">Imf And Argentina 2019</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-upsc.html">Imf And World Bank Upsc</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-policies-for-pakistan.html">Imf And World Bank Policies For Pakistan</a></li>
+													<li class="list-group-item"><a href="/imf-and-argentina-crisis.html">Imf And Argentina Crisis</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-quotes.html">Imf And World Bank Quotes</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-president.html">Imf And World Bank President</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-definition.html">Imf And World Bank Definition</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-history.html">Imf And World Bank History</a></li>
+													<li class="list-group-item"><a href="/imf-and-the-world-bank-were-founded-after-what-historical-event.html">Imf And The World Bank Were Founded After What Historical Event</a></li>
+													<li class="list-group-item"><a href="/imf-angola-first-review.html">Imf Angola First Review</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-spring-meetings.html">Imf And World Bank Spring Meetings</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-are-global.html">Imf And World Bank Are Global</a></li>
+													<li class="list-group-item"><a href="/imf-and-world-bank-wikipedia.html">Imf And World Bank Wikipedia</a></li>
+													<li class="list-group-item"><a href="/imf-and-greece-fast-facts.html">Imf And Greece Fast Facts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Loan Military Information - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Loan Military Information",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/b4/68/53/b46853d3a9dd378c49bd1f2923f5e4f7.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+loan+military+information",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Loan Military Information</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Veterans active duty service members and widowed military spouses buy a home. VA Loans A VA mortgage loan also known as a Department of Veterans Affairs home loan is one of the most useful military benefits. A VA loan is a mortgage loan thats backed by the Department of Veterans Affairs VA for those who have served or are presently serving in the US. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-discount-at-express.html">military discount at express</a>
+											<a class="badge badge-dark" href="/military-discount-at-old-navy.html">military discount at old navy</a>
+											<a class="badge badge-secondary" href="/lululemon-military-discount-during-covid.html">lululemon military discount during covid</a>
+											<a class="badge badge-dark" href="/lowes-online-military-discount-2019.html">lowes online military discount 2019</a>
+											<a class="badge badge-warning" href="/military-discount-for-ancestrycom.html">military discount for ancestrycom</a>
+											<a class="badge badge-info" href="/military-discount-on-apple-macbook-pro.html">military discount on apple macbook pro</a>
+											<a class="badge badge-success" href="/military-discount-for-grooming-at-petsmart.html">military discount for grooming at petsmart</a>
+											<a class="badge badge-success" href="/lowescommylowes-military-discount.html">lowescommylowes military discount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the ideal site.  Our site gives you hints for viewing the maximum quality video and picture content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/be/58/39be589d49938962b903d00f750662f1.jpg" data-lightbox="roadtrip" data-title="Important Tips For Your First Va Loan Mortgage Tool Home Loans Va Loan Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/be/58/39be589d49938962b903d00f750662f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ14F-TKNu4PAwP8JxkuI3xO-_cQA_2E7XLLA';" alt="Important Tips For Your First Va Loan Mortgage Tool Home Loans Va Loan Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Tips For Your First Va Loan Mortgage Tool Home Loans Va Loan Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/7c/b8/557cb87e409433926468af02d20f77f0.png" data-lightbox="roadtrip" data-title="The Military Spouse S Comprehensive Guide To The Va Mortgage Va Mortgages Va Mortgage Loans Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/7c/b8/557cb87e409433926468af02d20f77f0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezLvuNz67G1FvKBTgAeX-Q3flNVAhjsvQrw';" alt="The Military Spouse S Comprehensive Guide To The Va Mortgage Va Mortgages Va Mortgage Loans Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Spouse S Comprehensive Guide To The Va Mortgage Va Mortgages Va Mortgage Loans Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/f4/2c/eef42ce51116ccfffb70853eb4ba83a3.jpg" data-lightbox="roadtrip" data-title="Military Veteran Loans Www Mobilehomemai Va Mortgage Loan Watch This Before Applying Va Mortgage Loan Vamor Va Loan Mortgage Loan Officer Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/f4/2c/eef42ce51116ccfffb70853eb4ba83a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJK0T9P0nfFLlkWr5d1YoWOX_8Erp136vNCg';" alt="Military Veteran Loans Www Mobilehomemai Va Mortgage Loan Watch This Before Applying Va Mortgage Loan Vamor Va Loan Mortgage Loan Officer Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veteran Loans Www Mobilehomemai Va Mortgage Loan Watch This Before Applying Va Mortgage Loan Vamor Va Loan Mortgage Loan Officer Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/68/53/b46853d3a9dd378c49bd1f2923f5e4f7.png" data-lightbox="roadtrip" data-title="What Is A Va Loan Certificate Of Eligibility Va Loan Va Mortgages Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/68/53/b46853d3a9dd378c49bd1f2923f5e4f7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqMwoh9NLhWvcQ2jo5fnw9mItAIHNkvEqBQ';" alt="What Is A Va Loan Certificate Of Eligibility Va Loan Va Mortgages Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is A Va Loan Certificate Of Eligibility Va Loan Va Mortgages Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/e8/11/82e811fb8679300ee7c00f0e3884b005.jpg" data-lightbox="roadtrip" data-title="Va Loan Benefits 8 Incredible Advantages Of The Va Loan Va Loan Va Mortgages Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/e8/11/82e811fb8679300ee7c00f0e3884b005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OLSoOhsaup190jyghB6g4m7qb35U3ewvzQ';" alt="Va Loan Benefits 8 Incredible Advantages Of The Va Loan Va Loan Va Mortgages Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Benefits 8 Incredible Advantages Of The Va Loan Va Loan Va Mortgages Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/58/a8/6858a8125a663449b4f15e76b6cc25d3.jpg" data-lightbox="roadtrip" data-title="Va Loan Pre Approval Process Mortgage Loan Calculator Mortgage Loans Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/58/a8/6858a8125a663449b4f15e76b6cc25d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgJVI09orbqXpSeKHZfbln9ZzMkcs5IWHqA';" alt="Va Loan Pre Approval Process Mortgage Loan Calculator Mortgage Loans Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Pre Approval Process Mortgage Loan Calculator Mortgage Loans Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3e/c7/ad/3ec7ad9384d2de43089096cdda26b003.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgJVI09orbqXpSeKHZfbln9ZzMkcs5IWHqA';" alt="Va Loan Pre Approval Process Mortgage Loan Calculator Mortgage Loans Va Loan">
+										<div class="card-body">
+						<h3 class="h5"><b>VA-guaranteed loans are available for homes for your occupancy or a spouse andor dependent for active duty service members.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va loan military information</strong>. 
+								
+																	While the VA does not lend money for VA loans it backs loans made by private lenders banks savings and loans or mortgage companies to veterans active military personnel and military spouses who qualify. 
+																	The loans offer affordable funding designed to help veterans get on their feet once they return to civilian life. 
+																	A VA home loan is one of the most widely used benefits available to veterans and active duty service members. 
+																	The VA loan is a unique military benefit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lenders may also charge you additional fees. 
+																	Many lenders charge Veterans using VA-backed home loans a 1 flat fee sometimes called a loan origination fee. 
+																	But VA loans are different than other military benefits because you are not guaranteed home loan funds simply by becoming eligible to apply. 
+																	First of all you need to make sure youre eligible for a VA loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs backs VA loans but conventional lenders are the ones who actually supply and service the loans. 
+																	Because of this veterans need VA small business loans. 
+																	VA direct and VA-backed Veterans home loans can help Veterans service members and their survivors to buy build improve or refinance a home. 
+																	Keep in mind that for a VA-backed home loan youll also need to meet your lenders credit and income loan requirements to receive financing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA loan is much easier to qualify for compared to other kinds of loans. 
+																	Unfortunately these Veteran loans are not taken advantage of enough. 
+																	Military service has a real impact on the number of small businesses in the US. 
+																	But its important to note that the VA doesnt actually issue loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out how to apply for a Certificate of Eligibility COE to show your lender that you qualify based on your service history and duty status. 
+																	In fact more than 20 million loans have been guaranteed by the Department of Veterans. 
+																	Department of Veterans Affairs in any way. 
+																	It is similar to other benefits such as the GI Bill in that there is a time-in-service requirement and you can apply for eligibility online at the VA official site. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The government has service requirements for veterans or those on active duty and also offers opportunities for certain military. 
+																	How does a VA loan work. 
+																	Youll still need to have the required credit and income for the loan amount you want to borrow. 
+																	Its kind of like military financial aid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To be eligible you must have satisfactory credit sufficient income to meet the expected monthly obligations and a valid Certificate of Eligibility COE. 
+																	Eligibility Criteria As Per VA Loan Contract Guidelines. 
+																	If you qualify you can buy or build a home or refinance an. 
+																	VA loans are issued by private lenders such as a mortgage company or bank and guaranteed by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA-backed Veterans home loans. 
+																	Banks credit unions and mortgage companies. 
+																	In some cases lender fees are negotiable. 
+																	Purchase Loans and Cash-Out Refinance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA loan is a 0 down mortgage option available to Veterans Service Members and select military spouses. 
+																	Department of Veterans Affairs VA. 
+																	If you dont know what a fee is for ask the lender. 
+																	Learn about VA home loan eligibility requirements for a VA direct or VA-backed loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Instead it guarantees a portion of every loan issued by VA-approved lenders eg. 
+																	Buying a home with a VA loan is faster easier and less expensive than other loan types. 
+																	VA loans were introduced as part of the GI Bill in 1944 but theyve become increasingly popular in recent years. 
+																	Veteran Loans The government offers a variety of veteran loans to those who have served in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	More than 20 million Servicemembers and Veterans have taken advantage of their VA home loan benefit since the program began in 1944. 
+																	A VA home loan is a special loan available to service-members retired service-members and some surviving military spouses. 
+																	But a Veterans home loan may offer better terms than with a traditional loan from a private bank mortgage company or credit union. 
+																	A VA loan is a mortgage loan thats issued by private lenders and backed by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs administers the VA loan in its current form. 
+																	Since 45 more veterans than non-veterans are likely to be self-employed and therefore employ other people. 
+																	Department of Veterans Affairs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/75/cb/fd75cb22d7ebb616f284236545f9f3f2.jpg" data-lightbox="roadtrip" data-title="Va Loans Offer Some Unbeatable Advantages For Military Home Buyers Like 0 Down Payment No Mortgage Insurance And More Va Loan Home Buying Buying First Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/75/cb/fd75cb22d7ebb616f284236545f9f3f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8PNY7uj9diCKA4LxaY7pRUDz8f1uR-TLhw';" alt="Va Loans Offer Some Unbeatable Advantages For Military Home Buyers Like 0 Down Payment No Mortgage Insurance And More Va Loan Home Buying Buying First Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loans Offer Some Unbeatable Advantages For Military Home Buyers Like 0 Down Payment No Mortgage Insurance And More Va Loan Home Buying Buying First Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/67/56/8b/67568b1943782ebc43e776de4e088718.jpg" data-lightbox="roadtrip" data-title="Whats A Va Loan If You Or Your Spouse Have Served In The Military This Ma Va Va Loan Va Loan Tips And Information V Conventional Loan Fha Loans Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/67/56/8b/67568b1943782ebc43e776de4e088718.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FI184dyfglqw59SWqNX35KjwiaEh3k-RhA';" alt="Whats A Va Loan If You Or Your Spouse Have Served In The Military This Ma Va Va Loan Va Loan Tips And Information V Conventional Loan Fha Loans Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whats A Va Loan If You Or Your Spouse Have Served In The Military This Ma Va Va Loan Va Loan Tips And Information V Conventional Loan Fha Loans Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/2f/27/fd2f278cb7ffebd89f624bf0c3f3e637.jpg" data-lightbox="roadtrip" data-title="Qualifying For A Va Home Loan Realestate Military Veteran Militaryhomebuyer Va Mortgage Watch This Refinance Mortgage Mortgage Loans Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/2f/27/fd2f278cb7ffebd89f624bf0c3f3e637.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsinCqBdwZ6XUdUd5fMj4BAJWT7G_hl-bMw';" alt="Qualifying For A Va Home Loan Realestate Military Veteran Militaryhomebuyer Va Mortgage Watch This Refinance Mortgage Mortgage Loans Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qualifying For A Va Home Loan Realestate Military Veteran Militaryhomebuyer Va Mortgage Watch This Refinance Mortgage Mortgage Loans Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/90/6d/2e906d9f651d6f5947cc9ef328f32e99.png" data-lightbox="roadtrip" data-title="Infographic Who Is Eligible For A Va Loan Here S Your Guide To Helping Active Service Members And Veteran Buyers As A Va Loan Refinance Mortgage Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/90/6d/2e906d9f651d6f5947cc9ef328f32e99.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx610x6ft-wWhNTXgyR9CRCZKy3SRWxeTlsg';" alt="Infographic Who Is Eligible For A Va Loan Here S Your Guide To Helping Active Service Members And Veteran Buyers As A Va Loan Refinance Mortgage Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Who Is Eligible For A Va Loan Here S Your Guide To Helping Active Service Members And Veteran Buyers As A Va Loan Refinance Mortgage Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/78/78/fc7878aabc5dd09d19b9bb60f91607a9.png" data-lightbox="roadtrip" data-title="5 Tips To Taking Home Loan In Texas Va Mortgages Mortgage Loans Home Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/78/78/fc7878aabc5dd09d19b9bb60f91607a9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BIzJwzejYSWkxEKKYFmbus5KIh_SfRw70g';" alt="5 Tips To Taking Home Loan In Texas Va Mortgages Mortgage Loans Home Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Tips To Taking Home Loan In Texas Va Mortgages Mortgage Loans Home Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/20/96/fd20960f5c0cee147c6f08d3a363cd4c.png" data-lightbox="roadtrip" data-title="Here Are 10 Things You May Not Know About Va Loans Are You A Member In The Military Or A Veteran We Have Some Great Information To Hel Va Loan Loan 10 Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/20/96/fd20960f5c0cee147c6f08d3a363cd4c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1e398VaOBvOr8xRJ9DF1cq7-jXJf1EJcLFQ';" alt="Here Are 10 Things You May Not Know About Va Loans Are You A Member In The Military Or A Veteran We Have Some Great Information To Hel Va Loan Loan 10 Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are 10 Things You May Not Know About Va Loans Are You A Member In The Military Or A Veteran We Have Some Great Information To Hel Va Loan Loan 10 Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/43/57/8743573939ba19d9c060af8845b2033b.png" data-lightbox="roadtrip" data-title="Pin On Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/43/57/8743573939ba19d9c060af8845b2033b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq666XdPdPN1l0Ht1RfLmwx0thT155_8_Qjw';" alt="Pin On Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/4a/18/ec4a18b602183cfcc6073ab307030347.png" data-lightbox="roadtrip" data-title="Va Home Loans Everything America S Military Veterans Need To Know In 2020 Home Loans Buying First Home Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/4a/18/ec4a18b602183cfcc6073ab307030347.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpLdjSfUiMiYLu2quo1PoGgk9UVfhc5EyNQ';" alt="Va Home Loans Everything America S Military Veterans Need To Know In 2020 Home Loans Buying First Home Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Home Loans Everything America S Military Veterans Need To Know In 2020 Home Loans Buying First Home Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b6/e2/c6/b6e2c6c2b7dc1754a6c7ea081ed69e3a.jpg" data-lightbox="roadtrip" data-title="Kentucky Va Mortgage Loan Information Va Mortgages Va Mortgage Loans Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b6/e2/c6/b6e2c6c2b7dc1754a6c7ea081ed69e3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-IJGnbG0IyV7dGuo8NEimBd92O3dY4_22XA';" alt="Kentucky Va Mortgage Loan Information Va Mortgages Va Mortgage Loans Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Va Mortgage Loan Information Va Mortgages Va Mortgage Loans Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/32/d1/be32d1f4335a89c8a540b1541bc79f83.jpg" data-lightbox="roadtrip" data-title="Active Duty Military Pay For Fort Knox Ky And Fort Campbell Soldiers And Kentucky Va Loan Requirements Kentucky Va Mor Va Loan Va Mortgage Loans Military Pay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/32/d1/be32d1f4335a89c8a540b1541bc79f83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ftS5fzozP5F-plQY1XNpH4lQoS36iE09DQ';" alt="Active Duty Military Pay For Fort Knox Ky And Fort Campbell Soldiers And Kentucky Va Loan Requirements Kentucky Va Mor Va Loan Va Mortgage Loans Military Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Active Duty Military Pay For Fort Knox Ky And Fort Campbell Soldiers And Kentucky Va Loan Requirements Kentucky Va Mor Va Loan Va Mortgage Loans Military Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e0/23/89/e02389bd8df91a565df3c3f37713dca5.jpg" data-lightbox="roadtrip" data-title="Less Than 15 Of Veterans Have Used The Va Loan Benefits They Earned And Many Who Ve Served Simply Don T Know They Re Eligible Home Loans Va Loan Home Buying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e0/23/89/e02389bd8df91a565df3c3f37713dca5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRPOnQpxaZA-foRfT4wAeFdGFH2MqUPSJ0Q';" alt="Less Than 15 Of Veterans Have Used The Va Loan Benefits They Earned And Many Who Ve Served Simply Don T Know They Re Eligible Home Loans Va Loan Home Buying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Less Than 15 Of Veterans Have Used The Va Loan Benefits They Earned And Many Who Ve Served Simply Don T Know They Re Eligible Home Loans Va Loan Home Buying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/72/38/20/723820e8d99234acc1c4221575349175.jpg" data-lightbox="roadtrip" data-title="Comparing No Money Down Home Loans In Nc Nc Mortgage Experts Va Loan Loan Credit Score">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/72/38/20/723820e8d99234acc1c4221575349175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTac0ZIJeI27-vBt5DuGz6CPsASdlIfi5M6yw';" alt="Comparing No Money Down Home Loans In Nc Nc Mortgage Experts Va Loan Loan Credit Score">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comparing No Money Down Home Loans In Nc Nc Mortgage Experts Va Loan Loan Credit Score</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/25/47/8d2547507c50c214399f624ff6b33b70.jpg" data-lightbox="roadtrip" data-title="What Is A Va Loan A Veterans Guide To Home Ownership Mortgage Loans Va Mortgage Loans Home Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/25/47/8d2547507c50c214399f624ff6b33b70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR888tAInqE26lkKBgrgS7IVrq_SvKS7tHfEw';" alt="What Is A Va Loan A Veterans Guide To Home Ownership Mortgage Loans Va Mortgage Loans Home Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is A Va Loan A Veterans Guide To Home Ownership Mortgage Loans Va Mortgage Loans Home Ownership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/61/7f/ef617f67e922c586f0587f555bc34260.png" data-lightbox="roadtrip" data-title="What Income Counts For A Va Loan Va Loan Home Loans Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/61/7f/ef617f67e922c586f0587f555bc34260.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDgXSQyAu4-Zq4WWx3vDnOLXUBBq7NNoBuA';" alt="What Income Counts For A Va Loan Va Loan Home Loans Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Income Counts For A Va Loan Va Loan Home Loans Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/c3/a2/8bc3a210b53245b161947d59a0160020.jpg" data-lightbox="roadtrip" data-title="Va Loans Or Veteran Affairs Mortgages Are Loans That Are Made Available To Active Military Members And Veterans A Down Payme Va Mortgages Va Loan Payday Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/c3/a2/8bc3a210b53245b161947d59a0160020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqeBySEJTGdMiFJI8_GsghF-DHNyo1chh5iA';" alt="Va Loans Or Veteran Affairs Mortgages Are Loans That Are Made Available To Active Military Members And Veterans A Down Payme Va Mortgages Va Loan Payday Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loans Or Veteran Affairs Mortgages Are Loans That Are Made Available To Active Military Members And Veterans A Down Payme Va Mortgages Va Loan Payday Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-ford-offer-military-discount.html">Does Ford Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-greyhound-offer-military-discount.html">Does Greyhound Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-fred-meyer-give-military-discount.html">Does Fred Meyer Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-offer-military-discount-online.html">Does Home Depot Offer Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-oakley-give-veteran-discount.html">Does Oakley Give Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/does-kohls-have-military.html">Does Kohls Have Military</a></li>
+													<li class="list-group-item"><a href="/does-sprint-give-a-military-discount.html">Does Sprint Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-have-military-discount-online.html">Does Home Depot Have Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-do-military-discount.html">Does Sports Clips Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-omaha-steaks-ever-have-free-shipping.html">Does Omaha Steaks Ever Have Free Shipping</a></li>
+													<li class="list-group-item"><a href="/does-old-navy-do-military-discount.html">Does Old Navy Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-offer-a-military-discount.html">Does Sports Clips Offer A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-offer-military-discount.html">Does Gamestop Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kfc-have-military-discount.html">Does Kfc Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-the-bretton-woods-system-still-exist.html">Does The Bretton Woods System Still Exist</a></li>
+													<li class="list-group-item"><a href="/does-harley-davidson-offer-military-discounts.html">Does Harley Davidson Offer Military Discounts</a></li>
+													<li class="list-group-item"><a href="/does-lowes-still-give-a-military-discount.html">Does Lowes Still Give A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-give-military-discount-online.html">Does Home Depot Give Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-gamestop-have-a-military-discount.html">Does Gamestop Have A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-kohls-accept-military-discount.html">Does Kohls Accept Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

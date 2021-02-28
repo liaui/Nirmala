@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Vs Zombie Mod - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Vs Zombie Mod",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/564x/8f/59/1a/8f591af7506e204e33c40416c6b68efc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+vs+zombie+mod",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Vs Zombie Mod</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Go for the top floor where the princess is captured by searching for keys that open the doors to the next floor by solving puzzles and by monster hunting. Fight in Classic mode. New video USMC vs Taliban. <br>				
+			</p>
+										<a class="badge badge-info" href="/imf-reserve-position-definition.html">imf reserve position definition</a>
+											<a class="badge badge-success" href="/imf-on-india-farm-laws.html">imf on india farm laws</a>
+											<a class="badge badge-dark" href="/imf-predicts-india-gdp-2020.html">imf predicts india gdp 2020</a>
+											<a class="badge badge-success" href="/imf-on-indian-economy-2025.html">imf on indian economy 2025</a>
+											<a class="badge badge-warning" href="/imf-panama-inflation.html">imf panama inflation</a>
+											<a class="badge badge-info" href="/imf-ppp-definition.html">imf ppp definition</a>
+											<a class="badge badge-danger" href="/imf-philippines-jobs.html">imf philippines jobs</a>
+											<a class="badge badge-dark" href="/imf-rutherford-jobs.html">imf rutherford jobs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/09/6a/b6096a7df76ace212c223e4df27c9330.jpg" data-lightbox="roadtrip" data-title="Army Vs Zombie V1 0 4 Mod Apk Unlimited Gold Zombie Army Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/09/6a/b6096a7df76ace212c223e4df27c9330.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUfN91NEWU3Nl56TQgyYrEr4IqiFqk-wUvw';" alt="Army Vs Zombie V1 0 4 Mod Apk Unlimited Gold Zombie Army Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Zombie V1 0 4 Mod Apk Unlimited Gold Zombie Army Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/ba/47/eeba47b0fb56e601c87e1348c48affff.jpg" data-lightbox="roadtrip" data-title="Army Vs Zombies Unlimited Diamonds Mod Download Apk Zombie Zombie Attack Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/ba/47/eeba47b0fb56e601c87e1348c48affff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcNtE0sWxHLTNo2w1I2YvtKq5HPqY2ldOcA';" alt="Army Vs Zombies Unlimited Diamonds Mod Download Apk Zombie Zombie Attack Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Zombies Unlimited Diamonds Mod Download Apk Zombie Zombie Attack Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/a7/fe/bca7fed6fc72310680291d9ca21f5087.png" data-lightbox="roadtrip" data-title="Army Vs Zombies V2 0 8 1 Mod Apk Brings Together Tactical Elements Such As Army Building And General Fighting Via Amja Dead Images Games Zombie Gaming Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/a7/fe/bca7fed6fc72310680291d9ca21f5087.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVp-WAPBDAPY_sGhMs6TpJ-EervqkqsGUyiw';" alt="Army Vs Zombies V2 0 8 1 Mod Apk Brings Together Tactical Elements Such As Army Building And General Fighting Via Amja Dead Images Games Zombie Gaming Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Zombies V2 0 8 1 Mod Apk Brings Together Tactical Elements Such As Army Building And General Fighting Via Amja Dead Images Games Zombie Gaming Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/97/0d/31/970d310480d961c4282c18b098a53366.jpg" data-lightbox="roadtrip" data-title="Minecraft Zombie Army Vs Villager Army Massive Mob Battles Zombie Army Minecraft Minecraft Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/97/0d/31/970d310480d961c4282c18b098a53366.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLGfEiITGK4rsWWexNXsRbjxFsujGCiWACw';" alt="Minecraft Zombie Army Vs Villager Army Massive Mob Battles Zombie Army Minecraft Minecraft Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minecraft Zombie Army Vs Villager Army Massive Mob Battles Zombie Army Minecraft Minecraft Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/ca/30/c1ca3052dabee941b7c3a414223c871d.jpg" data-lightbox="roadtrip" data-title="The Zoybean Quygames Army Vs Dr Zomboss S Egypt Robot In Plants Vs Zom Plants Vs Zombies Plant Zombie Egypt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/ca/30/c1ca3052dabee941b7c3a414223c871d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEqkdpElHi2jVp3NCdMAjHq4K5gncf800x-w';" alt="The Zoybean Quygames Army Vs Dr Zomboss S Egypt Robot In Plants Vs Zom Plants Vs Zombies Plant Zombie Egypt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Zoybean Quygames Army Vs Dr Zomboss S Egypt Robot In Plants Vs Zom Plants Vs Zombies Plant Zombie Egypt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/34/35/c1/3435c18821c3a778c2e6ff4d3e880e24.jpg" data-lightbox="roadtrip" data-title="Minecraft Plants Vs Zombies Garden Warfare Mod Survive Army Of Zombies Modded Mini Game Youtube Minecraft Plants Vs Zombies Minecraft Gameplay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/34/35/c1/3435c18821c3a778c2e6ff4d3e880e24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdKGUi3-Hoe7S5E-DyLOlZS05PdzeuCuiOQ';" alt="Minecraft Plants Vs Zombies Garden Warfare Mod Survive Army Of Zombies Modded Mini Game Youtube Minecraft Plants Vs Zombies Minecraft Gameplay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minecraft Plants Vs Zombies Garden Warfare Mod Survive Army Of Zombies Modded Mini Game Youtube Minecraft Plants Vs Zombies Minecraft Gameplay</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/28/e7/00/28e70057bb1371ae40a3ba5f4170b5a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdKGUi3-Hoe7S5E-DyLOlZS05PdzeuCuiOQ';" alt="Minecraft Plants Vs Zombies Garden Warfare Mod Survive Army Of Zombies Modded Mini Game Youtube Minecraft Plants Vs Zombies Minecraft Gameplay">
+										<div class="card-body">
+						<h3 class="h5"><b>Download Army VS Zombie Mod APK on MaxModAPK.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army vs zombie mod</strong>. 
+								
+																	Download the mod from Android25 now. 
+																	Ranked 102859 of 375582 with 78 0 today downloads. 
+																	Download App 76 MB Paid. 
+																	Many items to collect and exchange to upgrade power. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download Army VS Zombie Mod APK on MaxModAPK. 
+																	Hitler made his own military immotal Zombie troops in the forbidden way to turn the war situation pushed by the Allied Forces into his favor during Second World War. 
+																	Download APK 4784 MB Download Army VS Zombie Mod APK on 100ModAPK. 
+																	Zombie troops forced the Allied Forces into the corner in a flash and the situation reversed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So the goal is simple cross the city and kill all the zombies. 
+																	Holy Bible GNV 1599 Geneva Bible English Mod APK----- ----- Holy Bible GNV 1599 Geneva Bible English. 
+																	It is a free and multiplayer playing game on the internet. 
+																	Download 100 working mods. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2102 human falls and just one a hiding place. 
+																	Both sp and mp but Ive only played sp and must have put. 
+																	HttpsyoutubeE_RNzC4X224Follow our Facebook pagehttponfbme1LVxlAVTamgaStudiozombiesArmA3zombiezombiesdemonsGame. 
+																	Could someone recommend ones and maybe give a reason as to why you recommend it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army vs Zombies Mod brings together tactical elements such as Army building and General fighting. 
+																	In 2101 a lot of the large cities on the planet have been occupied. 
+																	The tower of Triglav consisting of 50 floors. 
+																	New video IRAN vs USA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Brainstorm in Puzzle Mode. 
+																	Showing 1-10 of 10 comments. 
+																	Released Sep 9th 2019. 
+																	Army VS Zombie 104 APK Mod Unlimited money Cracked for Android Game synopsisHitler made his own military immotal Zombie troops in the forbidden way to turn the war situation pushed by the Allied Forces into his favor during Second World WarZombie troops forced the Allied Forces into the corner in a flash and the situation reversed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jan 23 2017 423pm The Ravage mod provides the best survivalzombie apocalypse experience Ive yet to encounter on Arma 3. 
+																	Download Army VS Zombie Original App on Appbundledownload HappyMod. 
+																	Published by afluty818 mod ID. 
+																	HttpsyoutubeNabrlifa3skFollow our Facebook page httponfbme1LVxlAVTamgaStudiozombiesArmA3Game Softwares Editing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many zombies have power up in over time. 
+																	Army VS Zombie v104 Mod. 
+																	Enjoy playing Mini Militia Doodle Army vs Zombie Free Features Mini Militia Doodle Army vs Zombie Free. 
+																	Build a brave and loyal army who are always with you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont get bite by them and collect coins on your way. 
+																	Challenge in Survival Mode. 
+																	Download Army vs Zombies mod for free and get all the features like unlimited gold with this apk. 
+																	Stick War Legacy Hack Army 99999 and The King Vs Army Big Zombie New Chapter Stick War Legacy 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download Army VS Zombie Mod APK Latest version. 
+																	Game synopsisHitler made his own military immotal Zombie troops in the forbidden way to turn the war situation pushed by the Allied Forces into his favor during Second World WarZombie troops forced the Allied Forces into the corner in a flash and the situation reversed. 
+																	Looking to play a zombie mod. 
+																	- Complete lift of each unit with the star health damage interval critical. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2100 the zombies attacked and invaded the world. 
+																	In this game you can play with Unlimited Money Premium and Elixir. 
+																	In this App you can make different buildings and construct your town bases also you can make. 
+																	Army vs zombies for Totally Accurate Battle Simulator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army vs Zombies. 
+																	Tower Defense Game mod APK is a modified version of 110. 
+																	Saudi Arabia - Constitution 101 APK Mod Unlimited money for Android. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/dd/0c/39dd0c3c7420db654fa007f8833037ea.jpg" data-lightbox="roadtrip" data-title="Army Vs Zombies Mod Apk Army Vs Zombies Tips Tricks Hazgame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/dd/0c/39dd0c3c7420db654fa007f8833037ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRv_8dssAe0_5j1E73L0IkY_TmaV8XZgZm3g';" alt="Army Vs Zombies Mod Apk Army Vs Zombies Tips Tricks Hazgame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Zombies Mod Apk Army Vs Zombies Tips Tricks Hazgame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/40/eb/7c40eb8b9564a58a75ba827cd4bf5d1f.png" data-lightbox="roadtrip" data-title="Plants Vs Zombies Hack Tool Unlimited Free Coins And Diamonds Generator Androidios Tested Plants Vs Zombies H Zombie Wallpaper Plants Vs Zombies Plant Zombie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/40/eb/7c40eb8b9564a58a75ba827cd4bf5d1f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nSOCE-4tnBMZoNaNcAkHaw2DDgidg4O2yA';" alt="Plants Vs Zombies Hack Tool Unlimited Free Coins And Diamonds Generator Androidios Tested Plants Vs Zombies H Zombie Wallpaper Plants Vs Zombies Plant Zombie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plants Vs Zombies Hack Tool Unlimited Free Coins And Diamonds Generator Androidios Tested Plants Vs Zombies H Zombie Wallpaper Plants Vs Zombies Plant Zombie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4f/4b/f7/4f4bf73c7989ca63afc0fd925b1dc336.jpg" data-lightbox="roadtrip" data-title="Minecraft Plants Vs Zombies Mod Kill Zombies With 50 New Plants Plants Vs Zombies Mini Games Plants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4f/4b/f7/4f4bf73c7989ca63afc0fd925b1dc336.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcncaVyorcO3lXCpejdXnca3LPCtXgPyB7fw';" alt="Minecraft Plants Vs Zombies Mod Kill Zombies With 50 New Plants Plants Vs Zombies Mini Games Plants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minecraft Plants Vs Zombies Mod Kill Zombies With 50 New Plants Plants Vs Zombies Mini Games Plants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8f/59/1a/8f591af7506e204e33c40416c6b68efc.jpg" data-lightbox="roadtrip" data-title="S3 Dei5opptcm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8f/59/1a/8f591af7506e204e33c40416c6b68efc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DURhO5n7kqEZAflP1FDduhKNVPEDalUnpw';" alt="S3 Dei5opptcm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">S3 Dei5opptcm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/11/8c/47118c6698115ee61063fed3bdc17c84.jpg" data-lightbox="roadtrip" data-title="Plants Vs Zombies Mod Cactus Vs Dr Zomboss Pvz Game Plants Vs Zombies Cactus Cactus Plants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/11/8c/47118c6698115ee61063fed3bdc17c84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzaSyvrNwe-lFbC-hvgQdzImNf8KjWTF7W4A';" alt="Plants Vs Zombies Mod Cactus Vs Dr Zomboss Pvz Game Plants Vs Zombies Cactus Cactus Plants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plants Vs Zombies Mod Cactus Vs Dr Zomboss Pvz Game Plants Vs Zombies Cactus Cactus Plants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/45/93/24/459324de44dff2fe84534caa17c7b4ca.jpg" data-lightbox="roadtrip" data-title="New Apk Plants Vs Zombies 3 V15 1 200323 Mod Free Shopping Updated Modded Apkdone In 2020 Plants Vs Zombies Zombie Popcap Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/45/93/24/459324de44dff2fe84534caa17c7b4ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt0gtWlGarDhDXu2BJdj0NcMdHb2hZtymuGA';" alt="New Apk Plants Vs Zombies 3 V15 1 200323 Mod Free Shopping Updated Modded Apkdone In 2020 Plants Vs Zombies Zombie Popcap Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Apk Plants Vs Zombies 3 V15 1 200323 Mod Free Shopping Updated Modded Apkdone In 2020 Plants Vs Zombies Zombie Popcap Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/e7/00/28e70057bb1371ae40a3ba5f4170b5a1.jpg" data-lightbox="roadtrip" data-title="Plants Vs Zombies 2 Mod Electric Peashooter Pvz2 Vs All Gargantuar Pvz2 Plants Vs Zombies Zombie 2 Plants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/e7/00/28e70057bb1371ae40a3ba5f4170b5a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsH8YbHdMJ_nSPKn-T9N-p4FMpII8xZky4LA';" alt="Plants Vs Zombies 2 Mod Electric Peashooter Pvz2 Vs All Gargantuar Pvz2 Plants Vs Zombies Zombie 2 Plants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plants Vs Zombies 2 Mod Electric Peashooter Pvz2 Vs All Gargantuar Pvz2 Plants Vs Zombies Zombie 2 Plants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/d8/0a/bad80af46b8322d8d2608a5252704235.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/d8/0a/bad80af46b8322d8d2608a5252704235.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJ9UgAMLIl1OSzBIzOK6GA4k3-KgHUrHJsw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/48/c2/ad48c28ca0b4e2dcd6147e455e84e241.jpg" data-lightbox="roadtrip" data-title="Plants Vs Zombies 3 V15 1 200323 Mod Plants Vs Zombies Zombie Plant Zombie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/48/c2/ad48c28ca0b4e2dcd6147e455e84e241.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXKD_tX8XxY9wcQkJvlOMIONgHcFuymR6jQg';" alt="Plants Vs Zombies 3 V15 1 200323 Mod Plants Vs Zombies Zombie Plant Zombie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plants Vs Zombies 3 V15 1 200323 Mod Plants Vs Zombies Zombie Plant Zombie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/c0/fa/1dc0fa595593aeaeccddda05dc3825b4.jpg" data-lightbox="roadtrip" data-title="Zombie Idle Defense Mod Apk Download Defense Zombie Army Defense Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/c0/fa/1dc0fa595593aeaeccddda05dc3825b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-9k4-pgcMY7j-hTXO0gMG4Xw_Hofmsvogw';" alt="Zombie Idle Defense Mod Apk Download Defense Zombie Army Defense Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zombie Idle Defense Mod Apk Download Defense Zombie Army Defense Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/1c/bf/471cbf1eb056694f5ba44f872ec33750.jpg" data-lightbox="roadtrip" data-title="Minecraft Plants Vs Zombies Mod Kill The Zombies With Your Plant Spawners Minecraft Youtube Plants Vs Zombies Minecraft Plants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/1c/bf/471cbf1eb056694f5ba44f872ec33750.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLDIOpGL9-E5KuFBOCB5rIFuCPYvZuxWKeg';" alt="Minecraft Plants Vs Zombies Mod Kill The Zombies With Your Plant Spawners Minecraft Youtube Plants Vs Zombies Minecraft Plants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minecraft Plants Vs Zombies Mod Kill The Zombies With Your Plant Spawners Minecraft Youtube Plants Vs Zombies Minecraft Plants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/18/da/d618da86e8e1797089a04831e6070a33.png" data-lightbox="roadtrip" data-title="Pin On Favoritos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/18/da/d618da86e8e1797089a04831e6070a33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWz9pYRV0ups9t0gdxCgT6t0rph4DneGebuA';" alt="Pin On Favoritos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Favoritos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5c/c2/9a/5cc29a20be2c3d89b427ee3c8ed0bfb9.jpg" data-lightbox="roadtrip" data-title="Dgdhgdgvdc Stick Figure Games Free Gems Legacy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5c/c2/9a/5cc29a20be2c3d89b427ee3c8ed0bfb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzhafZaWIeJRH8pL71vKxjL5tI9VNek1JLQ';" alt="Dgdhgdgvdc Stick Figure Games Free Gems Legacy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dgdhgdgvdc Stick Figure Games Free Gems Legacy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/b0/cf/f1b0cf1f1bc8f994a3b952dc73b27286.png" data-lightbox="roadtrip" data-title="Modded Apk For Free Plants Vs Zombies 2 3 8 1 Apk Mod Plants Vs Zombies Zombie Zombie 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/b0/cf/f1b0cf1f1bc8f994a3b952dc73b27286.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvaVTiSEi8ED07UUrUcF5IfBfyrkmzen10YA';" alt="Modded Apk For Free Plants Vs Zombies 2 3 8 1 Apk Mod Plants Vs Zombies Zombie Zombie 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modded Apk For Free Plants Vs Zombies 2 3 8 1 Apk Mod Plants Vs Zombies Zombie Zombie 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/6b/05/ac6b050f38ff5623531e65dbeead597b.jpg" data-lightbox="roadtrip" data-title="Stickman Vs Zombies Anger Of Stick 5 Zombies Part 1 Video Game Mod App Anger Money Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/6b/05/ac6b050f38ff5623531e65dbeead597b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdeeWSxVMgTPfBQPJjL82HDVpALOrXvXAs5w';" alt="Stickman Vs Zombies Anger Of Stick 5 Zombies Part 1 Video Game Mod App Anger Money Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stickman Vs Zombies Anger Of Stick 5 Zombies Part 1 Video Game Mod App Anger Money Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/salary-of-imf-chief.html">Salary Of Imf Chief</a></li>
+													<li class="list-group-item"><a href="/rocky-gap-casino-military-discount.html">Rocky Gap Casino Military Discount</a></li>
+													<li class="list-group-item"><a href="/request-dd214-long-form.html">Request Dd214 Long Form</a></li>
+													<li class="list-group-item"><a href="/retired-military-officer-pay.html">Retired Military Officer Pay</a></li>
+													<li class="list-group-item"><a href="/retired-military-medical.html">Retired Military Medical</a></li>
+													<li class="list-group-item"><a href="/salvation-army-wednesday-discount.html">Salvation Army Wednesday Discount</a></li>
+													<li class="list-group-item"><a href="/san-joaquin-national-cemetery-veterans-day.html">San Joaquin National Cemetery Veterans Day</a></li>
+													<li class="list-group-item"><a href="/salvation-army-employee-discount.html">Salvation Army Employee Discount</a></li>
+													<li class="list-group-item"><a href="/san-diego-companies-hiring-veterans.html">San Diego Companies Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/role-of-imf-in-exchange-rate-stabilization.html">Role Of Imf In Exchange Rate Stabilization</a></li>
+													<li class="list-group-item"><a href="/roanoke-va-discounts.html">Roanoke Va Discounts</a></li>
+													<li class="list-group-item"><a href="/sprint-military-discount-phone-number.html">Sprint Military Discount Phone Number</a></li>
+													<li class="list-group-item"><a href="/royal-army-brand-discount-code.html">Royal Army Brand Discount Code</a></li>
+													<li class="list-group-item"><a href="/seaworld-military-promotion.html">Seaworld Military Promotion</a></li>
+													<li class="list-group-item"><a href="/seaworld-and-military-discount.html">Seaworld And Military Discount</a></li>
+													<li class="list-group-item"><a href="/retired-military-national-park-pass.html">Retired Military National Park Pass</a></li>
+													<li class="list-group-item"><a href="/retired-military-movies.html">Retired Military Movies</a></li>
+													<li class="list-group-item"><a href="/salvation-army-veterans-discount.html">Salvation Army Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/sprint-military-discount-on-accessories.html">Sprint Military Discount On Accessories</a></li>
+													<li class="list-group-item"><a href="/sign-up-for-bed-bath-and-beyond-military-discount.html">Sign Up For Bed Bath And Beyond Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

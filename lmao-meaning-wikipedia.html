@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Lmao Meaning Wikipedia - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Lmao Meaning Wikipedia",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/7c/05/3e/7c053e4b02e78bf81c9b3532b198e5da.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lmao+meaning+wikipedia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Lmao Meaning Wikipedia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Information and translations of lmao in the most comprehensive dictionary definitions resource on the web. Video shows what LMAO means. Laughing my ass off 2. <br>				
+			</p>
+										<a class="badge badge-info" href="/imf-article-iv-report-nigeria.html">imf article iv report nigeria</a>
+											<a class="badge badge-light" href="/imf-article-iv-uae-2018.html">imf article iv uae 2018</a>
+											<a class="badge badge-warning" href="/imf-bank-account.html">imf bank account</a>
+											<a class="badge badge-secondary" href="/imf-article-iv-russia.html">imf article iv russia</a>
+											<a class="badge badge-info" href="/imf-bank-in-hindi.html">imf bank in hindi</a>
+											<a class="badge badge-info" href="/imf-article-iv-republic-of-congo.html">imf article iv republic of congo</a>
+											<a class="badge badge-light" href="/imf-article-iv-senegal.html">imf article iv senegal</a>
+											<a class="badge badge-light" href="/imf-article-iv-peru.html">imf article iv peru</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right blog.  Our site provides you with hints for seeing the maximum quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/db/eb/4fdbeb133323a7cfd7b9748f7c850b47.jpg" data-lightbox="roadtrip" data-title="Wikipedia Ftw Funny Words Word Definitions Funny Definition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/db/eb/4fdbeb133323a7cfd7b9748f7c850b47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSggtOBOldfn9_86qz2roisd_YUbiiiM5r1OA';" alt="Wikipedia Ftw Funny Words Word Definitions Funny Definition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wikipedia Ftw Funny Words Word Definitions Funny Definition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/79/32/2579328e103a1dea67aa8bbbc6872637.jpg" data-lightbox="roadtrip" data-title="Lmao Meaning What Does Lmao Meaning In 2020 Funny Videos Funny Card Sayings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/79/32/2579328e103a1dea67aa8bbbc6872637.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkK6xY6GF0WP808c8ptkmLjujCl2zwJ9etbg';" alt="Lmao Meaning What Does Lmao Meaning In 2020 Funny Videos Funny Card Sayings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lmao Meaning What Does Lmao Meaning In 2020 Funny Videos Funny Card Sayings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5c/61/2d/5c612de138deb351f51e33a467681603.jpg" data-lightbox="roadtrip" data-title="Semicolon Tattoo Meaning Wikipedia Tattoideas Tatto In 2020 Semicolon Tattoo Meaning Semicolon Tattoo Tattoos With Meaning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5c/61/2d/5c612de138deb351f51e33a467681603.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlZ_qx2n26Is2lSo7hCQyN9eLb1L4wLjFdg';" alt="Semicolon Tattoo Meaning Wikipedia Tattoideas Tatto In 2020 Semicolon Tattoo Meaning Semicolon Tattoo Tattoos With Meaning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Semicolon Tattoo Meaning Wikipedia Tattoideas Tatto In 2020 Semicolon Tattoo Meaning Semicolon Tattoo Tattoos With Meaning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/66/e2/e5/66e2e57e419dd960699cbbc0182f99cb.jpg" data-lightbox="roadtrip" data-title="12 16 Tlcastro Sagittarius Decans Https En M Wikipedia Org Wiki Decans Sagittarius Tattoo Zodiac Signs Sagittarius Sagittarius">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/66/e2/e5/66e2e57e419dd960699cbbc0182f99cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeokRocbY5O8IGYz2BYXXNlVe0UZIeSwZYsg';" alt="12 16 Tlcastro Sagittarius Decans Https En M Wikipedia Org Wiki Decans Sagittarius Tattoo Zodiac Signs Sagittarius Sagittarius">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 16 Tlcastro Sagittarius Decans Https En M Wikipedia Org Wiki Decans Sagittarius Tattoo Zodiac Signs Sagittarius Sagittarius</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/af/f8/d9/aff8d98abc5a58504843bb6faf3b287e.jpg" data-lightbox="roadtrip" data-title="Reasons Tldr Wikipedia Is The Only Reference You Ll Ever Need Again Someecards Com Lol So True Words Dont Be Mean">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/af/f8/d9/aff8d98abc5a58504843bb6faf3b287e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fl_SgHNlv7U40_J_BsV0hL1xCMJVz0GKrA';" alt="Reasons Tldr Wikipedia Is The Only Reference You Ll Ever Need Again Someecards Com Lol So True Words Dont Be Mean">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reasons Tldr Wikipedia Is The Only Reference You Ll Ever Need Again Someecards Com Lol So True Words Dont Be Mean</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/2e/1c/cb2e1c0eca4e4841e01a3dc619a62b5b.png" data-lightbox="roadtrip" data-title="Schlafli Symbol Wikipedia Regular Polygon Polygon Drawing Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/2e/1c/cb2e1c0eca4e4841e01a3dc619a62b5b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfncwhjLW988hckpb7Q72menlbVbFnE5nbQ';" alt="Schlafli Symbol Wikipedia Regular Polygon Polygon Drawing Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schlafli Symbol Wikipedia Regular Polygon Polygon Drawing Stars</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7c/05/3e/7c053e4b02e78bf81c9b3532b198e5da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfncwhjLW988hckpb7Q72menlbVbFnE5nbQ';" alt="Schlafli Symbol Wikipedia Regular Polygon Polygon Drawing Stars">
+										<div class="card-body">
+						<h3 class="h5"><b>OMG I would have had a major scareI dont walk dogs in Sand Dunes because of Snakesugh x GUY MAIR.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Lmao meaning wikipedia</strong>. 
+								
+																	A fast emoji search experience with options to browse every emoji by name category or platform. 
+																	See more words with the same meaning. 
+																	Lamenting My Anguish Online. 
+																	Laughing My Anxiety Off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When the word ass is used it is considered a vulgar term. 
+																	Lmao definition laughing my fucking ass off. 
+																	Laughing My Ass Off. 
+																	Land Mail Art Objects. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn how to say LMAO with free pronunciation English Dictionary. 
+																	Ideologically a MarxistLeninist his. 
+																	Typically people use it in written conversations to show that they think something is funny. 
+																	Let Me Ask Obama. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For rolling on the floor laughing. 
+																	See more words with the same meaning. 
+																	LMAO is used when you find someone unusually funny. 
+																	To lol or to loathe it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In fact this is the slang you use in places where a laughing emoji or the phrase haha would not be adequate. 
+																	Used to indicate great amusement usually exaggerated at something usually from an online source for example a discussion group or an instant message. 
+																	What does lmao mean. 
+																	For Laughing quietly to myself. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disgusting immature ignorant brilliant LMAO funny stupid trashy informative hilarious offensive well written not suitable for publication childish great stuff. 
+																	Definition of LMAO in the Idioms Dictionary. 
+																	Internet texting SMS email chat acronyms list of. 
+																	It is often combined with LMAO for added emphasis as ROFLMAO Rolling on the floor laughing my ass off or ROFLMFAO Rolling on the floor laughing my fucking ass off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is used in cases where the joke is more hilarious than would typically be the case and in situations where you would laugh so hard. 
+																	Laughing My Arteries Out. 
+																	December 26 1893 September 9 1976 also known as Chairman Mao was a Chinese communist revolutionary who was the founder of the Peoples Republic of China PRC which he ruled as the chairman of the Chinese Communist Party from its establishment in 1949 until his death in 1976. 
+																	Living My Adventism Out est. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lmao Internet slang Initialism of laughing my ass off. 
+																	Genitive in the midst of among between with in common along with by aid of concerning ones dealings with rare at the same time dative only in poetry usually Epic between among besides over and above accusative coming into in pursuit of of sequence or succession of a place after behind time after worth. 
+																	What does LMAO expression mean. 
+																	The emoji search engine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you thought something was really really funny for instance you might type rofl - rolling on the floor laughing - or lmao - laughing my you know what off. 
+																	Lets make an omlet. 
+																	What does Lmao mean. 
+																	LMAO - Idioms by The Free Dictionary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bet he adder fright lmao GAIL GRIFFITHS. 
+																	The acronym LMAO comes from the phrase. 
+																	LMAO is Laughing My Ass Off. 
+																	Mao Zedong ˈ m aʊ d z ə ˈ d ʊ ŋ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was an adder on red. 
+																	LMAO meaning and definition in our video dictionary. 
+																	Leave Me Alone Ode. 
+																	Leave Me Alone Okay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Acronym for laughing my arse off Used frequently in text-based communication text messaging online chat etc lmao. 
+																	They respectively are a son and grandson of Motown Records founder Berry GordyRedFoo and SkyBlu grew up in Pacific Palisades Los Angeles where they formed the group LMFAO in 2006 and later became part of the electro house scene. 
+																	Likened to the iceberg that only shows a small fraction of its total size. 
+																	Last edited on Jun 09 2010. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lets Marvel At Owls comedian Bill Bailey LMAO. 
+																	Laughing My Ass Arse Off which means that we are laughing our asses off literally. 
+																	Too tired to love 累觉不爱 lèijuébùài This slang phrase is a literal abbreviation of the Chinese phrase too tired to fall in love anymore. 
+																	Laughed my fucking ass off a euphemistic initialism used to avoid explicit vulgarity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Laughing My Ankles Off. 
+																	Someone who at first meeting shows a little bit of their douche self but on getting to know them better the full extent of their doucheness becomes apparent. 
+																	Definitions by the largest Idiom Dictionary. 
+																	For laughing my ass off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We use the term LMAO when we are laughing out loud dying of laughter. 
+																	You can think of it as a stronger version of lol which stands for laughing out loud. 
+																	Lmao stands for laughing my ass off. 
+																	Lick Me All Over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LMFAO an initialism for Laughing My Freaking Ass Off is an American electronic dance music duo consisting of uncle Redfoo and nephew SkyBlu. 
+																	This slang has become widely used on the internet symbolizing the perfect man that many women in China dream of marrying. 
+																	LMFAO Laughing my fucking ass off. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/19/74/d719744f4c45f596e805fdd74f241a2a.jpg" data-lightbox="roadtrip" data-title="Difference Between Freshman And Senior Lmao Freshman College Freshmen Vs Seniors College Senior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/19/74/d719744f4c45f596e805fdd74f241a2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrUNJn-fAorhHq7oCHQyq7x4b7k323ePdPcQ';" alt="Difference Between Freshman And Senior Lmao Freshman College Freshmen Vs Seniors College Senior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between Freshman And Senior Lmao Freshman College Freshmen Vs Seniors College Senior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/e5/f9/79e5f9822e5b1996615f65b14703b40a.png" data-lightbox="roadtrip" data-title="Pin On Knowledge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/e5/f9/79e5f9822e5b1996615f65b14703b40a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqfU2Fgst-GkgJZA9IvKzdRJUzk7jrpI9bg';" alt="Pin On Knowledge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Knowledge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/98/ad/d198ad10b8f39761f44fa188da54aae9.jpg" data-lightbox="roadtrip" data-title="Aorlwfum4ok1im">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/98/ad/d198ad10b8f39761f44fa188da54aae9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGxD4OMz-7tIaYzjsWCFqmlXspRU6_1bMHw';" alt="Aorlwfum4ok1im">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aorlwfum4ok1im</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c5/d2/b2/c5d2b222926d2da2d1a4954a4cfe9a65.jpg" data-lightbox="roadtrip" data-title="Virgo Today Horoscope Wednesday 9 October 2019 Wikipedia Hub Today Horoscope Virgo Today Horoscope">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c5/d2/b2/c5d2b222926d2da2d1a4954a4cfe9a65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wgtiSj5XuQHfFXUzivag1-rlKdhPEZB3zA';" alt="Virgo Today Horoscope Wednesday 9 October 2019 Wikipedia Hub Today Horoscope Virgo Today Horoscope">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virgo Today Horoscope Wednesday 9 October 2019 Wikipedia Hub Today Horoscope Virgo Today Horoscope</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/7f/f1/0c7ff188f4c3fab96579e88e4ef124ff.jpg" data-lightbox="roadtrip" data-title="Clever Very Clever Why Hadn T I Thought To Look It Up Before This Is Just One Of The Many Many Sarah J Maas Books A Court Of Mist And Fury Forever Book">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/7f/f1/0c7ff188f4c3fab96579e88e4ef124ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMgjJoM2PmwooHi0nFTbnOVCiau_UXlh5cKg';" alt="Clever Very Clever Why Hadn T I Thought To Look It Up Before This Is Just One Of The Many Many Sarah J Maas Books A Court Of Mist And Fury Forever Book">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clever Very Clever Why Hadn T I Thought To Look It Up Before This Is Just One Of The Many Many Sarah J Maas Books A Court Of Mist And Fury Forever Book</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/53/4a/04534a369ca278d9ccbd09c483c0b9c9.png" data-lightbox="roadtrip" data-title="Old Turkic Alphabet Wikipedia Writing Systems Script Turkic Languages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/53/4a/04534a369ca278d9ccbd09c483c0b9c9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwaZpkIIqqDnYaeDUXomPQudfvmRpqHaKFg';" alt="Old Turkic Alphabet Wikipedia Writing Systems Script Turkic Languages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Old Turkic Alphabet Wikipedia Writing Systems Script Turkic Languages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/66/b5/3c66b5793bcf682b1393fb6a6d9485a8.jpg" data-lightbox="roadtrip" data-title="Its Very Simple Humor Fandoms Tumblr Relatable">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/66/b5/3c66b5793bcf682b1393fb6a6d9485a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkXVPpH2MP-DGO-6LT_o1Mp0TqUVleShNKg';" alt="Its Very Simple Humor Fandoms Tumblr Relatable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Its Very Simple Humor Fandoms Tumblr Relatable</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/38/74/b438745a78ba6cabebab130db0cc75e2.jpg" data-lightbox="roadtrip" data-title="Image Result For Why Is The Fbi Here Meme Really Funny Memes Funny Memes Stupid Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/38/74/b438745a78ba6cabebab130db0cc75e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyF0jPrpSYMI8ZM0-CnkN1PNO4OHRIuiFDog';" alt="Image Result For Why Is The Fbi Here Meme Really Funny Memes Funny Memes Stupid Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Why Is The Fbi Here Meme Really Funny Memes Funny Memes Stupid Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/b6/4b/ebb64b058e74475ef079591b34acd401.jpg" data-lightbox="roadtrip" data-title="Need To Memorize This My Pilot Husband Gets Frustrated When I Use Different Words Pilothusband Pilots Alphabet Phonetic Alphabet Alphabet Code">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/b6/4b/ebb64b058e74475ef079591b34acd401.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqCLldCtxWjO3MVjbWOWJJ81uCaWhA9SmzIA';" alt="Need To Memorize This My Pilot Husband Gets Frustrated When I Use Different Words Pilothusband Pilots Alphabet Phonetic Alphabet Alphabet Code">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Need To Memorize This My Pilot Husband Gets Frustrated When I Use Different Words Pilothusband Pilots Alphabet Phonetic Alphabet Alphabet Code</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/50/fc/fa50fc086296e7b21d12c8226e8b3891.jpg" data-lightbox="roadtrip" data-title="Memedroid X By Emilia13 Funny Stories Tumblr Funny Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/50/fc/fa50fc086296e7b21d12c8226e8b3891.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-grrwecTlUJAwN5FoI7ne0lS61YZ7IWxDg';" alt="Memedroid X By Emilia13 Funny Stories Tumblr Funny Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memedroid X By Emilia13 Funny Stories Tumblr Funny Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/05/3e/7c053e4b02e78bf81c9b3532b198e5da.png" data-lightbox="roadtrip" data-title="Merchant S Mark Wikipedia In 2020 Marks Secret Society Logo Merchants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/05/3e/7c053e4b02e78bf81c9b3532b198e5da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsJMelowusc4Yw9rVUUKH8rGu_gKLQxgzYA';" alt="Merchant S Mark Wikipedia In 2020 Marks Secret Society Logo Merchants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Merchant S Mark Wikipedia In 2020 Marks Secret Society Logo Merchants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/d4/a2/fcd4a24231294edb020f8c0ddd491365.jpg" data-lightbox="roadtrip" data-title="File Apollo11plaque Jpg Wikipedia The Free Encyclopedia Futura Font Typeface Poster Typeface">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/d4/a2/fcd4a24231294edb020f8c0ddd491365.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmMeO563ljBCg8U8h6vWKs8V-tKpA08gCRw';" alt="File Apollo11plaque Jpg Wikipedia The Free Encyclopedia Futura Font Typeface Poster Typeface">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Apollo11plaque Jpg Wikipedia The Free Encyclopedia Futura Font Typeface Poster Typeface</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/1e/46/951e46142a5bbc023181cbb6bff988d0.jpg" data-lightbox="roadtrip" data-title="Pin On Lmao">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/1e/46/951e46142a5bbc023181cbb6bff988d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqcZC2AwQLKbRZhjBThIzzJxXi3Q04UhDLyQ';" alt="Pin On Lmao">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lmao</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0f/16/02/0f160210939cdecd8633893e6807558f--native-american-music-native-american-tribes.jpg" data-lightbox="roadtrip" data-title="Meda Songs 1851 Ojibwe Wikipedia Native American Symbols Native American Music Indian Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0f/16/02/0f160210939cdecd8633893e6807558f--native-american-music-native-american-tribes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtQZKQHYvvu0Ipa7yeI3J8RdtgxUv1sxLMeQ';" alt="Meda Songs 1851 Ojibwe Wikipedia Native American Symbols Native American Music Indian Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meda Songs 1851 Ojibwe Wikipedia Native American Symbols Native American Music Indian Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/fe/4c/b1fe4c6a3f4353d48f6aafa1f628e27e.jpg" data-lightbox="roadtrip" data-title="Harry Potter Fandom Ao3 Much Harry Potter Houses And Meanings But Harry Potter Wiki Fando Harry Potter Headcannons Harry Potter Wiki Harry Potter Fandom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/fe/4c/b1fe4c6a3f4353d48f6aafa1f628e27e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzpPxXsFYaoXluziDIbk-RpF4tazj25pW6g';" alt="Harry Potter Fandom Ao3 Much Harry Potter Houses And Meanings But Harry Potter Wiki Fando Harry Potter Headcannons Harry Potter Wiki Harry Potter Fandom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Harry Potter Fandom Ao3 Much Harry Potter Houses And Meanings But Harry Potter Wiki Fando Harry Potter Headcannons Harry Potter Wiki Harry Potter Fandom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-nylon-apple-watch-band.html">Military Nylon Apple Watch Band</a></li>
+													<li class="list-group-item"><a href="/military-programs-for-13-year-olds.html">Military Programs For 13 Year Olds</a></li>
+													<li class="list-group-item"><a href="/military-veteran-license-plate-frames.html">Military Veteran License Plate Frames</a></li>
+													<li class="list-group-item"><a href="/military-sprint-employee-discount.html">Military Sprint Employee Discount</a></li>
+													<li class="list-group-item"><a href="/military-spouse-small-business-grants.html">Military Spouse Small Business Grants</a></li>
+													<li class="list-group-item"><a href="/military-discount-to-kohls.html">Military Discount To Kohls</a></li>
+													<li class="list-group-item"><a href="/military-owned-businesses-orlando.html">Military Owned Businesses Orlando</a></li>
+													<li class="list-group-item"><a href="/military-veterans.html">Military Veterans</a></li>
+													<li class="list-group-item"><a href="/military-retirement-or-disability.html">Military Retirement Or Disability</a></li>
+													<li class="list-group-item"><a href="/military-programs-in-california.html">Military Programs In California</a></li>
+													<li class="list-group-item"><a href="/military-discount-topgolf.html">Military Discount Topgolf</a></li>
+													<li class="list-group-item"><a href="/military-dpt-programs.html">Military Dpt Programs</a></li>
+													<li class="list-group-item"><a href="/military-spouse-owned-business.html">Military Spouse Owned Business</a></li>
+													<li class="list-group-item"><a href="/military-vets-brotherhood.html">Military Vets Brotherhood</a></li>
+													<li class="list-group-item"><a href="/military-pension-and-disability-pay.html">Military Pension And Disability Pay</a></li>
+													<li class="list-group-item"><a href="/military-psyd-programs.html">Military Psyd Programs</a></li>
+													<li class="list-group-item"><a href="/military-pension-and-va-disability.html">Military Pension And Va Disability</a></li>
+													<li class="list-group-item"><a href="/military-id-discount-website.html">Military Id Discount Website</a></li>
+													<li class="list-group-item"><a href="/military-tank-hire-melbourne.html">Military Tank Hire Melbourne</a></li>
+													<li class="list-group-item"><a href="/military-veteran-clothing-company.html">Military Veteran Clothing Company</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

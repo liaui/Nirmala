@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ne Imf Chemistry - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ne Imf Chemistry",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/47/43/1f/47431fc2a1195be7b4624e3352f608dd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ne+imf+chemistry",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ne Imf Chemistry</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Then in the last column indicate which member of the pair you would expect to have the higher boiling point. Which of species can exhibit hydrogen bonding among themselves. SI4 or CI4 I chose Sulfur Tetraiodide C. <br>				
+			</p>
+										<a class="badge badge-dark" href="/imf-economic-outlook-us.html">imf economic outlook us</a>
+											<a class="badge badge-danger" href="/imf-evil-bank-manager.html">imf evil bank manager</a>
+											<a class="badge badge-dark" href="/imf-economic-outlook-taiwan.html">imf economic outlook taiwan</a>
+											<a class="badge badge-primary" href="/imf-economic-outlook-september-2019.html">imf economic outlook september 2019</a>
+											<a class="badge badge-danger" href="/imf-economic-outlook-japan.html">imf economic outlook japan</a>
+											<a class="badge badge-light" href="/imf-economic-outlook-singapore.html">imf economic outlook singapore</a>
+											<a class="badge badge-light" href="/imf-egypt-2016.html">imf egypt 2016</a>
+											<a class="badge badge-warning" href="/imf-egypt-pdf.html">imf egypt pdf</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/43/1f/47431fc2a1195be7b4624e3352f608dd.jpg" data-lightbox="roadtrip" data-title="Chemistry Puzzle Color By Number Intermolecular Forces Intermolecular Force Chemistry Chemistry Classroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/43/1f/47431fc2a1195be7b4624e3352f608dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnnweSXWC5zJyyjVCBtIcNo29xCMtZobl5xA';" alt="Chemistry Puzzle Color By Number Intermolecular Forces Intermolecular Force Chemistry Chemistry Classroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chemistry Puzzle Color By Number Intermolecular Forces Intermolecular Force Chemistry Chemistry Classroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/5e/1e/195e1ed0ed16545f750c7ddf6cba52b4.jpg" data-lightbox="roadtrip" data-title="Mr Lee Says Atomic Radius Increases As You Go Down A Group Because You Are Adding More Energy Levels Orbit Teaching Chemistry Chemistry Notes Periodic Table">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/5e/1e/195e1ed0ed16545f750c7ddf6cba52b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QTx8wTKJPr8IiXkMuF2HlmlPl9CKGR5udA';" alt="Mr Lee Says Atomic Radius Increases As You Go Down A Group Because You Are Adding More Energy Levels Orbit Teaching Chemistry Chemistry Notes Periodic Table">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mr Lee Says Atomic Radius Increases As You Go Down A Group Because You Are Adding More Energy Levels Orbit Teaching Chemistry Chemistry Notes Periodic Table</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chem.purdue.edu/gchelp/liquids/symunsym.gif" data-lightbox="roadtrip" data-title="London Dispersion Forces">
+											<img class="card-img v-image ads-img " src="https://www.chem.purdue.edu/gchelp/liquids/symunsym.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3i5WUFPt9D2w_nhwW-sycVs9UN8nd0s7qoA';" alt="London Dispersion Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">London Dispersion Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://chem.libretexts.org/@api/deki/files/8920/POLA.jpg?revision=1" data-lightbox="roadtrip" data-title="11 4 Nonpolar Molecules And Imf Chemistry Libretexts">
+											<img class="card-img v-image ads-img " src="https://chem.libretexts.org/@api/deki/files/8920/POLA.jpg?revision=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FN2iIOIah9eDPaBvubZjHLnhfVroz-UDqg';" alt="11 4 Nonpolar Molecules And Imf Chemistry Libretexts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 4 Nonpolar Molecules And Imf Chemistry Libretexts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/cooljargon-openstax-chemistry-1-9/m51077/CNX_Chem_10_01_KMTPhases1.jpg" data-lightbox="roadtrip" data-title="Chemistry Intermolecular Forces">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/cooljargon-openstax-chemistry-1-9/m51077/CNX_Chem_10_01_KMTPhases1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQeb0rqL_jGwx4Cs-FQ26ANkRiQl8OommncA';" alt="Chemistry Intermolecular Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chemistry Intermolecular Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://chem.libretexts.org/@api/deki/files/54163/interaction.gif?revision=2" data-lightbox="roadtrip" data-title="4 2 Intermolecular Forces Chemistry Libretexts">
+											<img class="card-img v-image ads-img " src="https://chem.libretexts.org/@api/deki/files/54163/interaction.gif?revision=2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROuFP_DKH3QLDOd88RmQo4II-Au6US9JaDIQ';" alt="4 2 Intermolecular Forces Chemistry Libretexts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 2 Intermolecular Forces Chemistry Libretexts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cfvod.kaltura.com/p/2531481/sp/253148100/thumbnail/entry_id/1_szs4ed3u/version/100001/width/412/height/248" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROuFP_DKH3QLDOd88RmQo4II-Au6US9JaDIQ';" alt="4 2 Intermolecular Forces Chemistry Libretexts">
+										<div class="card-body">
+						<h3 class="h5"><b>Which has the strongest intermolecular forces of attraction.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ne imf chemistry</strong>. 
+								
+																	Select the Total Force button and move the Ne atom as before. 
+																	Therefore Ionic compounds are technically not held together by IMFs. 
+																	Note that we will use the popular phrase intermolecular attraction to refer to attractive forces between the particles of a substance regardless of whether these. 
+																	In the following description the term particle will be used to refer to an atom molecule or ion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just want to check some answers. 
+																	C 6 H 6. 
+																	In order to form a solution the solute must be surrounded or solvated by the solvent. 
+																	Ne Ar Kr Xe d. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both enhance the IMF we refer to as hydrogen bonding. 
+																	Section the stronger the IMFs the more E needed to overcome these attractions and vaporize. 
+																	List the substances BaCl 2 H 2 CO HF and Ne in order of increasing boiling points. 
+																	Which has the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Move the Ne atom on the right and observe how the potential energy changes. 
+																	Dispersion Dipole-Dipole Hydrogen 4 SF4. 
+																	Substance 1Predominant Intermolecular Force. 
+																	Draw the molecule H 2 O with its correct geometry and show the bond dipoles and partial charges. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The small size of each dipole allows for a closer. 
+																	Note that we will use the popular phrase intermolecular attraction to refer to attractive forces between the particles of a substance regardless of whether these. 
+																	The attractive forces are stronger for ionic substances than for molecular ones The intermolecular forces of the remaining substances depend on molecular weight polarity and hydrogen bonding. 
+																	Intermolecular forces are forces of attraction that hold groups of covalently bonded atoms called molecules to other molecules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The lighter hydrides have the highest En values which leads to especially polar H-X bonds. 
+																	Pre-AP Chemistry Lecture Notes. 
+																	Neon Ne is a noble gas nonpolar and with only modest London Dispersion forces between atoms. 
+																	As was the case for gaseous substances the kinetic molecular theory may be used to explain the behavior of solids and liquids. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Select the Interaction Potential tab and use the default neon atoms. 
+																	When is the total force on each atom attractive and large enough to matter. 
+																	Last Modified on November 2 2015 Address 400 W Elm Ave Flagstaff AZ 86001. 
+																	If you isolate one molecule of NaCl in the crystal structure it is attracted to other NaCl molecules in they solid by ion-ion IMF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0 o C 4 o C 96 o C 100 o C. 
+																	Intermolecular forces are generally much weaker than covalent bonds. 
+																	Learn imf chemistry with free interactive flashcards. 
+																	H 2 Te H 2 Se H 2 O H 2 S b. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then select the Component Forces button and move the Ne atom. 
+																	Intermolecular Forces Worksheetpdf 5212 KB. 
+																	Choose from 500 different sets of imf chemistry flashcards on Quizlet. 
+																	This is the only force between 2 nonpolar molecules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The weakest IMF is called London Forces or van der Waals Forces. 
+																	LiH HF At which temperature does water have its greatest density. 
+																	Hydrogen sulfide H 2 S is a polar molecule. 
+																	Ne 25 Ar 95 Kr 125 Xe 170 A Le Châteliers principle D dipole-dipole interaction B hydrogen bonding E none of these C London dispersion forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chemistry Stack Exchange is a question and answer site for scientists academics teachers and students in the field of chemistry. 
+																	The molecular weights are H 2 2 CO 28 HF 20. 
+																	It will have polar interactions as well as London forces between molecules and boils at -60C. 
+																	This type of IMF clearly is stronger than a H-bond since the attractions are between fully charged ions not partially charged atoms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CH3CH2OH or CH3CH2Br I choseCH3CH2OH 2. 
+																	Choices for the predominant intermolecular force are metallic bonding ionic bonding network covalent bonding hydrogen bonding dipole-dipole and dispersion forces. 
+																	Intermolecular forcesattractive and repulsive forces between molecules The strength of the intermolecular forces between solutes and solvents determines the solubility of a given solute in a given solvent. 
+																	D diethyl ether CH 3CH 2O. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It will be a gas at and well below room temperature boiling at -246C. 
+																	It only takes a minute to sign up. 
+																	Hydrogen bonding thats why. 
+																	C 3 H 8. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	B 2 H 6. 
+																	List the types of intermolecular forces that exist between the molecules. 
+																	Answer Key IMF Practice test 2 1. 
+																	Polar bonds form between atoms of different electronegativityThis is described as a bond dipole and is represented using an arrow to indicate the direction of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In contrast to intra molecular forces such as the covalent bonds that hold atoms together in molecules and polyatomic ions inter molecular forces hold molecules together in a liquid or solid. 
+																	In the following description the term particle will be used to refer to an atom molecule or ion. 
+																	The are very strong IMFs between molecules of NaCl in the solid. 
+																	HF HCl HBr HI e. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As was the case for gaseous substances the kinetic molecular theory may be used to explain the behavior of solids and liquids. 
+																	Draw in the partial charges d- and d on both NF 3 and NH 3. 
+																	Bond Dipoles and Dipole Moments. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/887/2015/06/23214348/CNX_Chem_10_01_DNA.jpg" data-lightbox="roadtrip" data-title="Intermolecular Forces Chemistry Atoms First">
+											<img class="card-img v-image ads-img " src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/887/2015/06/23214348/CNX_Chem_10_01_DNA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSliSXXiulRTs_XvhtQr1Uj1wl2hmCSC0eC1g';" alt="Intermolecular Forces Chemistry Atoms First">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Intermolecular Forces Chemistry Atoms First</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/8c/cd/768ccd83d074cf09e9092e53d57eedb6.png" data-lightbox="roadtrip" data-title="Pin By Msrazz Chemclass On The Mole Mole Day Chemistry Posters Mole">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/8c/cd/768ccd83d074cf09e9092e53d57eedb6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiw2Ey0TU1GP2xtj7OHhNemyRq_we2-wIig';" alt="Pin By Msrazz Chemclass On The Mole Mole Day Chemistry Posters Mole">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Msrazz Chemclass On The Mole Mole Day Chemistry Posters Mole</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://textimgs.s3.amazonaws.com/boundless-chemistry/el-hydrogen-bonds-in-water.svg" data-lightbox="roadtrip" data-title="Intermolecular Forces Boundless Chemistry">
+											<img class="card-img v-image ads-img " src="https://textimgs.s3.amazonaws.com/boundless-chemistry/el-hydrogen-bonds-in-water.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZcFQo0huHK996PBQNf_91IdMPkHPBrfxbjA';" alt="Intermolecular Forces Boundless Chemistry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Intermolecular Forces Boundless Chemistry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="bzEabFGlqNeNLM" data-lightbox="roadtrip" data-title="Https Www Studocu Com En Us Document University Of Hawaii At Manoa General Chemistry Ii Lecture Notes Chem 162 Intermolecular Forces Lecture Notes 6142806 View">
+											<img class="card-img v-image ads-img " src="bzEabFGlqNeNLM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHCq5BUC0fZp-l1HoRx6MXTq-RFKSahFd1g';" alt="Https Www Studocu Com En Us Document University Of Hawaii At Manoa General Chemistry Ii Lecture Notes Chem 162 Intermolecular Forces Lecture Notes 6142806 View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Studocu Com En Us Document University Of Hawaii At Manoa General Chemistry Ii Lecture Notes Chem 162 Intermolecular Forces Lecture Notes 6142806 View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://opentextbc.ca/chemistry/wp-content/uploads/sites/150/2016/05/CNX_Chem_10_01_HydrideBP2.jpg" data-lightbox="roadtrip" data-title="10 1 Intermolecular Forces Chemistry">
+											<img class="card-img v-image ads-img " src="https://opentextbc.ca/chemistry/wp-content/uploads/sites/150/2016/05/CNX_Chem_10_01_HydrideBP2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEAOs47hdtH305FHeRsOAdz8nhRVoBY76Uw';" alt="10 1 Intermolecular Forces Chemistry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 1 Intermolecular Forces Chemistry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.kastatic.org/googleusercontent/RHSFcEuIkcDoNiz8G7w9li_zM4A2V59lhH3QU1aPC2Z6KT0UdWNKsMpj2w3Rthi5r0vs3zNuQLEP2QXFxRg7LME" data-lightbox="roadtrip" data-title="Intermolecular Forces Video Khan Academy">
+											<img class="card-img v-image ads-img " src="https://cdn.kastatic.org/googleusercontent/RHSFcEuIkcDoNiz8G7w9li_zM4A2V59lhH3QU1aPC2Z6KT0UdWNKsMpj2w3Rthi5r0vs3zNuQLEP2QXFxRg7LME" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKEHnpUIBq9nSTYieHtJxXxy9GuOmPI9jPg';" alt="Intermolecular Forces Video Khan Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Intermolecular Forces Video Khan Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://chem.libretexts.org/@api/deki/files/161092/Edited_Logo.png?revision=1" data-lightbox="roadtrip" data-title="3 7 Intermolecular Forces Chemistry Libretexts">
+											<img class="card-img v-image ads-img " src="https://chem.libretexts.org/@api/deki/files/161092/Edited_Logo.png?revision=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZv6uCzG8LgvjNQuiO4oXZPeU32VqQlBlDPg';" alt="3 7 Intermolecular Forces Chemistry Libretexts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 7 Intermolecular Forces Chemistry Libretexts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://chem.libretexts.org/@api/deki/files/63352/150471966947410.png?revision=2" data-lightbox="roadtrip" data-title="6 3 Forces Between Molecules Chemistry Libretexts">
+											<img class="card-img v-image ads-img " src="https://chem.libretexts.org/@api/deki/files/63352/150471966947410.png?revision=2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRphcTKS04TJEA3tcLPOqaoODu5IFbv7b_uJQ';" alt="6 3 Forces Between Molecules Chemistry Libretexts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 3 Forces Between Molecules Chemistry Libretexts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1518/2017/10/04194324/c69f789676fbe05450557287143f207a.jpg" data-lightbox="roadtrip" data-title="Intermolecular Forces Physical Properties Of Organic Compounds Mcc Organic Chemistry">
+											<img class="card-img v-image ads-img " src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1518/2017/10/04194324/c69f789676fbe05450557287143f207a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXKtr-goW2JdFgbeEZ7uKoKn2sGwAbSqNoQ';" alt="Intermolecular Forces Physical Properties Of Organic Compounds Mcc Organic Chemistry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Intermolecular Forces Physical Properties Of Organic Compounds Mcc Organic Chemistry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://o.quizlet.com/x8tGKcAxV9kEEly17oKiwA.png" data-lightbox="roadtrip" data-title="Physical Chemistry Bonding Flashcards Quizlet">
+											<img class="card-img v-image ads-img " src="https://o.quizlet.com/x8tGKcAxV9kEEly17oKiwA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgB0UtT9IVgPfT2l1IDPNx9BQ52h14Wvu9AQ';" alt="Physical Chemistry Bonding Flashcards Quizlet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Physical Chemistry Bonding Flashcards Quizlet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/cERb1d6J4-M/mqdefault.jpg" data-lightbox="roadtrip" data-title="Intermolecular Forces Chemistry Master">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/cERb1d6J4-M/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHOq_uM6v2m105q9i5GOCVIy8BfZuqV-0rQ';" alt="Intermolecular Forces Chemistry Master">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Intermolecular Forces Chemistry Master</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wou.edu/chemistry/files/2018/09/chemistry-of-corrosion.png" data-lightbox="roadtrip" data-title="Ch104 Chapter 7 Solutions Chemistry">
+											<img class="card-img v-image ads-img " src="https://wou.edu/chemistry/files/2018/09/chemistry-of-corrosion.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJNiHlfw52pe0sSaD9aTMWRKwHzI5SZiW-0Q';" alt="Ch104 Chapter 7 Solutions Chemistry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ch104 Chapter 7 Solutions Chemistry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://opentextbc.ca/chemistry/wp-content/uploads/sites/150/2016/05/CNX_Chem_10_05_NtwrkSolid.jpg" data-lightbox="roadtrip" data-title="10 5 The Solid State Of Matter Chemistry">
+											<img class="card-img v-image ads-img " src="https://opentextbc.ca/chemistry/wp-content/uploads/sites/150/2016/05/CNX_Chem_10_05_NtwrkSolid.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm9kAdx33oee7wn95sS101FGGULP6CEXZ4Dw';" alt="10 5 The Solid State Of Matter Chemistry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 5 The Solid State Of Matter Chemistry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.slideplayer.com/27/9228016/slides/slide_1.jpg" data-lightbox="roadtrip" data-title="Ch 10 Intermolecular Forces And Types Of Solids Ap Chemistry Sequoyah High School Ppt Download">
+											<img class="card-img v-image ads-img " src="https://images.slideplayer.com/27/9228016/slides/slide_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBLOPvpZWzlQcvv6J2uNQ17oYeSW9cDwOYg';" alt="Ch 10 Intermolecular Forces And Types Of Solids Ap Chemistry Sequoyah High School Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ch 10 Intermolecular Forces And Types Of Solids Ap Chemistry Sequoyah High School Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cfvod.kaltura.com/p/2531481/sp/253148100/thumbnail/entry_id/1_szs4ed3u/version/100001/width/412/height/248" data-lightbox="roadtrip" data-title="Stephens Chemistry Molecule Polarity Imf S And Properties Of Chemical Bonding Schooltube Safe Video Sharing And Management For K12">
+											<img class="card-img v-image ads-img " src="https://cfvod.kaltura.com/p/2531481/sp/253148100/thumbnail/entry_id/1_szs4ed3u/version/100001/width/412/height/248" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfgSG9uW_Ts31CAYLO30IGBrN6DkmiwL-q0A';" alt="Stephens Chemistry Molecule Polarity Imf S And Properties Of Chemical Bonding Schooltube Safe Video Sharing And Management For K12">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stephens Chemistry Molecule Polarity Imf S And Properties Of Chemical Bonding Schooltube Safe Video Sharing And Management For K12</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/lowes-no-military-discount-on-sale-items.html">Lowes No Military Discount On Sale Items</a></li>
+													<li class="list-group-item"><a href="/lowes-military-id.html">Lowes Military Id</a></li>
+													<li class="list-group-item"><a href="/lmaorotf-meaning-text.html">Lmaorotf Meaning Text</a></li>
+													<li class="list-group-item"><a href="/lmfao-band.html">Lmfao Band</a></li>
+													<li class="list-group-item"><a href="/lowes-military-discount-maximum.html">Lowes Military Discount Maximum</a></li>
+													<li class="list-group-item"><a href="/lmfao-albums.html">Lmfao Albums</a></li>
+													<li class="list-group-item"><a href="/lowes-military-promo-code.html">Lowes Military Promo Code</a></li>
+													<li class="list-group-item"><a href="/lowes-military-discount-washer-dryer.html">Lowes Military Discount Washer Dryer</a></li>
+													<li class="list-group-item"><a href="/lmfao-quotes.html">Lmfao Quotes</a></li>
+													<li class="list-group-item"><a href="/lowes-hiring-veterans.html">Lowes Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/lowes-military-code.html">Lowes Military Code</a></li>
+													<li class="list-group-item"><a href="/lowes-military-careers.html">Lowes Military Careers</a></li>
+													<li class="list-group-item"><a href="/lowes-give-military-discount.html">Lowes Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/lowes-military-discount-barcode.html">Lowes Military Discount Barcode</a></li>
+													<li class="list-group-item"><a href="/lmao-youtube.html">Lmao Youtube</a></li>
+													<li class="list-group-item"><a href="/lowes-military-number.html">Lowes Military Number</a></li>
+													<li class="list-group-item"><a href="/lmao-yeet-meaning.html">Lmao Yeet Meaning</a></li>
+													<li class="list-group-item"><a href="/lmfao-break-up.html">Lmfao Break Up</a></li>
+													<li class="list-group-item"><a href="/lowes-offer-military-discount.html">Lowes Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/lowes-military-discount-with-coupon.html">Lowes Military Discount With Coupon</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Apple Veterans Store - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Apple Veterans Store",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/fb/d3/fd/fbd3fdd67b766158e9f1b087eb2837ce.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=apple+veterans+store",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Apple Veterans Store</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Apple Store is in the center court. Military National Guard and Reserve and the family members who reside in the same household. Sign up for Today at Apple programs. <br>				
+			</p>
+										<a class="badge badge-primary" href="/t-mobile-veteran-phone-deals.html">t mobile veteran phone deals</a>
+											<a class="badge badge-light" href="/us-army-vets.html">us army vets</a>
+											<a class="badge badge-primary" href="/types-of-imf-chemistry.html">types of imf chemistry</a>
+											<a class="badge badge-light" href="/swiss-army-watch-discount.html">swiss army watch discount</a>
+											<a class="badge badge-info" href="/sprint-military-discount-registration.html">sprint military discount registration</a>
+											<a class="badge badge-info" href="/tractor-supply-military-discount-memorial-day-2020.html">tractor supply military discount memorial day 2020</a>
+											<a class="badge badge-primary" href="/tractor-supply-military-highway.html">tractor supply military highway</a>
+											<a class="badge badge-info" href="/theragun-pro-price.html">theragun pro price</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our website gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  You can also contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/4f/0f/fd4f0f1474aee5202a65e5765d4d2085.jpg" data-lightbox="roadtrip" data-title="Apple Has Extended The Online Apple Store Dedicated To Those In The Armed Forces With The Veterans And Military Purc Apple Apple Price Apple Watch Accessories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/4f/0f/fd4f0f1474aee5202a65e5765d4d2085.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ayWS6fmO0uWOvR2xrGE6HDg09xhhxJ8WUg';" alt="Apple Has Extended The Online Apple Store Dedicated To Those In The Armed Forces With The Veterans And Military Purc Apple Apple Price Apple Watch Accessories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Has Extended The Online Apple Store Dedicated To Those In The Armed Forces With The Veterans And Military Purc Apple Apple Price Apple Watch Accessories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/2e/3d/ea2e3d5f4dace0753c1a33984583f3c2.jpg" data-lightbox="roadtrip" data-title="Apple Launches New Veterans And Military Online Store Get 10 Off All Apple Products Midgetmomma Https Www All Apple Products Apple Products Apple Launch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/2e/3d/ea2e3d5f4dace0753c1a33984583f3c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9jf7IDx4JNrHMgs1vUhEXO1Kwref0Dxoxw';" alt="Apple Launches New Veterans And Military Online Store Get 10 Off All Apple Products Midgetmomma Https Www All Apple Products Apple Products Apple Launch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Launches New Veterans And Military Online Store Get 10 Off All Apple Products Midgetmomma Https Www All Apple Products Apple Products Apple Launch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/34/45/673445109d278f9dec54d7d958878f91.png" data-lightbox="roadtrip" data-title="Pin On Tech Articles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/34/45/673445109d278f9dec54d7d958878f91.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuLr0arEP_hG-zko7Nqr1TRpiys2VvlZSn9w';" alt="Pin On Tech Articles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tech Articles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/54/13/295413e2dfbadb4c1345965580781f0b.png" data-lightbox="roadtrip" data-title="Apple Launches Online Store For Active Military And Veterans With Discounted Pricing Apple New News Online This Or That Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/54/13/295413e2dfbadb4c1345965580781f0b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBU340kcBnnXzymnfAx6jCqM1jAYqd6jeInQ';" alt="Apple Launches Online Store For Active Military And Veterans With Discounted Pricing Apple New News Online This Or That Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Launches Online Store For Active Military And Veterans With Discounted Pricing Apple New News Online This Or That Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ac/32/fa/ac32fa6fe453094b7569e71f92a3a84f.jpg" data-lightbox="roadtrip" data-title="Apple Launches Dedicated Store For Military And Veterans With Discounted Iphones Ipads And More 9to5mac All Apple Products Apple Launch Apple Products">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ac/32/fa/ac32fa6fe453094b7569e71f92a3a84f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuTe-vme4qzFL6rd5OabbFB68qh--1M7YtXQ';" alt="Apple Launches Dedicated Store For Military And Veterans With Discounted Iphones Ipads And More 9to5mac All Apple Products Apple Launch Apple Products">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Launches Dedicated Store For Military And Veterans With Discounted Iphones Ipads And More 9to5mac All Apple Products Apple Launch Apple Products</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/aa/5b/2e/aa5b2e45d1224a7bc7e1b6ea1cf9c5bc.jpg" data-lightbox="roadtrip" data-title="Aafes Military Veterans Day Sale Starting November 9th Apple Ipad 9 7 In 32gb With Wifi 249 New Apple Ipad Apple Ipad Apple Ipad Mini">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/aa/5b/2e/aa5b2e45d1224a7bc7e1b6ea1cf9c5bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATCN5q9d3bdCi_He6l6piI6rgr5GLM7_wkg';" alt="Aafes Military Veterans Day Sale Starting November 9th Apple Ipad 9 7 In 32gb With Wifi 249 New Apple Ipad Apple Ipad Apple Ipad Mini">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aafes Military Veterans Day Sale Starting November 9th Apple Ipad 9 7 In 32gb With Wifi 249 New Apple Ipad Apple Ipad Apple Ipad Mini</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/5b/70/f7/5b70f75bfd318ff9909dd16a98e32c31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATCN5q9d3bdCi_He6l6piI6rgr5GLM7_wkg';" alt="Aafes Military Veterans Day Sale Starting November 9th Apple Ipad 9 7 In 32gb With Wifi 249 New Apple Ipad Apple Ipad Apple Ipad Mini">
+										<div class="card-body">
+						<h3 class="h5"><b>Traveling south on the Palmetto 826 South exit Kendall Drive SW 88th Street then take the Dadeland Mall Circle exit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Apple veterans store</strong>. 
+								
+																	The Apple Store is located in Dadeland Mall at 7535 Dadeland Mall in Miami FL. 
+																	The VA gradually launched Health Records to select patients this summer and now veterans who are iOS users and receive their care through the Veterans Health Administration can see a fuller more comprehensive picture of their health that includes information from multiple providers. 
+																	Current and Veteran members of the US. 
+																	The VVC iOS version enables Veterans and their VA healthcare provider to participate in a virtual medical appointment using Apple mobile devices iPhone iPad. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shopping Bag. 
+																	Your All-Inclusive Apple Vacation includes round-trip airfare hotel accommodations round-trip airport transfers and the services of an in-resort Apple representative. 
+																	Find an Apple Store and shop for Mac iPhone iPad Apple Watch and more. 
+																	Looking to Buyfinance cash or Lease a car for lease give us a call. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military National Guard and Reserve. 
+																	855 likes 3 talking about this 70 were here. 
+																	The Apple Store is between Macys and Macys Children Home across from Coach. 
+																	Apple has today opened up a new online store for active military personnel and veterans to make purchasing its products at a discount more accessible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple Store 3301 Veterans Memorial Blvd Metairie LA 70002. 
+																	130 Reviews 504 830-1400 Website. 
+																	Redemption Type Online in store Available to Active duty Retiree Veteran ReserveNational Guard Dependent Save 10 on Apple products and accessories. 
+																	Order Online Tickets Tickets See Availability Directions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Health records data includes allergies conditions immunizations lab results medications procedures and vitals and is displayed along with other information in the Health app like Apple Watch data. 
+																	Traveling on I-10 exit Causeway Boulevard head north take the first service road exit right and follow signs to the mall. 
+																	The Apple Store is located in Lakeside Shopping Center at 3301 Veterans Memorial Boulevard in Metairie LA. 
+																	Or get support at the Genius Bar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This benefit program with special pricing is called Veterans and Military Purchase Program provided by Apple to current and Veteran members of the US. 
+																	The Apple military discount is 10 on most products. 
+																	To show their gratitude for the armed forces Apple is proud to offer active military and veterans a benefit program with a dedicated online store. 
+																	The Apple Veterans and Military Purchase Program is available in person in brick-and-mortar Apple retail stores as well as online through the Apple website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple is also providing up to a four-month free trial of Apple Music for veterans who sign up for the service anytime in November. 
+																	² Discount on iPhone applies only to SIM-free phones. 
+																	Book online or call 1 800 517-2000. 
+																	Get directions reviews and information for Apple Store in Metairie LA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Global Nav Open Menu Global Nav Close Menu. 
+																	We have all makes and. 
+																	With Health Records on iPhone veterans across the US will be able to see medical information from participating institutions including the VA organized into one view all in the Health app. 
+																	More ways to shop. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apple Debuts Online Store With 10 Percent Discount for Veterans and Active Military Monday December 3 2018 103 pm PST by Juli Clover Apple today launched a new online store in the US. 
+																	Find an Apple Store or other retailer near you. 
+																	Menu Reservations Make Reservations. 
+																	Apple and the US Department of Veterans Affairs VA today announced that veterans across the nation and surrounding territories 1 now have access to the Health Records feature in the Health app on iPhone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Different from its education pricing eligible. 
+																	Apple Store for State and Local Government. 
+																	¹ IDme is an Apple service provider and is only permitted to use your information for the purpose of verifying your eligibility for the Veterans and Military Purchase Plan. 
+																	The VA Video Connect VVC application provides video conference services to connect Veteran patients with their VA medical providers in multiple platforms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Big Apple Auto Group LLC North Miami Beach Florida. 
+																	Closest parking is between Pottery Barn and Dillards. 
+																	Download apps by US Department of Veterans Affairs VA including CBT-i Coach COVID Coach VA Video Connect and many more. 
+																	This store is designed exclusively for Federal customers to purchase Apple and third-party products using a federally issued SmartPay credit card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Apple Military Discount is a program provided by Apple for active duty veterans US. 
+																	Additionally current and veteran members of the US Military National Guard and Reserve are eligible for special pricing on Apple products and accessories throughout the year with Apples Veterans and Military Purchase Program. 
+																	Apple Store for Federal SmartPay. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/f6/79/3af679b508e1400b82917997670fa407.jpg" data-lightbox="roadtrip" data-title="Tim Cook Proud To Work Alongside Veterans At Apple Photo Honoring Veterans Apple Photo Veterans Day Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/f6/79/3af679b508e1400b82917997670fa407.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9ptNTJ5qkNX35KWBzORjopFV5JfQ0Pa95g';" alt="Tim Cook Proud To Work Alongside Veterans At Apple Photo Honoring Veterans Apple Photo Veterans Day Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tim Cook Proud To Work Alongside Veterans At Apple Photo Honoring Veterans Apple Photo Veterans Day Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/b8/eb/d6b8ebb8b3319071dfed7a0bfa2b8cb8.png" data-lightbox="roadtrip" data-title="7 Tricks That Will Save You Money At The Apple Store Apple Store Apple Store Gift Card Save Your Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/b8/eb/d6b8ebb8b3319071dfed7a0bfa2b8cb8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbRpGhgqmr5fsvf4BCv7-Ldl1oIFKJ8EujQ';" alt="7 Tricks That Will Save You Money At The Apple Store Apple Store Apple Store Gift Card Save Your Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Tricks That Will Save You Money At The Apple Store Apple Store Apple Store Gift Card Save Your Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/36/4d/f6364d2e487cfd66640cb74b3d393303.png" data-lightbox="roadtrip" data-title="Official Apple Store U S Mac Apple Watch Iphone And Ipad Apple Watch Military Store Iphone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/36/4d/f6364d2e487cfd66640cb74b3d393303.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrORj9LPfvEZzdCM8C6Ykt_UAQLClAwdjNw';" alt="Official Apple Store U S Mac Apple Watch Iphone And Ipad Apple Watch Military Store Iphone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Apple Store U S Mac Apple Watch Iphone And Ipad Apple Watch Military Store Iphone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fb/d3/fd/fbd3fdd67b766158e9f1b087eb2837ce.jpg" data-lightbox="roadtrip" data-title="Apple Launches Online Store With 10 Percent Discount For Active Military And Veterans Techcrunch Apple Launch Percent Discounts Product Launch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fb/d3/fd/fbd3fdd67b766158e9f1b087eb2837ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPsqgMM7eRqTX19MEku4ZdEBzEt8KZnTwWQ';" alt="Apple Launches Online Store With 10 Percent Discount For Active Military And Veterans Techcrunch Apple Launch Percent Discounts Product Launch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Launches Online Store With 10 Percent Discount For Active Military And Veterans Techcrunch Apple Launch Percent Discounts Product Launch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/d1/1e/06d11ebac556b566ca2ece4145533eb5.jpg" data-lightbox="roadtrip" data-title="Win A 10 000 Apple Store Gift Card Hi Tech Dream Giveaway Dream Giveaway Apple Store Gift Card Giveaway">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/d1/1e/06d11ebac556b566ca2ece4145533eb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyxYsjRNMGIejFmzO4PUDALOxHcqnGf1k52g';" alt="Win A 10 000 Apple Store Gift Card Hi Tech Dream Giveaway Dream Giveaway Apple Store Gift Card Giveaway">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Win A 10 000 Apple Store Gift Card Hi Tech Dream Giveaway Dream Giveaway Apple Store Gift Card Giveaway</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/7d/d5/7f7dd5b37eba33f32cc7628765448510.jpg" data-lightbox="roadtrip" data-title="Apple Partners With Va To Bring Health Records To Veterans Techcrunch Apple Health Health Records Health App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/7d/d5/7f7dd5b37eba33f32cc7628765448510.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlrid9oWwZsgPAL48o_SuF1kitIkyD7TBGQ';" alt="Apple Partners With Va To Bring Health Records To Veterans Techcrunch Apple Health Health Records Health App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Partners With Va To Bring Health Records To Veterans Techcrunch Apple Health Health Records Health App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/c2/a1/33c2a1749e1f5391d14fc83d4ffa6a0a.jpg" data-lightbox="roadtrip" data-title="A Band Of Thieves Dressed Like Apple Workers Keeps Stealing Iphones From Nyc Stores Apple Store Iphone Apple Stock">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/c2/a1/33c2a1749e1f5391d14fc83d4ffa6a0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EqBN1b7KM704L8aNWaFeJuwMqcNeuCvdOA';" alt="A Band Of Thieves Dressed Like Apple Workers Keeps Stealing Iphones From Nyc Stores Apple Store Iphone Apple Stock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Band Of Thieves Dressed Like Apple Workers Keeps Stealing Iphones From Nyc Stores Apple Store Iphone Apple Stock</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/a8/d2/f8a8d2ef4d7aefd40e52ca179d6a9422.png" data-lightbox="roadtrip" data-title="Apple Announces Health Records Feature Coming To Veterans Health Records Health Application Apple Repair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/a8/d2/f8a8d2ef4d7aefd40e52ca179d6a9422.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXn1XasH376iG7VyktJOV26WoSHaUWaxabWg';" alt="Apple Announces Health Records Feature Coming To Veterans Health Records Health Application Apple Repair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Announces Health Records Feature Coming To Veterans Health Records Health Application Apple Repair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5b/70/f7/5b70f75bfd318ff9909dd16a98e32c31.jpg" data-lightbox="roadtrip" data-title="Apple Gibt Die Besten Gewinner Des App Store 2020 Bekannt Apple Presents Best Ipad Ipad Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5b/70/f7/5b70f75bfd318ff9909dd16a98e32c31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkDTAlslWUcFdnSCsNm_qJsSZeW-roWZfc8A';" alt="Apple Gibt Die Besten Gewinner Des App Store 2020 Bekannt Apple Presents Best Ipad Ipad Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Gibt Die Besten Gewinner Des App Store 2020 Bekannt Apple Presents Best Ipad Ipad Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/06/7d/44067d3588b7eed0a3899c345dcfcd59.jpg" data-lightbox="roadtrip" data-title="Military Members Veterans And Their Families Can Save Thousands Each Year With These Amazing Benefits And In 2021 Apple Retail Store Visa Gift Card Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/06/7d/44067d3588b7eed0a3899c345dcfcd59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTj_PHyyqTDFqLIihv3j7oSarvwHWG_UnfLg';" alt="Military Members Veterans And Their Families Can Save Thousands Each Year With These Amazing Benefits And In 2021 Apple Retail Store Visa Gift Card Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Members Veterans And Their Families Can Save Thousands Each Year With These Amazing Benefits And In 2021 Apple Retail Store Visa Gift Card Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/9b/74/8b9b747ea09c41ba7f73399a7978243a.jpg" data-lightbox="roadtrip" data-title="Iphone 5 Begins Its World Tour In Australia Cnet Iphone5 Tours">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/9b/74/8b9b747ea09c41ba7f73399a7978243a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4hTH1ugJp5EqD_402UIJuTVAxYzJGhBdIQ';" alt="Iphone 5 Begins Its World Tour In Australia Cnet Iphone5 Tours">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iphone 5 Begins Its World Tour In Australia Cnet Iphone5 Tours</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/cb/68/c8cb68a8a4d53ff91ea56d34b49586e3.jpg" data-lightbox="roadtrip" data-title="Apple Releases 13 4 Update For Ios And Ipados Security Patches Software Update Apple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/cb/68/c8cb68a8a4d53ff91ea56d34b49586e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpJ4O2-4L7TGNajwhe9xOGmSCurtZdRYI3w';" alt="Apple Releases 13 4 Update For Ios And Ipados Security Patches Software Update Apple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apple Releases 13 4 Update For Ios And Ipados Security Patches Software Update Apple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/83/2e/51832ed503873944495ba11822a1767b.jpg" data-lightbox="roadtrip" data-title="Electionday Exercise Your Right To Vote Veteran Owned Business Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/83/2e/51832ed503873944495ba11822a1767b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1oWVDg1ZnDJItnpjKMBvKJq9RD9-xIcRMg';" alt="Electionday Exercise Your Right To Vote Veteran Owned Business Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Electionday Exercise Your Right To Vote Veteran Owned Business Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/b6/9c/70b69c5524810eacdfd0537267664051.gif" data-lightbox="roadtrip" data-title="Discover Ajn For The Ipad App Discover Apple Inc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/b6/9c/70b69c5524810eacdfd0537267664051.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHey5lVGkCXiAVGzlQybGOxEppMRQJp9SoOg';" alt="Discover Ajn For The Ipad App Discover Apple Inc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover Ajn For The Ipad App Discover Apple Inc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/8d/42/c18d424e5e514578afa2a2b55227f014.jpg" data-lightbox="roadtrip" data-title="Us Flag With Veterans Silhouettes Case Mate Iphone Case Zazzle Com Iphone Case Design Iphone Cases Flag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/8d/42/c18d424e5e514578afa2a2b55227f014.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejXJ0kIlr3V7tnCuBq5hI36ygiSHFe9NOKg';" alt="Us Flag With Veterans Silhouettes Case Mate Iphone Case Zazzle Com Iphone Case Design Iphone Cases Flag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Flag With Veterans Silhouettes Case Mate Iphone Case Zazzle Com Iphone Case Design Iphone Cases Flag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-chief-economist-vogue.html">Imf Chief Economist Vogue</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-raghuram-rajan.html">Imf Chief Economist Raghuram Rajan</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-independence.html">Imf Central Bank Independence</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-digital-currency.html">Imf Central Bank Digital Currency</a></li>
+													<li class="list-group-item"><a href="/imf-bretton-woods-system.html">Imf Bretton Woods System</a></li>
+													<li class="list-group-item"><a href="/imf-business-definition.html">Imf Business Definition</a></li>
+													<li class="list-group-item"><a href="/imf-blog-pfm.html">Imf Blog Pfm</a></li>
+													<li class="list-group-item"><a href="/imf-careers-internship.html">Imf Careers Internship</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-gita-gopinath-salary.html">Imf Chief Economist Gita Gopinath Salary</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-law.html">Imf Central Bank Law</a></li>
+													<li class="list-group-item"><a href="/imf-blog-how-the-rich-get-richer.html">Imf Blog How The Rich Get Richer</a></li>
+													<li class="list-group-item"><a href="/imf-careers-jobs.html">Imf Careers Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-calls-for-bretton-woods-monetary-renegotiation.html">Imf Calls For Bretton Woods Monetary Renegotiation</a></li>
+													<li class="list-group-item"><a href="/imf-breakeven-oil-prices.html">Imf Breakeven Oil Prices</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-wiki.html">Imf Chief Economist Wiki</a></li>
+													<li class="list-group-item"><a href="/imf-central-bank-reserves.html">Imf Central Bank Reserves</a></li>
+													<li class="list-group-item"><a href="/imf-chief-about-farm-laws.html">Imf Chief About Farm Laws</a></li>
+													<li class="list-group-item"><a href="/imf-chief-economist-pay.html">Imf Chief Economist Pay</a></li>
+													<li class="list-group-item"><a href="/imf-brief-history.html">Imf Brief History</a></li>
+													<li class="list-group-item"><a href="/imf-chart-chemistry.html">Imf Chart Chemistry</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

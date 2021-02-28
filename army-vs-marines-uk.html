@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Vs Marines Uk - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Vs Marines Uk",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/8b/44/6d/8b446dcae9a26fb2900c54595470af1d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+vs+marines+uk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Vs Marines Uk</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Ministry of Defence MoD. GI stands for government issue and was used as a general term for any member of the US military. Role of the Royal Marines. <br>				
+			</p>
+										<a class="badge badge-dark" href="/imf-data-npl.html">imf data npl</a>
+											<a class="badge badge-success" href="/imf-data-public-debt.html">imf data public debt</a>
+											<a class="badge badge-primary" href="/imf-data-uk.html">imf data uk</a>
+											<a class="badge badge-light" href="/imf-deal-with-argentina.html">imf deal with argentina</a>
+											<a class="badge badge-success" href="/imf-data-ukraine.html">imf data ukraine</a>
+											<a class="badge badge-dark" href="/imf-data-mapper-gdp-per-capita.html">imf data mapper gdp per capita</a>
+											<a class="badge badge-warning" href="/imf-data-saudi-arabia.html">imf data saudi arabia</a>
+											<a class="badge badge-dark" href="/imf-data-indicators.html">imf data indicators</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our website gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/e4/8d/34e48d4596efcbb31ae3e30fe74922d0.jpg" data-lightbox="roadtrip" data-title="British Army Royal Gurkha Rifles Vs U S Marines Mock Battle Between U S Marines And Allies Army Vs Marines Mock Battle Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/e4/8d/34e48d4596efcbb31ae3e30fe74922d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBkZnOMiGbO96NckNj-q2t0CG0lFfKDbDLA';" alt="British Army Royal Gurkha Rifles Vs U S Marines Mock Battle Between U S Marines And Allies Army Vs Marines Mock Battle Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Army Royal Gurkha Rifles Vs U S Marines Mock Battle Between U S Marines And Allies Army Vs Marines Mock Battle Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/63/f8/df63f8dd42be9e049ccca508ab9ea070.jpg" data-lightbox="roadtrip" data-title="Dutch And British Marines Royal Marine Commando Marine Forces Military Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/63/f8/df63f8dd42be9e049ccca508ab9ea070.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqATPoRuCQC29Egdg9q1UnqDC3Z1heJix7g';" alt="Dutch And British Marines Royal Marine Commando Marine Forces Military Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dutch And British Marines Royal Marine Commando Marine Forces Military Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/3e/29/093e29690b164fed3015df0ea08d58fa.jpg" data-lightbox="roadtrip" data-title="British Royal Marines Aegisgears Royal Marines Royal Marine Commando British Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/3e/29/093e29690b164fed3015df0ea08d58fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Y4hNW5wPsEv8fsHAyH52KgRuBg7gPD2Mwg';" alt="British Royal Marines Aegisgears Royal Marines Royal Marine Commando British Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Royal Marines Aegisgears Royal Marines Royal Marine Commando British Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/e4/05/eae4055fee15ba29368badd033a7d4e8.jpg" data-lightbox="roadtrip" data-title="Royal Marine Commandos On Exercise In British Woodland Royal Marine Commando Military Marine Commandos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/e4/05/eae4055fee15ba29368badd033a7d4e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Nr5XYIQesIhgQthwaU3-WlBM09M2b-vUAA';" alt="Royal Marine Commandos On Exercise In British Woodland Royal Marine Commando Military Marine Commandos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Marine Commandos On Exercise In British Woodland Royal Marine Commando Military Marine Commandos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/2c/10/642c10b22b380faccd25ea5dd1f0f41a.jpg" data-lightbox="roadtrip" data-title="The 8 Most Elite Special Forces In The World Royal Marine Commando British Royal Marines Marine Commandos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/2c/10/642c10b22b380faccd25ea5dd1f0f41a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlhDDMqgsZ5brVFvzyMlv0Ol8MYieZReHvg';" alt="The 8 Most Elite Special Forces In The World Royal Marine Commando British Royal Marines Marine Commandos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 8 Most Elite Special Forces In The World Royal Marine Commando British Royal Marines Marine Commandos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/03/ea/02/03ea02842e919fb6255e0ea79d2577f7.jpg" data-lightbox="roadtrip" data-title="Royal Marine Commandos Royal Marine Commando Marine Commandos British Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/03/ea/02/03ea02842e919fb6255e0ea79d2577f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYA5HxCnjkkqUbmnQo_LS2AfNWFzXPi1C97w';" alt="Royal Marine Commandos Royal Marine Commando Marine Commandos British Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Marine Commandos Royal Marine Commando Marine Commandos British Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0e/10/03/0e1003f689c4d8eb90c27095a10108ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYA5HxCnjkkqUbmnQo_LS2AfNWFzXPi1C97w';" alt="Royal Marine Commandos Royal Marine Commando Marine Commandos British Royal Marines">
+										<div class="card-body">
+						<h3 class="h5"><b>Army is in fact its own branch.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army vs marines uk</strong>. 
+								
+																	Throughout world history marines served as a navys ground troops. 
+																	While the time-per-mile differences are negligible you may find it easier to run 2 miles than 15 miles if you have more endurance than speed. 
+																	The most obvious difference being their mission and methods of defending our country. 
+																	While marine infantry operates by sea land and air to support warfare the army infantry operates by land and air only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its one of the biggest rivalries in the British Armed Forces. 
+																	Each division operates independently from each other and sets their own regulations including uniform requirements. 
+																	If a single parent wishes to enlist they must give up legal custody and wait over a year to enlist. 
+																	Male marines must be between 58 and 78 inches tall and female marines must be between 58 and 72 inches. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since the Army is a much larger force with more slots to fill it tends to offer more incentives and benefits than the Marine Corps. 
+																	The core difference between the army infantry and the marine infantry is their mode of operation. 
+																	We decided to find out who was more popular in 2014 on Google. 
+																	The marines can trace their origins back to the formation of the English Armys Duke of York and Albanys maritime regiment of Foot at the grounds of the Honourable Artillery Company on 28 October 1664. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yes but it is typically used for the Army. 
+																	Although it is true that both Marines and Army carry out ground based operations there is a difference between them when it comes to the parameters of their activity. 
+																	It should be known that Marines are a wing of the Navy. 
+																	Jun 21 2020 - Explore Tanya Steeles board army vs marines funny on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Main Differences Between Army vs Marines. 
+																	The Corps of Royal Marines RM is an amphibious light infantry and also one of the five fighting arms of the Royal Navy. 
+																	Army on the other hand is not a wing of any other armed force. 
+																	Both have specialist trades the army is bigger and has more to choose from the marines are elite assault troops and the chances of more combat postings is higher so if you want medals thats the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As you can see there are many differences between the Army and Marines. 
+																	The Marines however do Which Has a. 
+																	As a highly specialised and adaptable elite light infantry force. 
+																	A waiver is required if a potential Marine has any dependents under the age of 18. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last year it was reported that Royal Marines could be axed from the Royal Navy and merged with the Parachute Regiment as part of a new British Army Commando Unit. 
+																	The Royal Marines rank alongside their army equivalents. 
+																	The Royal Marines and the Parachute Regiment are both elite units with legendary reputations. 
+																	The Royal Marines are the UKs Commando Force and the Royal Navys own amphibious troops. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are only a few differences between benefits offered by the Army and the Marine Corps. 
+																	They are an elite fighting force optimised for worldwide rapid response and are able to deal with a wide spectrum of threats and security challenges. 
+																	The Marines are a singular unit that contains several levels of seniority. 
+																	Very little a Marine Commando is slightly smaller than an Army Battalion but is organised along the same basic line Marine platoons troops have fewer men than Army infantry platoons and they have smaller support weapons platoons hence the manpower difference. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Another difference is that the army occupies a territory while marine corps invade territories. 
+																	However when on the books of any HM Ship or Naval Establishment Royal Marines are subject to the Naval Discipline Act 1957. 
+																	The Army is more than two times the size of the Marines. 
+																	The United States Army the largest branch of the United States Armed Forces and the United States Marine Corps one of the smallest branches have unique objectives capabilities and training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both the Marines and Army have individuals in reserve which means there are thousands of people who are hired by the military but are not currently needed for active duty. 
+																	However the Marines also have some unique benefits the Army lacks. 
+																	We discovered the Bootnecks have been searched for seven times more frequently than the Paras. 
+																	Marines have a separate selection and recruit training programme but that reflects there differing role. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In those circumstances many officer ranks in the Royal Marines formerly enjoyed greater status. 
+																	The army in contrast is used to perform more basic defensive and security functions. 
+																	The Marines have the same citizenship requirements as the Army. 
+																	The Army is comprised of multiple subgroups including the Infantry Special Forces and the Army Rangers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While the marines can be used in almost exactly the same way as the army they are typically reserved for more sensitive complex and critical operations. 
+																	UnitedstatesMarinesBootCampMarineCorpsIn this third reaction Video on my Channel I compare British Army Basic Training to US Marine Corps Basic Training. 
+																	See more ideas about marines marines funny army vs marines. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/db/c3/cadbc35333d12f589436ceefc38a8115.jpg" data-lightbox="roadtrip" data-title="Although Not A Royal Marine This Soldier Has Passed The All Arms Commando Course Giving Him The Rig Royal Marine Commando Marine Commandos British Army Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/db/c3/cadbc35333d12f589436ceefc38a8115.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODUC8_DMyurDMDYFnBh8SWXsBj3TdpLQmog';" alt="Although Not A Royal Marine This Soldier Has Passed The All Arms Commando Course Giving Him The Rig Royal Marine Commando Marine Commandos British Army Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Although Not A Royal Marine This Soldier Has Passed The All Arms Commando Course Giving Him The Rig Royal Marine Commando Marine Commandos British Army Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/ff/d1/efffd144aa03b9acdb6de1585992d679.jpg" data-lightbox="roadtrip" data-title="Pin By Juhi Singh On Man Vs Wild With Bear Grylls Royal Marine Commando Royal Marines Uniform British Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/ff/d1/efffd144aa03b9acdb6de1585992d679.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvXiKfylrB9FFDRINj0tuC-eKMBjWlV-tXw';" alt="Pin By Juhi Singh On Man Vs Wild With Bear Grylls Royal Marine Commando Royal Marines Uniform British Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Juhi Singh On Man Vs Wild With Bear Grylls Royal Marine Commando Royal Marines Uniform British Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/7d/c3/6b7dc3d132400e01b42d5939c79452a4.jpg" data-lightbox="roadtrip" data-title="Royal Marines Training Royal Marines Royal Marines Training Royal Marine Commando">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/7d/c3/6b7dc3d132400e01b42d5939c79452a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXF5NzZtY06ePg-5GHJ3qsp97Apf1Z-S817g';" alt="Royal Marines Training Royal Marines Royal Marines Training Royal Marine Commando">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Marines Training Royal Marines Royal Marines Training Royal Marine Commando</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/67/aa/8f67aaf3a0f6d07ca424cac9a384ab4c.jpg" data-lightbox="roadtrip" data-title="3 Commando Brigade Commandos Marine British Army Commandos Royal Marines British Royal Marines Royal Marine Commando">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/67/aa/8f67aaf3a0f6d07ca424cac9a384ab4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRTyDJzUMhoj_a_Jq0_wRjzskAtkSOWxSkfg';" alt="3 Commando Brigade Commandos Marine British Army Commandos Royal Marines British Royal Marines Royal Marine Commando">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Commando Brigade Commandos Marine British Army Commandos Royal Marines British Royal Marines Royal Marine Commando</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/c9/c0/2bc9c066789674de792d4e5d6708d17c.jpg" data-lightbox="roadtrip" data-title="British Royal Marines American War Of Independence British Royal Marines American War Of Independence American Revolutionary War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/c9/c0/2bc9c066789674de792d4e5d6708d17c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Vnle4Rto6ShfBMCyqVWI6BRvB2pyrlc_eg';" alt="British Royal Marines American War Of Independence British Royal Marines American War Of Independence American Revolutionary War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Royal Marines American War Of Independence British Royal Marines American War Of Independence American Revolutionary War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/44/6d/8b446dcae9a26fb2900c54595470af1d.jpg" data-lightbox="roadtrip" data-title="The Best Of British Hundreds Of Respectful Mourners To Salute Fallen Soldier At Last Ever Repatriation Through Wootton Bassett British Royal Marines Royal Marine Commando Fallen Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/44/6d/8b446dcae9a26fb2900c54595470af1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAbEmkEhanaWJ8M8XhIZpiuyhe0CldrsBUiQ';" alt="The Best Of British Hundreds Of Respectful Mourners To Salute Fallen Soldier At Last Ever Repatriation Through Wootton Bassett British Royal Marines Royal Marine Commando Fallen Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Of British Hundreds Of Respectful Mourners To Salute Fallen Soldier At Last Ever Repatriation Through Wootton Bassett British Royal Marines Royal Marine Commando Fallen Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/b5/63/1fb563af26f0d162311049170ece2012.jpg" data-lightbox="roadtrip" data-title="British Royal Marines Marching Through Ostend Royal Marines British Royal Marines Royal Marine Commando">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/b5/63/1fb563af26f0d162311049170ece2012.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQowr5YRZVoAwmpsYq5t6m1u8KYMSTPcfDFKw';" alt="British Royal Marines Marching Through Ostend Royal Marines British Royal Marines Royal Marine Commando">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Royal Marines Marching Through Ostend Royal Marines British Royal Marines Royal Marine Commando</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/06/27/8f062789cec0dc0b190962f1dd43c935.jpg" data-lightbox="roadtrip" data-title="Pin On Sf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/06/27/8f062789cec0dc0b190962f1dd43c935.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdBOJiYi9d0TkdStMndBEeEwExG1xlrmNiLw';" alt="Pin On Sf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/11/ea/0411ea66d1dce8fb380b26e5434f2f4b.jpg" data-lightbox="roadtrip" data-title="Pin By The Daily Snafu News On Pins Military Royal Marine Commando Marine Commandos British Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/11/ea/0411ea66d1dce8fb380b26e5434f2f4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6A0rOCmBLEovwwwvrPynPu3MQWstzAg9Jpg';" alt="Pin By The Daily Snafu News On Pins Military Royal Marine Commando Marine Commandos British Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By The Daily Snafu News On Pins Military Royal Marine Commando Marine Commandos British Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/cb/c7/43cbc70fe2b244b2649c243bcb23e3fa.jpg" data-lightbox="roadtrip" data-title="A U K Royal Marine With 45 Commando Provides Security For His Fellow Marines During Training At M Royal Marine Commando Marine Commandos British Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/cb/c7/43cbc70fe2b244b2649c243bcb23e3fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8GAlIkE2w8NvDyM8qhlM4S-1YzK9K2KhTWA';" alt="A U K Royal Marine With 45 Commando Provides Security For His Fellow Marines During Training At M Royal Marine Commando Marine Commandos British Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A U K Royal Marine With 45 Commando Provides Security For His Fellow Marines During Training At M Royal Marine Commando Marine Commandos British Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/db/fb/21dbfb2d335149ed8f8fe8350978f02a.jpg" data-lightbox="roadtrip" data-title="Images Captured Are Of Second Infantry Regiment Of The French Marine Corps As They Conduct A Wader Trainin Royal Marines Royal Marine Commando Marine Commandos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/db/fb/21dbfb2d335149ed8f8fe8350978f02a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRad6Euys8kjKVlo_QY6reS1-R2gcRBoLPZCA';" alt="Images Captured Are Of Second Infantry Regiment Of The French Marine Corps As They Conduct A Wader Trainin Royal Marines Royal Marine Commando Marine Commandos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Images Captured Are Of Second Infantry Regiment Of The French Marine Corps As They Conduct A Wader Trainin Royal Marines Royal Marine Commando Marine Commandos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/30/a7/d530a7ae99de2adfdd51e86bc94f8a37.jpg" data-lightbox="roadtrip" data-title="So British Desert Dpm Multi Terrain Pattern Uk British Dpm Mtp Royal Marine Commando British Armed Forces Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/30/a7/d530a7ae99de2adfdd51e86bc94f8a37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7sxsemQM0q_eRC8H1fKRDs_bxjy9EqPI6w';" alt="So British Desert Dpm Multi Terrain Pattern Uk British Dpm Mtp Royal Marine Commando British Armed Forces Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">So British Desert Dpm Multi Terrain Pattern Uk British Dpm Mtp Royal Marine Commando British Armed Forces Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/13/1d/95/131d9561e011af41d0c46573522745fe.jpg" data-lightbox="roadtrip" data-title="Pin By Aleksandr Medich On British Armed Forces British Army Uniform British Armed Forces Parachute Regiment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/13/1d/95/131d9561e011af41d0c46573522745fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLICSagzSrCsjjLScqFkNXhGYIkglpl_fJww';" alt="Pin By Aleksandr Medich On British Armed Forces British Army Uniform British Armed Forces Parachute Regiment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Aleksandr Medich On British Armed Forces British Army Uniform British Armed Forces Parachute Regiment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/10/03/0e1003f689c4d8eb90c27095a10108ad.jpg" data-lightbox="roadtrip" data-title="Captain Price Royal Marine Commando Royal Marines Marine Commandos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/10/03/0e1003f689c4d8eb90c27095a10108ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHH3674UX6xDwx8nkkeFeYSfu6ChBWewxXYg';" alt="Captain Price Royal Marine Commando Royal Marines Marine Commandos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Captain Price Royal Marine Commando Royal Marines Marine Commandos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/38/f8/9e38f8e1f656b35636b91a417cf45c25.jpg" data-lightbox="roadtrip" data-title="Royal Marines Storm The Beach During Amphibious Exercise Auriga Royal Marines Royal Marine Commando Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/38/f8/9e38f8e1f656b35636b91a417cf45c25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJyRbChw_LjZizb3w-_oeUWQfpauFZFUbUA';" alt="Royal Marines Storm The Beach During Amphibious Exercise Auriga Royal Marines Royal Marine Commando Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Marines Storm The Beach During Amphibious Exercise Auriga Royal Marines Royal Marine Commando Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/discounts-for-va-state-employees.html">Discounts For Va State Employees</a></li>
+													<li class="list-group-item"><a href="/disabled-veteran-dmv-discounts.html">Disabled Veteran Dmv Discounts</a></li>
+													<li class="list-group-item"><a href="/disney-military-park-tickets-2019.html">Disney Military Park Tickets 2019</a></li>
+													<li class="list-group-item"><a href="/disney-cruise-line-military-offers.html">Disney Cruise Line Military Offers</a></li>
+													<li class="list-group-item"><a href="/dd214-navy-hat.html">Dd214 Navy Hat</a></li>
+													<li class="list-group-item"><a href="/discounts-for-va-employees.html">Discounts For Va Employees</a></li>
+													<li class="list-group-item"><a href="/discount-tire-veterans-discount-texas.html">Discount Tire Veterans Discount Texas</a></li>
+													<li class="list-group-item"><a href="/discount-vet-federal-way.html">Discount Vet Federal Way</a></li>
+													<li class="list-group-item"><a href="/costco-military-veteran-discount.html">Costco Military Veteran Discount</a></li>
+													<li class="list-group-item"><a href="/costco-membership-with-military-discount.html">Costco Membership With Military Discount</a></li>
+													<li class="list-group-item"><a href="/costco-military-membership-sign-up.html">Costco Military Membership Sign Up</a></li>
+													<li class="list-group-item"><a href="/discount-vet-drugs.html">Discount Vet Drugs</a></li>
+													<li class="list-group-item"><a href="/discount-vet-clinic-houston.html">Discount Vet Clinic Houston</a></li>
+													<li class="list-group-item"><a href="/discount-vet-wellness.html">Discount Vet Wellness</a></li>
+													<li class="list-group-item"><a href="/disney-cruise-line-military-specials.html">Disney Cruise Line Military Specials</a></li>
+													<li class="list-group-item"><a href="/costume-hire-military-uniforms.html">Costume Hire Military Uniforms</a></li>
+													<li class="list-group-item"><a href="/discount-vet-near-me.html">Discount Vet Near Me</a></li>
+													<li class="list-group-item"><a href="/discount-website-for-military.html">Discount Website For Military</a></li>
+													<li class="list-group-item"><a href="/costco-travel-military-discount.html">Costco Travel Military Discount</a></li>
+													<li class="list-group-item"><a href="/country-rank-by-gdp-per-capita.html">Country Rank By Gdp Per Capita</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Vs Army - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Vs Army",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/a8/de/48/a8de48a548f2580a12436c0535ff45a3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+vs+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Vs Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">I Joined the Army After High School. Corps k ɔːr. Meanwhile the Marine Corps handles amphibious operations which means they can carry out operations on land and water. <br>				
+			</p>
+										<a class="badge badge-dark" href="/toro-zero-turn-military-discount.html">toro zero turn military discount</a>
+											<a class="badge badge-info" href="/theragun-discount-code.html">theragun discount code</a>
+											<a class="badge badge-warning" href="/sprint-veteran-discount-registration.html">sprint veteran discount registration</a>
+											<a class="badge badge-secondary" href="/tanzania-gdp-2020-imf.html">tanzania gdp 2020 imf</a>
+											<a class="badge badge-info" href="/types-of-imf-forces.html">types of imf forces</a>
+											<a class="badge badge-primary" href="/under-imf-the-exchange-rate-system-was.html">under imf the exchange rate system was</a>
+											<a class="badge badge-success" href="/tractor-supply-veterans-day-sale-2020.html">tractor supply veterans day sale 2020</a>
+											<a class="badge badge-info" href="/tricare-for-active-reservists.html">tricare for active reservists</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/ee/c0/fbeec0e645b5c4869f70a1819346f95f.jpg" data-lightbox="roadtrip" data-title="Differences Between Indian Army Soldier Amp U S Army Soldier Army Soldier Army American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/ee/c0/fbeec0e645b5c4869f70a1819346f95f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZKBxumSrUGg67CjL1wzOL_eTniOOpj6mUg';" alt="Differences Between Indian Army Soldier Amp U S Army Soldier Army Soldier Army American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Differences Between Indian Army Soldier Amp U S Army Soldier Army Soldier Army American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/6b/1b/b76b1b60fe5fb8148f7e5b67f880d134.jpg" data-lightbox="roadtrip" data-title="Army Vs Marines Army Vs Marines Marines Funny Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/6b/1b/b76b1b60fe5fb8148f7e5b67f880d134.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eRqZ6FqZ5h1vSSUMZ6RhfIwJiYPR7E14ug';" alt="Army Vs Marines Army Vs Marines Marines Funny Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Marines Army Vs Marines Marines Funny Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/fa/4a/20fa4a6d55e63b9bccf18c05b0942ffe.jpg" data-lightbox="roadtrip" data-title="Army Vs Marines Army Vs Marines Military Military Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/fa/4a/20fa4a6d55e63b9bccf18c05b0942ffe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoW3PBwkC_K2BI1eR0dRl4gfNXAoZGOhDKjw';" alt="Army Vs Marines Army Vs Marines Military Military Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Marines Army Vs Marines Military Military Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/81/f1/1a81f16c8498f8dc8f0141e40ffc5194.jpg" data-lightbox="roadtrip" data-title="Marines Vs Army Marine Quotes Marines Girlfriend Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/81/f1/1a81f16c8498f8dc8f0141e40ffc5194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDx4XLoU5nIMKKyF928jCo-B7h0Zo3olZuqA';" alt="Marines Vs Army Marine Quotes Marines Girlfriend Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marines Vs Army Marine Quotes Marines Girlfriend Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/db/8a/afdb8a9b4d2682d9245ecd8d6a24452a.jpg" data-lightbox="roadtrip" data-title="What Civilians See Vs What I See Military Memes Military Humor Military Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/db/8a/afdb8a9b4d2682d9245ecd8d6a24452a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyovca2tINdJmHBEMbS-K2gTjBY_Ugx34ZLQ';" alt="What Civilians See Vs What I See Military Memes Military Humor Military Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Civilians See Vs What I See Military Memes Military Humor Military Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/24/5d/56/245d5649f0ba3e4eb6874afb0075d89e.jpg" data-lightbox="roadtrip" data-title="Army Vs Navy Game Truth Navy Humor Military Humor Navy Navy Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/24/5d/56/245d5649f0ba3e4eb6874afb0075d89e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uUQ5KKZWva0RLM4J8HFJEpnBuETYHzIwUg';" alt="Army Vs Navy Game Truth Navy Humor Military Humor Navy Navy Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Vs Navy Game Truth Navy Humor Military Humor Navy Navy Memes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/77/ed/6f/77ed6fb1c1eb35e9787a739fc27ac52e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uUQ5KKZWva0RLM4J8HFJEpnBuETYHzIwUg';" alt="Army Vs Navy Game Truth Navy Humor Military Humor Navy Navy Memes">
+										<div class="card-body">
+						<h3 class="h5"><b>Pay Range Notes.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military vs army</strong>. 
+								
+																	2The Army is just one of the many divisions of the military. 
+																	United States Army was created officially on 3rd June 1784. 
+																	Both military branches have a goal to preserve the peace and security of the nation. 
+																	You will work with other people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Below you will find five differences that can have an impact on your decision. 
+																	This table provides a listing of military ranks by pay grade and branch of Military Service. 
+																	Army is one of the seven Uniformed Services of the United States. 
+																	The Army Reserves and Army National Guard have quite a few similarities that can make it challenging to determine which is the best fit for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Air Force Navy Marine Corps and Coast Guard. 
+																	Army is just an important constituent of military. 
+																	I have been both a Sergeant in the United States Army and a college graduate. 
+																	The Army is commanded by a four-star general known as the Army Chief of Staff. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Within military terminology a corps may be. 
+																	A military innovation by Napoleon the formation was first named as such in 1805. 
+																	These armed forces are responsible for performing operations that require militarys assistance. 
+																	Are Police officers equipped with the same grade weaponry as the Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using my own personal experiences knowledge and just some straightforward facts I hope to help you make the best decision you can. 
+																	Military pay displayed in this chart is based on the 2020 military basic pay tableNote that military servicemembers also receive housing and food allowances andor incentive pay which are both considerable portions of their overall compensation package. 
+																	3The Army in general is the land military force of a nation or state. 
+																	Navy in multiple categories including how you can join enlistment options enlistment incentives job choices recruit training and education benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joining the Army or the Navy. 
+																	Several of these lists mention NATO reference codesThese are the NATO rank reference codes used for easy comparison among NATO countries. 
+																	Army is a unit of military in all countries of the world. 
+																	Related Article National Guard Tattoo Policy For 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both the Army and the Navy offer the same basic ways you can join. 
+																	For the most part you work a regular job have to keep your life bills housing car and other things in order. 
+																	There are five military branches. 
+																	Let me start by telling you a little about the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plural corps k ɔːr z. 
+																	Do you think the Police should have access to Military grade equipment. 
+																	Military life is like civilian life in many ways. 
+																	03 Sep 2015 Posted by John_Nap. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mbest11x drops a beat in this hilarious rap video between Marines and Army. 
+																	The Army Marines Navy and Air Force are under the jurisdiction of the Department of Defense. 
+																	Army refers to armed soldiers that are in a state of readiness to defend the patch of land called country at all costs. 
+																	The GFP country comparison form is provided to allow you to make direct side-by-side comparisons of any two world powers represented in the GFP database. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army is there to provide land-based military assistance. 
+																	For full disclosures sake. 
+																	Military is always bigger than army. 
+																	An operational formation sometimes known as a field corps which consists of two or more divisions such as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That means when you say military you mean army navy air force and any other military forces in the country taken together. 
+																	Below we will compare Army vs. 
+																	Civilian pay ranges are based on the current-year 2021 General Schedule pay table adjusted for the Rest of US. 
+																	You can join as an Active Duty member which means youll be a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Strength Comparisons 2021 Online tool for comparing the current military strengths of two world powers. 
+																	The Army is responsible for land-based military operations. 
+																	The top military member in the Air Force is the Air Force Chief of Staff. 
+																	Comparisons are made between the different systems used by nations to categorize the hierarchy of an armed force compared to another. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force Army Coast Guard Marine Corps Navy. 
+																	This article is a list of various states armed forces ranking designations. 
+																	The Coast Guard operates under the Department of Homeland Security during peacetime but may be moved to the Navy during wartime. 
+																	While pay grades are administrative classifications used primarily to standardize compensation across the military services ranks indicate a level of responsibility for personnel equipment and mission which grows with each increase in rank. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy is commanded by a four-star admiral called the Chief of Naval Operations. 
+																	From French corps from the Latin corpus body is a term used for several different kinds of organisation. 
+																	Links to comparison charts can be found below. 
+																	Military is all armed forces of a country joined together. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1The military is the bigger armed force of the nation or state. 
+																	Army is the major portion of Armed Forces of the United States. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/b4/23/0cb4232fd1409fd92c9c404a2d975830.jpg" data-lightbox="roadtrip" data-title="Air Force Vs Army Air Force Jokes Air Force Memes Military Humor Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/b4/23/0cb4232fd1409fd92c9c404a2d975830.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-5hPhaVZoM6TNTfpggQTAmYoq2gd6x8EYA';" alt="Air Force Vs Army Air Force Jokes Air Force Memes Military Humor Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Vs Army Air Force Jokes Air Force Memes Military Humor Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/67/e7/2d67e756cb9a929be3e76085518c65a6.jpg" data-lightbox="roadtrip" data-title="Army Strong Lol Marines Funny Usmc Quotes Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/67/e7/2d67e756cb9a929be3e76085518c65a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbpkG4O0FB-n40DIZYmwCZP4JHlowUR_s1ZA';" alt="Army Strong Lol Marines Funny Usmc Quotes Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Strong Lol Marines Funny Usmc Quotes Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/9e/ff/3f9eff2a0cd90cb360153727f846fbb1.jpg" data-lightbox="roadtrip" data-title="Best Marine Vs Army Memes Black Hawk Down Army Memes Army Vs Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/9e/ff/3f9eff2a0cd90cb360153727f846fbb1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEr_niNGJWCAligt2_dvQLNsSpHINCKrzSA';" alt="Best Marine Vs Army Memes Black Hawk Down Army Memes Army Vs Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Marine Vs Army Memes Black Hawk Down Army Memes Army Vs Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/58/10/8e5810d377a4d590461c8b4213fd0665.jpg" data-lightbox="roadtrip" data-title="The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Humor Marines Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/58/10/8e5810d377a4d590461c8b4213fd0665.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpARlqirLjYBUJksrXE19iaRU0hV183CiQxA';" alt="The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Humor Marines Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Humor Marines Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/44/50/1c4450154730df565dcf9485e730f0a3.jpg" data-lightbox="roadtrip" data-title="Usmc Vs Army Air Force Vs Navy Coast Guard Military Humor Army Humor Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/44/50/1c4450154730df565dcf9485e730f0a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqkCnIVITglRa6b8kGSHCuZ_uqZxtBrUDoKA';" alt="Usmc Vs Army Air Force Vs Navy Coast Guard Military Humor Army Humor Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Vs Army Air Force Vs Navy Coast Guard Military Humor Army Humor Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a2/64/11/a26411e049cd55c1ae21dc897af6f2d3.jpg" data-lightbox="roadtrip" data-title="United States Vs India Army Military Power Comparison 2018 The Unit United States Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a2/64/11/a26411e049cd55c1ae21dc897af6f2d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSsva8kCuObvfN5G_PzQ5pkYY4iZwThS-XA';" alt="United States Vs India Army Military Power Comparison 2018 The Unit United States Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Vs India Army Military Power Comparison 2018 The Unit United States Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/1b/55/ca1b55af2259e18ff19e7887d7ea71ea.jpg" data-lightbox="roadtrip" data-title="The Difference Between Military Police And Other Police Military Life Quotes Military Quotes Army Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/1b/55/ca1b55af2259e18ff19e7887d7ea71ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2aaRW3mGKrozB8LgDLdEhdSAupV3Bk8zUQ';" alt="The Difference Between Military Police And Other Police Military Life Quotes Military Quotes Army Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Difference Between Military Police And Other Police Military Life Quotes Military Quotes Army Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/da/14/17da1407f2c6ed3858b7b9a4273b7bef.jpg" data-lightbox="roadtrip" data-title="Army Veteran Compares Realities Of Military Service And Civilian Life Military Memes Just Girly Things Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/da/14/17da1407f2c6ed3858b7b9a4273b7bef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcoiRpkyv2akuOW9UFlgntx8GnKReETfLbIQ';" alt="Army Veteran Compares Realities Of Military Service And Civilian Life Military Memes Just Girly Things Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Veteran Compares Realities Of Military Service And Civilian Life Military Memes Just Girly Things Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/99/d3/a199d3a3cebabe99c31a62e0ade4d90e.jpg" data-lightbox="roadtrip" data-title="The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Jokes Army Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/99/d3/a199d3a3cebabe99c31a62e0ade4d90e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv7_kqz7aAdjxY26-XU8dzr6ZpltRDvGIWfA';" alt="The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Jokes Army Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Jokes Army Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/72/6d/9d726d8d79983d216d966e3ba387c815.jpg" data-lightbox="roadtrip" data-title="Turkey Vs France Military Power Comparison 2020 France Military Power">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/72/6d/9d726d8d79983d216d966e3ba387c815.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDY8-ArpuD1832GDCitYQywCvgbpHl-Cp62w';" alt="Turkey Vs France Military Power Comparison 2020 France Military Power">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turkey Vs France Military Power Comparison 2020 France Military Power</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/76/e5/4e76e5dd937f0a5e3eabf72dd86e5771.jpg" data-lightbox="roadtrip" data-title="Usa Vs China Us Military Vs China Military Power Comparison 2020 China America S Army Pakistan Defence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/76/e5/4e76e5dd937f0a5e3eabf72dd86e5771.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHL_uWEt7A-ceLwvGqytygonAi33Wh3OqHQ';" alt="Usa Vs China Us Military Vs China Military Power Comparison 2020 China America S Army Pakistan Defence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Vs China Us Military Vs China Military Power Comparison 2020 China America S Army Pakistan Defence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ab/81/44/ab8144bf085f8d181f91db9dafe62576.jpg" data-lightbox="roadtrip" data-title="India Vs Pakistan Military Power Comparison 2020 Army Air Force Navy Youtube In 2020 India Vs Pakistan Pakistan Vs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ab/81/44/ab8144bf085f8d181f91db9dafe62576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpiZmdcIqj4Q1FV9u23XG7Dy_HVvSBPagRoA';" alt="India Vs Pakistan Military Power Comparison 2020 Army Air Force Navy Youtube In 2020 India Vs Pakistan Pakistan Vs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India Vs Pakistan Military Power Comparison 2020 Army Air Force Navy Youtube In 2020 India Vs Pakistan Pakistan Vs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/eb/24/70eb24dde5a227f5057313e76c6c14d8.jpg" data-lightbox="roadtrip" data-title="United States Vs Russia Military Power Comparison 2019 Youtube Military School Youtube Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/eb/24/70eb24dde5a227f5057313e76c6c14d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrFLJ1RnsjbRFQKrnWfOtA0zXgjT-JCixNg';" alt="United States Vs Russia Military Power Comparison 2019 Youtube Military School Youtube Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Vs Russia Military Power Comparison 2019 Youtube Military School Youtube Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/de/48/a8de48a548f2580a12436c0535ff45a3.jpg" data-lightbox="roadtrip" data-title="Pin On Pakistan Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/de/48/a8de48a548f2580a12436c0535ff45a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgQ4j2XqeTR9ORMAka6OJCYV171r6MX4RZA';" alt="Pin On Pakistan Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pakistan Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/6c/a5/176ca5fbe46a0a750c9a266491f0f430.jpg" data-lightbox="roadtrip" data-title="There S Strong And Then There S Army Strong Marines Funny Usmc Quotes Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/6c/a5/176ca5fbe46a0a750c9a266491f0f430.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSVc7lv8RiZs631ASIk4xqMApD5aOuf42ew';" alt="There S Strong And Then There S Army Strong Marines Funny Usmc Quotes Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There S Strong And Then There S Army Strong Marines Funny Usmc Quotes Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-ford-give-veterans-discount.html">Does Ford Give Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-kohls-honor-military.html">Does Kohls Honor Military</a></li>
+													<li class="list-group-item"><a href="/does-kohls-offer-military-discount-online.html">Does Kohls Offer Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-finish-line-offer-a-military-discount.html">Does Finish Line Offer A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-nike-website-give-military-discount.html">Does Nike Website Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-home-depot-give-military-discount-online.html">Does Home Depot Give Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-spirit-airlines-offer-a-military-discount.html">Does Spirit Airlines Offer A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-oakley-do-military-discount.html">Does Oakley Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-skyzone-offer-military-discount.html">Does Skyzone Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-reservist-count-as-active-duty.html">Does Reservist Count As Active Duty</a></li>
+													<li class="list-group-item"><a href="/does-petsmart-give-military-discount.html">Does Petsmart Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-harley-davidson-have-military-discount.html">Does Harley Davidson Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-ford-offer-military-discount.html">Does Ford Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-the-military-hire-lpns.html">Does The Military Hire Lpns</a></li>
+													<li class="list-group-item"><a href="/does-foot-locker-offer-military-discount-online.html">Does Foot Locker Offer Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/does-fred-meyer-give-military-discount.html">Does Fred Meyer Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sports-clips-offer-a-military-discount.html">Does Sports Clips Offer A Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-sport-clips-give-military-discount.html">Does Sport Clips Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-greyhound-offer-military-discount.html">Does Greyhound Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-petsmart-offer-military-discount.html">Does Petsmart Offer Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

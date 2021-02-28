@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gaesa Owned Military Owned Business - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gaesa Owned Military Owned Business",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/2d/46/af/2d46af2ec85bea31015b2851439209f5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gaesa+owned+military+owned+business",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gaesa Owned Military Owned Business</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This can actually be pretty difficult to accomplish if you are not doing proper research before leaving and planning out what Parladares you want to try. How to travel to Cuba from the USA. Dont worry there will be a list. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/imf-external-debt-by-country.html">imf external debt by country</a>
+											<a class="badge badge-light" href="/imf-financial-stability-report-2020.html">imf financial stability report 2020</a>
+											<a class="badge badge-success" href="/imf-funding-argentina.html">imf funding argentina</a>
+											<a class="badge badge-danger" href="/imf-former-chief.html">imf former chief</a>
+											<a class="badge badge-secondary" href="/imf-full-form-wikipedia.html">imf full form wikipedia</a>
+											<a class="badge badge-success" href="/imf-first-female-chief-economist.html">imf first female chief economist</a>
+											<a class="badge badge-dark" href="/imf-gdp-data-per-country.html">imf gdp data per country</a>
+											<a class="badge badge-light" href="/imf-exchange-rate-wizard.html">imf exchange rate wizard</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/diplomatictimes.net/wp-content/uploads/2020/12/CUBA-GAESA-GENERAL-SANCTIONS-US.jpg?resize=940%2C940&amp;ssl=1" data-lightbox="roadtrip" data-title="U S Blacklists Cuba Military Owned Companies Gaesa Fincimex Kave Coffee S A Diplomatic Times">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/diplomatictimes.net/wp-content/uploads/2020/12/CUBA-GAESA-GENERAL-SANCTIONS-US.jpg?resize=940%2C940&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptBdeAOKWd-tDryd8JiUYtpxXH5F4gGKOow';" alt="U S Blacklists Cuba Military Owned Companies Gaesa Fincimex Kave Coffee S A Diplomatic Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Blacklists Cuba Military Owned Companies Gaesa Fincimex Kave Coffee S A Diplomatic Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/e6/fc/b3e6fcf0c028841f9f442df72755940e.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Business Cards Veteran Owned Business Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/e6/fc/b3e6fcf0c028841f9f442df72755940e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6uMI7BC-nnVV3uw8FCK5cu8FLwZUMtQWx4g';" alt="Veteran Owned Business Business Cards Veteran Owned Business Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Business Cards Veteran Owned Business Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://caribbeantimesnyc.com/wp-content/uploads/2020/12/186ADCE2-6885-4995-A371-E03BAA11253F.jpeg" data-lightbox="roadtrip" data-title="Us Adds More Cuban Military Owned Companies To Specially Designated Nationals And Blocked Person List Caribbean Times News Trinidad News Jamaica News Haitian News Guyana News">
+											<img class="card-img v-image ads-img " src="https://caribbeantimesnyc.com/wp-content/uploads/2020/12/186ADCE2-6885-4995-A371-E03BAA11253F.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk7JRW0ho4DBr0f50kdKBmRk90Izj9l-WFA';" alt="Us Adds More Cuban Military Owned Companies To Specially Designated Nationals And Blocked Person List Caribbean Times News Trinidad News Jamaica News Haitian News Guyana News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Adds More Cuban Military Owned Companies To Specially Designated Nationals And Blocked Person List Caribbean Times News Trinidad News Jamaica News Haitian News Guyana News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/08/bd/7608bdbe30ae2ea968022235d68418ed.jpg" data-lightbox="roadtrip" data-title="Veteran Logo Google Search Veteran Logo Veteran Owned Business Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/08/bd/7608bdbe30ae2ea968022235d68418ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANtQdpH9iRsApDCgFrTKISPZnGxx-jTzBhg';" alt="Veteran Logo Google Search Veteran Logo Veteran Owned Business Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Logo Google Search Veteran Logo Veteran Owned Business Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/8f/af/4a8faf29f7dabca1847dd3d86ffd5586.jpg" data-lightbox="roadtrip" data-title="Logos And Certifications For Your Inspection Business Veteran Logo Veteran Owned Business Pole Barn House Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/8f/af/4a8faf29f7dabca1847dd3d86ffd5586.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTw7EJBbcd-oEnlSdQf2NHvBq9uAjxQO4k5g';" alt="Logos And Certifications For Your Inspection Business Veteran Logo Veteran Owned Business Pole Barn House Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Logos And Certifications For Your Inspection Business Veteran Logo Veteran Owned Business Pole Barn House Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/68/07/3b68071d570597fc3f63d8846e12088d.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Member Package Including Vob Member Certificate Member Window Clings Stickers Magnets Busine Veteran Owned Business Veteran Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/68/07/3b68071d570597fc3f63d8846e12088d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRl2a-L8ktKr3H-tR1s5cVe0BEdT5FHyWpew';" alt="Veteran Owned Business Member Package Including Vob Member Certificate Member Window Clings Stickers Magnets Busine Veteran Owned Business Veteran Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Member Package Including Vob Member Certificate Member Window Clings Stickers Magnets Busine Veteran Owned Business Veteran Business</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b3/e6/fc/b3e6fcf0c028841f9f442df72755940e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRl2a-L8ktKr3H-tR1s5cVe0BEdT5FHyWpew';" alt="Veteran Owned Business Member Package Including Vob Member Certificate Member Window Clings Stickers Magnets Busine Veteran Owned Business Veteran Business">
+										<div class="card-body">
+						<h3 class="h5"><b>Avoid all GAESA-owned military-owned businesses.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gaesa owned military owned business</strong>. 
+								
+																	Even at the discounted pandemic prices a Gaviota hotel near Varadero considered one of Cubas most beautiful and popular beaches costs between 54 and. 
+																	Business deals will target the Armed Forces Business Enterprises Group GAESA a conglomerate involved in all sectors of the economy that is headed up by General. 
+																	DEPARTMENT OF THE ARMY Serial Number. 
+																	What is the purpose of Support for the Cuban People. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can go on your own as long as you follow the guidelines for the category. 
+																	Discuss Cuban society with locals You must retain records like receipts and itineraries and keep them on hand for five years. 
+																	Support independent activities that could strengthen civil society in Cuba. 
+																	This replaces the People to People exchange programme that was in use before the Trump administration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Share sensitive information only on official secure websites. 
+																	You can go on your own as long as you follow the guidelines for the category. 
+																	Support independent activities that could strengthen civil society in Cuba. 
+																	Of course everything in Cuba is either owned or licensed by the Cuban government but the target is Raul Castros Military ownership of Gaviota a major owner of resort properties and related tourism businesses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You wont be able to use your debit or credit cards in Cuba. 
+																	Most importantly you should avoid all transactions with a GAESA-owned military owned business. 
+																	GAESA is the largest Cuban holding company and includes a conglomerate of more than 50 companies all directed under the laws of the market and chaired by brigadier General Luis Alberto Rodríguez López-Callejas ex-son in law of President Raul Castro. 
+																	Your trip will fit into the Support for the Cuban People category if you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This too it reversed in the face of international disgust in 2008 but it raised hotel prices so high so has to enforce a de facto ban on Cubans enjoying businesses in their own country. 
+																	Your trip will fit into the Support for the Cuban People category if you. 
+																	Choose one of our small groups trips of no more than 6 people or we can create a customized trip for you. 
+																	Bars may be harder to prove - unless OFAC film customers entering Sloppy Joes say. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Cuban military operates financially through the Armed Forces Business Enterprises Group GAESA which itself controls a variety of subsidiaries like Gaviota. 
+																	And as quick as that list comes out there will be a new list of OKd services posted here on Trip Advisor. 
+																	A strict view would be you must have eaten somewhere - prove that it wasnt at a banned place. 
+																	Secure gov websites use HTTPS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Avoid all GAESA-owned military-owned businesses. 
+																	Want help planning your trip and meeting the new Cuba travel requirements. 
+																	Taking Spanish language music or dancing classes You must all avoid GAESA-owned military-owned businesses. 
+																	Here is a complete list of organizations that you must avoid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additionally its a good idea to keep track of all your receipts while you travel. 
+																	Avoid all GAESA-owned military-owned businesses. 
+																	You cannot support financially or interact with any of these businesses during your time in Cuba. 
+																	Trumps expected limits on US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Who knows how long this category will last so you better do it while you still can. 
+																	A traveler must avoid all transactions with a GAESA-owned military-owned business. 
+																	You must keep record of your itinerary and all of your receipts for up to 5 years after your trip. 
+																	The only restriction you need to be aware of is that you should avoid contact with GAESA-owned military-owned business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Want help planning your trip and meeting the new Cuba travel requirements. 
+																	A lock or https means youve safely connected to the gov website. 
+																	You are not allowed to do business with GAESA-owned or military-owned organizations. 
+																	See a list of all the organizations that you can not interact with here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fortunately because a guide is required to travel to Cuba you will always have someone there to help you navigate the waters. 
+																	AVOID any transaction with a GAESA-owned military-owned business. 
+																	So there you have it yes you can travel to Cuba if youre American. 
+																	GAESAs chief executive is dictator Raúl Castros son-in-law General Luis Alberto Rodriguez. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a 10 fee when changing US. 
+																	It is used by independent travellers to Cuba. 
+																	The currency used by tourists is the Peso Convertible CUC. 
+																	Support independent activities that could strengthen civil society in Cuba. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Posters decals stickers brochures about sports and military activities catalogs in the field of sports and military Owned by. 
+																	Department of State - United States Department of State. 
+																	With any of the categories above travelers will need to avoid shopping at or doing business with GAESA-owned or military-owned organizations. 
+																	Laurie M means MINFAR GAESA owned establishment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This travel category allows individuals to travel to the country independently. 
+																	Click here to browse through our Summer 2019 Cuba sailings. 
+																	I guess there a lot will depend on if there are audits and what approach they take. 
+																	It is used by independent travelers to Cuba. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your trip will fit into the Support for the Cuban People category if you. 
+																	A traveler must avoid all transactions with a GAESA-owned military-owned business. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/46/af/2d46af2ec85bea31015b2851439209f5.jpg" data-lightbox="roadtrip" data-title="Are You A Veteran Owned Business Va Starts Mentoring Program For Veteran Owned Small Businesses Veteran Owned Business Veteran Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/46/af/2d46af2ec85bea31015b2851439209f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFj7dYoQ1ELg4S2M96GCUgLlE-rUKt94Eu4g';" alt="Are You A Veteran Owned Business Va Starts Mentoring Program For Veteran Owned Small Businesses Veteran Owned Business Veteran Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Veteran Owned Business Va Starts Mentoring Program For Veteran Owned Small Businesses Veteran Owned Business Veteran Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/b9/fc/57b9fc7caf10486db2c67fd775c5a607.jpg" data-lightbox="roadtrip" data-title="Marine Veteran Owned And Operated Business Sign By Creeksidemetalwerx On Etsy Business Signs Marine Veteran Military Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/b9/fc/57b9fc7caf10486db2c67fd775c5a607.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-0Z-0UbfiSI7t-2M8eHvtK_iAdEEasaB28w';" alt="Marine Veteran Owned And Operated Business Sign By Creeksidemetalwerx On Etsy Business Signs Marine Veteran Military Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Veteran Owned And Operated Business Sign By Creeksidemetalwerx On Etsy Business Signs Marine Veteran Military Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://babalublog.com/wpr/wp-content/uploads/2017/09/gaesa1.png" data-lightbox="roadtrip" data-title="Raul Castro Says Please Send All Hurricane Relief Money To The Bank Account Of The Cuban Military This Is Not A Joke These Are Explicit Instructions From The Cuban Gov Who Kindly Provides">
+											<img class="card-img v-image ads-img " src="http://babalublog.com/wpr/wp-content/uploads/2017/09/gaesa1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3EChidiFyX9UZCa6xpgGFd0SDVrJQt8tmQ';" alt="Raul Castro Says Please Send All Hurricane Relief Money To The Bank Account Of The Cuban Military This Is Not A Joke These Are Explicit Instructions From The Cuban Gov Who Kindly Provides">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Raul Castro Says Please Send All Hurricane Relief Money To The Bank Account Of The Cuban Military This Is Not A Joke These Are Explicit Instructions From The Cuban Gov Who Kindly Provides</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d2v9ipibika81v.cloudfront.net/uploads/sites/104/RTS2JEL8.jpg" data-lightbox="roadtrip" data-title="Treasury Identifies Cuban State Owned Businesses For Sanctions Evasion U S Embassy In Chile">
+											<img class="card-img v-image ads-img " src="https://d2v9ipibika81v.cloudfront.net/uploads/sites/104/RTS2JEL8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjqBIgu0RG1BOfk34YcMkPFJ_id5nl7Upgw';" alt="Treasury Identifies Cuban State Owned Businesses For Sanctions Evasion U S Embassy In Chile">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Treasury Identifies Cuban State Owned Businesses For Sanctions Evasion U S Embassy In Chile</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/41/c3/b241c35046013e7d93b7499ba38cc084.png" data-lightbox="roadtrip" data-title="Png Image Of Veteran Owned Business Badge For Light Backgrounds Veteran Owned Business Firefighter Accessories Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/41/c3/b241c35046013e7d93b7499ba38cc084.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOlUFKXQ4edg_07-fHvRZFC4txkMOUoBJghQ';" alt="Png Image Of Veteran Owned Business Badge For Light Backgrounds Veteran Owned Business Firefighter Accessories Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Png Image Of Veteran Owned Business Badge For Light Backgrounds Veteran Owned Business Firefighter Accessories Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/16/1f/8b161fda0f1ee74abae8ec014434b147.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Owned Businesses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/16/1f/8b161fda0f1ee74abae8ec014434b147.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2-M_sWXZ2fgliyuXfquzhYB8eog0sPc5pg';" alt="Pin On Veteran Owned Businesses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Owned Businesses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/0d/ca/250dcab283e47bcf14809ae6e09bb536.png" data-lightbox="roadtrip" data-title="Partnering With Veteran Business Owners Support Veteran Owned Businesses Veteran Owned Business Veteran Support Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/0d/ca/250dcab283e47bcf14809ae6e09bb536.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DfjPvcTeKCudjtHxdsWv-3WLUG-_UIPP9A';" alt="Partnering With Veteran Business Owners Support Veteran Owned Businesses Veteran Owned Business Veteran Support Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Partnering With Veteran Business Owners Support Veteran Owned Businesses Veteran Owned Business Veteran Support Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/77/bd/b177bdad1a5ce33fd6fcd943b90f3796.jpg" data-lightbox="roadtrip" data-title="Disabled Veteran Owned Business Logo Google Search Veteran Owned Business Business Logo Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/77/bd/b177bdad1a5ce33fd6fcd943b90f3796.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_1AXSTTuBIK3E_wvltLxIgg3yRE1kMqqtLQ';" alt="Disabled Veteran Owned Business Logo Google Search Veteran Owned Business Business Logo Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disabled Veteran Owned Business Logo Google Search Veteran Owned Business Business Logo Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/64/e9/1864e997c6b64d50d6e020a2c1272253.png" data-lightbox="roadtrip" data-title="Image Result For Veteran Owned Business Logo Veteran Owned Business Inner Tubes Campaign Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/64/e9/1864e997c6b64d50d6e020a2c1272253.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwyuLYgRH4bQABvg6mTqYjq48aC8yKedE5g';" alt="Image Result For Veteran Owned Business Logo Veteran Owned Business Inner Tubes Campaign Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Veteran Owned Business Logo Veteran Owned Business Inner Tubes Campaign Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/31/33/c4313344667ca9619c3b70a0fc5af8d0.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Businesses Infographic Educational Infographic Veteran Owned Business Business Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/31/33/c4313344667ca9619c3b70a0fc5af8d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36czlxpMHOx6UzJn8wl_hJlDFLPWqeytZPQ';" alt="Veteran Owned Businesses Infographic Educational Infographic Veteran Owned Business Business Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Businesses Infographic Educational Infographic Veteran Owned Business Business Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6b/44/0c/6b440c37b14f85d99f68ba2a48ed1d27.jpg" data-lightbox="roadtrip" data-title="7 Veteran Owned Companies That Are Eco Friendly And Socially Conscious Pink Fortitude Llc Socially Conscious Veteran Owned Business Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6b/44/0c/6b440c37b14f85d99f68ba2a48ed1d27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS6deOimlCxugJoqz3Iy_or-So8MZEdCKYlw';" alt="7 Veteran Owned Companies That Are Eco Friendly And Socially Conscious Pink Fortitude Llc Socially Conscious Veteran Owned Business Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Veteran Owned Companies That Are Eco Friendly And Socially Conscious Pink Fortitude Llc Socially Conscious Veteran Owned Business Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" data-lightbox="roadtrip" data-title="Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzKXsw4nYK6J4NZiKjzEmDFYtl7b19x9CDQ';" alt="Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/09/bc/80/09bc8090cf3ddd17c8498dacbc8f030e.jpg" data-lightbox="roadtrip" data-title="30 Veteran Owned Breweries And Growing Veteran Owned Business Brewing Company Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/09/bc/80/09bc8090cf3ddd17c8498dacbc8f030e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgDG0h4LWwnoEGG_T0xjsi-vmUlaVSvpZbQ';" alt="30 Veteran Owned Breweries And Growing Veteran Owned Business Brewing Company Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Veteran Owned Breweries And Growing Veteran Owned Business Brewing Company Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.state.gov/wp-content/uploads/2020/11/S-and-SPOX-Featured-Comps_vFinal3-scaled.jpg" data-lightbox="roadtrip" data-title="Additions Of Cuban Military Owned Companies To Specially Designated Nationals And Blocked Persons List Mirage News">
+											<img class="card-img v-image ads-img " src="https://www.state.gov/wp-content/uploads/2020/11/S-and-SPOX-Featured-Comps_vFinal3-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj4iwJXUa_n8Xa2okyNwEZB6lE7I8MUP633Q';" alt="Additions Of Cuban Military Owned Companies To Specially Designated Nationals And Blocked Persons List Mirage News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additions Of Cuban Military Owned Companies To Specially Designated Nationals And Blocked Persons List Mirage News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/10/ea/dd10ea3fb4530e4272b74063207bb56d.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Owned Business Members">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/10/ea/dd10ea3fb4530e4272b74063207bb56d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp8TShUM2z8jB_ncbMzkvDpLOwcnq6xLlnUg';" alt="Pin On Veteran Owned Business Members">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Owned Business Members</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/minnesota-military-grants.html">Minnesota Military Grants</a></li>
+													<li class="list-group-item"><a href="/mit-mba-veterans.html">Mit Mba Veterans</a></li>
+													<li class="list-group-item"><a href="/my-lowes-military-discount-card.html">My Lowes Military Discount Card</a></li>
+													<li class="list-group-item"><a href="/national-cemetery-montevallo.html">National Cemetery Montevallo</a></li>
+													<li class="list-group-item"><a href="/navy-veteran-beaten-by-shiv-sena.html">Navy Veteran Beaten By Shiv Sena</a></li>
+													<li class="list-group-item"><a href="/my-vet-box-discount-code.html">My Vet Box Discount Code</a></li>
+													<li class="list-group-item"><a href="/navy-veteran-uniform-wear.html">Navy Veteran Uniform Wear</a></li>
+													<li class="list-group-item"><a href="/navy-veteran-email-signature.html">Navy Veteran Email Signature</a></li>
+													<li class="list-group-item"><a href="/norfolk-military-vets.html">Norfolk Military Vets</a></li>
+													<li class="list-group-item"><a href="/ne-imf-chemistry.html">Ne Imf Chemistry</a></li>
+													<li class="list-group-item"><a href="/navy-personnel-command-dd214.html">Navy Personnel Command Dd214</a></li>
+													<li class="list-group-item"><a href="/national-cemetery-san-diego.html">National Cemetery San Diego</a></li>
+													<li class="list-group-item"><a href="/national-cemetery-salisbury-nc.html">National Cemetery Salisbury Nc</a></li>
+													<li class="list-group-item"><a href="/military-vets-t-shirts.html">Military Vets T Shirts</a></li>
+													<li class="list-group-item"><a href="/national-cemetery-korea.html">National Cemetery Korea</a></li>
+													<li class="list-group-item"><a href="/ms-office-2019-military-discount.html">Ms Office 2019 Military Discount</a></li>
+													<li class="list-group-item"><a href="/national-express-armed-forces-discount-page.html">National Express Armed Forces Discount Page</a></li>
+													<li class="list-group-item"><a href="/oakley-military-discount-canada.html">Oakley Military Discount Canada</a></li>
+													<li class="list-group-item"><a href="/oakley-military-discount-online.html">Oakley Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/national-veterans-cemetery-bourne-ma.html">National Veterans Cemetery Bourne Ma</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

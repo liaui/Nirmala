@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Ptsd Diagnosis - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Ptsd Diagnosis",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/fb/8e/38/fb8e388927ca901dd4406ed54d7d9260.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+ptsd+diagnosis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Ptsd Diagnosis</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">But if the reactions dont go away over time or they disrupt your life you may have posttraumatic stress disorder PTSD. 280 of all VA claim recipients for PTSD have a 70 VA disability for PTSD rating. You may be suffering from PTSD if you experience one or more of the following for a prolonged amount of time after a traumatic event. <br>				
+			</p>
+										<a class="badge badge-dark" href="/imf-about-india-latest-news.html">imf about india latest news</a>
+											<a class="badge badge-dark" href="/how-to-apply-air-force-reservist.html">how to apply air force reservist</a>
+											<a class="badge badge-success" href="/how-to-get-dd214-marines.html">how to get dd214 marines</a>
+											<a class="badge badge-warning" href="/imf-2020-gdp-outlook.html">imf 2020 gdp outlook</a>
+											<a class="badge badge-info" href="/if-x23-and-x-3.html">if x23 and x 3</a>
+											<a class="badge badge-light" href="/how-to-qualify-for-the-va-loan.html">how to qualify for the va loan</a>
+											<a class="badge badge-dark" href="/how-much-is-t-mobile-magenta-plan.html">how much is t mobile magenta plan</a>
+											<a class="badge badge-warning" href="/hr-block-veteran-discount-2020.html">hr block veteran discount 2020</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right site.  Our website provides you with hints for viewing the highest quality video and picture content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/4a/1a/264a1af0497207f217ea3ed662f4c344.jpg" data-lightbox="roadtrip" data-title="Pin On Deployment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/4a/1a/264a1af0497207f217ea3ed662f4c344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc6r7QAeoHzet5iHANNUMeb5EVkDbMReQ3WQ';" alt="Pin On Deployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Deployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/2b/06/322b061c36aafb024d371894dab6f91c.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/2b/06/322b061c36aafb024d371894dab6f91c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReL4hUXqKArkrttrEOuHRySGAt0lZ8VsLaqw';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/3d/b6/253db6b18999850e88f8b9d42264d6a4.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/3d/b6/253db6b18999850e88f8b9d42264d6a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR90DQao_HvosIJzJRwtuCFW5GBCseJk7ovVQ';" alt="Pin On Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/e5/02/6ce502cdccff1f0aba355487be943246.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/e5/02/6ce502cdccff1f0aba355487be943246.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMXp_7qqz8rqo4Kgc7Nv2X9M_SL1oVQxWew';" alt="Pin On Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/3e/2b/9f3e2baab42962a5b2dd00cd88e6ad21.png" data-lightbox="roadtrip" data-title="Pin On For Military Families">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/3e/2b/9f3e2baab42962a5b2dd00cd88e6ad21.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvT5UvFV4hoUTq0ZGqFU1RD7PTFtz72zNvCw';" alt="Pin On For Military Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On For Military Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/8e/38/fb8e388927ca901dd4406ed54d7d9260.png" data-lightbox="roadtrip" data-title="Can T We Talk Without Losing It Counseling Recovery Michelle Farris Lmft Coping Skills Anger Management Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/8e/38/fb8e388927ca901dd4406ed54d7d9260.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDsQSlvk5MMpjOI-vwseF0L202s5mMbQ2Fg';" alt="Can T We Talk Without Losing It Counseling Recovery Michelle Farris Lmft Coping Skills Anger Management Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can T We Talk Without Losing It Counseling Recovery Michelle Farris Lmft Coping Skills Anger Management Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d6/34/03/d634034b468e1df6fa450344750c355f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDsQSlvk5MMpjOI-vwseF0L202s5mMbQ2Fg';" alt="Can T We Talk Without Losing It Counseling Recovery Michelle Farris Lmft Coping Skills Anger Management Post Traumatic Stress Disorder">
+										<div class="card-body">
+						<h3 class="h5"><b>Special residential live-in or inpatient care programsfound in each region of the UShelp Veterans with severe PTSD symptoms who have trouble doing normal daily activities like going to work.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va ptsd diagnosis</strong>. 
+								
+																	According to the easiest VA claims to win data PTSD is in the top 3 across all groups of veterans. 
+																	If you have a current diagnosis of PTSD but dont have any current symptoms you will be assigned a noncompensable rating of 0. 
+																	Most veterans are rated as follows. 
+																	You can even say Id like to be assessed for PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PTSD is a mental health problem that some people develop after experiencing or witnessing a life-threatening event like combat a natural disaster a car accident or sexual assault. 
+																	And 131 have a 100 PTSD rating. 
+																	Unfortunately many veterans experience PTSD stemming from their military service. 
+																	PTSD actually became a mental health diagnosis through the influence of a number of social movements and governmental advocacy groups. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The diagnosis of PTSD is most often made by a mental health provider. 
+																	37868 veterans 22 of claimants have a 0 percent VA rating for PTSD. 
+																	The more severe the symptoms the higher the VA rating for PTSD. 
+																	PTSD posttraumatic stress disorder is a mental health problem that some people develop after experiencing or witnessing a life-threatening event like combat a natural disaster a car accident or sexual assault. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post-traumatic Stress Disorder PTSD Post-traumatic stress disorder PTSD is a mental health condition that can occur in people who have experienced or witnessed a distressing shocking or otherwise traumatic event. 
+																	Your PTSD was caused or made worse by your active duty military service Nexus 3. 
+																	VA PTSD 100 Disability Rating Criteria. 
+																	In 2013 the American Psychiatric Association revised the PTSD diagnostic criteria in the fifth edition of its Diagnostic and Statistical Manual of Mental Disorders DSM-5. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medical diagnosis of PTSD or Other Mental Health Condition eg Major Depressive Disorder 2. 
+																	There are a number of reasons why symptoms of PTSD may increase with age. 
+																	At one time PTSD was not a recognized medical diagnosis. 
+																	PTSD is particularly common in military veterans but the number of veterans with PTSD varies by service area length of service and dates of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many older Veterans find they have PTSD symptoms even 50 or more years after their wartime experience. 
+																	In order to be eligible for a PTSD VA rating a veteran must meet three criteria by law. 
+																	Like the initial diagnosis PTSD ratings depend on several factors. 
+																	VA ratings for PTSD depend on the severity of a veterans mental health symptoms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its normal to have upsetting memories feel on edge or have trouble sleeping after this type of event. 
+																	Its possible to be rated for PTSD anywhere from 0 where the VA recognizes the diagnosis but no benefits are awarded to 100 the VA recognizes the condition is completely disabling and awards the highest amount of benefits. 
+																	In order to get a VA rating for PTSD and Depression you need to have 1 A medical diagnosis of both conditions with a separate diagnosis for each 2 A clear Nexus to prove service connection for PTSD and Depression and 3 Current symptoms of the mental health conditions. 
+																	To diagnose PTSD a mental health provider measures assesses or evaluates PTSD symptoms you may have had since the trauma. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PTSD is included in a new category in DSM-5 Trauma- and Stressor-Related Disorders. 
+																	In this post we will be exploring the PTSD rating scale in detail. 
+																	Thought process or communication impairment Suicidal thoughts Persistent risk of harming self or others Loss of memory Impaired impulse control Panic attacks Depressive episodes that prevent normal function Extremely inappropriate. 
+																	Repeated dreams that feels somehow related. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some people may be drawn to or be. 
+																	Its normal to have upsetting memories feel on edge or have trouble sleeping after a traumatic event. 
+																	Recurring involuntary and intrusive distressing memories of the traumatic events. 
+																	Some symptoms of PTSD include having nightmares or feeling like you are reliving the event avoiding situations that remind you of the event being easily startled and loss of interest in activities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If symptoms last more than a few months it may be PTSD. 
+																	Total occupational and social impairment because of symptoms including. 
+																	You can ask any provider you can ask your primary care physician. 
+																	VA disability compensation for PTSD Posttraumatic stress can happen after someone goes through a traumatic event such as combat an assault or a disaster. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most people have some stress reactions following trauma. 
+																	PTSD specialists provide regular outpatient care to Veterans with PTSD in each VA medical center across the US. 
+																	259 of all VA disability recipients for PTSD have a 50 PTSD rating. 
+																	All of the conditions included in this classification require exposure to a traumatic or stressful event as a diagnostic criterion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the other end of the scale you will be assigned a 100 VA disability rating for PTSD if you have total occupational and social impairment meaning you are totally disabled. 
+																	Gross impairment in thought processes or communication Persistent delusions or hallucinations Grossly inappropriate behavior Persistent danger of hurting self or others Intermittent. 
+																	The average PTSD rating is currently at 70 but veterans can be rated from 0 to 100 with breaks at 10 30 50 70. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/34/03/d634034b468e1df6fa450344750c355f.jpg" data-lightbox="roadtrip" data-title="Pin On Kyliehaack Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/34/03/d634034b468e1df6fa450344750c355f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxk90SOsAFZN2qfaB-CqVyGS_0N6p_faJFHA';" alt="Pin On Kyliehaack Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kyliehaack Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/96/83/e7968346b0b02224a3df1689f15c8811.jpg" data-lightbox="roadtrip" data-title="Pin On Surviving Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/96/83/e7968346b0b02224a3df1689f15c8811.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqZS8Dw5_XybPrD3YYVmuguymnyCYQLY1lg';" alt="Pin On Surviving Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Surviving Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/55/42/2155422585d7b404a8ac8ec395dfcfa1.jpg" data-lightbox="roadtrip" data-title="Pin On Military Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/55/42/2155422585d7b404a8ac8ec395dfcfa1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGnN2oUR2aD3aZeOB3CH80dAElXQ3rE-pbQ';" alt="Pin On Military Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/04/c6/1304c6b63b47879ed36ca73c1e604535.jpg" data-lightbox="roadtrip" data-title="Pin On Salud">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/04/c6/1304c6b63b47879ed36ca73c1e604535.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1FyoP7B3DiOBQgON_P4HYAqAdrBU4ynGcw';" alt="Pin On Salud">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Salud</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/23/a7/71/23a7715437e6c401d9117306bf973020.jpg" data-lightbox="roadtrip" data-title="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/23/a7/71/23a7715437e6c401d9117306bf973020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bDQrWmGCjwjEAHd_u2jE76LIonctYNYAXQ';" alt="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/a0/12/36a01226a10a587485987c0fdddb8319.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/a0/12/36a01226a10a587485987c0fdddb8319.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAluJbdXCmyckijqtaCh8QWkdWawQ-whZpw';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ec/6f/91/ec6f9143cd62939bebdbfd800e6a7246.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Post Traumatic Stress Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ec/6f/91/ec6f9143cd62939bebdbfd800e6a7246.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDyFQUFEc6O3IT5f9ejiqwoa9j7REIhEMTA';" alt="Pin On Ptsd Post Traumatic Stress Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Post Traumatic Stress Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/9d/44/7a9d4445051b8a01f9f4eb51628d7412.jpg" data-lightbox="roadtrip" data-title="Veterans Benefits Infographic Covering Common Military Injuries And Types Of Military Benefits Veteran Benefits Mi Veterans Benefits Veterans United Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/9d/44/7a9d4445051b8a01f9f4eb51628d7412.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHNv5rDrbXWsl_wC3xoIVfKXYyafljoJEtQ';" alt="Veterans Benefits Infographic Covering Common Military Injuries And Types Of Military Benefits Veteran Benefits Mi Veterans Benefits Veterans United Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits Infographic Covering Common Military Injuries And Types Of Military Benefits Veteran Benefits Mi Veterans Benefits Veterans United Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/0f/79/590f79ce99f94826cf9834b099940c44.png" data-lightbox="roadtrip" data-title="Pin On Dissertation Problem Statement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/0f/79/590f79ce99f94826cf9834b099940c44.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlbRmdcr_BiyzCqyfNVhN3CT5PWkQR_dpEg';" alt="Pin On Dissertation Problem Statement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dissertation Problem Statement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/69/10/a56910b7ee2ef103b6a64dadd350ac5d.png" data-lightbox="roadtrip" data-title="Pin On Psych">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/69/10/a56910b7ee2ef103b6a64dadd350ac5d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnLYmox_Gz7OUmlmcFQ82zihFERNXYICiFgg';" alt="Pin On Psych">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Psych</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/1e/9d/9c1e9d33f4068553c3250b1756d07d8f.jpg" data-lightbox="roadtrip" data-title="Pin By The Knowledge Network On The Knowledge Network In 2020 Post Traumatic Stress Disorder How To Know Emotions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/1e/9d/9c1e9d33f4068553c3250b1756d07d8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1NAmQhuJfS61Zauhfcuyu7peGEPJVQjnmg';" alt="Pin By The Knowledge Network On The Knowledge Network In 2020 Post Traumatic Stress Disorder How To Know Emotions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By The Knowledge Network On The Knowledge Network In 2020 Post Traumatic Stress Disorder How To Know Emotions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/91/3e/67913e442d4b42ba976d499aa53ee767.jpg" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/91/3e/67913e442d4b42ba976d499aa53ee767.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7CWlqYTU5uShCzL9ZZUm4PGIjLWp7IIXLw';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/4b/02/e64b0209cc399115d24c6cbbf0cd6a8f.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/4b/02/e64b0209cc399115d24c6cbbf0cd6a8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4DaXqZGPW4NvgUUHdsbrCtoDuV37P1eLxw';" alt="Pin On Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/f7/5e/dbf75efb29796b364abf731f3b26fde2.jpg" data-lightbox="roadtrip" data-title="Pin On Philadelphia Approved Senior Network">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/f7/5e/dbf75efb29796b364abf731f3b26fde2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQaF7oaZX3fqmCP5fjensEHrCf9IdkSnKT9Q';" alt="Pin On Philadelphia Approved Senior Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Philadelphia Approved Senior Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/f6/40/62f640daabe8d494bf50648191422402.jpg" data-lightbox="roadtrip" data-title="For My Dad Vietnam War Veterans Vietnam Vets Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/f6/40/62f640daabe8d494bf50648191422402.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZweCNjT57EbEwbaO1WwgeZPO_5o50cdBSA';" alt="For My Dad Vietnam War Veterans Vietnam Vets Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For My Dad Vietnam War Veterans Vietnam Vets Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-india-representative.html">Imf India Representative</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-projections.html">Imf Inflation Projections</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-zambia.html">Imf Inflation Zambia</a></li>
+													<li class="list-group-item"><a href="/imf-india-growth-forecast-2020.html">Imf India Growth Forecast 2020</a></li>
+													<li class="list-group-item"><a href="/imf-india-office.html">Imf India Office</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-forecast-by-country.html">Imf Inflation Forecast By Country</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-low.html">Imf Inflation Low</a></li>
+													<li class="list-group-item"><a href="/imf-india-real-gdp.html">Imf India Real Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-rates-turkey.html">Imf Inflation Rates Turkey</a></li>
+													<li class="list-group-item"><a href="/imf-india-full-form.html">Imf India Full Form</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-thailand.html">Imf Inflation Thailand</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-forecast-2021.html">Imf Inflation Forecast 2021</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-pakistan.html">Imf Inflation Pakistan</a></li>
+													<li class="list-group-item"><a href="/imf-international-reserves-definition.html">Imf International Reserves Definition</a></li>
+													<li class="list-group-item"><a href="/imf-india-gdp-forecast-2019.html">Imf India Gdp Forecast 2019</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-eurozone.html">Imf Inflation Eurozone</a></li>
+													<li class="list-group-item"><a href="/imf-india-outlook-2021.html">Imf India Outlook 2021</a></li>
+													<li class="list-group-item"><a href="/imf-indian-economy-2021.html">Imf Indian Economy 2021</a></li>
+													<li class="list-group-item"><a href="/imf-indian-economy-outlook.html">Imf Indian Economy Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-hong-kong.html">Imf Inflation Hong Kong</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

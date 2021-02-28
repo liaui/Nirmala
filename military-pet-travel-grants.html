@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Pet Travel Grants - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Pet Travel Grants",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/c3/14/79/c31479f095fda35b7d28e9a68158ae22.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+pet+travel+grants",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Pet Travel Grants</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Pets between 71 and 99 pounds cost 160 per pet. If your pet is unfriendly then put a warning on the crate. With other possible costs including vet screening an approved kennel quarantine fees and customs clearance the price tag can add up quickly. <br>				
+			</p>
+										<a class="badge badge-primary" href="/imf-angola-eff.html">imf angola eff</a>
+											<a class="badge badge-warning" href="/imf-and-world-bank-criticism.html">imf and world bank criticism</a>
+											<a class="badge badge-secondary" href="/imf-and-mexico-crisis.html">imf and mexico crisis</a>
+											<a class="badge badge-secondary" href="/imf-and-wto-history.html">imf and wto history</a>
+											<a class="badge badge-info" href="/imf-afghanistan-jobs.html">imf afghanistan jobs</a>
+											<a class="badge badge-warning" href="/imf-and-world-bank-debt-relief.html">imf and world bank debt relief</a>
+											<a class="badge badge-primary" href="/imf-and-world-bank-were-created-through.html">imf and world bank were created through</a>
+											<a class="badge badge-success" href="/imf-and-bahrain.html">imf and bahrain</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.petrelocator.com/wp-content/uploads/2016/10/soldier-870399_640.jpg" data-lightbox="roadtrip" data-title="Pet Air Travel Military Pet Travel Pcs Travel From Pet Relocator">
+											<img class="card-img v-image ads-img " src="https://www.petrelocator.com/wp-content/uploads/2016/10/soldier-870399_640.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJREoNyLKvumrokUkvdN3MEHXa_JX_dMhsg';" alt="Pet Air Travel Military Pet Travel Pcs Travel From Pet Relocator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pet Air Travel Military Pet Travel Pcs Travel From Pet Relocator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://islandpetmovers.com/wp-content/uploads/2015/01/military-pet-moving.jpg" data-lightbox="roadtrip" data-title="How To Get Military Pet Moving Assistance">
+											<img class="card-img v-image ads-img " src="https://islandpetmovers.com/wp-content/uploads/2015/01/military-pet-moving.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4C-FAwcmG5YIliH2uKjlzh2tUo31HZyLTtQ';" alt="How To Get Military Pet Moving Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Military Pet Moving Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2020-04/soldier-pet-dog-1200.jpg?itok=pi1Kw_ma" data-lightbox="roadtrip" data-title="Spca Grants Help With Pcs Pet Costs Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2020-04/soldier-pet-dog-1200.jpg?itok=pi1Kw_ma" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kS-1zPJ99fyFx_itUFpEVvgQITLfXzRqMA';" alt="Spca Grants Help With Pcs Pet Costs Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spca Grants Help With Pcs Pet Costs Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dogsondeployment.org/images/top_banner.jpg" data-lightbox="roadtrip" data-title="Pcs Resources Dogs On Deployment">
+											<img class="card-img v-image ads-img " src="https://www.dogsondeployment.org/images/top_banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfFKh8QRJ3AxjT0YjO3M42GSEX5MsveA1Qw';" alt="Pcs Resources Dogs On Deployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Resources Dogs On Deployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/ab/9f/fdab9f56629c76bfcdaec9a7d19ffe98.jpg" data-lightbox="roadtrip" data-title="Heroes Are Not Just For People War Dogs Dog Soldiers Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/ab/9f/fdab9f56629c76bfcdaec9a7d19ffe98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ9HbF_TMl3MdmztDG-Xi6TmUVl7rT27WaEg';" alt="Heroes Are Not Just For People War Dogs Dog Soldiers Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heroes Are Not Just For People War Dogs Dog Soldiers Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/02/8205187409_e20a458ee2_h.jpg" data-lightbox="roadtrip" data-title="4 Fantastic Non Profit Organizations Helping Military Families And Companion Pets One Green Planet">
+											<img class="card-img v-image ads-img " src="https://149366112.v2.pressablecdn.com/wp-content/uploads/2014/02/8205187409_e20a458ee2_h.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOin1etGbxNSiabVXyITZo18I7JqvP71TUBA';" alt="4 Fantastic Non Profit Organizations Helping Military Families And Companion Pets One Green Planet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Fantastic Non Profit Organizations Helping Military Families And Companion Pets One Green Planet</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/236x/bb/1f/e0/bb1fe0fab0349bf3b8e76331f0bb273f--moving-to-hawaii-army-life.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOin1etGbxNSiabVXyITZo18I7JqvP71TUBA';" alt="4 Fantastic Non Profit Organizations Helping Military Families And Companion Pets One Green Planet">
+										<div class="card-body">
+						<h3 class="h5"><b>You cannot apply if your animal has already been transported.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military pet travel grants</strong>. 
+								
+																	Were proud to offer active duty US. 
+																	Operation Military Pets SPCA International The sole purpose of Operation Military Pets is to keep pets with their loved ones in the military. 
+																	At Happy Tails Travel we know a pet relocation is no small task. 
+																	R-764-20 The Miami-Dade COVID-19 Veteran and Active Duty Financial Assistance Program can provide up to three 3 months of past due rent or mortgage payments per household with a maximum of 5000 per household. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether being relocated within the United States or anywhere in the world SPCA Internationals Operation Military Pets is here to keep pets with the ones they love. 
+																	Search For Go Fetch Advance Search Get in touch with us Keep Updated on DoD News. 
+																	It doesnt matter where your PCS orders are sending you SPCA Internationals Operation Military Pets wants to prevent pets from being separated from the family they love. 
+																	Please apply within 3 months of your animals travel date but no earlier. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DoD Boarding and COVID-19. 
+																	If the program is abused then it could mean military families that genuinely need help will not receive a grant. 
+																	Military personnel on Permanent Change of Station PCS State Department Foreign Service Personnel FSP and their spouses certain benefits for transporting their pet dogs and cats while traveling on assignment to and from international destinations. 
+																	Write your name your pets name and your destination address on the crate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Family Relief Fund emergency grant may be used by the families for needs such as food housing utilities medical services transportation and other essential family support expenses which have become difficult to afford. 
+																	970 W Valley Parkway Box 667. 
+																	All branches of the military can qualify for grants. 
+																	They do this by providing financial assistance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether being relocated within the United States or anywhere in the world SPCA Internationals Operation Military Pets is here to keep pets with the ones they love. 
+																	To help keep military families together by relieving some of the financial burden SPCA International has started the Operation Military Pets OPM program. 
+																	This program is designed to help only active members of the military that have exhausted all options for paying to relocate their pets. 
+																	Military and Veterans Housing Assistance Program 10 Million Authorized by Board Resolution No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since its launch in March 2013 OPM has. 
+																	Qualifying pets that meet all of our requirements including the weight limit will receive specialized handling through United PetSafe and well give them a tag during check-in. 
+																	At Delta were here to assist all US. 
+																	Military Pet Relocation Services Permanent Change of Station - PCS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many overseas destinations require that pets have microchips with a number that matches the number on the health certificate. 
+																	6193535046 valuename Press Releases. 
+																	Every branch of the US Armed Forces may qualify for a grant. 
+																	Waivers are required to transit more than two pets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are no travel entitlements for pet transportation or pet preparation for travel. 
+																	3 Military Pet Relocation Grants The cost of shipping a cat or dog in the cargo area of a plane runs anywhere from about 200 up to 1000 depending on the animals size. 
+																	In fact we are well respected in the area of relocating pets for the military family. 
+																	All branches of the military can qualify for grants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military pays for many moving costs but it doesnt pay to move your pets. 
+																	The Operation Military Pet program was created to help families of the military that have run out of options for paying to relocate their pets. 
+																	A grant up to 2500 may be awarded. 
+																	Our mission is to keep military families together by providing financial assistance for pet relocation costs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All branches of the military can qualify for grants. 
+																	We can handle all Local - National - OverseasInternational Pet Shipping Arrangements. 
+																	Thats why we only accept animals as checked baggage for active US Military or Active US State Department Foreign Service Officers FSO their spouses with active transfer orders. 
+																	Military family members who travel including pets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To keep military families together by providing financial assistance for pet relocation costs. 
+																	Whether being relocated within the United States or anywhere in the world SPCA Internationals Operation Military Pets is here to keep pets with the ones they love. 
+																	As soon as you know your travel details contact your local veterinarian to assist with the pet travel process. 
+																	The cost for pet transportation can be hundreds or even thousands of dollars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Factors to consider may include meeting time frames for obtaining a health certificate updating vaccinations diagnostic testing or administration of medications treatments. 
+																	Check the airline travel requirements for pet crates before buying a crate. 
+																	SPCA Helps MilFams Keep Their Pets. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.pcsgrades.com/wp-content/uploads/2020/06/Costs-of-Moving-with-Pets-940x640.jpg" data-lightbox="roadtrip" data-title="Help With The Costs Of Moving With Pets Military Family With Your Pcs Orders Making A Move We Re Here To Help">
+											<img class="card-img v-image ads-img " src="https://blog.pcsgrades.com/wp-content/uploads/2020/06/Costs-of-Moving-with-Pets-940x640.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQCtM0nFe1v22xgCPhp6FxNtkxcGzFlfzuA';" alt="Help With The Costs Of Moving With Pets Military Family With Your Pcs Orders Making A Move We Re Here To Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help With The Costs Of Moving With Pets Military Family With Your Pcs Orders Making A Move We Re Here To Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.petaircarrier.com/wp-content/uploads/military.jpg" data-lightbox="roadtrip" data-title="Military Discounts Pet Air Carrier Llc">
+											<img class="card-img v-image ads-img " src="https://www.petaircarrier.com/wp-content/uploads/military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbylHcrKyPgp_EBJIaOYw_w5RwxKq6qzzC-w';" alt="Military Discounts Pet Air Carrier Llc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Discounts Pet Air Carrier Llc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pactforanimals.org/wp-content/uploads/2021/02/chelsea7-1080x675.jpg" data-lightbox="roadtrip" data-title="Military Foster Program Pact For Animals">
+											<img class="card-img v-image ads-img " src="https://pactforanimals.org/wp-content/uploads/2021/02/chelsea7-1080x675.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBbhUC1vD-VM3oGHsmL_GZzx0JWe0fN5Ltg';" alt="Military Foster Program Pact For Animals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Foster Program Pact For Animals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/bb/1f/e0/bb1fe0fab0349bf3b8e76331f0bb273f--moving-to-hawaii-army-life.jpg" data-lightbox="roadtrip" data-title="Hawaii Military Pets Pet Kennel Family And Mwr Pets Pet Kennels Your Pet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/bb/1f/e0/bb1fe0fab0349bf3b8e76331f0bb273f--moving-to-hawaii-army-life.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-nDOSK_6f-xefamPueHr49k1tV62qYlcEw';" alt="Hawaii Military Pets Pet Kennel Family And Mwr Pets Pet Kennels Your Pet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hawaii Military Pets Pet Kennel Family And Mwr Pets Pet Kennels Your Pet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/3f/d4/b23fd4ff4010604fd6c8434f7a0b5187.jpg" data-lightbox="roadtrip" data-title="Educational Posters Assistance Dog Psychiatric Service Dog Service Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/3f/d4/b23fd4ff4010604fd6c8434f7a0b5187.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigssfDZ3_fqWrWaE1_dQMJ0uGHrHu34Wrlw';" alt="Educational Posters Assistance Dog Psychiatric Service Dog Service Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Educational Posters Assistance Dog Psychiatric Service Dog Service Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/30/f5/b130f5293af4dab8a162e551d04b63e2.jpg" data-lightbox="roadtrip" data-title="Our Guide To Military Scholarships For Veterans De Addition Awarded Bill Dependents Gran Military Scholarships Scholarships For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/30/f5/b130f5293af4dab8a162e551d04b63e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYEw0gfx9hKmpgypdU5107gF_WN9MZ77QTw';" alt="Our Guide To Military Scholarships For Veterans De Addition Awarded Bill Dependents Gran Military Scholarships Scholarships For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Guide To Military Scholarships For Veterans De Addition Awarded Bill Dependents Gran Military Scholarships Scholarships For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.greatnonprofits.org/wp-content/uploads/2016/03/20150309LEO_065.jpg" data-lightbox="roadtrip" data-title="10 Volunteer Opportunities Where You Can Cuddle Animals Greatnonprofits Blog">
+											<img class="card-img v-image ads-img " src="https://blog.greatnonprofits.org/wp-content/uploads/2016/03/20150309LEO_065.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLshgoaS_kWZF9woCNSwYyRBDY8tv8fjZMVA';" alt="10 Volunteer Opportunities Where You Can Cuddle Animals Greatnonprofits Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Volunteer Opportunities Where You Can Cuddle Animals Greatnonprofits Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fc/4e/66/fc4e66702f61e6cf94dfe3de80f46022.jpg" data-lightbox="roadtrip" data-title="Milspex K 9 Tactical Molle Dog Vest Canadian Preparedness Store Canadian Preparedness Store Dog Vest Dog Harness Dog Vests">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fc/4e/66/fc4e66702f61e6cf94dfe3de80f46022.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOi2FU9sVfyGMfKYK1AlRTa3-1MX-thDXJUA';" alt="Milspex K 9 Tactical Molle Dog Vest Canadian Preparedness Store Canadian Preparedness Store Dog Vest Dog Harness Dog Vests">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milspex K 9 Tactical Molle Dog Vest Canadian Preparedness Store Canadian Preparedness Store Dog Vest Dog Harness Dog Vests</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/75/88/8a758862cb9575ebdb991262b804b5ab.png" data-lightbox="roadtrip" data-title="Spca International S Operation Military Pets Helps Veterans Spca Pets Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/75/88/8a758862cb9575ebdb991262b804b5ab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZXtXQZ80pvEugr37z2wp4Z3vy1XEXM2w67A';" alt="Spca International S Operation Military Pets Helps Veterans Spca Pets Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spca International S Operation Military Pets Helps Veterans Spca Pets Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/14/79/c31479f095fda35b7d28e9a68158ae22.jpg" data-lightbox="roadtrip" data-title="Our Favorite Resources Around The Web To Help Make You The Best Dog Owner Possible Dog Owners Dog Beach Man And Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/14/79/c31479f095fda35b7d28e9a68158ae22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOU6V8bcjwUlkFvgrAUBbSG9Q5a2HElx-_A';" alt="Our Favorite Resources Around The Web To Help Make You The Best Dog Owner Possible Dog Owners Dog Beach Man And Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Favorite Resources Around The Web To Help Make You The Best Dog Owner Possible Dog Owners Dog Beach Man And Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/1b/0f/d01b0fc56f47d5f278a849ca43fc053a.jpg" data-lightbox="roadtrip" data-title="5 Japan Destinations You Can Visit And Stay On A U S Military Base Poppin Smoke Japan Destinations Japan Japan Travel Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/1b/0f/d01b0fc56f47d5f278a849ca43fc053a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4AQzbybs1omwoIxlBpQe-Ss4Wd3cFD9haw';" alt="5 Japan Destinations You Can Visit And Stay On A U S Military Base Poppin Smoke Japan Destinations Japan Japan Travel Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Japan Destinations You Can Visit And Stay On A U S Military Base Poppin Smoke Japan Destinations Japan Japan Travel Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/a6/88/23a688baa4f0e9b436222dc223056924.jpg" data-lightbox="roadtrip" data-title="Pin By Christian Gal On Funny Junk Dog Jokes Funny Animals Funny Husky Meme">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/a6/88/23a688baa4f0e9b436222dc223056924.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKu-6C8M2mK7iw4sPgTpUw49DUUw2T3-Y1cg';" alt="Pin By Christian Gal On Funny Junk Dog Jokes Funny Animals Funny Husky Meme">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Christian Gal On Funny Junk Dog Jokes Funny Animals Funny Husky Meme</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/2d/4b/8a2d4b21dd6fe5390574779dad90722c.jpg" data-lightbox="roadtrip" data-title="Nervous Cadet Reporting For Duty Https Ift Tt 2utezi5 Cute Animals Cute Baby Animals Cute Funny Animals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/2d/4b/8a2d4b21dd6fe5390574779dad90722c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRux-L7s_HegepTZX_6bByFJVOOQVBYoWS3DQ';" alt="Nervous Cadet Reporting For Duty Https Ift Tt 2utezi5 Cute Animals Cute Baby Animals Cute Funny Animals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nervous Cadet Reporting For Duty Https Ift Tt 2utezi5 Cute Animals Cute Baby Animals Cute Funny Animals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/d5/5b/06d55b4b893e543ca9ff3ad424392264.jpg" data-lightbox="roadtrip" data-title="4 5m Led Flashlight Extendable Retractable Dog Leash Lead With Garbage Bag Retractable Dog Leash Retractable Leash Dog Leash">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/d5/5b/06d55b4b893e543ca9ff3ad424392264.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRr_0Y2nvF5zNL9lprL0vOfU7d9YLjItqADw';" alt="4 5m Led Flashlight Extendable Retractable Dog Leash Lead With Garbage Bag Retractable Dog Leash Retractable Leash Dog Leash">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 5m Led Flashlight Extendable Retractable Dog Leash Lead With Garbage Bag Retractable Dog Leash Retractable Leash Dog Leash</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/54/79/035479aad62edba2318da68ee55649d9.jpg" data-lightbox="roadtrip" data-title="U S Army Family And Morale Welfare And Recreation Mwr Military Kids Leadership Training Programs Military Moments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/54/79/035479aad62edba2318da68ee55649d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBm-68yVoawfOlJol8EjZPa5qnfkuaTnJ9g';" alt="U S Army Family And Morale Welfare And Recreation Mwr Military Kids Leadership Training Programs Military Moments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Family And Morale Welfare And Recreation Mwr Military Kids Leadership Training Programs Military Moments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/harley-davidson-military-accessories.html">Harley Davidson Military Accessories</a></li>
+													<li class="list-group-item"><a href="/greece-imf-loan-conditions.html">Greece Imf Loan Conditions</a></li>
+													<li class="list-group-item"><a href="/gamestop-veterans.html">Gamestop Veterans</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-discount-online.html">Harley Davidson Military Discount Online</a></li>
+													<li class="list-group-item"><a href="/full-form-of-imf-in-accounting.html">Full Form Of Imf In Accounting</a></li>
+													<li class="list-group-item"><a href="/global-financial-crisis-imf-report.html">Global Financial Crisis Imf Report</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-edition.html">Harley Davidson Military Edition</a></li>
+													<li class="list-group-item"><a href="/greece-imf-repayment.html">Greece Imf Repayment</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-hoodie.html">Harley Davidson Military Hoodie</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-decals.html">Harley Davidson Military Decals</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-discount-code.html">Harley Davidson Military Discount Code</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-look.html">Harley Davidson Military Look</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-learn-to-ride-military-discount.html">Harley Davidson Learn To Ride Military Discount</a></li>
+													<li class="list-group-item"><a href="/french-army-vets-sud-ouest.html">French Army Vets Sud Ouest</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-overseas.html">Harley Davidson Military Overseas</a></li>
+													<li class="list-group-item"><a href="/harley-davidson-military-archive-collection-2010.html">Harley Davidson Military Archive Collection 2010</a></li>
+													<li class="list-group-item"><a href="/gm-military-discount-website.html">Gm Military Discount Website</a></li>
+													<li class="list-group-item"><a href="/fortune-500-companies-hiring-veterans.html">Fortune 500 Companies Hiring Veterans</a></li>
+													<li class="list-group-item"><a href="/gap-factory-military-discount.html">Gap Factory Military Discount</a></li>
+													<li class="list-group-item"><a href="/foot-locker-veteran-discount.html">Foot Locker Veteran Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

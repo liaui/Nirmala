@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Retired Military Quotes - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Retired Military Quotes",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/0b/15/83/0b1583b02631b91cbc1188975a1410d1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=retired+military+quotes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Retired Military Quotes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It is to the vigilant the active the brave. Generals get credit for them. Hope youll enjoy it. <br>				
+			</p>
+										<a class="badge badge-info" href="/retired-military-insurance.html">retired military insurance</a>
+											<a class="badge badge-secondary" href="/rocky-gap-casino-military-discount.html">rocky gap casino military discount</a>
+											<a class="badge badge-secondary" href="/retired-military-id-card-renewal.html">retired military id card renewal</a>
+											<a class="badge badge-secondary" href="/san-joaquin-national-cemetery-veterans-day.html">san joaquin national cemetery veterans day</a>
+											<a class="badge badge-light" href="/rogers-military-discount-2018.html">rogers military discount 2018</a>
+											<a class="badge badge-success" href="/retired-va-pay.html">retired va pay</a>
+											<a class="badge badge-light" href="/sprint-military-discount-number.html">sprint military discount number</a>
+											<a class="badge badge-dark" href="/retired-military-medical.html">retired military medical</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the right blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/a3/02/2ca30248c4aba79b2d73106786e5d232.jpg" data-lightbox="roadtrip" data-title="Great Military Retirement Quotes Quotesgram Retirement Quotes Funny Happy Retirement Quotes Retirement Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/a3/02/2ca30248c4aba79b2d73106786e5d232.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBWwYxLkobM6e7AvFmnz44JIQ98OGe2FlLYg';" alt="Great Military Retirement Quotes Quotesgram Retirement Quotes Funny Happy Retirement Quotes Retirement Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Military Retirement Quotes Quotesgram Retirement Quotes Funny Happy Retirement Quotes Retirement Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/ae/96/f7ae96e93a39d94996843472763f7adf.jpg" data-lightbox="roadtrip" data-title="Military Quote Honor Quote Wall Art Home Decor By Spoonlily 15 00 Honor Quotes Military Quotes Wall Art Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/ae/96/f7ae96e93a39d94996843472763f7adf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKwb5xIDSIExWWE4HxUhsNdMe-UFDlFa6bAw';" alt="Military Quote Honor Quote Wall Art Home Decor By Spoonlily 15 00 Honor Quotes Military Quotes Wall Art Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Quote Honor Quote Wall Art Home Decor By Spoonlily 15 00 Honor Quotes Military Quotes Wall Art Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/a0/6a/7ea06a775b9ad8418f0428115267d54e.jpg" data-lightbox="roadtrip" data-title="Pin By Marla Davis Perkins On Quotes Honor Quotes Military Quotes Wall Art Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/a0/6a/7ea06a775b9ad8418f0428115267d54e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNcetPVttkVHXtRRCAs59UbteYQUeKwBzJkg';" alt="Pin By Marla Davis Perkins On Quotes Honor Quotes Military Quotes Wall Art Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marla Davis Perkins On Quotes Honor Quotes Military Quotes Wall Art Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/a1/e1/bea1e18459af6a4970721c702dfa816d.jpg" data-lightbox="roadtrip" data-title="Pin Military Retirement Quotes For Men 9 Cake On Pinterest Retirement Quotes Birthday Quotes Funny For Him Retirement Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/a1/e1/bea1e18459af6a4970721c702dfa816d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBD7cQn-7xKqT06hYjbgvhrw1VDIEEQmSe6Q';" alt="Pin Military Retirement Quotes For Men 9 Cake On Pinterest Retirement Quotes Birthday Quotes Funny For Him Retirement Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Military Retirement Quotes For Men 9 Cake On Pinterest Retirement Quotes Birthday Quotes Funny For Him Retirement Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/26/04/132604c3c2e8a0a33b134418a0d547e0.jpg" data-lightbox="roadtrip" data-title="Pin By Kate Brown On Nice Sayings Retirement Party Themes Retirement Parties Military Retirement Parties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/26/04/132604c3c2e8a0a33b134418a0d547e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYDAsSplPBuc6JIhmvcVALHqtQL1WcqItOQ';" alt="Pin By Kate Brown On Nice Sayings Retirement Party Themes Retirement Parties Military Retirement Parties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kate Brown On Nice Sayings Retirement Party Themes Retirement Parties Military Retirement Parties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/af/bb/f6afbb8fb7e6d48c9f78b2e0cc8d0c68.jpg" data-lightbox="roadtrip" data-title="Air Force Retirement Nurse Retirement Army Retirement Etsy Retirement Quotes Retirement Humor Retirement Messages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/af/bb/f6afbb8fb7e6d48c9f78b2e0cc8d0c68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSflmVjMDWjLeQoSdU0vUWmPYHEhJJsDVjxLw';" alt="Air Force Retirement Nurse Retirement Army Retirement Etsy Retirement Quotes Retirement Humor Retirement Messages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Retirement Nurse Retirement Army Retirement Etsy Retirement Quotes Retirement Humor Retirement Messages</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3a/fc/f1/3afcf1916f3a173a2d0c5eb0ae31cbc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSflmVjMDWjLeQoSdU0vUWmPYHEhJJsDVjxLw';" alt="Air Force Retirement Nurse Retirement Army Retirement Etsy Retirement Quotes Retirement Humor Retirement Messages">
+										<div class="card-body">
+						<h3 class="h5"><b>Other than that hes a great military man I want you to know that.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Retired military quotes</strong>. 
+								
+																	21 Great Military Appreciation Quotes Sailors assigned to the color guard aboard the aircraft carrier USS Dwight D. 
+																	Martin Luther King Jr. 
+																	A true leader has the confidence to stand alone the courage to make tough decisions and the compassion to listen to the needs of others. 
+																	Samples for retirement message for military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Courage isnt having the strength to go on - it is going on when you dont have strength. 
+																	Its nice to get out of the rat race but you have to learn to get along with less cheese Gene Perret. 
+																	Thats when you return from work one day and say Hi Honey Im homeforever Gene Perret I enjoy waking up and not having to go to work. 
+																	The military retirement quotes below are a good way to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This nation will remain the land of the free only so long as it is the home of the brave. 
+																	It is spending the sweat of its laborers the genius of its scientists the hopes of its children. 
+																	Perseverance through adversity is key to succeeding in battle and in life. 
+																	Military retirement quotes Serious and inspirational military retirement quotes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eisenhower CVN 69 retire the colors US. 
+																	Your achievements made difference in the country and your life is precious to us. 
+																	NavyMass Communication Specialist. 
+																	Freedom is never more than one generation away from extinction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The best part about retirement is spending time with the grandkids. 
+																	Good leaders never give up. 
+																	The battle sir is not to the strong alone. 
+																	Retire from your job but never retire your mind. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are searching for the retirement messages for the military here we present a good collection of retirement message samples for military to you. 
+																	So use one of the many military retirement quotes below in your retirement card. 
+																	Take care and happy retirement. 
+																	We salute your dedication and honesty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military retirement quotes -- the lighter side of military life. 
+																	This world in arms is not spending money alone. 
+																	Age wrinkles the body. 
+																	Military quotes to honor our heroes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just remember to be respectful to the special person who has dedicated years of service for the safety and security of our country. 
+																	A soldier is he whose blood makes the glory of the general. 
+																	As these generals and former President know so well its the ability to push forward that matters most. 
+																	Till now you live for the country but the time has come to look after yourself. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Quitting wrinkles the soul General of the Army Douglas MacArthur. 
+																	As far as Saddam Hussein being a great military strategist he is neither a strategist nor is he schooled in the operational arts nor is he a tactician nor is he a general nor is he a soldier. 
+																	Retirement is the only time in your life when time no longer equals money. 
+																	Retirement is not the end of the road. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Iowa Jima uncommon valor was a common virtue. 
+																	It is the ongoing purpose that provides meaningfulness. 
+																	Browse all famous retirement quotes below or select a specific topic from this list. 
+																	Victory belongs to the most persevering. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover and share Great Military Retirement Quotes. 
+																	Soldiers generally win battles. 
+																	So I do it three or four times a day Gene Perret Retirement. 
+																	Being a soldier fighting for this country is neither Republican nor Democrat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From time to time the tree of liberty must be watered with the blood of tyrants and patriots. 
+																	Explore our collection of motivational and famous quotes by authors you know and love. 
+																	34th President of the US Giuseppe Garibaldi Italian general George S. 
+																	Quotes tagged as military Showing 1-30 of 870. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We didnt pass it to our children in the bloodstream. 
+																	My best days in retirement are when I give back to the community. 
+																	Retirement is not a life without purpose. 
+																	Strength Moving On Encouraging. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As you plan retirement figure out what to say in a retirement card or write a retirement speech you will enjoy reading funny retirement quotes inspirational retirement quotes and much more about this wonderful phase of life. 
+																	To command is to serve nothing more and nothing less. 
+																	And besides you can appreciate your military friend by using these quotes. 
+																	Army general and Supreme Commander of the Allied Expeditionary Forces in Europe during World War II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is the beginning of the open highway. 
+																	Old soldiers never die. 
+																	Following are some military retirement toasts and sayings that may be used at parties honoring new veterans. 
+																	If a man hasnt discovered something that he will die for he isnt fit to live. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every gun that is made every warship launched every rocket fired signifies in the final sense a theft from those who hunger and are not fed those who are cold and are not clothed. 
+																	Be inspirational or humorous -- the choice is yours. 
+																	Throughout history noted military leaders war veterans and statesmen such as Nathan Hale American soldier spy and captain in the Continental Army in the American Revolutionary War Dwight D. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/e4/8a/93e48a06a99e38180787d9ba59d51f31.jpg" data-lightbox="roadtrip" data-title="There Are No Ex Soldiers Once A Soldier Always A Soldier Warrior Quotes Military Life Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/e4/8a/93e48a06a99e38180787d9ba59d51f31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXEEoutooBmE1w3h9-zD_AYoYcqE75Ln6MQ';" alt="There Are No Ex Soldiers Once A Soldier Always A Soldier Warrior Quotes Military Life Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are No Ex Soldiers Once A Soldier Always A Soldier Warrior Quotes Military Life Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/d8/89/d4d88973939b189b830af5477cf5b548.jpg" data-lightbox="roadtrip" data-title="Military Brat Military Brat Quotes Military Brat Brat Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/d8/89/d4d88973939b189b830af5477cf5b548.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7BYV4XngEsCUXCLGx1Mt5YrMM-B_6B7NYhg';" alt="Military Brat Military Brat Quotes Military Brat Brat Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Brat Military Brat Quotes Military Brat Brat Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/f4/bf/37f4bffb1a325e341ec1183f25284d59.jpg" data-lightbox="roadtrip" data-title="Pin By Bullets2bandages On Inspiring Quotes What Is A Veteran Veteran Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/f4/bf/37f4bffb1a325e341ec1183f25284d59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgqE-wbok88awRri58fS413HG6yC2sBALTQ';" alt="Pin By Bullets2bandages On Inspiring Quotes What Is A Veteran Veteran Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bullets2bandages On Inspiring Quotes What Is A Veteran Veteran Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/5d/a6/6b5da6c255642386af91d94be796cb17.jpg" data-lightbox="roadtrip" data-title="Hero Sign Great For Military Firefighter By Afwifecreations 20 00 Hero Quotes Military Quotes Military Firefighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/5d/a6/6b5da6c255642386af91d94be796cb17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzMkOLve0HtbkFXdf2a0etLeVrfgxO6ZgwQ';" alt="Hero Sign Great For Military Firefighter By Afwifecreations 20 00 Hero Quotes Military Quotes Military Firefighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hero Sign Great For Military Firefighter By Afwifecreations 20 00 Hero Quotes Military Quotes Military Firefighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/24/6f/db246f19ffb9c2c5e5b72e14271538e0.jpg" data-lightbox="roadtrip" data-title="Pin By Sweet Magnolias Farm On Sweet Liberty Military Quotes Military Love Military Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/24/6f/db246f19ffb9c2c5e5b72e14271538e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvqFNj8SMkfF34SA3DxZrD0UAgh0nGPKN5A';" alt="Pin By Sweet Magnolias Farm On Sweet Liberty Military Quotes Military Love Military Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sweet Magnolias Farm On Sweet Liberty Military Quotes Military Love Military Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/ce/97/3fce97e7527d82a4c0abe1f65a9bdf6e.jpg" data-lightbox="roadtrip" data-title="Pin By Jensen Mary On Patriotic Soldier Quotes Inspirational Soldier Quotes Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/ce/97/3fce97e7527d82a4c0abe1f65a9bdf6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7bNR-__ksKV34akHUN9UQQ-kBV7_iz7vvg';" alt="Pin By Jensen Mary On Patriotic Soldier Quotes Inspirational Soldier Quotes Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jensen Mary On Patriotic Soldier Quotes Inspirational Soldier Quotes Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/02/e2/2502e228c3fcdbc1f07b4a208c035850.jpg" data-lightbox="roadtrip" data-title="1000 Retirement Quotes On Pinterest Retirement Sayings Quotes For Retirement And Happy Retirement Quot Retirement Quotes Retirement Humor Retirement Wishes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/02/e2/2502e228c3fcdbc1f07b4a208c035850.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQClvUN78FhmCGSK-cc0TsIP8BwVXfNwDTVyQ';" alt="1000 Retirement Quotes On Pinterest Retirement Sayings Quotes For Retirement And Happy Retirement Quot Retirement Quotes Retirement Humor Retirement Wishes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1000 Retirement Quotes On Pinterest Retirement Sayings Quotes For Retirement And Happy Retirement Quot Retirement Quotes Retirement Humor Retirement Wishes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/15/83/0b1583b02631b91cbc1188975a1410d1.jpg" data-lightbox="roadtrip" data-title="Military Retirement Gifts And Quote Samples Navy Retirement Gifts Retirement Gifts Military Retirement Gift">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/15/83/0b1583b02631b91cbc1188975a1410d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYuhEFFIZTp9HVK1XGAzTLlo6Ymmz8ufL4Ew';" alt="Military Retirement Gifts And Quote Samples Navy Retirement Gifts Retirement Gifts Military Retirement Gift">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirement Gifts And Quote Samples Navy Retirement Gifts Retirement Gifts Military Retirement Gift</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/39/d4/e239d4138d5173d4c0e2a9a36e3e9c64.jpg" data-lightbox="roadtrip" data-title="Pin By Hailey Elizabeth On Qoutes Such Army Wife Life Deployment Quotes Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/39/d4/e239d4138d5173d4c0e2a9a36e3e9c64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGeXtQcm30RaAcy0aIAY-M9BYhlZIDu_fkww';" alt="Pin By Hailey Elizabeth On Qoutes Such Army Wife Life Deployment Quotes Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hailey Elizabeth On Qoutes Such Army Wife Life Deployment Quotes Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/2f/2f/392f2fb6bd1f1626d2d061a06a72353b.jpg" data-lightbox="roadtrip" data-title="Funny Retirement Quotes And Sayings With Image Retirement Quotes Funny Retirement Quotes Retirement Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/2f/2f/392f2fb6bd1f1626d2d061a06a72353b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_huklcwrcIUG66Y1rUF-3GqL8-6Cng7FTEA';" alt="Funny Retirement Quotes And Sayings With Image Retirement Quotes Funny Retirement Quotes Retirement Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funny Retirement Quotes And Sayings With Image Retirement Quotes Funny Retirement Quotes Retirement Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/88/2c/86882c6af8033e5f8c0bc3378e45c7d3.jpg" data-lightbox="roadtrip" data-title="The Airman S Creed Plaqueair Force Plaquemilitary Etsy Retirement Plaques Military Gifts Promotional Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/88/2c/86882c6af8033e5f8c0bc3378e45c7d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8NOWv6o70EUGbwRY5STmHYInFKful2qGNfg';" alt="The Airman S Creed Plaqueair Force Plaquemilitary Etsy Retirement Plaques Military Gifts Promotional Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Airman S Creed Plaqueair Force Plaquemilitary Etsy Retirement Plaques Military Gifts Promotional Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/82/9f/da829fa23adb529546bdf3c19b2e88ea.jpg" data-lightbox="roadtrip" data-title="Soldier Poem Anniversary Poems Law Quotes Retirement Poems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/82/9f/da829fa23adb529546bdf3c19b2e88ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJPhehmYvoJd_tC8lFqoCmXTHHNUTbFxkXA';" alt="Soldier Poem Anniversary Poems Law Quotes Retirement Poems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Poem Anniversary Poems Law Quotes Retirement Poems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/f8/fe/e0f8fe0fbbdad4d6ce0de798d09c4470.png" data-lightbox="roadtrip" data-title="The Speech For My Husband S Retirement From The Us Navy Military Retirement Military Retirement Parties Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/f8/fe/e0f8fe0fbbdad4d6ce0de798d09c4470.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhHz2ZiSN1BheuE3I0V0txZ3jkpDedxqBZw';" alt="The Speech For My Husband S Retirement From The Us Navy Military Retirement Military Retirement Parties Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Speech For My Husband S Retirement From The Us Navy Military Retirement Military Retirement Parties Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/fd/fa/79fdfacdf0b3f3a5f657eb5f502bbc66.jpg" data-lightbox="roadtrip" data-title="Pin By Tammy Pindera On I D Say What Is A Veteran Veteran Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/fd/fa/79fdfacdf0b3f3a5f657eb5f502bbc66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSHBmM5sdIYZgA5bBQJawZeLRJymlbOQXig';" alt="Pin By Tammy Pindera On I D Say What Is A Veteran Veteran Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Tammy Pindera On I D Say What Is A Veteran Veteran Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/82/1a/c6821a7a82b70765b43e1d4f316eaee1.jpg" data-lightbox="roadtrip" data-title="Pin By Vanessa Smith On Work Retirement Quotes Retirement Quotes Funny Retirement Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/82/1a/c6821a7a82b70765b43e1d4f316eaee1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpA9pb8KO9xqhvadMWYlhIlF83PQh8m8WQg';" alt="Pin By Vanessa Smith On Work Retirement Quotes Retirement Quotes Funny Retirement Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Vanessa Smith On Work Retirement Quotes Retirement Quotes Funny Retirement Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-mst-ptsd-rating.html">Va Mst Ptsd Rating</a></li>
+													<li class="list-group-item"><a href="/va-discounts-at-walmart.html">Va Discounts At Walmart</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-jacksonville-florida.html">Va National Cemetery Jacksonville Florida</a></li>
+													<li class="list-group-item"><a href="/va-and-military-retirement-pay.html">Va And Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/va-military-service-coordinator-jobs.html">Va Military Service Coordinator Jobs</a></li>
+													<li class="list-group-item"><a href="/us-navy-chantilly-va.html">Us Navy Chantilly Va</a></li>
+													<li class="list-group-item"><a href="/va-military-discounts.html">Va Military Discounts</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-arizona.html">Va National Cemetery Arizona</a></li>
+													<li class="list-group-item"><a href="/us-military-vets-mc-wv.html">Us Military Vets Mc Wv</a></li>
+													<li class="list-group-item"><a href="/va-discounts-on-veterans-day.html">Va Discounts On Veterans Day</a></li>
+													<li class="list-group-item"><a href="/us-navy-little-creek-va.html">Us Navy Little Creek Va</a></li>
+													<li class="list-group-item"><a href="/va-disability-vs-military-retirement.html">Va Disability Vs Military Retirement</a></li>
+													<li class="list-group-item"><a href="/va-loan-without-military.html">Va Loan Without Military</a></li>
+													<li class="list-group-item"><a href="/va-aquarium-discounts.html">Va Aquarium Discounts</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-ohio.html">Va National Cemetery Ohio</a></li>
+													<li class="list-group-item"><a href="/va-disney-discounts.html">Va Disney Discounts</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-in-california.html">Va National Cemetery In California</a></li>
+													<li class="list-group-item"><a href="/va-military-housing.html">Va Military Housing</a></li>
+													<li class="list-group-item"><a href="/va-clinic-on-military-drive.html">Va Clinic On Military Drive</a></li>
+													<li class="list-group-item"><a href="/va-and-mst.html">Va And Mst</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

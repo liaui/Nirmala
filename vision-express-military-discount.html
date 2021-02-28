@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vision Express Military Discount - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vision Express Military Discount",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/0d/c9/5a/0dc95add6a1e1e1dd529e74539e03f7e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vision+express+military+discount",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vision Express Military Discount</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Buy One Get One FREE. The latest offers and deals on designer glasses lenses frames and sunglasses at Vision Express. Vision Express Discount Codes. <br>				
+			</p>
+										<a class="badge badge-primary" href="/lmao-hindi-translation.html">lmao hindi translation</a>
+											<a class="badge badge-dark" href="/lmao-gif-emoji.html">lmao gif emoji</a>
+											<a class="badge badge-dark" href="/lmao-full-form-meaning-in-hindi.html">lmao full form meaning in hindi</a>
+											<a class="badge badge-primary" href="/lmao-co-to.html">lmao co to</a>
+											<a class="badge badge-info" href="/lmao-j.html">lmao j</a>
+											<a class="badge badge-light" href="/lmao-expansion.html">lmao expansion</a>
+											<a class="badge badge-info" href="/lmao-emoji-discord.html">lmao emoji discord</a>
+											<a class="badge badge-primary" href="/kohls-veteran-discounts.html">kohls veteran discounts</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the right blog.  Our website gives you hints for viewing the highest quality video and image content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/fa/af/4efaafce845835fc4f8b452fadd340bb.jpg" data-lightbox="roadtrip" data-title="Contact Lenses Eyeglasses Frames Eye Test Vision Express Spectacles Vision Express Womens Glasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/fa/af/4efaafce845835fc4f8b452fadd340bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDEgYgkHTzY8AlAN3TXDniVLhkW_TVCgQKQ';" alt="Contact Lenses Eyeglasses Frames Eye Test Vision Express Spectacles Vision Express Womens Glasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Lenses Eyeglasses Frames Eye Test Vision Express Spectacles Vision Express Womens Glasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0d/c9/5a/0dc95add6a1e1e1dd529e74539e03f7e.jpg" data-lightbox="roadtrip" data-title="Pin By Ddw On Vizion Express Military Appreciation Write The Vision Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0d/c9/5a/0dc95add6a1e1e1dd529e74539e03f7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd__Ajg7qRGUEL-DIYlByPSS1BNwWDzBXxPw';" alt="Pin By Ddw On Vizion Express Military Appreciation Write The Vision Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ddw On Vizion Express Military Appreciation Write The Vision Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/ec/99/e6ec99b55323a15510cc2e3ff2fcb38f.png" data-lightbox="roadtrip" data-title="With Its Sharp Rectangular Edges And Dual Colours These Spectacle Frames From Julius By Vision Express Is A Sty Fashion Attire Winter Casual Spectacles Frames">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/ec/99/e6ec99b55323a15510cc2e3ff2fcb38f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBV0TZ78mvOpMeYJv8EitpTQ8dkBl5JGmrw';" alt="With Its Sharp Rectangular Edges And Dual Colours These Spectacle Frames From Julius By Vision Express Is A Sty Fashion Attire Winter Casual Spectacles Frames">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">With Its Sharp Rectangular Edges And Dual Colours These Spectacle Frames From Julius By Vision Express Is A Sty Fashion Attire Winter Casual Spectacles Frames</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/39/79/bc/3979bc765b07f6cdf11553103a3d96fc.jpg" data-lightbox="roadtrip" data-title="Understanding Changes To Military Dental And Vision Coverage Katehorrell Dental Insurance Plans Dental Insurance Health Insurance Cost">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/39/79/bc/3979bc765b07f6cdf11553103a3d96fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa0d33wQhvorF8xOJQfC-_qIpFf2Rf35wa5w';" alt="Understanding Changes To Military Dental And Vision Coverage Katehorrell Dental Insurance Plans Dental Insurance Health Insurance Cost">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Changes To Military Dental And Vision Coverage Katehorrell Dental Insurance Plans Dental Insurance Health Insurance Cost</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/ad/d4/bdadd466e6ebe0defd2332170b20423e.jpg" data-lightbox="roadtrip" data-title="Deadstock Us Army Sunglasses Late Vietnam War Era 1972 Army Sunglasses Goggles Glasses Sunglasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/ad/d4/bdadd466e6ebe0defd2332170b20423e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzXoejHlwVF_AZNxTPcbnRYFFJ0WU5jhWaHg';" alt="Deadstock Us Army Sunglasses Late Vietnam War Era 1972 Army Sunglasses Goggles Glasses Sunglasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deadstock Us Army Sunglasses Late Vietnam War Era 1972 Army Sunglasses Goggles Glasses Sunglasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/56/17/2f5617e954633aebabb155639cde496c.jpg" data-lightbox="roadtrip" data-title="Pin On Glasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/56/17/2f5617e954633aebabb155639cde496c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_JH_at-yj_JGu1EewuDeWPRjMM4czhGjbw';" alt="Pin On Glasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Glasses</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2f/56/17/2f5617e954633aebabb155639cde496c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_JH_at-yj_JGu1EewuDeWPRjMM4czhGjbw';" alt="Pin On Glasses">
+										<div class="card-body">
+						<h3 class="h5"><b>Spouses and children who are dependents are also eligible for the military renewal exemption as long as a family member is on active military duty.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vision express military discount</strong>. 
+								
+																	Listed above are very best Vision Express promos on the internet. 
+																	Vision Direct does have a special discount for military personnel to thank them for their service. 
+																	Does Vision Direct have a student discount. 
+																	Learn about Vision Express including insurance benefits retirement benefits and vacation policy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are two easy ways to check your insurance coverage before you come in. 
+																	They offer a solid benefits package with health vision and dental. 
+																	Benefits information above is provided anonymously by current and former Vision Express employees and may include a summary provided by the employer. 
+																	Active-duty personnel of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These coupons allow people to make the right choices and save big every time. 
+																	Browse and shop our widest range of top brands online now. 
+																	Troopscout brings you the very best Vision Express voucher codes so if you are in the army navy or RAF make some additional savings today. 
+																	Currently CouponAnnie has 12 promos totally regarding Vision Express which includes but not limited to 0 promo code 12 deal and 1 free delivery promo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn more about this discount by visiting their website. 
+																	MILITARY DISCOUNT MILITARY DISCOUNT. 
+																	Buy contact lenses sunglasses glasses and designer frames at Vision Express. 
+																	Does Eyemart Express accept your vision insurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Vision Express to show gratitude and appreciation to all those who lift people up and help people keep rising if youre a service member or veteran member you may be eligible for a military discount on your visits at Vision Express at any time. 
+																	In order to express Vision Express gratitude for their military hero they offer Vision Express Military Discount for every military orderThe customers who serve for Active Duty members Reservists National Guard Members are eligible for this discount when you shopping at Vision Express online or in storeConfirm your eligibility when you check out and enjoy this military offers. 
+																	There are 2 active student coupon codes for Vision Express verified today. 
+																	SCHOOL FACULTY STAFF DISCOUNT Show your valid school or university ID at checkout for an everyday 20 off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are also optional things like aflac etc. 
+																	Youd better to learn more about at Vision Express military discount page. 
+																	Glassdoor is your resource for information about Vision Express benefits and perks. 
+																	With an average discount of 21 off customers can grab incredible promos up to 30 off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They match 401k up to 4 and youre vested right away. 
+																	Shopping for all seasons and all the different reasons. 
+																	Book an eye test online. 
+																	The following qualify for the military exemption for license renewal in Washington. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vision Express Discount Codes. 
+																	First pair at List Price. 
+																	Second pair of equal or lesser value free. 
+																	Show your retired active or non-active veteran or dependent military ID at checkout for an everyday 10 off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cannot be combined with insurance benefits or other offers. 
+																	All discounts to be shown in cart just use promo code SAVE40 at checkout. 
+																	The everyday discount can be used toward more than 2000 frames within the retailers optical selection. 
+																	Vision Express military discount are prepared now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MILITARY DISCOUNT Show your retired active or non-active veteran or dependent military ID at checkout for an everyday 10 off. 
+																	50 Off On Sunglasses Outlet More. 
+																	PTO and holidays are standard. 
+																	A new license with the military exemption costs 10. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All you have to do is go to the Vision Direct website to register your military status and you can get a 10 off discount on your orders. 
+																	50 Off On Sunglasses Outlet. 
+																	Eyemart Express is also thanking veterans active and inactive duty military personnel and their families for their service with a 20 percent discount on eyewear purchases. 
+																	Buy one complete pair of glasses and get a second pair free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	People can find numerous options online to consider and shop at Vision Express using online coupon codes and discounts. 
+																	Below is the Easy 3 Step process to get your savings now. 
+																	Get the latest Vision Express discounts for members of the armed forces and family. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/60/1e/28601e799ae951f75e008f49194f119d.jpg" data-lightbox="roadtrip" data-title="16 Fresh Prescription Aviator Sunglasses Inspiring Ideas Aviator Prescriptio Prescription Aviator Sunglasses Aviator Sunglasses Polarized Aviator Sunglasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/60/1e/28601e799ae951f75e008f49194f119d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMoYRycj394i0uVUaickKHm_jAooBJQ3tvg';" alt="16 Fresh Prescription Aviator Sunglasses Inspiring Ideas Aviator Prescriptio Prescription Aviator Sunglasses Aviator Sunglasses Polarized Aviator Sunglasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Fresh Prescription Aviator Sunglasses Inspiring Ideas Aviator Prescriptio Prescription Aviator Sunglasses Aviator Sunglasses Polarized Aviator Sunglasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/ee/b6/d4eeb6a059405a459a88675dcdbf4f74.jpg" data-lightbox="roadtrip" data-title="Who Cutie James Bond Military Sunglasses Brand Design American Optical Men Sunglasses Ao Eyewear Square Army Sun Glasses Military Sunglasses Sunglasses Branding Branding Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/ee/b6/d4eeb6a059405a459a88675dcdbf4f74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMda3RStMkZM_zq2K4nqyP6pUG7KmQem4Waw';" alt="Who Cutie James Bond Military Sunglasses Brand Design American Optical Men Sunglasses Ao Eyewear Square Army Sun Glasses Military Sunglasses Sunglasses Branding Branding Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Cutie James Bond Military Sunglasses Brand Design American Optical Men Sunglasses Ao Eyewear Square Army Sun Glasses Military Sunglasses Sunglasses Branding Branding Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/d7/0b/03d70b1d07e0bec7e0d525129e1f71f0.jpg" data-lightbox="roadtrip" data-title="Military Eyewear Discounts Ted Baker B702 Eyeglasses Women S Classic Eye Glasses Eyeglasses Eyeglasses For Women Glasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/d7/0b/03d70b1d07e0bec7e0d525129e1f71f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGypK-Y9QiK-YNhpLiDLadA6cFKtB1S57tA';" alt="Military Eyewear Discounts Ted Baker B702 Eyeglasses Women S Classic Eye Glasses Eyeglasses Eyeglasses For Women Glasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Eyewear Discounts Ted Baker B702 Eyeglasses Women S Classic Eye Glasses Eyeglasses Eyeglasses For Women Glasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d30ocp3jhhjef4.cloudfront.net/right-team-2-for-38-71-web/upload_location_box.jpg?id=1611686111" data-lightbox="roadtrip" data-title="Eyewear Express Lafayette 70508 Buy Prescription Eye Glasses Frames">
+											<img class="card-img v-image ads-img " src="https://d30ocp3jhhjef4.cloudfront.net/right-team-2-for-38-71-web/upload_location_box.jpg?id=1611686111" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BXWF6MIEUANxTDFzvWlsJG1kyIPD42rr7Q';" alt="Eyewear Express Lafayette 70508 Buy Prescription Eye Glasses Frames">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eyewear Express Lafayette 70508 Buy Prescription Eye Glasses Frames</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/5d/14/6f5d14be33f4bc22d2c14abb7699bd7d.png" data-lightbox="roadtrip" data-title="Heading To A Cafe Add A Hint Of Trendy Style To Your Fall Look With A Cool Vision Express In Style Frame Vision Express Fall Looks Trendy Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/5d/14/6f5d14be33f4bc22d2c14abb7699bd7d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcruYImN6IpZcK7PWB9MVwZGWsFW7ap9VQdA';" alt="Heading To A Cafe Add A Hint Of Trendy Style To Your Fall Look With A Cool Vision Express In Style Frame Vision Express Fall Looks Trendy Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heading To A Cafe Add A Hint Of Trendy Style To Your Fall Look With A Cool Vision Express In Style Frame Vision Express Fall Looks Trendy Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/be/fa/95befa580c412d2ee16fa7f472a572f3.jpg" data-lightbox="roadtrip" data-title="16 Amazing Express Sunglasses Mens Inspirations Express Sunglasses Mens Sunglasses Sunglasses Mens Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/be/fa/95befa580c412d2ee16fa7f472a572f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVV6oo-Wox1EvOceUpJA-JXzr6NDAI4mUzFQ';" alt="16 Amazing Express Sunglasses Mens Inspirations Express Sunglasses Mens Sunglasses Sunglasses Mens Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Amazing Express Sunglasses Mens Inspirations Express Sunglasses Mens Sunglasses Sunglasses Mens Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/0d/ce/4f0dce6904b6a24ca47ea7063ae4fc05.jpg" data-lightbox="roadtrip" data-title="Pin On Glasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/0d/ce/4f0dce6904b6a24ca47ea7063ae4fc05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1IUzfg9bSYRqqi9kLrtatQeo6cASCTT-N5g';" alt="Pin On Glasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Glasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/cd/d5/55cdd571260d4d66b46243cb8cbe142c.png" data-lightbox="roadtrip" data-title="Shop Steiner Optics Otal C Red Deals At Govx We Offer Exclusive Government And Military Discounts Register For Tactical Laser Thermal Imaging Night Vision">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/cd/d5/55cdd571260d4d66b46243cb8cbe142c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lc7IHMrin9Jc4pbAiouw0ywOWj-0IXsBgQ';" alt="Shop Steiner Optics Otal C Red Deals At Govx We Offer Exclusive Government And Military Discounts Register For Tactical Laser Thermal Imaging Night Vision">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shop Steiner Optics Otal C Red Deals At Govx We Offer Exclusive Government And Military Discounts Register For Tactical Laser Thermal Imaging Night Vision</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/20/46/d72046900a2d58df739fc027a27e99b7.png" data-lightbox="roadtrip" data-title="Best Vision Insurance Companies Plans Of 2021 Lendedu Vision Insurance Eye Insurance Insurance Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/20/46/d72046900a2d58df739fc027a27e99b7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwPEV0xdul-E1p0zvK-vus2qKmci71yy37dg';" alt="Best Vision Insurance Companies Plans Of 2021 Lendedu Vision Insurance Eye Insurance Insurance Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Vision Insurance Companies Plans Of 2021 Lendedu Vision Insurance Eye Insurance Insurance Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/74/99/f6/7499f641f80d3c37eaea2d15ec8aacb3.jpg" data-lightbox="roadtrip" data-title="139875 Superdry Glasses Prescription Glasses Online Prescription Glasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/74/99/f6/7499f641f80d3c37eaea2d15ec8aacb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBCpYIN2G0QEpgm2iVtwmigkU_zeF-KbjIg';" alt="139875 Superdry Glasses Prescription Glasses Online Prescription Glasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">139875 Superdry Glasses Prescription Glasses Online Prescription Glasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/3d/ca/c43dca2b3cc1fe13985d6c6f2c917b22.png" data-lightbox="roadtrip" data-title="Pin On Match It Right">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/3d/ca/c43dca2b3cc1fe13985d6c6f2c917b22.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUAnR9nK29cjPf39YCDAUSGVnqKMHDzh4xw';" alt="Pin On Match It Right">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Match It Right</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/13/52/621352be6f539b65931ce52765ac87ca.jpg" data-lightbox="roadtrip" data-title="The Vision Express Activ Collection Of Spectacle Frames Are Designed For Our Sporty Customers On This Nat Vision Express National Sports Day Spectacles Frames">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/13/52/621352be6f539b65931ce52765ac87ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIP47on9tu8j5rc0pl0ceodISixclTzieAEQ';" alt="The Vision Express Activ Collection Of Spectacle Frames Are Designed For Our Sporty Customers On This Nat Vision Express National Sports Day Spectacles Frames">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Vision Express Activ Collection Of Spectacle Frames Are Designed For Our Sporty Customers On This Nat Vision Express National Sports Day Spectacles Frames</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/8c/89/b18c89526029d1722b95ecf23a45750d.jpg" data-lightbox="roadtrip" data-title="16 Top Search Polarized Yellow Lens Sunglasses Smart Ideas Arrow Polarized Yellow Oakley Yellow Pol Yellow Lens Sunglasses Sunglasses Yellow Sunglasses Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/8c/89/b18c89526029d1722b95ecf23a45750d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj39ScR8zfoHZp-3eX7cUxko1Myyk-WL2Imw';" alt="16 Top Search Polarized Yellow Lens Sunglasses Smart Ideas Arrow Polarized Yellow Oakley Yellow Pol Yellow Lens Sunglasses Sunglasses Yellow Sunglasses Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Top Search Polarized Yellow Lens Sunglasses Smart Ideas Arrow Polarized Yellow Oakley Yellow Pol Yellow Lens Sunglasses Sunglasses Yellow Sunglasses Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1120059735094065" data-lightbox="roadtrip" data-title="Vision Express Guam Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1120059735094065" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfXz-DmhvaDdvZgyVVNOApKgGO3RMCYdAMnA';" alt="Vision Express Guam Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Express Guam Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/52/30/8e52308f6b77acf742c1c34a383d32fc.png" data-lightbox="roadtrip" data-title="Accessorize Your Casual Wear With Contrast Unisex Wayfarer Styled Frames In Bold Shades To Add That Extra Touch To Your How To Wear Fashion Attire Casual Wear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/52/30/8e52308f6b77acf742c1c34a383d32fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14V0NB63CrHlKYAQQVV7JsrVlpeoEN7XoOQ';" alt="Accessorize Your Casual Wear With Contrast Unisex Wayfarer Styled Frames In Bold Shades To Add That Extra Touch To Your How To Wear Fashion Attire Casual Wear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Accessorize Your Casual Wear With Contrast Unisex Wayfarer Styled Frames In Bold Shades To Add That Extra Touch To Your How To Wear Fashion Attire Casual Wear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-navy-discount-marietta-ga.html">Army Navy Discount Marietta Ga</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-louisa-va.html">Bank Of America Louisa Va</a></li>
+													<li class="list-group-item"><a href="/autozone-veteran-discount-code.html">Autozone Veteran Discount Code</a></li>
+													<li class="list-group-item"><a href="/army-gear-discount-code.html">Army Gear Discount Code</a></li>
+													<li class="list-group-item"><a href="/banana-republic-military-cardigan.html">Banana Republic Military Cardigan</a></li>
+													<li class="list-group-item"><a href="/army-flying-museum-discount-code.html">Army Flying Museum Discount Code</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-manassas-va.html">Bank Of America Manassas Va</a></li>
+													<li class="list-group-item"><a href="/banana-republic-veterans-day-sale.html">Banana Republic Veterans Day Sale</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-jobs-va.html">Bank Of America Jobs Va</a></li>
+													<li class="list-group-item"><a href="/army-discount-on-bikes.html">Army Discount On Bikes</a></li>
+													<li class="list-group-item"><a href="/army-vs-air-force-ranks.html">Army Vs Air Force Ranks</a></li>
+													<li class="list-group-item"><a href="/army-vs-ghost-movie.html">Army Vs Ghost Movie</a></li>
+													<li class="list-group-item"><a href="/bangladesh-imf-loan-history.html">Bangladesh Imf Loan History</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-franklin-va.html">Bank Of America Franklin Va</a></li>
+													<li class="list-group-item"><a href="/army-vs-navy-rugby.html">Army Vs Navy Rugby</a></li>
+													<li class="list-group-item"><a href="/att-military-discount-code.html">Att Military Discount Code</a></li>
+													<li class="list-group-item"><a href="/army-discount-national-express.html">Army Discount National Express</a></li>
+													<li class="list-group-item"><a href="/army-vacancies.html">Army Vacancies</a></li>
+													<li class="list-group-item"><a href="/atlanta-united-tickets-military-discount.html">Atlanta United Tickets Military Discount</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-mclean-va.html">Bank Of America Mclean Va</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

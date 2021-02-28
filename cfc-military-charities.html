@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Cfc Military Charities - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Cfc Military Charities",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/65/fb/90/65fb9069450abca184ab074fb6d1ac78.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cfc+military+charities",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Cfc Military Charities</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In Koinonia fellowship communion and participation. Office of Personnel Management. The CFC is now the worlds largest annual workplace charity campaign with more than 200 CFC campaigns each year. <br>				
+			</p>
+										<a class="badge badge-warning" href="/lowes-on-military-and-goliad.html">lowes on military and goliad</a>
+											<a class="badge badge-secondary" href="/lowes-on-military-highway-virginia.html">lowes on military highway virginia</a>
+											<a class="badge badge-secondary" href="/lowes-military-spouse-transfer.html">lowes military spouse transfer</a>
+											<a class="badge badge-secondary" href="/lowes-military-update.html">lowes military update</a>
+											<a class="badge badge-secondary" href="/lowe-boats-military-discount.html">lowe boats military discount</a>
+											<a class="badge badge-secondary" href="/lowes-no-military-discount-on-appliances.html">lowes no military discount on appliances</a>
+											<a class="badge badge-dark" href="/lmfao-que-es.html">lmfao que es</a>
+											<a class="badge badge-dark" href="/lowes-military-registration.html">lowes military registration</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right blog.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/db/9a/b1db9a4ef4c386104b3cf420106a18e6.jpg" data-lightbox="roadtrip" data-title="Active Duty Military Federalemployees Choose Narf Cfc 10350 As Your Charity Of Choice Http Bit Ly 1axexiy Disaster Relief Donate To Charity Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/db/9a/b1db9a4ef4c386104b3cf420106a18e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcaNeq8gYeufdOclCkkYXIKXVJGcy0bVZJQ';" alt="Active Duty Military Federalemployees Choose Narf Cfc 10350 As Your Charity Of Choice Http Bit Ly 1axexiy Disaster Relief Donate To Charity Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Active Duty Military Federalemployees Choose Narf Cfc 10350 As Your Charity Of Choice Http Bit Ly 1axexiy Disaster Relief Donate To Charity Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/c6/73/0ec673b8e10efba1db6b10e9aba15b6d.jpg" data-lightbox="roadtrip" data-title="Pin On Charity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/c6/73/0ec673b8e10efba1db6b10e9aba15b6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7cGK01_uiiKZUtA9Ne4YYBPlfM1krsxYxQ';" alt="Pin On Charity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Charity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/14/cd/7d14cd0d574dd35f80a347f340e7e2b6.gif" data-lightbox="roadtrip" data-title="If You Are A Federal Employee Or Military Personnel Please Designate Your Workplace Giving Contribution To Catholic House Rabbit Society Supportive Federation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/14/cd/7d14cd0d574dd35f80a347f340e7e2b6.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnr1WDxkaOCw2O3SllE8AF6KbzW4KD1AakEg';" alt="If You Are A Federal Employee Or Military Personnel Please Designate Your Workplace Giving Contribution To Catholic House Rabbit Society Supportive Federation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Federal Employee Or Military Personnel Please Designate Your Workplace Giving Contribution To Catholic House Rabbit Society Supportive Federation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/05/e2/6805e2190844d86ea2cf9d6c786c5332.jpg" data-lightbox="roadtrip" data-title="The Independent Charities Seal Of Excellence Of The 1 000 000 Charities Operating In The United States Today It Is Estimate Landstuhl Troops Support Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/05/e2/6805e2190844d86ea2cf9d6c786c5332.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicEgXsrftd82FfXTIBvRtuNmKcEyDjv8ztQ';" alt="The Independent Charities Seal Of Excellence Of The 1 000 000 Charities Operating In The United States Today It Is Estimate Landstuhl Troops Support Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Independent Charities Seal Of Excellence Of The 1 000 000 Charities Operating In The United States Today It Is Estimate Landstuhl Troops Support Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/38/b6/8c38b6fa5df1bde360cf2eeacf48a031.jpg" data-lightbox="roadtrip" data-title="Cfc Tough Mug Blue Green Marketing Campaign Human Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/38/b6/8c38b6fa5df1bde360cf2eeacf48a031.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqxDbbpNnbCMwnuJQ1CgXqxTcKB25raXktFA';" alt="Cfc Tough Mug Blue Green Marketing Campaign Human Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cfc Tough Mug Blue Green Marketing Campaign Human Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/fb/90/65fb9069450abca184ab074fb6d1ac78.jpg" data-lightbox="roadtrip" data-title="Active Duty Military Federalemployees Itmatters Choose Ahc Cfc 77198 As Your Charity Of Choice Learning Loss Educational Service Educational Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/fb/90/65fb9069450abca184ab074fb6d1ac78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbKDM5oy5bC1L4-patzECVN13QP6Hz83zqQ';" alt="Active Duty Military Federalemployees Itmatters Choose Ahc Cfc 77198 As Your Charity Of Choice Learning Loss Educational Service Educational Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Active Duty Military Federalemployees Itmatters Choose Ahc Cfc 77198 As Your Charity Of Choice Learning Loss Educational Service Educational Programs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bf/1b/60/bf1b60b7971ff4bbe1faba65364a5028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbKDM5oy5bC1L4-patzECVN13QP6Hz83zqQ';" alt="Active Duty Military Federalemployees Itmatters Choose Ahc Cfc 77198 As Your Charity Of Choice Learning Loss Educational Service Educational Programs">
+										<div class="card-body">
+						<h3 class="h5"><b>I encourage you to read more about it here.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Cfc military charities</strong>. 
+								
+																	Last year Federal employees generously pledged more than 46 million to charities through the. 
+																	Simple and easy way for retirees to participate. 
+																	The CFC is the best-managed workplace charity fund drive in the country and very important to thousand of other charities as well as to us. 
+																	The drive kicked off Oct. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your search can be very specific or broad fill in any of the search criteria below. 
+																	Be the Face of Change. 
+																	A fellowship of thousands providing prayer cover. 
+																	The giving season runs from September 1 to December 15. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CFC is the worlds largest and most successful annual workplace charity campaign with almost 200 CFC campaigns throughout the country and overseas raising millions of dollars each year. 
+																	This organization speaks up for military families provides resources for active duty and their families supports children and spouses in need and so much more. 
+																	It is an employee-focused cost-efficient federally-regulated program aimed at raising the greatest amount possible for the participating charities who need it in the local communities across the nation and around the world. 
+																	With the help of Charity Navigator Stacker put together a list of 82 top-rated charities that support the military veterans and their familiesEach charity is assigned a financial score an accountability and transparency score and a star rating out of five. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The CFC is open to all federal employees which includes military service members. 
+																	Discipleship Prayer Community Support. 
+																	National Military Family Association. 
+																	For you your family and your ministry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discipleship Prayer Community Support. 
+																	Retirees can use their monthly annuity andor credit card to contribute through the CFC. 
+																	All Federal Postal and military personnel have access to a single electronic giving platform that supports all charities across all Zones. 
+																	When I was reading their long history of military support its actually fascinating what support was like in the 1940s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They have donated 11 million to military charities since 1987 including the Paralyzed Veterans of America Fisher House USO and many more. 
+																	Less than one percent of the thousands of charities rated by Charity Navigator have earned perfect scores. 
+																	The Combined Federal Campaign is the official workplace giving campaign of the federal government allowing federal employees and retirees to pledge monetary support and volunteer time to approved charities. 
+																	Charities on this list were afforded at the very least three stars out of five. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those two scores then translate into a perfect 100 point overall score. 
+																	Organizations may apply and be listed in the CFC Charity List as either a local national or an international independent organization or as a member of a local national or international federation. 
+																	The CFCNCA is the annual opportunity for members of the federal community to support charities they care about through monetary and volunteer contributions. 
+																	A charitys name may signal worthy a cause such as feeding the hungry or supporting veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are most grateful for our Federal Military and Postal Service CFC giversSincerelyJennifer DurneyCFC Coordinator. 
+																	1 at the Navy Exchange. 
+																	By Kaylee LaRocqueNAS Jax Deputy PAOThe 2010 Combined Federal Campaign CFC is under way at NAS Jacksonville its tenant commands and departments. 
+																	Pledges made by Federal civilian postal and military donors during the campaign season will support eligible non-profit organizations that provide health and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We exist to grow fully devoted spirit empowered Christ followers. 
+																	The all-encompassing charity for military families National Military Family Association offers support for military families of all branches. 
+																	15 under the theme of Show Some Love. 
+																	This years campaign runs from Sept. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But you need to look carefully at the organization to make sure you are sending your money to the. 
+																	Last year alone federal employees donated more than 177 million to charities through the CFC. 
+																	CFC is the worlds largest and most successful annual workplace charity campaign with almost 200 CFC campaigns throughout the country and overseas raising millions of dollars each year. 
+																	We applaud these charities for exceeding industry standards and outperforming other organizations performing similar work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The benefits of the CFC to the government include. 
+																	Pledges made by Federal civilian postal and military donors during the campaign season will support eligible non-profit organizations that provide health and human service benefits throughout the world. 
+																	The CFC of the National Capital Area CFCNCA is the largest workplace giving campaign in the world. 
+																	A community of believers in the military society joined. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1900 E Street NW Washington DC 20415 202-606-1800 Federal Relay Service. 
+																	CFC Charities are organizations with status as tax-exempt charities as determined by the Internal Revenue Service under 501c3 of Title 26 of the United States Code that provide health and human services and are determined to be eligible for participation in the CFC. 
+																	Christian Family Chapel is a Christ centered Bible teaching church in Jacksonville FL with great kids student and adult programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/43/67/704367cf24d4c4abdbff75b8d29925ab.jpg" data-lightbox="roadtrip" data-title="Growing Our Support For Veterans With Fisher House Foundation Fisher House House Foundation Foundation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/43/67/704367cf24d4c4abdbff75b8d29925ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhu5n-89RfudVoBfb6Dt_mQc6tHOhI4hvJsA';" alt="Growing Our Support For Veterans With Fisher House Foundation Fisher House House Foundation Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Growing Our Support For Veterans With Fisher House Foundation Fisher House House Foundation Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/4b/a5/b14ba574d0c733efc12f80018758ca51.gif" data-lightbox="roadtrip" data-title="Barbara D Whitehead On February 12 2020 In 2020 Whitehead February 12 In The Heights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/4b/a5/b14ba574d0c733efc12f80018758ca51.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLb8Ly1oDLdE5Cgv5dy64gTOoLgOjYHC3AQ';" alt="Barbara D Whitehead On February 12 2020 In 2020 Whitehead February 12 In The Heights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barbara D Whitehead On February 12 2020 In 2020 Whitehead February 12 In The Heights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/1b/60/bf1b60b7971ff4bbe1faba65364a5028.jpg" data-lightbox="roadtrip" data-title="What Form Of Happiness Will Your Donation Make Give At Work To Give Kids The World Inspire Hope Http Bit Ly 1kkkl5j Disaster Relief Kids Health Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/1b/60/bf1b60b7971ff4bbe1faba65364a5028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTr7hzhSE7QAjlrfmx5drmqlablZiSfuxUqw';" alt="What Form Of Happiness Will Your Donation Make Give At Work To Give Kids The World Inspire Hope Http Bit Ly 1kkkl5j Disaster Relief Kids Health Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Form Of Happiness Will Your Donation Make Give At Work To Give Kids The World Inspire Hope Http Bit Ly 1kkkl5j Disaster Relief Kids Health Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/bc/a7/b8bca7f5646f44511bd6711745274dfb.jpg" data-lightbox="roadtrip" data-title="Give At Work Change Lives Support Aclu Http Bit Ly 1nvyutm Cfc 11890 Itmatters Please Retweet American Civil Liberties Union Aclu Disaster Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/bc/a7/b8bca7f5646f44511bd6711745274dfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNTj2FPKB44l7lIbq40BBAGH30MI0aWjKQw';" alt="Give At Work Change Lives Support Aclu Http Bit Ly 1nvyutm Cfc 11890 Itmatters Please Retweet American Civil Liberties Union Aclu Disaster Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Give At Work Change Lives Support Aclu Http Bit Ly 1nvyutm Cfc 11890 Itmatters Please Retweet American Civil Liberties Union Aclu Disaster Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/bc/f8/8b/bcf88b03a29d1332b413666471d2efcb.jpg" data-lightbox="roadtrip" data-title="Combined Federal Campaign Essay Contests Scholarships Student Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/bc/f8/8b/bcf88b03a29d1332b413666471d2efcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2mVjm65J033-_zPHnsIBx7PwFe3Haw8G6sw';" alt="Combined Federal Campaign Essay Contests Scholarships Student Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Combined Federal Campaign Essay Contests Scholarships Student Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c7/cf/c5/c7cfc54b04d56c0b32bcb220be53f19f--military-veterans-fundraiser.jpg" data-lightbox="roadtrip" data-title="Veteran Rescue Annual Golf Tournament March 28 2014 Http Www Veteranrescue Org Tournaments Golf Tournament Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c7/cf/c5/c7cfc54b04d56c0b32bcb220be53f19f--military-veterans-fundraiser.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg13meMgmkPq7msQn0gzPzUxnpuHFC91GG6A';" alt="Veteran Rescue Annual Golf Tournament March 28 2014 Http Www Veteranrescue Org Tournaments Golf Tournament Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Rescue Annual Golf Tournament March 28 2014 Http Www Veteranrescue Org Tournaments Golf Tournament Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/be/38/b7be38c81e23d971c4ff8d1fa48d8dd5.jpg" data-lightbox="roadtrip" data-title="Pin On Inspiredgiving Discover Some Great Causes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/be/38/b7be38c81e23d971c4ff8d1fa48d8dd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BqBFbZ9GDPm3vNzfu5D5lFPUlOyrb0X_kw';" alt="Pin On Inspiredgiving Discover Some Great Causes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspiredgiving Discover Some Great Causes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/97/e9/fc/97e9fc41f374c369d1d7bbfe92440b9a.jpg" data-lightbox="roadtrip" data-title="Pin On Nonprofit Organizations Helping Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/97/e9/fc/97e9fc41f374c369d1d7bbfe92440b9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeEBl96IwTZ8xmLvguIAUhss0XmoeuBUd8w';" alt="Pin On Nonprofit Organizations Helping Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Nonprofit Organizations Helping Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/d8/07/38d807b7f1dac679663032a60bf93749.jpg" data-lightbox="roadtrip" data-title="Cfc Poker Chip Designs Green Marketing Human Services Poker Chips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/d8/07/38d807b7f1dac679663032a60bf93749.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4d37JVzmDueho_v2_-p6aXY_SsZz9iwrqA';" alt="Cfc Poker Chip Designs Green Marketing Human Services Poker Chips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cfc Poker Chip Designs Green Marketing Human Services Poker Chips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/08/e7/7508e7ee5a2d5fffad30ca1eb07f4a99.jpg" data-lightbox="roadtrip" data-title="Pin On It Matters When You Give">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/08/e7/7508e7ee5a2d5fffad30ca1eb07f4a99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB01-cmmTpxf2vupU_Chmw1YG67-YLSpnPFA';" alt="Pin On It Matters When You Give">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It Matters When You Give</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ba/f1/f4/baf1f4db23559660fbc5c9af51f1b849--hunger-charity.jpg" data-lightbox="roadtrip" data-title="Pin On It Matters When You Give">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ba/f1/f4/baf1f4db23559660fbc5c9af51f1b849--hunger-charity.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0AgyYQwn7Tez-V_ujIoitVx-oq3OCVSMPQ';" alt="Pin On It Matters When You Give">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It Matters When You Give</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/c3/47/cdc3475dce43aa1934d8384f5bc4b8a0.jpg" data-lightbox="roadtrip" data-title="Ronald Mcdonald House Charities Of Greater Washington Dc Is Dedicated To Making An Impact On One Of The Most Importan Charity Health Care Services Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/c3/47/cdc3475dce43aa1934d8384f5bc4b8a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMHpKl39hn0r_JMZvEQ05QcqOGl9K658Phxg';" alt="Ronald Mcdonald House Charities Of Greater Washington Dc Is Dedicated To Making An Impact On One Of The Most Importan Charity Health Care Services Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ronald Mcdonald House Charities Of Greater Washington Dc Is Dedicated To Making An Impact On One Of The Most Importan Charity Health Care Services Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/7b/42/d67b420451c2a32f5bb5d67339b07e58.jpg" data-lightbox="roadtrip" data-title="Page Not Found Home Art Contest Ymca Military Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/7b/42/d67b420451c2a32f5bb5d67339b07e58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8saABRiHXQk1fKxg9TnTVPc_s8ayxA23q0w';" alt="Page Not Found Home Art Contest Ymca Military Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Page Not Found Home Art Contest Ymca Military Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/02/88/5b0288888272f14c66ec30c79e440f4e.jpg" data-lightbox="roadtrip" data-title="Anyone Who Knows Me Well Knows That My Favorite Time Of The Year At Work Is Around The Time Of Combined Federal Campai Homemade Whipped Cream Pumpkin Pecan Cheesecake Pumpkin Cheesecake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/02/88/5b0288888272f14c66ec30c79e440f4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gL2OX_rKfROrG7564gFZt4e_1FAqjXgqXg';" alt="Anyone Who Knows Me Well Knows That My Favorite Time Of The Year At Work Is Around The Time Of Combined Federal Campai Homemade Whipped Cream Pumpkin Pecan Cheesecake Pumpkin Cheesecake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anyone Who Knows Me Well Knows That My Favorite Time Of The Year At Work Is Around The Time Of Combined Federal Campai Homemade Whipped Cream Pumpkin Pecan Cheesecake Pumpkin Cheesecake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/13/c0/f013c063db0d0199e5f0a3420eb356a3.png" data-lightbox="roadtrip" data-title="Pin On My Posh Picks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/13/c0/f013c063db0d0199e5f0a3420eb356a3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDA-vpTwSrAKpVXS_iuAjNUew5qhvKZEpGg';" alt="Pin On My Posh Picks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Posh Picks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bank-of-america-louisa-va.html">Bank Of America Louisa Va</a></li>
+													<li class="list-group-item"><a href="/army-vs-vmi.html">Army Vs Vmi</a></li>
+													<li class="list-group-item"><a href="/army-vs-navy-ranks.html">Army Vs Navy Ranks</a></li>
+													<li class="list-group-item"><a href="/att-military-discount-2020.html">Att Military Discount 2020</a></li>
+													<li class="list-group-item"><a href="/army-vets-mc-guetersloh.html">Army Vets Mc Guetersloh</a></li>
+													<li class="list-group-item"><a href="/army-xo-vs-co.html">Army Xo Vs Co</a></li>
+													<li class="list-group-item"><a href="/army-discount-nike.html">Army Discount Nike</a></li>
+													<li class="list-group-item"><a href="/banana-republic-veterans-day-sale.html">Banana Republic Veterans Day Sale</a></li>
+													<li class="list-group-item"><a href="/army-vs-ghost-movie.html">Army Vs Ghost Movie</a></li>
+													<li class="list-group-item"><a href="/army-discount-national-express.html">Army Discount National Express</a></li>
+													<li class="list-group-item"><a href="/army-vs-navy-vs-raf.html">Army Vs Navy Vs Raf</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-gainesville-va.html">Bank Of America Gainesville Va</a></li>
+													<li class="list-group-item"><a href="/bank-of-america-harrisonburg-va.html">Bank Of America Harrisonburg Va</a></li>
+													<li class="list-group-item"><a href="/army-discount-windsor-castle.html">Army Discount Windsor Castle</a></li>
+													<li class="list-group-item"><a href="/army-values-and-standards.html">Army Values And Standards</a></li>
+													<li class="list-group-item"><a href="/army-flying-museum-discount-code.html">Army Flying Museum Discount Code</a></li>
+													<li class="list-group-item"><a href="/army-van.html">Army Van</a></li>
+													<li class="list-group-item"><a href="/banana-republic-military-cardigan.html">Banana Republic Military Cardigan</a></li>
+													<li class="list-group-item"><a href="/army-discount-shoes.html">Army Discount Shoes</a></li>
+													<li class="list-group-item"><a href="/att-military-unlock.html">Att Military Unlock</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

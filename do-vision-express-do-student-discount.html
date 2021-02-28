@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do Vision Express Do Student Discount - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do Vision Express Do Student Discount",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/ed/df/15/eddf15c27e1ec2d7882db95ef5039bb7.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+vision+express+do+student+discount",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do Vision Express Do Student Discount</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Student discount valid on all products and will also be combinable with other offers. BECOME A MEMBER TODAY TOTUM is the 1 student discount card and app giving you access to huge offers on food and essentials tech travel and home delivery. Sign up to use. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-ptsd-hotline.html">va ptsd hotline</a>
+											<a class="badge badge-secondary" href="/va-veterans-discounts.html">va veterans discounts</a>
+											<a class="badge badge-primary" href="/va-ptsd-family-support.html">va ptsd family support</a>
+											<a class="badge badge-dark" href="/vet-discount-tractor-supply.html">vet discount tractor supply</a>
+											<a class="badge badge-success" href="/va-prescription-discounts.html">va prescription discounts</a>
+											<a class="badge badge-success" href="/va-ptsd-orientation.html">va ptsd orientation</a>
+											<a class="badge badge-warning" href="/va-ptsd-decision-aid.html">va ptsd decision aid</a>
+											<a class="badge badge-success" href="/va-waiver-on-military-retirement-pay.html">va waiver on military retirement pay</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/2b/e1/122be18abf63457cf6de23744d7dabd4.jpg" data-lightbox="roadtrip" data-title="Vision Express Spects You Choose Your Discount 40 On Frames Ad Delhi Times Check Out More Apparel Accessories Advertisement Vision Express Ads Expressions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/2b/e1/122be18abf63457cf6de23744d7dabd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQPp4WYi_5yIkjRJpnkS7to4mE3s_-99yvNw';" alt="Vision Express Spects You Choose Your Discount 40 On Frames Ad Delhi Times Check Out More Apparel Accessories Advertisement Vision Express Ads Expressions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Express Spects You Choose Your Discount 40 On Frames Ad Delhi Times Check Out More Apparel Accessories Advertisement Vision Express Ads Expressions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.grandvision.io/binaries/_ht_1581506917942/content/gallery/gb-visionexpress/content-pages/contact-lenses/2019-contact-lenses-finding-perfect-lenses.jpg" data-lightbox="roadtrip" data-title="Contact Lens Subscription By Direct Debit Vision Express">
+											<img class="card-img v-image ads-img " src="https://cdn.grandvision.io/binaries/_ht_1581506917942/content/gallery/gb-visionexpress/content-pages/contact-lenses/2019-contact-lenses-finding-perfect-lenses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ0YoOeIJTHVXglPaGX3Nh0yLHsWliK5BGw';" alt="Contact Lens Subscription By Direct Debit Vision Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Lens Subscription By Direct Debit Vision Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dpseh4gvdo60w.cloudfront.net/headers/vision_express_header.jpg" data-lightbox="roadtrip" data-title="Vision Express Blue Light Card">
+											<img class="card-img v-image ads-img " src="https://dpseh4gvdo60w.cloudfront.net/headers/vision_express_header.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1pmJJNikkdGRc3Bv6apeitITzrKqX49KuyA';" alt="Vision Express Blue Light Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Express Blue Light Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/3a/dc/873adca567af26d5bf01bfff2e6693a2.png" data-lightbox="roadtrip" data-title="Pin By Jd Console On Lens Vision Express Expressions Plus Dresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/3a/dc/873adca567af26d5bf01bfff2e6693a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOI6XiZbmp_kXvfFNFF9qgi-HPh9yECAUWg';" alt="Pin By Jd Console On Lens Vision Express Expressions Plus Dresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jd Console On Lens Vision Express Expressions Plus Dresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lowcostglasses.co.uk/wp-content/uploads/2019/10/VE-1.png" data-lightbox="roadtrip" data-title="Understanding Your Prescription Low Cost Glasses">
+											<img class="card-img v-image ads-img " src="https://lowcostglasses.co.uk/wp-content/uploads/2019/10/VE-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5pckaMIavx0mr9gfKfjJhGEm2rw7zIUmOA';" alt="Understanding Your Prescription Low Cost Glasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Your Prescription Low Cost Glasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.visionexpresscareers.com/images/mobile-home-banner@2x.png" data-lightbox="roadtrip" data-title="Vision Express Careers Careers Also Taken Seriously">
+											<img class="card-img v-image ads-img " src="https://www.visionexpresscareers.com/images/mobile-home-banner@2x.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgC1LyD_P7Dw1IK5-LrHRxNcYa9FUVZTnfA';" alt="Vision Express Careers Careers Also Taken Seriously">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Express Careers Careers Also Taken Seriously</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cc/f8/85/ccf885cc4538068e0131111f270032ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgC1LyD_P7Dw1IK5-LrHRxNcYa9FUVZTnfA';" alt="Vision Express Careers Careers Also Taken Seriously">
+										<div class="card-body">
+						<h3 class="h5"><b>20 Off Glasses For Students.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do vision express do student discount</strong>. 
+								
+																	Excludes reglazes safety eyewear contact lens products and non-prescription sunglasses. 
+																	Who are Vision Direct. 
+																	Yes It supplies student discount and offers. 
+																	Students save 15 on complete glasses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Terms and conditions apply see voucher for details. 
+																	0 People Used. 
+																	50 Off Any Second Pair of Glasses at Vision Express. 
+																	Offer available to students with a totum cardother valid student id only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Taxes payable after discount value is deducted. 
+																	When youre in uni there are so many things to pay for even if you dont want to. 
+																	You can find not only Free Eye Test Vision Express but also Deals Promo Codes for Vision Express similar brands on this page. 
+																	10 OFF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using this Vision Express coupon code right now for amazing savings. 
+																	Follow On Twitter For Discounts at Vision Express. 
+																	One pair of complete glasses only. 
+																	Log in to use. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A member of staff will give you the voucher booklet over the counter. 
+																	To qualify for your discount all you need to do is visit any Vision Express store and show your NHS ID and ask for a vision select voucher. 
+																	Take a look at Vision Express student discount page. 
+																	Log in to use. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cannot be used with other offers. 
+																	Its an reassuring thing for you to give your purse a relief at Vision Express. 
+																	Plus fashion beauty and a whole lot more. 
+																	Student discount available to all-level education students by Vision Express. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not hesitate to reveal one Vision Express Discount Codes to get discount of up to 60 around this February 2021. 
+																	Enjoy Savings of up to 50 on Sunglasses in the Sale at Vision Express. 
+																	20 Off Glasses For Students Your one-stop place to shop and discover amazing deals. 
+																	Learn about Vision Express culture salaries benefits work-life balance management job security and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vision Express doesnt have any offers live on TOTUM at the moment. 
+																	We promise that all Offers here are valid. 
+																	Bills textbooks washing and even. 
+																	Vision Express is offering saving tips for you and your classmates please sign up at Vision Express to verify your student status and youll receive the latest student product offers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click here for store information. 
+																	Thank you for being our loyal fans. 
+																	Save 20 off the cost of your glasses or contact lenses upon presentation of valid NUS extra card and Vision Express voucher. 
+																	Exclusively for NUS extra card holders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discount not transferable in whole or part for. 
+																	Choose from our 39 range of stylish glasses complete with single-vision lenses and there will be no charge at all. 
+																	Online promo code cannot be combined with any other coupons. 
+																	Sign up to use. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free Eye Test Vision Express February 2021. 
+																	Not valid on Featured Brands sale items or previous purchases. 
+																	Similar brands like Burger King offer Student Discounts Vision Express Student Discount offers Dont relinquish the good timing to acquire this great deal - Vision Express Student Discount offers when its in force. 
+																	Discount is available to verified UNiDAYS Students only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some merchants deliver a year round student discount while others dont. 
+																	Take your pick from our wide variety of frames and lenses including designer brands. 
+																	However you can rest assured knowing youre getting the very best promos either way at CouponAnnie. 
+																	Please remember that the discount scheme extends to family members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students receive 15 off the cost of complete glasses at Optical Express. 
+																	Or you could choose to upgrade and receive generous discounts on glasses in our higher-priced ranges. 
+																	93 reviews from Vision Express employees about working as an Optical Assistant at Vision Express. 
+																	Click here to download your voucher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Voucher Code Description Discount Type Expiry Date. 
+																	DEAL 3 users. 
+																	If you return a portion of your purchase a portion of the discount will be lost. 
+																	Register Vision Express Get Half Price Eye Test And 10 Discount On Prescription Glasses More. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15 Student Discount for new users. 
+																	Vision Direct Student Discount Health Beauty. 
+																	Includes standard single vision lenses only to your prescription. 
+																	Download your vouchers today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Vision Express NHS Add offer opens up more options and adds extra value to your optical voucher. 
+																	Click here for terms and conditions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/df/15/eddf15c27e1ec2d7882db95ef5039bb7.png" data-lightbox="roadtrip" data-title="Vision Express Buy One Get One Free Ad Delhi Times Check Out More Apparel Accessories Advertisement Advertisement Vision Express Free Ads Buy One Get One">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/df/15/eddf15c27e1ec2d7882db95ef5039bb7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGlt9eSxlGQMDiG0-RlHDeeaeX5aGEJm-BA';" alt="Vision Express Buy One Get One Free Ad Delhi Times Check Out More Apparel Accessories Advertisement Advertisement Vision Express Free Ads Buy One Get One">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Express Buy One Get One Free Ad Delhi Times Check Out More Apparel Accessories Advertisement Advertisement Vision Express Free Ads Buy One Get One</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/a7/47/6da7472b1d6006e7021e789f3ef0672a.png" data-lightbox="roadtrip" data-title="Pin By Jd Console On Lens Vision Express Expressions Mirrored Sunglasses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/a7/47/6da7472b1d6006e7021e789f3ef0672a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN1t9qJkMEll1Rgw96f4IdCJ6PVmFnlnyicQ';" alt="Pin By Jd Console On Lens Vision Express Expressions Mirrored Sunglasses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jd Console On Lens Vision Express Expressions Mirrored Sunglasses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/cf/cd/19cfcd43fae9493cd52635ef243712ef.jpg" data-lightbox="roadtrip" data-title="132959 Boss Male Designer Prescription Glasses In Brown Black Glasses Designer Prescription Glasses Designer Glasses For Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/cf/cd/19cfcd43fae9493cd52635ef243712ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8LoCTN0pTLpa2VWeohAonUOjVhmJvvUw-og';" alt="132959 Boss Male Designer Prescription Glasses In Brown Black Glasses Designer Prescription Glasses Designer Glasses For Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">132959 Boss Male Designer Prescription Glasses In Brown Black Glasses Designer Prescription Glasses Designer Glasses For Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3270106399722830" data-lightbox="roadtrip" data-title="College Optical Express At Ucf Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3270106399722830" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjaI9-xrFK9r0xf5NVez9tSZhNHX-TAZaEQ';" alt="College Optical Express At Ucf Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Optical Express At Ucf Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://uploads.prod01.london.platform-os.com/instances/21/assets/images/logos/vision-express.png?updated=1568384417" data-lightbox="roadtrip" data-title="Vision Express Festival Place">
+											<img class="card-img v-image ads-img " src="https://uploads.prod01.london.platform-os.com/instances/21/assets/images/logos/vision-express.png?updated=1568384417" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2NkI5bgsjBJiH5Tw_u2P7I4oMK7RDAVyJw';" alt="Vision Express Festival Place">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Express Festival Place</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/8c/66/d38c664368cbdb293d87c21665d34fcc.jpg" data-lightbox="roadtrip" data-title="Which Eyewear Will Best Suit Your Face Shape And Personality Re Eyewear Design Face Shapes Hairstyles For Round Faces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/8c/66/d38c664368cbdb293d87c21665d34fcc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX60T5zt78MMs-45CPXero4uDICzsjQVb4sQ';" alt="Which Eyewear Will Best Suit Your Face Shape And Personality Re Eyewear Design Face Shapes Hairstyles For Round Faces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Eyewear Will Best Suit Your Face Shape And Personality Re Eyewear Design Face Shapes Hairstyles For Round Faces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/2347643/medium_Ez6sLP0XrP.jpg" data-lightbox="roadtrip" data-title="Opticians In Colchester Book An Eye Test Vision Express">
+											<img class="card-img v-image ads-img " src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/2347643/medium_Ez6sLP0XrP.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Qk8WtCH8AHeOOG_2bMKyOAvgtiApT-2RnQ';" alt="Opticians In Colchester Book An Eye Test Vision Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opticians In Colchester Book An Eye Test Vision Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://white-rose.co.uk/sites/white_rose/files/styles/whats_on_gallery_small/public/images/shops/gallery/wrc_storefronts_sept2016_1600x1600_141.jpg?itok=ARyD-gUt" data-lightbox="roadtrip" data-title="Optical Express White Rose Shopping Centre">
+											<img class="card-img v-image ads-img " src="https://white-rose.co.uk/sites/white_rose/files/styles/whats_on_gallery_small/public/images/shops/gallery/wrc_storefronts_sept2016_1600x1600_141.jpg?itok=ARyD-gUt" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi01VwXYhX3nnpdycdA3PFHSf8lFhk333J1A';" alt="Optical Express White Rose Shopping Centre">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Optical Express White Rose Shopping Centre</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/f8/85/ccf885cc4538068e0131111f270032ad.jpg" data-lightbox="roadtrip" data-title="Pin Op Express Yourself">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/f8/85/ccf885cc4538068e0131111f270032ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9jZ8yw68KbZr0QNWwqPmYB0syZ35TN9Q_3A';" alt="Pin Op Express Yourself">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Op Express Yourself</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/2347638/medium_3aZV4Sgd2Y.jpeg" data-lightbox="roadtrip" data-title="Opticians In Vision Express Opticians Nottingham Intu Victoria Centre Book An Eye Test Vision Express">
+											<img class="card-img v-image ads-img " src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/2347638/medium_3aZV4Sgd2Y.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZUPXlHWN_Uv9ncPN5PPnU02Iort98iTVhg';" alt="Opticians In Vision Express Opticians Nottingham Intu Victoria Centre Book An Eye Test Vision Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opticians In Vision Express Opticians Nottingham Intu Victoria Centre Book An Eye Test Vision Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/2d/0e/442d0ea1a1f7c925b6fea24e05321b6c.png" data-lightbox="roadtrip" data-title="Broke College Student Scholarship The University Network Student Scholarships Broke College Student Student Saving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/2d/0e/442d0ea1a1f7c925b6fea24e05321b6c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHw-O_hlN2jPVINHy8iKpm1f8rfdQgO11H0w';" alt="Broke College Student Scholarship The University Network Student Scholarships Broke College Student Student Saving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Broke College Student Scholarship The University Network Student Scholarships Broke College Student Student Saving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.livecareer.co.uk/wp-content/uploads/images/cover-letter/optical-assistant.png" data-lightbox="roadtrip" data-title="Optical Assistant Cover Letter Sample Cover Letter Templates Examples">
+											<img class="card-img v-image ads-img " src="https://www.livecareer.co.uk/wp-content/uploads/images/cover-letter/optical-assistant.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy_yxHa_qeGSYZcXZexZJSvfkB6tBCwGL5w';" alt="Optical Assistant Cover Letter Sample Cover Letter Templates Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Optical Assistant Cover Letter Sample Cover Letter Templates Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/4e/1d/c64e1dce7b2727ab0ee189a1c26a9f42.png" data-lightbox="roadtrip" data-title="Express Oil Change Coupon Code 70 Off Trussville Al 7 Off W Sept 2018 Codes That Work 2018 Oil Change Coding Coupon Codes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/4e/1d/c64e1dce7b2727ab0ee189a1c26a9f42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRql8R3qjLLrgBsD4BQlJKBtz3cHJJjfxvwEg';" alt="Express Oil Change Coupon Code 70 Off Trussville Al 7 Off W Sept 2018 Codes That Work 2018 Oil Change Coding Coupon Codes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Express Oil Change Coupon Code 70 Off Trussville Al 7 Off W Sept 2018 Codes That Work 2018 Oil Change Coding Coupon Codes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7e/56/51/7e56514392e54fa57a01670947334c72.jpg" data-lightbox="roadtrip" data-title="Mortara Burv53h 2 Vision Express Holter Software With Usb Download Cable And 2 Burdick H3 Recorder Https Software Boutiquec Vision Express Mortara Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7e/56/51/7e56514392e54fa57a01670947334c72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMVQR4t1L6j8aTvDGsuR2DEVa5ZHxlFwrvcA';" alt="Mortara Burv53h 2 Vision Express Holter Software With Usb Download Cable And 2 Burdick H3 Recorder Https Software Boutiquec Vision Express Mortara Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortara Burv53h 2 Vision Express Holter Software With Usb Download Cable And 2 Burdick H3 Recorder Https Software Boutiquec Vision Express Mortara Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dwkujuq9vpuly.cloudfront.net/news/wp-content/uploads/2018/12/iStock_23460006_LARGE-960x480.jpg" data-lightbox="roadtrip" data-title="Best And Worst Opticians For 2019 Revealed Which News">
+											<img class="card-img v-image ads-img " src="https://dwkujuq9vpuly.cloudfront.net/news/wp-content/uploads/2018/12/iStock_23460006_LARGE-960x480.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjH_iWkTzAoc9a6uHiBr9LozQPyT0l7GgnHQ';" alt="Best And Worst Opticians For 2019 Revealed Which News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best And Worst Opticians For 2019 Revealed Which News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/argentina-imf-agreement-2018.html">Argentina Imf Agreement 2018</a></li>
+													<li class="list-group-item"><a href="/argentina-imf-fernandez.html">Argentina Imf Fernandez</a></li>
+													<li class="list-group-item"><a href="/army-bike-discount.html">Army Bike Discount</a></li>
+													<li class="list-group-item"><a href="/army-discount-flight-booking.html">Army Discount Flight Booking</a></li>
+													<li class="list-group-item"><a href="/apple-replacement-military-diet.html">Apple Replacement Military Diet</a></li>
+													<li class="list-group-item"><a href="/apple-store-veterans-day-hours.html">Apple Store Veterans Day Hours</a></li>
+													<li class="list-group-item"><a href="/applebees-veterans-day-free-meal.html">Applebees Veterans Day Free Meal</a></li>
+													<li class="list-group-item"><a href="/argentina-imf-stand-by-arrangement.html">Argentina Imf Stand By Arrangement</a></li>
+													<li class="list-group-item"><a href="/apple-watch-veterans-day-challenge.html">Apple Watch Veterans Day Challenge</a></li>
+													<li class="list-group-item"><a href="/are-there-any-vietnam-vets-still-serving.html">Are There Any Vietnam Vets Still Serving</a></li>
+													<li class="list-group-item"><a href="/army-discount-house.html">Army Discount House</a></li>
+													<li class="list-group-item"><a href="/army-card-discount-india.html">Army Card Discount India</a></li>
+													<li class="list-group-item"><a href="/apple-rents-military-base.html">Apple Rents Military Base</a></li>
+													<li class="list-group-item"><a href="/army-discount-hotels.html">Army Discount Hotels</a></li>
+													<li class="list-group-item"><a href="/argentina-imf-repayment-schedule.html">Argentina Imf Repayment Schedule</a></li>
+													<li class="list-group-item"><a href="/apple-watch-military-use.html">Apple Watch Military Use</a></li>
+													<li class="list-group-item"><a href="/apple-valley-military-base.html">Apple Valley Military Base</a></li>
+													<li class="list-group-item"><a href="/army-discount-harvester.html">Army Discount Harvester</a></li>
+													<li class="list-group-item"><a href="/army-discount-flight-tickets.html">Army Discount Flight Tickets</a></li>
+													<li class="list-group-item"><a href="/apple-tv-military-show.html">Apple Tv Military Show</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

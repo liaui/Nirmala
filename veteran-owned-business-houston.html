@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Owned Business Houston - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Owned Business Houston",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/a7/21/50/a7215049ae1c3128e6aa404ec28b8534.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+owned+business+houston",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Owned Business Houston</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">System for Award Management SAM Registration. To be considered a new veteran-owned business an entity must. The Comptrollers office verifies this information. <br>				
+			</p>
+										<a class="badge badge-danger" href="/how-to-go-to-img-world-dubai.html">how to go to img world dubai</a>
+											<a class="badge badge-warning" href="/how-to-apply-military-discount-online-kohls.html">how to apply military discount online kohls</a>
+											<a class="badge badge-warning" href="/how-to-get-dell-veteran-discount.html">how to get dell veteran discount</a>
+											<a class="badge badge-light" href="/how-to-apply-for-my-dd214.html">how to apply for my dd214</a>
+											<a class="badge badge-info" href="/how-much-is-kohls-military-discount.html">how much is kohls military discount</a>
+											<a class="badge badge-secondary" href="/how-to-get-an-active-duty-retirement-in-the-reserves.html">how to get an active duty retirement in the reserves</a>
+											<a class="badge badge-dark" href="/how-much-is-lululemon-military-discount.html">how much is lululemon military discount</a>
+											<a class="badge badge-danger" href="/how-much-is-costco-membership-fee-for-military.html">how much is costco membership fee for military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right blog.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/64/ce/2d/64ce2d7e9e382530a27226fd9eecb2e8.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Continuing Education Creative Problem Solving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/64/ce/2d/64ce2d7e9e382530a27226fd9eecb2e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSALMYrUq54AGQN23_cmLz9x5zUwkUWfPsUmA';" alt="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Continuing Education Creative Problem Solving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Continuing Education Creative Problem Solving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/27/6f/85276fd50240f36f9dc72fa782f1c896.jpg" data-lightbox="roadtrip" data-title="Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/27/6f/85276fd50240f36f9dc72fa782f1c896.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0RYdhw1FmhHsoxHgcR16onM0IcJDXrY23g';" alt="Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/14/8c/f4148c8877395750dd633299036b03a9.jpg" data-lightbox="roadtrip" data-title="October 24th Proud Member Stickers Veteran Owned Business Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/14/8c/f4148c8877395750dd633299036b03a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXtBCLTwC2uY6jzxHYkZMCVfHEvqh2aq8ZA';" alt="October 24th Proud Member Stickers Veteran Owned Business Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">October 24th Proud Member Stickers Veteran Owned Business Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" data-lightbox="roadtrip" data-title="Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzKXsw4nYK6J4NZiKjzEmDFYtl7b19x9CDQ';" alt="Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Business Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/e1/ca/bce1ca951dadacae5754728226fbb069.png" data-lightbox="roadtrip" data-title="Veteran Owned Business Verified Restaurants Veteran Owned Business Veteran Jobs Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/e1/ca/bce1ca951dadacae5754728226fbb069.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKoZZmWeuuc3seOYCk41p2OUbwXoF4kvpNA';" alt="Veteran Owned Business Verified Restaurants Veteran Owned Business Veteran Jobs Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Verified Restaurants Veteran Owned Business Veteran Jobs Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/0e/79/d90e795fda452c1dd3bd119f84fb0852.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Owned Business Members">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/0e/79/d90e795fda452c1dd3bd119f84fb0852.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67S93aaiXlExC7WfmH7j7pPQBLRe3T9pUKA';" alt="Pin On Veteran Owned Business Members">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Owned Business Members</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0e/5b/99/0e5b9945f75334874f6190a80240b2d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67S93aaiXlExC7WfmH7j7pPQBLRe3T9pUKA';" alt="Pin On Veteran Owned Business Members">
+										<div class="card-body">
+						<h3 class="h5"><b>Veteran-Owned Business Expands With SBA Loan Houston based SniperHill Internet Services LLC was started in 2007 by Wallace Davis and Jerry Hartless.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran owned business houston</strong>. 
+								
+																	Veterans Administration VOSB News. 
+																	SBA Resources For Veteran Business Owners. 
+																	VetBiz and CVE Verification Certification and Resources for SDVOSBs and VOSBs. 
+																	SDVOSB and VOSB Set Asides. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Owned Small Business Contracting 101. 
+																	Veteran Owned Business State Facts. 
+																	The Veteran-Owned Business logo is the official veteran business branding program administered by the Texas Veterans Commission. 
+																	Troop Industrial is a veteran-owned company started in 2005 by Brian Swindel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cleaning Contractors Janitorial Service Window Cleaning Equipment Supplies. 
+																	Whats your favorite veteran owned business in the Houston area. 
+																	We are a veteran owned business and enjoy working with all the people that we served for. 
+																	Veteran Owned Small Business Contracting 101. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SBA Resources For Veteran Business Owners. 
+																	Troop Industrial is HUB certified and is a highly respected source of gaskets industrial fasteners and fittings covering the heart of the industrial Texas and Louisiana Gulf Coast. 
+																	The logo informs customers the businesses are owned by US. 
+																	Houston Small Business Network Veteran Owned Businesses News - VOBeacon About this Event HSBO is the ultimate networking event empowering women in our community to network and build business connections with like-mind women. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The company started as a home-based business and has grown into a thriving supplier of bolts gaskets fasteners and fittings. 
+																	For Veterans day - do you know which businesses in town are owned by Veterans. 
+																	Veteran Owned Small Business Contracting 101. 
+																	Throughout the years the SBDC continued to help Brian grow and expand his business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military veterans and it allows veterans to differentiate their business in the marketplace. 
+																	SDVOSB and VOSB Set Asides. 
+																	Be an entity formed or organized in Texas on or after Jan. 
+																	Veterans Administration VOSB News. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Provide a Texas Veterans Commission TVC issued Letter of Verification of Veterans Honorable Discharge for each owner. 
+																	Empowering Veterans Through Entrepreneurship. 
+																	Empowering Veterans Through Entrepreneurship. 
+																	The SBA offers support for veterans as they enter the world of business ownership. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SDVOSB and VOSB Set Asides. 
+																	SBA Resources For Veteran Business Owners. 
+																	An approved US government contractor SniperHill provides unlimited commercial Internet solutions to US and Coalition Armed Forces civilian contractors and International businesses operating on US bases in Iraq and Afghanistan. 
+																	The Veteran Owned Business Project. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mission Driven With Veteran Energy anyone can join No Membership Required and make a difference for those who put everything on the line for this country. 
+																	Now Americans in the United States and abroad have an easy way to proudly search for products and services that are unique in the fact that they are all made by sold by or serviced by United States military. 
+																	Veteran Owned Business State Facts. 
+																	VetBiz and CVE Verification Certification and Resources for SDVOSBs and VOSBs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ELIGIBILITY all conditions must be met HOW TO GET YOUR VOB LOGO. 
+																	Empowering Veterans Through Entrepreneurship. 
+																	Empowering Veterans Through Entrepreneurship. 
+																	And which are your favorites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be 100 percent owned by a natural person or persons with each owner being an honorably discharged veteran from a branch of the U. 
+																	System for Award Management SAM Registration. 
+																	Veterans - do speak up as well. 
+																	The goal of this event is to inspire and elevate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Owned Businesses By State. 
+																	System for Award Management SAM Registration. 
+																	System for Award Management SAM Registration. 
+																	1 2016 and before Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Texas DNS Managed IT Services tailor to your organization helping you maximize your IT return on investment while minimizing the impact on your business from the threats of the Internet. 
+																	We provide electricity for homes throughout Texas and give back a portion of our profits to veteran support organizations. 
+																	35 Comments 39k Views Share All Comments 35 Comments 1-10. 
+																	Veteran Owned Small Business Contracting 101. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SBA Resources For Veteran Business Owners. 
+																	Houston Texas Veteran Owned Businesses VOB Active Duty Military Reservists Service Disabled Veteran Owned Small Companies SDVOSB and Military Spouse Owned Businesses of the United States Army USARMY Air Force USAF Marines USMC Navy USN Coast Guard USCG and National Guard located in Houston Texas. 
+																	Look for funding programs training and federal contracting opportunities. 
+																	Im not sure your fans even know youve served. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is a comprehensive user friendly member network directory of small medium and large businesses owned by veterans service disabled veterans SDVOSBs DVBEs active duty military reservists and military spouses released on Veterans Day 2008. 
+																	SDVOSB and VOSB Set Asides. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/60/be/ab60be905f44dd6e5f2ebb2b840ef47b.jpg" data-lightbox="roadtrip" data-title="Veterans Inc Veteransinc1 Twitter Stand Down Veteran Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/60/be/ab60be905f44dd6e5f2ebb2b840ef47b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6brBfXs5TcLDny3mctOcWGVs6dSac_JZqVw';" alt="Veterans Inc Veteransinc1 Twitter Stand Down Veteran Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Inc Veteransinc1 Twitter Stand Down Veteran Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/94/df/0394df525dfcd6d5fd425206f53fbb71.jpg" data-lightbox="roadtrip" data-title="We Welcome And Salute Our 33 549th Vob Member Arrow Head Consulting Veteran Owned Business Consulting Technology Consulting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/94/df/0394df525dfcd6d5fd425206f53fbb71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPg0DkSAXAXmhf4fnfXmE6b21Zv9qGaliqgQ';" alt="We Welcome And Salute Our 33 549th Vob Member Arrow Head Consulting Veteran Owned Business Consulting Technology Consulting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Welcome And Salute Our 33 549th Vob Member Arrow Head Consulting Veteran Owned Business Consulting Technology Consulting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/87/df/0887df1b779836dbae60ad58b21f2693.jpg" data-lightbox="roadtrip" data-title="Veteranownedbusiness Com Verified Member Stickers And Small Business Sponsor Certificates Veteran Owned Business Veteran Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/87/df/0887df1b779836dbae60ad58b21f2693.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQefWIbK5ANEvAjf5iWrvmQi4spntI_1wz2jQ';" alt="Veteranownedbusiness Com Verified Member Stickers And Small Business Sponsor Certificates Veteran Owned Business Veteran Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteranownedbusiness Com Verified Member Stickers And Small Business Sponsor Certificates Veteran Owned Business Veteran Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/5e/ee/2c5eee9a002b46c4bb43bd4e097e0e11.jpg" data-lightbox="roadtrip" data-title="Vob Proud Member Stickers Veteran Owned Business Veteran Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/5e/ee/2c5eee9a002b46c4bb43bd4e097e0e11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbi6haKqyxZNJBwlz3aS_2BG5VYAstPS70ig';" alt="Vob Proud Member Stickers Veteran Owned Business Veteran Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vob Proud Member Stickers Veteran Owned Business Veteran Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/38/c1/2d38c1e55e71c381e34cb97a5a85b17c.jpg" data-lightbox="roadtrip" data-title="Navy Veteranowned Best Custom Designs Of West Texas Custom Design Veteran Owned Business Custom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/38/c1/2d38c1e55e71c381e34cb97a5a85b17c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_ufczjQErc1n967a9zVg9rBKgBJ1wEUF6w';" alt="Navy Veteranowned Best Custom Designs Of West Texas Custom Design Veteran Owned Business Custom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Veteranowned Best Custom Designs Of West Texas Custom Design Veteran Owned Business Custom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/99/64/51/9964513323e343a8281f67ce9cfafe1f.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe In 2020 Veteran Owned Business Logistics Management Sandwich Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/99/64/51/9964513323e343a8281f67ce9cfafe1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4AaPXHNZTp7kx9RfOAWeS_6RjTtG2RSmXPg';" alt="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe In 2020 Veteran Owned Business Logistics Management Sandwich Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe In 2020 Veteran Owned Business Logistics Management Sandwich Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/bd/59/63bd595012935d5374b91e72fcd11fd6.png" data-lightbox="roadtrip" data-title="Pin On Veterans Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/bd/59/63bd595012935d5374b91e72fcd11fd6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtx9al1LO_hmagg97OZf2XdqyMWKad13joNg';" alt="Pin On Veterans Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/09/31/9009314cf8fb357ce2ca62737b029c57.jpg" data-lightbox="roadtrip" data-title="Vob Member Hamilton Event Rentals Event Rental Marquee Letters Event">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/09/31/9009314cf8fb357ce2ca62737b029c57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdt7y4ya7a7L2xkQzVtOQH6skfpD5mYGN1Q';" alt="Vob Member Hamilton Event Rentals Event Rental Marquee Letters Event">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vob Member Hamilton Event Rentals Event Rental Marquee Letters Event</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/d7/99/add7992a747463c985168f83ec8c8ab8.jpg" data-lightbox="roadtrip" data-title="Pin On My Best Loved Places In Western New York And Houston Texas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/d7/99/add7992a747463c985168f83ec8c8ab8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtHBNL0CUrNuAF9WnMOyTW7IZyII7uHdNog';" alt="Pin On My Best Loved Places In Western New York And Houston Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Best Loved Places In Western New York And Houston Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/4d/62/ba4d625adc3d829e2287be3e09a9ab77.jpg" data-lightbox="roadtrip" data-title="2nd Image Of Veteran Owned Business Member T Shirts Veteran Owned Business Veteran Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/4d/62/ba4d625adc3d829e2287be3e09a9ab77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxoJ3YUwaSp3V4IcR9F17jp7UjkbsSc8CfwQ';" alt="2nd Image Of Veteran Owned Business Member T Shirts Veteran Owned Business Veteran Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2nd Image Of Veteran Owned Business Member T Shirts Veteran Owned Business Veteran Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/21/50/a7215049ae1c3128e6aa404ec28b8534.jpg" data-lightbox="roadtrip" data-title="Airforce Veteranowned Multinetworks Inc Bexar County Veteran Owned Business Consulting Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/21/50/a7215049ae1c3128e6aa404ec28b8534.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSodkSpbvJu5gUynOik2wC7GL1E_8ubLVnOqg';" alt="Airforce Veteranowned Multinetworks Inc Bexar County Veteran Owned Business Consulting Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airforce Veteranowned Multinetworks Inc Bexar County Veteran Owned Business Consulting Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/e0/e9/1ce0e9a189e6fcb16f073df97a80d95c.jpg" data-lightbox="roadtrip" data-title="Sword And The Script Media Llc Is A Veteran Owned Business Medical Supplies Pest Control Pest Control Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/e0/e9/1ce0e9a189e6fcb16f073df97a80d95c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-UqEga1K70DNHHhO8vPtkBRX9DoVZj6YrSg';" alt="Sword And The Script Media Llc Is A Veteran Owned Business Medical Supplies Pest Control Pest Control Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sword And The Script Media Llc Is A Veteran Owned Business Medical Supplies Pest Control Pest Control Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/75/f3/6175f358f69a4e5a3c67440f23fb8ac6.jpg" data-lightbox="roadtrip" data-title="Veterans Way Bicycles Llc Rent To Own Of Kapolei Hawaii Shows Off Their Veteran Owned Business Member Certificate Veteran Owned Business Veteran Kapolei">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/75/f3/6175f358f69a4e5a3c67440f23fb8ac6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dN11Fx-3P3XSNYFHw7bO2nBYZmg_X4QTLQ';" alt="Veterans Way Bicycles Llc Rent To Own Of Kapolei Hawaii Shows Off Their Veteran Owned Business Member Certificate Veteran Owned Business Veteran Kapolei">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Way Bicycles Llc Rent To Own Of Kapolei Hawaii Shows Off Their Veteran Owned Business Member Certificate Veteran Owned Business Veteran Kapolei</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/45/c4/1a45c454c4850eb782c92dcee256d14d.jpg" data-lightbox="roadtrip" data-title="Army Veteranowned Taxbusiness Mobile Tax Associates Veteran Owned Business Tax Consulting Tax Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/45/c4/1a45c454c4850eb782c92dcee256d14d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3OelObeZVoOcv2ofzTKTWCEq23L7OADg-g';" alt="Army Veteranowned Taxbusiness Mobile Tax Associates Veteran Owned Business Tax Consulting Tax Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Veteranowned Taxbusiness Mobile Tax Associates Veteran Owned Business Tax Consulting Tax Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/9a/53/ec9a53fdcfbcddb47d8526770b2b8964.jpg" data-lightbox="roadtrip" data-title="We Salute Navy Veteranowned Window Screen Manufacturer Window Screens Galveston Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/9a/53/ec9a53fdcfbcddb47d8526770b2b8964.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYbBwWtUZ_EJAd17EqHonRU4Awei91Rz3hA';" alt="We Salute Navy Veteranowned Window Screen Manufacturer Window Screens Galveston Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Salute Navy Veteranowned Window Screen Manufacturer Window Screens Galveston Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-mission-chief-salary.html">Imf Mission Chief Salary</a></li>
+													<li class="list-group-item"><a href="/imf-loan-to-greece-interest-rate.html">Imf Loan To Greece Interest Rate</a></li>
+													<li class="list-group-item"><a href="/imf-meaning-tagalog.html">Imf Meaning Tagalog</a></li>
+													<li class="list-group-item"><a href="/imf-kuwait-location.html">Imf Kuwait Location</a></li>
+													<li class="list-group-item"><a href="/imf-loan-on-india-vs-pakistan.html">Imf Loan On India Vs Pakistan</a></li>
+													<li class="list-group-item"><a href="/imf-kuwait-article-iv.html">Imf Kuwait Article Iv</a></li>
+													<li class="list-group-item"><a href="/imf-loan-to-jordan.html">Imf Loan To Jordan</a></li>
+													<li class="list-group-item"><a href="/imf-loan-to-angola.html">Imf Loan To Angola</a></li>
+													<li class="list-group-item"><a href="/imf-kenya-gdp-forecast.html">Imf Kenya Gdp Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-legal-internship.html">Imf Legal Internship</a></li>
+													<li class="list-group-item"><a href="/imf-md-on-indian-economy.html">Imf Md On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-mauritius-inflation.html">Imf Mauritius Inflation</a></li>
+													<li class="list-group-item"><a href="/imf-loan-to-india-history.html">Imf Loan To India History</a></li>
+													<li class="list-group-item"><a href="/imf-mozambique-inflation-rate.html">Imf Mozambique Inflation Rate</a></li>
+													<li class="list-group-item"><a href="/imf-managing-director-kristalina-georgieva.html">Imf Managing Director Kristalina Georgieva</a></li>
+													<li class="list-group-item"><a href="/imf-loan-to-argentina.html">Imf Loan To Argentina</a></li>
+													<li class="list-group-item"><a href="/imf-loan-meaning.html">Imf Loan Meaning</a></li>
+													<li class="list-group-item"><a href="/imf-mission-chief-jordan.html">Imf Mission Chief Jordan</a></li>
+													<li class="list-group-item"><a href="/imf-managing-director-new.html">Imf Managing Director New</a></li>
+													<li class="list-group-item"><a href="/imf-meaning-and-objectives.html">Imf Meaning And Objectives</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

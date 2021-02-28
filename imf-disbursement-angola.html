@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Disbursement Angola - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Disbursement Angola",
+  "datePublished": "2021-02-28",
+  "image": "https://canada-24.ca/wp-content/uploads/2021/01/5fff379d30107.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+disbursement+angola",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Disbursement Angola</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The International Monetary Fund approved the disbursement of 488 million to Angola and reiterated its confidence that Africas second-biggest oil producer will rein in public debt to sustainable. Jan 12 2021 January 12 2021 1 minute read WASHINGTON The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African oil exporters 37 billion loan program. Jan 11 2021 746 PM WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African oil exporters 37 billion loan program. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/lmao-meaning-wikipedia.html">lmao meaning wikipedia</a>
+											<a class="badge badge-success" href="/lmao-translation-in-hindi.html">lmao translation in hindi</a>
+											<a class="badge badge-secondary" href="/lmao-meaning-trackidsp-006.html">lmao meaning trackidsp 006</a>
+											<a class="badge badge-danger" href="/lmao-use.html">lmao use</a>
+											<a class="badge badge-light" href="/lmao-pic.html">lmao pic</a>
+											<a class="badge badge-danger" href="/lmao-text-meaning-in-hindi.html">lmao text meaning in hindi</a>
+											<a class="badge badge-light" href="/lmao-meaning-history.html">lmao meaning history</a>
+											<a class="badge badge-primary" href="/lmao-tagalog.html">lmao tagalog</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right blog.  Our site provides you with suggestions for viewing the highest quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets2.rappler.com/2021/01/reuters-20210112-imf-1610421062929-546.jpg" data-lightbox="roadtrip" data-title="Imf Board Approves 487 5 Million Disbursement To Angola">
+											<img class="card-img v-image ads-img " src="https://assets2.rappler.com/2021/01/reuters-20210112-imf-1610421062929-546.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNXGmaPhTCfVlmRmMFGIivcJxR9v3kNqRvxw';" alt="Imf Board Approves 487 5 Million Disbursement To Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Board Approves 487 5 Million Disbursement To Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newscentral.africa/wp-content/uploads/IMF-AND-ANGOLA.jpg" data-lightbox="roadtrip" data-title="Angola Receives 488 Million Imf Disbursement">
+											<img class="card-img v-image ads-img " src="https://newscentral.africa/wp-content/uploads/IMF-AND-ANGOLA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLqhqi5bvOdYfGwioxKgpGe7nrrhbiCNCOA';" alt="Angola Receives 488 Million Imf Disbursement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Angola Receives 488 Million Imf Disbursement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/news-article-images/2020/00092120-angola-570x312.ashx" data-lightbox="roadtrip" data-title="Angola And The Imf">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/news-article-images/2020/00092120-angola-570x312.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMwlenvy-kU2uOY7sP3jkoWJ7_l72ZsmCrg';" alt="Angola And The Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Angola And The Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3gvybjp3zjp3i.cloudfront.net/wp-content/uploads/2020/01/Finance-Investment.jpg" data-lightbox="roadtrip" data-title="Imf Approves Us 487 5 Million Disbursement For Angola">
+											<img class="card-img v-image ads-img " src="https://d3gvybjp3zjp3i.cloudfront.net/wp-content/uploads/2020/01/Finance-Investment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVkAipf9e_h-tDe62o4GtbNlhOKUmY3c8bg';" alt="Imf Approves Us 487 5 Million Disbursement For Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves Us 487 5 Million Disbursement For Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://apicms.thestar.com.my/uploads/images/2021/01/13/1006250.JPG" data-lightbox="roadtrip" data-title="Imf To Disburse Us 488mil To Angola The Star">
+											<img class="card-img v-image ads-img " src="https://apicms.thestar.com.my/uploads/images/2021/01/13/1006250.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQbYZadMgRAlTyf96WeuSBBlWeFG5Damudg';" alt="Imf To Disburse Us 488mil To Angola The Star">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf To Disburse Us 488mil To Angola The Star</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theabujatimes.com/wp-content/uploads/2021/01/image_2021-01-11_075750.png" data-lightbox="roadtrip" data-title="Angola Expects More Than 700 Million In Latest Imf Disbursement Finance Minister The Abuja Times">
+											<img class="card-img v-image ads-img " src="https://www.theabujatimes.com/wp-content/uploads/2021/01/image_2021-01-11_075750.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TxvaZE58VHjvct9G7TzdIvKYVB28YFaL8A';" alt="Angola Expects More Than 700 Million In Latest Imf Disbursement Finance Minister The Abuja Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Angola Expects More Than 700 Million In Latest Imf Disbursement Finance Minister The Abuja Times</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://newscentral.africa/wp-content/uploads/IMF-AND-ANGOLA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TxvaZE58VHjvct9G7TzdIvKYVB28YFaL8A';" alt="Angola Expects More Than 700 Million In Latest Imf Disbursement Finance Minister The Abuja Times">
+										<div class="card-body">
+						<h3 class="h5"><b>WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf disbursement angola</strong>. 
+								
+																	IMF board approves disbursement of 4875M to Angola posted January 12 2021 at 0935 pm by AFP The International Monetary Funds executive board announced Monday it had approved the disbursement of 4875 million to Angola which is suffering from low oil prices due to the coronavirus pandemic. 
+																	The Boards decision allows for an immediate disbursement of 4875 million bringing total disbursements under the arrangement to 3 billion. 
+																	WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African oil exporters 37 billion loan program. 
+																	According to the IMF the Boards decision allows for an immediate disbursement of SDR 3385 million about 4875 million bringing total disbursements under the arrangement to SDR 21432 m about 3 billion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Executive Board of the International Monetary Fund IMF has approved the disbursement of about 4875 million to Angola. 
+																	Published January 12 2021 The International Monetary Funds executive board announced Monday it had approved the disbursement of 4875 million to Angola which is suffering from low oil prices. 
+																	Bloomberg -- The International Monetary Fund approved the disbursement of 488 million to Angola and reiterated its confidence that Africas second-biggest oil producer will rein in public debt to sustainable levels. 
+																	The Executive Board of the International Monetary Fund IMF on Monday completed the fourth review of Angolas economic program supported by an extended arrangement under the Extended Fund Facility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Executive Board of the International Monetary Fund IMF completed the fourth review of Angolas economic program supported by an extended arrangement under the Extended Fund Facility EFF. 
+																	The International Monetary Fund IMF has completed the fourth review of Angolas economic program supported by an extended arrangement under the Extended Fund Facility EFF. 
+																	Inside Trumps failure to act after a mob stormed the Capitol The International Monetary Funds executive board announced Monday it had approved the disbursement of 4875 million to Angola which. 
+																	IMF Executive Board Completes Fourth Review of the Extended Fund Facility Arrangement for Angola and Approves US 4875 Million Disbursement January 11 2021 The IMF Executive Board decision allows for an immediate disbursement of about 4875 million to Angola. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/T65FGfsEDC.GUsmRlNlVDA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYzOS43NQ--/https://s.yimg.com/uu/api/res/1.2/byjQLUxW5D04qUqn84fZeQ--~B/aD04NTM7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/7e461169f6d7784b15c0d42de040e234" data-lightbox="roadtrip" data-title="Imf Disburses 488 Million To Angola Backs Plan To Cut Debt">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/T65FGfsEDC.GUsmRlNlVDA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYzOS43NQ--/https://s.yimg.com/uu/api/res/1.2/byjQLUxW5D04qUqn84fZeQ--~B/aD04NTM7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/7e461169f6d7784b15c0d42de040e234" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPDhMkjfxN-6zVLMLaYyQgxtKclgxMXlYDA';" alt="Imf Disburses 488 Million To Angola Backs Plan To Cut Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Disburses 488 Million To Angola Backs Plan To Cut Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media2.malaymail.com/uploads/articles/2017/2017-04/imfspringwash2204.jpg" data-lightbox="roadtrip" data-title="Imf Says Board Approves Us 487 5m Disbursement To Angola Money Malay Mail">
+											<img class="card-img v-image ads-img " src="https://media2.malaymail.com/uploads/articles/2017/2017-04/imfspringwash2204.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmg0WpqV7g9cE6nqeTXukcC_zZSSa6vp9OA';" alt="Imf Says Board Approves Us 487 5m Disbursement To Angola Money Malay Mail">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Says Board Approves Us 487 5m Disbursement To Angola Money Malay Mail</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kenyanwallstreet.com/wp-content/uploads/2020/05/angola-flag.jpg" data-lightbox="roadtrip" data-title="Relief As Imf Disburses 488 Million To Angola">
+											<img class="card-img v-image ads-img " src="https://kenyanwallstreet.com/wp-content/uploads/2020/05/angola-flag.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKRaYXpXk-zOVGiCCauyxwH6MVDLg2GWUaA';" alt="Relief As Imf Disburses 488 Million To Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relief As Imf Disburses 488 Million To Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nasdaq.com/sites/acquia.prod/files/styles/720x400/public/2021-01-12T040033Z_1_GD2_RTRLXPP_2_LYNXPACKAGER.JPG?itok=gWfw8lFm" data-lightbox="roadtrip" data-title="Imf Says Board Approves 487 5 Mln Disbursement To Angola Nasdaq">
+											<img class="card-img v-image ads-img " src="https://www.nasdaq.com/sites/acquia.prod/files/styles/720x400/public/2021-01-12T040033Z_1_GD2_RTRLXPP_2_LYNXPACKAGER.JPG?itok=gWfw8lFm" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnEH7krMXzqcrzJi0mvCfGRUT90F0EYMrhzQ';" alt="Imf Says Board Approves 487 5 Mln Disbursement To Angola Nasdaq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Says Board Approves 487 5 Mln Disbursement To Angola Nasdaq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.enukong.com/wp-content/uploads/2021/01/IMF-approves-487.5m-aid-to-Angola.jpg" data-lightbox="roadtrip" data-title="Imf Approves 487 5m Aid To Angola Enuko Nigeria">
+											<img class="card-img v-image ads-img " src="https://www.enukong.com/wp-content/uploads/2021/01/IMF-approves-487.5m-aid-to-Angola.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRahVUiB79ecioMwb-FutJ06u5mRnDb_I_usg';" alt="Imf Approves 487 5m Aid To Angola Enuko Nigeria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves 487 5m Aid To Angola Enuko Nigeria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.24.co.za/files/Cms/General/d/9268/f5e7849de9c94572bb01258c5c60cacd.jpg" data-lightbox="roadtrip" data-title="Imf Approves 487 5m Aid To Angola News24 Latest News Post">
+											<img class="card-img v-image ads-img " src="https://cdn.24.co.za/files/Cms/General/d/9268/f5e7849de9c94572bb01258c5c60cacd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbaRvhn5jE7u8y6U7G1oNTELC-EfQnbTCRQ';" alt="Imf Approves 487 5m Aid To Angola News24 Latest News Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves 487 5m Aid To Angola News24 Latest News Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.brecorder.com/primary/2021/01/5ffd3600adbdd.jpg" data-lightbox="roadtrip" data-title="Imf Approves 487 5mn Aid To Angola Business Finance Business Recorder">
+											<img class="card-img v-image ads-img " src="https://i.brecorder.com/primary/2021/01/5ffd3600adbdd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNG-18ZT6r3IlLWZyraY6lpdbzdaxocLTJA';" alt="Imf Approves 487 5mn Aid To Angola Business Finance Business Recorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves 487 5mn Aid To Angola Business Finance Business Recorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/en/News/Articles/2019/12/05/~/media/61AC1925E879413584F5BAD072F671BB.ashx?h=360&amp;w=240" data-lightbox="roadtrip" data-title="Imf Executive Board Completes The Second Review Under Angola S Extended Arrangement And Approves Us 247 Million Disbursement">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/en/News/Articles/2019/12/05/~/media/61AC1925E879413584F5BAD072F671BB.ashx?h=360&amp;w=240" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6b-VkUIiC6wkxGbjEzNlWYEe7iE9DhtkJw';" alt="Imf Executive Board Completes The Second Review Under Angola S Extended Arrangement And Approves Us 247 Million Disbursement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Executive Board Completes The Second Review Under Angola S Extended Arrangement And Approves Us 247 Million Disbursement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.verangola.net/va/images/cache/750x380/crop/images%7Ccms-image-000027996.jpg" data-lightbox="roadtrip" data-title="Imf Unlocks 487 5 Million For Angola Amid Praise And Warnings Ver Angola Daily The Best Of Angola">
+											<img class="card-img v-image ads-img " src="https://www.verangola.net/va/images/cache/750x380/crop/images%7Ccms-image-000027996.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnEJmV8uAxByDiMRRJRuvcH5NPtPJYRQo4MA';" alt="Imf Unlocks 487 5 Million For Angola Amid Praise And Warnings Ver Angola Daily The Best Of Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Unlocks 487 5 Million For Angola Amid Praise And Warnings Ver Angola Daily The Best Of Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.africaglobalvillage.com/wp-content/uploads/2021/01/imf-executive-board-approves-487-5-million-usd-disbursement-to-angola-1.jpg" data-lightbox="roadtrip" data-title="Imf Executive Board Approves 487 5 Million Usd Disbursement To Angola Africa Global Village">
+											<img class="card-img v-image ads-img " src="http://www.africaglobalvillage.com/wp-content/uploads/2021/01/imf-executive-board-approves-487-5-million-usd-disbursement-to-angola-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRj5JHql71yRwDGNp5YVG177fJKDymVLEgHQ';" alt="Imf Executive Board Approves 487 5 Million Usd Disbursement To Angola Africa Global Village">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Executive Board Approves 487 5 Million Usd Disbursement To Angola Africa Global Village</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.vanguardngr.com/wp-content/uploads/2018/01/IMF.png?fit=412%2C259&amp;ssl=1&amp;resize=350%2C200" data-lightbox="roadtrip" data-title="Imf Approves Release Of 1 Bn For Angola Amid Covid 19 Downturn">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.vanguardngr.com/wp-content/uploads/2018/01/IMF.png?fit=412%2C259&amp;ssl=1&amp;resize=350%2C200" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBlRlrauMC2uDBv5vll99KF2_cnRQABXs6LA';" alt="Imf Approves Release Of 1 Bn For Angola Amid Covid 19 Downturn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves Release Of 1 Bn For Angola Amid Covid 19 Downturn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.verangola.net/va/images/cache/750x380/crop/images%7Ccms-image-000025968.png" data-lightbox="roadtrip" data-title="Imf Approves 1 Billion More For Angola And Aid Rises To 4 5 Billion Ver Angola Daily The Best Of Angola">
+											<img class="card-img v-image ads-img " src="https://www.verangola.net/va/images/cache/750x380/crop/images%7Ccms-image-000025968.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUrFNIDPWaEJ0rLPvfkep5QPx_E2uRCTDzg';" alt="Imf Approves 1 Billion More For Angola And Aid Rises To 4 5 Billion Ver Angola Daily The Best Of Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves 1 Billion More For Angola And Aid Rises To 4 5 Billion Ver Angola Daily The Best Of Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.euronews.com/articles/stories/04/98/37/02/1024x538_cmsv2_6b275e55-1227-5c74-bdb5-18538ae2c335-4983702.jpg?1600322506" data-lightbox="roadtrip" data-title="Imf Approves 1 Billion In Funds For Angola Adds 765 Million To Program Africanews">
+											<img class="card-img v-image ads-img " src="https://static.euronews.com/articles/stories/04/98/37/02/1024x538_cmsv2_6b275e55-1227-5c74-bdb5-18538ae2c335-4983702.jpg?1600322506" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZyHroRDMZnD95Z67TalGgcDY280TwUbDsQ';" alt="Imf Approves 1 Billion In Funds For Angola Adds 765 Million To Program Africanews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Approves 1 Billion In Funds For Angola Adds 765 Million To Program Africanews</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://canada-24.ca/wp-content/uploads/2021/01/5fff379d30107.jpg" data-lightbox="roadtrip" data-title="Imf Says Board Approves 487 5 Million Disbursement To Angola News">
+											<img class="card-img v-image ads-img " src="https://canada-24.ca/wp-content/uploads/2021/01/5fff379d30107.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tr4mD_nCxsmW1gJSAui2U9eU-fEh60NrgA';" alt="Imf Says Board Approves 487 5 Million Disbursement To Angola News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Says Board Approves 487 5 Million Disbursement To Angola News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="DpVz_9pwP6-ZtM" data-lightbox="roadtrip" data-title="Https Www Imf Org Media Files Publications Cr 2020 English 1agoea2020001 Ashx">
+											<img class="card-img v-image ads-img " src="DpVz_9pwP6-ZtM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHuhG6HzdnHO1o8Gqm9yzjziqtvBP8ZMwBA';" alt="Https Www Imf Org Media Files Publications Cr 2020 English 1agoea2020001 Ashx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Imf Org Media Files Publications Cr 2020 English 1agoea2020001 Ashx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-nominal-gdp-growth-forecast.html">Imf Nominal Gdp Growth Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-per-capita-gdp-india-bangladesh.html">Imf Per Capita Gdp India Bangladesh</a></li>
+													<li class="list-group-item"><a href="/imf-real-gdp-greece.html">Imf Real Gdp Greece</a></li>
+													<li class="list-group-item"><a href="/imf-real-effective-exchange-rate-index.html">Imf Real Effective Exchange Rate Index</a></li>
+													<li class="list-group-item"><a href="/imf-nigeria-inflation-forecast.html">Imf Nigeria Inflation Forecast</a></li>
+													<li class="list-group-item"><a href="/imf-outlook-greece.html">Imf Outlook Greece</a></li>
+													<li class="list-group-item"><a href="/imf-questions-india-gdp-calculation.html">Imf Questions India Gdp Calculation</a></li>
+													<li class="list-group-item"><a href="/imf-program-definition.html">Imf Program Definition</a></li>
+													<li class="list-group-item"><a href="/imf-report-on-indian-economy-in-hindi.html">Imf Report On Indian Economy In Hindi</a></li>
+													<li class="list-group-item"><a href="/imf-report-on-water-crisis-in-pakistan.html">Imf Report On Water Crisis In Pakistan</a></li>
+													<li class="list-group-item"><a href="/imf-report-about-indian-economy.html">Imf Report About Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-report-on-indian-economy.html">Imf Report On Indian Economy</a></li>
+													<li class="list-group-item"><a href="/imf-office-address-malaysia.html">Imf Office Address Malaysia</a></li>
+													<li class="list-group-item"><a href="/imf-report-on-indian-economy-2020-pdf.html">Imf Report On Indian Economy 2020 Pdf</a></li>
+													<li class="list-group-item"><a href="/imf-releases-world-economic-outlook.html">Imf Releases World Economic Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-official-exchange-rate.html">Imf Official Exchange Rate</a></li>
+													<li class="list-group-item"><a href="/imf-office-in-india-contact-number.html">Imf Office In India Contact Number</a></li>
+													<li class="list-group-item"><a href="/imf-rutherford-jobs.html">Imf Rutherford Jobs</a></li>
+													<li class="list-group-item"><a href="/imf-office-address-in-switzerland.html">Imf Office Address In Switzerland</a></li>
+													<li class="list-group-item"><a href="/imf-real-exchange-rate-methodology.html">Imf Real Exchange Rate Methodology</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

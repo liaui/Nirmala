@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Cemetery In Michigan - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Cemetery In Michigan",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/originals/d1/b1/d2/d1b1d29aba507aa77cde9d0fc5528592.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+cemetery+in+michigan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Cemetery In Michigan</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Congress on July 17 1862. 248-328-0612 Map Driving Directions. Toward this goal Congress created Fort Custer National Cemetery in September 1981. <br>				
+			</p>
+										<a class="badge badge-success" href="/harley-davidson-riding-academy-military-discount.html">harley davidson riding academy military discount</a>
+											<a class="badge badge-warning" href="/google-fi-veteran-discount.html">google fi veteran discount</a>
+											<a class="badge badge-info" href="/get-dd214-online-free.html">get dd214 online free</a>
+											<a class="badge badge-warning" href="/full-form-of-imf-in-accounting.html">full form of imf in accounting</a>
+											<a class="badge badge-success" href="/gap-factory-military-discount.html">gap factory military discount</a>
+											<a class="badge badge-success" href="/former-imf-chief-acquitted.html">former imf chief acquitted</a>
+											<a class="badge badge-success" href="/harley-davidson-military-discount-rider-course.html">harley davidson military discount rider course</a>
+											<a class="badge badge-danger" href="/french-army-vets-boutique.html">french army vets boutique</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our website provides you with hints for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/66/b9/f166b9f6f7a1e6c7363deaec4c25b7ae.jpg" data-lightbox="roadtrip" data-title="The Great Lakes National Cemetery In Holly Michigan This Is From National Wreaths Across America Day Wreaths Across America Military Heroes National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/66/b9/f166b9f6f7a1e6c7363deaec4c25b7ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxReQ1o_0r1E4PFOxD7hfqsHxMD6MvkpcfMA';" alt="The Great Lakes National Cemetery In Holly Michigan This Is From National Wreaths Across America Day Wreaths Across America Military Heroes National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Great Lakes National Cemetery In Holly Michigan This Is From National Wreaths Across America Day Wreaths Across America Military Heroes National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/aa/7e/6daa7e6ed1ced76bb2e6adf676feff0d.jpg" data-lightbox="roadtrip" data-title="Great Lakes National Cemetery 3 Miles From Where I Grew Up And My Mom And Dad Are There Miss Them So National Cemetery Lake Lighthouse Great Lakes Region">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/aa/7e/6daa7e6ed1ced76bb2e6adf676feff0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Oe-Lt4Wp8yWy3gXuMdjy-3N1y6n4eKoLuw';" alt="Great Lakes National Cemetery 3 Miles From Where I Grew Up And My Mom And Dad Are There Miss Them So National Cemetery Lake Lighthouse Great Lakes Region">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Lakes National Cemetery 3 Miles From Where I Grew Up And My Mom And Dad Are There Miss Them So National Cemetery Lake Lighthouse Great Lakes Region</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/da/f2/37daf29ffe82bc5a94e567c8c7924fdc.jpg" data-lightbox="roadtrip" data-title="Memorial Day Images Lost In Michigan National Cemetery Veterans Memorial Michigan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/da/f2/37daf29ffe82bc5a94e567c8c7924fdc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbOgS6Je9j40WtJ1iou6_ok7-0mPbSdMrd6w';" alt="Memorial Day Images Lost In Michigan National Cemetery Veterans Memorial Michigan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memorial Day Images Lost In Michigan National Cemetery Veterans Memorial Michigan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/86/6b/8f866b9f86dabde604308be6885870cf.jpg" data-lightbox="roadtrip" data-title="Fort Custer National Cemetery National Cemetery American Cemetery Michigan Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/86/6b/8f866b9f86dabde604308be6885870cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWJXfkFgl-dyxcVSXOOIR0R3V9KHx9oThpQ';" alt="Fort Custer National Cemetery National Cemetery American Cemetery Michigan Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Custer National Cemetery National Cemetery American Cemetery Michigan Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/92/ca/1192ca6b70535aa7f1a5bac4ea9b866a.jpg" data-lightbox="roadtrip" data-title="Great Lakes National Cemetery Holly Michigan Holly Michigan National Cemetery Michigan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/92/ca/1192ca6b70535aa7f1a5bac4ea9b866a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5LDzUFTDCcKg28Ygdt2JhKkJIVI-t1w_XwQ';" alt="Great Lakes National Cemetery Holly Michigan Holly Michigan National Cemetery Michigan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Lakes National Cemetery Holly Michigan Holly Michigan National Cemetery Michigan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/dd/cd/bcddcdd237c55a3fe2f9038b7bda81a5.jpg" data-lightbox="roadtrip" data-title="Great Lakes National Cemetery Michigan Military Cemetery National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/dd/cd/bcddcdd237c55a3fe2f9038b7bda81a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqX7aNsKWk1FMeO-KokQuYlghYJ1-24AhgA';" alt="Great Lakes National Cemetery Michigan Military Cemetery National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Lakes National Cemetery Michigan Military Cemetery National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/11/92/ca/1192ca6b70535aa7f1a5bac4ea9b866a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqX7aNsKWk1FMeO-KokQuYlghYJ1-24AhgA';" alt="Great Lakes National Cemetery Michigan Military Cemetery National Cemetery">
+										<div class="card-body">
+						<h3 class="h5"><b>Fort Custer National Cemetery-Fax Line.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National cemetery in michigan</strong>. 
+								
+																	Great Lakes National Cemetery MIGLNH Please help us Remember Honor and Teach on December 18 at 1200 pm 2021 by sponsoring a wreath volunteering or inviting friends to helpPlease note masks and gloves are required for this event. 
+																	Cemetery Address Contact Burial Space. 
+																	1-800-273-8255 Press 1 Social Media. 
+																	Find traveler reviews and candid photos of dining near Great Lakes National Cemetery in Holly Michigan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you cannot locate the person you are searching for please provide the following information on each individual. 
+																	Additional Resources at the Family History Library edit edit source. 
+																	Augusta MI 49012 Phone. 
+																	Return to top. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldiers and Airmens Home National Cemetery. 
+																	4200 Belford Rd Holly MI 48442. 
+																	The American Battle Monuments Commission provides information on service members buried in overseas cemeteries. 
+																	Great Lakes National Cemetery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4200 Belford Road Holly MI 48442 Phone. 
+																	Great Lakes National Cemetery is located approximately 50 miles northwest of downtown Detroit in Holly Township Oakland County. 
+																	Arlington National Cemetery is the final resting place for notable members of the Kennedy family including President John F. 
+																	The VA National Cemetery Administration honors the military service of our Nations veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sorry there are no tours or activities available to book online for the date s you selected. 
+																	Points of Interest Landmarks Cemeteries. 
+																	Historically the property served as farmland until it was acquired by the National Cemetery Administration in 2002. 
+																	Federal cemetery 770 acres includes the burial place of several German World War II prisoners of war and the grave of an unknown Civil War soldier. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go to the FamilySearch Catalog. 
+																	We provide a dignified burial and lasting memorial for veterans and their eligible family members and we maintain our veterans cemeteries as national shrines. 
+																	The Arlington National Cemetery provides information on service members buried there. 
+																	248-328-0386 Or 248-328-0386 Fax. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skip links View the Web Site. 
+																	Administered by the United States Department of Veterans Affairs the cemetery covers 544 acres and as of 2014 had over 23000 interments. 
+																	Great Lakes National Cemetery. 
+																	By the end of 1862 14 national cemeteries had been established see text of photo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Great Lakes National Cemetery Holly - Tripadvisor. 
+																	Fort Custer National Cemetery. 
+																	Historically the property served as farmland until it was acquired by the National Cemetery Administration in 2002. 
+																	Great Lakes National Cemetery in Holly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please choose a different date. 
+																	The cemetery borders Fagan Lake and is located on a portion of a land grant from the Federal Government to Terrance Fagan in 1836. 
+																	The Fort Custer site located midway between Chicago and Detroit was the VAs choice for the Region V national cemetery. 
+																	The cemetery borders Fagan Lake and is located on a portion of a land grant from the Federal Government to Terrance Fagan in 1836. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The most famous national cemetery in Arlington Virginia is run by the US. 
+																	Great Lakes National Cemetery is a United States National Cemetery located in Holly Oakland County Michigan. 
+																	Great Lakes National Cemetery is located approximately 50 miles northwest of downtown Detroit in Holly Township Oakland County. 
+																	4200 Belford Road Holly MI 48442 Phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are two national cemeteries in Michigan still accepting remains. 
+																	Great Lakes National Cemetery. 
+																	The cemetery received 566 acres from the Fort Custer Military Reservation and 203 acres from the VA Medical Center. 
+																	Kennedy and his brothers Bobby and Ted Kennedy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Michigan in the Place box Click on. 
+																	1 of 16 things to do in Holly. 
+																	Great Lakes National Cemetery. 
+																	To coordinate burial in a national cemetery contact. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was established in 2005 and is one of two national cemeteries in Michigan the other being Fort Custer. 
+																	Restaurants near Great Lakes National Cemetery Holly on Tripadvisor. 
+																	MVAA 800-MICH-VET 800-642-4838 National Cemetery Scheduling Office 800-535-1117. 
+																	Fort Custer National Cemetery in Augusta. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States National Cemetery System is a system of 169 nationally important cemeteries in the United StatesThe authority to create military burial places came during the American Civil War in an act passed by the US. 
+																	Department of the Army and within it the US. 
+																	15501 M 96 Augusta MI 49012. 
+																	George Kelley from East Grand Forks Minn bids farewell to his friend David Lee Oliver after his military funeral ceremonies at the Fargo National Cemetery in Harwood on Monday Feb. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To find cemetery records for Michigan in the FamilySearch Catalog follow these steps. 
+																	Cemeteries To search for cemeteries at the county level follow directions below. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/bd/28/6dbd2837b24dc2ae20b264d3dd435093.jpg" data-lightbox="roadtrip" data-title="The Great Lakes National Cemetery Of Holly Michigan Is Seen With Flags For The Memorial Day Weekend Jessica An Military Cemetery National Cemetery Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/bd/28/6dbd2837b24dc2ae20b264d3dd435093.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBc0b7dvtpda9z8vVJGPlqvxRR0udy5-USsA';" alt="The Great Lakes National Cemetery Of Holly Michigan Is Seen With Flags For The Memorial Day Weekend Jessica An Military Cemetery National Cemetery Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Great Lakes National Cemetery Of Holly Michigan Is Seen With Flags For The Memorial Day Weekend Jessica An Military Cemetery National Cemetery Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/8a/e2/688ae273e12f60c504c626c47b8fcdb0.jpg" data-lightbox="roadtrip" data-title="Pin On National Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/8a/e2/688ae273e12f60c504c626c47b8fcdb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VTyXSHLneLjVqjm-2JyoLv9ypm_Hka4I0A';" alt="Pin On National Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/a8/40/82a840446378a525c29d49c3261f2029.jpg" data-lightbox="roadtrip" data-title="Great Lakes National Cemetery Holly Mi National Cemetery Great Lakes Old Cemeteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/a8/40/82a840446378a525c29d49c3261f2029.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF7ROFOAp0bM3mbHh4AYx8nJBDL2soViytwA';" alt="Great Lakes National Cemetery Holly Mi National Cemetery Great Lakes Old Cemeteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Lakes National Cemetery Holly Mi National Cemetery Great Lakes Old Cemeteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/f4/06/e4f406186859e2a9bf0a63a17e187543.jpg" data-lightbox="roadtrip" data-title="Flags At Fort Custer National Cemetery Michigan Fort">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/f4/06/e4f406186859e2a9bf0a63a17e187543.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_dMdz7tiM4cfoazhp-gFkfmWk7ZUYybfGg';" alt="Flags At Fort Custer National Cemetery Michigan Fort">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flags At Fort Custer National Cemetery Michigan Fort</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/f0/a6/c1f0a678821db1a1c298f109eb3834b3.jpg" data-lightbox="roadtrip" data-title="Fort Custer National Cemetery Augusta Michigan Pure Michigan National Cemetery Michigan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/f0/a6/c1f0a678821db1a1c298f109eb3834b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOc7izYUYnfNHjdinyFvV3a9GvJh4pAIzXA';" alt="Fort Custer National Cemetery Augusta Michigan Pure Michigan National Cemetery Michigan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Custer National Cemetery Augusta Michigan Pure Michigan National Cemetery Michigan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/a0/f5/29a0f549cf0431cf1d41e4af8105a06a.jpg" data-lightbox="roadtrip" data-title="Great Lakes National Cemetery Momma And Randy Are Here They Are In The Wall National Cemetery Great Lakes Lake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/a0/f5/29a0f549cf0431cf1d41e4af8105a06a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxRMRYxusJXVFmhHX9wEDzVPv4_zMR9RKdQ';" alt="Great Lakes National Cemetery Momma And Randy Are Here They Are In The Wall National Cemetery Great Lakes Lake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Lakes National Cemetery Momma And Randy Are Here They Are In The Wall National Cemetery Great Lakes Lake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/fd/0a/dafd0ae3786714c95c0b608a41840256.jpg" data-lightbox="roadtrip" data-title="Great Lakes National Cemetery National Cemetery Pure Michigan Great Lakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/fd/0a/dafd0ae3786714c95c0b608a41840256.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyv2ApDrUCZgJO2bFt2T_7SWIVkF6aYQheug';" alt="Great Lakes National Cemetery National Cemetery Pure Michigan Great Lakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Lakes National Cemetery National Cemetery Pure Michigan Great Lakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/13/c8/6513c8df6b369f6642b9fd5d360e622c.png" data-lightbox="roadtrip" data-title="Some Gave All Lost In Michigan Michigan National Cemetery Great Lakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/13/c8/6513c8df6b369f6642b9fd5d360e622c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0t4gh6Q85R7NnMJUcDKO_FSaGKS3G77KjA';" alt="Some Gave All Lost In Michigan Michigan National Cemetery Great Lakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Some Gave All Lost In Michigan Michigan National Cemetery Great Lakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/72/02/d57202118887b7a545dd4b46b1c2e331.jpg" data-lightbox="roadtrip" data-title="Veterans Day 2010 Veterans Cemetery Veteran National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/72/02/d57202118887b7a545dd4b46b1c2e331.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCynhsxzOpPGRtdYr2ttkG57cac06GBoKtbw';" alt="Veterans Day 2010 Veterans Cemetery Veteran National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day 2010 Veterans Cemetery Veteran National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/b1/d2/d1b1d29aba507aa77cde9d0fc5528592.jpg" data-lightbox="roadtrip" data-title="Girl Visiting Her Brother S Grave Arlington National Cemetery Afghanistan War Afghanistan War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/b1/d2/d1b1d29aba507aa77cde9d0fc5528592.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxLtHpKLeqV7vTZCxpEBHiaH4hQ-Hpl-kFQQ';" alt="Girl Visiting Her Brother S Grave Arlington National Cemetery Afghanistan War Afghanistan War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Girl Visiting Her Brother S Grave Arlington National Cemetery Afghanistan War Afghanistan War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/eb/fb/cfebfb925ad6d033a226eb8033785721.jpg" data-lightbox="roadtrip" data-title="Image Result For Arlington National Cemetery Memorial Day 2017 Arlington National Cemetery National Cemetery Memorial Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/eb/fb/cfebfb925ad6d033a226eb8033785721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGy-01LFcYLiKDIgnCXJPWeYTI0bJaQ4H7FQ';" alt="Image Result For Arlington National Cemetery Memorial Day 2017 Arlington National Cemetery National Cemetery Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Arlington National Cemetery Memorial Day 2017 Arlington National Cemetery National Cemetery Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/66/58/36665836260008cef08a02fe7c5e6beb.jpg" data-lightbox="roadtrip" data-title="Abraham Lincoln National Cemetery On Memorial Day Weekend National Cemetery Arlington National Cemetery Memorial Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/66/58/36665836260008cef08a02fe7c5e6beb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTdwjehfdTOCDdkJW9_5NTCahZIva_OrugGA';" alt="Abraham Lincoln National Cemetery On Memorial Day Weekend National Cemetery Arlington National Cemetery Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abraham Lincoln National Cemetery On Memorial Day Weekend National Cemetery Arlington National Cemetery Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/9a/fe/9d9afe828a246fc58bf91c2891bb70c8.jpg" data-lightbox="roadtrip" data-title="Pin By Raphael Bindler On Washington Dc Trip Arlington National Cemetery National Cemetery Washington Dc Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/9a/fe/9d9afe828a246fc58bf91c2891bb70c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDGfU7EJTrD0sMhZblD4Of_zkKIAcGDK_UQ';" alt="Pin By Raphael Bindler On Washington Dc Trip Arlington National Cemetery National Cemetery Washington Dc Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Raphael Bindler On Washington Dc Trip Arlington National Cemetery National Cemetery Washington Dc Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/12/41/1c1241846be0f111c5012b7e2fd6711d.jpg" data-lightbox="roadtrip" data-title="Veterans Link National Cemetery Michigan Custer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/12/41/1c1241846be0f111c5012b7e2fd6711d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-lT_yWSRHvUpEertSyy6wxHcYWCUDpjn9w';" alt="Veterans Link National Cemetery Michigan Custer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Link National Cemetery Michigan Custer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8f/2f/dd/8f2fddc83668a10f1c0c9123f506c362.jpg" data-lightbox="roadtrip" data-title="Remembering Those Who Made The Ultimate Sacrifice Thank You To Andaclacter For Sharing This Photo From Great Lak Oakland County National Cemetery Great Lakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8f/2f/dd/8f2fddc83668a10f1c0c9123f506c362.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdFrOuZj6aqTgeW4_3Ecv20bbdx-QBZ643Q';" alt="Remembering Those Who Made The Ultimate Sacrifice Thank You To Andaclacter For Sharing This Photo From Great Lak Oakland County National Cemetery Great Lakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remembering Those Who Made The Ultimate Sacrifice Thank You To Andaclacter For Sharing This Photo From Great Lak Oakland County National Cemetery Great Lakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hire-companies.html">Military Hire Companies</a></li>
+													<li class="list-group-item"><a href="/military-veteran-badge.html">Military Veteran Badge</a></li>
+													<li class="list-group-item"><a href="/military-healthcare-programs.html">Military Healthcare Programs</a></li>
+													<li class="list-group-item"><a href="/military-id-discount-website.html">Military Id Discount Website</a></li>
+													<li class="list-group-item"><a href="/military-veteran-cruise-discounts.html">Military Veteran Cruise Discounts</a></li>
+													<li class="list-group-item"><a href="/military-veteran-jobs-dallas-tx.html">Military Veteran Jobs Dallas Tx</a></li>
+													<li class="list-group-item"><a href="/military-veteran-overseas-jobs.html">Military Veteran Overseas Jobs</a></li>
+													<li class="list-group-item"><a href="/military-programs-in-virginia.html">Military Programs In Virginia</a></li>
+													<li class="list-group-item"><a href="/military-discounts-for-vets.html">Military Discounts For Vets</a></li>
+													<li class="list-group-item"><a href="/military-programs-in-chicago.html">Military Programs In Chicago</a></li>
+													<li class="list-group-item"><a href="/military-spouse-owned-business.html">Military Spouse Owned Business</a></li>
+													<li class="list-group-item"><a href="/military-retirement-with-disability-calculator.html">Military Retirement With Disability Calculator</a></li>
+													<li class="list-group-item"><a href="/military-discount-tokyo-disneyland.html">Military Discount Tokyo Disneyland</a></li>
+													<li class="list-group-item"><a href="/military-service-dogs-vets.html">Military Service Dogs Vets</a></li>
+													<li class="list-group-item"><a href="/military-programs-for-13-year-olds.html">Military Programs For 13 Year Olds</a></li>
+													<li class="list-group-item"><a href="/military-friendly-bsn-programs.html">Military Friendly Bsn Programs</a></li>
+													<li class="list-group-item"><a href="/military-discount-to-kohls.html">Military Discount To Kohls</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pension-and-disability.html">Military Retirement Pension And Disability</a></li>
+													<li class="list-group-item"><a href="/military-tent-hire.html">Military Tent Hire</a></li>
+													<li class="list-group-item"><a href="/military-msw-programs.html">Military Msw Programs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Gdp Forecast 2030 By Country - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Gdp Forecast 2030 By Country",
+  "datePublished": "2021-02-28",
+  "image": "http://media.hanoitimes.vn/2020/4/15/rsz_screen_shot_2020-04-15_at_133511%20(1).png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+gdp+forecast+2030+by+country",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Gdp Forecast 2030 By Country</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The World Economic Outlook WEO database contains selected macroeconomic data series from the statistical appendix of the World Economic Outlook report which presents the IMF staffs analysis and projections of economic developments at the global level in major country groups and in many individual countriesThe WEO is released in April and October each year. See also the World Economic Outlook Reports. Selected series from the publication are available in a database format. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-card-discounts.html">va card discounts</a>
+											<a class="badge badge-secondary" href="/va-discounts-on-hotels.html">va discounts on hotels</a>
+											<a class="badge badge-light" href="/va-discounts-on-veterans-day.html">va discounts on veterans day</a>
+											<a class="badge badge-warning" href="/us-navy-charlottesville-va.html">us navy charlottesville va</a>
+											<a class="badge badge-secondary" href="/us-navy-hampton-va.html">us navy hampton va</a>
+											<a class="badge badge-secondary" href="/va-national-cemetery-dixon-ca.html">va national cemetery dixon ca</a>
+											<a class="badge badge-danger" href="/us-navy-armed-guard-wwii-veterans.html">us navy armed guard wwii veterans</a>
+											<a class="badge badge-success" href="/va-national-cemetery-in-california.html">va national cemetery in california</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  You can also bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://knowledge4policy.ec.europa.eu/sites/default/files/projected_gdp_ranking_2030_-_imf.png" data-lightbox="roadtrip" data-title="Projected Gdp Ranking 2030 Knowledge For Policy">
+											<img class="card-img v-image ads-img " src="https://knowledge4policy.ec.europa.eu/sites/default/files/projected_gdp_ranking_2030_-_imf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstPqx3m6qMxNtYoyqGXBoYc5lP5YiI_nI3A';" alt="Projected Gdp Ranking 2030 Knowledge For Policy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Projected Gdp Ranking 2030 Knowledge For Policy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/52/21/bd52218db1ec253f5669d2cb95d2d712.png" data-lightbox="roadtrip" data-title="These Will Be The World S 20 Largest Economies In 2030 Economy Bloomberg Business Travel And Tourism">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/52/21/bd52218db1ec253f5669d2cb95d2d712.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bf7M7XPzPIoXhsMNoteeZQdmGr6lRrWh3g';" alt="These Will Be The World S 20 Largest Economies In 2030 Economy Bloomberg Business Travel And Tourism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Will Be The World S 20 Largest Economies In 2030 Economy Bloomberg Business Travel And Tourism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/fc/29/00fc294d8ba7e661893fa1c15586174b.png" data-lightbox="roadtrip" data-title="Imf Global Growth Forecast Synchronized Slowdown Precarious Outlook Economy Economic Trends Global Economy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/fc/29/00fc294d8ba7e661893fa1c15586174b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMUHw0CJKyLTTti2EtoEsyrskhv4fYnGg7A';" alt="Imf Global Growth Forecast Synchronized Slowdown Precarious Outlook Economy Economic Trends Global Economy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Global Growth Forecast Synchronized Slowdown Precarious Outlook Economy Economic Trends Global Economy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/e6/87/a6e6874932030369bb428575017e9eac.png" data-lightbox="roadtrip" data-title="Pin On Global State Of Nations Economies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/e6/87/a6e6874932030369bb428575017e9eac.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfETt-rzw7tdfcjzOxLPoPfNcShjBfu-8wg';" alt="Pin On Global State Of Nations Economies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Global State Of Nations Economies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://media.hanoitimes.vn/2020/4/15/rsz_screen_shot_2020-04-15_at_133511%20(1).png" data-lightbox="roadtrip" data-title="Vietnam Gdp Growth Forecast To Stay Ahead Regional Peers At 2 7 In 2020 Imf">
+											<img class="card-img v-image ads-img " src="http://media.hanoitimes.vn/2020/4/15/rsz_screen_shot_2020-04-15_at_133511%20(1).png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpJR8M1LeLHbpW7a-xjmq-TlCBg6tWh-FQQ';" alt="Vietnam Gdp Growth Forecast To Stay Ahead Regional Peers At 2 7 In 2020 Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Gdp Growth Forecast To Stay Ahead Regional Peers At 2 7 In 2020 Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.orfonline.org/wp-content/uploads/2020/10/Grp-01.jpg" data-lightbox="roadtrip" data-title="2020 Global Gdp Growth Projections Have Gone Haywire During Pandemic Orf">
+											<img class="card-img v-image ads-img " src="https://www.orfonline.org/wp-content/uploads/2020/10/Grp-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7hYs6w7eZovCBeJgA1Es6xyTnbRwpdk6sA';" alt="2020 Global Gdp Growth Projections Have Gone Haywire During Pandemic Orf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Global Gdp Growth Projections Have Gone Haywire During Pandemic Orf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://media.hanoitimes.vn/2020/4/15/rsz_screen_shot_2020-04-15_at_133511%20(1).png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7hYs6w7eZovCBeJgA1Es6xyTnbRwpdk6sA';" alt="2020 Global Gdp Growth Projections Have Gone Haywire During Pandemic Orf">
+										<div class="card-body">
+						<h3 class="h5"><b>For optimum experience we recommend to update your browser to the latest version.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf gdp forecast 2030 by country</strong>. 
+								
+																	Experts have predicted Indonesias economy will be three times the size of Australias by 2030. 
+																	Standard Chartered forecasts the top 10 countries in the world by purchasing power parity GDP in 2030. 
+																	Skip to main content. 
+																	For the correct comparison values for individual countries in the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IMF World Economic and. 
+																	But the International Monetary Fund is downgrading its forecasts for next year and warning of a. 
+																	EM countries will account for roughly 50 of global GDP by 2030 which represents a seismic shift from half that in 2000. 
+																	IMF World Economic and Financial Surveys World Economic Outlook Database July 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	12 trillion 583 8. 
+																	232 trillion 177 2. 
+																	Your browser is not up-to-date. 
+																	Figures are based on official exchange rates not on the purchasing power parity PPP methodology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the table below countries are ranked by the gross domestic product measured in purchasing power parities PPP at current prices. 
+																	World Economic Outlook October 2020. 
+																	32 trillion 216 5. 
+																	Manuals guides and other material on statistical practices at the IMF in member countries and of the statistical community at large are also available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Standard Chartereds projections suggest the size of the Chinese economy in 2030 on this measure will be 642 trillion Indias will be 463 and the United States will be just 31. 
+																	The World Economic Outlook WEO database is created during the biannual WEO exercise which begins in January and June of each year and results in the April and SeptemberOctober WEO publication. 
+																	The global economy is climbing out from the depths to which it had plummeted during the Great Lockdown in April. 
+																	A Long and Difficult Ascent October 7 2020 Description. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By 2030 Indonesia will boast the fourth-largest economy in the world. 
+																	Trend gross domestic product GDP including long-term baseline projections up to 2060 in real terms. 
+																	Forecast is based on an assessment of the economic climate in individual countries and the world economy using a combination of model-based analyses and expert judgement. 
+																	The IMF publishes a range of time series data on IMF lending exchange rates and other economic and financial indicators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The figures are given or expressed in Millions of International Dollars at current prices. 
+																	Projected GDP Ranking 2030. 
+																	As these countries develop and the nature of growth becomes more domestically oriented and consumer-led such as we are seeing in China the influence on developed markets will rise. 
+																	This is an alphabetical list of countries by past and projected Gross Domestic Product based on the Purchasing Power Parity PPP methodology not on market exchange ratesThese figures have been taken from the International Monetary Funds World Economic Outlook WEO Database October 2020 Edition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GDP 2030 PPP GDP 2017 PPP change 1. 
+																	IMF updates its economic forecast twice a year. 
+																	In April and October. 
+																	The page provides access to the GDP per capita forecast for different countries for the 2020-2024 time period from the latest IMFs World Economic Outlook WEO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Values are given in millions of United States dollars USD and have not been adjusted for inflation. 
+																	32 trillion 169 7. 
+																	The World Economic Outlook WEO database contains selected macroeconomic data series from the statistical appendix of the World Economic Outlook report which presents the IMF staffs analysis and projections of economic developments at the global level in major country groups and in many individual countriesThe WEO is released in April and SeptemberOctober each year. 
+																	The worlds most populous Muslim country will see its GDP rise from 32 trillion to 101 trillion in 2030. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But with the COVID-19 pandemic continuing to spread many countries have slowed reopening and some are reinstating partial lockdowns to protect susceptible populations. 
+																	GDP per capita is a countrys gross domestic product divided by the countrys total population. 
+																	This is an alphabetical list of countries by past and projected gross domestic product nominal as ranked by the IMF. 
+																	22 trillion 314 6. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These figures have been taken from the International Monetary Funds World. 
+																	The indicator is measured in USD at 2010 Purchasing Power Parities. 
+																	194 trillion 60 4. 
+																	This page presents GDP forecast figures by country for the period from 2020 to 2024 as estimated by the IMF in its latest edition of World Economic Outlook WEO as of October 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	95 trillion 387 3. 
+																	A strong comeback in 2021 is needed to help the global economy heal from the coronavirus pandemic. 
+																	Projected GDP Ranking 2030. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/db/d2/e9dbd2044feb37b90d41912d4a9ee385.png" data-lightbox="roadtrip" data-title="Pin On Maps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/db/d2/e9dbd2044feb37b90d41912d4a9ee385.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa1ADeYA8i43UIEGqkqrFJPnJrcpq4p8uBKQ';" alt="Pin On Maps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Maps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/a3/d0/d6a3d04a7e726e36d1d161f8c4f79d3b.jpg" data-lightbox="roadtrip" data-title="Pin On Development Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/a3/d0/d6a3d04a7e726e36d1d161f8c4f79d3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9lw-30iftQTimUwZ-aAxF7V-n-5CJabkgKA';" alt="Pin On Development Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Development Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/~/media/Images/IMF/Live-Page/imf-live-rgb-h.ashx?la=en" data-lightbox="roadtrip" data-title="Imfdatamapper Indicator Label Indicator Unit Parent Indicator Unit Parent Indicator Unit Related Length International Monetary Fund About Research Countries Capacity Development News Events Videos Data Publications Social Media Hub">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/~/media/Images/IMF/Live-Page/imf-live-rgb-h.ashx?la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS43VAmqaLQXKYFT0x4wwz6-HSAdO9MHpdcOQ';" alt="Imfdatamapper Indicator Label Indicator Unit Parent Indicator Unit Parent Indicator Unit Related Length International Monetary Fund About Research Countries Capacity Development News Events Videos Data Publications Social Media Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imfdatamapper Indicator Label Indicator Unit Parent Indicator Unit Parent Indicator Unit Related Length International Monetary Fund About Research Countries Capacity Development News Events Videos Data Publications Social Media Hub</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/5b/90/d75b905d855c3ddad6cbfe79eeaab22f.png" data-lightbox="roadtrip" data-title="Pin On Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/5b/90/d75b905d855c3ddad6cbfe79eeaab22f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUsEDQlLbFXDzHLyn037AfCYRIHAT5goMJg';" alt="Pin On Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories//Newstaffpics/gdp_chart_2_141020034419.jpg" data-lightbox="roadtrip" data-title="Why Bangladeshis Will Soon Be Richer Than Indians Business News">
+											<img class="card-img v-image ads-img " src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories//Newstaffpics/gdp_chart_2_141020034419.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXVs22Y8sICKtm4VS7ueAEUf6f6pcgxsBSA';" alt="Why Bangladeshis Will Soon Be Richer Than Indians Business News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Bangladeshis Will Soon Be Richer Than Indians Business News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/d0/6e/c0d06ef43acd554b31883bddedadad15.png" data-lightbox="roadtrip" data-title="Pin On Macro Economic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/d0/6e/c0d06ef43acd554b31883bddedadad15.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXpiv-B8iDFHvwsc3inHL2flgidPaF_6_oxg';" alt="Pin On Macro Economic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Macro Economic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Files/News/Speech/2019/press-conference-vitor-gaspar-fiscal-monitor/Slide4.ashx?h=338&amp;w=600" data-lightbox="roadtrip" data-title="Fiscal Monitor Press Conference">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Files/News/Speech/2019/press-conference-vitor-gaspar-fiscal-monitor/Slide4.ashx?h=338&amp;w=600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdk0KdEfvbUlF31JZV9Vj1RSRU2u9E37l55g';" alt="Fiscal Monitor Press Conference">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fiscal Monitor Press Conference</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/c5/a8/eac5a8b3fbd4409121d1ab9235c62d39.gif" data-lightbox="roadtrip" data-title="A Chart Of The Recent Economic Growth Of African Countries Africa African Countries Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/c5/a8/eac5a8b3fbd4409121d1ab9235c62d39.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI5pIaVskDvlmZQC9VgJTL4bVt-iKSw03T7A';" alt="A Chart Of The Recent Economic Growth Of African Countries Africa African Countries Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Chart Of The Recent Economic Growth Of African Countries Africa African Countries Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/Countries/Infographics/APD/indonesia-feb-2018.ashx?h=216&amp;w=207&amp;hash=7D0DD81575DF1B7749E55DC78027B5800908D8A9" data-lightbox="roadtrip" data-title="Indonesia And The Imf">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/Countries/Infographics/APD/indonesia-feb-2018.ashx?h=216&amp;w=207&amp;hash=7D0DD81575DF1B7749E55DC78027B5800908D8A9" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvcDSphlXRdVvfBq0xVyqYcLBvobijBxf_Q';" alt="Indonesia And The Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indonesia And The Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yicaiglobal.com/cdn/images/2020/07/637292853836569981.png" data-lightbox="roadtrip" data-title="Covid 19 Is Accelerating China Us Convergence">
+											<img class="card-img v-image ads-img " src="https://img.yicaiglobal.com/cdn/images/2020/07/637292853836569981.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1L0GbBjdE2JAX7n5ItsKxIWPfczBlYVEPVw';" alt="Covid 19 Is Accelerating China Us Convergence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Is Accelerating China Us Convergence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/news-article-images/2019/eng-aug-12-china4.ashx" data-lightbox="roadtrip" data-title="China S Economic Outlook In Six Charts">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/news-article-images/2019/eng-aug-12-china4.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOv8mUZQyrm7RvwI9aHE8Ho49aNGsQ-gKcpQ';" alt="China S Economic Outlook In Six Charts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Economic Outlook In Six Charts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/Countries/Infographics/georgia-infographic.ashx?h=317&amp;w=294" data-lightbox="roadtrip" data-title="Georgia And The Imf">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/Countries/Infographics/georgia-infographic.ashx?h=317&amp;w=294" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwgQ9DWvXDoqZ8T5HLPcpOjCKe-3VqJSGIg';" alt="Georgia And The Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgia And The Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/d2/99/d0d299acd83e11dbdc53bb1df3be985d.png" data-lightbox="roadtrip" data-title="Pin On Ideas For The House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/d2/99/d0d299acd83e11dbdc53bb1df3be985d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSUlwwvsgN4G43sBny96EmP9SRKvu1bXrYTQ';" alt="Pin On Ideas For The House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ideas For The House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/57/53/9357534a5a8c1d8215ba489b1353943c.png" data-lightbox="roadtrip" data-title="Map Of The Regional Comprehensive Economic Partnership Rcep">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/57/53/9357534a5a8c1d8215ba489b1353943c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMAPRUI1p1fusukfwPNFvRO7Y7cOp6QFFfA';" alt="Map Of The Regional Comprehensive Economic Partnership Rcep">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of The Regional Comprehensive Economic Partnership Rcep</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blogs.imf.org/wp-content/uploads/2020/10/eng-weo-ch-1-blog-oct-11-chart-1-1-1024x833.png" data-lightbox="roadtrip" data-title="World Economic Outlook Imf Blog">
+											<img class="card-img v-image ads-img " src="https://blogs.imf.org/wp-content/uploads/2020/10/eng-weo-ch-1-blog-oct-11-chart-1-1-1024x833.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6rS7ahDr-BPkcBSBmfHqBmkntQQqxC3fvA';" alt="World Economic Outlook Imf Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Economic Outlook Imf Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-xd-in-chat.html">What Is Xd In Chat</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-in-pakistan.html">What Is Imf In Pakistan</a></li>
+													<li class="list-group-item"><a href="/what-is-the-economic-impact-of-covid-19-on-the-global-economy.html">What Is The Economic Impact Of Covid 19 On The Global Economy</a></li>
+													<li class="list-group-item"><a href="/what-does-lmao-xd-mean.html">What Does Lmao Xd Mean</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-the-imf-and-the-world-bank.html">What Is The Difference Between The Imf And The World Bank</a></li>
+													<li class="list-group-item"><a href="/what-is-the-current-us-gdp-2020.html">What Is The Current Us Gdp 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-rank-of-india-in-imf.html">What Is The Rank Of India In Imf</a></li>
+													<li class="list-group-item"><a href="/what-college-has-the-best-vet-program.html">What College Has The Best Vet Program</a></li>
+													<li class="list-group-item"><a href="/what-is-the-economic-outlook-for-2020.html">What Is The Economic Outlook For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-data.html">What Is Imf Data</a></li>
+													<li class="list-group-item"><a href="/what-is-the-military-discount-for-att.html">What Is The Military Discount For Att</a></li>
+													<li class="list-group-item"><a href="/what-caused-imf-in-korea.html">What Caused Imf In Korea</a></li>
+													<li class="list-group-item"><a href="/what-is-imf-world-bank.html">What Is Imf World Bank</a></li>
+													<li class="list-group-item"><a href="/vietnam-imf-article-iv-2017.html">Vietnam Imf Article Iv 2017</a></li>
+													<li class="list-group-item"><a href="/what-day-is-old-navy-military-discount.html">What Day Is Old Navy Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-gdp-2020.html">What Is The Us Gdp 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-an-imf-in-chemistry.html">What Is An Imf In Chemistry</a></li>
+													<li class="list-group-item"><a href="/what-is-an-inactive-reservist.html">What Is An Inactive Reservist</a></li>
+													<li class="list-group-item"><a href="/what-is-the-ranking-of-india-in-gdp.html">What Is The Ranking Of India In Gdp</a></li>
+													<li class="list-group-item"><a href="/what-are-the-objectives-of-imf-and-world-bank.html">What Are The Objectives Of Imf And World Bank</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

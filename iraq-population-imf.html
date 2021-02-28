@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Iraq Population Imf - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Iraq Population Imf",
+  "datePublished": "2021-02-28",
+  "image": "https://www.elibrary.imf.org/view/IMF071/22535-9781513511832/22535-9781513511832/images/9781513511832_f0089-01.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=iraq+population+imf",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Iraq Population Imf</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Growth projections have been revised down since the April 2020 Regional Economic Outlook the IMF says in its latest update to the report. Despite their efforts the pandemic has inflicted heavy economic damage on the region. Iraq is the region known outside the Islamic world as MesopotamiaThe population estimate in 1920 was 3 million. <br>				
+			</p>
+										<a class="badge badge-success" href="/is-veteran-transition-mission-legit.html">is veteran transition mission legit</a>
+											<a class="badge badge-light" href="/is-applebees-honoring-veterans-day.html">is applebees honoring veterans day</a>
+											<a class="badge badge-success" href="/jamaica-imf-agreement-2013.html">jamaica imf agreement 2013</a>
+											<a class="badge badge-light" href="/iphone-upgrade-program-military-discount.html">iphone upgrade program military discount</a>
+											<a class="badge badge-light" href="/jamaica-imf-case-study.html">jamaica imf case study</a>
+											<a class="badge badge-primary" href="/is-dd214-public-record.html">is dd214 public record</a>
+											<a class="badge badge-secondary" href="/jobs-hiring-for-veterans.html">jobs hiring for veterans</a>
+											<a class="badge badge-secondary" href="/is-bank-of-america-closed-today-veterans-day.html">is bank of america closed today veterans day</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right site.  Our website provides you with suggestions for seeing the highest quality video and picture content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ceicdata.com/datapage/charts/ipc_iraq_forecast-population/?type=area&amp;from=2014-12-01&amp;to=2025-12-01&amp;lang=en" data-lightbox="roadtrip" data-title="Iraq Forecast Population 2003 2021 Data">
+											<img class="card-img v-image ads-img " src="https://www.ceicdata.com/datapage/charts/ipc_iraq_forecast-population/?type=area&amp;from=2014-12-01&amp;to=2025-12-01&amp;lang=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZY9FwvAGjDHWKiV8l4Bu_pFTnUasrqEW8w';" alt="Iraq Forecast Population 2003 2021 Data">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Forecast Population 2003 2021 Data</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/Countries/detail-page/IRQ/irq-banner.ashx?h=280&amp;w=1099&amp;la=en" data-lightbox="roadtrip" data-title="Iraq And The Imf">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/Countries/detail-page/IRQ/irq-banner.ashx?h=280&amp;w=1099&amp;la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROl96A6numMefaJNyIj2iMMrDNw7eFojArSw';" alt="Iraq And The Imf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq And The Imf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2019/09/Growth-of-Iraqs-Population-2003-2020.jpg" data-lightbox="roadtrip" data-title="Growth Of Iraq S Population 2003 2020 In Million Iraqi Economists Network">
+											<img class="card-img v-image ads-img " src="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2019/09/Growth-of-Iraqs-Population-2003-2020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWC9KEdNADo5fCDHboLxeN_fOgPRLyWfEjA';" alt="Growth Of Iraq S Population 2003 2020 In Million Iraqi Economists Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Growth Of Iraq S Population 2003 2020 In Million Iraqi Economists Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="rHCEMlJyR_c8xM" data-lightbox="roadtrip" data-title="Https Www Imf Org Media Files Publications Cr 2017 Cr17252 Ashx">
+											<img class="card-img v-image ads-img " src="rHCEMlJyR_c8xM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzI5X1YgBU1WZ2zEUhaJMJbrJihdAKZdV5w';" alt="Https Www Imf Org Media Files Publications Cr 2017 Cr17252 Ashx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Imf Org Media Files Publications Cr 2017 Cr17252 Ashx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Iraq_single_age_population_pyramid_2020.png/350px-Iraq_single_age_population_pyramid_2020.png" data-lightbox="roadtrip" data-title="Demographics Of Iraq Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Iraq_single_age_population_pyramid_2020.png/350px-Iraq_single_age_population_pyramid_2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdSFEW2JZkbju86mPcG5si67oDVEcPHOoQA';" alt="Demographics Of Iraq Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Demographics Of Iraq Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.credendo.com/_webdata/pictures/graphe2en-iraq.png" data-lightbox="roadtrip" data-title="Iraq Recovering From Years Of Conflict But Political Risks Expected To Remain High For Years To Come Credendo">
+											<img class="card-img v-image ads-img " src="https://www.credendo.com/_webdata/pictures/graphe2en-iraq.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ABPGTbImUSfZ-_VS7LMkI1S2DDVepoP6Wg';" alt="Iraq Recovering From Years Of Conflict But Political Risks Expected To Remain High For Years To Come Credendo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Recovering From Years Of Conflict But Political Risks Expected To Remain High For Years To Come Credendo</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.imf.org/external/pubs/ft/fandd/2013/03/images/barajas_chart1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ABPGTbImUSfZ-_VS7LMkI1S2DDVepoP6Wg';" alt="Iraq Recovering From Years Of Conflict But Political Risks Expected To Remain High For Years To Come Credendo">
+										<div class="card-body">
+						<h3 class="h5"><b>An International Monetary Fund IMF team led by Tokhir Mirzoev held a virtual mission with the Iraqi authorities from November 11 to December 10 to conduct discussions for the 2020 Article IV consultation with Iraq.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Iraq population imf</strong>. 
+								
+																	A precarious political situation weak healthcare system ineffective social safety nets rampant corruption and dilapidated service delivery all amplify this fragility and have fueled large-scale protests across the country. 
+																	For the countrys Christian community they were largely displaced during the most recent conflict involving the genocide of ISIS against religious minorities. 
+																	The under 25 years of age which compromised 63 of the population in 2004 grew at a slower rate of 40 in the period to account for 57 of the total in 2020. 
+																	The last Article IV Executive Board Consultation was on March 22 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This IMF-imposed condition will lead to the lay-offs of an estimated 145000 workers. 
+																	Mirzoev issued the following statement. 
+																	The report includes country-specific three-year forecasts for major macroeconomic indicators including commodity and financial markets. 
+																	Though ISIS was declared militarily defeated in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Total population of Iraq 2025 Published by H. 
+																	The water from these two great rivers and the. 
+																	At the end of the virtual mission Mr. 
+																	The views expressed in this statement are those of the IMF staff and do not necessarily represent the views of the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And the population was 39 million. 
+																	Real GDP was up by an estimated 39. 
+																	Iraq Global Economic Prospects examines trends for the world economy and how they affect developing countries. 
+																	Iraq has requested emergency assistance from the International Monetary Fund and talks are ongoing between the parties the IMF said late on Sunday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plecher Dec 9 2020 This statistic shows the total population of Iraq from 2015 to 2025. 
+																	The Middle East and Central Asia countries acted quickly and decisively in response to COVID-19. 
+																	With half of Iraqs population under the age of 18 it will be the children who bear the brunt of these tried and failed IMF policies. 
+																	GDP growth annual - Iraq. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manuals guides and other material on statistical practices at the IMF in member countries and of the statistical community at large are also available. 
+																	IMF Staff Completes 2020 Article IV Mission with Iraq End-of-Mission press releases include statements of IMF staff teams that convey preliminary findings after a visit to a country. 
+																	The official languages of Iraq are Arabic and Kurdish. 
+																	From the International Monetary Fund IMF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iraq is in a fragile situation. 
+																	The UN estimates the July 1 2021 population at 41179350. 
+																	Privatization of all state-owned enterprises in Iraq except oil. 
+																	In 2019 Iraq GDP was an estimated 2245 billion current market exchange rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UNICEF reported earlier this month that 25 per cent of children in Iraq are now malnourished and underweight. 
+																	Iraqs currency devaluation will add inflation to the list of hardships facing a population recovering from a devastating war with Islamic State. 
+																	IMF Iraq is currently our 49th largest goods trading partner with 82 billion in total two way goods trade during 2019. 
+																	The current population of Iraq is 40794955 based on projections of the latest United Nations data. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Listed below are items related to Islamic Republic of Iran. 
+																	The fallout of the COVID-19 pandemic and the sharp decline. 
+																	Iraqs population grew 53 from 263 million in 2004 to 402 million in 2020 see footnote 1 while its demographic profile exerted and continues to exert powerful pressures on its resources given the needs of a young population. 
+																	The IMF forecasts that Iraqs net foreign. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Almost 75 of Iraqs population lives in the flat alluvial plain stretching southeast from Tikrit to the Persian GulfThe Tigris and the Euphrates carry about 70 million cubic meters of silt annually from this plain down to the delta. 
+																	A March 2005 report found that malnutrition had doubled since the US-led invasion. 
+																	The IMF predicted an economic shrinkage of 12. 
+																	Because of decades of conflict many of Iraqs population are internally displaced. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Washington DC December 12 2020. 
+																	The IMF publishes a range of time series data on IMF lending exchange rates and other economic and financial indicators. 
+																	World Bank national accounts data and OECD National Accounts data files. 
+																	In 2020 the estimated total population of Iraq amounted to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The drop in oil prices and COVID-19 pandemic are placing unprecedented strains on its economy. 
+																	It will also provide foreign corporations with control of vital sectors of Iraq s economy. 
+																	Around 99 of the countrys 38 million citizens are Muslims with small minorities of Christians Yarsans Yezidis and Mandeans also present. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/07/Fiscal-deficit-Middle-East-2020.jpg" data-lightbox="roadtrip" data-title="Iraq Seeks Imf Loan Saudi Investments To Boost Oil Battered Economy By Khalid Al Ansary Iraqi Economists Network">
+											<img class="card-img v-image ads-img " src="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/07/Fiscal-deficit-Middle-East-2020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcG3AuSb1Axv2Bup9j-mgcaCVJWZuApEl2zA';" alt="Iraq Seeks Imf Loan Saudi Investments To Boost Oil Battered Economy By Khalid Al Ansary Iraqi Economists Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Seeks Imf Loan Saudi Investments To Boost Oil Battered Economy By Khalid Al Ansary Iraqi Economists Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/-/media/Images/IMF/News/LC/pr16321.ashx?h=226&amp;w=210" data-lightbox="roadtrip" data-title="Imf Executive Board Approves Us 5 34 Billion Stand By Arrangement For Iraq">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/-/media/Images/IMF/News/LC/pr16321.ashx?h=226&amp;w=210" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSSSn7zWViYcKtiPNYzT-jPHFQXnAJSSWhQ';" alt="Imf Executive Board Approves Us 5 34 Billion Stand By Arrangement For Iraq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Executive Board Approves Us 5 34 Billion Stand By Arrangement For Iraq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF002/24540-9781484314999/24540-9781484314999/images/9781484314999_f0017-01.jpg" data-lightbox="roadtrip" data-title="Iraq Selected Issues Iraq Selected Issues">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF002/24540-9781484314999/24540-9781484314999/images/9781484314999_f0017-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrfOQa9P8cMoB1jP-0HZKaDeEiTrbS7o3_VA';" alt="Iraq Selected Issues Iraq Selected Issues">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Selected Issues Iraq Selected Issues</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqg.OtNUQ7TY/v0/560x-1.png" data-lightbox="roadtrip" data-title="Iraq S Currency Devaluation May Not Be Enough To Salvage Sinking Economy">
+											<img class="card-img v-image ads-img " src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqg.OtNUQ7TY/v0/560x-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlEPoIzALop__4Lb-Th_EmsM0KDJnDU47-VQ';" alt="Iraq S Currency Devaluation May Not Be Enough To Salvage Sinking Economy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq S Currency Devaluation May Not Be Enough To Salvage Sinking Economy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/external/pubs/ft/ar/2016/eng/images/ar/2016/regional/Figure_1_6.png" data-lightbox="roadtrip" data-title="Imf International Monetary Annual Report 2016">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/external/pubs/ft/ar/2016/eng/images/ar/2016/regional/Figure_1_6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV5cbKw03KCdMI4MfLPfUCeSFSTjMNDBJy5w';" alt="Imf International Monetary Annual Report 2016">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf International Monetary Annual Report 2016</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.eu-central-1.amazonaws.com/storage.arab-reform.net/ari/2020/07/30092602/How-Demographics-Erode-the-Patronage-Buying-Power-of-Iraq%E2%80%99s-Muhasasa-Ta%E2%80%99ifia-English-Chart-7-e1596097277101.jpg" data-lightbox="roadtrip" data-title="How Demographics Erode The Patronage Buying Power Of Iraq S Muhasasa Ta Ifia Arab Reform Initiative">
+											<img class="card-img v-image ads-img " src="https://s3.eu-central-1.amazonaws.com/storage.arab-reform.net/ari/2020/07/30092602/How-Demographics-Erode-the-Patronage-Buying-Power-of-Iraq%E2%80%99s-Muhasasa-Ta%E2%80%99ifia-English-Chart-7-e1596097277101.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtRqtrMgV-xVTvrogpVNcbzbCvp0l7bdz4w';" alt="How Demographics Erode The Patronage Buying Power Of Iraq S Muhasasa Ta Ifia Arab Reform Initiative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Demographics Erode The Patronage Buying Power Of Iraq S Muhasasa Ta Ifia Arab Reform Initiative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/12/65567.jpg?w=640" data-lightbox="roadtrip" data-title="Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network">
+											<img class="card-img v-image ads-img " src="http://iraqieconomists.net/en/wp-content/uploads/sites/3/2020/12/65567.jpg?w=640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PPBp2mg2iKAc5yiD0_vZRLwFS2cCABPf6Q';" alt="Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imf Staff Completes 2020 Article Iv Mission With Iraq Iraqi Economists Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF002/24539-9781484314944/24539-9781484314944/images/9781484314944_A001_f0006-01.jpg" data-lightbox="roadtrip" data-title="Iraq Staff Report For The 2017 Article Iv Consultation Second Review Under The Three Year Stand By Arrangement And Requests For Waivers Of Nonobservance And Applicability Of Performance Criteria And Modification Of Performance Criteria">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF002/24539-9781484314944/24539-9781484314944/images/9781484314944_A001_f0006-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-NLMSy1Tz0AzO95iZpvTNFe3XiNtCUSrnQ';" alt="Iraq Staff Report For The 2017 Article Iv Consultation Second Review Under The Three Year Stand By Arrangement And Requests For Waivers Of Nonobservance And Applicability Of Performance Criteria And Modification Of Performance Criteria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq Staff Report For The 2017 Article Iv Consultation Second Review Under The Three Year Stand By Arrangement And Requests For Waivers Of Nonobservance And Applicability Of Performance Criteria And Modification Of Performance Criteria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imf.org/external/pubs/ft/fandd/2013/03/images/barajas_chart1.gif" data-lightbox="roadtrip" data-title="As A Matter Of Finance Finance Development March 2013">
+											<img class="card-img v-image ads-img " src="https://www.imf.org/external/pubs/ft/fandd/2013/03/images/barajas_chart1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4MJcQEzi0KovR7cI6trVwrZg7CIxYaZTog';" alt="As A Matter Of Finance Finance Development March 2013">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As A Matter Of Finance Finance Development March 2013</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF002/25442-9781484374382/25442-9781484374382/images/9781484374382_f0052-01.jpg" data-lightbox="roadtrip" data-title="Saudi Arabia Selected Issues Saudi Arabia Selected Issues">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF002/25442-9781484374382/25442-9781484374382/images/9781484374382_f0052-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCYepcS9V8cfo4VHx-HeXEAGQM5xFDzLDhQ';" alt="Saudi Arabia Selected Issues Saudi Arabia Selected Issues">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saudi Arabia Selected Issues Saudi Arabia Selected Issues</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF071/24291-9781484315194/24291-9781484315194/images/9781484315194_f0317-01.jpg" data-lightbox="roadtrip" data-title="Chapter 14 Emigration And Remittances In The Caribbean Unleashing Growth And Strengthening Resilience In The Caribbean">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF071/24291-9781484315194/24291-9781484315194/images/9781484315194_f0317-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpPedtU1eAJxc3c9MHV7lbfLa4EC4AvVfgA';" alt="Chapter 14 Emigration And Remittances In The Caribbean Unleashing Growth And Strengthening Resilience In The Caribbean">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chapter 14 Emigration And Remittances In The Caribbean Unleashing Growth And Strengthening Resilience In The Caribbean</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF062/23781-9781475545913/23781-9781475545913/images/9781475545913_f0005-01.jpg" data-lightbox="roadtrip" data-title="Impact Of Migration On Income Levels In Advanced Economies Impact Of Migration On Income Levels In Advanced Economies">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF062/23781-9781475545913/23781-9781475545913/images/9781475545913_f0005-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqUIx1NhOmej7g-e5FIOrWrPqZKzF7Czejug';" alt="Impact Of Migration On Income Levels In Advanced Economies Impact Of Migration On Income Levels In Advanced Economies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Impact Of Migration On Income Levels In Advanced Economies Impact Of Migration On Income Levels In Advanced Economies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/f5/6a/aff56aa418a6125d27928409f44a2e39.jpg" data-lightbox="roadtrip" data-title="Conflict S Legacy For Growth Conflicted Growth Global Economy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/f5/6a/aff56aa418a6125d27928409f44a2e39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdRN-U1iPg-zbMfveBHxsm3txzWG83Hc9Iw';" alt="Conflict S Legacy For Growth Conflicted Growth Global Economy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conflict S Legacy For Growth Conflicted Growth Global Economy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF071/25145-9781484353844/25145-9781484353844/images/9781484353844_f0137-01.jpg" data-lightbox="roadtrip" data-title="Chapter 8 The Long Term Fiscal Costs Of Population Aging Paving The Way To Sustained Growth And Prosperity In Central America Panama And The Dominican Republic">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF071/25145-9781484353844/25145-9781484353844/images/9781484353844_f0137-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsyDHJMeRre3FDIsjt5m5cjY3e-6NDW3WCyA';" alt="Chapter 8 The Long Term Fiscal Costs Of Population Aging Paving The Way To Sustained Growth And Prosperity In Central America Panama And The Dominican Republic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chapter 8 The Long Term Fiscal Costs Of Population Aging Paving The Way To Sustained Growth And Prosperity In Central America Panama And The Dominican Republic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elibrary.imf.org/view/IMF071/22535-9781513511832/22535-9781513511832/images/9781513511832_f0089-01.jpg" data-lightbox="roadtrip" data-title="Chapter 7 Growth Inclusiveness And Equality Building Integrated Economies In West Africa Lessons In Managing Growth Inclusiveness And Volatility">
+											<img class="card-img v-image ads-img " src="https://www.elibrary.imf.org/view/IMF071/22535-9781513511832/22535-9781513511832/images/9781513511832_f0089-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3C4d7T4lTFiHh2dkWwOJ4u8xfvm2afdG22Q';" alt="Chapter 7 Growth Inclusiveness And Equality Building Integrated Economies In West Africa Lessons In Managing Growth Inclusiveness And Volatility">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chapter 7 Growth Inclusiveness And Equality Building Integrated Economies In West Africa Lessons In Managing Growth Inclusiveness And Volatility</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-national-cemetery-missouri.html">Va National Cemetery Missouri</a></li>
+													<li class="list-group-item"><a href="/va-computer-discounts.html">Va Computer Discounts</a></li>
+													<li class="list-group-item"><a href="/va-disability-and-mst.html">Va Disability And Mst</a></li>
+													<li class="list-group-item"><a href="/va-farm-bureau-member-discounts.html">Va Farm Bureau Member Discounts</a></li>
+													<li class="list-group-item"><a href="/va-discounts-on-rental-cars.html">Va Discounts On Rental Cars</a></li>
+													<li class="list-group-item"><a href="/va-disability-and-military-retirement-pay-calculator.html">Va Disability And Military Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/va-and-military-disability.html">Va And Military Disability</a></li>
+													<li class="list-group-item"><a href="/us-navy-armed-guard-wwii-veterans.html">Us Navy Armed Guard Wwii Veterans</a></li>
+													<li class="list-group-item"><a href="/va-military-discharge-upgrade.html">Va Military Discharge Upgrade</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-phone-number.html">Va National Cemetery Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-in-ohio.html">Va National Cemetery In Ohio</a></li>
+													<li class="list-group-item"><a href="/us-military-vets-mc.html">Us Military Vets Mc</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-jacksonville-florida.html">Va National Cemetery Jacksonville Florida</a></li>
+													<li class="list-group-item"><a href="/va-abc-discounts.html">Va Abc Discounts</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-eligibility.html">Va National Cemetery Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-st-louis-mo.html">Va National Cemetery St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/us-navy-sapr-va.html">Us Navy Sapr Va</a></li>
+													<li class="list-group-item"><a href="/va-national-cemetery-riverside-ca.html">Va National Cemetery Riverside Ca</a></li>
+													<li class="list-group-item"><a href="/va-drug-discounts.html">Va Drug Discounts</a></li>
+													<li class="list-group-item"><a href="/va-employee-car-rental-discounts.html">Va Employee Car Rental Discounts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

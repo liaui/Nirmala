@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Data Query - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Data Query",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/600x315/fb/70/cd/fb70cdd40c28b38e1e49e64abcce9b70.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+data+query",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Data Query</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Selected series from the publication are available in a database format. The rates used by the IMF to pay interest and levy charges each financial quarter since 1969 could be searched here. The SDR interest rate calculated every week is the primary rate from which other rates are derived. <br>				
+			</p>
+										<a class="badge badge-success" href="/lowes-no-military-discount-on-appliances.html">lowes no military discount on appliances</a>
+											<a class="badge badge-secondary" href="/lowes-military-circle.html">lowes military circle</a>
+											<a class="badge badge-danger" href="/lowes-military-highway-norfolk-virginia.html">lowes military highway norfolk virginia</a>
+											<a class="badge badge-success" href="/lmfao-similar-words.html">lmfao similar words</a>
+											<a class="badge badge-warning" href="/lmfao-artinya.html">lmfao artinya</a>
+											<a class="badge badge-secondary" href="/lowes-on-military-drive.html">lowes on military drive</a>
+											<a class="badge badge-info" href="/lmaorotf-meaning-text.html">lmaorotf meaning text</a>
+											<a class="badge badge-dark" href="/lowes-military-coupon.html">lowes military coupon</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and image content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/37/9f/72379f39a35013026be95be22bd19c5d.png" data-lightbox="roadtrip" data-title="Data Table Schema Merging Process Example You Can Use This Diagram For Data Normalizing Schema Merging Refactoring Etc Click Data Table Data Data Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/37/9f/72379f39a35013026be95be22bd19c5d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqOp8FxT8KdSVFrKrFjJMrEz-JkP7ywQKFUw';" alt="Data Table Schema Merging Process Example You Can Use This Diagram For Data Normalizing Schema Merging Refactoring Etc Click Data Table Data Data Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Data Table Schema Merging Process Example You Can Use This Diagram For Data Normalizing Schema Merging Refactoring Etc Click Data Table Data Data Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/74/06/997406bc4090592abecb3918938554a3.jpg" data-lightbox="roadtrip" data-title="Image Result For Economist Data Visualization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/74/06/997406bc4090592abecb3918938554a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS5y9yctqu_n8Swwke20bSQLmwASD6G0P44w';" alt="Image Result For Economist Data Visualization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Economist Data Visualization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/88/f0/db88f0fdc27cab33f8d3d40e87a46c7b--red-color-india.jpg" data-lightbox="roadtrip" data-title="Csb Outlook For The Day The Countdown Begins For An Exciting Day And Please Do Not Forget To Get Your Popcorn Us Stock Market Stock Market Global Stock Market">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/88/f0/db88f0fdc27cab33f8d3d40e87a46c7b--red-color-india.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mKI96G_AqDic_46wax4VXOgaJaSqzd0_1g';" alt="Csb Outlook For The Day The Countdown Begins For An Exciting Day And Please Do Not Forget To Get Your Popcorn Us Stock Market Stock Market Global Stock Market">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Csb Outlook For The Day The Countdown Begins For An Exciting Day And Please Do Not Forget To Get Your Popcorn Us Stock Market Stock Market Global Stock Market</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/cd/83/32cd83f48b311bb290e6f0eca4ca7f0a.png" data-lightbox="roadtrip" data-title="Componentes De Arquitectura En Streaming Arquitectura Programacion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/cd/83/32cd83f48b311bb290e6f0eca4ca7f0a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lUcK6RQ2CE0osLN7CfP0bHUakwzydwxuJQ';" alt="Componentes De Arquitectura En Streaming Arquitectura Programacion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Componentes De Arquitectura En Streaming Arquitectura Programacion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2b/3c/1c/2b3c1c1fab18857f7da5ddff5871737e.jpg" data-lightbox="roadtrip" data-title="Crypto Exchanges Line Up As Bitmex Outflows Mount In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2b/3c/1c/2b3c1c1fab18857f7da5ddff5871737e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9eZjku65fI_8WjxHgQL0Jw2l-Bv0zVC4njw';" alt="Crypto Exchanges Line Up As Bitmex Outflows Mount In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crypto Exchanges Line Up As Bitmex Outflows Mount In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/58/b1/6358b1634ac18d5e81679ef9585353ad.png" data-lightbox="roadtrip" data-title="Pin On Ui Ux">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/58/b1/6358b1634ac18d5e81679ef9585353ad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3muO5ey-aG3B-RHOFcdRcc9oaKy5NugZuQ';" alt="Pin On Ui Ux">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ui Ux</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/df/f5/08/dff5085a609d567422b29b845474befd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3muO5ey-aG3B-RHOFcdRcc9oaKy5NugZuQ';" alt="Pin On Ui Ux">
+										<div class="card-body">
+						<h3 class="h5"><b>Expanding the Data column gives me this which is not helping.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf data query</strong>. 
+								
+																	Will my existing credentials work on the new data site. 
+																	Users may create their own queries by selecting Country Indicator and Time to get the data they want and view the data before exporting it. 
+																	The SDDS was established in 1996 to guide countries seeking access to international capital markets in the dissemination of economic and financial data to the public. 
+																	GDP Gross Domestic Product Real Nominal Deflator Index Growth Change. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Users may follow the steps below to replicate the example query on Consumer Price Index indicator with time in columns and countries in rows. 
+																	Your browser is not up-to-date. 
+																	Click on the Bulk Download button located next to the dataset or the Bulk Download icon in some data portals. 
+																	With codes and names. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When I use the address in Get Data then WEB using above direct link I get the following. 
+																	This tutorial walks through the Query tool a powerful interactive feature of the IMF Data Portal that allows users to build export and share custom outputs. 
+																	With the GetDataStructure method and the dataset ID code obtained in step 1 get the data structure dimensions code lists of a dataset. 
+																	Retrieve the list of all countries the list of all indicators etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GFSY Query - Expenditure by Function of Government COFOG. 
+																	For optimum experience we recommend to update your browser to the latest version. 
+																	With the information from steps 1 and 2 use the GetCodeList method to retrieve the list of elements available in a dimensioncode list in a dataset eg. 
+																	Query is a tool that allows users to interact and customize their search for data within a dataset portal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All Members and Lenders Euro Area European Union Former Members G20 HIPC. 
+																	Please help how I can bring this data into BI. 
+																	This information is also provided in the CountrySeries-specific data notes option you may choose to append to the report. 
+																	Query Type SelectionPositions Flows Projections CommitmentsBorrowingsGRA Credit OutstandingBy FacilityPRGT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The World Economic Outlook WEO database is created during the biannual WEO exercise which begins in January and June of each year and results in the April and SeptemberOctober WEO publication. 
+																	Video Tutorials Why Government Finance Statistics Manual. 
+																	In the table report at the end of a query the shaded cells indicate IMF staff estimates. 
+																	Do I need an account to access free IMF Data. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I did read that IMF has its API and SMDX but I am not sure how to approch those methods. 
+																	Either go to the Download IMF Data tab or for some datasets click on the top-right hand corner of a dataset portal. 
+																	The IMF publishes a range of time series data on IMF lending exchange rates and other economic and financial indicators. 
+																	Member SelectionSelect a Group. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Non-shaded cells are therefore actual data. 
+																	GFSY Query - Revenue. 
+																	Manuals guides and other material on statistical practices at the IMF in member countries and of the statistical community at large are also available. 
+																	Table Instructions - The sample table uses the International Financial Statistics dataset and displays Producer Price Index data for selected countries from 2000 through 2009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Retrieval and organization of data in rows and columns. 
+																	The e-GDDS was established in 2015 to guide countries in data dissemination by supporting transparency encouraging statistical development and helping create strong synergies between data dissemination and surveillance. 
+																	I used to subscribe to eLibrary Data. 
+																	GFSY Query - Expense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Video Tutorial The Difference of Gross and Net Debt Video Tutorial Stocks and Flows Video Tutorial. 
+																	IMF Financial Data Query Tool Step 1. 
+																	This rate is used to pay interest and levy charges on SDR holdings and SDR allocations respectively. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/7d/34/387d3433006f81a968fe38b9643e5ea8.jpg" data-lightbox="roadtrip" data-title="The Indian Equity Market Is Expected To Open On A Negative Note Tracking Weak Global Peers Even Sgx Nifty Is Tradin Positive Notes Equity Market Energy Prices">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/7d/34/387d3433006f81a968fe38b9643e5ea8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBjBN9KYC_6DGoEQbL0W4CJ8Daugy7Dg2WeQ';" alt="The Indian Equity Market Is Expected To Open On A Negative Note Tracking Weak Global Peers Even Sgx Nifty Is Tradin Positive Notes Equity Market Energy Prices">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Indian Equity Market Is Expected To Open On A Negative Note Tracking Weak Global Peers Even Sgx Nifty Is Tradin Positive Notes Equity Market Energy Prices</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d4/ec/86/d4ec86d121b7556bc17b17121db2abe5.jpg" data-lightbox="roadtrip" data-title="Modi300 All Rtis On Pm Modi Have Been Answered With Data What About On Congress People Should Understand This Propaganda Understanding What S The Point">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d4/ec/86/d4ec86d121b7556bc17b17121db2abe5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtdBmufgzVxTDmPOBVzRc9P8GQoPROAIxYw';" alt="Modi300 All Rtis On Pm Modi Have Been Answered With Data What About On Congress People Should Understand This Propaganda Understanding What S The Point">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modi300 All Rtis On Pm Modi Have Been Answered With Data What About On Congress People Should Understand This Propaganda Understanding What S The Point</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/38/50/04/3850043147af52c27e4cc1b604f41f9e.jpg" data-lightbox="roadtrip" data-title="Ad Digital Blue Bar Chart With Growing Business Concept Hi Tech Style Technology Chart With A Grid Camera Movement With Depth O Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/38/50/04/3850043147af52c27e4cc1b604f41f9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HCJfva1ydMNwOQ6U4EKYbn9VjShU7QcS7g';" alt="Ad Digital Blue Bar Chart With Growing Business Concept Hi Tech Style Technology Chart With A Grid Camera Movement With Depth O Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ad Digital Blue Bar Chart With Growing Business Concept Hi Tech Style Technology Chart With A Grid Camera Movement With Depth O Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/82/c6/4782c6a10f8957b99d384d41f01a40ff.jpg" data-lightbox="roadtrip" data-title="The Masala Mittelstand Art Painting Manufacturing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/82/c6/4782c6a10f8957b99d384d41f01a40ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCwIXJoT3Qvrhd2iHvUtnklEyUPXMVwDSxpA';" alt="The Masala Mittelstand Art Painting Manufacturing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Masala Mittelstand Art Painting Manufacturing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/videos/thumbnails/originals/3b/05/2d/3b052df81f2f166fbb75821f5b8bcaf4.0000001.jpg" data-lightbox="roadtrip" data-title="Ad Digital Blue Bar Chart With Growing Business Concept Hi Tech Style Technology Chart With A Grid Camera Movement With Depth O Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/videos/thumbnails/originals/3b/05/2d/3b052df81f2f166fbb75821f5b8bcaf4.0000001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kR9Q5jjFL61KlgEEoRgogE7c-HfwIdj7Ng';" alt="Ad Digital Blue Bar Chart With Growing Business Concept Hi Tech Style Technology Chart With A Grid Camera Movement With Depth O Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ad Digital Blue Bar Chart With Growing Business Concept Hi Tech Style Technology Chart With A Grid Camera Movement With Depth O Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/df/f5/08/dff5085a609d567422b29b845474befd.jpg" data-lightbox="roadtrip" data-title="A Full Life Reflections At Ninety Carter Jimmy 9781501115646 Amazon Com Books Jimmy Carter Books Everyone Should Read Nonfiction Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/df/f5/08/dff5085a609d567422b29b845474befd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GYUzdzaOERenS8uxnEE-yo4LL01EBz4Y1Q';" alt="A Full Life Reflections At Ninety Carter Jimmy 9781501115646 Amazon Com Books Jimmy Carter Books Everyone Should Read Nonfiction Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Full Life Reflections At Ninety Carter Jimmy 9781501115646 Amazon Com Books Jimmy Carter Books Everyone Should Read Nonfiction Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c2/6c/01/c26c011f3fad73a06cf9feeeb1b92ff3.jpg" data-lightbox="roadtrip" data-title="Pin En Graficos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c2/6c/01/c26c011f3fad73a06cf9feeeb1b92ff3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCiJ8-xDUXwzCU6QW0zlJKZwS9fvI89LaYg';" alt="Pin En Graficos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Graficos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/6c/d3/a46cd3d4b4dbb020346be0a4c15ff7ae.jpg" data-lightbox="roadtrip" data-title="People Who Post About Doing Exercise On Facebook Often Have Serious Psychological Problems Social Media Facebook Zuckerberg Happy Relationships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/6c/d3/a46cd3d4b4dbb020346be0a4c15ff7ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6Z5QRTYuNCAJMs5cnr-PpoieREhGJaoGEw';" alt="People Who Post About Doing Exercise On Facebook Often Have Serious Psychological Problems Social Media Facebook Zuckerberg Happy Relationships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Who Post About Doing Exercise On Facebook Often Have Serious Psychological Problems Social Media Facebook Zuckerberg Happy Relationships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/fb/70/cd/fb70cdd40c28b38e1e49e64abcce9b70.jpg" data-lightbox="roadtrip" data-title="Bitcointe On Twitter Bitcoin Peer Blockchain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/fb/70/cd/fb70cdd40c28b38e1e49e64abcce9b70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGSHkWk6ywfTjHpH-EY9x-pqLrEL8778HMg';" alt="Bitcointe On Twitter Bitcoin Peer Blockchain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bitcointe On Twitter Bitcoin Peer Blockchain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/136x136/2b/3c/1c/2b3c1c1fab18857f7da5ddff5871737e.jpg" data-lightbox="roadtrip" data-title="Crypto Exchanges Line Up As Bitmex Outflows Mount In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/136x136/2b/3c/1c/2b3c1c1fab18857f7da5ddff5871737e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MVpQJ0ymUfIUzG5XP_U_dF8mDPChRac1EQ';" alt="Crypto Exchanges Line Up As Bitmex Outflows Mount In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crypto Exchanges Line Up As Bitmex Outflows Mount In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/75x75_RS/66/28/0e/66280e55a6b146831167e1e2dbcb1327.jpg" data-lightbox="roadtrip" data-title="Tee Off With Csb S Outlook For The Day April 15 2015 Stocks India Markets Positive Notes Global Stock Market Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/75x75_RS/66/28/0e/66280e55a6b146831167e1e2dbcb1327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3AyV5YKn7GDQzii4UxUZYQ5WCcRHkVYQWA';" alt="Tee Off With Csb S Outlook For The Day April 15 2015 Stocks India Markets Positive Notes Global Stock Market Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tee Off With Csb S Outlook For The Day April 15 2015 Stocks India Markets Positive Notes Global Stock Market Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/members-of-imf-2020.html">Members Of Imf 2020</a></li>
+													<li class="list-group-item"><a href="/military-discount-hotel-website.html">Military Discount Hotel Website</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-anytime-fitness.html">Military Discount At Anytime Fitness</a></li>
+													<li class="list-group-item"><a href="/military-and-law-enforcement-discount-website.html">Military And Law Enforcement Discount Website</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-adt.html">Military Discount For Adt</a></li>
+													<li class="list-group-item"><a href="/marriott-military-leisure-discount.html">Marriott Military Leisure Discount</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-iphone.html">Military Discount On Iphone</a></li>
+													<li class="list-group-item"><a href="/military-discount-disneyland-food.html">Military Discount Disneyland Food</a></li>
+													<li class="list-group-item"><a href="/meaning-of-imfao-in-chat.html">Meaning Of Imfao In Chat</a></li>
+													<li class="list-group-item"><a href="/meaning-of-imf-in-hindi.html">Meaning Of Imf In Hindi</a></li>
+													<li class="list-group-item"><a href="/marriott-military-spouse-discount.html">Marriott Military Spouse Discount</a></li>
+													<li class="list-group-item"><a href="/military-discount-lowes-website.html">Military Discount Lowes Website</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-eddie-bauer.html">Military Discount At Eddie Bauer</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-microsoft-products.html">Military Discount For Microsoft Products</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-hp-computers.html">Military Discount For Hp Computers</a></li>
+													<li class="list-group-item"><a href="/military-discount-on-apple-macbook-pro.html">Military Discount On Apple Macbook Pro</a></li>
+													<li class="list-group-item"><a href="/meaning-of-imf-in-usa.html">Meaning Of Imf In Usa</a></li>
+													<li class="list-group-item"><a href="/military-discount-at-pizza-express.html">Military Discount At Pizza Express</a></li>
+													<li class="list-group-item"><a href="/military-discount-for-iphone.html">Military Discount For Iphone</a></li>
+													<li class="list-group-item"><a href="/lowes-weber-military-discount.html">Lowes Weber Military Discount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

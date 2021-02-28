@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Imf Angola Loan - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Imf Angola Loan",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/150x150/ab/1e/aa/ab1eaab5e1a7a8947696908286cfbf26.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=imf+angola+loan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Imf Angola Loan</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Both the loan and the debt will increase to 12000 with the Monkey Knowledge Backroom Deals. WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African. The IMF is providing financial assistance and debt service relief to member countries facing the economic impact of the COVID-19 pandemic. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-computer-discounts.html">va computer discounts</a>
+											<a class="badge badge-primary" href="/va-national-cemetery-bushnell-florida.html">va national cemetery bushnell florida</a>
+											<a class="badge badge-primary" href="/va-military-discounts.html">va military discounts</a>
+											<a class="badge badge-secondary" href="/va-national-cemetery-jacksonville-florida.html">va national cemetery jacksonville florida</a>
+											<a class="badge badge-info" href="/va-military-furlough.html">va military furlough</a>
+											<a class="badge badge-light" href="/va-employee-hotel-discounts.html">va employee hotel discounts</a>
+											<a class="badge badge-light" href="/va-clinic-on-military-drive.html">va clinic on military drive</a>
+											<a class="badge badge-danger" href="/usps-hiring-veterans.html">usps hiring veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our site provides you with hints for seeing the maximum quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/a2/94/e2a294645af678bc458ef6d2e115be60.jpg" data-lightbox="roadtrip" data-title="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/a2/94/e2a294645af678bc458ef6d2e115be60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRGRJri8ivXe9AqXusO-CkeRIWJEWXPmKdA';" alt="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/56/15/285615333ea498d1df91447dfdf929be.jpg" data-lightbox="roadtrip" data-title="Opec Angola Looks To Imf As Oil Prices Hammer Economy Economy Oils Angola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/56/15/285615333ea498d1df91447dfdf929be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiAOBMwvCPBak2rsNlXufzCj2dG7aS79Kmg';" alt="Opec Angola Looks To Imf As Oil Prices Hammer Economy Economy Oils Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opec Angola Looks To Imf As Oil Prices Hammer Economy Economy Oils Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/8c/de/ea8cde502a60ec937c3a26baef0a536f.png" data-lightbox="roadtrip" data-title="Pin On Thx Economy Trade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/8c/de/ea8cde502a60ec937c3a26baef0a536f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8TM5l5bxRKIC4dKyT0TSIMXjKrmj1osZDmw';" alt="Pin On Thx Economy Trade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thx Economy Trade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/c7/cf/04/c7cf04314fe811612725f29bc896e8bb.jpg" data-lightbox="roadtrip" data-title="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/c7/cf/04/c7cf04314fe811612725f29bc896e8bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CFQvyx0dez-QlT8um7SUWzK2vlJF_QU2ug';" alt="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/4b/ed/6d/4bed6d8110ba5913858c106440f1fd36.jpg" data-lightbox="roadtrip" data-title="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/4b/ed/6d/4bed6d8110ba5913858c106440f1fd36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAd8FhoLJKobPplsvQ38vRJ_KMo4H3_Cm6KA';" alt="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/87/db/4787db3ddfb0944dcd81787f84ea18a6.jpg" data-lightbox="roadtrip" data-title="Pin On China Africa Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/87/db/4787db3ddfb0944dcd81787f84ea18a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJUKrTsC6dbd7UvcS0CE-en6GGstmKuXvhw';" alt="Pin On China Africa Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On China Africa Project</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/94/ba/4c/94ba4c5ee8c793e67c9beeb6035ad630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJUKrTsC6dbd7UvcS0CE-en6GGstmKuXvhw';" alt="Pin On China Africa Project">
+										<div class="card-body">
+						<h3 class="h5"><b>The International Monetary Funds executive board announced Monday it had approved the disbursement of 4875 million to Angola which is suffering from low oil prices due to the coronavirus.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Imf angola loan</strong>. 
+								
+																	Street vendors in front of the National Bank of Angola. 
+																	IMF board approves disbursement of 4875M to Angola posted January 12 2021 at 0935 pm by AFP The International Monetary Funds executive board announced Monday it had approved the disbursement of 4875 million to Angola which is suffering from low oil prices due to the coronavirus pandemic. 
+																	If approved the reform loan would increase from 37 billion to 45 billion. 
+																	IMF support is being provided under a 27-month Stand-By Arrangement to support orderly policy adjustments that aim to restore macroeconomic balances and rebuild international reserves. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Outstanding Purchases and Loans SDR. 
+																	JOHANNESBURG - The International Monetary Fund says it has approved a three-year loan of. 
+																	Policy support is key to financial stability with IMFs Fabio Natalucci SDR Rates for February 11 2021 SDR Interest Rate 0090 1 USD SDR 069329 MORE The IMF and COVID-19. 
+																	WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The loan is the largest IMF financing package to date for a sub-Saharan African country during the current global crisis. 
+																	IMF Approves Loan To Struggling OPEC Producer Angola By Irina Slav - Jan 12 2021 930 AM CST Africas second-largest oil exporter Angola has received approval from the International Monetary Fund. 
+																	LONDONJOHANNESBURG Reuters - Angola will receive 62 billion in debt relief over the next three years thanks to agreements lined up with three of its major creditors the International Monetary. 
+																	Jan 11 2021 746 PM WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African oil exporters 37 billion loan program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The International Monetary Fund approved the disbursement of 488 million to Angola and reiterated its confidence that Africas second-biggest oil producer will rein in public debt to sustainable. 
+																	FILE - Angolan President Joao Lourenco speaks during a press conference in Luanda Angola Sept. 
+																	The Executive Board of the International Monetary Fund IMF completed Monday the fourth review of Angolas economic programme supported by an extended arrangement under the Extended Fund Facility EFF the international lender said in a statement. 
+																	The IMF Press Center is a password-protected site for working journalists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Angolan government has introduced comprehensive fiscal and monetary measures to support economic activities and help the most vulnerable. 
+																	In 2018 the IMF had a total of 45 billion available for Angola when it approved a three-year extended arrangement. 
+																	IMF Loan Ability Upon activation the player will receive 10000 but at the cost of 10000 debt. 
+																	The ability will recharge after 90 seconds but can only be activated again if all of that IMF Loan Banks debt is paid off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On December 7 2018 the Executive Board of the International Monetary Fund IMF approved a three-year EAEFF in an amount of SDR 2673 billion about US37 billion or 361 percent of Angolas quota to support Angolas economic reform program. 
+																	This page provides an overview of assistance approved by the IMFs Executive Board since late March 2020 under its various lending facilities and debt service relief financed by the Catastrophe Containment. 
+																	WASHINGTON Reuters - The International Monetary Fund said on Monday its executive board approved a disbursement to Angola of about 4875 million after completing a fourth review of the African. 
+																	The Angolan government is seeking to increase its loan from the International Monetary Fund IMF by 800 million to mitigate the current economic crisis induced by the drop in oil prices. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/90/d2/4b/90d24bf062beb16eecd223446d06a355.jpg" data-lightbox="roadtrip" data-title="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/90/d2/4b/90d24bf062beb16eecd223446d06a355.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQIjyRDcO4dktsADM9u_aNpRpUePqmbUvqA';" alt="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/87/7e/d9877ed754c6fbbaed7663425f3ea4e5.jpg" data-lightbox="roadtrip" data-title="Pin On China Africa Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/87/7e/d9877ed754c6fbbaed7663425f3ea4e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIeBim51756VjTncIcs9bJ2toKL5rFwbuhQ';" alt="Pin On China Africa Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On China Africa Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/ab/1e/aa/ab1eaab5e1a7a8947696908286cfbf26.jpg" data-lightbox="roadtrip" data-title="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/ab/1e/aa/ab1eaab5e1a7a8947696908286cfbf26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_-tG49_Z1WiLj_Xv0DdgeHjTJcLux2BvPw';" alt="The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Imfs New 1 Billion Loan Package For Angola Shows Just How Little We Know About Whats Going On Behind The Scenes In 2020 How Little We Know Loan Angola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/02/8f/d7028f1e51586391819132c87ee657fa.jpg" data-lightbox="roadtrip" data-title="Comesa Common Market For Eastern And Southern Africa Africa Map Southern Africa Africa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/02/8f/d7028f1e51586391819132c87ee657fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRkexFUEgZ2Zvsov1grmkVPopOLdDlJd4fig';" alt="Comesa Common Market For Eastern And Southern Africa Africa Map Southern Africa Africa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comesa Common Market For Eastern And Southern Africa Africa Map Southern Africa Africa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bc/d8/3d/bcd83dd0eb39718e455b30814f2f0f08.jpg" data-lightbox="roadtrip" data-title="Did Mnuchin Signal A Policy Shift Today Tax Haven Emergency Loans Public Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bc/d8/3d/bcd83dd0eb39718e455b30814f2f0f08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_MHXwbTbo5xE3STt6HkoHpWcODVLihpIZQ';" alt="Did Mnuchin Signal A Policy Shift Today Tax Haven Emergency Loans Public Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did Mnuchin Signal A Policy Shift Today Tax Haven Emergency Loans Public Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/66/f9/0166f93105abd92ca0f481dd92e1a444.jpg" data-lightbox="roadtrip" data-title="Extremely Splendid O Sordoteocrito Money Collection Banknote Collection Paper Currency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/66/f9/0166f93105abd92ca0f481dd92e1a444.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFbcFpGX_mj_U2tCcHvI_ESM5MGRZpotGQQ';" alt="Extremely Splendid O Sordoteocrito Money Collection Banknote Collection Paper Currency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Extremely Splendid O Sordoteocrito Money Collection Banknote Collection Paper Currency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/1a/0e/371a0e0256760c1240a962a7b802ce59.jpg" data-lightbox="roadtrip" data-title="Miss Jamaica Celebrating The Beauty Of Diversity Yendi Phillips Beauty Jamaican Culture Jamaican Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/1a/0e/371a0e0256760c1240a962a7b802ce59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSR2u1OhbYI-qSGyH-DHUmk8ZqGJNLbC4j0w';" alt="Miss Jamaica Celebrating The Beauty Of Diversity Yendi Phillips Beauty Jamaican Culture Jamaican Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Miss Jamaica Celebrating The Beauty Of Diversity Yendi Phillips Beauty Jamaican Culture Jamaican Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0c/e8/0a/0ce80a54b014e9e91c7f603eb1f0f04f.jpg" data-lightbox="roadtrip" data-title="Despite Wide Support For Ngozi Okonjo Iweala Nigeria S Candidate For The Director General Of The World Trade Organisation Wto In 2020 Nigeria Femi Female Directors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0c/e8/0a/0ce80a54b014e9e91c7f603eb1f0f04f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlCuUPXO7CMOPDrQ4tqxYibslGBTU1UvN54w';" alt="Despite Wide Support For Ngozi Okonjo Iweala Nigeria S Candidate For The Director General Of The World Trade Organisation Wto In 2020 Nigeria Femi Female Directors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Despite Wide Support For Ngozi Okonjo Iweala Nigeria S Candidate For The Director General Of The World Trade Organisation Wto In 2020 Nigeria Femi Female Directors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/f0/15/03f015a70b3757af5f6b3f6332e64411.jpg" data-lightbox="roadtrip" data-title="As Eurobond Investors Boo Zambia Theyre Now Cheering For Angola In 2020 External Debt Angola Investors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/f0/15/03f015a70b3757af5f6b3f6332e64411.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2FDW-vR-FYpEFa0MdalS1QTJAj5i0mAg7TA';" alt="As Eurobond Investors Boo Zambia Theyre Now Cheering For Angola In 2020 External Debt Angola Investors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As Eurobond Investors Boo Zambia Theyre Now Cheering For Angola In 2020 External Debt Angola Investors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/94/ba/4c/94ba4c5ee8c793e67c9beeb6035ad630.jpg" data-lightbox="roadtrip" data-title="Immagine Correlata Banconota Immagini">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/94/ba/4c/94ba4c5ee8c793e67c9beeb6035ad630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2LuMBSG-Rb-3mF4Cd3qTvz3IohhktgDdXw';" alt="Immagine Correlata Banconota Immagini">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Immagine Correlata Banconota Immagini</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=comesa+countries+map&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctxmqykp6diipc8t7qcyhvj477y2j5irntdblxa Pnsbovv Hs Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=comesa+countries+map&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=comesa+countries+map&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctxmqykp6diipc8t7qcyhvj477y2j5irntdblxa Pnsbovv Hs Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctxmqykp6diipc8t7qcyhvj477y2j5irntdblxa Pnsbovv Hs Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-iraqi-dinar.html">Imf Iraqi Dinar</a></li>
+													<li class="list-group-item"><a href="/imf-jordan-outlook.html">Imf Jordan Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-jobs-kuwait.html">Imf Jobs Kuwait</a></li>
+													<li class="list-group-item"><a href="/imf-japan-data.html">Imf Japan Data</a></li>
+													<li class="list-group-item"><a href="/imf-japan-report.html">Imf Japan Report</a></li>
+													<li class="list-group-item"><a href="/imf-ka-ceo-kaun-hai.html">Imf Ka Ceo Kaun Hai</a></li>
+													<li class="list-group-item"><a href="/imf-jobs-linkedin.html">Imf Jobs Linkedin</a></li>
+													<li class="list-group-item"><a href="/imf-japan-gdp-per-capita.html">Imf Japan Gdp Per Capita</a></li>
+													<li class="list-group-item"><a href="/imf-japan-consumption-tax.html">Imf Japan Consumption Tax</a></li>
+													<li class="list-group-item"><a href="/imf-internship-undergraduate.html">Imf Internship Undergraduate</a></li>
+													<li class="list-group-item"><a href="/imf-jobs-in-south-sudan.html">Imf Jobs In South Sudan</a></li>
+													<li class="list-group-item"><a href="/imf-japan-economic-outlook.html">Imf Japan Economic Outlook</a></li>
+													<li class="list-group-item"><a href="/imf-jamaica-review.html">Imf Jamaica Review</a></li>
+													<li class="list-group-item"><a href="/imf-jordan-article-iv.html">Imf Jordan Article Iv</a></li>
+													<li class="list-group-item"><a href="/imf-jamaica-office.html">Imf Jamaica Office</a></li>
+													<li class="list-group-item"><a href="/imf-jobs-washington-dc.html">Imf Jobs Washington Dc</a></li>
+													<li class="list-group-item"><a href="/imf-ka-head.html">Imf Ka Head</a></li>
+													<li class="list-group-item"><a href="/imf-japan-gdp-2021.html">Imf Japan Gdp 2021</a></li>
+													<li class="list-group-item"><a href="/imf-jobs-tanzania.html">Imf Jobs Tanzania</a></li>
+													<li class="list-group-item"><a href="/imf-jobs-in-dc.html">Imf Jobs In Dc</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

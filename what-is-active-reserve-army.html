@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Active Reserve Army - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Active Reserve Army",
+  "datePublished": "2021-02-28",
+  "image": "https://i.pinimg.com/736x/e0/7e/98/e07e9891b5c7415e2561597374c19461.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nirmala",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+active+reserve+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Nirmala" class="navbar-brand mb-1">Nirmala</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Active Reserve Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Other times a reserve unit is called upon is to help during a natural disaster. Call us at 1-800-325-4389 or email us here. Reserve units are under the command of their respective branch of the military. <br>				
+			</p>
+										<a class="badge badge-danger" href="/imf-economic-outlook-for-2021.html">imf economic outlook for 2021</a>
+											<a class="badge badge-dark" href="/imf-definition-of-international-reserves.html">imf definition of international reserves</a>
+											<a class="badge badge-light" href="/imf-economic-outlook-april-2020.html">imf economic outlook april 2020</a>
+											<a class="badge badge-light" href="/imf-director-general.html">imf director general</a>
+											<a class="badge badge-dark" href="/imf-dubai-report.html">imf dubai report</a>
+											<a class="badge badge-danger" href="/imf-definition-of-external-debt.html">imf definition of external debt</a>
+											<a class="badge badge-danger" href="/imf-director-europe.html">imf director europe</a>
+											<a class="badge badge-info" href="/imf-director-steps-down.html">imf director steps down</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the ideal site.  Our site gives you hints for viewing the highest quality video and picture content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/70/04/0f70045fc171c88664f71e453d97740d.png" data-lightbox="roadtrip" data-title="Active Duty Vs Reserves What S The Difference Army Reserve Army Basic Training Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/70/04/0f70045fc171c88664f71e453d97740d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7t7P6bx_hT-uhBscXwCsm75Thqc1itYxaXQ&amp;ec=45774421';" alt="Active Duty Vs Reserves What S The Difference Army Reserve Army Basic Training Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Active Duty Vs Reserves What S The Difference Army Reserve Army Basic Training Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" data-lightbox="roadtrip" data-title="Pin On Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQrZijValsb8mGMemdC8byiyUVovOmkkBPA&amp;ec=45774421';" alt="Pin On Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/9d/31/54/9d3154fcaa4c69465df84d303592c6a6.jpg" data-lightbox="roadtrip" data-title="Army Base Pay And Basic Pay Chart Army Pay Army Base Active Duty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/9d/31/54/9d3154fcaa4c69465df84d303592c6a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7DDMJA0Ok-8DTeZLN67EuLL_-P78hsnWig&amp;ec=45774421';" alt="Army Base Pay And Basic Pay Chart Army Pay Army Base Active Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Base Pay And Basic Pay Chart Army Pay Army Base Active Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/c5/65/04c5657d648aad4d01257ee15e909e8f.jpg" data-lightbox="roadtrip" data-title="Army Careers Ways To Serve In The Army Army Reserve Army Us Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/c5/65/04c5657d648aad4d01257ee15e909e8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEp9Hk2mr9BBfx_Jp_ggRnK-sPiwJkgDwPQ&amp;ec=45774421';" alt="Army Careers Ways To Serve In The Army Army Reserve Army Us Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Careers Ways To Serve In The Army Army Reserve Army Us Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/1f/af/a41faf92aa34a89f52033ce0705403ea.jpg" data-lightbox="roadtrip" data-title="Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/1f/af/a41faf92aa34a89f52033ce0705403ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlHvWwq0EoE6sn6HVVJJHrtNqvp9BrY4Q0g&amp;ec=45774421';" alt="Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/a5/23/afa5231d75fbe6c4d5c204bd02be5dfc.jpg" data-lightbox="roadtrip" data-title="Army Careers Ways To Serve In The Army Army Reserve Army Military Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/a5/23/afa5231d75fbe6c4d5c204bd02be5dfc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkXOscLzVR7jiauW69gCzCoxsRtirzEeQ_A&amp;ec=45774421';" alt="Army Careers Ways To Serve In The Army Army Reserve Army Military Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Careers Ways To Serve In The Army Army Reserve Army Military Careers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkXOscLzVR7jiauW69gCzCoxsRtirzEeQ_A&amp;ec=45774421';" alt="Army Careers Ways To Serve In The Army Army Reserve Army Military Careers">
+										<div class="card-body">
+						<h3 class="h5"><b>The Army Reserve is a component of the US Army.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is active reserve army</strong>. 
+								
+																	So when I became active duty I was ecstatic to finally have a full-time job with health insurance for the family and retirement. 
+																	But there is also another category known as the Individual Ready Reserve IRR sometimes referred to as the Inactive Ready Reserve. 
+																	Individuals who are interested in serving in the Army have the option of active duty or reserve service. 
+																	Members of the Individual Ready Reserve IRR are trained Soldiers who may be called upon if needed to replace Soldiers in active duty and Army Reserve units. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are full-time soldiers with a commitment of several years usually four to six on an enlistment and then Reserve time for a balance of eight years. 
+																	On the battlefield being able to deploy combat-ready units as quickly as possible can make a large impact on the mission. 
+																	AGRs Active Guard Reserve AGR Soldiers serve in the military reserves but are full-time and have the same benefits as Active Duty Soldiers. 
+																	ACTIVE GUARD RESERVE TRAIN SUPPORT AND MOBILIZE IN THE ARMY RESERVE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Active Guard Reserve Soldiers are stationed at thousands of Army Reserve units throughout the United States. 
+																	One reason to activate a reserve unit is because of war. 
+																	AGR Soldiers serve full-time on Active Duty in units and organizations of the Army. 
+																	Many of the Soldiers in the IRR have. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Serving in the Army Reserve is equivalent to having a part-time job. 
+																	Active duty members are able to retire with full benefits after 20 years of service. 
+																	He is active duty but he is not Regular Army RA hes Army Reserve USAR. 
+																	Call or email us for more information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Reserve Each branch of the military has a Reserve component and the Reserve are under the command of their respective military branch eg Army Reserve are under the command of the Army. 
+																	Active duty is a status. 
+																	While members of reserve forces either go to school full-time or hold civilian jobs someone. 
+																	Anyone that joins the military in an active duty capacity will be serving in the Army full-time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The health insurance generally covers everything 1. 
+																	The purpose of the Reserve is to provide and maintain trained units and qualified persons to be available for active duty in the armed forces when needed. 
+																	Reserve forces are generally considered part of a permanent standing body of armed forces. 
+																	Active Guard Reserve AGR refers to a United States Army and United States Air Force federal military program which places Army National Guard and Army Reserve soldiers and Air National Guard and Air Force Reserve airmen on federal active duty status under Title 10 USC or full-time National Guard duty under Title 32 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They maintain their full-time civilian career or attend school while serving at a location close to home. 
+																	A military reserve force is a military organization composed of citizen-soldiers of a country who combine a military role or career with a civilian career. 
+																	If qualified they are encouraged to remain on active duty until regular retirement. 
+																	With an Active Guard Reserve job you receive full pay medical care for you and your family and the opportunity for retirement after 20 years of active service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reservists on the other hand have six-year contracts of reserve service and two of inactive service typically. 
+																	This is generally four years of active service and four years of inactive service. 
+																	There are active duty troops members of the Air National Guard and Army Guard and members of the Reserve for each respective branch of service. 
+																	Active Duty and ensure the Army Reserve complements your life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Military has several categories of military service. 
+																	Call Us Email Us. 
+																	For example when an Officer accepts a commission he does so in either the RA USAR or USNG. 
+																	Make Your Transition to the Army Reserve If you are not currently serving in the Army please talk with a recruiter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are not normally kept under arms and their main role is to be available to fight when their military requires additional manpower. 
+																	The AGR refers to the military program of the Army and Air Force which places Army National Guard and Army Reserve soldiers and Air National Guard and Air Force Reserve airmen on federal active duty as needed to fill critical billets for at least 180 days or more. 
+																	The Army Reserve consists of mostly part-time soldiers who can be activated into full-time reserve positions in support of operations. 
+																	Active duty personnel are classed as being in the Regular Army RA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reserve duty members receive full medical and dental benefits only if called for active duty service. 
+																	When I joined the Army I had been unemployed for two years prior. 
+																	502f for a period of 180 consecutive days or greater in order to provide full-time support to National Guard and Reserve organizations for the purpose of leading. 
+																	Active Guard Reserve AGR Soldiers serve full-time and enjoy the same benefits as Active Duty Soldiers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reservists are responsible for attending training formally known as Battle Assembly one weekend every month and serve two weeks of mandatory training each year. 
+																	The reason military branches have reserve units is to have qualified and trained personnel ready to enter Active Duty if needed. 
+																	All of the RA is on Active Duty status. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/f6/bc/1ff6bc80f2b88bf594fa1245ec66f120.jpg" data-lightbox="roadtrip" data-title="Pin On Reserve National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/f6/bc/1ff6bc80f2b88bf594fa1245ec66f120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHZPjIlMwi3vZ3NGEmOGTRF4RIW_Zph0sHQ&amp;ec=45774421';" alt="Pin On Reserve National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Reserve National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" data-lightbox="roadtrip" data-title="Us Army Reserves Military Humor Army Humor Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YS_gYkfVB450R-VVS477R_edmLX3duuBCg&amp;ec=45774421';" alt="Us Army Reserves Military Humor Army Humor Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Reserves Military Humor Army Humor Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/e2/ce/a7e2ce4f16e8fe4adfc31b5c735e9586.jpg" data-lightbox="roadtrip" data-title="Whether You Re Interested In Army Reserve Or Active Duty There Are Many Ways To Serve In The Army Explore The Possible Army Car In 2020 Army Army Reserve Active Duty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/e2/ce/a7e2ce4f16e8fe4adfc31b5c735e9586.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEd2yiZa53HrBd_vfacvvlMl0gI_jh0Asbqw&amp;ec=45774421';" alt="Whether You Re Interested In Army Reserve Or Active Duty There Are Many Ways To Serve In The Army Explore The Possible Army Car In 2020 Army Army Reserve Active Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whether You Re Interested In Army Reserve Or Active Duty There Are Many Ways To Serve In The Army Explore The Possible Army Car In 2020 Army Army Reserve Active Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/69/98/186998e0b89ab0f5047f35eb88bd1048.png" data-lightbox="roadtrip" data-title="Did You Know The United States Has Approximately 1 3 Million Active Duty Troops With Another 865 000 In Reserve O Motivationl Army Navy Monday Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/69/98/186998e0b89ab0f5047f35eb88bd1048.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4hWz4j8kedUwVjnyJedSXeggF2fEx3o_imw&amp;ec=45774421';" alt="Did You Know The United States Has Approximately 1 3 Million Active Duty Troops With Another 865 000 In Reserve O Motivationl Army Navy Monday Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Know The United States Has Approximately 1 3 Million Active Duty Troops With Another 865 000 In Reserve O Motivationl Army Navy Monday Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/7a/f3/0d7af3372e56d88fe5bdeb47958c21a8.jpg" data-lightbox="roadtrip" data-title="Pin On Stuff We Should Know">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/7a/f3/0d7af3372e56d88fe5bdeb47958c21a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18uqqedsx_NnDEYweLDKusPInMvB3g3kUVg&amp;ec=45774421';" alt="Pin On Stuff We Should Know">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stuff We Should Know</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/73/32/14733224d76a473f13a93bdb77bd0f57.jpg" data-lightbox="roadtrip" data-title="As An Active Duty Af Member I Like To Joke With My Older And Younger Brothers Who Joined The Army Reserve We Come Military Love Military Life Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/73/32/14733224d76a473f13a93bdb77bd0f57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEKee4ySBVERVTMc9EUFU-iiAHWaO7pztRxw&amp;ec=45774421';" alt="As An Active Duty Af Member I Like To Joke With My Older And Younger Brothers Who Joined The Army Reserve We Come Military Love Military Life Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As An Active Duty Af Member I Like To Joke With My Older And Younger Brothers Who Joined The Army Reserve We Come Military Love Military Life Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/00/fb/9b00fbeff4395ef2d221b3ac16ebe91f.jpg" data-lightbox="roadtrip" data-title="Straight From Basic Training Is There A Difference Between Army Reserve And Active Duty Army Reserve Military Workout Active Duty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/00/fb/9b00fbeff4395ef2d221b3ac16ebe91f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBObkjKPjP8_Qw1wVKGh0uuY1jypPvbOyanQ&amp;ec=45774421';" alt="Straight From Basic Training Is There A Difference Between Army Reserve And Active Duty Army Reserve Military Workout Active Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Straight From Basic Training Is There A Difference Between Army Reserve And Active Duty Army Reserve Military Workout Active Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/59/d1/bb59d1335bebf4d31377d301fabfb6b4.png" data-lightbox="roadtrip" data-title="Pin On Thinking About">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/59/d1/bb59d1335bebf4d31377d301fabfb6b4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Uv6hJrdeHIvpcUv_PX2BhS06tVCt_wZlgQ&amp;ec=45774421';" alt="Pin On Thinking About">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thinking About</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/04/2d/70042de97f189acf1d7560112e74b714.jpg" data-lightbox="roadtrip" data-title="Free Military Tax Filing For Military Active Duty Reserve Military Military Wife Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/04/2d/70042de97f189acf1d7560112e74b714.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fzel-L5kL6S6SF2QjBQ99xchUky0goO2UA&amp;ec=45774421';" alt="Free Military Tax Filing For Military Active Duty Reserve Military Military Wife Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Military Tax Filing For Military Active Duty Reserve Military Military Wife Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/cc/19/e5cc193e1ab5c81ef33fa9e13b1fca6d.png" data-lightbox="roadtrip" data-title="Pin On Q">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/cc/19/e5cc193e1ab5c81ef33fa9e13b1fca6d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_biEbMzB3UTZv452NUN8bgy2CFnwH_mp_pQ&amp;ec=45774421';" alt="Pin On Q">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Q</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ee/e6/b3/eee6b3abacc88f7d0b930f42b2931863.jpg" data-lightbox="roadtrip" data-title="Pin On Active Duty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ee/e6/b3/eee6b3abacc88f7d0b930f42b2931863.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsSay6qBWUUggL_aMhVC3GnAPEPeDqQOUrg&amp;ec=45774421';" alt="Pin On Active Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Active Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/a6/c4/2fa6c415877c5dfd011b14323b8d4819.jpg" data-lightbox="roadtrip" data-title="New Army Lieutenant Fulfills Childhood Desire To Serve Staff Sergeant Army United States Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/a6/c4/2fa6c415877c5dfd011b14323b8d4819.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6sCIkrEkj2CjuFHeNKBAuFfWX26_X6lxEg&amp;ec=45774421';" alt="New Army Lieutenant Fulfills Childhood Desire To Serve Staff Sergeant Army United States Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Army Lieutenant Fulfills Childhood Desire To Serve Staff Sergeant Army United States Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/7e/98/e07e9891b5c7415e2561597374c19461.jpg" data-lightbox="roadtrip" data-title="Air Force Rotc Reserve Officer Training Corps Is A Program Offered During College For Those Aspiring To Join Th Rotc Reserve Officer Training Corps Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/7e/98/e07e9891b5c7415e2561597374c19461.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDpGral_skI4z4ZaUS6e4OAipVftuCA81kA&amp;ec=45774421';" alt="Air Force Rotc Reserve Officer Training Corps Is A Program Offered During College For Those Aspiring To Join Th Rotc Reserve Officer Training Corps Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Rotc Reserve Officer Training Corps Is A Program Offered During College For Those Aspiring To Join Th Rotc Reserve Officer Training Corps Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/36/f9/a036f9fffb34f49286abbe3164045763.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/36/f9/a036f9fffb34f49286abbe3164045763.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqo0J-wGvbciSAfMxEMMW69fkH7B8MxGtBw&amp;ec=45774421';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/40/67/d2406718ce08e142a12e28669a3c823a.jpg" data-lightbox="roadtrip" data-title="North Carolina School Reinstates Dean Demoted To Gym Teacher After Being Called To Active Duty In The Army Army Reserve Active Duty Uniformed Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/40/67/d2406718ce08e142a12e28669a3c823a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Aso-F0smANF7lmnq-ZavfFz69Ilj7YJZwQ';" alt="North Carolina School Reinstates Dean Demoted To Gym Teacher After Being Called To Active Duty In The Army Army Reserve Active Duty Uniformed Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Carolina School Reinstates Dean Demoted To Gym Teacher After Being Called To Active Duty In The Army Army Reserve Active Duty Uniformed Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+					</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/imf-india-rank-2020.html">Imf India Rank 2020</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-thailand.html">Imf Inflation Thailand</a></li>
+													<li class="list-group-item"><a href="/imf-india-growth.html">Imf India Growth</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-low.html">Imf Inflation Low</a></li>
+													<li class="list-group-item"><a href="/imf-internship-cover-letter.html">Imf Internship Cover Letter</a></li>
+													<li class="list-group-item"><a href="/imf-indian.html">Imf Indian</a></li>
+													<li class="list-group-item"><a href="/imf-india-real-gdp.html">Imf India Real Gdp</a></li>
+													<li class="list-group-item"><a href="/imf-india-population.html">Imf India Population</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-forecast-denmark.html">Imf Inflation Forecast Denmark</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-rate-egypt.html">Imf Inflation Rate Egypt</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-ghana.html">Imf Inflation Ghana</a></li>
+													<li class="list-group-item"><a href="/imf-india-page.html">Imf India Page</a></li>
+													<li class="list-group-item"><a href="/imf-india-full-form.html">Imf India Full Form</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-rate.html">Imf Inflation Rate</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-venezuela-2018.html">Imf Inflation Venezuela 2018</a></li>
+													<li class="list-group-item"><a href="/imf-india-head.html">Imf India Head</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-hong-kong.html">Imf Inflation Hong Kong</a></li>
+													<li class="list-group-item"><a href="/imf-india-upsc.html">Imf India Upsc</a></li>
+													<li class="list-group-item"><a href="/imf-inflation-greece.html">Imf Inflation Greece</a></li>
+													<li class="list-group-item"><a href="/imf-india-growth-forecast-2020.html">Imf India Growth Forecast 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <script>
+        var google_;
+        var bing_;
+      	var setbing;
+      	var setgoogle;
+      	var myMap = "sitemap.xml";
+      	google_ = 'https://www.google.com/ping?sitemap='+document.URL+myMap;
+      	bing_ = 'https://www.bing.com/webmaster/ping.aspx?siteMap='+document.URL+myMap;
+      
+        function setPing(){
+          	setgoogle = document.getElementById("bili-g").src = google_;
+      		//document.write(setgoogle);
+      		//document.onload(setgoogle);
+      
+      		setbing = document.getElementById("bili-b").src = bing_;
+      		//document.write(setbing);
+      		//document.onload(setbing);
+        }
+		
+      	//document.onclick = setGoogle;
+      
+      	window.onload = setPing;
+    </script>
+    <img height='1' id='crawlers-g' src='anomali' width='1'/>
+    <img height='1' id='crawlers-b' src='anomali' width='1'/>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
